@@ -2,8 +2,8 @@
 // load components that will be on all pages
 
 const addComponent = ({placeholderID,htmlURL}) =>{
-    console.log(placeholderID)
-    console.log(htmlURL)
+    console.log(placeholderID);
+    console.log(htmlURL);
     document.addEventListener("DOMContentLoaded", function() {
         const componentPlaceholder = document.getElementById({placeholderID});
     
@@ -11,8 +11,8 @@ const addComponent = ({placeholderID,htmlURL}) =>{
         const xhr = new XMLHttpRequest();
     
         // Configure it to fetch the navbar.html file
-        const url = `components/${htmlURL}`
-        console.log(url)
+        const url = `components/${htmlURL}`;
+        console.log(url);
         xhr.open('GET', url, true);
     
         // Setup onload callback
@@ -39,7 +39,7 @@ const components = [
         id:"footer-placeholder", // footer.js
         url:"footer.html"
     }
-]
+];
 
 // call it
-components.forEach(({id,url})=>addComponent(id,url))
+components.forEach(({id,url})=>addComponent(id,url));
