@@ -1,5 +1,11 @@
 /* styles.css */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /* Navbar Styles */
 .navbar {
     background-color: #333;
@@ -88,9 +94,32 @@ header {
     margin-top: 80px; /* Adjust margin-top for larger spacing */
 }
 
+
+/*intro*/
 .intro-section {
-    margin-bottom: 40px; /* Increased margin for separation */
-    padding-top: 120px; /* Adjusted padding for better alignment */
+    margin-top: 80px; /* Adjust margin for fixed header */
+    text-align: center;
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro-content section {
+    margin-bottom: 40px;
+}
+
+.intro-content h2 {
+    color: #007bff; /* Highlight color for section titles */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.intro-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
 }
 
 main {
