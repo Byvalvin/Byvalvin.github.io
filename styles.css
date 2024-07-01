@@ -88,12 +88,22 @@ body, html {
     padding: 0;
 }
 
-header {
+/* header {
     padding: 20px;
     text-align: center;
     margin-top: 80px; /* Adjust margin-top for larger spacing */
+} */
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
-
 
 /*intro*/
 .intro-section {
