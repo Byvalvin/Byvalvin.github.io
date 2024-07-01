@@ -1,25 +1,5 @@
 /* styles.css */
 
-/* General Styles */
-body, html {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-header, footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1, footer p {
-    margin: 0;
-}
-
-/* styles.css */
-
 /* Navbar Styles */
 .navbar {
     background-color: #333;
@@ -30,16 +10,24 @@ header h1, footer p {
     padding: 10px 20px;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Ensuring a square image */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image covers the entire area */
+    margin-right: 10px;
+}
+
 .navbar .logo a {
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
-}
-.logo-img {
-    width: 40px; /* Adjust size as needed */
-    height: auto;
-    margin-right: 10px;
 }
 
 .nav-links {
@@ -81,51 +69,6 @@ header {
 
 .navigation-section {
     margin-top: 20px;
-}
-
-
-main {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.project {
-    width: 30%;
-    margin-bottom: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-}
-
-.project img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.project-info {
-    text-align: left;
-}
-
-.project-info h2 {
-    margin-top: 0;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    margin-top: 10px;
-}
-
-
-.btn:hover {
-    background-color: #0056b3;
 }
 
 footer {
