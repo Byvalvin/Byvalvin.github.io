@@ -1,0 +1,62 @@
+/* styles.css */
+
+/* General Styles */
+body, html {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.project-info {
+    text-align: left;
+}
+
+.project-info h2 {
+    margin-top: 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
