@@ -5,6 +5,21 @@
     margin: 0;
     padding: 0;
 }
+body, html {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+/* 
+body, html {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+ */
 
 /* Navbar Styles */
 .navbar {
@@ -80,47 +95,32 @@
 
 
 
-/* General Styles */
-body, html {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-/* header {
-    padding: 20px;
-    text-align: center;
-    margin-top: 80px; /* Adjust margin-top for larger spacing */
-} */
 /* Header Styles */
+
 header {
     background-color: #333;
     color: #fff;
     padding: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
 }
 
 header h1 {
     text-align: center;
-    margin-top: 40px; /* Adjust margin for header content */
 }
 
+
+/*Home page*/
 main {
     padding: 20px;
-    margin-top: 100px; /* Adjust to account for header height */
-    min-height: calc(100vh - 160px); /* Adjust according to your footer and header height */
-    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
 
 /*intro*/
 .intro-section {
-    margin-top: 80px; /* Adjust margin for fixed header */
     text-align: center;
+    margin-top: 20px; /* Adjust margin for spacing */
 }
 
 .intro-content {
@@ -144,13 +144,10 @@ main {
     color: #555;
 }
 
-main {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
+
+
+/*Project page*/
 .project {
     width: 30%;
     margin-bottom: 30px; /* Increased margin for better separation */
@@ -159,31 +156,33 @@ main {
     padding: 15px;
 }
 
+
+.navigation-section {
+    margin-top: 20px; /* Adjust margin for spacing */
+    text-align: center;
+}
+
 .btn {
     display: inline-block;
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px; /* Increased padding for larger clickable area */
+    padding: 10px 20px;
     border-radius: 4px;
-    margin-top: 15px; /* Adjusted top margin for better spacing */
+    margin-top: 15px;
 }
 
 .btn:hover {
     background-color: #0056b3;
 }
 
+
+
+
 footer {
     background-color: #f2f2f2;
-    padding: 15px 20px; /* Increased padding for footer */
+    padding: 15px 20px;
     text-align: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
 }
-
-
-
 
 
