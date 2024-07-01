@@ -8,6 +8,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    width: 100%; /* Ensure navbar spans the entire width */
+    position: fixed; /* Fixed position to stick to the top */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left of the viewport */
+    z-index: 1000; /* Ensure it's on top of other content */
 }
 
 .logo-container {
@@ -61,10 +66,12 @@ body, html {
 header {
     padding: 20px;
     text-align: center;
+    margin-top: 60px; /* Ensure content starts below fixed navbar */
 }
 
 .intro-section {
     margin-bottom: 20px;
+    padding-top: 100px; /* Adjust as needed based on navbar height */
 }
 
 .navigation-section {
