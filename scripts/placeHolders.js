@@ -3,33 +3,33 @@
 
 
 // Function to highlight the active link in the navbar
-// const highlightActiveLink = () => {
-//     const currentLocation = window.location.href;
-//     const navLinks = document.querySelectorAll('.nav-links li a');
-
-//     navLinks.forEach(link => {
-//         if (link.href === currentLocation) {
-//             link.classList.add('active');
-//         } else {
-//             link.classList.remove('active');
-//         }
-//     });
-// };
 const highlightActiveLink = () => {
-    const currentLocation = window.location.pathname;
+    const currentLocation = window.location.href;
     const navLinks = document.querySelectorAll('.nav-links li a');
 
     navLinks.forEach(link => {
-        const href = link.getAttribute('href');
-        if (currentLocation === '/' && href === 'index.html') {
-            link.classList.add('active');
-        } else if (currentLocation === href) {
+        if (link.href === currentLocation) {
             link.classList.add('active');
         } else {
             link.classList.remove('active');
         }
     });
 };
+// const highlightActiveLink = () => {
+//     const currentLocation = window.location.pathname;
+//     const navLinks = document.querySelectorAll('.nav-links li a');
+
+//     navLinks.forEach(link => {
+//         const href = link.getAttribute('href');
+//         if (currentLocation === '/' && href === 'index.html') {
+//             link.classList.add('active');
+//         } else if (currentLocation === href) {
+//             link.classList.add('active');
+//         } else {
+//             link.classList.remove('active');
+//         }
+//     });
+// };
 
 // Function to add a component to the page
 const addComponent = ({ placeholderID, htmlURL }) => {
