@@ -1,3 +1,6 @@
+// placeHolders.js
+// load components that will be on all pages
+
 // navbar.js
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -22,3 +25,16 @@ document.addEventListener("DOMContentLoaded", function() {
     // Send the request
     xhr.send();
 });
+
+
+// footer.js
+
+function includeFooter() {
+    const footerPlaceholder = document.getElementById('footer-placeholder');
+    if (footerPlaceholder) {
+        footerPlaceholder.innerHTML = `<object type="text/html" data="footer.html"></object>`;
+    }
+}
+
+// Call the function to include footer when the page loads
+window.addEventListener('DOMContentLoaded', includeFooter);
