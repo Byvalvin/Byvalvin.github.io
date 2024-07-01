@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function includeFooter() {
     const footerPlaceholder = document.getElementById('footer-placeholder');
     if (footerPlaceholder) {
-        footerPlaceholder.innerHTML = `<object type="text/html" data="footer.html"></object>`;
+        footerPlaceholder.innerHTML = `<object type="text/html" data="components/footer.html"></object>`;
     }
 }
 
