@@ -59,6 +59,12 @@
     color: #007bff;
 }
 
+.nav-links li a:active {
+    color: #007bff; /* Highlight color for active link */
+    font-weight: bold; /* Optionally bold the active link */
+}
+
+
 /* General Styles */
 body, html {
     font-family: Arial, sans-serif;
