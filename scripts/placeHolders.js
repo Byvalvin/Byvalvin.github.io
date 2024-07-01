@@ -1,6 +1,21 @@
 // placeHolders.js
 // load components that will be on all pages
 
+
+// Function to highlight the active link in the navbar
+const highlightActiveLink = () => {
+    const currentLocation = window.location.href;
+    const navLinks = document.querySelectorAll('.nav-links li a');
+
+    navLinks.forEach(link => {
+        if (link.href === currentLocation) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+};
+
 // Function to add a component to the page
 const addComponent = ({ placeholderID, htmlURL }) => {
     console.log(placeholderID);
@@ -21,6 +36,9 @@ const addComponent = ({ placeholderID, htmlURL }) => {
             if (xhr.status === 200) {
                 // Insert the received HTML into the placeholder
                 componentPlaceholder.innerHTML = xhr.responseText;
+
+                // Highlight active link based on current URL
+                highlightActiveLink();
             } else {
                 console.error(`Failed to load ${htmlURL}`);
             }
