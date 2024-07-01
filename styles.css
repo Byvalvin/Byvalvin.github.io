@@ -105,6 +105,18 @@ header {
     z-index: 1000;
 }
 
+header h1 {
+    text-align: center;
+    margin-top: 40px; /* Adjust margin for header content */
+}
+
+main {
+    padding: 20px;
+    margin-top: 100px; /* Adjust to account for header height */
+    min-height: calc(100vh - 160px); /* Adjust according to your footer and header height */
+    box-sizing: border-box;
+}
+
 /*intro*/
 .intro-section {
     margin-top: 80px; /* Adjust margin for fixed header */
@@ -170,4 +182,8 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+
+
+
 
