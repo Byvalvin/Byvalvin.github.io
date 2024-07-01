@@ -39,30 +39,37 @@
     color: #ccc; /* Adjust hover color as desired */
 }
 
+/*Nav Links*/
 .nav-links {
     list-style-type: none;
     display: flex;
-    gap: 20px;
+    gap: 20px; /* Adjust the gap between links */
+    overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
+    margin-right: 20px; /* Increase right margin for additional space */
 }
 
 .nav-links li {
     padding: 5px 10px;
+    white-space: nowrap; /* Prevent wrapping of links */
 }
 
 .nav-links li a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s ease;
+    padding: 10px; /* Increase padding for better touch/click targets */
 }
 
-.nav-links li a:hover {
-    color: #007bff;
+.nav-links li a:hover,
+.nav-links li a:focus {
+    color: #007bff; /* Highlight color on hover or focus */
 }
 
-.nav-links li a:active {
+.nav-links li a.active {
     color: #007bff; /* Highlight color for active link */
     font-weight: bold; /* Optionally bold the active link */
 }
+
 
 
 /* General Styles */
