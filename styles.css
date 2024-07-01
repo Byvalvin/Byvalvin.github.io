@@ -8,6 +8,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    width: 100%; /* Ensure navbar spans the entire width */
+    position: fixed; /* Fixed position to stick to the top */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left of the viewport */
+    z-index: 1000; /* Ensure it's on top of other content */
 }
 
 .logo-container {
@@ -23,11 +28,15 @@
     margin-right: 10px;
 }
 
-.navbar .logo a {
+.navbar .navbar-brand {
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.navbar .navbar-brand:hover {
+    color: #ccc; /* Adjust hover color as desired */
 }
 
 .nav-links {
@@ -38,13 +47,6 @@
 
 .nav-links li {
     padding: 5px 10px;
-}
-
-.navbar .navbar-brand {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
 }
 
 .nav-links li a {
@@ -68,14 +70,59 @@ body, html {
 header {
     padding: 20px;
     text-align: center;
+    margin-top: 60px; /* Ensure content starts below fixed navbar */
 }
 
 .intro-section {
     margin-bottom: 20px;
+    padding-top: 100px; /* Adjust as needed based on navbar height */
 }
 
 .navigation-section {
     margin-top: 20px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.project-info {
+    text-align: left;
+}
+
+.project-info h2 {
+    margin-top: 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
 }
 
 footer {
