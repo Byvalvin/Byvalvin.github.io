@@ -2,7 +2,8 @@
 // load components that will be on all pages
 
 const addComponent = ({placeholderID,htmlURL}) =>{
-    console.log(placeholderID, htmlURL)
+    console.log(placeholderID)
+    console.log(htmlURL)
     document.addEventListener("DOMContentLoaded", function() {
         const componentPlaceholder = document.getElementById({placeholderID});
     
