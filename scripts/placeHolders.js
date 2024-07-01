@@ -1,20 +1,21 @@
 // placeHolders.js
 // load components that will be on all pages
 
-const addComponent = ({placeholderID,htmlURL}) =>{
+// Function to add a component to the page
+const addComponent = ({ placeholderID, htmlURL }) => {
     console.log(placeholderID);
-    console.log(htmlURL);
     document.addEventListener("DOMContentLoaded", function() {
-        const componentPlaceholder = document.getElementById({placeholderID});
-    
+        const componentPlaceholder = document.getElementById(placeholderID);
+
         // Create a new XMLHttpRequest object
         const xhr = new XMLHttpRequest();
-    
-        // Configure it to fetch the navbar.html file
+
+        // Construct the URL to fetch the HTML component
         const url = `components/${htmlURL}`;
-        console.log(url);
+        
+        // Configure the XMLHttpRequest
         xhr.open('GET', url, true);
-    
+
         // Setup onload callback
         xhr.onload = function() {
             if (xhr.status === 200) {
@@ -24,22 +25,26 @@ const addComponent = ({placeholderID,htmlURL}) =>{
                 console.error(`Failed to load ${htmlURL}`);
             }
         };
-    
+
         // Send the request
         xhr.send();
     });
-}
+};
 
+// Array of components to include
 const components = [
     { 
-        id:"navbar-placeholder", // navbar.js
-        url:"navbar.html"
+        placeholderID: "navbar-placeholder", // Placeholder ID for navbar
+        htmlURL: "navbar.html" // URL to the HTML component file
     },
     {
-        id:"footer-placeholder", // footer.js
-        url:"footer.html"
+        placeholderID: "footer-placeholder", // Placeholder ID for footer
+        htmlURL: "footer.html" // URL to the HTML component file
     }
 ];
 
-// call it
-components.forEach((component)=>addComponent(component));
+// Loop through each component and add it to the page
+components.forEach((component) => {
+    addComponent(component);
+});
+
