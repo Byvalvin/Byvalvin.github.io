@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const xhr = new XMLHttpRequest();
 
     // Configure it to fetch the navbar.html file
-    xhr.open('GET', 'navbar.html', true);
+    xhr.open('GET', 'components/navbar.html', true);
 
     // Setup onload callback
     xhr.onload = function() {
