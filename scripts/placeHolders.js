@@ -9,7 +9,7 @@ const addComponent = ({placeholderID,htmlURL}) =>{
         const xhr = new XMLHttpRequest();
     
         // Configure it to fetch the navbar.html file
-        xhr.open('GET', {`components/${htmlURL}`}, true);
+        xhr.open('GET', `components/${htmlURL}`, true);
     
         // Setup onload callback
         xhr.onload = function() {
