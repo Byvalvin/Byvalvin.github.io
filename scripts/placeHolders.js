@@ -42,4 +42,4 @@ const components = [
 ];
 
 // call it
-components.forEach(({id,url})=>addComponent(id,url));
+components.forEach((component)=>addComponent(component));
