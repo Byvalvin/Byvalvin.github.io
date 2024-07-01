@@ -3,12 +3,27 @@
 
 
 // Function to highlight the active link in the navbar
+// const highlightActiveLink = () => {
+//     const currentLocation = window.location.href;
+//     const navLinks = document.querySelectorAll('.nav-links li a');
+
+//     navLinks.forEach(link => {
+//         if (link.href === currentLocation) {
+//             link.classList.add('active');
+//         } else {
+//             link.classList.remove('active');
+//         }
+//     });
+// };
 const highlightActiveLink = () => {
-    const currentLocation = window.location.href;
+    const currentLocation = window.location.pathname;
     const navLinks = document.querySelectorAll('.nav-links li a');
 
     navLinks.forEach(link => {
-        if (link.href === currentLocation) {
+        const href = link.getAttribute('href');
+        if (currentLocation === '/' && href === 'index.html') {
+            link.classList.add('active');
+        } else if (currentLocation === href) {
             link.classList.add('active');
         } else {
             link.classList.remove('active');
