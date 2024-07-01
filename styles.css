@@ -8,12 +8,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    width: 100%; /* Ensure navbar spans the entire width */
-    position: fixed; /* Fixed position to stick to the top */
-    top: 0; /* Align to the top of the viewport */
-    left: 0; /* Align to the left of the viewport */
-    z-index: 1000; /* Ensure it's on top of other content */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add box-shadow for depth */
 }
+
 
 .logo-container {
     display: flex;
@@ -83,16 +85,12 @@ body, html {
 header {
     padding: 20px;
     text-align: center;
-    margin-top: 60px; /* Ensure content starts below fixed navbar */
+    margin-top: 80px; /* Adjust margin-top for larger spacing */
 }
 
 .intro-section {
-    margin-bottom: 20px;
-    padding-top: 100px; /* Adjust as needed based on navbar height */
-}
-
-.navigation-section {
-    margin-top: 20px;
+    margin-bottom: 40px; /* Increased margin for separation */
+    padding-top: 120px; /* Adjusted padding for better alignment */
 }
 
 main {
@@ -104,24 +102,10 @@ main {
 
 .project {
     width: 30%;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Increased margin for better separation */
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
-}
-
-.project img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.project-info {
-    text-align: left;
-}
-
-.project-info h2 {
-    margin-top: 0;
 }
 
 .btn {
@@ -129,9 +113,9 @@ main {
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 10px 20px; /* Increased padding for larger clickable area */
     border-radius: 4px;
-    margin-top: 10px;
+    margin-top: 15px; /* Adjusted top margin for better spacing */
 }
 
 .btn:hover {
@@ -140,10 +124,11 @@ main {
 
 footer {
     background-color: #f2f2f2;
-    padding: 10px 20px;
+    padding: 15px 20px; /* Increased padding for footer */
     text-align: center;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
 }
+
