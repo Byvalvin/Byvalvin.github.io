@@ -9,13 +9,14 @@ const addComponent = ({placeholderID,htmlURL}) =>{
         const xhr = new XMLHttpRequest();
     
         // Configure it to fetch the navbar.html file
-        xhr.open('GET', `components/${htmlURL}`, true);
+        const url = `components/${htmlURL}`
+        xhr.open('GET', url, true);
     
         // Setup onload callback
         xhr.onload = function() {
             if (xhr.status === 200) {
                 // Insert the received HTML into the placeholder
-                navbarPlaceholder.innerHTML = xhr.responseText;
+                componentPlaceholder.innerHTML = xhr.responseText;
             } else {
                 console.error(`Failed to load ${htmlURL}`);
             }
@@ -39,6 +40,3 @@ const components = [
 
 // call it
 components.forEach(({id,url})=>addComponent(id,url))
-
-
-
