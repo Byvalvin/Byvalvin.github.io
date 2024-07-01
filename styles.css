@@ -40,6 +40,13 @@
     padding: 5px 10px;
 }
 
+.navbar .navbar-brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 .nav-links li a {
     color: #fff;
     text-decoration: none;
