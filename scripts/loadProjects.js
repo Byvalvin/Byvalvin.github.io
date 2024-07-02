@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
             id: 'qrapp',
             title: 'QRapp',
             description: 'A QR Code Hunting App.',
-            images: ['qrapp4.jpg'],
+            images: ['qrapp8.jpg'],
             detailsPage: 'project-details.html?id=qrapp'
         },
         {
