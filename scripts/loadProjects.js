@@ -6,14 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
             id: 'qrapp',
             title: 'QRapp',
             description: 'A QR Code Hunting App.',
-            images: ['qrapp1.jpg', 'qrapp2.jpg', 'qrapp3.jpg', 'qrapp4.jpg', 'qrapp5.jpg', 'qrapp6.jpg', 'qrapp7.jpg'],
+            images: ['qrapp4.jpg'],
             detailsPage: 'project-details.html?id=qrapp'
         },
         {
             id: 'aranimal',
             title: 'AR Animal Identification',
             description: 'An educational and interactive app designed to inform and teach users about the Albertan Bioshpere',
-            images: ['project2-img1.jpg', 'project2-img2.jpg'],
+            images: [],
             detailsPage: 'project-details.html?id=aranimal'
         },
         // {
