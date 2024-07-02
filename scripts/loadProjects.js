@@ -3,26 +3,26 @@
 document.addEventListener('DOMContentLoaded', function() {
     const projectData = [
         {
-            id: 'project1',
-            title: 'Project 1 Title',
-            description: 'A short description of Project 1.',
-            images: ['project1-img1.jpg', 'project1-img2.jpg'],
-            detailsPage: 'project-details.html?id=project1'
+            id: 'qrapp',
+            title: 'QRapp',
+            description: 'A QR Code Hunting App.',
+            images: ['qrapp1.jpg', 'qrapp2.jpg', 'qrapp3.jpg', 'qrapp4.jpg', 'qrapp5.jpg', 'qrapp6.jpg', 'qrapp7.jpg'],
+            detailsPage: 'project-details.html?id=qrapp'
         },
         {
-            id: 'project2',
-            title: 'Project 2 Title',
-            description: 'A short description of Project 2.',
+            id: 'aranimal',
+            title: 'AR Animal Identification',
+            description: 'An educational and interactive app designed to inform and teach users about the Albertan Bioshpere',
             images: ['project2-img1.jpg', 'project2-img2.jpg'],
-            detailsPage: 'project-details.html?id=project2'
+            detailsPage: 'project-details.html?id=aranimal'
         },
-        {
-            id: 'project3',
-            title: 'Project 3 Title',
-            description: 'A short description of Project 3.',
-            images: ['project3-img1.jpg', 'project3-img2.jpg'],
-            detailsPage: 'project-details.html?id=project3'
-        }
+        // {
+        //     id: 'project3',
+        //     title: 'Project 3 Title',
+        //     description: 'A short description of Project 3.',
+        //     images: ['project3-img1.jpg', 'project3-img2.jpg'],
+        //     detailsPage: 'project-details.html?id=project3'
+        // }
         // Add more projects as needed
     ];
 
