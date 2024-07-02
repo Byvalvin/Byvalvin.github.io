@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 "Ensuring all our work is properly documented on github and github wiki pages",
                 "Keeping meeting minutes for all meetings and documenting them",
                 "Storyboarding all use cases and user experiences",
-                "Business Logic and Creation of the Map Page and Map UI/UX",
+                "Business Logic for placing code on a map, Creation of the Map Page and Map UI/UX Design",
                 "Integration of the Google Maps API",
                 "Business logic for ranking users and Creation of the Leaderboard pages",
                 "App Layout and Navigation planning and setup"
@@ -66,10 +66,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 "Storyboarding all use cases and user experiences",
                 "Image Recognition process and methods using OpenCV and integration of system into app",
                 "Optimisation of Image Processing",
-                "Games and Activities Design and Architecture",
+                "Games and Activities Design and Architecture Planning",
+                "All Game-related Pages and Control Logic",
                 "Admin page setup",
             ],
-            bestFeatures: 'Scalability and real-time updates.',
+            bestFeatures: 'Cross-Platform and Cross-Device compatability. It was important that we make the app as accessible as possible to reach as many users as possible. The app is designed to work on many different phones(tested 4 year old phones), on both Android and iOS ecosystems and on mobile devices like tablets. Accessibility at its finest',
             rating: 4.4
         },
         // project3: {
