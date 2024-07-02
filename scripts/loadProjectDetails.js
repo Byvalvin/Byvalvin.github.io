@@ -1,6 +1,7 @@
 // loadProjectDetails.js
 
 document.addEventListener('DOMContentLoaded', function() {
+    console.log("woke");
     // Function to parse query parameters from URL
     const getParameterByName = (name, url) => {
         if (!url) url = window.location.href;
