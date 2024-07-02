@@ -84,9 +84,27 @@ main {
     padding: 15px;
 }
 
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .project img {
     width: 100%;
     height: auto;
+    margin-bottom: 10px;
+}
+
+.project-images {
+    display: flex;
+    justify-content: center;
+}
+
+.project-images img {
+    width: 100%; /* Ensure images take full width of their container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Limit maximum height */
     margin-bottom: 10px;
 }
 
