@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Example data for project details (replace with actual data retrieval logic)
     const projectId = getParameterByName('id');
     const projectDetails = {
-        project1: {
+        qrapp: {
             title: 'QRapp',
             description: 'QRapp is designed to be a fun, engaging and social experience for users. You choose the way you play: You can design to be a casual collector of some of the highest, lowest or coolest codes or compete against friends or other QR Hunters for top positions one the many leaderboards. As you play, you might become aware of te fact that codes are everywhere! ',
             images: ['qrapp1.jpg', 'qrapp2.jpg'],
@@ -38,9 +38,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 
             ],
             bestFeatures: 'Excellent user interface and performance: The look and feel of the app is excellent. We put alot of thought an planning into catching the users attention and keep it as they use the app. I believe it is one of the more beautiful and well designed apps I have worked on.',
-            rating: 4.5
+            rating: 4.0
         },
-        project2: {
+        aranimal: {
             title: 'AR Animal Identification',
             description: 'Detailed description of Project 2.',
             images: [],
