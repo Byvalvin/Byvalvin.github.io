@@ -107,6 +107,7 @@ main {
     margin-bottom: 10px;
 }
 
+
 .project-info {
     text-align: left;
 }
@@ -146,13 +147,17 @@ main {
     height: 70%;
     margin-bottom: 20px;
 } */
+
+
 #project-details video {
-    width: 100%; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Ensure video does not exceed its container */
-    display: block; /* Ensures block-level element behavior */
-    margin: 0 auto 20px; /* Center align and add margin */
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 20px;
+    aspect-ratio: 16 / 9; /* Example aspect ratio (16:9) */
 }
+
 
 
 
