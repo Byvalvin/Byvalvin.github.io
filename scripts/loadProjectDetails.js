@@ -106,8 +106,8 @@ document.addEventListener('DOMContentLoaded', function() {
             <p>${project.description}</p>
             <div class="project-images">${projectImages}</div>
             <div class="project-videos">${projectVideos}</div>
-            <h3>Technologies Used</h3>
-            <ul>
+            <h3 class="technologies-title">Technologies Used</h3>
+            <ul class="technologies-list">
                 ${Object.entries(project.technologies).map(([tech, description]) => `<li><strong>${tech}:</strong> ${description}</li>`).join('')}
             </ul>
             <h3>My Contributions</h3>
