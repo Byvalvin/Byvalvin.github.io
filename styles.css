@@ -156,6 +156,21 @@ main {
     padding: 15px;
 }
 
+.project img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.project-info {
+    text-align: left;
+}
+
+.project-info h2 {
+    margin-top: 0;
+}
+
+
 
 .navigation-section {
     margin-top: 20px; /* Adjust margin for spacing */
