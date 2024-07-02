@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Example data for project details (replace with actual data retrieval logic)
     const projectId = getParameterByName('id');
+    console.log(projectId);
     const projectDetails = {
         qrapp: {
             title: 'QRapp',
