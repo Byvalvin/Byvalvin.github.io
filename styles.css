@@ -142,9 +142,11 @@ main {
 }
 
 #project-details video {
-    width: 100%;
+    width: 70%;
+    height: 70%;
     margin-bottom: 20px;
 }
+
 
 #project-details ul {
     list-style-type: disc;
