@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Figma': 'Wireframing and Storyboarding',
                 'Firebase/Firestore': 'Data Storage and Management',
                 'Java': 'Formal programming language',
+                'Google Maps API':'Getting and setting location data',
                 'GitHub': 'Version Control, Documentation and Task management.'
             },
             contributions: [
