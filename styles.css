@@ -1,102 +1,18 @@
-/* styles.css */
-
+/* Reset and General Styles */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body, html {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-/* 
+
 body, html {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
- */
-
-/* Navbar Styles */
-.navbar {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add box-shadow for depth */
-}
-
-
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo-img {
-    width: 40px; /* Adjust size as needed */
-    height: 40px; /* Ensuring a square image */
-    border-radius: 50%; /* Makes the image round */
-    object-fit: cover; /* Ensures the image covers the entire area */
-    margin-right: 10px;
-}
-
-.navbar .navbar-brand {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.navbar .navbar-brand:hover {
-    color: #ccc; /* Adjust hover color as desired */
-}
-
-/*Nav Links*/
-.nav-links {
-    list-style-type: none;
-    display: flex;
-    gap: 20px; /* Adjust the gap between links */
-    overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
-    margin-right: 20px; /* Increase right margin for additional space */
-}
-
-.nav-links li {
-    padding: 5px 10px;
-    white-space: nowrap; /* Prevent wrapping of links */
-}
-
-.nav-links li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    padding: 10px; /* Increase padding for better touch/click targets */
-}
-
-.nav-links li a:hover,
-.nav-links li a:focus {
-    color: #007bff; /* Highlight color on hover or focus */
-}
-
-.nav-links li a.active {
-    color: #007bff; /* Highlight color for active link */
-    font-weight: bold; /* Optionally bold the active link */
-}
-
-
 
 /* Header Styles */
-
 header {
     background-color: #333;
     color: #fff;
@@ -105,22 +21,17 @@ header {
 
 header h1 {
     text-align: center;
+    margin: 0; /* Remove default margin for h1 */
 }
 
-
-/*Home page*/
+/* Main Content Styles */
 main {
     padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
-
-/*intro*/
 .intro-section {
     text-align: center;
-    margin-top: 20px; /* Adjust margin for spacing */
+    margin-top: 20px;
 }
 
 .intro-content {
@@ -133,7 +44,7 @@ main {
 }
 
 .intro-content h2 {
-    color: #007bff; /* Highlight color for section titles */
+    color: #007bff;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
@@ -144,13 +55,30 @@ main {
     color: #555;
 }
 
+.navigation-section {
+    text-align: center;
+    margin-top: 20px;
+}
 
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
 
+.btn:hover {
+    background-color: #0056b3;
+}
 
-/*Project page*/
+/* Project Styles */
 .project {
     width: 30%;
-    margin-bottom: 30px; /* Increased margin for better separation */
+    margin-bottom: 30px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
@@ -170,34 +98,64 @@ main {
     margin-top: 0;
 }
 
-
-
-.navigation-section {
-    margin-top: 20px; /* Adjust margin for spacing */
-    text-align: center;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    margin-top: 15px;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-
-
-
+/* Footer Styles */
 footer {
     background-color: #f2f2f2;
     padding: 15px 20px;
     text-align: center;
+    margin-top: 20px;
 }
 
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
 
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    margin-right: 20px;
+}
+
+.nav-links li {
+    padding: 5px 10px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus {
+    color: #007bff;
+}
+
+.nav-links li a.active {
+    color: #007bff;
+    font-weight: bold;
+}
