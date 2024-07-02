@@ -16,21 +16,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const projectId = getParameterByName('id');
     const projectDetails = {
         project1: {
-            title: 'Project 1 Title',
+            title: 'QRapp',
             description: 'Detailed description of Project 1.',
-            images: ['project1-img1.jpg', 'project1-img2.jpg'],
-            videos: ['project1-video1.mp4'],
-            technologies: ['Vue.js', 'Django'],
+            images: ['qrapp1.jpg', 'qrapp2.jpg'],
+            videos: ['QRAPP.webm'],
+            technologies: ['Android Studio', 'Firebase'],
             contributions: 'Frontend development using Vue.js, backend with Django.',
             bestFeatures: 'Excellent user interface and performance.',
             rating: 4.5
         },
         project2: {
-            title: 'Project 2 Title',
+            title: 'AR Animal Identification',
             description: 'Detailed description of Project 2.',
-            images: ['project2-img1.jpg', 'project2-img2.jpg'],
-            videos: ['project2-video1.mp4'],
-            technologies: ['React', 'Node.js'],
+            images: [],
+            videos: ['ARANIMAL.webm'],
+            technologies: ['Flutter', 'Poetry'],
             contributions: 'Full-stack development with React and Node.js.',
             bestFeatures: 'Scalability and real-time updates.',
             rating: 4.8
