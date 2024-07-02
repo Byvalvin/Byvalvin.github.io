@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
             id: 'aranimal',
             title: 'AR Animal Identification',
             description: 'An educational and interactive app designed to inform and teach users about the Albertan Bioshpere',
-            images: [],
+            images: ['aranimal2.jpg'],
             detailsPage: 'project-details.html?id=aranimal'
         },
         // Add more projects as needed
