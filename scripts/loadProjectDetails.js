@@ -17,12 +17,27 @@ document.addEventListener('DOMContentLoaded', function() {
     const projectDetails = {
         project1: {
             title: 'QRapp',
-            description: 'Detailed description of Project 1.',
+            description: 'QRapp is designed to be a fun, engaging and social experience for users. You choose the way you play: You can design to be a casual collector of some of the highest, lowest or coolest codes or compete against friends or other QR Hunters for top positions one the many leaderboards. As you play, you might become aware of te fact that codes are everywhere! ',
             images: ['qrapp1.jpg', 'qrapp2.jpg'],
             videos: ['QRAPP.webm'],
-            technologies: ['Android Studio', 'Firebase'],
-            contributions: 'Frontend development using Vue.js, backend with Django.',
-            bestFeatures: 'Excellent user interface and performance.',
+            technologies: [
+                'Android Studio: Frontend, business logic and conencting to Backend',
+                'Firebase/Firestore: Data Storage and Management',
+                'Java: Formal programming language',
+                'Figma: Wireframing and Storyboarding',
+                'GitHub: Version Control, Documentation and Task management.'
+            ],
+            contributions: [
+                "Ensuring all our work is properly documented on github and github wiki pages",
+                "Keeping meeting minutes for all meetings and documenting them",
+                "Storyboarding all use cases and user experiences",
+                "Business Logic and Creation of the Map Page and Map UI/UX",
+                "Integration of the Google Maps API",
+                "Business logic for ranking users and Creation of the Leaderboard pages",
+                "App Layout and Navigation planning and setup"
+                
+            ]
+            bestFeatures: 'Excellent user interface and performance: The look and feel of the app is excellent. We put alot of thought an planning into catching the users attention and keep it as they use the app. I believe it is one of the more beautiful and well designed apps I have worked on.',
             rating: 4.5
         },
         project2: {
@@ -35,16 +50,16 @@ document.addEventListener('DOMContentLoaded', function() {
             bestFeatures: 'Scalability and real-time updates.',
             rating: 4.8
         },
-        project3: {
-            title: 'Project 3 Title',
-            description: 'Detailed description of Project 3.',
-            images: ['project3-img1.jpg', 'project3-img2.jpg'],
-            videos: [],
-            technologies: ['Angular', 'Spring Boot'],
-            contributions: 'Frontend using Angular, backend with Spring Boot.',
-            bestFeatures: 'Security features and robust architecture.',
-            rating: 4.3
-        }
+        // project3: {
+        //     title: 'Project 3 Title',
+        //     description: 'Detailed description of Project 3.',
+        //     images: ['project3-img1.jpg', 'project3-img2.jpg'],
+        //     videos: [],
+        //     technologies: ['Angular', 'Spring Boot'],
+        //     contributions: 'Frontend using Angular, backend with Spring Boot.',
+        //     bestFeatures: 'Security features and robust architecture.',
+        //     rating: 4.3
+        // }
         // Add more projects as needed
     };
 
@@ -71,7 +86,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 ${project.technologies.map(tech => `<li>${tech}</li>`).join('')}
             </ul>
             <h3>My Contributions</h3>
-            <p>${project.contributions}</p>
+             <ul>
+                ${project.contributions.map(contr => `<li>${contr}</li>`).join('')}
+            </ul>
             <h3>Best Features</h3>
             <p>${project.bestFeatures}</p>
             <h3>Rating</h3>
