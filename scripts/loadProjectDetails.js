@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 "Business logic for ranking users and Creation of the Leaderboard pages",
                 "App Layout and Navigation planning and setup"
                 
-            ]
+            ],
             bestFeatures: 'Excellent user interface and performance: The look and feel of the app is excellent. We put alot of thought an planning into catching the users attention and keep it as they use the app. I believe it is one of the more beautiful and well designed apps I have worked on.',
             rating: 4.5
         },
