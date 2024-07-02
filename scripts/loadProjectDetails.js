@@ -22,13 +22,13 @@ document.addEventListener('DOMContentLoaded', function() {
             description: 'QRapp is designed to be a fun, engaging and social experience for users. You choose the way you play: You can design to be a casual collector of some of the highest, lowest or coolest codes or compete against friends or other QR Hunters for top positions one the many leaderboards. As you play, you might become aware of te fact that codes are everywhere! ',
             images: ['qrapp1.jpg', 'qrapp2.jpg','qrapp3.jpg', 'qrapp4.jpg','qrapp5.jpg', 'qrapp6.jpg',],
             videos: ['QRAPP.webm'],
-            technologies: [
-                'Android Studio: IDE, Frontend, business logic and connection to Backend',
-                'Figma: Wireframing and Storyboarding',
-                'Firebase/Firestore: Data Storage and Management',
-                'Java: Formal programming language',
-                'GitHub: Version Control, Documentation and Task management.'
-            ],
+            technologies: {
+                'Android Studio': 'IDE, Frontend, business logic and connection to Backend',
+                'Figma': 'Wireframing and Storyboarding',
+                'Firebase/Firestore': 'Data Storage and Management',
+                'Java': 'Formal programming language',
+                'GitHub': 'Version Control, Documentation and Task management.'
+            },
             contributions: [
                 "Ensuring all our work is properly documented on github and github wiki pages",
                 "Keeping meeting minutes for all meetings and documenting them",
@@ -47,20 +47,20 @@ document.addEventListener('DOMContentLoaded', function() {
             description: "The AR Animal Identification app is part of Aquatic Biosphere many projects designed to spread awareness and raise funds to support, uphold and maintain the Albertan Biosphere. Aquatic Biosphere is a non-profit with a singluar mission: 'To educate, inspire and empower people to play an active role in the conservation of our aquatic ecosystems.' We designed this app exactly for this reason. It is designed to accompany a trailer with a vinyl sticker illustrate the various organisms of the ALbertan Bioshpere. Users will be able to identify these organisms and learn about them from interactive games and activities. The app is also designed to allow for effortless customiztion for admin roles to add, remove and modify information presented to users. Create a profile and experience the wonders of the Albertan Biospere. ",
             images: ['aranimal1.jpg','aranimal3.jpg','aranimal4.jpg','aranimal5.jpg','aranimal6.jpg',],
             videos: ['ARANIMAL.webm'],
-            technologies: [
-                'Android Studio/Visual Studio: IDE',
-                'Figma: Wireframing and Storyboarding',
-                'Flutter: Frontend, Business Logic, Connection to Backend',
-                'FastAPI: Backend, Creating API endpoints to and from Database and for Image Recognition',
-                'PostgreSQL: Data Storage and Management',
-                'Dart, Python, SQL: Formal programming/query languages',
-                'OpenCV: Computer Vision Library used for Image Processing and Image Identification',
-                'Poetry: Package Management',
-                'Cybera: Cloud Infrastructure and services',
-                'Uvicorn: Serve/deploy internal image recoginition and User APIs',
-                'GitHub: Version Control, Documentation and Task management.',
-                'VuePress.js: Creation of a simple website for Full Documentation and Project Planning'
-            ],
+            technologies: {
+                'Android Studio/Visual Studio': 'IDE',
+                'Figma': 'Wireframing and Storyboarding',
+                'Flutter': 'Frontend, Business Logic, Connection to Backend',
+                'FastAPI': 'Backend, Creating API endpoints to and from Database and for Image Recognition',
+                'PostgreSQL': 'Data Storage and Management',
+                'Dart, Python, SQL': 'Formal programming/query languages',
+                'OpenCV': 'Computer Vision Library used for Image Processing and Image Identification',
+                'Poetry': 'Package Management',
+                'Cybera': 'Cloud Infrastructure and services',
+                'Uvicorn': 'Serve/deploy internal image recoginition and User APIs',
+                'GitHub': 'Version Control, Documentation and Task management.',
+                'VuePress.js': 'Creation of a simple website for Full Documentation and Project Planning'
+            },
             contributions: [
                 "Ensuring all our work is properly documented on github + VuePress.js and github wiki pages",
                 "Keeping meeting minutes for all meetings and documenting them",
@@ -99,6 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const projectImages = project.images.map(image => `<img src="projects/${projectId}/images/${image}" alt="${image}">`).join('');
         const projectVideos = project.videos.map(video => `<video controls><source src="projects/${projectId}/videos/${video}" type="video/mp4"></video>`).join('');
+        // ${project.technologies.map(tech => `<li>${tech}</li>`).join('')}
 
         projectDetailsContainer.innerHTML = `
             <h2>${project.title}</h2>
@@ -107,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="project-videos">${projectVideos}</div>
             <h3>Technologies Used</h3>
             <ul>
-                ${project.technologies.map(tech => `<li>${tech}</li>`).join('')}
+                ${Object.entries(project.technologies).map(([tech, description]) => `<li><strong>${tech}:</strong> ${description}</li>`).join('');}
             </ul>
             <h3>My Contributions</h3>
              <ul>
