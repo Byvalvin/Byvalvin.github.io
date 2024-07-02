@@ -76,6 +76,12 @@ main {
 }
 
 /* Project Styles */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .project {
     width: 30%;
     margin-bottom: 30px;
@@ -83,13 +89,6 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
 }
-
-.projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
 .project img {
     width: 100%;
     height: auto;
