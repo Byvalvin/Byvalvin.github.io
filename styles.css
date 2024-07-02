@@ -102,9 +102,9 @@ main {
 }
 
 .project-images img {
-    width: 100%; /* Ensure images take full width of their container */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure images take full width of their container */
     max-height: 200px; /* Limit maximum height */
+    height: auto; /* Maintain aspect ratio */
     margin-bottom: 10px;
 }
 
