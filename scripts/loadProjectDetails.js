@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const projectImages = project.images.map(image => `<img src="projects/${projectId}/images/${image}" alt="${image}">`).join('');
         const projectVideos = project.videos.map(video => `<video controls><source src="projects/${projectId}/videos/${video}" type="video/mp4"></video>`).join('');
         // ${project.technologies.map(tech => `<li>${tech}</li>`).join('')}
-
+        const techStack = ${Object.entries(project.technologies).map(([tech, description]) => `<li><strong>${tech}:</strong> ${description}</li>`).join('');}
         projectDetailsContainer.innerHTML = `
             <h2>${project.title}</h2>
             <p>${project.description}</p>
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="project-videos">${projectVideos}</div>
             <h3>Technologies Used</h3>
             <ul>
-                ${Object.entries(project.technologies).map(([tech, description]) => `<li><strong>${tech}:</strong> ${description}</li>`).join('');}
+                ${techStack}
             </ul>
             <h3>My Contributions</h3>
              <ul>
