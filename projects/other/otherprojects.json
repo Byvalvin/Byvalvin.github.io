@@ -19,6 +19,18 @@
         {
             "name": "Excalibur",
             "description": "A short RPG made with Javascript and RPG MakerMV. In Excalibur, A young knight embarks on a quest to ensure another successful harvest season for his home town, Marisacordia. He alone must journey outside the borders, an act forbidden by law since the town's birth. He is gifted several weapons and artifacts for the journey and the town prays to the Mariscordian gods to guide his every step. He soon learns the truth behind the seemingly eternal success of Mariscordia and is faced with a grave choice: appease the gods of Marisacordia or watch them burn it to the ground!"
-        }
+        },
+         {
+            "name": "Naive Bayes Document Classifier",
+            "description": "A document classifier that uses a Naive Bayes principles to sort documents into different classes."
+         },
+        {
+            "name": "Self Driving Car Simulator",
+            "description": "Uses neural networks to train and test self-driving cars in a Udacity-based Car simulator. Pytorch used to code the neural networks"
+         },
+        {
+            "name": "Edge Filter",
+            "description": "An image filter that identifies and highlights images edges only.(Used to make my profile)"
+         },
     ]
 }
