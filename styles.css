@@ -260,6 +260,14 @@ main {
     margin-bottom: 10px;
 }
 
+.contact-section p:last-child {
+    margin-top: 20px; /* Additional space after the list */
+}
+
+.contact-section ul li:first-child {
+    font-weight: bold; /* Make Email and Phone labels bold */
+}
+
 
 /* Footer Styles */
 footer {
