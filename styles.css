@@ -267,6 +267,12 @@ main {
 .contact-section ul li:first-child {
     font-weight: bold; /* Make Email and Phone labels bold */
 }
+/* Thank you message */
+.contact-section .thank-you {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-top: 20px;
+}
 
 
 /* Footer Styles */
