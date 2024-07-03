@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const projectList = document.getElementById('project-list');
 
     // Fetch projects data from JSON file
-    fetch('otherprojects.json')
+    fetch('projects/other/otherprojects.json')
         .then(response => response.json())
         .then(data => {
             // Iterate over projects and create list items
