@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         qrapp: {
             title: 'QRapp',
             description: 'QRapp is designed to be a fun, engaging and social experience for users. You choose the way you play: You can design to be a casual collector of some of the highest, lowest or coolest codes or compete against friends or other QR Hunters for top positions one the many leaderboards. As you play, you might become aware of te fact that codes are everywhere! ',
-            images: ['qrapp1.jpg', 'qrapp2.jpg','qrapp3.jpg', 'qrapp4.jpg','qrapp5.jpg', 'qrapp6.jpg',],
+            images: ['qrapp1.jpg', 'qrapp2.jpg','qrapp3.jpg', 'qrapp4.jpg','qrapp5.jpg',],
             videos: ['QRAPP.webm'],
             technologies: {
                 'Android Studio': 'IDE, Frontend, business logic and connection to Backend',
