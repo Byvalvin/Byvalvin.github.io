@@ -1,2 +1,25 @@
 {
+    "projects": [
+        {
+            "name": "StarCraft II Stalker Rush Bot",
+            "description": "A bot made in C++ with a Protoss Stalker Rush Build. The bot has a win rate ~70 against the CheatMoney and CheatVision difficulties and ~45% against CheatInsane"
+        },
+        {
+            "name": "ED-like Text Editior",
+            "description": "A recreation of the ed editor of the 60s; a line-by-line text and file editor. This editor supports a large subset of commands supported by the original ed."
+        },
+        {
+            "name": "Text Klondike",
+            "description": "Klondike, but as a text based game. Adds an extra layer of difficulty in that the table isn't always shown. You will have to remember where you placed your cards!"
+        },
+        {
+            "name": "Santuary",
+            "description": "An action stealth game made with Javascript and RPG MakerMV. Santuary tells the story of a far future in space when Earth is no more. A single spaceship, The Santuary, is sent out in hopes of preservation of beauty and life. In this future, a need for lab assistants and companionship leads a brilliant scientist and her team to use old texts and stories to build cat-like androids to help them maintain the ship. As it turns out, their is more life on the ship than the passengers had thought."
+        },
+        {
+            "name": "Excalibur",
+            "description": "A short RPG made with Javascript and RPG MakerMV. In Excalibur, A young knight embarks on a quest to ensure another successful harvest season for his home town, Marisacordia. He alone must journey outside the borders, an act forbidden by law since the town's birth. He is gifted several weapons and artifacts for the journey and the town prays to the Mariscordian gods to guide his every step. He soon learns the truth behind the seemingly eternal success of Mariscordia and is faced with a grave choice: appease the gods of Marisacordia or watch them burn it to the ground!"
+        }
+        // Add more projects as needed
+    ]
 }
