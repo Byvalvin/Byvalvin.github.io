@@ -89,24 +89,29 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
 }
+
 .project img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+    width: 100%; /* Make images responsive to container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    object-fit: cover; /* Cover entire container */
 }
 
 .project-images {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 200px; /* Fixed height for image container */
+    overflow: hidden; /* Hide overflow to prevent image stretching */
 }
 
 .project-images img {
     max-width: 100%; /* Ensure images take full width of their container */
-    max-height: 200px; /* Limit maximum height */
+    max-height: 100%; /* Limit maximum height to match container */
     height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px;
+    object-fit: cover; /* Cover entire container */
+    transition: transform 0.3s ease; /* Optional: Add transition effect */
 }
-
 
 .project-info {
     text-align: left;
@@ -115,6 +120,7 @@ main {
 .project-info h2 {
     margin-top: 0;
 }
+
 
 /*Project Details Styles*/
 #project-details {
