@@ -31,6 +31,6 @@
         {
             "name": "Edge Filter",
             "description": "An image filter that identifies and highlights images edges only.(Used to make my profile)"
-         },
+         }
     ]
 }
