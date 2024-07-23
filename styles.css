@@ -1,4 +1,4 @@
-/* Reset and General Styles */
+/* General Styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -30,9 +30,10 @@ main {
     padding: 20px;
 }
 
-.intro-section {
+.intro-section, .navigation-section, .contact-section {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px; /* Improved separation between sections */
 }
 
 .intro-content {
@@ -57,11 +58,6 @@ main {
     color: #555;
 }
 
-.navigation-section {
-    text-align: center;
-    margin-top: 20px;
-}
-
 .btn {
     display: inline-block;
     background-color: #007bff;
@@ -78,7 +74,7 @@ main {
 }
 
 /* Project Styles */
-.projects-container {
+.projects-container, .project-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -86,28 +82,24 @@ main {
     padding: 20px 0; /* Padding between rows */
 }
 
-.project {
+.project, .project-list li {
     flex: 1 1 30%; /* Responsive project width */
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
     transition: transform 0.3s ease; /* Optional: Add hover effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
 }
 
-.project:hover {
-    transform: translateY(-5px); /* Optional hover effect */
+.project:hover, .project-list li:hover {
+    transform: translateY(-5px); /* Hover effect */
 }
 
-.project img {
+.project img, .project-list li img {
     width: 100%; /* Make images responsive to container */
     height: auto; /* Maintain aspect ratio */
     display: block;
     object-fit: cover; /* Cover entire container */
-}
-
-.project-images {
-    height: 200px; /* Fixed height for image container */
-    overflow: hidden; /* Hide overflow to prevent image stretching */
 }
 
 .project-images img {
@@ -123,47 +115,6 @@ main {
 
 .project-info h2 {
     margin-top: 0;
-}
-
-/* Project List Styles */
-.project-list {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px; /* Gap between projects */
-    padding: 20px 0; /* Padding between rows */
-}
-
-.project-list li {
-    flex: 1 1 30%; /* Responsive project width */
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    transition: transform 0.3s ease; /* Optional: Add hover effect */
-    cursor: pointer; /* Change cursor to pointer on hover */
-}
-
-.project-list li:hover {
-    transform: translateY(-5px); /* Hover effect */
-}
-
-.project-list li:active {
-    transform: translateY(0); /* Remove hover effect on click */
-    transition: transform 0.1s ease; /* Smooth transition */
-}
-
-.project-list h2 {
-    color: #007bff;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.project-list p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
 }
 
 /* Contact Styles */
@@ -182,7 +133,7 @@ main {
     margin-bottom: 10px;
 }
 
-.contact-section p {
+.contact-section p, .contact-section ul {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #555;
@@ -209,7 +160,6 @@ main {
     font-weight: bold; /* Make Email and Phone labels bold */
 }
 
-/* Thank you message */
 .contact-section .thank-you {
     font-size: 1.2rem;
     color: #007bff;
