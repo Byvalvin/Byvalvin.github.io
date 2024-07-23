@@ -6,7 +6,7 @@
 }
 
 body, html {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font to 'Segoe UI' */
+    font-family: 'Roboto', sans-serif; /* Changed font to Roboto */
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -92,19 +92,19 @@ main {
     transition: transform 0.3s ease; /* Smooth transform animation */
 }
 
-.project img {
-    width: 100%; /* Make images responsive to container */
-    height: auto; /* Maintain aspect ratio */
-    display: block;
-    object-fit: cover; /* Cover entire container */
-}
-
 .project:hover {
     transform: scale(1.05); /* Scale up on hover */
 }
 
 .project:active {
     transform: scale(0.95); /* Scale down on click */
+}
+
+.project img {
+    width: 100%; /* Make images responsive to container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    object-fit: cover; /* Cover entire container */
 }
 
 .project-images {
@@ -217,6 +217,16 @@ main {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
+    cursor: pointer; /* Cursor pointer to indicate clickable */
+    transition: transform 0.3s ease; /* Smooth transform animation */
+}
+
+.project-list li:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.project-list li:active {
+    transform: scale(0.95); /* Scale down on click */
 }
 
 .project-list h2 {
@@ -340,4 +350,21 @@ footer {
 .nav-links li a.active {
     color: #007bff;
     font-weight: bold;
+}
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .project-list li {
+        width: 100%;
+    }
 }
