@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
             };
 
             // Display project details on the page
-            const projectDetailsContainer = document.getElementById('project-details');
+            const projectDetailsContainer = document.getElementById('other-project-details');
             projectDetailsContainer.innerHTML = generateProjectDetailsHTML(project);
         })
         .catch(error => console.error('Error loading project details:', error));
