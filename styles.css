@@ -6,7 +6,7 @@
 }
 
 body, html {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font to 'Segoe UI' */
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -88,6 +88,8 @@ main {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
+    cursor: pointer; /* Cursor pointer to indicate clickable */
+    transition: transform 0.3s ease; /* Smooth transform animation */
 }
 
 .project img {
@@ -95,6 +97,14 @@ main {
     height: auto; /* Maintain aspect ratio */
     display: block;
     object-fit: cover; /* Cover entire container */
+}
+
+.project:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.project:active {
+    transform: scale(0.95); /* Scale down on click */
 }
 
 .project-images {
@@ -122,7 +132,7 @@ main {
 }
 
 
-/*Project Details Styles*/
+/* Project Details Styles */
 #project-details {
     max-width: 800px;
     margin: 0 auto;
@@ -148,8 +158,6 @@ main {
     display: block;
 }
 
-
-
 #project-details video {
     width: 100%;
     height: auto;
@@ -158,8 +166,6 @@ main {
     margin: 0 auto 20px;
     aspect-ratio: 16 / 9; /* Example aspect ratio (16:9) */
 }
-
-
 
 #project-details ul {
     list-style-type: disc;
@@ -200,7 +206,7 @@ main {
     color: #007bff;
 }
 
-/*Other projects*/
+/* Other Projects */
 .project-list {
     list-style-type: none;
     padding: 0;
@@ -225,7 +231,7 @@ main {
     color: #555;
 }
 
-/*contact*/
+/* Contact */
 .contact-section {
     max-width: 800px;
     margin: 0 auto;
@@ -267,13 +273,12 @@ main {
 .contact-section ul li:first-child {
     font-weight: bold; /* Make Email and Phone labels bold */
 }
-/* Thank you message */
+
 .contact-section .thank-you {
     font-size: 1.2rem;
     color: #007bff;
     margin-top: 20px;
 }
-
 
 /* Footer Styles */
 footer {
