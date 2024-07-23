@@ -75,6 +75,46 @@ document.addEventListener('DOMContentLoaded', function() {
             bestFeatures: 'Cross-Platform and Cross-Device compatability. It was important that we make the app as accessible as possible to reach as many users as possible. The app is designed to work on many different phones(tested 4 year old phones), on both Android and iOS ecosystems and on mobile devices like tablets. Accessibility at its finest',
             rating: 4.4
         },
+        aranimal: {
+            title: 'ProQuest',
+            description: "ProQuest is a concept website created to help agents find the best team for their players and scouts find the best players for their teams. ProQuest does this by allowing the addition of players and teams to the site and an opportunity to showcase capabilities, talent and potential. The site is also designed to track the performance of both players and teams to provide users an estimate of their strengths. Users can also play around in the planner page, a page that allows testing and sharing of different formations, tactics and players.",
+            images: [],
+            videos: [],
+            technologies: {
+                'Visual Studio': 'IDE',
+                'Figma': 'Wireframing and Storyboarding',
+                'TailwindCSS': 'CSS and UI/UX design',
+                'Vite':'React development environment setup',
+                'React': 'Frontend, Business Logic, Connection to Backend',
+                'Express': 'Backend, Creating API endpoints to and from Database',
+                'MongoDB': 'Data Storage and Management',
+                'Javascript, JavascriptXML': 'Formal programming languages',
+                'Node':'Runtime Environment for frontend and backend',
+                'npm': 'Node and Package Management',
+                'Render': 'Serve/deploy internal Player, Team and Formation APIs',
+                'Netlify': 'Deploy Frontend for User access'
+                'GitHub': 'Version Control, Documentation and Task management.',
+            },
+            technologies: {
+                'Visual Studio': 'Integrated Development Environment (IDE) for coding',
+                'Figma': 'Wireframing, prototyping, and storyboarding',
+                'TailwindCSS': 'Utility-first CSS framework for styling and UI/UX design',
+                'Vite': 'Fast, modern build tool for React project setup',
+                'React': 'Frontend - JS library for building user interfaces and frontend logic',
+                'Express': 'Backend - Fast, unopinionated, minimalist web framework for Node.js',
+                'MongoDB': 'NoSQL database for data storage and management',
+                'Javascript': 'Formal programming language',
+                'Node': 'JS runtime environment for executing JS code outside a browser',
+                'npm': 'Package manager for Node.js, facilitating dependency management and project deployment',
+                'Render': 'Cloud platform for serving and deploying APIs',
+                'Netlify': 'Platform for deploying frontend applications and managing web projects',
+                'GitHub': 'Version control system for tracking changes in source code, along with project documentation and task management',
+            },
+            contributions: [
+                "This was a solo project"
+            ],
+            bestFeatures: 'There are quite a few features I am proud of; The multi-filtration system on the Players Page, The dynamic css that maintains excellent UI/UX across different screen sizes and devices, The randomly generated list of players on the home page. The best of them is the Planner Page. Users can have a lot of fun making their own concept teams with any formation they desire and share them with other users.'
+        },
         // project3: {
         //     title: 'Project 3 Title',
         //     description: 'Detailed description of Project 3.',
