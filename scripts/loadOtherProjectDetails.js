@@ -29,7 +29,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const generateProjectDetailsHTML = (project) => {
                 const projectImages = project.images.map(image => `<img src="projects/${projectId}/images/${image}" alt="${image}">`).join('');
                 const projectVideos = project.videos.map(video => `<video controls><source src="projects/${projectId}/videos/${video}" type="video/mp4"></video>`).join('');
+                
+                // Render the "Code" link if GitHub link exists
                 const githubLinkHTML = project.githubLink ? `<p><a href="${project.githubLink}" target="_blank">Code</a></p>` : '';
+
+                // Render the "Try it out" link if tryItOutLink exists
+                const tryItOutLinkHTML = project.tryItOutLink ? `<p><a href="${project.tryItOutLink}" target="_blank">Try it out</a></p>` : '';
 
                 return `
                     <h2>${project.name}</h2>
@@ -37,11 +42,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="project-images">${projectImages}</div>
                     <div class="project-videos">${projectVideos}</div>
                     ${githubLinkHTML}
+                    ${tryItOutLinkHTML}
                 `;
             };
 
             // Display project details on the page
-            const projectDetailsContainer = document.getElementById('other-project-details');
+            const projectDetailsContainer = document.getElementById('project-details');
             projectDetailsContainer.innerHTML = generateProjectDetailsHTML(project);
         })
         .catch(error => console.error('Error loading project details:', error));
