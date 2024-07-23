@@ -10,7 +10,6 @@ body, html {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    font-size: 16px; /* Base font size */
 }
 
 /* Header Styles */
@@ -32,8 +31,7 @@ main {
 
 .intro-section {
     text-align: center;
-    margin-top: 40px; /* Increased margin for better separation */
-    margin-bottom: 40px; /* Increased margin for better separation */
+    margin-top: 20px;
 }
 
 .intro-content {
@@ -47,20 +45,19 @@ main {
 
 .intro-content h2 {
     color: #007bff;
-    font-size: 2rem; /* Larger heading size for better hierarchy */
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
 .intro-content p {
-    font-size: 1.2rem; /* Increased paragraph font size */
+    font-size: 1.1rem;
     line-height: 1.8;
     color: #555;
 }
 
 .navigation-section {
     text-align: center;
-    margin-top: 40px; /* Increased margin for better separation */
-    margin-bottom: 40px; /* Increased margin for better separation */
+    margin-top: 20px;
 }
 
 .btn {
@@ -68,9 +65,9 @@ main {
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
-    padding: 12px 24px; /* Slightly increased padding for better touch target */
+    padding: 10px 20px;
     border-radius: 4px;
-    margin-top: 20px;
+    margin-top: 15px;
     transition: background-color 0.3s ease;
 }
 
@@ -94,15 +91,26 @@ main {
 }
 
 .project img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Make images responsive to container */
+    height: auto; /* Maintain aspect ratio */
     display: block;
-    object-fit: cover;
-    transition: transform 0.3s ease; /* Optional: Add transition effect */
+    object-fit: cover; /* Cover entire container */
 }
 
-.project:hover img {
-    transform: scale(1.05); /* Example hover effect */
+.project-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Fixed height for image container */
+    overflow: hidden; /* Hide overflow to prevent image stretching */
+}
+
+.project-images img {
+    max-width: 100%; /* Ensure images take full width of their container */
+    max-height: 100%; /* Limit maximum height to match container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover entire container */
+    transition: transform 0.3s ease; /* Optional: Add transition effect */
 }
 
 .project-info {
@@ -113,7 +121,8 @@ main {
     margin-top: 0;
 }
 
-/* Project Details Styles */
+
+/*Project Details Styles*/
 #project-details {
     max-width: 800px;
     margin: 0 auto;
@@ -139,6 +148,8 @@ main {
     display: block;
 }
 
+
+
 #project-details video {
     width: 100%;
     height: auto;
@@ -147,6 +158,8 @@ main {
     margin: 0 auto 20px;
     aspect-ratio: 16 / 9; /* Example aspect ratio (16:9) */
 }
+
+
 
 #project-details ul {
     list-style-type: disc;
@@ -187,7 +200,7 @@ main {
     color: #007bff;
 }
 
-/* Other Projects */
+/*Other projects*/
 .project-list {
     list-style-type: none;
     padding: 0;
@@ -212,7 +225,7 @@ main {
     color: #555;
 }
 
-/* Contact */
+/*contact*/
 .contact-section {
     max-width: 800px;
     margin: 0 auto;
@@ -254,19 +267,20 @@ main {
 .contact-section ul li:first-child {
     font-weight: bold; /* Make Email and Phone labels bold */
 }
-
+/* Thank you message */
 .contact-section .thank-you {
     font-size: 1.2rem;
     color: #007bff;
     margin-top: 20px;
 }
 
+
 /* Footer Styles */
 footer {
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 15px 20px;
     text-align: center;
-    margin-top: 40px; /* Increased margin for better separation */
+    margin-top: 20px;
 }
 
 /* Navbar Styles */
@@ -276,7 +290,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -321,11 +335,4 @@ footer {
 .nav-links li a.active {
     color: #007bff;
     font-weight: bold;
-}
-
-/* Media Query for Responsive Design */
-@media only screen and (max-width: 768px) {
-    .project {
-        width: 100%; /* Full width for projects on smaller screens */
-    }
 }
