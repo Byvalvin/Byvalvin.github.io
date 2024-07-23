@@ -14,6 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     <h2>${project.name}</h2>
                     <p>${project.description}</p>
                 `;
+                // Add a click event listener to navigate to project details page
+                li.addEventListener('click', () => {
+                    window.location.href = project.otherDetailsPage; // Navigate to project details page
+                });
                 projectList.appendChild(li);
             });
         })
