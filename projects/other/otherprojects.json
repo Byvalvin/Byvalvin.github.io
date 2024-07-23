@@ -3,7 +3,7 @@
         {
             "name": "StarCraft II Stalker Rush Bot",
             "description": "A bot made in C++ with a Protoss Stalker Rush Build. The bot has a win rate ~70 against the CheatMoney and CheatVision difficulties and ~45% against CheatInsane",
-            "images": ["stalker-bot-img1.jpg", "stalker-bot-img2.jpg"],
+            "images": [],
             "videos": [],
             "githubLink": "https://github.com/example/stalker-rush-bot",
             "otherDetailsPage": "other-project-details.html?id=stalker-bot"
@@ -11,7 +11,7 @@
         {
             "name": "ED-like Text Editor",
             "description": "A recreation of the ed editor of the 60s; a line-by-line text and file editor. This editor supports a large subset of commands supported by the original ed.",
-            "images": ["ed-editor-img1.jpg"],
+            "images": [],
             "videos": [],
             "githubLink": "https://github.com/example/ed-editor",
             "otherDetailsPage": "other-project-details.html?id=ed-editor"
@@ -19,7 +19,7 @@
         {
             "name": "Text Klondike",
             "description": "Klondike, but as a text-based game. Adds an extra layer of difficulty in that the table isn't always shown. You will have to remember where you placed your cards!",
-            "images": ["text-klondike-img1.jpg"],
+            "images": [],
             "videos": [],
             "githubLink": "https://github.com/example/text-klondike",
             "otherDetailsPage": "other-project-details.html?id=text-klondike"
@@ -27,15 +27,15 @@
         {
             "name": "Sanctuary",
             "description": "An action stealth game made with Javascript and RPG MakerMV. Sanctuary tells the story of a far future in space when Earth is no more. A single spaceship, The Sanctuary, is sent out in hopes of preservation of beauty and life. In this future, a need for lab assistants and companionship leads a brilliant scientist and her team to use old texts and stories to build cat-like androids to help them maintain the ship. As it turns out, their is more life on the ship than the passengers had thought.",
-            "images": ["sanctuary-img1.jpg", "sanctuary-img2.jpg"],
-            "videos": ["sanctuary-video1.mp4"],
+            "images": [],
+            "videos": [],
             "githubLink": "https://github.com/example/sanctuary-game",
             "otherDetailsPage": "other-project-details.html?id=sanctuary-game"
         },
         {
             "name": "Excalibur",
             "description": "A short RPG made with Javascript and RPG MakerMV. In Excalibur, A young knight embarks on a quest to ensure another successful harvest season for his home town, Marisacordia. He alone must journey outside the borders, an act forbidden by law since the town's birth. He is gifted several weapons and artifacts for the journey and the town prays to the Mariscordian gods to guide his every step. He soon learns the truth behind the seemingly eternal success of Mariscordia and is faced with a grave choice: appease the gods of Marisacordia or watch them burn it to the ground!",
-            "images": ["excalibur-img1.jpg", "excalibur-img2.jpg"],
+            "images": [],
             "videos": [],
             "githubLink": "https://github.com/example/excalibur-game",
             "otherDetailsPage": "other-project-details.html?id=excalibur-game"
@@ -51,7 +51,7 @@
         {
             "name": "Self Driving Car Simulator",
             "description": "Uses neural networks to train and test self-driving cars in a Udacity-based Car simulator. Pytorch used to code the neural networks",
-            "images": ["self-driving-car-img1.jpg"],
+            "images": [],
             "videos": [],
             "githubLink": "https://github.com/example/self-driving-car-simulator",
             "otherDetailsPage": "other-project-details.html?id=self-driving-car"
@@ -59,7 +59,7 @@
         {
             "name": "Edge Filter",
             "description": "An image filter that identifies and highlights image edges only. (Used to make my profile)",
-            "images": ["edge-filter-img1.jpg"],
+            "images": [],
             "videos": [],
             "githubLink": "https://github.com/example/edge-filter",
             "otherDetailsPage": "other-project-details.html?id=edge-filter"
