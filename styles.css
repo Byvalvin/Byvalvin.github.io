@@ -6,10 +6,11 @@
 }
 
 body, html {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font to Segoe UI */
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f2f2f2; /* Light gray background */
 }
 
 /* Header Styles */
@@ -35,8 +36,9 @@ main {
 }
 
 .intro-content {
-    max-width: 800px;
+    max-width: 100%; /* Responsive max width */
     margin: 0 auto;
+    padding: 0 20px; /* Padding for smaller screens */
 }
 
 .intro-content section {
@@ -80,14 +82,20 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 20px; /* Gap between projects */
+    padding: 20px 0; /* Padding between rows */
 }
 
 .project {
-    width: 30%;
-    margin-bottom: 30px;
+    flex: 1 1 30%; /* Responsive project width */
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
+    transition: transform 0.3s ease; /* Optional: Add hover effect */
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Optional hover effect */
 }
 
 .project img {
@@ -98,9 +106,6 @@ main {
 }
 
 .project-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 200px; /* Fixed height for image container */
     overflow: hidden; /* Hide overflow to prevent image stretching */
 }
@@ -110,7 +115,6 @@ main {
     max-height: 100%; /* Limit maximum height to match container */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Cover entire container */
-    transition: transform 0.3s ease; /* Optional: Add transition effect */
 }
 
 .project-info {
@@ -121,96 +125,33 @@ main {
     margin-top: 0;
 }
 
-
-/*Project Details Styles*/
-#project-details {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-#project-details h2 {
-    color: #007bff;
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-#project-details p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-#project-details img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    display: block;
-}
-
-
-
-#project-details video {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    display: block;
-    margin: 0 auto 20px;
-    aspect-ratio: 16 / 9; /* Example aspect ratio (16:9) */
-}
-
-
-
-#project-details ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-#project-details ul li {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
-}
-
-#project-details h3 {
-    color: #007bff;
-    font-size: 1.5rem;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.project-details h3.technologies-title {
-    color: #555;
-}
-
-.project-details ul.technologies-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.project-details ul.technologies-list li {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #777;
-    margin-bottom: 8px;
-}
-
-.project-details ul.technologies-list li strong {
-    color: #007bff;
-}
-
-/*Other projects*/
+/* Project List Styles */
 .project-list {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Gap between projects */
+    padding: 20px 0; /* Padding between rows */
 }
 
 .project-list li {
-    margin-bottom: 20px;
+    flex: 1 1 30%; /* Responsive project width */
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
+    transition: transform 0.3s ease; /* Optional: Add hover effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.project-list li:hover {
+    transform: translateY(-5px); /* Hover effect */
+}
+
+.project-list li:active {
+    transform: translateY(0); /* Remove hover effect on click */
+    transition: transform 0.1s ease; /* Smooth transition */
 }
 
 .project-list h2 {
@@ -225,9 +166,9 @@ main {
     color: #555;
 }
 
-/*contact*/
+/* Contact Styles */
 .contact-section {
-    max-width: 800px;
+    max-width: 100%; /* Responsive max width */
     margin: 0 auto;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -267,13 +208,13 @@ main {
 .contact-section ul li:first-child {
     font-weight: bold; /* Make Email and Phone labels bold */
 }
+
 /* Thank you message */
 .contact-section .thank-you {
     font-size: 1.2rem;
     color: #007bff;
     margin-top: 20px;
 }
-
 
 /* Footer Styles */
 footer {
@@ -313,7 +254,7 @@ footer {
     list-style-type: none;
     display: flex;
     gap: 20px;
-    overflow-x: auto;
+    overflow-x: auto; /* Allow horizontal scrolling */
     margin-right: 20px;
 }
 
