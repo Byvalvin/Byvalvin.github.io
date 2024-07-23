@@ -53,7 +53,7 @@
             "description": "Uses neural networks to train and test self-driving cars in a Udacity-based Car simulator. Pytorch used to code the neural networks",
             "images": [],
             "videos": [],
-            "githubLink": ,
+            "githubLink": undefined ,
             "otherDetailsPage": "other-project-details.html?id=self-driving-car"
         },
         {
