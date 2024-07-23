@@ -241,6 +241,73 @@ main {
     color: #555;
 }
 
+/*other project details*/
+/* Project Details Styles */
+#other-project-details {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#other-project-details h2 {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#other-project-details p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#other-project-details .project-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#other-project-details .project-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+#other-project-details .project-videos {
+    margin-top: 20px;
+}
+
+#other-project-details .project-videos video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    aspect-ratio: 16 / 9;
+}
+
+#other-project-details .project-links {
+    margin-top: 20px;
+}
+
+#other-project-details .project-links a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#other-project-details .project-links a:hover {
+    background-color: #0056b3;
+}
+
 /* Contact */
 .contact-section {
     max-width: 800px;
@@ -366,5 +433,9 @@ footer {
 
     .project-list li {
         width: 100%;
+    }
+
+    #other-project-details .project-images {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 }
