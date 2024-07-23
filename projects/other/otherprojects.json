@@ -29,7 +29,7 @@
             "description": "An action stealth game made with Javascript and RPG MakerMV. Sanctuary tells the story of a far future in space when Earth is no more. A single spaceship, The Sanctuary, is sent out in hopes of preservation of beauty and life. In this future, a need for lab assistants and companionship leads a brilliant scientist and her team to use old texts and stories to build cat-like androids to help them maintain the ship. As it turns out, their is more life on the ship than the passengers had thought.",
             "images": [],
             "videos": [],
-            "githubLink": "https://github.com/example/sanctuary-game",
+            "githubLink": "https://github.com/Byvalvin/Sanctuary",
             "otherDetailsPage": "other-project-details.html?id=sanctuary-game"
         },
         {
@@ -53,7 +53,7 @@
             "description": "Uses neural networks to train and test self-driving cars in a Udacity-based Car simulator. Pytorch used to code the neural networks",
             "images": [],
             "videos": [],
-            "githubLink": undefined ,
+            "githubLink": "https://github.com/Byvalvin/SelfDrivingCarSimulator",
             "otherDetailsPage": "other-project-details.html?id=self-driving-car"
         },
         {
