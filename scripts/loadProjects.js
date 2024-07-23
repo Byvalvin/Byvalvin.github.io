@@ -16,6 +16,13 @@ document.addEventListener('DOMContentLoaded', function() {
             images: ['aranimal2.jpg'],
             detailsPage: 'project-details.html?id=aranimal'
         },
+        {
+            id: 'proquest',
+            title: 'ProQuest',
+            description: 'A site for Agents and Scout to find the best teams for their players and the best players for their teams.',
+            images: [],
+            detailsPage: 'project-details.html?id=proquest'
+        }
         // Add more projects as needed
     ];
 
