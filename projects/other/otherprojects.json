@@ -5,7 +5,7 @@
             "description": "A bot made in C++ with a Protoss Stalker Rush Build. The bot has a win rate ~70 against the CheatMoney and CheatVision difficulties and ~45% against CheatInsane",
             "images": [],
             "videos": [],
-            "githubLink": "https://github.com/example/stalker-rush-bot",
+            "githubLink": "https://github.com/Byvalvin/StarCraftIIBot-cpp",
             "otherDetailsPage": "other-project-details.html?id=stalker-bot"
         },
         {
@@ -13,7 +13,7 @@
             "description": "A recreation of the ed editor of the 60s; a line-by-line text and file editor. This editor supports a large subset of commands supported by the original ed.",
             "images": [],
             "videos": [],
-            "githubLink": "https://github.com/example/ed-editor",
+            "githubLink": "https://github.com/Byvalvin/Editor",
             "otherDetailsPage": "other-project-details.html?id=ed-editor"
         },
         {
@@ -21,7 +21,7 @@
             "description": "Klondike, but as a text-based game. Adds an extra layer of difficulty in that the table isn't always shown. You will have to remember where you placed your cards!",
             "images": [],
             "videos": [],
-            "githubLink": "https://github.com/example/text-klondike",
+            "githubLink": "https://github.com/Byvalvin/Klondike",
             "otherDetailsPage": "other-project-details.html?id=text-klondike"
         },
         {
@@ -37,7 +37,7 @@
             "description": "A short RPG made with Javascript and RPG MakerMV. In Excalibur, A young knight embarks on a quest to ensure another successful harvest season for his home town, Marisacordia. He alone must journey outside the borders, an act forbidden by law since the town's birth. He is gifted several weapons and artifacts for the journey and the town prays to the Mariscordian gods to guide his every step. He soon learns the truth behind the seemingly eternal success of Mariscordia and is faced with a grave choice: appease the gods of Marisacordia or watch them burn it to the ground!",
             "images": [],
             "videos": [],
-            "githubLink": "https://github.com/example/excalibur-game",
+            "githubLink": "https://github.com/Byvalvin/Excalibur",
             "otherDetailsPage": "other-project-details.html?id=excalibur-game"
         },
         {
@@ -53,7 +53,7 @@
             "description": "Uses neural networks to train and test self-driving cars in a Udacity-based Car simulator. Pytorch used to code the neural networks",
             "images": [],
             "videos": [],
-            "githubLink": "https://github.com/example/self-driving-car-simulator",
+            "githubLink": ,
             "otherDetailsPage": "other-project-details.html?id=self-driving-car"
         },
         {
