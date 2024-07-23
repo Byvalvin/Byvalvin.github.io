@@ -81,21 +81,6 @@ document.addEventListener('DOMContentLoaded', function() {
             images: [],
             videos: [],
             technologies: {
-                'Visual Studio': 'IDE',
-                'Figma': 'Wireframing and Storyboarding',
-                'TailwindCSS': 'CSS and UI/UX design',
-                'Vite':'React development environment setup',
-                'React': 'Frontend, Business Logic, Connection to Backend',
-                'Express': 'Backend, Creating API endpoints to and from Database',
-                'MongoDB': 'Data Storage and Management',
-                'Javascript, JavascriptXML': 'Formal programming languages',
-                'Node':'Runtime Environment for frontend and backend',
-                'npm': 'Node and Package Management',
-                'Render': 'Serve/deploy internal Player, Team and Formation APIs',
-                'Netlify': 'Deploy Frontend for User access'
-                'GitHub': 'Version Control, Documentation and Task management.',
-            },
-            technologies: {
                 'Visual Studio': 'Integrated Development Environment (IDE) for coding',
                 'Figma': 'Wireframing, prototyping, and storyboarding',
                 'TailwindCSS': 'Utility-first CSS framework for styling and UI/UX design',
