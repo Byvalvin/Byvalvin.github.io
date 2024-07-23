@@ -46,6 +46,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     <a href="${project.detailsPage}" class="btn">View Details</a>
                 </div>
             `;
+            // Add a click event listener to navigate to project details page
+            projectSection.addEventListener('click', () => {
+                window.location.href = project.detailsPage; // Navigate to project details page
+            });
 
             projectList.appendChild(projectSection);
         });
