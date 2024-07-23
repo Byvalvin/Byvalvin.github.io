@@ -1,4 +1,4 @@
-/* General Styles */
+/* Reset and General Styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,11 +6,11 @@
 }
 
 body, html {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font to Segoe UI */
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2; /* Light gray background */
+    font-size: 16px; /* Base font size */
 }
 
 /* Header Styles */
@@ -30,16 +30,15 @@ main {
     padding: 20px;
 }
 
-.intro-section, .navigation-section, .contact-section {
+.intro-section {
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px; /* Improved separation between sections */
+    margin-top: 40px; /* Increased margin for better separation */
+    margin-bottom: 40px; /* Increased margin for better separation */
 }
 
 .intro-content {
-    max-width: 100%; /* Responsive max width */
+    max-width: 800px;
     margin: 0 auto;
-    padding: 0 20px; /* Padding for smaller screens */
 }
 
 .intro-content section {
@@ -48,14 +47,20 @@ main {
 
 .intro-content h2 {
     color: #007bff;
-    font-size: 1.5rem;
+    font-size: 2rem; /* Larger heading size for better hierarchy */
     margin-bottom: 10px;
 }
 
 .intro-content p {
-    font-size: 1.1rem;
+    font-size: 1.2rem; /* Increased paragraph font size */
     line-height: 1.8;
     color: #555;
+}
+
+.navigation-section {
+    text-align: center;
+    margin-top: 40px; /* Increased margin for better separation */
+    margin-bottom: 40px; /* Increased margin for better separation */
 }
 
 .btn {
@@ -63,9 +68,9 @@ main {
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 12px 24px; /* Slightly increased padding for better touch target */
     border-radius: 4px;
-    margin-top: 15px;
+    margin-top: 20px;
     transition: background-color 0.3s ease;
 }
 
@@ -74,39 +79,30 @@ main {
 }
 
 /* Project Styles */
-.projects-container, .project-list {
+.projects-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 20px; /* Gap between projects */
-    padding: 20px 0; /* Padding between rows */
 }
 
-.project, .project-list li {
-    flex: 1 1 30%; /* Responsive project width */
+.project {
+    width: 30%;
+    margin-bottom: 30px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    transition: transform 0.3s ease; /* Optional: Add hover effect */
-    cursor: pointer; /* Change cursor to pointer on hover */
 }
 
-.project:hover, .project-list li:hover {
-    transform: translateY(-5px); /* Hover effect */
-}
-
-.project img, .project-list li img {
-    width: 100%; /* Make images responsive to container */
-    height: auto; /* Maintain aspect ratio */
+.project img {
+    width: 100%;
+    height: auto;
     display: block;
-    object-fit: cover; /* Cover entire container */
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Optional: Add transition effect */
 }
 
-.project-images img {
-    max-width: 100%; /* Ensure images take full width of their container */
-    max-height: 100%; /* Limit maximum height to match container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Cover entire container */
+.project:hover img {
+    transform: scale(1.05); /* Example hover effect */
 }
 
 .project-info {
@@ -117,9 +113,108 @@ main {
     margin-top: 0;
 }
 
-/* Contact Styles */
+/* Project Details Styles */
+#project-details {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#project-details h2 {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#project-details p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#project-details img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#project-details video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 20px;
+    aspect-ratio: 16 / 9; /* Example aspect ratio (16:9) */
+}
+
+#project-details ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#project-details ul li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+#project-details h3 {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.project-details h3.technologies-title {
+    color: #555;
+}
+
+.project-details ul.technologies-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-details ul.technologies-list li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.project-details ul.technologies-list li strong {
+    color: #007bff;
+}
+
+/* Other Projects */
+.project-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-list li {
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.project-list h2 {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-list p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Contact */
 .contact-section {
-    max-width: 100%; /* Responsive max width */
+    max-width: 800px;
     margin: 0 auto;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -133,7 +228,7 @@ main {
     margin-bottom: 10px;
 }
 
-.contact-section p, .contact-section ul {
+.contact-section p {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #555;
@@ -169,9 +264,9 @@ main {
 /* Footer Styles */
 footer {
     background-color: #f2f2f2;
-    padding: 15px 20px;
+    padding: 20px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px; /* Increased margin for better separation */
 }
 
 /* Navbar Styles */
@@ -181,7 +276,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 15px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -204,7 +299,7 @@ footer {
     list-style-type: none;
     display: flex;
     gap: 20px;
-    overflow-x: auto; /* Allow horizontal scrolling */
+    overflow-x: auto;
     margin-right: 20px;
 }
 
@@ -226,4 +321,11 @@ footer {
 .nav-links li a.active {
     color: #007bff;
     font-weight: bold;
+}
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .project {
+        width: 100%; /* Full width for projects on smaller screens */
+    }
 }
