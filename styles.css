@@ -424,6 +424,8 @@ body, html {
     text-align: center;
     margin-top: 40px; /* Increased margin-top */
     color: #fff; /* White text */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .custom-contact-section h1 {
@@ -464,7 +466,6 @@ body, html {
     margin-top: 20px;
     color: #444; /* Dark gray text */
 }
-
 
 /* Footer Styles */
 footer {
