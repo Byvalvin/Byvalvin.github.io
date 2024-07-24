@@ -59,7 +59,7 @@ body, html {
 
 /* Header (Hero) Styles */
 .hero {
-    background-color: #007bff;
+    background-color: #dc3545;
     color: #fff;
     padding: 100px 20px;
     text-align: center;
@@ -93,7 +93,7 @@ body, html {
 
 /* Main Content Styles */
 .main {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -102,7 +102,7 @@ body, html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 20px;
+    gap: 30px;
     margin-top: 40px;
 }
 
@@ -116,7 +116,7 @@ body, html {
 }
 
 .about-card h2 {
-    color: #dc3545;
+    color: #007bff;
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
@@ -126,9 +126,45 @@ body, html {
     line-height: 1.6;
     color: #555;
 }
+
+
 .navigation-section {
     text-align: center;
     margin-top: 20px;
+}
+
+/* Contact */
+.contact-section {
+    background-color: #007bff;
+    padding: 50px 30px;
+    text-align: center;
+    margin-top: 40px; /* Increased margin-top */
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-section .btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section .btn:hover {
+    background-color: #218838;
 }
 
 .btn {
@@ -145,6 +181,7 @@ body, html {
 .btn:hover {
     background-color: #0056b3;
 }
+
 
 /* Project Styles */
 .projects-container {
@@ -379,38 +416,7 @@ body, html {
     background-color: #0056b3;
 }
 
-/* Contact */
-.contact-section {
-    background-color: #343a40;
-    padding: 40px 20px;
-    text-align: center;
-}
 
-.contact-section h2 {
-    font-size: 2.5rem;
-    color: #ffc107;
-    margin-bottom: 20px;
-}
-
-.contact-section p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.contact-section .btn {
-    background-color: #ffc107;
-    color: #343a40;
-    padding: 12px 24px;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.contact-section .btn:hover {
-    background-color: #e0a800;
-}
 
 /* Footer Styles */
 footer {
@@ -426,6 +432,14 @@ footer {
 /* Media Queries for Responsive Design */
 
 @media only screen and (max-width: 768px) {
+    .about-section {
+        gap: 20px; /* Adjusted gap for smaller screens */
+    }
+
+    .contact-section {
+        padding: 40px 20px; /* Adjusted padding */
+    }
+    
     .projects-container {
         flex-direction: column;
         align-items: center;
