@@ -7,50 +7,60 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav id="navbar-placeholder"></nav> <!-- Placeholder for navbar -->
-        <h1>Hello and Welcome To My Portofolio!</h1>
+    <!-- Navbar -->
+    <div class="navbar-container" id="navbar-placeholder"></div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Hello and Welcome To My Portfolio!</h1>
+            <p>I'm a passionate and dedicated software designer with expertise in web development, app design, and machine learning.</p>
+            <a href="projects.html" class="btn">View My Projects</a>
+        </div>
     </header>
 
-    <main>
-        <section class="intro-section">
-            <div class="intro-content">
-                <section>
-                    <h2>Who Am I?</h2>
-                    <p>
-                        I'm a passionate and dedicated software designer with a strong background in developing, testing, and deploying innovative software solutions.
-                        With four+ years of experience, I have honed my skills in app and web development, built a solid understanding of machine learning techniques and methods and thrive in creating correct, clean and optimised code.
-                        I often use React.js or Vue.js frontend development, Django, Flask, or FastAPI for backend development and NoSQL database management systems like Firebase or MongoDB.
-                        However, I am no stranger to SQL "RDBMS" like SQLite and PostgreSQL.                       
-                    </p>
-                </section>
-                <section>
-                    <h2>What I Do?</h2>
-                    <p>
-                        I specialize in systems design, web design, app design and the application of machine learning models. My technical proficiency is complemented by strong analytical and problem-solving abilities,
-                        allowing me to deliver robust and efficient software solutions.
-                    </p>
-                </section>
-                <section>
-                    <h2>Why Hire Me?</h2>
-                    <p>
-                        I bring a unique blend of creativity and technical expertise to every project I undertake. As a team player with strong communication skills,
-                        I thrive in collaborative environments and excel in translating client requirements into scalable and user-friendly software solutions.
-                    </p>
-                </section>
+    <!-- Main Content -->
+    <main class="main">
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="about-card">
+                <h2>Who Am I?</h2>
+                <p>
+                    I'm a passionate and dedicated software designer with a strong background in developing, testing, and deploying innovative software solutions.
+                    With over four years of experience, I specialize in frontend development using React.js and Vue.js, backend development with Django, Flask, and FastAPI, and I'm adept at managing NoSQL and SQL databases.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h2>What I Do?</h2>
+                <p>
+                    I specialize in systems design, web design, app design, and the application of machine learning models. My technical proficiency is complemented by strong analytical and problem-solving abilities,
+                    allowing me to deliver robust and efficient software solutions.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h2>Why Hire Me?</h2>
+                <p>
+                    I bring a unique blend of creativity and technical expertise to every project I undertake. As a team player with strong communication skills,
+                    I thrive in collaborative environments and excel in translating client requirements into scalable and user-friendly software solutions.
+                </p>
             </div>
         </section>
 
-        <section class="navigation-section">
-            <a href="https://github.com/Byvalvin" target="_blank" class="btn">Visit My GitHub</a>
-            <a href="projects.html" class="btn">View My Projects</a>
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="contact-content">
+                <h2>Contact Me</h2>
+                <p>If you have any inquiries or would like to discuss a project, feel free to get in touch!</p>
+                <a href="contact.html" class="btn">Contact Me</a>
+            </div>
         </section>
     </main>
 
-    
-    <footer id="footer-placeholder"></footer>
-    
+    <!-- Footer -->
+    <div class="footer-container" id="footer-placeholder"></div>
 
-    <script src="scripts/placeHolders.js"></script> <!-- Load JavaScript file for navbar inclusion -->
+    <script src="scripts/placeHolders.js"></script> <!-- Load JavaScript file for navbar and footer inclusion -->
 </body>
 </html>
