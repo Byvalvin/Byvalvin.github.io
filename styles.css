@@ -15,7 +15,7 @@ body, html {
 
 /* Navbar Styles */
 .navbar {
-    background-color: #333;
+    background-color: #333a40;
     color: #fff;
     padding: 10px 20px;
     display: flex;
@@ -54,12 +54,12 @@ body, html {
 
 .nav-links li a:hover,
 .nav-links li a:focus {
-    color: #007bff;
+    color: #28a745;
 }
 
 /* Header (Hero) Styles */
 .hero {
-    background-color: #6c757d;
+    background-color: #007bff;
     color: #fff;
     padding: 100px 20px;
     text-align: center;
@@ -78,7 +78,7 @@ body, html {
 
 .hero .btn {
     display: inline-block;
-    background-color: #fff;
+    background-color: #28a745;
     color: #007bff;
     text-decoration: none;
     padding: 12px 24px;
@@ -87,7 +87,7 @@ body, html {
 }
 
 .hero .btn:hover {
-    background-color: #0056b3;
+    background-color: #218838;
     color: #fff;
 }
 
@@ -116,7 +116,7 @@ body, html {
 }
 
 .about-card h2 {
-    color: #007bff;
+    color: #dc3545;
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
@@ -381,27 +381,27 @@ body, html {
 
 /* Contact */
 .contact-section {
-    background-color: #f2f2f2;
+    background-color: #343a40;
     padding: 40px 20px;
     text-align: center;
 }
 
 .contact-section h2 {
     font-size: 2.5rem;
-    color: #007bff;
+    color: #ffc107;
     margin-bottom: 20px;
 }
 
 .contact-section p {
     font-size: 1.2rem;
     line-height: 1.8;
-    color: #555;
+    color: #fff;
     margin-bottom: 20px;
 }
 
 .contact-section .btn {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #ffc107;
+    color: #343a40;
     padding: 12px 24px;
     border-radius: 4px;
     text-decoration: none;
@@ -409,12 +409,12 @@ body, html {
 }
 
 .contact-section .btn:hover {
-    background-color: #0056b3;
+    background-color: #e0a800;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #333;
+    background-color: #343a40;
     color: #fff;
     padding: 15px 20px;
     text-align: center;
