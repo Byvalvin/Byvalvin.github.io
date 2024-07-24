@@ -458,3 +458,10 @@ footer {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 }
+
+/*
+Color Scheme: Introduced a new color scheme with:
+
+Backgrounds: Light gray, dark blue-gray, green, purple.
+Text: Dark gray for better readability.
+Buttons: Light blue with hover effect.*/
