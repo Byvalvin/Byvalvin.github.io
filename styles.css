@@ -14,6 +14,14 @@ body, html {
     color: #444; /* Dark gray text */
 }
 
+/* Main Content Styles */
+.main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*NAVBAR*/
 /* Navbar Styles */
 .navbar {
     background-color: #2c3e50;
@@ -58,6 +66,7 @@ body, html {
     color: #3498db;
 }
 
+/*HOMEPAGE*/
 /* Header (Hero) Styles */
 .hero {
     background-color: #27ae60;
@@ -92,12 +101,6 @@ body, html {
     color: #fff;
 }
 
-/* Main Content Styles */
-.main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
 .about-section {
     display: flex;
@@ -183,7 +186,7 @@ body, html {
     background-color: #218838;
 }
 
-
+/*PROJECTS PAGE*/
 /* Project Styles */
 .projects-container {
     display: flex;
@@ -248,7 +251,42 @@ body, html {
     margin-bottom: 10px;    
 }
 
+/* Other Projects */
+.project-list {
+    list-style-type: none;
+    padding: 0;
+}
 
+.project-list li {
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    cursor: pointer; /* Cursor pointer to indicate clickable */
+    transition: transform 0.3s ease; /* Smooth transform animation */
+}
+
+.project-list li:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.project-list li:active {
+    transform: scale(0.95); /* Scale down on click */
+}
+
+.project-list h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-list p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/*PROJECT DETAIL PAGE(s)*/
 /* Project Details Styles */
 #project-details {
     max-width: 800px;
@@ -323,40 +361,7 @@ body, html {
     color: #007bff;
 }
 
-/* Other Projects */
-.project-list {
-    list-style-type: none;
-    padding: 0;
-}
 
-.project-list li {
-    margin-bottom: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    cursor: pointer; /* Cursor pointer to indicate clickable */
-    transition: transform 0.3s ease; /* Smooth transform animation */
-}
-
-.project-list li:hover {
-    transform: scale(1.05); /* Scale up on hover */
-}
-
-.project-list li:active {
-    transform: scale(0.95); /* Scale down on click */
-}
-
-.project-list h2 {
-    color: #007bff;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.project-list p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
-}
 
 /*other project details*/
 /* Project Details Styles */
