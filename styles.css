@@ -232,11 +232,11 @@ footer {
     transition: transform 0.3s ease; /* Smooth transform animation */
 }
 .project:hover {
-    transform: scale(1.05); /* Scale up on hover */
+    transform: scale(1.02); /* Scale up on hover */
 }
 
 .project:active {
-    transform: scale(0.95); /* Scale down on click */
+    transform: scale(0.98); /* Scale down on click */
 }
 .project img {
     width: 100%; /* Make images responsive to container */
@@ -339,7 +339,8 @@ footer {
 /* projects list*/
 .other-project-list {
     list-style-type: none;
-    padding: 0;
+    padding: 20px;
+    margin: 20px;
 }
 .other-project-list li {
     margin-bottom: 20px;
