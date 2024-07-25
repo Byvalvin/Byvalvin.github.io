@@ -26,11 +26,13 @@
         <section class="about-section">
             <div class="about-card">
                 <i class="fas fa-user about-icon"></i>
-                <h2>Who Am I?</h2>
-                <p>
-                    I'm a passionate and dedicated software designer with a strong background in developing, testing, and deploying innovative software solutions.
-                    With over four years of experience, I specialize in frontend development using React.js and Vue.js, backend development with Django, Flask, and FastAPI, and I'm adept at managing NoSQL and SQL databases.
-                </p>
+                <div class="card-title">Who Am I?</div>
+                <div class="card-content">
+                    <p>
+                        I'm a passionate and dedicated software designer with a strong background in developing, testing, and deploying innovative software solutions.
+                        With over four years of experience, I specialize in frontend development using React.js and Vue.js, backend development with Django, Flask, and FastAPI, and I'm adept at managing NoSQL and SQL databases.
+                    </p>
+                </div>
             </div>
         
             <div class="about-card">
@@ -51,6 +53,11 @@
                 </p>
             </div>
         </section>
+        <script>
+            function toggleCard(card) {
+                card.classList.toggle('expanded');
+            }
+        </script>
 
 
         <!-- Contact Section -->
