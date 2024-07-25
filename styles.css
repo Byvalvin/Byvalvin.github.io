@@ -93,6 +93,8 @@ footer {
 
 
 
+
+
 /*3) PAGES*/
 /*HOMEPAGE*/
 /* Header (Hero) Styles */
@@ -111,7 +113,14 @@ footer {
     line-height: 1.8;
     margin-bottom: 20px;
 }
-.hero .btn {
+/* HERO SECTION BUTTON GROUP */
+.hero .btn-group {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    justify-content: center; /* Center buttons horizontally */
+    margin-top: 20px; /* Space above buttons */
+}
+.hero .btn-group .projects-btn {
     display: inline-block;
     background-color: #3498ab;
     color: #fff;
@@ -120,8 +129,14 @@ footer {
     border-radius: 4px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-.hero .btn:hover {
+.hero .btn-group .projects-btn:hover {
     background-color: #2980b9;
+}
+.hero .btn-group .github-btn {
+    background-color: #333; /* GitHub button color */
+}
+.hero .btn-group. github-btn:hover {
+    background-color: #000; /* Hover color for GitHub button */
 }
 
 /*About section(s)*/
