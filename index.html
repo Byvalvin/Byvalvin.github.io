@@ -59,10 +59,15 @@
         </section>
         <script>
             function toggleCard(card) {
+                const cards = document.querySelectorAll('.about-card');
+                cards.forEach(c => {
+                    if (c !== card) {
+                        c.classList.remove('expanded');
+                    }
+                });
                 card.classList.toggle('expanded');
             }
         </script>
-
 
         <!-- Contact Section -->
         <section class="contact-section">
