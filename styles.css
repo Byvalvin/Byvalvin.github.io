@@ -140,8 +140,10 @@ footer {
     margin-bottom: 20px;
     border-radius: 12px;
     flex: 1 1 calc(33.33% - 20px); /* Flexbox to handle width */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    overflow: hidden; /* Prevent content overflow */
+    position: relative; /* For title positioning */
+    min-width: 300px; /* Ensure minimum width */
     max-width: 350px; /* Limit card width */
 }
 .about-card h2 {
@@ -158,6 +160,31 @@ footer {
     transform: translateY(-10px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+
+.about-card .card-title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.8rem;
+    color: #e74c3c;
+    transition: opacity 0.3s ease;
+}
+.about-card .card-title.hidden {
+    opacity: 0; /* Hide title on hover */
+}
+.about-card .card-content {
+    opacity: 0; /* Hide content by default */
+    transition: opacity 0.3s ease;
+    padding-top: 60px; /* Space for title */
+}
+.about-card:hover .card-content {
+    opacity: 1; /* Show content on hover */
+}
+.about-card:hover .card-title {
+    opacity: 0; /* Hide title on hover */
+}
+
+
 /* About Card Icons */
 .about-icon {
     font-size: 3rem; /* Adjust size as needed */
@@ -467,8 +494,13 @@ footer {
     }
 
     .about-card {
-        max-width: 100%; /* Full width on smaller screens */
+        flex: 1 1 100%; /* Full width on smaller screens */
     }
+
+    .about-card:hover {
+        flex: 1 1 100%; /* Maintain full width on hover */
+    }
+
     .about-section {
         gap: 20px; /* Adjusted gap for smaller screens */
         padding: 10px; /* Adjust padding for smaller screens */
