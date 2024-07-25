@@ -132,6 +132,7 @@ footer {
     gap: 30px;
     margin-top: 40px;
     padding: 20px; /* Added padding for better spacing */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
 }
 .about-card {
     background-color: #fff;
@@ -139,7 +140,7 @@ footer {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 12px;
-    flex: 1 1 calc(33.33% - 20px); /* Flexbox to handle width */
+     flex: 0 0 auto; /* Prevent cards from shrinking */
     transition: all 0.3s ease; /* Smooth transition for hover effect */
     overflow: hidden; /* Prevent content overflow */
     position: relative; /* For title positioning */
@@ -494,6 +495,7 @@ footer {
     .about-section {
         gap: 20px; /* Adjusted gap for smaller screens */
         padding: 10px; /* Adjust padding for smaller screens */
+        flex-direction: column; /* Stack cards vertically on small screens */
     }
 
     .contact-section {
