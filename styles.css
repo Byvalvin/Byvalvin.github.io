@@ -131,15 +131,18 @@ footer {
     justify-content: space-around;
     gap: 30px;
     margin-top: 40px;
+    padding: 20px; /* Added padding for better spacing */
 }
 .about-card {
     background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 8px;
+    border-radius: 12px;
     flex: 1 1 calc(33.33% - 20px); /* Flexbox to handle width */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 350px; /* Limit card width */
 }
 .about-card h2 {
     color: #e74c3c;
@@ -154,6 +157,12 @@ footer {
 .about-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+/* About Card Icons */
+.about-icon {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 15px;
 }
 
 /* home-contact */
@@ -455,9 +464,13 @@ footer {
     .hero p {
         font-size: 1rem;
     }
-    
+
+    .about-card {
+        max-width: 100%; /* Full width on smaller screens */
+    }
     .about-section {
         gap: 20px; /* Adjusted gap for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
     }
 
     .contact-section {
@@ -503,7 +516,7 @@ footer {
     }
 
     .about-card h2 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     .about-card p {
