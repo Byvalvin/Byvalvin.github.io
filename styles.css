@@ -272,7 +272,7 @@ footer {
     transform: scale(0.95); /* Scale down on click */
 }
 .project-list h2 {
-    color: #fff;
+    color: #007bff;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
