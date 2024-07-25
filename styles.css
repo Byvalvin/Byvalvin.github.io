@@ -160,10 +160,11 @@ footer {
 }
 /* About Card Icons */
 .about-icon {
-    width: 50px; /* Adjust size as needed */
-    height: auto;
+    font-size: 3rem; /* Adjust size as needed */
+    color: #e74c3c; /* Icon color */
     margin-bottom: 15px;
 }
+
 
 /* home-contact */
 .contact-section {
@@ -476,25 +477,9 @@ footer {
     .contact-section {
         padding: 40px 5%px; /* Adjusted padding */
     }
-    
-    .projects-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .project {
-        width: 100%;
-    }
-    .project-list li {
-        width: 100%;
-    }
-
-    #other-project-details .project-images {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    }
 }
-
 @media only screen and (max-width: 600px) {
-     .about-card {
+    .about-card {
         flex: 1 1 100%; /* Full width on smaller screens */
     }
     .about-card h2 {
@@ -504,8 +489,6 @@ footer {
         font-size: 1rem;
     }
 }
-
-
 @media only screen and (max-width: 480px) {
     .hero h1 {
         font-size: 1.5rem;
@@ -532,6 +515,23 @@ footer {
     }
 }
 
+
+@media only screen and (max-width: 768px){
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project {
+        width: 100%;
+    }
+    .project-list li {
+        width: 100%;
+    }
+
+    #other-project-details .project-images {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
 
 /*
 Color Scheme: Introduced a new color scheme with:
