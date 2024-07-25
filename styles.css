@@ -271,36 +271,6 @@ footer {
     margin-bottom: 10px;    
 }
 
-/* projects list*/
-.project-list {
-    list-style-type: none;
-    padding: 0;
-}
-.project-list li {
-    margin-bottom: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    cursor: pointer; /* Cursor pointer to indicate clickable */
-    transition: transform 0.3s ease; /* Smooth transform animation */
-}
-.project-list li:hover {
-    transform: scale(1.05); /* Scale up on hover */
-}
-.project-list li:active {
-    transform: scale(0.95); /* Scale down on click */
-}
-.project-list h2 {
-    color: #007bff;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-.project-list p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
-}
-
 /*PROJECT DETAIL PAGE(s)*/
 /* Project Details Styles */
 #project-details {
@@ -363,6 +333,37 @@ footer {
 }
 .project-details ul.technologies-list li strong {
     color: #007bff;
+}
+
+/*OTHER PROJECTS PAGE*/
+/* projects list*/
+.other-project-list {
+    list-style-type: none;
+    padding: 0;
+}
+.other-project-list li {
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    cursor: pointer; /* Cursor pointer to indicate clickable */
+    transition: transform 0.3s ease; /* Smooth transform animation */
+}
+.other-project-list li:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+.other-project-list li:active {
+    transform: scale(0.95); /* Scale down on click */
+}
+.other-project-list h2 {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.other-project-list p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
 }
 
 
@@ -548,7 +549,7 @@ footer {
     .project {
         width: 100%;
     }
-    .project-list li {
+    .other-project-list li {
         width: 100%;
     }
 
