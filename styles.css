@@ -145,6 +145,7 @@ footer {
     position: relative; /* For title positioning */
     min-width: 300px; /* Ensure minimum width */
     max-width: 350px; /* Limit card width */
+    cursor: pointer; /* Indicate clickable area */
 }
 .about-card h2 {
     color: #e74c3c;
