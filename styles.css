@@ -1,10 +1,10 @@
+/*1) GENERAL*/
 /* Reset and General Styles */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 body, html {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -21,6 +21,7 @@ body, html {
     padding: 20px;
 }
 
+/*2) COMPONENTS*/
 /*NAVBAR*/
 /* Navbar Styles */
 .navbar {
@@ -31,7 +32,6 @@ body, html {
     justify-content: space-between;
     align-items: center;
 }
-
 .navbar .logo-img {
     width: 40px;
     height: 40px;
@@ -39,14 +39,12 @@ body, html {
     object-fit: cover;
     margin-right: 10px;
 }
-
 .navbar .navbar-brand {
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
 }
-
 .nav-links {
     list-style-type: none;
     display: flex;
@@ -54,127 +52,28 @@ body, html {
     overflow-x: auto;
     margin-right: 20px;
 }
-
 .nav-links li a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
 .nav-links li a:hover,
 .nav-links li a:focus {
     color: #3498db;
 }
-
-/*HOMEPAGE*/
-/* Header (Hero) Styles */
-.hero {
-    background-color: #27ae60; /* Gradient background */
-    color: #fff;
-    padding: 100px 20px;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-.hero .btn {
-    display: inline-block;
-    background-color: #3498ab;
-    color: #fff;
-    text-decoration: none;
-    padding: 12px 24px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.hero .btn:hover {
-    background-color: #2980b9;
-    color: #fff;
-}
-
-
-.about-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.about-card {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    width: calc(33.33% - 20px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.about-card h2 {
-    color: #e74c3c;
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-.about-card p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
-}
-
-.about-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-
 .navigation-section {
     text-align: center;
     margin-top: 20px;
 }
 
-/* Contact */
-.contact-section {
-    background-color: #9b59b6;
-    padding: 50px 30px;
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 15px 20px;
     text-align: center;
-    margin-top: 40px; /* Increased margin-top */
-}
-
-.contact-section h2 {
-    font-size: 2.5rem;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.contact-section p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.contact-section .btn {
-    background-color: #3498db;
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.contact-section .btn:hover {
-    background-color: #2980b9;
+    margin-top: auto;
+    font-size: 0.9rem;
 }
 
 .btn {
@@ -192,6 +91,102 @@ body, html {
     background-color: #218838;
 }
 
+
+
+/*3) PAGES*/
+/*HOMEPAGE*/
+/* Header (Hero) Styles */
+.hero {
+    background-color: #27ae60; /* Gradient background */
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.hero .btn {
+    display: inline-block;
+    background-color: #3498ab;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.hero .btn:hover {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+/*About section(s)*/
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 40px;
+}
+.about-card {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: calc(33.33% - 20px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-card h2 {
+    color: #e74c3c;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.about-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+.about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* home-contact */
+.contact-section {
+    background-color: #9b59b6;
+    padding: 50px 30px;
+    text-align: center;
+    margin-top: 40px; /* Increased margin-top */
+}
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.contact-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.contact-section .btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.contact-section .btn:hover {
+    background-color: #2980b9;
+}
+
 /*PROJECTS PAGE*/
 /* Project Styles */
 .projects-container {
@@ -200,7 +195,6 @@ body, html {
     gap: 20px;
     justify-content: space-around;
 }
-
 .project {
     width: 30%;
     margin-bottom: 30px;
@@ -210,7 +204,6 @@ body, html {
     cursor: pointer; /* Cursor pointer to indicate clickable */
     transition: transform 0.3s ease; /* Smooth transform animation */
 }
-
 .project:hover {
     transform: scale(1.05); /* Scale up on hover */
 }
@@ -218,14 +211,12 @@ body, html {
 .project:active {
     transform: scale(0.95); /* Scale down on click */
 }
-
 .project img {
     width: 100%; /* Make images responsive to container */
     height: auto; /* Maintain aspect ratio */
     display: block;
     object-fit: cover; /* Cover entire container */
 }
-
 .project-images {
     display: flex;
     justify-content: center;
@@ -233,7 +224,6 @@ body, html {
     height: 200px; /* Fixed height for image container */
     overflow: hidden; /* Hide overflow to prevent image stretching */
 }
-
 .project-images img {
     max-width: 100%; /* Ensure images take full width of their container */
     max-height: 100%; /* Limit maximum height to match container */
@@ -241,15 +231,12 @@ body, html {
     object-fit: cover; /* Cover entire container */
     transition: transform 0.3s ease; /* Optional: Add transition effect */
 }
-
 .project-info {
     text-align: left;
 }
-
 .project-info h2 {
     margin-top: 0;
 }
-
 .project-info p {
     font-size: 1.1rem;
     line-height: 1.6;
@@ -257,12 +244,11 @@ body, html {
     margin-bottom: 10px;    
 }
 
-/* Other Projects */
+/* projects list*/
 .project-list {
     list-style-type: none;
     padding: 0;
 }
-
 .project-list li {
     margin-bottom: 20px;
     background-color: #fff;
@@ -271,21 +257,17 @@ body, html {
     cursor: pointer; /* Cursor pointer to indicate clickable */
     transition: transform 0.3s ease; /* Smooth transform animation */
 }
-
 .project-list li:hover {
     transform: scale(1.05); /* Scale up on hover */
 }
-
 .project-list li:active {
     transform: scale(0.95); /* Scale down on click */
 }
-
 .project-list h2 {
     color: #fff;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
-
 .project-list p {
     font-size: 1.1rem;
     line-height: 1.6;
@@ -298,27 +280,23 @@ body, html {
     max-width: 800px;
     margin: 0 auto;
 }
-
 #project-details h2 {
     color: #007bff;
     font-size: 2rem;
     margin-bottom: 10px;
 }
-
 #project-details p {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #555;
     margin-bottom: 20px;
 }
-
 #project-details img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
     display: block;
 }
-
 #project-details video {
     width: 100%;
     height: auto;
@@ -327,68 +305,58 @@ body, html {
     margin: 0 auto 20px;
     aspect-ratio: 16 / 9; /* Example aspect ratio (16:9) */
 }
-
 #project-details ul {
     list-style-type: disc;
     margin-left: 20px;
     margin-bottom: 20px;
 }
-
 #project-details ul li {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #555;
 }
-
 #project-details h3 {
     color: #007bff;
     font-size: 1.5rem;
     margin-top: 20px;
     margin-bottom: 10px;
 }
-
 .project-details h3.technologies-title {
     color: #555;
 }
-
 .project-details ul.technologies-list {
     list-style-type: none;
     padding: 0;
 }
-
 .project-details ul.technologies-list li {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #777;
     margin-bottom: 8px;
 }
-
 .project-details ul.technologies-list li strong {
     color: #007bff;
 }
 
 
 
-/*other project details*/
+/*OTHER PROJECT DETAILS PAGE*/
 /* Project Details Styles */
 #other-project-details {
     max-width: 800px;
     margin: 0 auto;
 }
-
 #other-project-details h2 {
     color: #007bff;
     font-size: 2rem;
     margin-bottom: 10px;
 }
-
 #other-project-details p {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #555;
     margin-bottom: 20px;
 }
-
 #other-project-details .project-images {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -396,18 +364,15 @@ body, html {
     justify-content: center;
     align-items: center;
 }
-
 #other-project-details .project-images img {
     width: 100%;
     height: auto;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
-
 #other-project-details .project-videos {
     margin-top: 20px;
 }
-
 #other-project-details .project-videos video {
     width: 100%;
     height: auto;
@@ -416,11 +381,9 @@ body, html {
     margin-bottom: 20px;
     aspect-ratio: 16 / 9;
 }
-
 #other-project-details .project-links {
     margin-top: 20px;
 }
-
 #other-project-details .project-links a {
     display: inline-block;
     background-color: #007bff;
@@ -431,11 +394,11 @@ body, html {
     margin-right: 10px;
     transition: background-color 0.3s ease;
 }
-
 #other-project-details .project-links a:hover {
     background-color: #0056b3;
 }
 
+/*CONTACT PAGE*/
 /* Add styles for the custom contact section */
 .custom-contact-section {
     background-color: #9b59b6; /* Purple background */
@@ -446,39 +409,32 @@ body, html {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .custom-contact-section h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
-
 .custom-contact-section p {
     font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 20px;
 }
-
 .custom-contact-section ul {
     list-style-type: none;
     margin-bottom: 20px;
 }
-
 .custom-contact-section ul li {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #ddd; /* Light gray text */
 }
-
 .custom-contact-section ul li a {
     color: #fff; /* White link color */
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
 .custom-contact-section ul li a:hover {
     color: #3498db; /* Light blue on hover */
 }
-
 .thank-you {
     font-size: 1.2rem;
     text-align: center;
@@ -486,32 +442,21 @@ body, html {
     color: #444; /* Dark gray text */
 }
 
-/* Footer Styles */
-footer {
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 15px 20px;
-    text-align: center;
-    margin-top: auto;
-    font-size: 0.9rem;
-}
 
 
-
+/*4) MEDIA QUERIES*/
 /* Media Queries for Responsive Design */
-
 @media only screen and (max-width: 768px) {
     .hero {
         padding: 50px 20px;
     }
-
     .hero h1 {
         font-size: 2rem;
     }
-
     .hero p {
         font-size: 1rem;
     }
+    
     .about-section {
         gap: 20px; /* Adjusted gap for smaller screens */
     }
@@ -524,11 +469,9 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-
     .project {
         width: 100%;
     }
-
     .project-list li {
         width: 100%;
     }
@@ -542,7 +485,6 @@ footer {
     .about-card h2 {
         font-size: 1.5rem;
     }
-
     .about-card p {
         font-size: 1rem;
     }
