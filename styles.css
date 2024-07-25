@@ -120,14 +120,16 @@ footer {
     justify-content: center; /* Center buttons horizontally */
     margin-top: 20px; /* Space above buttons */
 }
-.hero .btn-group .projects-btn {
+.hero .btn-group .btn{
     display: inline-block;
-    background-color: #3498ab;
     color: #fff;
     text-decoration: none;
     padding: 12px 24px;
     border-radius: 4px;
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+.hero .btn-group .projects-btn{
+    background-color: #3498ab;
 }
 .hero .btn-group .projects-btn:hover {
     background-color: #2980b9;
