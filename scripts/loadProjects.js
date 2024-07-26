@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             id: 'proquest',
             title: 'ProQuest',
             description: 'A site for Agents and Scout to find the best teams for their players and the best players for their teams.',
-            images: [],
+            images: ['proquest1.png'],
             detailsPage: 'project-details.html?id=proquest'
         }
         // Add more projects as needed
