@@ -485,12 +485,25 @@ footer {
     cursor: pointer;
     border-radius: 8px;
     margin-bottom: 5px;
+    position: relative;
 }
 
 .accordion-title .chevron {
-    margin-left: auto;
-    font-size: 1.5rem;
-    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; /* Width and height for the circular chevron */
+    height: 30px;
+    font-size: 1.2rem; /* Adjust font size if needed */
+    background-color: #fff; /* Background color for the circle */
+    color: #e74c3c; /* Chevron color */
+    border-radius: 50%; /* Makes the chevron circular */
+    transition: transform 0.3s, background-color 0.3s;
+    margin-left: auto; /* Aligns the chevron to the right */
+}
+
+.accordion-title .chevron:hover {
+    background-color: #f5f5f5; /* Hover effect */
 }
 
 .accordion-body {
@@ -500,6 +513,10 @@ footer {
     border-radius: 8px;
 }
 
+/* Rotate chevron when expanded */
+.accordion-body.show ~ .accordion-title .chevron {
+    transform: rotate(180deg);
+}
 .contribution-item {
     margin-bottom: 10px;
 }
