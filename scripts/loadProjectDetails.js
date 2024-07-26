@@ -1,8 +1,5 @@
 // loadProjectDetails.js
 
-// loadProjectDetails.js
-
-
 document.addEventListener('DOMContentLoaded', function() {
     console.log("woke");
 
@@ -115,8 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // rating: 4.3
         // }
         // Add more projects as needed
-    };    
-
+    };
     const projectDetailsContainer = document.getElementById('project-details');
 
     const createProjectDetails = () => {
