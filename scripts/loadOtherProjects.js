@@ -1,7 +1,7 @@
 // loadOtherProjects.js
 
 document.addEventListener('DOMContentLoaded', function() {
-    const projectList = document.getElementById('other-project-list');
+    const projectsList = document.getElementById('projects-list');
 
     // Fetch projects data from JSON file
     fetch('projects/other/otherprojects.json')
@@ -9,18 +9,20 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             // Iterate over projects and create list items
             data.projects.forEach(project => {
-                const li = document.createElement('li');
-                li.innerHTML = `
-                    <h2>${project.name}</h2>
-                    <p>${project.description}</p>
+                const div = document.createElement('div');
+                div.classList.add('project-card');
+                div.innerHTML = `
+                    <div class="project-card-header">
+                        <h2>${project.name}</h2>
+                        <p>${project.description}</p>
+                    </div>
                 `;
                 // Add a click event listener to navigate to project details page
-                li.addEventListener('click', () => {
+                div.addEventListener('click', () => {
                     window.location.href = project.otherDetailsPage; // Navigate to project details page
                 });
-                projectList.appendChild(li);
+                projectsList.appendChild(div);
             });
         })
         .catch(error => console.error('Error loading projects:', error));
 });
-
