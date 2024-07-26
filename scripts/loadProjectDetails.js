@@ -167,6 +167,18 @@ document.addEventListener('DOMContentLoaded', function() {
             <h3>Rating</h3>
             <p>${project.rating}</p>
         `;
+        // Add event listeners for accordion functionality
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const accordionBody = header.nextElementSibling;
+                if (accordionBody.style.display === 'block') {
+                    accordionBody.style.display = 'none';
+                } else {
+                    accordionBody.style.display = 'block';
+                }
+            });
+        });
     };
 
     createProjectDetails();
