@@ -175,6 +175,10 @@ footer {
     max-width: 350px; /* Limit card width */
     cursor: pointer; /* Indicate clickable area */
 }
+.about-card:hover {
+    background-color: #2c3e50; /* Dark background on hover */
+    color: #fff; /* White text color on hover */
+}
 .about-card h2 {
     color: #e74c3c;
     font-size: 1.8rem;
@@ -190,7 +194,9 @@ footer {
     color: #e74c3c;
     margin-bottom: 10px;
 }
-
+.about-card:hover .card-title {
+    color: #e74c3c; /* Maintain accent color for the card title */
+}
 .about-card .card-content {
     height: 0; /* Hide content by default */
     overflow: hidden;
@@ -198,10 +204,20 @@ footer {
     padding-top: 20px; /* Space for content */
 }
 
+.about-card:hover .card-content p {
+    color: #fff; /* Ensures text within card-content is white on hover */
+}
 .about-card.expanded .card-content {
     height: auto; /* Show content when expanded */
 }
 
+.about-card img {
+    transition: opacity 0.3s ease; /* Smooth transition for image opacity */
+}
+
+.about-card:hover img {
+    opacity: 0.7; /* Slightly fade out the image on hover */
+}
 
 /* About Card Icons */
 .about-icon {
@@ -210,6 +226,9 @@ footer {
     margin-bottom: 15px;
 }
 
+.about-card:hover .about-icon {
+    color: #e74c3c; /* Change icon color on hover */
+}
 
 /* home-contact */
 .contact-section {
