@@ -356,12 +356,12 @@ footer {
 /*PROJECT DETAIL PAGE(s)*/
 /* Project Details Styles */
 #project-details {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px; /* Added padding for better spacing */
-    background-color: #fff; /* Consistent background color */
-    border-radius: 12px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 #project-details h2 {
     color: #e74c3c;
@@ -397,14 +397,6 @@ footer {
     aspect-ratio: 16 / 9; /* Example aspect ratio (16:9) */
     border-radius: 8px; /* Rounded corners for videos */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for videos */
-}
-#project-details {
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Header and Title */
@@ -448,44 +440,64 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Project Summary */
-.project-summary {
-    margin-top: 20px;
+/*tech*/
+.tech-card {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.project-summary h3 {
-    color: #e74c3c;
-    font-size: 1.8rem;
-    margin-top: 20px;
+.tech-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
 }
 
-.project-summary p,
-.project-summary ul {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #555;
+.tech-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
-.project-summary ul {
-    padding-left: 20px;
-}
-
-.project-summary ul li {
-    margin-bottom: 10px;
-}
-
-.project-summary ul.technologies-list {
-    list-style: none;
-    padding: 0;
-}
-
-.project-summary ul.technologies-list li {
-    margin-bottom: 8px;
-}
-
-.project-summary ul.technologies-list li strong {
+.tech-info h4 {
+    margin: 0 0 5px 0;
     color: #e74c3c;
 }
+
+.tech-info p {
+    margin: 0;
+}
+
+.accordion-header {
+    background: #e74c3c;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.accordion-body {
+    padding: 15px;
+    display: none;
+    background: #f9f9f9;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+/* Show accordion content on click */
+.accordion-item.active .accordion-body {
+    display: block;
+}
+
 /*OTHER PROJECTS PAGE*/
 /* projects list*/
 .other-project-list {
