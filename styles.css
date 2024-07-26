@@ -475,14 +475,22 @@ footer {
 .accordion {
     margin-bottom: 20px;
 }
-.accordion-header {
+
+.accordion-title {
+    display: flex;
+    align-items: center;
     background: #e74c3c;
     color: #fff;
     padding: 15px;
     cursor: pointer;
-    cursor: pointer;
     border-radius: 8px;
     margin-bottom: 5px;
+}
+
+.accordion-title .chevron {
+    margin-left: auto;
+    font-size: 1.5rem;
+    transition: transform 0.3s;
 }
 
 .accordion-body {
@@ -490,20 +498,6 @@ footer {
     display: none;
     background: #f9f9f9;
     border-radius: 8px;
-}
-
-.accordion-item {
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 10px;
-}
-
-.accordion-item:last-child {
-    border-bottom: none;
-}
-
-/* Show accordion content on click */
-.accordion-item.active .accordion-body {
-    display: block;
 }
 
 .contribution-item {
