@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'ProQuest',
             description: "ProQuest is a concept website created to help agents find the best team for their players and scouts find the best players for their teams. ProQuest does this by allowing the addition of players and teams to the site and an opportunity to showcase capabilities, talent and potential. The site is also designed to track the performance of both players and teams to provide users an estimate of their strengths. Users can also play around in the planner page, a page that allows testing and sharing of different formations, tactics and players.",
             images: ['proquest1.png', 'proquest2.png', 'proquest3.png',],
-            videos: ['proquest.mp4',],
+            videos: ['proquest.webm',],
             technologies: {
                 'Visual Studio': 'Integrated Development Environment (IDE) for coding',
                 'Figma': 'Wireframing, prototyping, and storyboarding',
