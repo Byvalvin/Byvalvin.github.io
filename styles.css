@@ -472,6 +472,9 @@ footer {
     margin: 0;
 }
 
+.accordion {
+    margin-bottom: 20px;
+}
 .accordion-header {
     background: #e74c3c;
     color: #fff;
@@ -501,6 +504,10 @@ footer {
 /* Show accordion content on click */
 .accordion-item.active .accordion-body {
     display: block;
+}
+
+.contribution-item {
+    margin-bottom: 10px;
 }
 
 /*OTHER PROJECTS PAGE*/
