@@ -477,16 +477,21 @@ footer {
     color: #fff;
     padding: 15px;
     cursor: pointer;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 5px;
 }
 
 .accordion-body {
     padding: 15px;
     display: none;
     background: #f9f9f9;
+    border-radius: 8px;
 }
 
 .accordion-item {
     border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
 }
 
 .accordion-item:last-child {
@@ -729,43 +734,41 @@ footer {
 
 /*Project Details Responsive css*/
 @media only screen and (max-width: 768px) {
-    .project-header h2 {
+    #project-details h2 {
         font-size: 2rem;
     }
-    .project-summary h3 {
+    #project-details h3 {
         font-size: 1.5rem;
     }
-    .project-summary p,
-    .project-summary ul li {
+    #project-details p {
         font-size: 1rem;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .project-header h2 {
+    #project-details h2 {
         font-size: 1.8rem;
     }
-    .project-summary h3 {
+    #project-details h3 {
         font-size: 1.3rem;
     }
-    .project-summary p,
-    .project-summary ul li {
+    #project-details p {
         font-size: 0.9rem;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .project-header h2 {
+    #project-details h2 {
         font-size: 1.6rem;
     }
-    .project-summary h3 {
+    #project-details h3 {
         font-size: 1.2rem;
     }
-    .project-summary p,
-    .project-summary ul li {
+    #project-details p {
         font-size: 0.8rem;
     }
 }
+
 /*Other Projects Responsive css*/
 @media only screen and (max-width: 768px){
     .other-project-list li {
