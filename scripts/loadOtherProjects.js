@@ -1,7 +1,7 @@
 // loadOtherProjects.js
 
 document.addEventListener('DOMContentLoaded', function() {
-    const projectsList = document.getElementById('projects-list');
+    const projectsList = document.getElementById('other-projects-list');
 
     // Fetch projects data from JSON file
     fetch('projects/other/otherprojects.json')
