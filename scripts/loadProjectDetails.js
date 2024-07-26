@@ -1,5 +1,6 @@
 // loadProjectDetails.js
 
+
 document.addEventListener('DOMContentLoaded', function() {
     console.log("woke");
 
@@ -112,7 +113,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // rating: 4.3
         // }
         // Add more projects as needed
-    };
+    };    
+
     const projectDetailsContainer = document.getElementById('project-details');
 
     const createProjectDetails = () => {
@@ -146,23 +148,19 @@ document.addEventListener('DOMContentLoaded', function() {
             <p>${project.description}</p>
             <div class="project-images">${projectImages}</div>
             <div class="project-videos">${projectVideos}</div>
-            <h3 class="technologies-title">Technologies Used</h3>
-            <div class="accordion technologies-accordion">
-                <div class="accordion-header">
-                    <h4>Show Technologies</h4>
-                </div>
-                <div class="accordion-body technologies-body">
-                    ${techCards}
-                </div>
+            <h3 class="accordion-title" data-target="technologies">
+                Technologies Used
+                <span class="chevron" data-target="technologies">&#9660;</span>
+            </h3>
+            <div class="accordion-body technologies-body">
+                ${techCards}
             </div>
-            <h3>My Contributions</h3>
-            <div class="accordion contributions-accordion">
-                <div class="accordion-header">
-                    <h4>Show Contributions</h4>
-                </div>
-                <div class="accordion-body contributions-body">
-                    ${contrItems}
-                </div>
+            <h3 class="accordion-title" data-target="contributions">
+                My Contributions
+                <span class="chevron" data-target="contributions">&#9660;</span>
+            </h3>
+            <div class="accordion-body contributions-body">
+                ${contrItems}
             </div>
             <h3>Best Features</h3>
             <p>${project.bestFeatures}</p>
@@ -171,24 +169,26 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
 
         // Add event listeners for accordion functionality
-        const accordionHeaders = document.querySelectorAll('.accordion-header');
-        accordionHeaders.forEach(header => {
+        document.querySelectorAll('.accordion-title').forEach(header => {
             header.addEventListener('click', () => {
-                const accordionBody = header.nextElementSibling;
+                const target = header.getAttribute('data-target');
+                const accordionBody = document.querySelector(`.${target}-body`);
+                const chevron = header.querySelector('.chevron');
                 const isExpanded = accordionBody.style.display === 'block';
                 
                 // Hide all accordion bodies
                 document.querySelectorAll('.accordion-body').forEach(body => {
                     body.style.display = 'none';
+                    body.previousElementSibling.querySelector('.chevron').innerHTML = '&#9660;';
                 });
 
                 // Toggle current accordion body
                 if (isExpanded) {
                     accordionBody.style.display = 'none';
-                    header.innerHTML = header.innerHTML.replace('Hide', 'Show');
+                    chevron.innerHTML = '&#9660;';
                 } else {
                     accordionBody.style.display = 'block';
-                    header.innerHTML = header.innerHTML.replace('Show', 'Hide');
+                    chevron.innerHTML = '&#9650;';
                 }
             });
         });
