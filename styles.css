@@ -508,35 +508,45 @@ footer {
 /* projects list*/
 .other-project-list {
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     padding: 20px;
     margin: 20px;
 }
-.other-project-list li {
-    margin-bottom: 20px;
+
+
+.project-card {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 15px;
+    border-radius: 8px;
+    padding: 20px;
     cursor: pointer; /* Cursor pointer to indicate clickable */
-    transition: transform 0.3s ease; /* Smooth transform animation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animations */
+    flex: 1;
+    min-width: 280px; /* Minimum width for responsive layout */
 }
-.other-project-list li:hover {
+
+.project-card:hover {
     transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
-.other-project-list li:active {
+
+.project-card:active {
     transform: scale(0.95); /* Scale down on click */
 }
-.other-project-list h2 {
-    color: #007bff;
-    font-size: 1.5rem;
+
+.project-card h2 {
+    color: #e74c3c;
+    font-size: 1.8rem;
     margin-bottom: 10px;
 }
-.other-project-list p {
+
+.project-card p {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #555;
 }
-
-
 
 /*OTHER PROJECT DETAILS PAGE*/
 /* Project Details Styles */
@@ -772,11 +782,20 @@ footer {
 
 /*Other Projects Responsive css*/
 @media only screen and (max-width: 768px){
-    .other-project-list li {
-        width: 100%;
+    .project-card {
+        flex: 1 1 100%; /* Full width on small screens */
+    }
+}
+@media only screen and (max-width: 600px) {
+    .project-card h2 {
+        font-size: 1.6rem;
     }
 
+    .project-card p {
+        font-size: 1rem;
+    }
 }
+
 
 /*Other Project Details Responsive css*/
 @media only screen and (max-width: 768px){
