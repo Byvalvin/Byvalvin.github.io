@@ -243,59 +243,82 @@ footer {
 
 /*PROJECTS PAGE*/
 /* Project Styles */
+/* Page Header Styles */
+.page-header {
+    background-color: #2c3e50; /* Dark background to match the navbar and footer */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Project Styles */
 .projects-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-around;
+    padding: 20px; /* Add padding for better spacing */
 }
+
 .project {
     width: 30%;
-    margin-bottom: 30px;
-    background-color: #2c3e50;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* White background for projects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    cursor: pointer; /* Cursor pointer to indicate clickable */
-    transition: transform 0.3s ease; /* Smooth transform animation */
+    border-radius: 12px; /* Rounded corners for consistency */
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
+
 .project:hover {
-    transform: scale(1.02); /* Scale up on hover */
+    transform: scale(1.02);
 }
 
 .project:active {
-    transform: scale(0.98); /* Scale down on click */
+    transform: scale(0.98);
 }
+
 .project img {
-    width: 100%; /* Make images responsive to container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
     display: block;
-    object-fit: cover; /* Cover entire container */
+    object-fit: cover;
 }
+
 .project-images {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px; /* Fixed height for image container */
-    overflow: hidden; /* Hide overflow to prevent image stretching */
+    height: 200px;
+    overflow: hidden;
 }
+
 .project-images img {
-    max-width: 100%; /* Ensure images take full width of their container */
-    max-height: 100%; /* Limit maximum height to match container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Cover entire container */
-    transition: transform 0.3s ease; /* Optional: Add transition effect */
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    object-fit: cover;
 }
+
 .project-info {
     text-align: left;
 }
+
 .project-info h2 {
+    color: #e74c3c; /* Use accent color for project titles */
     margin-top: 0;
 }
+
 .project-info p {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #555;
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
 }
 
 /*PROJECT DETAIL PAGE(s)*/
@@ -502,6 +525,8 @@ footer {
 
 /*4) MEDIA QUERIES*/
 /* Media Queries for Responsive Design */
+
+/*Home Responsive css*/
 @media only screen and (max-width: 768px) {
     .hero {
         padding: 50px 5%;
@@ -569,15 +594,28 @@ footer {
 }
 
 
-@media only screen and (max-width: 768px){
+/*Projects Responsive css*/
+@media only screen and (max-width: 768px) {
     .projects-container {
         flex-direction: column;
         align-items: center;
     }
+
     .project {
         width: 100%;
+        /* Ensures project cards take full width on smaller screens */
     }
-    .other-project-list li {
+}
+
+@media only screen and (max-width: 480px) {
+    .project {
+        width: 100%; /* Full width for very small screens */
+    }
+}
+
+/*Other Projects Responsive css*/
+@media only screem and (max-width: 768px){
+        .other-project-list li {
         width: 100%;
     }
 
@@ -585,7 +623,6 @@ footer {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 }
-
 /*
 Color Scheme: Introduced a new color scheme with:
 
