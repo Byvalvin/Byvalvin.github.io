@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const techCards = Object.entries(project.technologies).map(([tech, description]) => `
                 <div class="tech-card">
-                    <div class="tech-icon"><img src="projects/icons/${tech.toLowerCase().replace(/ /g, '-')}.svg" alt="${tech}"></div>
+                    <div class="tech-icon"><img src="projects/icons/${tech.split(' ').join('').toLowerCase().replace(/ /g, '-')}.svg" alt="${tech}"></div>
                     <div class="tech-info">
                         <h4>${tech}</h4>
                         <p>${description}</p>
