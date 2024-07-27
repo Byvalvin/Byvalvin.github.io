@@ -1,5 +1,4 @@
-{ 
-  projectDetails :  {
+{
     qrapp: {
       title: 'QRapp',
       description: 'QRapp is designed to be a fun, engaging and social experience for users. You choose the way you play: You can be a casual collector of the highest, lowest or coolest codes or compete against friends and other QR Hunters for top positions on one the many leaderboards. As you play, you might become aware of the fact that these codes are everywhere! ',
