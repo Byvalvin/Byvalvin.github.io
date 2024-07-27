@@ -62,7 +62,7 @@
         "images": ["proquest1.png", "proquest2.png", "proquest3.png"],
         "videos": ["proquest.webm"],
         "technologies": {
-            "Visual Studio": "Integrated Development Environment (IDE) for coding",
+            "Visual Studio Code": "Integrated Development Environment (IDE) for coding",
             "Figma": "Wireframing, prototyping, and storyboarding",
             "TailwindCSS": "Utility-first CSS framework for styling and UI/UX design",
             "Vite": "Fast, modern build tool for React project setup",
