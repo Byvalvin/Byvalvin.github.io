@@ -517,6 +517,7 @@ footer {
     margin-bottom: 10px;
 }
 
+
 /*OTHER PROJECTS PAGE*/
 /* projects list*/
 .other-project-list {
@@ -575,18 +576,28 @@ footer {
 /* Other Project Details Styles */
 #other-project-details {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 30px auto;
     padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 #other-project-details h2 {
-    color: #007bff;
-    font-size: 2rem;
+    color: #e74c3c;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+#other-project-details h3 {
+    color: #e74c3c; /* Accent color */
+    font-size: 1.8rem;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
 #other-project-details p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.8;
     color: #555;
     margin-bottom: 20px;
@@ -598,6 +609,8 @@ footer {
     gap: 10px;
     justify-content: center;
     align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #other-project-details .project-images img {
@@ -605,6 +618,8 @@ footer {
     height: auto;
     object-fit: cover;
     transition: transform 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #other-project-details .project-images img:hover {
@@ -613,6 +628,9 @@ footer {
 
 #other-project-details .project-videos {
     margin-top: 20px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #other-project-details .project-videos video {
@@ -620,7 +638,7 @@ footer {
     height: auto;
     max-width: 100%;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 0 auto 20px;
     aspect-ratio: 16 / 9;
 }
 
@@ -642,6 +660,8 @@ footer {
 #other-project-details .project-links a:hover {
     background-color: #0056b3;
 }
+
+
 /*CONTACT PAGE*/
 /* Add styles for the custom contact section */
 .custom-contact-section {
