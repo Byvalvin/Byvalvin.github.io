@@ -367,6 +367,7 @@ footer {
     color: #e74c3c;
     font-size: 2.5rem;
     margin-bottom: 15px;
+    align-items: center;
 }
 #project-details h3 {
     color: #e74c3c; /* Accent color */
@@ -485,7 +486,6 @@ footer {
     cursor: pointer;
     border: none; /* Remove border border-radius: 8px;*/
     margin-bottom: 5px;
-    font-size: 1.5rem; /* Adjust font size as needed */
 }
 
 .accordion-title .chevron {
