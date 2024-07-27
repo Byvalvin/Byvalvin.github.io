@@ -83,11 +83,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     const isExpanded = accordionBody.style.display === 'block';
                     
                     // Hide all accordion bodies
-                    document.querySelectorAll('.accordion-body').forEach(body => {
+                    /*document.querySelectorAll('.accordion-body').forEach(body => {
                         body.style.display = 'none';
                         body.classList.remove('expanded');
                         body.previousElementSibling.querySelector('.chevron').innerHTML = '&#9660;';
                     });
+                    */
 
                     // Toggle current accordion body
                     if (isExpanded) {
@@ -96,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     } else {
                         accordionBody.style.display = 'block';
                         chevron.innerHTML = '&#9650;';
-                        accordionBody.classList.add('expanded');
+                        //accordionBody.classList.add('expanded');
                     }
                 });
             });
