@@ -491,6 +491,11 @@ footer {
     margin-left: auto;
     font-size: 1.5rem;
     transition: transform 0.3s;
+    color: #fff; /* Ensure chevron is visible against the background */
+}
+/* Optional: Change background color when expanded */
+.accordion-title.active {
+    background: #c0392b; /* Slightly different color to indicate active state */
 }
 
 .accordion-body {
