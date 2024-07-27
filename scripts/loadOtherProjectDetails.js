@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Function to generate HTML for project details
             const generateProjectDetailsHTML = (project) => {
-                const projectImages = project.images.map(image => `<img src="./images/${image}" alt="${image}">`).join('');
-                const projectVideos = project.videos.map(video => `<video controls><source src="./videos/${video}" type="video/mp4"></video>`).join('');
+                const projectImages = project.images.map(image => `<img src="projects/other/images/${image}" alt="${image}">`).join('');
+                const projectVideos = project.videos.map(video => `<video controls><source src="projects/other/videos/${video}" type="video/mp4"></video>`).join('');
                 
                 // Render the "Code" link if GitHub link exists
                 const githubLinkHTML = project.githubLink ? `<p><a href="${project.githubLink}" target="_blank">Code</a></p>` : '';
