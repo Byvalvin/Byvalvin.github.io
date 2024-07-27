@@ -8,7 +8,7 @@
         "technologies": {
             "Android Studio": "IDE, Frontend, business logic and connection to Backend",
             "Figma": "Wireframing and Storyboarding",
-            "Firebase/Firestore": "Data Storage and Management",
+            "Firebase": "Data Storage and Management",
             "Java": "Formal programming language",
             "Google Maps API": "Getting and setting location data",
             "GitHub": "Version Control, Documentation and Task management."
