@@ -27,7 +27,7 @@
         {
             "name": "Sanctuary",
             "description": "An action stealth game made with Javascript and RPG MakerMV. Sanctuary tells the story of a far future in space when Earth is no more. A single spaceship, The Sanctuary, is sent out in hopes of preservation of beauty and life. In this future, a need for lab assistants and companionship leads a brilliant scientist and her team to use old texts and stories to build cat-like androids to help them maintain the ship. As it turns out, their is more life on the ship than the passengers had thought.",
-            "images": ["CR00-2.png", "tuxedocat.png", "Mikey.png", "CAT.png"],
+            "images": ["CR-002.png", "tuxedocat.png", "Mikey.png", "CAT.png"],
             "videos": [],
             "githubLink": "https://github.com/Byvalvin/Sanctuary",
             "tryItOutLink": "https://chris5ualberta.github.io/",
