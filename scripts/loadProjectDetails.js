@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     // Hide all accordion bodies
                     document.querySelectorAll('.accordion-body').forEach(body => {
                         body.style.display = 'none';
-                        body.previousElementSibling.classList.remove('active');
+                        body.classList.remove('expanded');
                         body.previousElementSibling.querySelector('.chevron').innerHTML = '&#9660;';
                     });
 
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     } else {
                         accordionBody.style.display = 'block';
                         chevron.innerHTML = '&#9650;';
-                        header.classList.add('active');
+                        accordionBody.classList.add('expanded');
                     }
                 });
             });
