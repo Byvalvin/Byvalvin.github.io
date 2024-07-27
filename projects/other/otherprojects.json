@@ -4,7 +4,7 @@
             "name": "StarCraft II Stalker Rush Bot",
             "description": "A bot made in C++ with a Protoss Stalker Rush Build. The bot has a win rate ~70 against the CheatMoney and CheatVision difficulties and ~45% against CheatInsane",
             "images": ["FiringSquad.jpg", "FiringSquad2.jpg","StalkerRally.jpg"],
-            "videos": ["AttackingVideo.webm"],
+            "videos": ["AttackingVideo.webm", "ScoutRecordingMiniMap.webm"],
             "githubLink": "https://github.com/Byvalvin/StarCraftIIBot-cpp",
             "otherDetailsPage": "other-project-details.html?id=stalker-bot"
         },
@@ -27,7 +27,7 @@
         {
             "name": "Sanctuary",
             "description": "An action stealth game made with Javascript and RPG MakerMV. Sanctuary tells the story of a far future in space when Earth is no more. A single spaceship, The Sanctuary, is sent out in hopes of preservation of beauty and life. In this future, a need for lab assistants and companionship leads a brilliant scientist and her team to use old texts and stories to build cat-like androids to help them maintain the ship. As it turns out, their is more life on the ship than the passengers had thought.",
-            "images": ["pawsible.jpg", "Mikey.jpg", "Bridge.jpg", "CAT.jpg", "CR-002.jpg" ],
+            "images": ["pawsible.jpg",  "Bridge.jpg", "finalcutscene.jpg", "CAT.jpg", "CR-002.jpg", "Mikey.jpg"],
             "videos": ["sanctuarytrailer.webm"],
             "githubLink": "https://github.com/Byvalvin/Sanctuary",
             "tryItOutLink": "https://chris5ualberta.github.io/",
