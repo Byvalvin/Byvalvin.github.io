@@ -479,23 +479,30 @@ footer {
 .accordion-title {
     display: flex;
     align-items: center;
-    background: #e74c3c;
-    color: #fff;
-    padding: 15px;
+    background: none;
+    color: #e74c3c;
+    padding: 10px 15px;
     cursor: pointer;
-    border-radius: 8px;
+    border: none; /* Remove border border-radius: 8px;*/
     margin-bottom: 5px;
+    font-size: 1.5rem; /* Adjust font size as needed */
 }
 
 .accordion-title .chevron {
     margin-left: auto;
     font-size: 1.5rem;
     transition: transform 0.3s;
-    color: #fff; /* Ensure chevron is visible against the background */
+    color: #e74c3c; /* Ensure chevron is visible against the background */
 }
-/* Optional: Change background color when expanded */
-.accordion-title.active {
-    background: #c0392b; /* Slightly different color to indicate active state */
+
+/* Optional: Add a border to the body when it's expanded */
+.accordion-body.expanded {
+    border: 1px solid #e74c3c; /* Border color */
+}
+
+/* Optional: Add a hover effect for the accordion title */
+.accordion-title:hover {
+    color: #c0392b; /* Slightly darker color on hover */
 }
 
 .accordion-body {
@@ -503,6 +510,7 @@ footer {
     display: none;
     background: #f9f9f9;
     border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
 }
 
 .contribution-item {
