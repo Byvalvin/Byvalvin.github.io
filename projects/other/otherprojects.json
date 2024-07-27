@@ -27,10 +27,13 @@
         {
             "name": "Sanctuary",
             "description": "An action stealth game made with Javascript and RPG MakerMV. Sanctuary tells the story of a far future in space when Earth is no more. A single spaceship, The Sanctuary, is sent out in hopes of preservation of beauty and life. In this future, a need for lab assistants and companionship leads a brilliant scientist and her team to use old texts and stories to build cat-like androids to help them maintain the ship. As it turns out, their is more life on the ship than the passengers had thought.",
-            "images": [],
+            "images": ["CR00-2.png", "tuxedocat.png", "Mikey.png", "CAT.png"],
             "videos": [],
             "githubLink": "https://github.com/Byvalvin/Sanctuary",
-            "otherDetailsPage": "other-project-details.html?id=sanctuary-game"
+            "tryItOutLink": "https://chris5ualberta.github.io/",
+            "gamedirect": "https://chris5ualberta.github.io/SanctuaryGold/index.html",
+            "otherDetailsPage": "other-project-details.html?id=sanctuary-game",
+            "fullgameDL":"https://drive.google.com/drive/folders/1Le6cIn9wxFvws06BYc4IXNtDyHCakolY?usp=share_link"
         },
         {
             "name": "Excalibur",
@@ -38,12 +41,14 @@
             "images": [],
             "videos": [],
             "githubLink": "https://github.com/Byvalvin/Excalibur",
+            "tryItOutLink": "https://samasa101.github.io/excaliburhtml/",
+            "gamedirect": "https://samasa101.github.io/excaliburhtml/Repath/www/index.html",
             "otherDetailsPage": "other-project-details.html?id=excalibur-game"
         },
         {
             "name": "Naive Bayes Document Classifier",
             "description": "A document classifier that uses Naive Bayes principles to sort documents into different classes.",
-            "images": [],
+            "images": ["excalibur.jpeg"],
             "videos": [],
             "githubLink": "https://github.com/example/document-classifier",
             "otherDetailsPage": "other-project-details.html?id=document-classifier"
@@ -52,7 +57,7 @@
             "name": "Self Driving Car Simulator",
             "description": "Uses neural networks to train and test self-driving cars in a Udacity-based Car simulator. Pytorch used to code the neural networks",
             "images": [],
-            "videos": [],
+            "videos": ["https://www.youtube.com/watch?v=Pg1sJniHWPE", "https://youtu.be/GSWrpgIM-1k"],
             "githubLink": "https://github.com/Byvalvin/SelfDrivingCarSimulator",
             "otherDetailsPage": "other-project-details.html?id=self-driving-car"
         },
