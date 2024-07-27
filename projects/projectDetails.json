@@ -31,18 +31,17 @@
         "images": ["aranimal1.jpg", "aranimal3.jpg", "aranimal4.jpg", "aranimal5.jpg", "aranimal6.jpg"],
         "videos": ["ARANIMAL.webm"],
         "technologies": {
-            "Android Studio/Visual Studio": "IDE",
+            "Android Studio": "IDE",
             "Figma": "Wireframing and Storyboarding",
             "Flutter": "Frontend, Business Logic, Connection to Backend",
             "FastAPI": "Backend, Creating API endpoints to and from Database and for Image Recognition",
             "PostgreSQL": "Data Storage and Management",
-            "Dart, Python, SQL": "Formal programming/query languages",
             "OpenCV": "Computer Vision Library used for Image Processing and Image Identification",
             "Poetry": "Package Management",
             "Cybera": "Cloud Infrastructure and services",
             "Uvicorn": "Serve/deploy internal image recognition and User APIs",
             "GitHub": "Version Control, Documentation and Task management.",
-            "VuePress.js": "Creation of a simple website for Full Documentation and Project Planning"
+            "VuePress": "Creation of a simple website for Full Documentation and Project Planning"
         },
         "contributions": [
             "Ensuring all our work is properly documented on github + VuePress.js and github wiki pages",
