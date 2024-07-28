@@ -41,8 +41,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p>${project.description}</p>
                     <div class="project-images">${projectImages}</div>
                     <div class="project-videos">${projectVideos}</div>
-                    ${githubLinkHTML}
-                    ${tryItOutLinkHTML}
+                    <div class="project-links"> 
+                        ${githubLinkHTML}
+                        ${tryItOutLinkHTML}                  
+                    </div>
+                    
                 `;
             };
 
