@@ -1,7 +1,6 @@
 // placeHolders.js
 // load components that will be on all pages
 
-
 // Function to highlight the active link in the navbar
 const highlightActiveLink = () => {
     const currentLocation = window.location.href;
@@ -15,28 +14,28 @@ const highlightActiveLink = () => {
         }
     });
 };
-// const highlightActiveLink = () => {
-//     const currentLocation = window.location.pathname;
-//     const navLinks = document.querySelectorAll('.nav-links li a');
 
-//     navLinks.forEach(link => {
-//         const href = link.getAttribute('href');
-//         if (currentLocation === '/' && href === 'index.html') {
-//             link.classList.add('active');
-//         } else if (currentLocation === href) {
-//             link.classList.add('active');
-//         } else {
-//             link.classList.remove('active');
-//         }
-//     });
+// const highlightActiveLink = () => {
+// const currentLocation = window.location.pathname;
+// const navLinks = document.querySelectorAll('.nav-links li a');
+
+// navLinks.forEach(link => {
+// const href = link.getAttribute('href');
+// if (currentLocation === '/' && href === 'index.html') {
+//     link.classList.add('active');
+// } else if (currentLocation === href) {
+//     link.classList.add('active');
+// } else {
+//     link.classList.remove('active');
+// }
+// });
 // };
 
-// Track whether the event listener has been added
-let isMenuToggleListenerAdded = false;
 
 // Function to add a component to the page
 const addComponent = ({ placeholderID, htmlURL }) => {
-    console.log(placeholderID);
+    console.log(`Adding component to ${placeholderID}`);
+
     document.addEventListener("DOMContentLoaded", function() {
         const componentPlaceholder = document.getElementById(placeholderID);
 
@@ -44,6 +43,7 @@ const addComponent = ({ placeholderID, htmlURL }) => {
             console.error(`Placeholder with ID ${placeholderID} not found.`);
             return;
         }
+
         // Create a new XMLHttpRequest object
         const xhr = new XMLHttpRequest();
 
@@ -59,39 +59,35 @@ const addComponent = ({ placeholderID, htmlURL }) => {
                 // Insert the received HTML into the placeholder
                 componentPlaceholder.innerHTML = xhr.responseText;
 
-                // Highlight active link based on current URL
-                highlightActiveLink();
+                // If the component is the navbar, add specific behaviors
+                if (htmlURL === 'navbar.html') {
+                    highlightActiveLink();
 
-                // Add event listener for menu toggle
-                const menuToggle = document.getElementById('menu-toggle');
-                const navLinks = document.getElementById('nav-links');
+                    // Add event listener for menu toggle
+                    const menuToggle = document.getElementById('menu-toggle');
+                    const navLinks = document.getElementById('nav-links');
 
-                if(menuToggle && navLinks){
-                    
-                    if (!isMenuToggleListenerAdded) {   
-                        console.log("Menu toggle and nav links found, adding event listener.");
+                    if (menuToggle && navLinks) {
                         menuToggle.addEventListener('click', () => {
-                            console.log("hamburger");
+                            console.log("Hamburger menu clicked");
                             navLinks.classList.toggle('active');
                         }); 
-                        isMenuToggleListenerAdded = true;                        
-                    }else{
-                        console.log("Menu toggle event listener already added.");
+                    } else {
+                        console.warn('Menu toggle or nav links element not found');
                     }
-                    
-   
-                }else {
-                    console.warn('Menu toggle or nav links element not found');
-                }                
+                } else {
+                    // Perform other initialization for non-navbar components if needed
+                    console.log(`${htmlURL} loaded.`);
+                }
             } else {
-                console.error(`Failed to load ${htmlURL}`);
+                console.error(`Failed to load ${htmlURL}: Status ${xhr.status}`);
             }
         };
 
         // Setup onerror callback
         xhr.onerror = function() {
             console.error(`Failed to load ${htmlURL}: Network error`);
-        };        
+        };
 
         // Send the request
         xhr.send();
@@ -114,4 +110,3 @@ const components = [
 components.forEach((component) => {
     addComponent(component);
 });
-
