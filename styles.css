@@ -517,8 +517,14 @@ footer {
 
 .contribution-item {
     margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Light gray border */
 }
 
+/* Remove the border from the last item */
+#project-details .contribution-item:last-of-type {
+    border-bottom: none;
+}
 
 /*OTHER PROJECTS PAGE*/
 /* projects list*/
