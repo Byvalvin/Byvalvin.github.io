@@ -28,24 +28,24 @@ document.addEventListener('DOMContentLoaded', function() {
             // Function to generate HTML for project details
             const generateProjectDetailsHTML = (project) => {
                 const projectImages = project.images.map(image => `<img src="projects/other/images/${image}" alt="${image}">`).join('');
-                const projectVideos = project.videos.map(video => video.startsWith("https://") ? `<iframe src="${video}" frameborder="0" allowfullscreen></iframe>` : `<video controls><source src="projects/other/videos/${video}" type="video/mp4"></video>`).join('');
+                const projectVideos = project.videos.map(video => video.startsWith("https://") ? 
+                    `<iframe src="${video}" frameborder="0" allowfullscreen></iframe>` : `<video controls><source src="projects/other/videos/${video}" type="video/mp4"></video>`).join('');
                 
                 // Render the "Code" link if GitHub link exists
-                const githubLinkHTML = project.githubLink ? `<a href="${project.githubLink}" target="_blank">Code</a>` : '';
-
+                const githubLinkHTML = project.githubLink ? `<a class="code-link" href="${project.githubLink}" target="_blank">Code</a>` : '';
+            
                 // Render the "Try it out" link if tryItOutLink exists
-                const tryItOutLinkHTML = project.tryItOutLink ? `<a href="${project.tryItOutLink}" target="_blank">Try it out</a>` : '';
-
+                const tryItOutLinkHTML = project.tryItOutLink ? `<a class="try-it-out-link" href="${project.tryItOutLink}" target="_blank">Try it out</a>` : '';
+            
                 return `
                     <h2>${project.name}</h2>
                     <p>${project.description}</p>
                     <div class="project-images">${projectImages}</div>
                     <div class="project-videos">${projectVideos}</div>
-                    <div class="project-links"> 
+                    <div class="project-links">
                         ${githubLinkHTML}
-                        ${tryItOutLinkHTML}                  
+                        ${tryItOutLinkHTML}
                     </div>
-                    
                 `;
             };
 
