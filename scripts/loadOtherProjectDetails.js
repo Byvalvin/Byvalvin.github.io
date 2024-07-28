@@ -31,10 +31,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 const projectVideos = project.videos.map(video => video.startsWith("https://") ? `<iframe src="${video}" frameborder="0" allowfullscreen></iframe>` : `<video controls><source src="projects/other/videos/${video}" type="video/mp4"></video>`).join('');
                 
                 // Render the "Code" link if GitHub link exists
-                const githubLinkHTML = project.githubLink ? `<p><a href="${project.githubLink}" target="_blank">Code</a></p>` : '';
+                const githubLinkHTML = project.githubLink ? `<a href="${project.githubLink}" target="_blank">Code</a>` : '';
 
                 // Render the "Try it out" link if tryItOutLink exists
-                const tryItOutLinkHTML = project.tryItOutLink ? `<p><a href="${project.tryItOutLink}" target="_blank">Try it out</a></p>` : '';
+                const tryItOutLinkHTML = project.tryItOutLink ? `<a href="${project.tryItOutLink}" target="_blank">Try it out</a>` : '';
 
                 return `
                     <h2>${project.name}</h2>
