@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Retrieve project ID from URL query parameter
     const projectId = getParameterByName('id');
+    console.log(projectId);
 
     // Fetch projects data from JSON file
     fetch('projects/other/otherprojects.json')
