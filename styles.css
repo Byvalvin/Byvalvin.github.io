@@ -541,6 +541,35 @@ footer {
 #project-details .contribution-item:last-of-type {
     border-bottom: none;
 }
+/* Project Details Buttons */
+.project-buttons {
+    margin-top: 20px;
+}
+
+.project-buttons .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.project-buttons .code-btn {
+    background-color: #3498db; /* Blue for code */
+}
+
+.project-buttons .try-btn {
+    background-color: #2ecc71; /* Green for try it out */
+}
+
+.project-buttons .btn:hover {
+    opacity: 0.8;
+}
+
 
 /*OTHER PROJECTS PAGE*/
 /* projects list*/
