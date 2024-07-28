@@ -57,7 +57,7 @@
             "name": "Self Driving Car Simulator",
             "description": "Uses neural networks to train and test self-driving cars in a Udacity-based Car simulator. Pytorch used to code the neural networks",
             "images": [],
-            "videos": ["https://www.youtube.com/watch?v=Pg1sJniHWPE", "https://youtu.be/GSWrpgIM-1k"],
+            "videos": ["https://www.youtube.com/embed/Pg1sJniHWPE", "https://www.youtube.com/embed/GSWrpgIM-1k"],
             "githubLink": "https://github.com/Byvalvin/SelfDrivingCarSimulator",
             "otherDetailsPage": "other-project-details.html?id=self-driving-car"
         },
