@@ -59,13 +59,13 @@ const addComponent = ({ placeholderID, htmlURL }) => {
                 const menuToggle = document.getElementById('menu-toggle');
                 const navLinks = document.getElementById('nav-links');
 
-                if(menuToggle){
+                if(menuToggle && navLinks){
                     menuToggle.addEventListener('click', () => {
                         console.log("hamburger");
                         navLinks.classList.toggle('active');
                     });    
                 }else {
-                    console.log('Menu toggle element not found');
+                    console.log('Menu toggle or nav links element not found');
                 }                
             } else {
                 console.error(`Failed to load ${htmlURL}`);
