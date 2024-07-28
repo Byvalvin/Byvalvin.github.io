@@ -385,6 +385,7 @@ footer {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
+    margin: 5px;
     display: block;
     border-radius: 8px; /* Rounded corners for images */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
