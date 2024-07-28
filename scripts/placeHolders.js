@@ -60,6 +60,7 @@ const addComponent = ({ placeholderID, htmlURL }) => {
                 const navLinks = document.getElementById('nav-links');
                 
                 menuToggle.addEventListener('click', () => {
+                    console.log("hamburger");
                     navLinks.classList.toggle('active');
                 });              
                 
