@@ -1,4 +1,3 @@
-// loadProjectDetails.js
 
 // loadProjectDetails.js
 
@@ -48,6 +47,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             `).join('');
 
+            let buttonsHTML = '';
+            if (project.codeUrl) {
+                buttonsHTML += `<a href="${project.codeUrl}" class="btn code-btn" target="_blank">View Code</a>`;
+            }
+            if (project.tryItOutUrl) {
+                buttonsHTML += `<a href="${project.tryItOutUrl}" class="btn try-btn" target="_blank">Try It Out</a>`;
+            }
+
             const projectDetailsContainer = document.getElementById('project-details');
             projectDetailsContainer.innerHTML = `
                 <h2>${project.title}</h2>
@@ -72,7 +79,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p>${project.bestFeatures}</p>
                 <h3>Rating</h3>
                 <p>${project.rating}</p>
-                `;
+                <!-- Conditionally Render Buttons -->
+                <div class="project-buttons">
+                    ${buttonsHTML}
+                </div>
+            `;
 
             // Add event listeners for accordion functionality
             document.querySelectorAll('.accordion-title').forEach(header => {
@@ -83,12 +94,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     const isExpanded = accordionBody.style.display === 'block';
                     
                     // Hide all accordion bodies
-                    /*document.querySelectorAll('.accordion-body').forEach(body => {
+                    document.querySelectorAll('.accordion-body').forEach(body => {
                         body.style.display = 'none';
                         body.classList.remove('expanded');
                         body.previousElementSibling.querySelector('.chevron').innerHTML = '&#9660;';
                     });
-                    */
 
                     // Toggle current accordion body
                     if (isExpanded) {
