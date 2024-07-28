@@ -23,7 +23,8 @@
             "App Layout and Navigation planning and setup"
         ],
         "bestFeatures": "Excellent user interface and performance: The look and feel of the app is excellent. We put alot of thought an planning into catching the users attention and keep it as they use the app. I believe it is one of the more beautiful and well designed apps I have worked on.",
-        "rating": 4.0
+        "rating": 4.0,
+        "codeUrl": "https://github.com/Byvalvin/QRAPP"
     },
     "aranimal": {
         "title": "AR Animal Identification",
@@ -54,7 +55,8 @@
             "Admin page setup"
         ],
         "bestFeatures": "Cross-Platform and Cross-Device compatibility. It was important that we make the app as accessible as possible to reach as many users as possible. The app is designed to work on many different phones(tested 4 year old phones), on both Android and iOS ecosystems and on mobile devices like tablets. Accessibility at its finest",
-        "rating": 4.2
+        "rating": 4.2,    
+        "codeUrl": "https://github.com/UAlberta-CMPUT401/f23project-ar-animal"
     },
     "proquest": {
         "title": "ProQuest",
@@ -80,6 +82,7 @@
             "This was a solo project"
         ],
         "bestFeatures": "There are quite a few features I am proud of; The multi-filtration system on the Players Page, The dynamic css that maintains excellent UI/UX across different screen sizes and devices, The randomly generated list of players on the home page. The best of them is the Planner Page. Users can have a lot of fun making their own concept teams with any formation they desire and share them with other users.",
-        "rating": 4.7
+        "rating": 4.7,
+        "codeUrl": "https://github.com/Byvalvin/proquest"
     }
 }
