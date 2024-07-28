@@ -654,13 +654,18 @@ footer {
     padding: 10px 20px;
     border-radius: 4px;
     margin-right: 10px;
+    font-size: 1.1rem;
     transition: background-color 0.3s ease;
 }
 
 #other-project-details .project-links a:hover {
     background-color: #0056b3;
+    transform: translateY(-2px); /* Subtle lift effect */
 }
 
+#other-project-details .project-links a:active {
+    transform: translateY(0); /* Reset transform on click */
+}
 
 /*CONTACT PAGE*/
 /* Add styles for the custom contact section */
