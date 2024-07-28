@@ -3,7 +3,7 @@
         {
             "name": "StarCraft II Stalker Rush Bot",
             "description": "A bot made in C++ with a Protoss Stalker Rush Build. The bot has a win rate ~70 against the CheatMoney and CheatVision difficulties and ~45% against CheatInsane",
-            "images": ["FiringSquad.jpg", "FiringSquad2.jpg","StalkerRally.jpg"],
+            "images": ["FiringSquad.jpg", "FiringSquad2.jpg","StalkerRally.jpg", "WarpGatesReady.jpg"],
             "videos": ["AttackingVideo.webm", "ScoutRecordingMiniMap.webm"],
             "githubLink": "https://github.com/Byvalvin/StarCraftIIBot-cpp",
             "otherDetailsPage": "other-project-details.html?id=stalker-bot"
