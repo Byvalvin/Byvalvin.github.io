@@ -58,12 +58,15 @@ const addComponent = ({ placeholderID, htmlURL }) => {
                 // Add event listener for menu toggle
                 const menuToggle = document.getElementById('menu-toggle');
                 const navLinks = document.getElementById('nav-links');
-                
-                menuToggle.addEventListener('click', () => {
-                    console.log("hamburger");
-                    navLinks.classList.toggle('active');
-                });              
-                
+
+                if(menuToggle){
+                    menuToggle.addEventListener('click', () => {
+                        console.log("hamburger");
+                        navLinks.classList.toggle('active');
+                    });    
+                }else {
+                    console.log('Menu toggle element not found');
+                }                
             } else {
                 console.error(`Failed to load ${htmlURL}`);
             }
