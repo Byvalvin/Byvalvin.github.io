@@ -54,6 +54,15 @@ const addComponent = ({ placeholderID, htmlURL }) => {
 
                 // Highlight active link based on current URL
                 highlightActiveLink();
+
+                // Add event listener for menu toggle
+                const menuToggle = document.getElementById('menu-toggle');
+                const navLinks = document.getElementById('nav-links');
+                
+                menuToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });              
+                
             } else {
                 console.error(`Failed to load ${htmlURL}`);
             }
