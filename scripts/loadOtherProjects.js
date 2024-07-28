@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     const projectList = document.getElementById('other-project-list');
-    const descriptionLength = 150; // Adjust as needed
+    const descriptionLength = 100; // Adjust as needed
 
     // Fetch projects data from JSON file
     fetch('projects/other/otherprojects.json')
