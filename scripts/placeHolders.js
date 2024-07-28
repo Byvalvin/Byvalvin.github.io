@@ -31,12 +31,19 @@ const highlightActiveLink = () => {
 //     });
 // };
 
+// Track whether the event listener has been added
+let isMenuToggleListenerAdded = false;
+
 // Function to add a component to the page
 const addComponent = ({ placeholderID, htmlURL }) => {
     console.log(placeholderID);
     document.addEventListener("DOMContentLoaded", function() {
         const componentPlaceholder = document.getElementById(placeholderID);
 
+        if (!componentPlaceholder) {
+            console.error(`Placeholder with ID ${placeholderID} not found.`);
+            return;
+        }
         // Create a new XMLHttpRequest object
         const xhr = new XMLHttpRequest();
 
@@ -60,11 +67,19 @@ const addComponent = ({ placeholderID, htmlURL }) => {
                 const navLinks = document.getElementById('nav-links');
 
                 if(menuToggle && navLinks){
-                    console.log("Menu toggle and nav links found, adding event listener.");
-                    menuToggle.addEventListener('click', () => {
-                        console.log("hamburger");
-                        navLinks.classList.toggle('active');
-                    });    
+                    
+                    if (!isMenuToggleListenerAdded) {   
+                        console.log("Menu toggle and nav links found, adding event listener.");
+                        menuToggle.addEventListener('click', () => {
+                            console.log("hamburger");
+                            navLinks.classList.toggle('active');
+                        }); 
+                        isMenuToggleListenerAdded = true;                        
+                    }else{
+                        console.log("Menu toggle event listener already added.");
+                    }
+                    
+   
                 }else {
                     console.warn('Menu toggle or nav links element not found');
                 }                
@@ -72,6 +87,11 @@ const addComponent = ({ placeholderID, htmlURL }) => {
                 console.error(`Failed to load ${htmlURL}`);
             }
         };
+
+        // Setup onerror callback
+        xhr.onerror = function() {
+            console.error(`Failed to load ${htmlURL}: Network error`);
+        };        
 
         // Send the request
         xhr.send();
