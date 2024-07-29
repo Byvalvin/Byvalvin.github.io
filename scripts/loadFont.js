@@ -46,10 +46,10 @@ const changeFont = (fontName) => {
 // changeFont('Montserrat:wght@400;700');
 
 // Playfair Display – Elegant with a classic touch
-changeFont('Playfair+Display:wght@400;700');
+// changeFont('Playfair+Display:wght@400;700');
 
 // Raleway – Sleek and stylish
-// changeFont('Raleway:wght@400;700');
+changeFont('Raleway:wght@400;700');
 
 // Change to Open Sans
 // changeFont('Open+Sans:wght@300;400;600');
