@@ -49,7 +49,7 @@ const changeFont = (fontName) => {
 // changeFont('Playfair+Display:wght@400;700');
 
 // Raleway – Sleek and stylish
-changeFont('Raleway:wght@400;700');
+// changeFont('Raleway:wght@400;700');
 
 // Change to Open Sans
 // changeFont('Open+Sans:wght@300;400;600');
@@ -61,4 +61,4 @@ changeFont('Raleway:wght@400;700');
 // changeFont('Merriweather:wght@400;700');
 
 // Change to Lato
-// changeFont('Lato:wght@300;400;700');
+changeFont('Lato:wght@300;400;700');
