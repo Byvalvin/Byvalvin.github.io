@@ -40,7 +40,7 @@ const changeFont = (fontName) => {
 // changeFont('Lora:wght@400;700');
 
 // Poppins – Geometric and modern
-// changeFont('Poppins:wght@300;400;600');
+changeFont('Poppins:wght@300;400;600');
 
 // Montserrat – Bold and contemporary
 // changeFont('Montserrat:wght@400;700');
@@ -61,4 +61,4 @@ const changeFont = (fontName) => {
 // changeFont('Merriweather:wght@400;700');
 
 // Change to Lato
-changeFont('Lato:wght@300;400;700');
+// changeFont('Lato:wght@300;400;700');
