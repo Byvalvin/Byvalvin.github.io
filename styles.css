@@ -293,12 +293,10 @@ footer {
     padding: 20px;
     text-align: center;
 }
-
 .page-header h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
-
 /* Project Styles */
 .projects-container {
     display: flex;
@@ -307,7 +305,6 @@ footer {
     justify-content: space-around;
     padding: 20px; /* Add padding for better spacing */
 }
-
 .project {
     width: 30%;
     background-color: #fff; /* White background for projects */
@@ -318,17 +315,14 @@ footer {
     position: relative; /* To ensure pseudo-elements are positioned correctly */
     cursor: pointer;
 }
-
 .project:hover {
     transform: scale(1.02);
     background-color: #2c3e50; /* Dark background on hover */
     color: #fff; /* White text color on hover */
 }
-
 .project:active {
     transform: scale(0.98);
 }
-
 .project img {
     width: 100%;
     height: auto;
@@ -346,23 +340,19 @@ footer {
     height: 200px;
     overflow: hidden;
 }
-
 .project-images img {
     max-width: 100%;
     max-height: 100%;
     height: auto;
     object-fit: cover;
 }
-
 .project-info {
     text-align: left;
 }
-
 .project-info h2 {
     color: #e74c3c; /* Use accent color for project titles */
     margin-top: 0;
 }
-
 .project-info p {
     font-size: 1.1rem;
     line-height: 1.6;
@@ -417,12 +407,10 @@ footer {
     border-radius: 8px; /* Rounded corners for videos */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for videos */
 }
-
 /* Header and Title */
 .project-header {
     margin-bottom: 20px;
 }
-
 .project-header h2 {
     color: #e74c3c;
     font-size: 2.5rem;
@@ -433,32 +421,27 @@ footer {
     font-size: 1.2rem;
     color: #555;
 }
-
 /* Project Media */
 .project-media {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 }
-
 .project-media .media-images,
 .project-media .media-videos {
     flex: 1;
 }
-
 .project-image {
     width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .project-video {
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 /*tech*/
 .tech-card {
     display: flex;
@@ -469,19 +452,16 @@ footer {
     margin-bottom: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .tech-icon {
     width: 50px;
     height: 50px;
     margin-right: 15px;
 }
-
 .tech-icon img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-
 .tech-info h4 {
     margin: 0 0 5px 0;
     color: #e74c3c;
@@ -490,11 +470,9 @@ footer {
 .tech-info p {
     margin: 0;
 }
-
 .accordion {
     margin-bottom: 20px;
 }
-
 .accordion-title {
     display: flex;
     align-items: center;
@@ -505,24 +483,20 @@ footer {
     border: none; /* Remove border border-radius: 8px;*/
     margin-bottom: 5px;
 }
-
 .accordion-title .chevron {
     margin-left: auto;
     font-size: 1.5rem;
     transition: transform 0.3s;
     color: #e74c3c; /* Ensure chevron is visible against the background */
 }
-
 /* Optional: Add a border to the body when it's expanded */
 .accordion-body.expanded {
     border: 1px solid #e74c3c; /* Border color */
 }
-
 /* Optional: Add a hover effect for the accordion title */
 .accordion-title:hover {
     color: #c0392b; /* Slightly darker color on hover */
 }
-
 .accordion-body {
     padding: 15px;
     display: none;
@@ -530,13 +504,11 @@ footer {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
 }
-
 .contribution-item {
     margin-bottom: 10px;
     padding: 10px;
     border-bottom: 1px solid #ddd; /* Light gray border */
 }
-
 /* Remove the border from the last item */
 #project-details .contribution-item:last-of-type {
     border-bottom: none;
@@ -545,7 +517,6 @@ footer {
 .project-buttons {
     margin-top: 20px;
 }
-
 .project-buttons .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -557,15 +528,12 @@ footer {
     font-size: 1rem;
     transition: background-color 0.3s;
 }
-
 .project-buttons .code-btn {
     background-color: #3498db; /* Blue for code */
 }
-
 .project-buttons .try-btn {
     background-color: #2ecc71; /* Green for try it out */
 }
-
 .project-buttons .btn:hover {
     opacity: 0.8;
 }
@@ -581,8 +549,6 @@ footer {
     padding: 20px;
     margin: 20px;
 }
-
-
 .project-card {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -596,24 +562,20 @@ footer {
     flex-direction: column;
     min-height: 200px; /* Adjust height as needed */
 }
-
 .project-card:hover {
     transform: scale(1.05); /* Scale up on hover */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
     background-color: #2c3e50; /* Dark background on hover */
     color: #fff; /* White text color on hover */
 }
-
 .project-card:active {
     transform: scale(0.95); /* Scale down on click */
 }
-
 .project-card h2 {
     color: #e74c3c;
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
-
 .project-card p {
     font-size: 1.1rem;
     line-height: 1.6;
@@ -635,27 +597,23 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 #other-project-details h2 {
     color: #e74c3c;
     font-size: 2.5rem;
     margin-bottom: 15px;
 }
-
 #other-project-details h3 {
     color: #e74c3c; /* Accent color */
     font-size: 1.8rem;
     margin-top: 30px;
     margin-bottom: 10px;
 }
-
 #other-project-details p {
     font-size: 1.2rem;
     line-height: 1.8;
     color: #555;
     margin-bottom: 20px;
 }
-
 #other-project-details .project-images {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -665,7 +623,6 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 #other-project-details .project-images img {
     width: 100%;
     height: auto;
@@ -674,18 +631,15 @@ footer {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 #other-project-details .project-images img:hover {
     transform: scale(1.05);
 }
-
 #other-project-details .project-videos {
     margin-top: 20px;
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 #other-project-details .project-videos video {
     width: 100%;
     height: auto;
@@ -698,7 +652,6 @@ footer {
 #other-project-details .project-links {
     margin-top: 20px;
 }
-
 #other-project-details .project-links a {
     display: inline-block;
     color: #fff;
@@ -709,22 +662,18 @@ footer {
     font-size: 1.1rem;
     transition: background-color 0.3s ease;
 }
-
 /* Styling for "Code" link */
 #other-project-details .project-links .code-link {
     background-color: #2c3e50; /* Purple color */
     margin-right: 10px;
 }
-
 #other-project-details .project-links .code-link:hover {
     background-color: #1a252f; /* Darker shade for hover effect */
     transform: translateY(-2px); /* Subtle lift effect */
 }
-
 #other-project-details .project-links .code-link:active {
     transform: translateY(0); /* Reset transform on click */
 }
-
 /* Styling for "Try it out" link */
 #other-project-details .project-links .try-it-out-link {
     background-color: #28a745; /* Green color */
@@ -734,7 +683,6 @@ footer {
     background-color: #218838; /* Darker shade for hover effect */
     transform: translateY(-2px); /* Subtle lift effect */
 }
-
 #other-project-details .project-links .try-it-out-link:active {
     transform: translateY(0); /* Reset transform on click */
 }
@@ -783,7 +731,6 @@ footer {
     margin-top: 20px;
     color: #444; /* Dark gray text */
 }
-
 
 
 /*4) MEDIA QUERIES*/
@@ -892,7 +839,6 @@ footer {
     }
 }
 
-
 /*Projects Responsive css*/
 @media only screen and (max-width: 768px) {
     .projects-container {
@@ -905,7 +851,6 @@ footer {
         /* Ensures project cards take full width on smaller screens */
     }
 }
-
 @media only screen and (max-width: 480px) {
     .project {
         width: 100%; /* Full width for very small screens */
@@ -924,7 +869,6 @@ footer {
         font-size: 1rem;
     }
 }
-
 @media only screen and (max-width: 600px) {
     #project-details h2 {
         font-size: 1.8rem;
@@ -935,7 +879,6 @@ footer {
     #project-details p {
         font-size: 0.9rem;
     }
-}
 
 @media only screen and (max-width: 480px) {
     #project-details h2 {
@@ -965,16 +908,9 @@ footer {
     }
 }
 
-
 /*Other Project Details Responsive css*/
 @media only screen and (max-width: 768px){
     #other-project-details .project-images {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 }
-/*
-Color Scheme: Introduced a new color scheme with:
-
-Backgrounds: Light gray, dark blue-gray, green, purple.
-Text: Dark gray for better readability.
-Buttons: Light blue with hover effect.*/
