@@ -37,13 +37,13 @@ const changeFont = (fontName) => {
 // changeFont('Roboto:wght@400;700');
 
 // Lora – Elegant with a touch of sophistication
-// changeFont('Lora:wght@400;700');
+changeFont('Lora:wght@400;700');
 
 // Poppins – Geometric and modern
 // changeFont('Poppins:wght@300;400;600');
 
 // Montserrat – Bold and contemporary
-changeFont('Montserrat:wght@400;700');
+// changeFont('Montserrat:wght@400;700');
 
 // Playfair Display – Elegant with a classic touch
 // changeFont('Playfair+Display:wght@400;700');
