@@ -1,3 +1,27 @@
+:root{
+    --body-bg-color: #f4f4f9;
+    --body-darker-text-color: #555;
+    --body-dark-text-color: #444;
+    --body-light-text-color: #fff;
+    --main-bg-color: #2c3e50;
+    --nav-hv-color: #3498db;
+    --btn-main-bg-color: #28a745;
+    --btn-main-bg-hv-color: #218838;
+    --hero-bg-color: #27ae60;
+    --proj-btn-bg-color: #3498ab;
+    --proj-btn-bg-hv-color: 
+    --h-text-color: #e74c3c;
+    --contact-bg-color: #9b59b6;
+    --contact-btn-bg-color: #3498db;
+    --contact-btn-bg-hv-color: #2980b9;
+    --tech-card-acc-bd-bg: #f9f9f9;
+    --acc-title-hv: #c0392b;
+    --contr-bg: #ddd;
+    --code-link-hv-color: #1a252f;
+    --proj-code-link: #3498db;
+}
+
+
 /*1) GENERAL*/
 /* Reset and General Styles */
 * {
