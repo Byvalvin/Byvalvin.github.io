@@ -9,16 +9,15 @@
     --btn-main-bg-hv-color: #218838;
     --hero-bg-color: #27ae60;
     --proj-btn-bg-color: #3498ab;
-    --proj-btn-bg-hv-color: #2980b9;
+    --btn-bg-hv-color: #2980b9;
     --h-text-color: #e74c3c;
     --contact-bg-color: #9b59b6;
-    --contact-btn-bg-color: #3498db;
-    --contact-btn-bg-hv-color: #2980b9;
+    --btn-bg-color: #3498db;
     --tech-card-acc-bd-bg: #f9f9f9;
     --acc-title-hv: #c0392b;
     --contr-bg: #ddd;
-    --code-link-hv-color: #1a252f;
-    --proj-code-link: #3498db;
+    --proj-code-link-hv-color: #1a252f;
+    --proj-try-btn: #2ecc71;
 }
 
 
