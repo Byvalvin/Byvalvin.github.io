@@ -1,3 +1,70 @@
+/* Color Scheme 1 */
+[data-theme='1'] {
+    --body-bg-color: #eaeaea;
+    --body-darker-text-color: #333;
+    --body-dark-text-color: #222;
+    --body-light-text-color: #fafafa;
+    --main-bg-color: #1a1a1a;
+    --nav-hv-btn-bg-color: #007bff;
+    --btn-main-bg-color: #17a2b8;
+    --btn-main-bg-hv-color: #138496;
+    --hero-bg-color: #0056b3;
+    --proj-btn-bg-color: #00aaff;
+    --btn-bg-hv-color: #0056b3;
+    --h-text-color: #dc3545;
+    --contact-bg-color: #6f42c1;
+    --tech-card-acc-bd-bg: #f5f5f5;
+    --acc-title-hv: #c82333;
+    --contr-bg: #cfcfcf;
+    --proj-code-link-hv-color: #0a0a0a;
+    --proj-try-btn: #20c997;
+}
+
+/* Color Scheme 2 */
+[data-theme='2'] {
+    --body-bg-color: #f0f4f8;
+    --body-darker-text-color: #444;
+    --body-dark-text-color: #333;
+    --body-light-text-color: #ffffff;
+    --main-bg-color: #4a4a4a;
+    --nav-hv-btn-bg-color: #00bfff;
+    --btn-main-bg-color: #6c757d;
+    --btn-main-bg-hv-color: #5a6268;
+    --hero-bg-color: #007bff;
+    --proj-btn-bg-color: #0056b3;
+    --btn-bg-hv-color: #003d79;
+    --h-text-color: #dc3545;
+    --contact-bg-color: #ff6347;
+    --tech-card-acc-bd-bg: #f0f0f0;
+    --acc-title-hv: #e03e3e;
+    --contr-bg: #e0e0e0;
+    --proj-code-link-hv-color: #0a0a0a;
+    --proj-try-btn: #28a745;
+}
+
+/* Color Scheme 3 */
+[data-theme='3'] {
+    --body-bg-color: #fcfcfc;
+    --body-darker-text-color: #666;
+    --body-dark-text-color: #555;
+    --body-light-text-color: #f8f9fa;
+    --main-bg-color: #343a40;
+    --nav-hv-btn-bg-color: #ff5722;
+    --btn-main-bg-color: #ff9800;
+    --btn-main-bg-hv-color: #f57c00;
+    --hero-bg-color: #ff5722;
+    --proj-btn-bg-color: #ff6f00;
+    --btn-bg-hv-color: #e64a19;
+    --h-text-color: #009688;
+    --contact-bg-color: #673ab7;
+    --tech-card-acc-bd-bg: #e0e0e0;
+    --acc-title-hv: #d32f2f;
+    --contr-bg: #f2f2f2;
+    --proj-code-link-hv-color: #212121;
+    --proj-try-btn: #8bc34a;
+}
+
+
 :root{
     --body-bg-color: #f4f4f9;
     --body-darker-text-color: #555;
