@@ -75,6 +75,13 @@ const addComponent = ({ placeholderID, htmlURL }) => {
                     } else {
                         console.warn('Menu toggle or nav links element not found');
                     }
+
+                    // Dynamically load and add the Feeling Lucky script
+                    const feelingLuckyScript = document.createElement('script');
+                    feelingLuckyScript.src = 'scripts/feelingLucky.js';
+                    feelingLuckyScript.type = 'module';
+                    document.body.appendChild(feelingLuckyScript);
+                    
                 } else {
                     // Perform other initialization for non-navbar components if needed
                     console.log(`${htmlURL} loaded.`);
