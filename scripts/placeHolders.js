@@ -75,6 +75,34 @@ const addComponent = ({ placeholderID, htmlURL }) => {
                     } else {
                         console.warn('Menu toggle or nav links element not found');
                     }
+
+                    // Dynamically load and add the Feeling Lucky script
+                    const feelingLuckyScript = document.createElement('script');
+                    feelingLuckyScript.src = 'scripts/feelingLucky.js';
+                    //feelingLuckyScript.type = 'module';
+                    
+                    feelingLuckyScript.onload = () => {
+                        console.log('Feeling Lucky script loaded.');
+                        // You might want to trigger any additional setup if needed
+
+                        // Load the preferences script dynamically as well
+                        const preferencesScript = document.createElement('script');
+                        preferencesScript.src = 'scripts/applyPreferences.js';
+                        preferencesScript.onload = () => {
+                            console.log('Preferences script loaded.');
+                        };
+                        preferencesScript.onerror = () => {
+                            console.error('Failed to load Preferences script.');
+                        };
+                        document.body.appendChild(preferencesScript);
+                        
+                    };
+                    feelingLuckyScript.onerror = () => {
+                        console.error('Failed to load Feeling Lucky script.');
+                    };
+                    
+                    document.body.appendChild(feelingLuckyScript);     
+                    
                 } else {
                     // Perform other initialization for non-navbar components if needed
                     console.log(`${htmlURL} loaded.`);

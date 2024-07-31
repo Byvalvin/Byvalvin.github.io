@@ -1,10 +1,431 @@
+/* Color Scheme 1 */
+[data-theme='1'] {
+    --body-bg-color: #eaeaea;
+    --body-darker-text-color: #333;
+    --body-dark-text-color: #222;
+    --body-light-text-color: #fafafa;
+    --main-bg-color: #1a1a1a;
+    --nav-hv-btn-bg-color: #007bff;
+    --btn-main-bg-color: #17a2b8;
+    --btn-main-bg-hv-color: #138496;
+    --hero-bg-color: #0056b3;
+    --proj-btn-bg-color: #00aaff;
+    --btn-bg-hv-color: #0056b3;
+    --h-text-color: #dc3545;
+    --contact-bg-color: #6f42c1;
+    --tech-card-acc-bd-bg: #f5f5f5;
+    --acc-title-hv: #c82333;
+    --contr-bg: #cfcfcf;
+    --proj-code-link-hv-color: #0a0a0a;
+    --proj-try-btn: #20c997;
+}
+
+/* Color Scheme 2 */
+[data-theme='2'] {
+    --body-bg-color: #f0f4f8;
+    --body-darker-text-color: #444;
+    --body-dark-text-color: #333;
+    --body-light-text-color: #ffffff;
+    --main-bg-color: #4a4a4a;
+    --nav-hv-btn-bg-color: #00bfff;
+    --btn-main-bg-color: #6c757d;
+    --btn-main-bg-hv-color: #5a6268;
+    --hero-bg-color: #007bff;
+    --proj-btn-bg-color: #0056b3;
+    --btn-bg-hv-color: #003d79;
+    --h-text-color: #dc3545;
+    --contact-bg-color: #ff6347;
+    --tech-card-acc-bd-bg: #f0f0f0;
+    --acc-title-hv: #e03e3e;
+    --contr-bg: #e0e0e0;
+    --proj-code-link-hv-color: #0a0a0a;
+    --proj-try-btn: #28a745;
+}
+
+/* Color Scheme 3 */
+[data-theme='3'] {
+    --body-bg-color: #fcfcfc;
+    --body-darker-text-color: #666;
+    --body-dark-text-color: #555;
+    --body-light-text-color: #f8f9fa;
+    --main-bg-color: #343a40;
+    --nav-hv-btn-bg-color: #ff5722;
+    --btn-main-bg-color: #ff9800;
+    --btn-main-bg-hv-color: #f57c00;
+    --hero-bg-color: #ff5722;
+    --proj-btn-bg-color: #ff6f00;
+    --btn-bg-hv-color: #e64a19;
+    --h-text-color: #009688;
+    --contact-bg-color: #673ab7;
+    --tech-card-acc-bd-bg: #e0e0e0;
+    --acc-title-hv: #d32f2f;
+    --contr-bg: #f2f2f2;
+    --proj-code-link-hv-color: #212121;
+    --proj-try-btn: #8bc34a;
+}
+
+/*Solarised*/
+[data-theme='4'] {
+    --body-bg-color: #002b36;
+    --body-darker-text-color: #93a1a1;
+    --body-dark-text-color: #839496;
+    --body-light-text-color: #fdf6e3;
+    --main-bg-color: #073642;
+    --nav-hv-btn-bg-color: #586e75;
+    --btn-main-bg-color: #2aa198;
+    --btn-main-bg-hv-color: #268986;
+    --hero-bg-color: #073642;
+    --proj-btn-bg-color: #b58900;
+    --btn-bg-hv-color: #cb4b16;
+    --h-text-color: #dc322f;
+    --contact-bg-color: #d33682;
+    --tech-card-acc-bd-bg: #eee8d5;
+    --acc-title-hv: #6c71c4;
+    --contr-bg: #eee8d5;
+    --proj-code-link-hv-color: #586e75;
+    --proj-try-btn: #859900;
+}
+
+/*Dark Purple*/
+[data-theme='5'] {
+    --body-bg-color: #2c003e;
+    --body-darker-text-color: #e0b3ff;
+    --body-dark-text-color: #d1a3d0;
+    --body-light-text-color: #f3e5f5;
+    --main-bg-color: #3e004c;
+    --nav-hv-btn-bg-color: #9c27b0;
+    --btn-main-bg-color: #6a1b9a;
+    --btn-main-bg-hv-color: #4a0072;
+    --hero-bg-color: #9c27b0;
+    --proj-btn-bg-color: #f06292;
+    --btn-bg-hv-color: #c2185b;
+    --h-text-color: #d500f9;
+    --contact-bg-color: #e91e63;
+    --tech-card-acc-bd-bg: #e1bee7;
+    --acc-title-hv: #d81b60;
+    --contr-bg: #e1bee7;
+    --proj-code-link-hv-color: #7b1fa2;
+    --proj-try-btn: #ab47bc;
+}
+
+/*Ocean Breeze*/
+[data-theme='6'] {
+    --body-bg-color: #e0f7fa;
+    --body-darker-text-color: #00695c;
+    --body-dark-text-color: #004d40;
+    --body-light-text-color: #80deea;
+    --main-bg-color: #00796b;
+    --nav-hv-btn-bg-color: #004d40;
+    --btn-main-bg-color: #00bcd4;
+    --btn-main-bg-hv-color: #00838f;
+    --hero-bg-color: #004d40;
+    --proj-btn-bg-color: #0097a7;
+    --btn-bg-hv-color: #006064;
+    --h-text-color: #004d40;
+    --contact-bg-color: #004d40;
+    --tech-card-acc-bd-bg: #b2dfdb;
+    --acc-title-hv: #004d40;
+    --contr-bg: #b2dfdb;
+    --proj-code-link-hv-color: #00796b;
+    --proj-try-btn: #26c6da;
+}
+
+/*Warm Autumn*/
+[data-theme='7'] {
+    --body-bg-color: #ffebee;
+    --body-darker-text-color: #bf360c;
+    --body-dark-text-color: #c62828;
+    --body-light-text-color: #fce4ec;
+    --main-bg-color: #d32f2f;
+    --nav-hv-btn-bg-color: #c62828;
+    --btn-main-bg-color: #e57373;
+    --btn-main-bg-hv-color: #d32f2f;
+    --hero-bg-color: #c62828;
+    --proj-btn-bg-color: #ff7043;
+    --btn-bg-hv-color: #e64a19;
+    --h-text-color: #bf360c;
+    --contact-bg-color: #d32f2f;
+    --tech-card-acc-bd-bg: #f8bbd0;
+    --acc-title-hv: #d32f2f;
+    --contr-bg: #f8bbd0;
+    --proj-code-link-hv-color: #bf360c;
+    --proj-try-btn: #ffab40;
+}
+
+/*Neon Lights*/
+[data-theme='8'] {
+    --body-bg-color: #000000;
+    --body-darker-text-color: #39ff14;
+    --body-dark-text-color: #39ff14;
+    --body-light-text-color: #00e676;
+    --main-bg-color: #3d3d3d;
+    --nav-hv-btn-bg-color: #ff1744;
+    --btn-main-bg-color: #d500f9;
+    --btn-main-bg-hv-color: #c51162;
+    --hero-bg-color: #00bfae;
+    --proj-btn-bg-color: #c51162;
+    --btn-bg-hv-color: #d500f9;
+    --h-text-color: #ff1744;
+    --contact-bg-color: #d500f9;
+    --tech-card-acc-bd-bg: #212121;
+    --acc-title-hv: #d500f9;
+    --contr-bg: #212121;
+    --proj-code-link-hv-color: #00e676;
+    --proj-try-btn: #ff1744;
+}
+
+/*Elegant Black & Gold*/
+[data-theme='9'] {
+    --body-bg-color: #212121;
+    --body-darker-text-color: #d4af37;
+    --body-dark-text-color: #f5f5f5;
+    --body-light-text-color: #fffde7;
+    --main-bg-color: #424242;
+    --nav-hv-btn-bg-color: #d4af37;
+    --btn-main-bg-color: #ffeb3b;
+    --btn-main-bg-hv-color: #fdd835;
+    --hero-bg-color: #d4af37;
+    --proj-btn-bg-color: #ffd54f;
+    --btn-bg-hv-color: #ffb300;
+    --h-text-color: #d4af37;
+    --contact-bg-color: #ffeb3b;
+    --tech-card-acc-bd-bg: #303030;
+    --acc-title-hv: #d4af37;
+    --contr-bg: #303030;
+    --proj-code-link-hv-color: #ffd54f;
+    --proj-try-btn: #ffeb3b;
+}
+
+/*Ice Blue*/
+[data-theme='10'] {
+    --body-bg-color: #e0f7fa;
+    --body-darker-text-color: #0097a7;
+    --body-dark-text-color: #00796b;
+    --body-light-text-color: #b2ebf2;
+    --main-bg-color: #004d40;
+    --nav-hv-btn-bg-color: #00bcd4;
+    --btn-main-bg-color: #00acc1;
+    --btn-main-bg-hv-color: #00838f;
+    --hero-bg-color: #00bcd4;
+    --proj-btn-bg-color: #4dd0e1;
+    --btn-bg-hv-color: #00838f;
+    --h-text-color: #004d40;
+    --contact-bg-color: #00bcd4;
+    --tech-card-acc-bd-bg: #b2ebf2;
+    --acc-title-hv: #004d40;
+    --contr-bg: #b2ebf2;
+    --proj-code-link-hv-color: #00796b;
+    --proj-try-btn: #00bcd4;
+}
+
+/*Tropical Sunset*/
+[data-theme='11'] {
+    --body-bg-color: #ffccbc;
+    --body-darker-text-color: #ff5722;
+    --body-dark-text-color: #e64a19;
+    --body-light-text-color: #ffebee;
+    --main-bg-color: #ff7043;
+    --nav-hv-btn-bg-color: #ff7043;
+    --btn-main-bg-color: #ffab91;
+    --btn-main-bg-hv-color: #ff8a65;
+    --hero-bg-color: #ff5722;
+    --proj-btn-bg-color: #ffab91;
+    --btn-bg-hv-color: #ff8a65;
+    --h-text-color: #e64a19;
+    --contact-bg-color: #ff5722;
+    --tech-card-acc-bd-bg: #fbe9e7;
+    --acc-title-hv: #ff7043;
+    --contr-bg: #fbe9e7;
+    --proj-code-link-hv-color: #ff8a65;
+    --proj-try-btn: #ffab91;
+}
+
+/*Retro Neon*/
+[data-theme='12'] {
+    --body-bg-color: #1c1c1c;
+    --body-darker-text-color: #ff00ff;
+    --body-dark-text-color: #00ffff;
+    --body-light-text-color: #ffcc00;
+    --main-bg-color: #2c2c2c;
+    --nav-hv-btn-bg-color: #ff00ff;
+    --btn-main-bg-color: #00ffff;
+    --btn-main-bg-hv-color: #ff00cc;
+    --hero-bg-color: #ff00ff;
+    --proj-btn-bg-color: #00ffff;
+    --btn-bg-hv-color: #ff00cc;
+    --h-text-color: #ff00ff;
+    --contact-bg-color: #00ffff;
+    --tech-card-acc-bd-bg: #2c2c2c;
+    --acc-title-hv: #ff00cc;
+    --contr-bg: #2c2c2c;
+    --proj-code-link-hv-color: #00ffff;
+    --proj-try-btn: #ff00ff;
+}
+
+
+/*Earthly Tones*/
+[data-theme='13'] {
+    --body-bg-color: #f5f5dc;
+    --body-darker-text-color: #6d4c41;
+    --body-dark-text-color: #5d4037;
+    --body-light-text-color: #dbe6e8;
+    --main-bg-color: #8d6e63;
+    --nav-hv-btn-bg-color: #8d6e63;
+    --btn-main-bg-color: #bcaaa4;
+    --btn-main-bg-hv-color: #a1887f;
+    --hero-bg-color: #8d6e63;
+    --proj-btn-bg-color: #bcaaa4;
+    --btn-bg-hv-color: #a1887f;
+    --h-text-color: #6d4c41;
+    --contact-bg-color: #8d6e63;
+    --tech-card-acc-bd-bg: #dbe6e8;
+    --acc-title-hv: #a1887f;
+    --contr-bg: #dbe6e8;
+    --proj-code-link-hv-color: #8d6e63;
+    --proj-try-btn: #bcaaa4;
+}
+
+/*Winter Wonderland*/
+[data-theme='14'] {
+    --body-bg-color: #e0f7fa;
+    --body-darker-text-color: #004d40;
+    --body-dark-text-color: #00796b;
+    --body-light-text-color: #b2ebf2;
+    --main-bg-color: #00acc1;
+    --nav-hv-btn-bg-color: #00acc1;
+    --btn-main-bg-color: #00bcd4;
+    --btn-main-bg-hv-color: #00838f;
+    --hero-bg-color: #004d40;
+    --proj-btn-bg-color: #26c6da;
+    --btn-bg-hv-color: #004d40;
+    --h-text-color: #004d40;
+    --contact-bg-color: #00bcd4;
+    --tech-card-acc-bd-bg: #b2ebf2;
+    --acc-title-hv: #004d40;
+    --contr-bg: #b2ebf2;
+    --proj-code-link-hv-color: #00796b;
+    --proj-try-btn: #00acc1;
+}
+
+
+/*Elegant Rose*/
+[data-theme='15'] {
+    --body-bg-color: #f8f1f1;
+    --body-darker-text-color: #c2185b;
+    --body-dark-text-color: #d81b60;
+    --body-light-text-color: #fce4ec;
+    --main-bg-color: #e57373;
+    --nav-hv-btn-bg-color: #c2185b;
+    --btn-main-bg-color: #f48fb1;
+    --btn-main-bg-hv-color: #ec407a;
+    --hero-bg-color: #f48fb1;
+    --proj-btn-bg-color: #f06292;
+    --btn-bg-hv-color: #ec407a;
+    --h-text-color: #c2185b;
+    --contact-bg-color: #f06292;
+    --tech-card-acc-bd-bg: #fce4ec;
+    --acc-title-hv: #ec407a;
+    --contr-bg: #fce4ec;
+    --proj-code-link-hv-color: #c2185b;
+    --proj-try-btn: #f48fb1;
+}
+
+/*Cyberpunk Glow*/
+[data-theme='16'] {
+    --body-bg-color: #2e2e2e;
+    --body-darker-text-color: #ff007f;
+    --body-dark-text-color: #00e5ff;
+    --body-light-text-color: #e0f7fa;
+    --main-bg-color: #4a148c;
+    --nav-hv-btn-bg-color: #ff007f;
+    --btn-main-bg-color: #00e5ff;
+    --btn-main-bg-hv-color: #ff004c;
+    --hero-bg-color: #4a148c;
+    --proj-btn-bg-color: #ff007f;
+    --btn-bg-hv-color: #ff004c;
+    --h-text-color: #ff007f;
+    --contact-bg-color: #00e5ff;
+    --tech-card-acc-bd-bg: #2e2e2e;
+    --acc-title-hv: #ff004c;
+    --contr-bg: #2e2e2e;
+    --proj-code-link-hv-color: #00e5ff;
+    --proj-try-btn: #ff007f;
+}
+
+/*Zen Garden*/
+[data-theme='17'] {
+    --body-bg-color: #f0f4f8;
+    --body-darker-text-color: #00796b;
+    --body-dark-text-color: #004d40;
+    --body-light-text-color: #e0f2f1;
+    --main-bg-color: #004d40;
+    --nav-hv-btn-bg-color: #00796b;
+    --btn-main-bg-color: #009688;
+    --btn-main-bg-hv-color: #00796b;
+    --hero-bg-color: #004d40;
+    --proj-btn-bg-color: #009688;
+    --btn-bg-hv-color: #00796b;
+    --h-text-color: #00796b;
+    --contact-bg-color: #009688;
+    --tech-card-acc-bd-bg: #e0f2f1;
+    --acc-title-hv: #00796b;
+    --contr-bg: #e0f2f1;
+    --proj-code-link-hv-color: #004d40;
+    --proj-try-btn: #009688;
+}
+
+/*Vibrant Citrus*/
+[data-theme='18'] {
+    --body-bg-color: #fff3e0;
+    --body-darker-text-color: #ff6f00;
+    --body-dark-text-color: #ffab00;
+    --body-light-text-color: #ffe0b2;
+    --main-bg-color: #ff6f00;
+    --nav-hv-btn-bg-color: #ff6f00;
+    --btn-main-bg-color: #ffab00;
+    --btn-main-bg-hv-color: #ff8f00;
+    --hero-bg-color: #ff6f00;
+    --proj-btn-bg-color: #ffab00;
+    --btn-bg-hv-color: #ff8f00;
+    --h-text-color: #ff6f00;
+    --contact-bg-color: #ffab00;
+    --tech-card-acc-bd-bg: #ffe0b2;
+    --acc-title-hv: #ff8f00;
+    --contr-bg: #ffe0b2;
+    --proj-code-link-hv-color: #ff6f00;
+    --proj-try-btn: #ffab00;
+}
+
+/*Verdant Oasis*/
+[data-theme='19'] {
+    --body-bg-color: #e8f5e9; /* Light green background */
+    --body-darker-text-color: #2e7d32; /* Dark green text */
+    --body-dark-text-color: #388e3c; /* Medium dark green text */
+    --body-light-text-color: #c8e6c9; /* Light green text */
+    --main-bg-color: #4caf50; /* Vibrant green background */
+    --nav-hv-btn-bg-color: #66bb6a; /* Green hover effect */
+    --btn-main-bg-color: #43a047; /* Main button color */
+    --btn-main-bg-hv-color: #2e7d32; /* Button hover color */
+    --hero-bg-color: #388e3c; /* Hero section background */
+    --proj-btn-bg-color: #81c784; /* Project button background */
+    --btn-bg-hv-color: #2c6b41; /* Button hover background */
+    --h-text-color: #2e7d32; /* Headings text color */
+    --contact-bg-color: #66bb6a; /* Contact section background */
+    --tech-card-acc-bd-bg: #c8e6c9; /* Tech card background */
+    --acc-title-hv: #43a047; /* Accordion title hover color */
+    --contr-bg: #c8e6c9; /* Container background */
+    --proj-code-link-hv-color: #2e7d32; /* Code link hover color */
+    --proj-try-btn: #4caf50; /* Try button color */
+}
+
+
 :root{
     --body-bg-color: #f4f4f9;
     --body-darker-text-color: #555;
     --body-dark-text-color: #444;
     --body-light-text-color: #fff;
     --main-bg-color: #2c3e50;
-    --nav-hv-color: #3498db;
+    --nav-hv-btn-bg-color: #3498db;
     --btn-main-bg-color: #28a745;
     --btn-main-bg-hv-color: #218838;
     --hero-bg-color: #27ae60;
@@ -12,14 +433,12 @@
     --btn-bg-hv-color: #2980b9;
     --h-text-color: #e74c3c;
     --contact-bg-color: #9b59b6;
-    --btn-bg-color: #3498db;
     --tech-card-acc-bd-bg: #f9f9f9;
     --acc-title-hv: #c0392b;
     --contr-bg: #ddd;
     --proj-code-link-hv-color: #1a252f;
     --proj-try-btn: #2ecc71;
 }
-
 
 /*1) GENERAL*/
 /* Reset and General Styles */
@@ -33,8 +452,8 @@ body, html {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9; /* Light gray background */
-    color: #444; /* Dark gray text */
+    background-color: var(--body-bg-color); /* Light gray background */
+    color: var(--body-dark-text-color); /* Dark gray text */
 }
 
 /* Main Content Styles */
@@ -49,8 +468,8 @@ body, html {
 
 /* Navbar Styles */
 .navbar {
-    background-color: #2c3e50;
-    color: #fff;
+    background-color: var(--main-bg-color);
+    color: var(--body-light-text-color);
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -64,9 +483,13 @@ body, html {
     object-fit: cover;
     margin-right: 10px;
 }
+.navbar .logo-img:hover,
+.navbar .logo-img:focus{
+    cursor: pointer;
+}
 
 .navbar .navbar-brand {
-    color: #fff;
+    color: var(--body-light-text-color);
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
@@ -81,14 +504,14 @@ body, html {
 }
 
 .nav-links li a {
-    color: #fff;
+    color: var(--body-light-text-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .nav-links li a:hover,
 .nav-links li a:focus {
-    color: #3498db;
+    color: var(--nav-hv-color);
 }
 
 /* Hamburger Menu */
@@ -100,7 +523,7 @@ body, html {
 }
 
 .menu-toggle .bar {
-    background-color: #fff;
+    background-color: var(--body-light-text-color);
     height: 3px;
     width: 25px;
     transition: 0.3s;
@@ -108,8 +531,8 @@ body, html {
 
 /* Footer Styles */
 footer {
-    background-color: #2c3e50;
-    color: #fff;
+    background-color: var(--main-bg-color);
+    color: var(--body-light-text-color);
     padding: 15px 20px;
     text-align: center;
     margin-top: auto;
@@ -118,8 +541,8 @@ footer {
 
 .btn {
     display: inline-block;
-    background-color: #28a745;
-    color: #fff;
+    background-color: var(--btn-main-bg-color);
+    color: var(--body-light-text-color);
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 4px;
@@ -128,7 +551,7 @@ footer {
 }
 
 .btn:hover {
-    background-color: #218838;
+    background-color: var(--btn-main-bg-hv-color);
 }
 
 
@@ -139,8 +562,8 @@ footer {
 /*HOMEPAGE*/
 /* Header (Hero) Styles */
 .hero {
-    background-color: #27ae60; /* Gradient background */
-    color: #fff;
+    background-color: var(--hero-bg-color); /* Gradient background */
+    color: var(--body-light-text-color);
     padding: 100px 5%;
     text-align: center;
 }
@@ -163,7 +586,7 @@ footer {
 
 .hero .btn-group .btn {
     display: inline-block;
-    color: #fff;
+    color: var(--body-light-text-color);
     text-decoration: none;
     padding: 12px 24px;
     border-radius: 4px;
@@ -173,11 +596,11 @@ footer {
 }
 
 .hero .btn-group .projects-btn {
-    background-color: #3498ab;
+    background-color: var(--proj-btn-bg-color);
 }
 
 .hero .btn-group .projects-btn:hover {
-    background-color: #2980b9;
+    background-color: var(--btn-bg-hv-color);
     transform: scale(1.05); /* Slightly scale up on hover */
 }
 
@@ -186,7 +609,7 @@ footer {
 }
 
 .hero .btn-group .github-btn:hover {
-    background-color: #444; /* Slightly lighter on hover */
+    background-color: var(--body-dark-text-color); /* Slightly lighter on hover */
     transform: scale(1.05); /* Slightly scale up on hover */
 }
 
@@ -202,7 +625,7 @@ footer {
     overflow-x: auto; /* Allow horizontal scrolling if needed */
 }
 .about-card {
-    background-color: #fff;
+    background-color: var(--body-light-text-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
@@ -217,27 +640,27 @@ footer {
 }
 .about-card:hover, 
 .about-card.expanded{
-    background-color: #2c3e50; /* Dark background on hover */
-    color: #fff; /* White text color on hover */
+    background-color: var(--main-bg-color); /* Dark background on hover */
+    color: var(--body-light-text-color); /* White text color on hover */
 }
 .about-card h2 {
-    color: #e74c3c;
+    color: var(--h-text-color);
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
 .about-card p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #555;
+    color: var(--body-darker-text-color);
 }
 .about-card .card-title {
     font-size: 1.8rem;
-    color: #e74c3c;
+    color: var(--h-text-color);
     margin-bottom: 10px;
 }
 .about-card:hover .card-title,
 .about-card.expanded .card-title{
-    color: #e74c3c; /* Maintain accent color for the card title */
+    color: var(--h-text-color); /* Maintain accent color for the card title */
 }
 
 .about-card .card-content {
@@ -249,7 +672,7 @@ footer {
 
 .about-card:hover .card-content p,
 .about-card.expanded .card-content p{
-    color: #fff; /* Ensures text within card-content is white on hover */
+    color: var(--body-light-text-color); /* Ensures text within card-content is white on hover */
 }
 
 .about-card.expanded .card-content {
@@ -268,51 +691,51 @@ footer {
 /* About Card Icons */
 .about-icon {
     font-size: 3rem; /* Adjust size as needed */
-    color: #e74c3c; /* Icon color */
+    color: var(--h-text-color); /* Icon color */
     margin-bottom: 15px;
 }
 
 .about-card:hover .about-icon,
 .about-card.expanded .about-icon{
-    color: #e74c3c; /* Change icon color on hover */
+    color: var(--h-text-color); /* Change icon color on hover */
 }
 
 /* home-contact */
 .contact-section {
-    background-color: #9b59b6;
+    background-color: var(--contact-bg-color);
     padding: 50px 5%;
     text-align: center;
     margin-top: 40px; /* Increased margin-top */
 }
 .contact-section h2 {
     font-size: 2.5rem;
-    color: #fff;
+    color: var(--body-light-text-color);
     margin-bottom: 20px;
 }
 .contact-section p {
     font-size: 1.2rem;
     line-height: 1.8;
-    color: #fff;
+    color: var(--body-light-text-color);
     margin-bottom: 20px;
 }
 .contact-section .btn {
-    background-color: #3498db;
-    color: #fff;
+    background-color: var(--nav-hv-color);
+    color: var(--body-light-text-color);
     padding: 12px 24px;
     border-radius: 4px;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
 .contact-section .btn:hover {
-    background-color: #2980b9;
+    background-color: var(--btn-bg-hv-color);
 }
 
 /*PROJECTS PAGE*/
 /* Project Styles */
 /* Page Header Styles */
 .page-header {
-    background-color: #2c3e50; /* Dark background to match the navbar and footer */
-    color: #fff;
+    background-color: var(--main-bg-color); /* Dark background to match the navbar and footer */
+    color: var(--body-light-text-color);
     padding: 20px;
     text-align: center;
 }
@@ -330,7 +753,7 @@ footer {
 }
 .project {
     width: 30%;
-    background-color: #fff; /* White background for projects */
+    background-color: var(--body-light-text-color); /* White background for projects */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
     border-radius: 12px; /* Rounded corners for consistency */
@@ -340,8 +763,8 @@ footer {
 }
 .project:hover {
     transform: scale(1.02);
-    background-color: #2c3e50; /* Dark background on hover */
-    color: #fff; /* White text color on hover */
+    background-color: var(--main-bg-color); /* Dark background on hover */
+    color: var(--body-light-text-color); /* White text color on hover */
 }
 .project:active {
     transform: scale(0.98);
@@ -373,13 +796,13 @@ footer {
     text-align: left;
 }
 .project-info h2 {
-    color: #e74c3c; /* Use accent color for project titles */
+    color: var(--h-text-color); /* Use accent color for project titles */
     margin-top: 0;
 }
 .project-info p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #555;
+    color: var(--body-darker-text-color);
     margin-bottom: 10px;
 }
 
@@ -389,18 +812,18 @@ footer {
     max-width: 1200px;
     margin: 30px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--body-light-text-color);
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 #project-details h2 {
-    color: #e74c3c;
+    color: var(--h-text-color);
     font-size: 2.5rem;
     margin-bottom: 15px;
     align-items: center;
 }
 #project-details h3 {
-    color: #e74c3c; /* Accent color */
+    color: var(--h-text-color); /* Accent color */
     font-size: 1.8rem;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -408,7 +831,7 @@ footer {
 #project-details p {
     font-size: 1.2rem;
     line-height: 1.8;
-    color: #555;
+    color: var(--body-darker-text-color);
     margin-bottom: 20px;
 }
 #project-details img {
@@ -435,14 +858,14 @@ footer {
     margin-bottom: 20px;
 }
 .project-header h2 {
-    color: #e74c3c;
+    color: var(--h-text-color);
     font-size: 2.5rem;
     margin: 0;
 }
 
 .project-header .project-rating {
     font-size: 1.2rem;
-    color: #555;
+    color: var(--body-darker-text-color);
 }
 /* Project Media */
 .project-media {
@@ -469,7 +892,7 @@ footer {
 .tech-card {
     display: flex;
     align-items: center;
-    background: #f9f9f9;
+    background: var(--tech-card-acc-bd-bg);
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 15px;
@@ -487,7 +910,7 @@ footer {
 }
 .tech-info h4 {
     margin: 0 0 5px 0;
-    color: #e74c3c;
+    color: var(--h-text-color);
 }
 
 .tech-info p {
@@ -500,7 +923,7 @@ footer {
     display: flex;
     align-items: center;
     background: none;
-    color: #e74c3c;
+    color: var(--h-text-color);
     padding: 10px 15px;
     cursor: pointer;
     border: none; /* Remove border border-radius: 8px;*/
@@ -510,27 +933,27 @@ footer {
     margin-left: auto;
     font-size: 1.5rem;
     transition: transform 0.3s;
-    color: #e74c3c; /* Ensure chevron is visible against the background */
+    color: var(--h-text-color); /* Ensure chevron is visible against the background */
 }
 /* Optional: Add a border to the body when it's expanded */
 .accordion-body.expanded {
-    border: 1px solid #e74c3c; /* Border color */
+    border: 1px solid var(--h-text-color); /* Border color */
 }
 /* Optional: Add a hover effect for the accordion title */
 .accordion-title:hover {
-    color: #c0392b; /* Slightly darker color on hover */
+    color: var(--acc-title-hv); /* Slightly darker color on hover */
 }
 .accordion-body {
     padding: 15px;
     display: none;
-    background: #f9f9f9;
+    background: var(--tech-card-acc-bd-bg);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
 }
 .contribution-item {
     margin-bottom: 10px;
     padding: 10px;
-    border-bottom: 1px solid #ddd; /* Light gray border */
+    border-bottom: 1px solid var(--contr-bg); /* Light gray border */
 }
 /* Remove the border from the last item */
 #project-details .contribution-item:last-of-type {
@@ -545,17 +968,17 @@ footer {
     padding: 10px 20px;
     margin-right: 10px;
     border-radius: 5px;
-    color: #fff;
+    color: var(--body-light-text-color);
     text-align: center;
     text-decoration: none;
     font-size: 1rem;
     transition: background-color 0.3s;
 }
 .project-buttons .code-btn {
-    background-color: #3498db; /* Blue for code */
+    background-color: var(--nav-hv-color); /* Blue for code */
 }
 .project-buttons .try-btn {
-    background-color: #2ecc71; /* Green for try it out */
+    background-color: var(--proj-try-btn); /* Green for try it out */
 }
 .project-buttons .btn:hover {
     opacity: 0.8;
@@ -573,7 +996,7 @@ footer {
     margin: 20px;
 }
 .project-card {
-    background-color: #fff;
+    background-color: var(--body-light-text-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     padding: 20px;
@@ -588,21 +1011,21 @@ footer {
 .project-card:hover {
     transform: scale(1.05); /* Scale up on hover */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-    background-color: #2c3e50; /* Dark background on hover */
-    color: #fff; /* White text color on hover */
+    background-color: var(--main-bg-color); /* Dark background on hover */
+    color: var(--body-light-text-color); /* White text color on hover */
 }
 .project-card:active {
     transform: scale(0.95); /* Scale down on click */
 }
 .project-card h2 {
-    color: #e74c3c;
+    color: var(--h-text-color);
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
 .project-card p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #555;
+    color: var(--body-darker-text-color);
     flex: 1; /* Make paragraph take remaining space */
     overflow: hidden;
     text-overflow: ellipsis; /* Add ellipsis if text overflows */
@@ -616,17 +1039,17 @@ footer {
     max-width: 1000px;
     margin: 30px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--body-light-text-color);
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 #other-project-details h2 {
-    color: #e74c3c;
+    color: var(--h-text-color);
     font-size: 2.5rem;
     margin-bottom: 15px;
 }
 #other-project-details h3 {
-    color: #e74c3c; /* Accent color */
+    color: var(--h-text-color); /* Accent color */
     font-size: 1.8rem;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -634,7 +1057,7 @@ footer {
 #other-project-details p {
     font-size: 1.2rem;
     line-height: 1.8;
-    color: #555;
+    color: var(--body-darker-text-color);
     margin-bottom: 20px;
 }
 #other-project-details .project-images {
@@ -677,7 +1100,7 @@ footer {
 }
 #other-project-details .project-links a {
     display: inline-block;
-    color: #fff;
+    color: var(--body-light-text-color);
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 4px;
@@ -687,11 +1110,11 @@ footer {
 }
 /* Styling for "Code" link */
 #other-project-details .project-links .code-link {
-    background-color: #2c3e50; /* Purple color */
+    background-color: var(--main-bg-color); /* Purple color */
     margin-right: 10px;
 }
 #other-project-details .project-links .code-link:hover {
-    background-color: #1a252f; /* Darker shade for hover effect */
+    background-color: var(--proj-code-link-hv-color); /* Darker shade for hover effect */
     transform: translateY(-2px); /* Subtle lift effect */
 }
 #other-project-details .project-links .code-link:active {
@@ -699,11 +1122,11 @@ footer {
 }
 /* Styling for "Try it out" link */
 #other-project-details .project-links .try-it-out-link {
-    background-color: #28a745; /* Green color */
+    background-color: var(--btn-main-bg-color); /* Green color */
 }
 
 #other-project-details .project-links .try-it-out-link:hover {
-    background-color: #218838; /* Darker shade for hover effect */
+    background-color: var(--btn-main-bg-hv-color); /* Darker shade for hover effect */
     transform: translateY(-2px); /* Subtle lift effect */
 }
 #other-project-details .project-links .try-it-out-link:active {
@@ -714,11 +1137,11 @@ footer {
 /*CONTACT PAGE*/
 /* Add styles for the custom contact section */
 .custom-contact-section {
-    background-color: #9b59b6; /* Purple background */
+    background-color: var(--contact-bg-color); /* Purple background */
     padding: 50px 20px; /* Increased padding */
     text-align: center;
     margin-top: 40px; /* Increased margin-top */
-    color: #fff; /* White text */
+    color: var(--body-light-text-color); /* White text */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -738,21 +1161,21 @@ footer {
 .custom-contact-section ul li {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #ddd; /* Light gray text */
+    color: var(--contr-bg); /* Light gray text */
 }
 .custom-contact-section ul li a {
-    color: #fff; /* White link color */
+    color: var(--body-light-text-color); /* White link color */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 .custom-contact-section ul li a:hover {
-    color: #3498db; /* Light blue on hover */
+    color: var(--nav-hv-color); /* Light blue on hover */
 }
 .thank-you {
     font-size: 1.2rem;
     text-align: center;
     margin-top: 20px;
-    color: #444; /* Dark gray text */
+    color: var(--body-dark-text-color); /* Dark gray text */
 }
 
 
@@ -767,7 +1190,7 @@ footer {
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: #2c3e50;
+        background-color: var(--main-bg-color);
         width: 100%;
         padding: 10px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
