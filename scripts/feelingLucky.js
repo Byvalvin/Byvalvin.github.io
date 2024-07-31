@@ -18,7 +18,7 @@
  * Change the font of the webpage by updating the Google Fonts <link> tag.
  * @param {string} fontName - The name of the font to apply (e.g., 'Poppins:wght@300;400;600').
  */
-export const changeFont = (fontName) => {
+const changeFont = (fontName) => {
     let fontLink = document.querySelector('link[href*="fonts.googleapis.com"]');
     
     if (fontLink) {
