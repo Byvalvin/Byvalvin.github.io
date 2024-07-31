@@ -79,8 +79,17 @@ const addComponent = ({ placeholderID, htmlURL }) => {
                     // Dynamically load and add the Feeling Lucky script
                     const feelingLuckyScript = document.createElement('script');
                     feelingLuckyScript.src = 'scripts/feelingLucky.js';
-                    feelingLuckyScript.type = 'module';
-                    document.body.appendChild(feelingLuckyScript);
+                    //feelingLuckyScript.type = 'module';
+                    
+                    feelingLuckyScript.onload = () => {
+                        console.log('Feeling Lucky script loaded.');
+                        // You might want to trigger any additional setup if needed
+                    };
+                    feelingLuckyScript.onerror = () => {
+                        console.error('Failed to load Feeling Lucky script.');
+                    };
+                    
+                    document.body.appendChild(feelingLuckyScript);     
                     
                 } else {
                     // Perform other initialization for non-navbar components if needed
