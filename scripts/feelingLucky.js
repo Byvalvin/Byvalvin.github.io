@@ -1,22 +1,6 @@
 // loadFont.js
 
 
-/**
- * Change the font of the webpage by updating the Google Fonts <link> tag.
- * @param {string} fontName - The name of the font to apply (e.g., 'Poppins:wght@300;400;600').
- */
-const changeFont = (fontName) => {
-    let fontLink = document.querySelector('link[href*="fonts.googleapis.com"]');
-    
-    if (fontLink) {
-        fontLink.href = `https://fonts.googleapis.com/css2?family=${fontName}&display=swap`;
-    } else {
-        fontLink = document.createElement('link');
-        fontLink.rel = 'stylesheet';
-        fontLink.href = `https://fonts.googleapis.com/css2?family=${fontName}&display=swap`;
-        document.head.appendChild(fontLink);
-    }
-};
 
 
 document.addEventListener('DOMContentLoaded', function () {
