@@ -84,6 +84,18 @@ const addComponent = ({ placeholderID, htmlURL }) => {
                     feelingLuckyScript.onload = () => {
                         console.log('Feeling Lucky script loaded.');
                         // You might want to trigger any additional setup if needed
+
+                        // Load the preferences script dynamically as well
+                        const preferencesScript = document.createElement('script');
+                        preferencesScript.src = 'scripts/applyPreferences.js';
+                        preferencesScript.onload = () => {
+                            console.log('Preferences script loaded.');
+                        };
+                        preferencesScript.onerror = () => {
+                            console.error('Failed to load Preferences script.');
+                        };
+                        document.body.appendChild(preferencesScript);
+                        
                     };
                     feelingLuckyScript.onerror = () => {
                         console.error('Failed to load Feeling Lucky script.');
