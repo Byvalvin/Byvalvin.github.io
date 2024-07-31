@@ -284,6 +284,10 @@ body, html {
     object-fit: cover;
     margin-right: 10px;
 }
+.navbar .logo-img:hover,
+.navbar .logo-img:focus{
+    cursor: pointer;
+}
 
 .navbar .navbar-brand {
     color: var(--body-light-text-color);
