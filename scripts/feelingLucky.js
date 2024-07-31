@@ -2,7 +2,7 @@
 
 
 
-
+console.log("got here");
 document.addEventListener('DOMContentLoaded', function () {
     const feelingLuckyButton = document.querySelector('.logo-img'); // Use the logo as the Feeling Lucky button
     if(feelingLuckyButton){
