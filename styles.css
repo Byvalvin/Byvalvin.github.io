@@ -218,6 +218,184 @@
     --proj-try-btn: #00bcd4;
 }
 
+/*Tropical Sunset*/
+[data-theme='11'] {
+    --body-bg-color: #ffccbc;
+    --body-darker-text-color: #ff5722;
+    --body-dark-text-color: #e64a19;
+    --body-light-text-color: #ffebee;
+    --main-bg-color: #ff7043;
+    --nav-hv-btn-bg-color: #ff7043;
+    --btn-main-bg-color: #ffab91;
+    --btn-main-bg-hv-color: #ff8a65;
+    --hero-bg-color: #ff5722;
+    --proj-btn-bg-color: #ffab91;
+    --btn-bg-hv-color: #ff8a65;
+    --h-text-color: #e64a19;
+    --contact-bg-color: #ff5722;
+    --tech-card-acc-bd-bg: #fbe9e7;
+    --acc-title-hv: #ff7043;
+    --contr-bg: #fbe9e7;
+    --proj-code-link-hv-color: #ff8a65;
+    --proj-try-btn: #ffab91;
+}
+
+/*Retro Neon*/
+[data-theme='12'] {
+    --body-bg-color: #1c1c1c;
+    --body-darker-text-color: #ff00ff;
+    --body-dark-text-color: #00ffff;
+    --body-light-text-color: #ffcc00;
+    --main-bg-color: #2c2c2c;
+    --nav-hv-btn-bg-color: #ff00ff;
+    --btn-main-bg-color: #00ffff;
+    --btn-main-bg-hv-color: #ff00cc;
+    --hero-bg-color: #ff00ff;
+    --proj-btn-bg-color: #00ffff;
+    --btn-bg-hv-color: #ff00cc;
+    --h-text-color: #ff00ff;
+    --contact-bg-color: #00ffff;
+    --tech-card-acc-bd-bg: #2c2c2c;
+    --acc-title-hv: #ff00cc;
+    --contr-bg: #2c2c2c;
+    --proj-code-link-hv-color: #00ffff;
+    --proj-try-btn: #ff00ff;
+}
+
+
+/*Earthly Tones*/
+[data-theme='13'] {
+    --body-bg-color: #f5f5dc;
+    --body-darker-text-color: #6d4c41;
+    --body-dark-text-color: #5d4037;
+    --body-light-text-color: #dbe6e8;
+    --main-bg-color: #8d6e63;
+    --nav-hv-btn-bg-color: #8d6e63;
+    --btn-main-bg-color: #bcaaa4;
+    --btn-main-bg-hv-color: #a1887f;
+    --hero-bg-color: #8d6e63;
+    --proj-btn-bg-color: #bcaaa4;
+    --btn-bg-hv-color: #a1887f;
+    --h-text-color: #6d4c41;
+    --contact-bg-color: #8d6e63;
+    --tech-card-acc-bd-bg: #dbe6e8;
+    --acc-title-hv: #a1887f;
+    --contr-bg: #dbe6e8;
+    --proj-code-link-hv-color: #8d6e63;
+    --proj-try-btn: #bcaaa4;
+}
+
+/*Winter Wonderland*/
+[data-theme='14'] {
+    --body-bg-color: #e0f7fa;
+    --body-darker-text-color: #004d40;
+    --body-dark-text-color: #00796b;
+    --body-light-text-color: #b2ebf2;
+    --main-bg-color: #00acc1;
+    --nav-hv-btn-bg-color: #00acc1;
+    --btn-main-bg-color: #00bcd4;
+    --btn-main-bg-hv-color: #00838f;
+    --hero-bg-color: #004d40;
+    --proj-btn-bg-color: #26c6da;
+    --btn-bg-hv-color: #004d40;
+    --h-text-color: #004d40;
+    --contact-bg-color: #00bcd4;
+    --tech-card-acc-bd-bg: #b2ebf2;
+    --acc-title-hv: #004d40;
+    --contr-bg: #b2ebf2;
+    --proj-code-link-hv-color: #00796b;
+    --proj-try-btn: #00acc1;
+}
+
+
+/*Elegant Rose*/
+[data-theme='15'] {
+    --body-bg-color: #f8f1f1;
+    --body-darker-text-color: #c2185b;
+    --body-dark-text-color: #d81b60;
+    --body-light-text-color: #fce4ec;
+    --main-bg-color: #e57373;
+    --nav-hv-btn-bg-color: #c2185b;
+    --btn-main-bg-color: #f48fb1;
+    --btn-main-bg-hv-color: #ec407a;
+    --hero-bg-color: #f48fb1;
+    --proj-btn-bg-color: #f06292;
+    --btn-bg-hv-color: #ec407a;
+    --h-text-color: #c2185b;
+    --contact-bg-color: #f06292;
+    --tech-card-acc-bd-bg: #fce4ec;
+    --acc-title-hv: #ec407a;
+    --contr-bg: #fce4ec;
+    --proj-code-link-hv-color: #c2185b;
+    --proj-try-btn: #f48fb1;
+}
+
+/*Cyberpunk Glow*/
+[data-theme='16'] {
+    --body-bg-color: #2e2e2e;
+    --body-darker-text-color: #ff007f;
+    --body-dark-text-color: #00e5ff;
+    --body-light-text-color: #e0f7fa;
+    --main-bg-color: #4a148c;
+    --nav-hv-btn-bg-color: #ff007f;
+    --btn-main-bg-color: #00e5ff;
+    --btn-main-bg-hv-color: #ff004c;
+    --hero-bg-color: #4a148c;
+    --proj-btn-bg-color: #ff007f;
+    --btn-bg-hv-color: #ff004c;
+    --h-text-color: #ff007f;
+    --contact-bg-color: #00e5ff;
+    --tech-card-acc-bd-bg: #2e2e2e;
+    --acc-title-hv: #ff004c;
+    --contr-bg: #2e2e2e;
+    --proj-code-link-hv-color: #00e5ff;
+    --proj-try-btn: #ff007f;
+}
+
+/*Zen Garden*/
+[data-theme='17'] {
+    --body-bg-color: #f0f4f8;
+    --body-darker-text-color: #00796b;
+    --body-dark-text-color: #004d40;
+    --body-light-text-color: #e0f2f1;
+    --main-bg-color: #004d40;
+    --nav-hv-btn-bg-color: #00796b;
+    --btn-main-bg-color: #009688;
+    --btn-main-bg-hv-color: #00796b;
+    --hero-bg-color: #004d40;
+    --proj-btn-bg-color: #009688;
+    --btn-bg-hv-color: #00796b;
+    --h-text-color: #00796b;
+    --contact-bg-color: #009688;
+    --tech-card-acc-bd-bg: #e0f2f1;
+    --acc-title-hv: #00796b;
+    --contr-bg: #e0f2f1;
+    --proj-code-link-hv-color: #004d40;
+    --proj-try-btn: #009688;
+}
+
+/*Vibrant Citrus*/
+[data-theme='18'] {
+    --body-bg-color: #fff3e0;
+    --body-darker-text-color: #ff6f00;
+    --body-dark-text-color: #ffab00;
+    --body-light-text-color: #ffe0b2;
+    --main-bg-color: #ff6f00;
+    --nav-hv-btn-bg-color: #ff6f00;
+    --btn-main-bg-color: #ffab00;
+    --btn-main-bg-hv-color: #ff8f00;
+    --hero-bg-color: #ff6f00;
+    --proj-btn-bg-color: #ffab00;
+    --btn-bg-hv-color: #ff8f00;
+    --h-text-color: #ff6f00;
+    --contact-bg-color: #ffab00;
+    --tech-card-acc-bd-bg: #ffe0b2;
+    --acc-title-hv: #ff8f00;
+    --contr-bg: #ffe0b2;
+    --proj-code-link-hv-color: #ff6f00;
+    --proj-try-btn: #ffab00;
+}
+
 
 
 :root{
