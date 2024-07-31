@@ -18,4 +18,4 @@ const applyStoredPreferences = () => {
 };
 
 // Apply preferences when the DOM content is fully loaded
-document.addEventListener('DOMContentLoaded', applyStoredPreferences);
+applyStoredPreferences();
