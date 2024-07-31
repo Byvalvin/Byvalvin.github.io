@@ -11,8 +11,42 @@ if(feelingLuckyButton){
     console.log("button NOT herere");
 }
 */
+
+// Roboto – Clean and modern
+// changeFont('Roboto:wght@400;700');
+
+// Lora – Elegant with a touch of sophistication
+// changeFont('Lora:wght@400;700');
+
+// Poppins – Geometric and modern
+changeFont('Poppins:wght@300;400;600');
+
+// Montserrat – Bold and contemporary
+// changeFont('Montserrat:wght@400;700');
+
+// Playfair Display – Elegant with a classic touch
+// changeFont('Playfair+Display:wght@400;700');
+
+// Raleway – Sleek and stylish
+// changeFont('Raleway:wght@400;700');
+
+// Change to Open Sans
+// changeFont('Open+Sans:wght@300;400;600');
+
+// Change to Source Sans Pro
+// changeFont('Source+Sans+Pro:wght@400;700');
+
+// Change to Merriweather
+// changeFont('Merriweather:wght@400;700');
+
+// Change to Lato
+// changeFont('Lato:wght@300;400;700');
+
+
 const body = document.body;
-const fonts = ['Poppins:wght@300;400;600', 'Roboto:wght@400;700', 'Arial', 'Verdana'];
+const fonts = ['Poppins:wght@300;400;600', 'Roboto:wght@400;700', 'Lora:wght@400;700', 'Lato:wght@300;400;700',
+               'Merriweather:wght@400;700','Playfair+Display:wght@400;700', 'Montserrat:wght@400;700',  'Arial', 'Verdana'
+              ];
 const themes = ['default', '1', '2', '3'];
 
 if (feelingLuckyButton) {
