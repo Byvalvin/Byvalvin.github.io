@@ -21,11 +21,17 @@ if (feelingLuckyButton) {
         const currentTheme = body.getAttribute('data-theme') || 'default';
         const newTheme = themes[(themes.indexOf(currentTheme) + 1) % themes.length];
         body.setAttribute('data-theme', newTheme);
-
+        
+        // Store the selected theme in localStorage
+        localStorage.setItem('selectedTheme', newTheme);        
+        
         // Change the font
         const currentFont = window.getComputedStyle(body).fontFamily.split(',')[0].replace(/['"]/g, '');
         const newFont = fonts[(fonts.indexOf(currentFont) + 1) % fonts.length];
         changeFont(newFont); // Use the function from loadFont.js
+        
+        // Store the selected font in localStorage
+        localStorage.setItem('selectedFont', newFont);
     });
 }
 
