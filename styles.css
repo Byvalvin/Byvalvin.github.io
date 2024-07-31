@@ -64,7 +64,7 @@
     --proj-try-btn: #8bc34a;
 }
 
-
+/*Solarised*/
 [data-theme='4'] {
     --body-bg-color: #002b36;
     --body-darker-text-color: #93a1a1;
@@ -86,6 +86,7 @@
     --proj-try-btn: #859900;
 }
 
+/*Dark Purple*/
 [data-theme='5'] {
     --body-bg-color: #2c003e;
     --body-darker-text-color: #e0b3ff;
@@ -107,6 +108,7 @@
     --proj-try-btn: #ab47bc;
 }
 
+/*Ocean Breeze*/
 [data-theme='6'] {
     --body-bg-color: #e0f7fa;
     --body-darker-text-color: #00695c;
@@ -128,7 +130,7 @@
     --proj-try-btn: #26c6da;
 }
 
-
+/*Warm Autumn*/
 [data-theme='7'] {
     --body-bg-color: #ffebee;
     --body-darker-text-color: #bf360c;
@@ -150,7 +152,7 @@
     --proj-try-btn: #ffab40;
 }
 
-
+/*Neon Lights*/
 [data-theme='8'] {
     --body-bg-color: #000000;
     --body-darker-text-color: #39ff14;
@@ -172,50 +174,7 @@
     --proj-try-btn: #ff1744;
 }
 
-
-[data-theme='10'] {
-    --body-bg-color: #e0f7fa;
-    --body-darker-text-color: #0097a7;
-    --body-dark-text-color: #00796b;
-    --body-light-text-color: #b2ebf2;
-    --main-bg-color: #004d40;
-    --nav-hv-btn-bg-color: #00bcd4;
-    --btn-main-bg-color: #00acc1;
-    --btn-main-bg-hv-color: #00838f;
-    --hero-bg-color: #00bcd4;
-    --proj-btn-bg-color: #4dd0e1;
-    --btn-bg-hv-color: #00838f;
-    --h-text-color: #004d40;
-    --contact-bg-color: #00bcd4;
-    --tech-card-acc-bd-bg: #b2ebf2;
-    --acc-title-hv: #004d40;
-    --contr-bg: #b2ebf2;
-    --proj-code-link-hv-color: #00796b;
-    --proj-try-btn: #00bcd4;
-}
-
-:root{
-    --body-bg-color: #f4f4f9;
-    --body-darker-text-color: #555;
-    --body-dark-text-color: #444;
-    --body-light-text-color: #fff;
-    --main-bg-color: #2c3e50;
-    --nav-hv-btn-bg-color: #3498db;
-    --btn-main-bg-color: #28a745;
-    --btn-main-bg-hv-color: #218838;
-    --hero-bg-color: #27ae60;
-    --proj-btn-bg-color: #3498ab;
-    --btn-bg-hv-color: #2980b9;
-    --h-text-color: #e74c3c;
-    --contact-bg-color: #9b59b6;
-    --tech-card-acc-bd-bg: #f9f9f9;
-    --acc-title-hv: #c0392b;
-    --contr-bg: #ddd;
-    --proj-code-link-hv-color: #1a252f;
-    --proj-try-btn: #2ecc71;
-}
-
-
+/*Elegant Black & Gold*/
 [data-theme='9'] {
     --body-bg-color: #212121;
     --body-darker-text-color: #d4af37;
@@ -237,6 +196,50 @@
     --proj-try-btn: #ffeb3b;
 }
 
+/*Ice Blue*/
+[data-theme='10'] {
+    --body-bg-color: #e0f7fa;
+    --body-darker-text-color: #0097a7;
+    --body-dark-text-color: #00796b;
+    --body-light-text-color: #b2ebf2;
+    --main-bg-color: #004d40;
+    --nav-hv-btn-bg-color: #00bcd4;
+    --btn-main-bg-color: #00acc1;
+    --btn-main-bg-hv-color: #00838f;
+    --hero-bg-color: #00bcd4;
+    --proj-btn-bg-color: #4dd0e1;
+    --btn-bg-hv-color: #00838f;
+    --h-text-color: #004d40;
+    --contact-bg-color: #00bcd4;
+    --tech-card-acc-bd-bg: #b2ebf2;
+    --acc-title-hv: #004d40;
+    --contr-bg: #b2ebf2;
+    --proj-code-link-hv-color: #00796b;
+    --proj-try-btn: #00bcd4;
+}
+
+
+
+:root{
+    --body-bg-color: #f4f4f9;
+    --body-darker-text-color: #555;
+    --body-dark-text-color: #444;
+    --body-light-text-color: #fff;
+    --main-bg-color: #2c3e50;
+    --nav-hv-btn-bg-color: #3498db;
+    --btn-main-bg-color: #28a745;
+    --btn-main-bg-hv-color: #218838;
+    --hero-bg-color: #27ae60;
+    --proj-btn-bg-color: #3498ab;
+    --btn-bg-hv-color: #2980b9;
+    --h-text-color: #e74c3c;
+    --contact-bg-color: #9b59b6;
+    --tech-card-acc-bd-bg: #f9f9f9;
+    --acc-title-hv: #c0392b;
+    --contr-bg: #ddd;
+    --proj-code-link-hv-color: #1a252f;
+    --proj-try-btn: #2ecc71;
+}
 
 /*1) GENERAL*/
 /* Reset and General Styles */
