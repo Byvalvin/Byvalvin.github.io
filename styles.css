@@ -65,6 +65,135 @@
 }
 
 
+[data-theme='4'] {
+    --body-bg-color: #002b36;
+    --body-darker-text-color: #93a1a1;
+    --body-dark-text-color: #839496;
+    --body-light-text-color: #fdf6e3;
+    --main-bg-color: #073642;
+    --nav-hv-btn-bg-color: #586e75;
+    --btn-main-bg-color: #2aa198;
+    --btn-main-bg-hv-color: #268986;
+    --hero-bg-color: #073642;
+    --proj-btn-bg-color: #b58900;
+    --btn-bg-hv-color: #cb4b16;
+    --h-text-color: #dc322f;
+    --contact-bg-color: #d33682;
+    --tech-card-acc-bd-bg: #eee8d5;
+    --acc-title-hv: #6c71c4;
+    --contr-bg: #eee8d5;
+    --proj-code-link-hv-color: #586e75;
+    --proj-try-btn: #859900;
+}
+
+[data-theme='5'] {
+    --body-bg-color: #2c003e;
+    --body-darker-text-color: #e0b3ff;
+    --body-dark-text-color: #d1a3d0;
+    --body-light-text-color: #f3e5f5;
+    --main-bg-color: #3e004c;
+    --nav-hv-btn-bg-color: #9c27b0;
+    --btn-main-bg-color: #6a1b9a;
+    --btn-main-bg-hv-color: #4a0072;
+    --hero-bg-color: #9c27b0;
+    --proj-btn-bg-color: #f06292;
+    --btn-bg-hv-color: #c2185b;
+    --h-text-color: #d500f9;
+    --contact-bg-color: #e91e63;
+    --tech-card-acc-bd-bg: #e1bee7;
+    --acc-title-hv: #d81b60;
+    --contr-bg: #e1bee7;
+    --proj-code-link-hv-color: #7b1fa2;
+    --proj-try-btn: #ab47bc;
+}
+
+[data-theme='6'] {
+    --body-bg-color: #e0f7fa;
+    --body-darker-text-color: #00695c;
+    --body-dark-text-color: #004d40;
+    --body-light-text-color: #80deea;
+    --main-bg-color: #00796b;
+    --nav-hv-btn-bg-color: #004d40;
+    --btn-main-bg-color: #00bcd4;
+    --btn-main-bg-hv-color: #00838f;
+    --hero-bg-color: #004d40;
+    --proj-btn-bg-color: #0097a7;
+    --btn-bg-hv-color: #006064;
+    --h-text-color: #004d40;
+    --contact-bg-color: #004d40;
+    --tech-card-acc-bd-bg: #b2dfdb;
+    --acc-title-hv: #004d40;
+    --contr-bg: #b2dfdb;
+    --proj-code-link-hv-color: #00796b;
+    --proj-try-btn: #26c6da;
+}
+
+
+[data-theme='7'] {
+    --body-bg-color: #ffebee;
+    --body-darker-text-color: #bf360c;
+    --body-dark-text-color: #c62828;
+    --body-light-text-color: #fce4ec;
+    --main-bg-color: #d32f2f;
+    --nav-hv-btn-bg-color: #c62828;
+    --btn-main-bg-color: #e57373;
+    --btn-main-bg-hv-color: #d32f2f;
+    --hero-bg-color: #c62828;
+    --proj-btn-bg-color: #ff7043;
+    --btn-bg-hv-color: #e64a19;
+    --h-text-color: #bf360c;
+    --contact-bg-color: #d32f2f;
+    --tech-card-acc-bd-bg: #f8bbd0;
+    --acc-title-hv: #d32f2f;
+    --contr-bg: #f8bbd0;
+    --proj-code-link-hv-color: #bf360c;
+    --proj-try-btn: #ffab40;
+}
+
+
+[data-theme='8'] {
+    --body-bg-color: #000000;
+    --body-darker-text-color: #39ff14;
+    --body-dark-text-color: #39ff14;
+    --body-light-text-color: #00e676;
+    --main-bg-color: #3d3d3d;
+    --nav-hv-btn-bg-color: #ff1744;
+    --btn-main-bg-color: #d500f9;
+    --btn-main-bg-hv-color: #c51162;
+    --hero-bg-color: #00bfae;
+    --proj-btn-bg-color: #c51162;
+    --btn-bg-hv-color: #d500f9;
+    --h-text-color: #ff1744;
+    --contact-bg-color: #d500f9;
+    --tech-card-acc-bd-bg: #212121;
+    --acc-title-hv: #d500f9;
+    --contr-bg: #212121;
+    --proj-code-link-hv-color: #00e676;
+    --proj-try-btn: #ff1744;
+}
+
+
+[data-theme='10'] {
+    --body-bg-color: #e0f7fa;
+    --body-darker-text-color: #0097a7;
+    --body-dark-text-color: #00796b;
+    --body-light-text-color: #b2ebf2;
+    --main-bg-color: #004d40;
+    --nav-hv-btn-bg-color: #00bcd4;
+    --btn-main-bg-color: #00acc1;
+    --btn-main-bg-hv-color: #00838f;
+    --hero-bg-color: #00bcd4;
+    --proj-btn-bg-color: #4dd0e1;
+    --btn-bg-hv-color: #00838f;
+    --h-text-color: #004d40;
+    --contact-bg-color: #00bcd4;
+    --tech-card-acc-bd-bg: #b2ebf2;
+    --acc-title-hv: #004d40;
+    --contr-bg: #b2ebf2;
+    --proj-code-link-hv-color: #00796b;
+    --proj-try-btn: #00bcd4;
+}
+
 :root{
     --body-bg-color: #f4f4f9;
     --body-darker-text-color: #555;
@@ -84,6 +213,28 @@
     --contr-bg: #ddd;
     --proj-code-link-hv-color: #1a252f;
     --proj-try-btn: #2ecc71;
+}
+
+
+[data-theme='9'] {
+    --body-bg-color: #212121;
+    --body-darker-text-color: #d4af37;
+    --body-dark-text-color: #f5f5f5;
+    --body-light-text-color: #fffde7;
+    --main-bg-color: #424242;
+    --nav-hv-btn-bg-color: #d4af37;
+    --btn-main-bg-color: #ffeb3b;
+    --btn-main-bg-hv-color: #fdd835;
+    --hero-bg-color: #d4af37;
+    --proj-btn-bg-color: #ffd54f;
+    --btn-bg-hv-color: #ffb300;
+    --h-text-color: #d4af37;
+    --contact-bg-color: #ffeb3b;
+    --tech-card-acc-bd-bg: #303030;
+    --acc-title-hv: #d4af37;
+    --contr-bg: #303030;
+    --proj-code-link-hv-color: #ffd54f;
+    --proj-try-btn: #ffeb3b;
 }
 
 
