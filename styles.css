@@ -396,6 +396,27 @@
     --proj-try-btn: #ffab00;
 }
 
+/*Verdant Oasis*/
+[data-theme='19'] {
+    --body-bg-color: #e8f5e9; /* Light green background */
+    --body-darker-text-color: #2e7d32; /* Dark green text */
+    --body-dark-text-color: #388e3c; /* Medium dark green text */
+    --body-light-text-color: #c8e6c9; /* Light green text */
+    --main-bg-color: #4caf50; /* Vibrant green background */
+    --nav-hv-btn-bg-color: #66bb6a; /* Green hover effect */
+    --btn-main-bg-color: #43a047; /* Main button color */
+    --btn-main-bg-hv-color: #2e7d32; /* Button hover color */
+    --hero-bg-color: #388e3c; /* Hero section background */
+    --proj-btn-bg-color: #81c784; /* Project button background */
+    --btn-bg-hv-color: #2c6b41; /* Button hover background */
+    --h-text-color: #2e7d32; /* Headings text color */
+    --contact-bg-color: #66bb6a; /* Contact section background */
+    --tech-card-acc-bd-bg: #c8e6c9; /* Tech card background */
+    --acc-title-hv: #43a047; /* Accordion title hover color */
+    --contr-bg: #c8e6c9; /* Container background */
+    --proj-code-link-hv-color: #2e7d32; /* Code link hover color */
+    --proj-try-btn: #4caf50; /* Try button color */
+}
 
 
 :root{
