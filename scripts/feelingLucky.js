@@ -4,6 +4,7 @@
 
 console.log("got here");
 document.addEventListener('DOMContentLoaded', function () {
+    console.log("got here 2");
     const feelingLuckyButton = document.querySelector('.logo-img'); // Use the logo as the Feeling Lucky button
     if(feelingLuckyButton){
         console.log("button herere");
