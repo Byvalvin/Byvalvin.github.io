@@ -21,6 +21,7 @@ const changeFont = (fontName) => {
 
 document.addEventListener('DOMContentLoaded', function () {
     const feelingLuckyButton = document.querySelector('.logo-img'); // Use the logo as the Feeling Lucky button
+    if(feelingLuckyButton)console.log("button herere");
     const body = document.body;
     const fonts = ['Poppins:wght@300;400;600', 'Roboto:wght@400;700', 'Arial', 'Verdana'];
     const themes = ['default', '1', '2', '3'];
