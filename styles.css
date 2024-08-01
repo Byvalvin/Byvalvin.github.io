@@ -484,6 +484,28 @@
     --proj-try-btn: #004d40; /* Dark teal for "try" buttons */
 }
 
+/*Abuse of Gradience*/
+[data-theme='23'] {
+    --body-bg-gradient: linear-gradient(135deg, #ff007a, #7e00ff); /* Bright gradient for background */
+    --body-text-color: #ffffff; /* Light text color for readability */
+    --main-bg-gradient: linear-gradient(135deg, #00c6ff, #0072ff); /* Gradient for main sections */
+    --nav-hv-btn-gradient: linear-gradient(135deg, #ff0099, #ff6600); /* Gradient for navbar button hover */
+    --btn-main-bg-gradient: linear-gradient(135deg, #ff0081, #ff6100); /* Gradient for buttons */
+    --btn-main-bg-hv-gradient: linear-gradient(135deg, #ff6f00, #ff0099); /* Gradient for button hover */
+    --hero-bg-gradient: linear-gradient(135deg, #00d2ff, #3a7bd5); /* Gradient for hero section */
+    --proj-btn-bg-gradient: linear-gradient(135deg, #ff4b2b, #ff416c); /* Gradient for project buttons */
+    --btn-bg-hv-gradient: linear-gradient(135deg, #ff416c, #ff6f00); /* Gradient for button hover effects */
+    --h-text-gradient: linear-gradient(135deg, #f06, #ff0099); /* Gradient for headings */
+    --contact-bg-gradient: linear-gradient(135deg, #00c6ff, #0072ff); /* Gradient for contact section */
+    --tech-card-acc-bd-gradient: linear-gradient(135deg, #ff0081, #ff6100); /* Gradient for tech card backgrounds */
+    --acc-title-hv-gradient: linear-gradient(135deg, #ff0099, #ff6600); /* Gradient for accordion title hover */
+    --contr-bg-gradient: linear-gradient(135deg, #00c6ff, #0072ff); /* Gradient for container backgrounds */
+    --proj-code-link-hv-gradient: linear-gradient(135deg, #ff416c, #ff6f00); /* Gradient for code link hover */
+    --proj-try-btn-gradient: linear-gradient(135deg, #ff4b2b, #ff416c); /* Gradient for "try" buttons */
+}
+
+
+
 :root{
     --body-bg-color: #f4f4f9;
     --body-darker-text-color: #555;
