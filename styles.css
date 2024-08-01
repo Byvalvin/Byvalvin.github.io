@@ -418,7 +418,27 @@
     --proj-try-btn: #4caf50; /* Try button color */
 }
 
-
+/*Classic Noir*/
+[data-theme='20'] {
+    --body-bg-color: #2e2e2e; /* Dark gray background */
+    --body-darker-text-color: #1c1c1c; /* Almost black text */
+    --body-dark-text-color: #333333; /* Dark gray text */
+    --body-light-text-color: #e0e0e0; /* Light gray text */
+    --main-bg-color: #1a1a1a; /* Nearly black background */
+    --nav-hv-btn-bg-color: #444; /* Dark gray hover effect */
+    --btn-main-bg-color: #555; /* Medium gray button color */
+    --btn-main-bg-hv-color: #777; /* Lighter gray button hover color */
+    --hero-bg-color: #000; /* Pure black hero section background */
+    --proj-btn-bg-color: #666; /* Slightly lighter gray for project buttons */
+    --btn-bg-hv-color: #999; /* Light gray for button hover effect */
+    --h-text-color: #ffffff; /* White for headings */
+    --contact-bg-color: #333; /* Dark gray contact section background */
+    --tech-card-acc-bd-bg: #1c1c1c; /* Very dark gray for tech card background */
+    --acc-title-hv: #e0e0e0; /* Light gray for accordion title hover */
+    --contr-bg: #2e2e2e; /* Dark gray for containers */
+    --proj-code-link-hv-color: #b0b0b0; /* Light gray for code link hover */
+    --proj-try-btn: #444; /* Dark gray for "try" buttons */
+}
 :root{
     --body-bg-color: #f4f4f9;
     --body-darker-text-color: #555;
