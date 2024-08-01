@@ -504,7 +504,66 @@
     --proj-try-btn-gradient: linear-gradient(135deg, #ff4b2b, #ff416c); /* Gradient for "try" buttons */
 }
 
+/*Sketchy*/
+[data-theme='24'] {
+    --body-bg-color: #e0e0e0; /* Light gray background to simulate paper */
+    --body-text-color: #333333; /* Dark gray for text, resembling charcoal */
+    --main-bg-color: #f5f5f5; /* Slightly off-white for main sections, simulating aged paper */
+    --nav-hv-btn-color: #666666; /* Medium gray for navbar button hover, mimicking pencil shading */
+    --btn-main-bg-color: #cccccc; /* Light gray for buttons, resembling light pencil strokes */
+    --btn-main-bg-hv-color: #999999; /* Medium gray for button hover, simulating deeper pencil shading */
+    --hero-bg-color: #d0d0d0; /* Soft gray for hero section, representing light pencil shading */
+    --proj-btn-bg-color: #b0b0b0; /* Gray for project buttons, giving a subdued look */
+    --btn-bg-hv-color: #888888; /* Darker gray for button hover effects, to simulate more depth */
+    --h-text-color: #444444; /* Dark gray for headings, resembling charcoal strokes */
+    --contact-bg-color: #c0c0c0; /* Gray for contact section, representing a textured paper effect */
+    --tech-card-acc-bd-bg: #f0f0f0; /* Light gray for tech card backgrounds, imitating paper texture */
+    --acc-title-hv-color: #777777; /* Medium gray for accordion title hover effects, resembling pencil shading */
+    --contr-bg-color: #d9d9d9; /* Gray for container backgrounds, to simulate paper texture */
+    --proj-code-link-hv-color: #555555; /* Dark gray for code link hover, resembling charcoal detail */
+    --proj-try-btn-color: #a0a0a0; /* Gray for "try" buttons, to match the pencil sketch theme */
+}
 
+/* Vintage Typewriter */
+[data-theme='25'] {
+    --body-bg-color: #f9f4e8; /* Off-white with a warm, yellowish tone, simulating aged typewriter paper */
+    --body-text-color: #333333; /* Classic dark gray for readability, mimicking ink on paper */
+    --main-bg-color: #eae6d3; /* Soft beige for main sections, resembling the color of old typewriter paper */
+    --nav-hv-btn-color: #5c5c5c; /* Medium gray for navbar button hover, representing typewriter ink smudges */
+    --btn-main-bg-color: #d0d0d0; /* Light gray for buttons, like the surface of old typewriter keys */
+    --btn-main-bg-hv-color: #b0b0b0; /* Medium gray for button hover, similar to worn typewriter keys */
+    --hero-bg-color: #f4f0e9; /* Very light beige for hero section, reflecting a well-worn typewriter page */
+    --proj-btn-bg-color: #c0c0c0; /* Gray for project buttons, mimicking the look of old paper textures */
+    --btn-bg-hv-color: #a0a0a0; /* Darker gray for button hover effects, as if ink was used heavily on the paper */
+    --h-text-color: #444444; /* Dark gray for headings, similar to typewriter ink strokes */
+    --contact-bg-color: #d9d9d9; /* Light gray for contact section, evoking the feel of aged paper with typewriter text */
+    --tech-card-acc-bd-bg: #ece9e0; /* Off-white with a slight beige tint for tech card backgrounds, like old typewriter paper */
+    --acc-title-hv-color: #6e6e6e; /* Medium gray for accordion title hover effects, mimicking faded typewriter ink */
+    --contr-bg-color: #f5f2e8; /* Very light beige for container backgrounds, resembling old paper with typewritten text */
+    --proj-code-link-hv-color: #666666; /* Medium gray for code link hover, reflecting the classic typewriter ink color */
+    --proj-try-btn-color: #bfbfbf; /* Gray for "try" buttons, maintaining the vintage typewriter theme */
+}
+
+
+/* CSS Hell */
+[data-theme='26'] {
+    --body-bg-color: #ff00ff; /* Bright magenta for a jarring background */
+    --body-text-color: #00ff00; /* Neon green text for high contrast */
+    --main-bg-color: #ffff00; /* Bright yellow for main sections, clashing with other colors */
+    --nav-hv-btn-color: #00ffff; /* Cyan for navbar button hover, adding to the chaos */
+    --btn-main-bg-color: #ff0000; /* Bright red for buttons, ensuring they stand out */
+    --btn-main-bg-hv-color: #ff6600; /* Orange for button hover effects, creating additional contrast */
+    --hero-bg-color: #ff1493; /* Deep pink for hero section, clashing with other elements */
+    --proj-btn-bg-color: #00ff7f; /* Spring green for project buttons, adding to the vibrancy */
+    --btn-bg-hv-color: #800080; /* Purple for button hover effects, adding to the clash */
+    --h-text-color: #ff4500; /* Orange-red for headings, ensuring they pop */
+    --contact-bg-color: #ff6347; /* Tomato red for contact section, ensuring it stands out */
+    --tech-card-acc-bd-bg: #7fff00; /* Chartreuse for tech card backgrounds, contributing to the chaos */
+    --acc-title-hv-color: #ffd700; /* Gold for accordion title hover effects, making them eye-catching */
+    --contr-bg-color: #ff00ff; /* Magenta for container backgrounds, continuing the chaotic theme */
+    --proj-code-link-hv-color: #ff69b4; /* Hot pink for code link hover, adding another layer of vibrancy */
+    --proj-try-btn-color: #adff2f; /* Green-yellow for "try" buttons, keeping with the theme */
+}
 
 :root{
     --body-bg-color: #f4f4f9;
