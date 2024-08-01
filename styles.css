@@ -484,79 +484,10 @@
     --proj-try-btn: #004d40; /* Dark teal for "try" buttons */
 }
 
-/*Abuse of Gradience*/
-/* Pastel Dream Gradient */
-[data-theme='23'] {
-    --body-bg-color: linear-gradient(135deg, #fbc2eb, #a6c0fe); /* Pastel pink to light blue gradient for background */
-    --body-darker-text-color: #333333; /* Dark gray text color for readability */
-    --body-dark-text-color: #333333; /* Dark gray text color */
-    --body-light-text-color: #ffffff; /* Light text color for readability */
-    --main-bg-color: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* Light blue to pale cyan gradient for main sections */
-    --nav-hv-btn-bg-color: linear-gradient(135deg, #f6d365, #fda085); /* Soft orange to pastel pink gradient for navbar button hover */
-    --btn-main-bg-color: linear-gradient(135deg, #c1dfc4, #deebf6); /* Mint green to pale blue gradient for buttons */
-    --btn-main-bg-hv-color: linear-gradient(135deg, #a2c2e8, #f3d0c8); /* Soft blue to peach gradient for button hover */
-    --hero-bg-color: linear-gradient(135deg, #f8cfd5, #f7e1d7); /* Soft pink to light cream gradient for hero section */
-    --proj-btn-bg-color: linear-gradient(135deg, #a0c4f5, #d9d9d9); /* Light blue to soft gray gradient for project buttons */
-    --btn-bg-hv-color: linear-gradient(135deg, #f6d365, #fda085); /* Soft orange to pastel pink gradient for button hover effects */
-    --h-text-color: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* Light blue gradient for headings */
-    --contact-bg-color: linear-gradient(135deg, #a2c2e8, #f3d0c8); /* Soft blue to peach gradient for contact section */
-    --tech-card-acc-bd-bg: linear-gradient(135deg, #e0f2f1, #f5f5f5); /* Light mint green to soft gray gradient for tech card backgrounds */
-    --acc-title-hv: linear-gradient(135deg, #f6d365, #fda085); /* Soft orange to pastel pink gradient for accordion titles on hover */
-    --contr-bg: linear-gradient(135deg, #d9d9d9, #f5f5f5); /* Soft gray to light gray gradient for container backgrounds */
-    --proj-code-link-hv-color: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* Light blue gradient for code link hover */
-    --proj-try-btn: linear-gradient(135deg, #c1dfc4, #deebf6); /* Mint green to pale blue gradient for "try" buttons */
-}
-
-
-/* The Beautiful Game*/
-[data-theme='24'] {
-    --body-bg-color: #4caf50; /* Green for the soccer pitch */
-    --body-darker-text-color: #ffffff; /* Light text color for readability */
-    --body-dark-text-color: #e0e0e0; /* Light gray text for contrast */
-    --body-light-text-color: #ffffff; /* Light text color for readability */
-    --main-bg-color: #ffffff; /* White for main sections, representing the clean lines of a soccer pitch */
-    --nav-hv-btn-bg-color: #fbc02d; /* Bright yellow representing a soccer ball */
-    --btn-main-bg-color: #212121; /* Dark gray for buttons, representing soccer shoes */
-    --btn-main-bg-hv-color: #616161; /* Lighter gray for button hover effects */
-    --hero-bg-color: #388e3c; /* Deep green for the hero section, like the soccer pitch */
-    --proj-btn-bg-color: #fbc02d; /* Bright yellow for project buttons, representing the soccer ball */
-    --btn-bg-hv-color: #616161; /* Gradient for button hover effects */
-    --h-text-color: #ff5722; /* Vibrant orange representing team colors or soccer fans */
-    --contact-bg-color: #004d40; /* Deep teal representing team colors */
-    --tech-card-acc-bd-bg: #b0bec5; /* Light gray for tech card backgrounds, symbolizing team jerseys */
-    --acc-title-hv: #ff5722; /* Orange for accordion title hover effects */
-    --contr-bg: #dcdcdc; /* Light gray for container backgrounds representing pitch lines */
-    --proj-code-link-hv-color: #ff5722; /* Vibrant orange for code link hover effects */
-    --proj-try-btn: #212121; /* Dark gray for "try" buttons, representing soccer shoes */
-}
-
-
-/* Soccer Theme */
-[data-theme='25'] {
-    --body-bg-color: linear-gradient(135deg, #4caf50, #2e7d32); /* Gradient representing a soccer pitch (grass) */
-    --body-darker-text-color: #ffffff; /* Light text color for readability */
-    --body-dark-text-color: #e0e0e0; /* Light gray text for contrast */
-    --body-light-text-color: #ffffff; /* Light text color for readability */
-    --main-bg-color: linear-gradient(135deg, #ffffff, #dcdcdc); /* Gradient for main sections, representing the clean lines of a soccer pitch */
-    --nav-hv-btn-bg-color: linear-gradient(135deg, #fbc02d, #f57f17); /* Gradient for hover effects in a bright yellow representing a soccer ball */
-    --btn-main-bg-color: linear-gradient(135deg, #212121, #424242); /* Dark gray gradient for buttons representing soccer shoes */
-    --btn-main-bg-hv-color: linear-gradient(135deg, #616161, #9e9e9e); /* Lighter gray for button hover effects */
-    --hero-bg-color: linear-gradient(135deg, #388e3c, #a5d6a7); /* Gradient representing the soccer pitch for the hero section */
-    --proj-btn-bg-color: linear-gradient(135deg, #fbc02d, #f57f17); /* Bright yellow gradient for project buttons, representing the soccer ball */
-    --btn-bg-hv-color: linear-gradient(135deg, #616161, #9e9e9e); /* Gradient for button hover effects */
-    --h-text-color: linear-gradient(135deg, #ff5722, #e64a19); /* Gradient representing the vibrant colors of soccer fans and teams */
-    --contact-bg-color: linear-gradient(135deg, #004d40, #00796b); /* Deep teal gradient representing team colors */
-    --tech-card-acc-bd-bg: linear-gradient(135deg, #b0bec5, #90a4ae); /* Gradient for tech card backgrounds representing team jerseys */
-    --acc-title-hv: linear-gradient(135deg, #ff5722, #e64a19); /* Gradient for accordion title hover effects */
-    --contr-bg: linear-gradient(135deg, #dcdcdc, #b0bec5); /* Gradient for container backgrounds representing the pitch lines */
-    --proj-code-link-hv-color: linear-gradient(135deg, #ff5722, #e64a19); /* Gradient for code link hover effects */
-    --proj-try-btn: linear-gradient(135deg, #212121, #424242); /* Gradient for "try" buttons, representing soccer shoes */
-}
-
 
 
 /* Vintage Typewriter */
-[data-theme='26'] {
+[data-theme='23'] {
     --body-bg-color: #f9f4e8; /* Off-white with a warm, yellowish tone, simulating aged typewriter paper */
     --body-text-color: #333333; /* Classic dark gray for readability, mimicking ink on paper */
     --main-bg-color: #eae6d3; /* Soft beige for main sections, resembling the color of old typewriter paper */
@@ -576,8 +507,31 @@
 }
 
 
+/* Silver and Gold Riches*/
+[data-theme='24'] {
+    --body-bg-color: #f4f4f4; /* Light gray for a neutral, elegant background */
+    --body-text-color: #333333; /* Dark gray text for readability */
+    --main-bg-color: #ffffff; /* White for main sections to keep things clean and bright */
+    --nav-hv-btn-bg-color: #d4af37; /* Gold for navbar button hover effects */
+    --btn-main-bg-color: #c0c0c0; /* Silver for buttons */
+    --btn-main-bg-hv-color: #a67c00; /* Darker gold for button hover effects */
+    --hero-bg-color: #f5f5f5; /* Very light gray for hero section to keep it elegant */
+    --proj-btn-bg-color: #d4af37; /* Gold for project buttons */
+    --btn-bg-hv-color: #a67c00; /* Darker gold for button hover effects */
+    --h-text-color: #ffd700; /* Gold for headings to stand out */
+    --contact-bg-color: #c0c0c0; /* Silver for contact section */
+    --tech-card-acc-bd-bg: #e0e0e0; /* Light gray for tech card backgrounds */
+    --acc-title-hv: #d4af37; /* Gold for accordion title hover effects */
+    --contr-bg: #f4f4f4; /* Light gray for container backgrounds */
+    --proj-code-link-hv-color: #ffd700; /* Gold for code link hover effects */
+    --proj-try-btn: #c0c0c0; /* Silver for "try" buttons */
+    --highlight-color: #e5e5e5; /* Subtle highlight for additional emphasis */
+    --rich-dark-bg: #2c2c2c; /* Rich dark background for accent elements */
+    --rich-dark-text-color: #e0e0e0; /* Light gray text for high-contrast accents */
+}
+
 /* CSS Hell */
-[data-theme='27'] {
+[data-theme='25'] {
     --body-bg-color: #ff00ff; /* Bright magenta for a jarring background */
     --body-text-color: #00ff00; /* Neon green text for high contrast */
     --main-bg-color: #ffff00; /* Bright yellow for main sections, clashing with other colors */
