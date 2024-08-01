@@ -489,7 +489,9 @@
 /* Vintage Typewriter */
 [data-theme='23'] {
     --body-bg-color: #f9f4e8; /* Off-white with a warm, yellowish tone, simulating aged typewriter paper */
-    --body-text-color: #333333; /* Classic dark gray for readability, mimicking ink on paper */
+    --body-darker-text-color: #141414; /* Deep dark gray */
+    --body-dark-text-color: #1f1f1f; /* Darker gray */
+    --body-light-text-color: #333333; /* Soft, light gray text */
     --main-bg-color: #eae6d3; /* Soft beige for main sections, resembling the color of old typewriter paper */
     --nav-hv-btn-color: #5c5c5c; /* Medium gray for navbar button hover, representing typewriter ink smudges */
     --btn-main-bg-color: #d0d0d0; /* Light gray for buttons, like the surface of old typewriter keys */
@@ -503,7 +505,7 @@
     --acc-title-hv-color: #6e6e6e; /* Medium gray for accordion title hover effects, mimicking faded typewriter ink */
     --contr-bg-color: #f5f2e8; /* Very light beige for container backgrounds, resembling old paper with typewritten text */
     --proj-code-link-hv-color: #666666; /* Medium gray for code link hover, reflecting the classic typewriter ink color */
-    --proj-try-btn-color: #bfbfbf; /* Gray for "try" buttons, maintaining the vintage typewriter theme */
+    --proj-try-btn: #bfbfbf; /* Gray for "try" buttons, maintaining the vintage typewriter theme */
 }
 
 
@@ -512,7 +514,7 @@
 [data-theme='24'] {
     --body-bg-color: #e8f5e9; /* Light green for a fresh look */
     --body-darker-text-color: #1b5e20; /* Dark green for text */
-    --body-dark-text-color: #2e7d32; /* Forest green for text */
+    --body-dark-text-color: ##1f5b26; /* Darker green */
     --body-light-text-color: #2e7d32; /* Forest green for text */
     --main-bg-color: #ffffff; /* White for main sections */
     --nav-hv-btn-bg-color: #388e3c; /* Darker green for navbar hover effects */
@@ -528,14 +530,15 @@
     --contr-bg: #ffffff; /* White for container backgrounds */
     --proj-code-link-hv-color: #66bb6a; /* Medium green for code link hover effects */
     --proj-try-btn: #66bb6a; /* Medium green for "try" buttons */
-    --highlight-color: #a5d6a7; /* Soft green for additional emphasis */
 }
 
 
 /* CSS Hell */
 [data-theme='25'] {
     --body-bg-color: #ff00ff; /* Bright magenta for a jarring background */
-    --body-text-color: #00ff00; /* Neon green text for high contrast */
+    --body-darker-text-color: #009900; /* Even darker neon green */
+    --body-dark-text-color: #00cc00; /* Darker neon green */
+    --body-light-text-color: #00ff00;   
     --main-bg-color: #ffff00; /* Bright yellow for main sections, clashing with other colors */
     --nav-hv-btn-color: #00ffff; /* Cyan for navbar button hover, adding to the chaos */
     --btn-main-bg-color: #ff0000; /* Bright red for buttons, ensuring they stand out */
@@ -549,7 +552,7 @@
     --acc-title-hv-color: #ffd700; /* Gold for accordion title hover effects, making them eye-catching */
     --contr-bg-color: #ff00ff; /* Magenta for container backgrounds, continuing the chaotic theme */
     --proj-code-link-hv-color: #ff69b4; /* Hot pink for code link hover, adding another layer of vibrancy */
-    --proj-try-btn-color: #adff2f; /* Green-yellow for "try" buttons, keeping with the theme */
+    --proj-try-btn: #adff2f; /* Green-yellow for "try" buttons, keeping with the theme */
 }
 
 :root{
