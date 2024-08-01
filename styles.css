@@ -506,7 +506,7 @@
 
 
 /* Abuse of Gradience 2 - Vivid Vibrations */
-[data-theme='26'] {
+[data-theme='24'] {
     --body-bg-gradient: linear-gradient(135deg, #ff6f61, #d4a5a5); /* Soft pink to coral gradient */
     --body-text-color: #ffffff; /* Light text color for readability */
     --main-bg-gradient: linear-gradient(135deg, #6a11cb, #2575fc); /* Intense blue gradient */
@@ -547,7 +547,7 @@
 }
 
 /* Vintage Typewriter */
-[data-theme='25'] {
+[data-theme='26'] {
     --body-bg-color: #f9f4e8; /* Off-white with a warm, yellowish tone, simulating aged typewriter paper */
     --body-text-color: #333333; /* Classic dark gray for readability, mimicking ink on paper */
     --main-bg-color: #eae6d3; /* Soft beige for main sections, resembling the color of old typewriter paper */
@@ -568,7 +568,7 @@
 
 
 /* CSS Hell */
-[data-theme='26'] {
+[data-theme='27'] {
     --body-bg-color: #ff00ff; /* Bright magenta for a jarring background */
     --body-text-color: #00ff00; /* Neon green text for high contrast */
     --main-bg-color: #ffff00; /* Bright yellow for main sections, clashing with other colors */
