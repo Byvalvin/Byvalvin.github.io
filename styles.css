@@ -507,31 +507,95 @@
 }
 
 
-/*Opulence*/
+/* Classic Elegance */
 [data-theme='24'] {
-    --body-bg-color: #f4f4f4; /* Light gray for a neutral, elegant background */
-    --body-text-color: #333333; /* Dark gray text for readability */
-    --main-bg-color: #ffffff; /* White for main sections to keep things clean and bright */
-    --nav-hv-btn-bg-color: #d4af37; /* Gold for navbar button hover effects */
-    --btn-main-bg-color: #c0c0c0; /* Silver for buttons */
-    --btn-main-bg-hv-color: #a67c00; /* Darker gold for button hover effects */
-    --hero-bg-color: #f5f5f5; /* Very light gray for hero section to keep it elegant */
-    --proj-btn-bg-color: #d4af37; /* Gold for project buttons */
-    --btn-bg-hv-color: #a67c00; /* Darker gold for button hover effects */
-    --h-text-color: #ffd700; /* Gold for headings to stand out */
-    --contact-bg-color: #c0c0c0; /* Silver for contact section */
-    --tech-card-acc-bd-bg: #e0e0e0; /* Light gray for tech card backgrounds */
-    --acc-title-hv: #d4af37; /* Gold for accordion title hover effects */
-    --contr-bg: #f4f4f4; /* Light gray for container backgrounds */
-    --proj-code-link-hv-color: #ffd700; /* Gold for code link hover effects */
-    --proj-try-btn: #c0c0c0; /* Silver for "try" buttons */
-    --highlight-color: #e5e5e5; /* Subtle highlight for additional emphasis */
-    --rich-dark-bg: #2c2c2c; /* Rich dark background for accent elements */
-    --rich-dark-text-color: #e0e0e0; /* Light gray text for high-contrast accents */
+    --body-bg-color: #f8f9fa; /* Soft white-gray for a clean backdrop */
+    --body-text-color: #343a40; /* Dark gray for text */
+    --main-bg-color: #ffffff; /* White for main sections */
+    --nav-hv-btn-bg-color: #6c757d; /* Medium gray for navbar hover effects */
+    --btn-main-bg-color: #495057; /* Charcoal gray for buttons */
+    --btn-main-bg-hv-color: #343a40; /* Darker gray for button hover effects */
+    --hero-bg-color: #e9ecef; /* Light gray for hero section */
+    --proj-btn-bg-color: #6c757d; /* Medium gray for project buttons */
+    --btn-bg-hv-color: #343a40; /* Darker gray for button hover effects */
+    --h-text-color: #495057; /* Charcoal gray for headings */
+    --contact-bg-color: #f8f9fa; /* Soft white-gray for contact section */
+    --tech-card-acc-bd-bg: #e9ecef; /* Light gray for tech card backgrounds */
+    --acc-title-hv: #6c757d; /* Medium gray for accordion title hover effects */
+    --contr-bg: #f8f9fa; /* Soft white-gray for container backgrounds */
+    --proj-code-link-hv-color: #495057; /* Charcoal gray for code link hover effects */
+    --proj-try-btn: #495057; /* Charcoal gray for "try" buttons */
+    --highlight-color: #ced4da; /* Light gray for additional emphasis */
+}
+
+
+/* Retro Vibes */
+[data-theme='25'] {
+    --body-bg-color: #1e1e1e; /* Deep charcoal for background */
+    --body-text-color: #e0e0e0; /* Light gray for text */
+    --main-bg-color: #2c2c2c; /* Darker gray for main sections */
+    --nav-hv-btn-bg-color: #ff4081; /* Neon pink for navbar hover effects */
+    --btn-main-bg-color: #00e5ff; /* Electric blue for buttons */
+    --btn-main-bg-hv-color: #ff4081; /* Neon pink for button hover effects */
+    --hero-bg-color: #6200ea; /* Deep purple for hero section */
+    --proj-btn-bg-color: #00e5ff; /* Electric blue for project buttons */
+    --btn-bg-hv-color: #ff4081; /* Neon pink for button hover effects */
+    --h-text-color: #ffeb3b; /* Bright yellow for headings */
+    --contact-bg-color: #2c2c2c; /* Dark gray for contact section */
+    --tech-card-acc-bd-bg: #424242; /* Medium gray for tech card backgrounds */
+    --acc-title-hv: #ff4081; /* Neon pink for accordion title hover effects */
+    --contr-bg: #2c2c2c; /* Dark gray for container backgrounds */
+    --proj-code-link-hv-color: #00e5ff; /* Electric blue for code link hover effects */
+    --proj-try-btn: #00e5ff; /* Electric blue for "try" buttons */
+    --highlight-color: #ffeb3b; /* Bright yellow for additional emphasis */
+}
+
+
+/* Forest Retreat */
+[data-theme='26'] {
+    --body-bg-color: #e8f5e9; /* Light green for a fresh look */
+    --body-text-color: #2e7d32; /* Forest green for text */
+    --main-bg-color: #ffffff; /* White for main sections */
+    --nav-hv-btn-bg-color: #388e3c; /* Darker green for navbar hover effects */
+    --btn-main-bg-color: #66bb6a; /* Medium green for buttons */
+    --btn-main-bg-hv-color: #2e7d32; /* Dark green for button hover effects */
+    --hero-bg-color: #a5d6a7; /* Soft green for hero section */
+    --proj-btn-bg-color: #66bb6a; /* Medium green for project buttons */
+    --btn-bg-hv-color: #2e7d32; /* Dark green for button hover effects */
+    --h-text-color: #1b5e20; /* Dark green for headings */
+    --contact-bg-color: #e8f5e9; /* Light green for contact section */
+    --tech-card-acc-bd-bg: #c8e6c9; /* Light green for tech card backgrounds */
+    --acc-title-hv: #388e3c; /* Darker green for accordion title hover effects */
+    --contr-bg: #ffffff; /* White for container backgrounds */
+    --proj-code-link-hv-color: #66bb6a; /* Medium green for code link hover effects */
+    --proj-try-btn: #66bb6a; /* Medium green for "try" buttons */
+    --highlight-color: #a5d6a7; /* Soft green for additional emphasis */
+}
+
+
+/* Ocean Depths */
+[data-theme='27'] {
+    --body-bg-color: #e0f7fa; /* Light cyan for a refreshing look */
+    --body-text-color: #004d40; /* Deep teal for text */
+    --main-bg-color: #ffffff; /* White for main sections */
+    --nav-hv-btn-bg-color: #00796b; /* Teal for navbar hover effects */
+    --btn-main-bg-color: #004d40; /* Dark teal for buttons */
+    --btn-main-bg-hv-color: #00796b; /* Teal for button hover effects */
+    --hero-bg-color: #004d40; /* Dark teal for hero section */
+    --proj-btn-bg-color: #00796b; /* Teal for project buttons */
+    --btn-bg-hv-color: #004d40; /* Dark teal for button hover effects */
+    --h-text-color: #004d40; /* Dark teal for headings */
+    --contact-bg-color: #e0f7fa; /* Light cyan for contact section */
+    --tech-card-acc-bd-bg: #b2dfdb; /* Light teal for tech card backgrounds */
+    --acc-title-hv: #00796b; /* Teal for accordion title hover effects */
+    --contr-bg: #ffffff; /* White for container backgrounds */
+    --proj-code-link-hv-color: #004d40; /* Dark teal for code link hover effects */
+    --proj-try-btn: #00796b; /* Teal for "try" buttons */
+    --highlight-color: #b2dfdb; /* Light teal for additional emphasis */
 }
 
 /* CSS Hell */
-[data-theme='25'] {
+[data-theme='28'] {
     --body-bg-color: #ff00ff; /* Bright magenta for a jarring background */
     --body-text-color: #00ff00; /* Neon green text for high contrast */
     --main-bg-color: #ffff00; /* Bright yellow for main sections, clashing with other colors */
