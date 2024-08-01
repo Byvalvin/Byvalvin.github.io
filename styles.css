@@ -504,7 +504,29 @@
     --proj-try-btn-gradient: linear-gradient(135deg, #ff4b2b, #ff416c); /* Gradient for "try" buttons */
 }
 
-/* Abuse of Gradience 2*/
+
+/* Abuse of Gradience 2 - Vivid Vibrations */
+[data-theme='26'] {
+    --body-bg-gradient: linear-gradient(135deg, #ff6f61, #d4a5a5); /* Soft pink to coral gradient */
+    --body-text-color: #ffffff; /* Light text color for readability */
+    --main-bg-gradient: linear-gradient(135deg, #6a11cb, #2575fc); /* Intense blue gradient */
+    --nav-hv-btn-gradient: linear-gradient(135deg, #ff9a8b, #f2d50f); /* Warm pink to yellow gradient for navbar hover */
+    --btn-main-bg-gradient: linear-gradient(135deg, #ff0099, #f0f0f0); /* Hot pink to light gray gradient for buttons */
+    --btn-main-bg-hv-gradient: linear-gradient(135deg, #ff6f61, #ff9a8b); /* Coral to pink gradient for button hover */
+    --hero-bg-gradient: linear-gradient(135deg, #00d2ff, #3a7bd5); /* Bright blue to deeper blue gradient */
+    --proj-btn-bg-gradient: linear-gradient(135deg, #ff4b2b, #ff416c); /* Vibrant red to pink gradient for project buttons */
+    --btn-bg-hv-gradient: linear-gradient(135deg, #f7971e, #ffd200); /* Bright orange to yellow gradient for button hover effects */
+    --h-text-gradient: linear-gradient(135deg, #e52a65, #d4526b); /* Deep pink gradient for headings */
+    --contact-bg-gradient: linear-gradient(135deg, #00c6ff, #0072ff); /* Blue gradient for contact section */
+    --tech-card-acc-bd-gradient: linear-gradient(135deg, #ffb347, #ffcc33); /* Orange to yellow gradient for tech cards */
+    --acc-title-hv-gradient: linear-gradient(135deg, #ff6f61, #d4a5a5); /* Coral to soft pink gradient for accordion titles on hover */
+    --contr-bg-gradient: linear-gradient(135deg, #ff7e5f, #feb47b); /* Warm peach to coral gradient for containers */
+    --proj-code-link-hv-gradient: linear-gradient(135deg, #6a11cb, #2575fc); /* Blue gradient for code link hover */
+    --proj-try-btn-gradient: linear-gradient(135deg, #ff4b2b, #ff416c); /* Red to pink gradient for "try" buttons */
+}
+
+
+/* Abuse of Gradience 3*/
 [data-theme='25'] {
     --body-bg-gradient: linear-gradient(135deg, #ff7e5f, #feb47b); /* Warm peach gradient for body background */
     --body-text-color: #ffffff; /* Light text color for readability */
