@@ -462,6 +462,28 @@
     --proj-try-btn: #00a859; /* Ben 10 green for "try" buttons */
 }
 
+/*Starry Night*/
+[data-theme='22'] {
+    --body-bg-color: #002b36; /* Deep, dark blue for the night sky */
+    --body-darker-text-color: #0d0d0d; /* Very dark gray for text */
+    --body-dark-text-color: #1c1c1c; /* Dark gray text */
+    --body-light-text-color: #f0f0f0; /* Soft, light gray text */
+    --main-bg-color: #003366; /* Deep blue for main sections */
+    --nav-hv-btn-bg-color: #ffeb3b; /* Bright yellow for hover effects */
+    --btn-main-bg-color: #004d40; /* Dark teal for buttons */
+    --btn-main-bg-hv-color: #00796b; /* Lighter teal for button hover */
+    --hero-bg-color: #003366; /* Deep blue for hero section */
+    --proj-btn-bg-color: #ffeb3b; /* Bright yellow for project buttons */
+    --btn-bg-hv-color: #004d40; /* Dark teal for button hover effects */
+    --h-text-color: #f1c40f; /* Bright yellow for headings */
+    --contact-bg-color: #002b36; /* Deep blue for contact section */
+    --tech-card-acc-bd-bg: #001f3f; /* Very dark blue for tech card backgrounds */
+    --acc-title-hv: #ffeb3b; /* Bright yellow for accordion title hover */
+    --contr-bg: #003366; /* Deep blue for container backgrounds */
+    --proj-code-link-hv-color: #f1c40f; /* Bright yellow for code link hover */
+    --proj-try-btn: #004d40; /* Dark teal for "try" buttons */
+}
+
 :root{
     --body-bg-color: #f4f4f9;
     --body-darker-text-color: #555;
