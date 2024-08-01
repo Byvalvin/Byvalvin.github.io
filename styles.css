@@ -504,24 +504,24 @@
     --proj-try-btn-gradient: linear-gradient(135deg, #ff4b2b, #ff416c); /* Gradient for "try" buttons */
 }
 
-/*Sketchy*/
-[data-theme='24'] {
-    --body-bg-color: #e0e0e0; /* Light gray background to simulate paper */
-    --body-text-color: #333333; /* Dark gray for text, resembling charcoal */
-    --main-bg-color: #f5f5f5; /* Slightly off-white for main sections, simulating aged paper */
-    --nav-hv-btn-color: #666666; /* Medium gray for navbar button hover, mimicking pencil shading */
-    --btn-main-bg-color: #cccccc; /* Light gray for buttons, resembling light pencil strokes */
-    --btn-main-bg-hv-color: #999999; /* Medium gray for button hover, simulating deeper pencil shading */
-    --hero-bg-color: #d0d0d0; /* Soft gray for hero section, representing light pencil shading */
-    --proj-btn-bg-color: #b0b0b0; /* Gray for project buttons, giving a subdued look */
-    --btn-bg-hv-color: #888888; /* Darker gray for button hover effects, to simulate more depth */
-    --h-text-color: #444444; /* Dark gray for headings, resembling charcoal strokes */
-    --contact-bg-color: #c0c0c0; /* Gray for contact section, representing a textured paper effect */
-    --tech-card-acc-bd-bg: #f0f0f0; /* Light gray for tech card backgrounds, imitating paper texture */
-    --acc-title-hv-color: #777777; /* Medium gray for accordion title hover effects, resembling pencil shading */
-    --contr-bg-color: #d9d9d9; /* Gray for container backgrounds, to simulate paper texture */
-    --proj-code-link-hv-color: #555555; /* Dark gray for code link hover, resembling charcoal detail */
-    --proj-try-btn-color: #a0a0a0; /* Gray for "try" buttons, to match the pencil sketch theme */
+/* Abuse of Gradience 2*/
+[data-theme='25'] {
+    --body-bg-gradient: linear-gradient(135deg, #ff7e5f, #feb47b); /* Warm peach gradient for body background */
+    --body-text-color: #ffffff; /* Light text color for readability */
+    --main-bg-gradient: linear-gradient(135deg, #4facfe, #00f2fe); /* Cool blue gradient for main sections */
+    --nav-hv-btn-gradient: linear-gradient(135deg, #ff416c, #ff4b2b); /* Gradient for navbar button hover */
+    --btn-main-bg-gradient: linear-gradient(135deg, #a2c2e0, #f8cfd3); /* Soft blue-pink gradient for buttons */
+    --btn-main-bg-hv-gradient: linear-gradient(135deg, #e0c3fc, #8ec5fc); /* Gradient for button hover */
+    --hero-bg-gradient: linear-gradient(135deg, #d299c2, #fef9d7); /* Pastel pink-yellow gradient for hero section */
+    --proj-btn-bg-gradient: linear-gradient(135deg, #6a11cb, #2575fc); /* Blue-purple gradient for project buttons */
+    --btn-bg-hv-gradient: linear-gradient(135deg, #d53369, #cbad6f); /* Gradient for button hover effects */
+    --h-text-gradient: linear-gradient(135deg, #f9a, #f6d365); /* Bright gradient for headings */
+    --contact-bg-gradient: linear-gradient(135deg, #ffafbd, #ffc3a0); /* Pink gradient for contact section */
+    --tech-card-acc-bd-gradient: linear-gradient(135deg, #a8c0ff, #3f2b96); /* Gradient for tech card backgrounds */
+    --acc-title-hv-gradient: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradient for accordion title hover */
+    --contr-bg-gradient: linear-gradient(135deg, #4e54c8, #8f94fb); /* Cool blue gradient for container backgrounds */
+    --proj-code-link-hv-gradient: linear-gradient(135deg, #6e8efb, #a777e3); /* Gradient for code link hover */
+    --proj-try-btn-gradient: linear-gradient(135deg, #ff6f61, #de6262); /* Gradient for "try" buttons */
 }
 
 /* Vintage Typewriter */
