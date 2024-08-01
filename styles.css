@@ -532,32 +532,8 @@
 }
 
 
-
-/* Ocean Depths */
-[data-theme='25'] {
-    --body-bg-color: #e0f7fa; /* Light cyan for a refreshing look */
-    --body-darker-text-color: #004d40; /* Deep teal for text */
-    --body-dark-text-color: #004d40; /* Deep teal for text */
-    --body-light-text-color: #004d40; /* Deep teal for text */
-    --main-bg-color: #ffffff; /* White for main sections */
-    --nav-hv-btn-bg-color: #00796b; /* Teal for navbar hover effects */
-    --btn-main-bg-color: #004d40; /* Dark teal for buttons */
-    --btn-main-bg-hv-color: #00796b; /* Teal for button hover effects */
-    --hero-bg-color: #004d40; /* Dark teal for hero section */
-    --proj-btn-bg-color: #00796b; /* Teal for project buttons */
-    --btn-bg-hv-color: #004d40; /* Dark teal for button hover effects */
-    --h-text-color: #004d40; /* Dark teal for headings */
-    --contact-bg-color: #e0f7fa; /* Light cyan for contact section */
-    --tech-card-acc-bd-bg: #b2dfdb; /* Light teal for tech card backgrounds */
-    --acc-title-hv: #00796b; /* Teal for accordion title hover effects */
-    --contr-bg: #ffffff; /* White for container backgrounds */
-    --proj-code-link-hv-color: #004d40; /* Dark teal for code link hover effects */
-    --proj-try-btn: #00796b; /* Teal for "try" buttons */
-    --highlight-color: #b2dfdb; /* Light teal for additional emphasis */
-}
-
 /* CSS Hell */
-[data-theme='26'] {
+[data-theme='25'] {
     --body-bg-color: #ff00ff; /* Bright magenta for a jarring background */
     --body-text-color: #00ff00; /* Neon green text for high contrast */
     --main-bg-color: #ffff00; /* Bright yellow for main sections, clashing with other colors */
