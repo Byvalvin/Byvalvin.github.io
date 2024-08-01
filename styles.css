@@ -508,27 +508,28 @@
 }
 
 
-/* Abuse of Gradience 2 - Vivid Vibrations */
+/* The Beautiful Game*/
 [data-theme='24'] {
-    --body-bg-color: linear-gradient(135deg, #ff6f61, #d4a5a5); /* Soft pink to coral gradient */
+    --body-bg-color: #4caf50; /* Green for the soccer pitch */
     --body-darker-text-color: #ffffff; /* Light text color for readability */
-    --body-dark-text-color: #ffffff; /* Light text color */
+    --body-dark-text-color: #e0e0e0; /* Light gray text for contrast */
     --body-light-text-color: #ffffff; /* Light text color for readability */
-    --main-bg-color: linear-gradient(135deg, #6a11cb, #2575fc); /* Intense blue gradient for main sections */
-    --nav-hv-btn-bg-color: linear-gradient(135deg, #ff9a8b, #f2d50f); /* Warm pink to yellow gradient for navbar hover */
-    --btn-main-bg-color: linear-gradient(135deg, #ff0099, #f0f0f0); /* Hot pink to light gray gradient for buttons */
-    --btn-main-bg-hv-color: linear-gradient(135deg, #ff6f61, #ff9a8b); /* Coral to pink gradient for button hover */
-    --hero-bg-color: linear-gradient(135deg, #00d2ff, #3a7bd5); /* Bright blue to deeper blue gradient for hero section */
-    --proj-btn-bg-color: linear-gradient(135deg, #ff4b2b, #ff416c); /* Vibrant red to pink gradient for project buttons */
-    --btn-bg-hv-color: linear-gradient(135deg, #f7971e, #ffd200); /* Bright orange to yellow gradient for button hover effects */
-    --h-text-color: linear-gradient(135deg, #e52a65, #d4526b); /* Deep pink gradient for headings */
-    --contact-bg-color: linear-gradient(135deg, #00c6ff, #0072ff); /* Blue gradient for contact section */
-    --tech-card-acc-bd-bg: linear-gradient(135deg, #ffb347, #ffcc33); /* Orange to yellow gradient for tech cards */
-    --acc-title-hv: linear-gradient(135deg, #ff6f61, #d4a5a5); /* Coral to soft pink gradient for accordion titles on hover */
-    --contr-bg: linear-gradient(135deg, #ff7e5f, #feb47b); /* Warm peach to coral gradient for containers */
-    --proj-code-link-hv-color: linear-gradient(135deg, #6a11cb, #2575fc); /* Blue gradient for code link hover */
-    --proj-try-btn: linear-gradient(135deg, #ff4b2b, #ff416c); /* Red to pink gradient for "try" buttons */
+    --main-bg-color: #ffffff; /* White for main sections, representing the clean lines of a soccer pitch */
+    --nav-hv-btn-bg-color: #fbc02d; /* Bright yellow representing a soccer ball */
+    --btn-main-bg-color: #212121; /* Dark gray for buttons, representing soccer shoes */
+    --btn-main-bg-hv-color: #616161; /* Lighter gray for button hover effects */
+    --hero-bg-color: #388e3c; /* Deep green for the hero section, like the soccer pitch */
+    --proj-btn-bg-color: #fbc02d; /* Bright yellow for project buttons, representing the soccer ball */
+    --btn-bg-hv-color: #616161; /* Gradient for button hover effects */
+    --h-text-color: #ff5722; /* Vibrant orange representing team colors or soccer fans */
+    --contact-bg-color: #004d40; /* Deep teal representing team colors */
+    --tech-card-acc-bd-bg: #b0bec5; /* Light gray for tech card backgrounds, symbolizing team jerseys */
+    --acc-title-hv: #ff5722; /* Orange for accordion title hover effects */
+    --contr-bg: #dcdcdc; /* Light gray for container backgrounds representing pitch lines */
+    --proj-code-link-hv-color: #ff5722; /* Vibrant orange for code link hover effects */
+    --proj-try-btn: #212121; /* Dark gray for "try" buttons, representing soccer shoes */
 }
+
 
 /* Soccer Theme */
 [data-theme='25'] {
