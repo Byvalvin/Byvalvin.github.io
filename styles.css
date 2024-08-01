@@ -485,25 +485,25 @@
 }
 
 /*Abuse of Gradience*/
+/* Pastel Dream Gradient */
 [data-theme='23'] {
-    --body-bg-gradient: linear-gradient(135deg, #ff007a, #7e00ff); /* Bright gradient for background */
-    --body-text-color: #ffffff; /* Light text color for readability */
-    --main-bg-gradient: linear-gradient(135deg, #00c6ff, #0072ff); /* Gradient for main sections */
-    --nav-hv-btn-gradient: linear-gradient(135deg, #ff0099, #ff6600); /* Gradient for navbar button hover */
-    --btn-main-bg-gradient: linear-gradient(135deg, #ff0081, #ff6100); /* Gradient for buttons */
-    --btn-main-bg-hv-gradient: linear-gradient(135deg, #ff6f00, #ff0099); /* Gradient for button hover */
-    --hero-bg-gradient: linear-gradient(135deg, #00d2ff, #3a7bd5); /* Gradient for hero section */
-    --proj-btn-bg-gradient: linear-gradient(135deg, #ff4b2b, #ff416c); /* Gradient for project buttons */
-    --btn-bg-hv-gradient: linear-gradient(135deg, #ff416c, #ff6f00); /* Gradient for button hover effects */
-    --h-text-gradient: linear-gradient(135deg, #f06, #ff0099); /* Gradient for headings */
-    --contact-bg-gradient: linear-gradient(135deg, #00c6ff, #0072ff); /* Gradient for contact section */
-    --tech-card-acc-bd-gradient: linear-gradient(135deg, #ff0081, #ff6100); /* Gradient for tech card backgrounds */
-    --acc-title-hv-gradient: linear-gradient(135deg, #ff0099, #ff6600); /* Gradient for accordion title hover */
-    --contr-bg-gradient: linear-gradient(135deg, #00c6ff, #0072ff); /* Gradient for container backgrounds */
-    --proj-code-link-hv-gradient: linear-gradient(135deg, #ff416c, #ff6f00); /* Gradient for code link hover */
-    --proj-try-btn-gradient: linear-gradient(135deg, #ff4b2b, #ff416c); /* Gradient for "try" buttons */
+    --body-bg-gradient: linear-gradient(135deg, #fbc2eb, #a6c0fe); /* Pastel pink to light blue gradient for background */
+    --body-text-color: #333333; /* Dark gray text color for readability */
+    --main-bg-gradient: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* Light blue to pale cyan gradient for main sections */
+    --nav-hv-btn-gradient: linear-gradient(135deg, #f6d365, #fda085); /* Soft orange to pastel pink gradient for navbar button hover */
+    --btn-main-bg-gradient: linear-gradient(135deg, #c1dfc4, #deebf6); /* Mint green to pale blue gradient for buttons */
+    --btn-main-bg-hv-gradient: linear-gradient(135deg, #a2c2e8, #f3d0c8); /* Soft blue to peach gradient for button hover */
+    --hero-bg-gradient: linear-gradient(135deg, #f8cfd5, #f7e1d7); /* Soft pink to light cream gradient for hero section */
+    --proj-btn-bg-gradient: linear-gradient(135deg, #a0c4f5, #d9d9d9); /* Light blue to soft gray gradient for project buttons */
+    --btn-bg-hv-gradient: linear-gradient(135deg, #f6d365, #fda085); /* Soft orange to pastel pink gradient for button hover effects */
+    --h-text-gradient: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* Light blue gradient for headings */
+    --contact-bg-gradient: linear-gradient(135deg, #a2c2e8, #f3d0c8); /* Soft blue to peach gradient for contact section */
+    --tech-card-acc-bd-gradient: linear-gradient(135deg, #e0f2f1, #f5f5f5); /* Light mint green to soft gray gradient for tech card backgrounds */
+    --acc-title-hv-gradient: linear-gradient(135deg, #f6d365, #fda085); /* Soft orange to pastel pink gradient for accordion titles on hover */
+    --contr-bg-gradient: linear-gradient(135deg, #d9d9d9, #f5f5f5); /* Soft gray to light gray gradient for container backgrounds */
+    --proj-code-link-hv-gradient: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* Light blue gradient for code link hover */
+    --proj-try-btn-gradient: linear-gradient(135deg, #c1dfc4, #deebf6); /* Mint green to pale blue gradient for "try" buttons */
 }
-
 
 /* Abuse of Gradience 2 - Vivid Vibrations */
 [data-theme='24'] {
