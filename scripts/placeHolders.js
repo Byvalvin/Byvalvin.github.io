@@ -1,36 +1,20 @@
 // placeHolders.js
-// load components that will be on all pages
+// Load components that will be on all pages
 
 // Function to highlight the active link in the navbar
 const highlightActiveLink = () => {
-    const currentLocation = window.location.href;
+    const currentLocation = window.location.pathname;
     const navLinks = document.querySelectorAll('.nav-links li a');
 
     navLinks.forEach(link => {
-        if (link.href === currentLocation) {
+        const href = link.getAttribute('href');
+        if (currentLocation === href || (currentLocation === '/' && href === 'index.html')) {
             link.classList.add('active');
         } else {
             link.classList.remove('active');
         }
     });
 };
-
-// const highlightActiveLink = () => {
-// const currentLocation = window.location.pathname;
-// const navLinks = document.querySelectorAll('.nav-links li a');
-
-// navLinks.forEach(link => {
-// const href = link.getAttribute('href');
-// if (currentLocation === '/' && href === 'index.html') {
-//     link.classList.add('active');
-// } else if (currentLocation === href) {
-//     link.classList.add('active');
-// } else {
-//     link.classList.remove('active');
-// }
-// });
-// };
-
 
 // Function to add a component to the page
 const addComponent = ({ placeholderID, htmlURL }) => {
@@ -59,7 +43,6 @@ const addComponent = ({ placeholderID, htmlURL }) => {
                 // Insert the received HTML into the placeholder
                 componentPlaceholder.innerHTML = xhr.responseText;
 
-                // If the component is the navbar, add specific behaviors
                 if (htmlURL === 'navbar.html') {
                     highlightActiveLink();
 
@@ -71,23 +54,21 @@ const addComponent = ({ placeholderID, htmlURL }) => {
                         menuToggle.addEventListener('click', () => {
                             console.log("Hamburger menu clicked");
                             navLinks.classList.toggle('active');
-                        }); 
+                        });
                     } else {
                         console.warn('Menu toggle or nav links element not found');
                     }
 
-                    // Dynamically load and add the Feeling Lucky script
+                    // Dynamically load additional scripts
                     const feelingLuckyScript = document.createElement('script');
                     feelingLuckyScript.src = 'scripts/feelingLucky.js';
-                    //feelingLuckyScript.type = 'module';
-                    
+                    feelingLuckyScript.defer;
                     feelingLuckyScript.onload = () => {
                         console.log('Feeling Lucky script loaded.');
-                        // You might want to trigger any additional setup if needed
 
-                        // Load the preferences script dynamically as well
                         const preferencesScript = document.createElement('script');
                         preferencesScript.src = 'scripts/applyPreferences.js';
+                        preferencesScript.defer;
                         preferencesScript.onload = () => {
                             console.log('Preferences script loaded.');
                         };
@@ -95,16 +76,12 @@ const addComponent = ({ placeholderID, htmlURL }) => {
                             console.error('Failed to load Preferences script.');
                         };
                         document.body.appendChild(preferencesScript);
-                        
                     };
                     feelingLuckyScript.onerror = () => {
                         console.error('Failed to load Feeling Lucky script.');
                     };
-                    
-                    document.body.appendChild(feelingLuckyScript);     
-                    
+                    document.body.appendChild(feelingLuckyScript);
                 } else {
-                    // Perform other initialization for non-navbar components if needed
                     console.log(`${htmlURL} loaded.`);
                 }
             } else {
@@ -115,6 +92,7 @@ const addComponent = ({ placeholderID, htmlURL }) => {
         // Setup onerror callback
         xhr.onerror = function() {
             console.error(`Failed to load ${htmlURL}: Network error`);
+            // Optional: Display a user-friendly error message or fallback content
         };
 
         // Send the request
@@ -125,12 +103,12 @@ const addComponent = ({ placeholderID, htmlURL }) => {
 // Array of components to include
 const components = [
     { 
-        placeholderID: "navbar-placeholder", // Placeholder ID for navbar
-        htmlURL: "navbar.html" // URL to the HTML component file
+        placeholderID: "navbar-placeholder",
+        htmlURL: "navbar.html"
     },
     {
-        placeholderID: "footer-placeholder", // Placeholder ID for footer
-        htmlURL: "footer.html" // URL to the HTML component file
+        placeholderID: "footer-placeholder",
+        htmlURL: "footer.html"
     }
 ];
 
