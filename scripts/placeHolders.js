@@ -81,6 +81,15 @@ const addComponent = ({ placeholderID, htmlURL }) => {
                         console.error('Failed to load Feeling Lucky script.');
                     };
                     document.body.appendChild(feelingLuckyScript);
+                } else if(htmlURL === 'footer.html'){
+                    // Update the copyright year dynamically
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const yearSpan = document.getElementById('year');
+                        if (yearSpan) {
+                            yearSpan.textContent = new Date().getFullYear();
+                        }
+                    });
+                    
                 } else {
                     console.log(`${htmlURL} loaded.`);
                 }
