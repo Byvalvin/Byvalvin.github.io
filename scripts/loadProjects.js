@@ -1,6 +1,6 @@
 // loadProjects.js
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     const projectData = [
         {
             id: 'qrapp',
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: 'proquest',
             title: 'ProQuest',
-            description: 'A site for Agents and Scout to find the best teams for their players and the best players for their teams.',
+            description: 'A site for Agents and Scouts to find the best teams for their players and the best players for their teams.',
             images: ['proquest1.png'],
             detailsPage: 'project-details.html?id=proquest'
         }
@@ -30,12 +30,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to create project HTML elements
     const createProjectElements = () => {
+        if (!projectList) {
+            console.error('Project list container not found.');
+            return;
+        }
+
         projectData.forEach(project => {
             const projectSection = document.createElement('section');
             projectSection.classList.add('project');
 
+            // Generate image HTML
             const projectImages = project.images.map(image => {
-                return `<img src="projects/${project.id}/images/${image}" alt="${image}" class="project-image">`;
+                return `<img src="projects/${project.id}/images/${image}" alt="${project.title} - ${image}" class="project-image">`;
             }).join('');
 
             projectSection.innerHTML = `
@@ -48,8 +54,11 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
 
             // Add a click event listener to navigate to project details page
-            projectSection.addEventListener('click', () => {
-                window.location.href = project.detailsPage; // Navigate to project details page
+            projectSection.addEventListener('click', (event) => {
+                // Avoid navigating if the click was on the link itself
+                if (event.target.tagName !== 'A') {
+                    window.location.href = project.detailsPage;
+                }
             });
 
             projectList.appendChild(projectSection);
