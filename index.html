@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Byvalvin's portfolio showcasing expertise in web development, app design, and machine learning. Explore projects and contact information." initial-scale=1.0">
+    <meta name="description" content="Byvalvin's portfolio showcasing expertise in web development, app design, and machine learning. Explore projects and contact information.">
     <title>Byvalvin - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -19,7 +19,7 @@
             <h1>Hello and Welcome To My Portfolio!</h1>
             <p>I'm a passionate and dedicated software designer with expertise in web development, app design, and machine learning.</p>
             <div class="btn-group">
-                <a href="projects.html" class="btn projects-btn">View My Projects</a>
+                <a href="projects.html" class="btn projects-btn" data-link>View My Projects</a>
                 <a href="https://github.com/Byvalvin" class="btn github-btn" target="_blank" rel="noopener noreferrer">Visit My GitHub</a>
             </div>
         </div>
@@ -29,7 +29,7 @@
     <main class="main">
         <!-- About Section -->
         <section class="about-section">
-            <div class="about-card" role="button" tabindex="0" onclick="toggleCard(this)">
+            <div class="about-card" role="button" tabindex="0" onclick="toggleCard(this)" onkeypress="if(event.key === 'Enter') toggleCard(this)">
                 <i class="fas fa-user about-icon"></i>
                 <div class="card-title">Who Am I?</div>
                 <div class="card-content">
@@ -40,7 +40,7 @@
                 </div>
             </div>
         
-            <div class="about-card" role="button" tabindex="0" onclick="toggleCard(this)">
+            <div class="about-card" role="button" tabindex="0" onclick="toggleCard(this)" onkeypress="if(event.key === 'Enter') toggleCard(this)">
                 <i class="fas fa-briefcase about-icon"></i>
                 <div class="card-title">What I Do?</div>
                 <div class="card-content">
@@ -51,7 +51,7 @@
                 </div>
             </div>
         
-            <div class="about-card" role="button" tabindex="0" onclick="toggleCard(this)">
+            <div class="about-card" role="button" tabindex="0" onclick="toggleCard(this)" onkeypress="if(event.key === 'Enter') toggleCard(this)">
                 <i class="fas fa-star about-icon"></i>
                 <div class="card-title">Why Hire Me?</div>
                 <div class="card-content">
@@ -79,7 +79,7 @@
             <div class="contact-content">
                 <h2>Contact Me</h2>
                 <p>If you have any inquiries or would like to discuss a project, feel free to get in touch!</p>
-                <a href="contact.html" class="btn">Contact Me</a>
+                <a href="contact.html" class="btn" data-link>Contact Me</a>
             </div>
         </section>
     </main>
@@ -87,6 +87,6 @@
     <!-- Footer -->
     <div class="footer-container" id="footer-placeholder"></div>
 
-    <script src="scripts/placeHolders.js" defer></script> <!-- Load JavaScript file for navbar and footer inclusion -->
+    <script src="scripts/placeHolders.js" defer></script>
 </body>
 </html>
