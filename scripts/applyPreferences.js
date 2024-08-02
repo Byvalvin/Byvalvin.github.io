@@ -4,7 +4,6 @@ const applyStoredPreferences = () => {
     const body = document.body;
     const storedTheme = localStorage.getItem('selectedTheme');
     const storedFont = localStorage.getItem('selectedFont');
-    console.log(storedTheme, storedFont, "stored 3");
     
     if (storedTheme) {
         body.setAttribute('data-theme', storedTheme);
