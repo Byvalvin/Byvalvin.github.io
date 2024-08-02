@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     // Function to parse query parameters from URL
     const getParameterByName = (name, url) => {
@@ -12,32 +13,40 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Retrieve project ID from URL query parameter
     const projectId = getParameterByName('id');
-    console.log(projectId);
+
+    // Display loading message while fetching data
+    const projectDetailsContainer = document.getElementById('other-project-details');
+    projectDetailsContainer.innerHTML = '<p>Loading project details...</p>';
 
     // Fetch projects data from JSON file
     fetch('projects/other/otherprojects.json')
         .then(response => response.json())
         .then(data => {
             // Find the project details from the JSON data based on projectId
-            const project = data.projects.find(p => p.otherDetailsPage === `other-project-details.html?id=${projectId}`);
+            const project = data.projects.find(p => p.id === projectId);
 
             if (!project) {
                 console.error(`Project with ID ${projectId} not found.`);
+                projectDetailsContainer.innerHTML = '<p>Project not found.</p>';
                 return;
             }
 
             // Function to generate HTML for project details
             const generateProjectDetailsHTML = (project) => {
-                const projectImages = project.images.map(image => `<img src="projects/other/images/${image}" alt="${image}">`).join('');
-                const projectVideos = project.videos.map(video => video.startsWith("https://") ? 
-                    `<iframe src="${video}" frameborder="0" allowfullscreen></iframe>` : `<video controls><source src="projects/other/videos/${video}" type="video/mp4"></video>`).join('');
-                
+                // Sanitize the image and video URLs
+                const projectImages = project.images.map(image => `<img src="projects/other/images/${image}" alt="${image}" />`).join('');
+                const projectVideos = project.videos.map(video => {
+                    return video.startsWith("https://") ? 
+                        `<iframe src="${video}" frameborder="0" allowfullscreen></iframe>` : 
+                        `<video controls><source src="projects/other/videos/${video}" type="video/mp4" /></video>`;
+                }).join('');
+
                 // Render the "Code" link if GitHub link exists
-                const githubLinkHTML = project.githubLink ? `<a class="code-link" href="${project.githubLink}" target="_blank">Code</a>` : '';
-            
+                const githubLinkHTML = project.githubLink ? `<a class="code-link" href="${project.githubLink}" target="_blank" rel="noopener noreferrer">Code</a>` : '';
+                
                 // Render the "Try it out" link if tryItOutLink exists
-                const tryItOutLinkHTML = project.tryItOutLink ? `<a class="try-it-out-link" href="${project.tryItOutLink}" target="_blank">Try it out</a>` : '';
-            
+                const tryItOutLinkHTML = project.tryItOutLink ? `<a class="try-it-out-link" href="${project.tryItOutLink}" target="_blank" rel="noopener noreferrer">Try it out</a>` : '';
+                
                 return `
                     <h2>${project.name}</h2>
                     <p>${project.description}</p>
@@ -51,8 +60,10 @@ document.addEventListener('DOMContentLoaded', function() {
             };
 
             // Display project details on the page
-            const projectDetailsContainer = document.getElementById('other-project-details');
             projectDetailsContainer.innerHTML = generateProjectDetailsHTML(project);
         })
-        .catch(error => console.error('Error loading project details:', error));
+        .catch(error => {
+            console.error('Error loading project details:', error);
+            projectDetailsContainer.innerHTML = '<p>Sorry, we were unable to load the project details at this time. Please try again later.</p>';
+        });
 });
