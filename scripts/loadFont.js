@@ -31,7 +31,8 @@ const changeFont = (fontName) => {
     }
 };
 
-// Example usage: Uncomment the line below to test different fonts
+// Example usage:
+// Uncomment the line below to test different fonts
 
 // Roboto – Clean and modern
 // changeFont('Roboto:wght@400;700');
@@ -51,14 +52,14 @@ changeFont('Poppins:wght@300;400;600');
 // Raleway – Sleek and stylish
 // changeFont('Raleway:wght@400;700');
 
-// Change to Open Sans
+// Open Sans – Clean and versatile
 // changeFont('Open+Sans:wght@300;400;600');
 
-// Change to Source Sans Pro
+// Source Sans Pro – Modern and legible
 // changeFont('Source+Sans+Pro:wght@400;700');
 
-// Change to Merriweather
+// Merriweather – Classic and readable
 // changeFont('Merriweather:wght@400;700');
 
-// Change to Lato
+// Lato – Friendly and approachable
 // changeFont('Lato:wght@300;400;700');
