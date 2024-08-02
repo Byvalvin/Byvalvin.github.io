@@ -1,12 +1,10 @@
-
 // loadProjectDetails.js
 
-document.addEventListener('DOMContentLoaded', function() {
-    console.log("woke");
+document.addEventListener('DOMContentLoaded', () => {
+    console.log("Document loaded");
 
     // Function to parse query parameters from URL
-    const getParameterByName = (name, url) => {
-        if (!url) url = window.location.href;
+    const getParameterByName = (name, url = window.location.href) => {
         name = name.replace(/[\[\]]/g, '\\$&');
         const regex = new RegExp(`[?&]${name}(=([^&#]*)|&|#|$)`);
         const results = regex.exec(url);
@@ -16,24 +14,41 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     const projectId = getParameterByName('id');
-    console.log(projectId);
+    console.log("Project ID:", projectId);
 
     // Fetch project details from JSON file
     fetch('projects/projectDetails.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.json();
+        })
         .then(data => {
             const project = data[projectId];
             if (!project) {
                 console.error(`Project with ID ${projectId} not found.`);
+                document.getElementById('project-details').innerHTML = `<p>Project not found.</p>`;
                 return;
             }
 
-            const projectImages = project.images.map(image => `<img src="projects/${projectId}/images/${image}" alt="${image}">`).join('');
-            const projectVideos = project.videos.map(video => `<video controls><source src="projects/${projectId}/videos/${video}" type="video/mp4"></video>`).join('');
+            // Generate HTML for project images, videos, tech cards, and contributions
+            const projectImages = project.images.map(image => `
+                <img src="projects/${projectId}/images/${image}" alt="${project.title} image" class="project-image">
+            `).join('');
+
+            const projectVideos = project.videos.map(video => `
+                <video controls aria-label="${project.title} video">
+                    <source src="projects/${projectId}/videos/${video}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            `).join('');
 
             const techCards = Object.entries(project.technologies).map(([tech, description]) => `
                 <div class="tech-card">
-                    <div class="tech-icon"><img src="projects/icons/${tech.split(' ').join('').toLowerCase().replace(/ /g, '-')}.svg" alt="${tech}"></div>
+                    <div class="tech-icon">
+                        <img src="projects/icons/${tech.split(' ').join('').toLowerCase()}.svg" alt="${tech}">
+                    </div>
                     <div class="tech-info">
                         <h4>${tech}</h4>
                         <p>${description}</p>
@@ -47,13 +62,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             `).join('');
 
-            let buttonsHTML = '';
-            if (project.codeUrl) {
-                buttonsHTML += `<a href="${project.codeUrl}" class="btn code-btn" target="_blank">View Code</a>`;
-            }
-            if (project.tryItOutUrl) {
-                buttonsHTML += `<a href="${project.tryItOutUrl}" class="btn try-btn" target="_blank">Try It Out</a>`;
-            }
+            const buttonsHTML = `
+                ${project.codeUrl ? `<a href="${project.codeUrl}" class="btn code-btn" target="_blank" rel="noopener noreferrer">View Code</a>` : ''}
+                ${project.tryItOutUrl ? `<a href="${project.tryItOutUrl}" class="btn try-btn" target="_blank" rel="noopener noreferrer">Try It Out</a>` : ''}
+            `;
 
             const projectDetailsContainer = document.getElementById('project-details');
             projectDetailsContainer.innerHTML = `
@@ -61,54 +73,39 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p>${project.description}</p>
                 <div class="project-images">${projectImages}</div>
                 <div class="project-videos">${projectVideos}</div>
-                <h3 class="accordion-title" data-target="technologies">
+                <h3 class="accordion-title" data-target="technologies" aria-controls="technologies" aria-expanded="false">
                     Technologies Used
-                    <span class="chevron" data-target="technologies">&#9660;</span>
+                    <span class="chevron">&#9660;</span>
                 </h3>
-                <div class="accordion-body technologies-body">
+                <div class="accordion-body technologies-body" id="technologies">
                     ${techCards}
                 </div>
-                <h3 class="accordion-title" data-target="contributions">
+                <h3 class="accordion-title" data-target="contributions" aria-controls="contributions" aria-expanded="false">
                     My Contributions
-                    <span class="chevron" data-target="contributions">&#9660;</span>
+                    <span class="chevron">&#9660;</span>
                 </h3>
-                <div class="accordion-body contributions-body">
+                <div class="accordion-body contributions-body" id="contributions">
                     ${contrItems}
                 </div>
                 <h3>Best Features</h3>
                 <p>${project.bestFeatures}</p>
                 <h3>Rating</h3>
                 <p>${project.rating}</p>
-                <!-- Conditionally Render Buttons -->
-                <div class="project-buttons">
-                    ${buttonsHTML}
-                </div>
+                <div class="project-buttons">${buttonsHTML}</div>
             `;
 
             // Add event listeners for accordion functionality
             document.querySelectorAll('.accordion-title').forEach(header => {
                 header.addEventListener('click', () => {
                     const target = header.getAttribute('data-target');
-                    const accordionBody = document.querySelector(`.${target}-body`);
+                    const accordionBody = document.getElementById(target);
                     const chevron = header.querySelector('.chevron');
-                    const isExpanded = accordionBody.style.display === 'block';
-                    
-                    // Hide all accordion bodies
-                    document.querySelectorAll('.accordion-body').forEach(body => {
-                        body.style.display = 'none';
-                        body.classList.remove('expanded');
-                        body.previousElementSibling.querySelector('.chevron').innerHTML = '&#9660;';
-                    });
+                    const isExpanded = header.getAttribute('aria-expanded') === 'true';
 
-                    // Toggle current accordion body
-                    if (isExpanded) {
-                        accordionBody.style.display = 'none';
-                        chevron.innerHTML = '&#9660;';
-                    } else {
-                        accordionBody.style.display = 'block';
-                        chevron.innerHTML = '&#9650;';
-                        //accordionBody.classList.add('expanded');
-                    }
+                    // Toggle accordion body visibility
+                    header.setAttribute('aria-expanded', !isExpanded);
+                    accordionBody.style.display = isExpanded ? 'none' : 'block';
+                    chevron.innerHTML = isExpanded ? '&#9660;' : '&#9650;';
                 });
             });
         })
