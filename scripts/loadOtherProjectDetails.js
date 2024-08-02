@@ -23,8 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(data => {
             // Find the project details from the JSON data based on projectId
-            const project = data.projects.find(p => p.id === projectId);
-
+            // const project = data.projects.find(p => p.id === projectId);
+            const project = data.projects.find(p => p.otherDetailsPage === `other-project-details.html?id=${projectId}`);
+            
             if (!project) {
                 console.error(`Project with ID ${projectId} not found.`);
                 projectDetailsContainer.innerHTML = '<p>Project not found.</p>';
