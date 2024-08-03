@@ -1316,14 +1316,16 @@ footer {
 
 /* Tab content styling */
 .tab-content {
-    display: none;
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping to new rows */
+    gap: 20px; /* Space between columns */
     padding: 20px;
     border: 1px solid #ddd;
     border-top: none;
 }
 
 .tab-content.active {
-    display: block;
+    display: flex; /* Ensure active content is displayed as flex */
 }
 
 /* Skill bars styling */
@@ -1382,10 +1384,18 @@ footer {
 }
 
 /* Column layout for categories */
+/*
 .category-container {
     display: flex;
     flex-direction: column;
     margin: 10px;
+}
+*/
+
+.category-container {
+    flex: 1 1 calc(33.333% - 20px); /* Three columns layout with some gap */
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 .category-container h3 {
@@ -1655,6 +1665,12 @@ footer {
 
 /*About Responsive css*/
 /* Responsive Design */
+@media (max-width: 1200px) {
+    .category-container {
+        flex: 1 1 calc(50% - 20px); /* Two columns layout on medium screens */
+    }
+}
+
 @media (max-width: 768px) {
     .tab-list {
         flex-direction: column;
@@ -1670,8 +1686,14 @@ footer {
         margin: 0 auto;
     }
 
+    /*
     .category-container {
         flex-direction: column;
         align-items: center;
     }
+    */
+
+    .category-container {
+        flex: 1 1 100%; /* Single column layout on small screens */
+    }    
 }
