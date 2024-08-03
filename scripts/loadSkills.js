@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
             data.forEach(skill => {
                 const skillDiv = createSkillBar(skill);
                 const type = skill.type;
-                const category = skill.category || defaultCategory[type];
-                
+                let category = skill.category || defaultCategory[type];
+
                 // Create category section if it doesn't exist
                 if (!categories[type].includes(category)) {
                     console.warn(`Category "${category}" not found for type "${type}". Using default category.`);
