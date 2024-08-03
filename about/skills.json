@@ -81,6 +81,14 @@
         "projectUrl": ""
     },
         
+{
+        "name": "MATLAB",
+        "type": "language",
+        "proficiency": 70,
+        "duration": 40,
+        "projectUrl": ""
+    },
+        
     {
         "name": "React",
         "type": "framework",
@@ -136,12 +144,29 @@
         "duration": 60,
         "projectUrl": "https://byvalvin.github.io/project-details.html?id=qrapp"
     },
+
     {
         "name": "Visual Studio Code",
         "type": "technology",
         "proficiency": 80,
         "duration": 75,
         "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
+    },
+
+{
+        "name": "Android Studio",
+        "type": "technology",
+        "proficiency": 80,
+        "duration": 70,
+        "projectUrl": ""
+    },        
+
+{
+        "name": "Firebase",
+        "type": "technology",
+        "proficiency": 60,
+        "duration": 40,
+        "projectUrl": ""
     },
 
     {
@@ -151,6 +176,5 @@
         "duration": 20,
         "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
     }
-
 
 ]
