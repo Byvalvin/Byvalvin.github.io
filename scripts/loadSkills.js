@@ -25,6 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function createSkillBar(skill) {
+    //error handle
+    const validTypes = ['language', 'framework', 'technology'];
+    if (!validTypes.includes(skill.type)) {
+        console.error(`Invalid skill type: ${skill.type}`);
+        return;
+    }
+
+    // creation of skill bar
     const skillDiv = document.createElement('div');
     skillDiv.classList.add('skill-bar', `${skill.type}-bar`);
 
