@@ -1272,6 +1272,7 @@ footer {
 /*ABOUT PAGE*/
 /* Tabs Container */
 /* Tab buttons styling */
+
 .about-tabs {
     margin: 20px;
 }
@@ -1318,6 +1319,11 @@ footer {
 /* Skill bars styling */
 .skill-bar {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* Set a maximum width for skill bars */
+    margin-left: auto;
+    margin-right: auto; /* Center skill bars */
 }
 
 .skill-name {
@@ -1325,6 +1331,13 @@ footer {
     margin-bottom: 5px;
 }
 
+.bar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between bars */
+}
+
+/* Each bar's styling */
 .bar {
     background-color: #f3f3f3;
     border: 1px solid #ddd;
@@ -1372,6 +1385,18 @@ footer {
 .button:hover {
     background-color: #0056b3;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*CONTACT PAGE*/
