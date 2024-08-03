@@ -3,97 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About page for Byvalvin. Learn more about the creator, Daniel Asimiakwini.">
-    <meta name="keywords" content="About, Byvalvin, Daniel Asimiakwini">
-    <meta name="author" content="Daniel Asimiakwini">
-    <title>About - Byvalvin</title>
+    <title>About Me</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts/loadFont.js" defer></script> <!-- Added defer to ensure script loads after content -->
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar-container" id="navbar-placeholder"></nav>
+    <div class="tabs">
+        <button class="tab-button active" data-tab="introduction">Introduction</button>
+        <button class="tab-button" data-tab="languages">Languages</button>
+        <button class="tab-button" data-tab="frameworks">Frameworks</button>
+        <button class="tab-button" data-tab="tech">Technologies</button>
+        <button class="tab-button" data-tab="interests">Interests</button>
+    </div>
     
-    <header>
+    <div class="tab-content active" id="introduction">
         <h1>About Me</h1>
-    </header>
+        <img src="your-photo.jpg" alt="Your Name">
+        <p>Hello! I'm [Your Name], a [Your Profession/Role]. I specialize in [your key skills or areas of expertise].</p>
+        <p>I graduated from [University/Institution] with a degree in [your degree]. Over the years, I've worked with [notable companies or projects].</p>
+    </div>
     
-    <main>
-        <section class="about-tabs">
-            <ul class="tab-list">
-                <li><a href="#intro" class="tab-link active" data-tab="intro">Introduction</a></li>
-                <li><a href="#languages" class="tab-link" data-tab="languages">Languages</a></li>
-                <li><a href="#frameworks" class="tab-link" data-tab="frameworks">Frameworks</a></li>
-                <li><a href="#tech" class="tab-link" data-tab="tech">Technologies</a></li>
-                <li><a href="#interests" class="tab-link" data-tab="interests">Interests</a></li>
-            </ul>
-
-            <div class="tab-content" id="intro">
-                <h2>Introduction</h2>
-                <p>Hello! I'm Daniel Asimiakwini, a web developer specializing in creating dynamic and user-friendly websites. I have a passion for coding and a love for technology.</p>
+    <div class="tab-content" id="languages">
+        <h2>Languages</h2>
+        <div class="skill-bar">
+            <div class="skill-name">JavaScript</div>
+            <div class="bar">
+                <div class="fill" style="width: 80%;"></div>
             </div>
-
-            <div class="tab-content" id="languages">
-                <h2>Languages</h2>
-                <div class="skill-bar">
-                    <div class="skill-name">JavaScript</div>
-                    <div class="bar">
-                        <div class="fill" style="width: 80%;"></div>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-name">Python</div>
-                    <div class="bar">
-                        <div class="fill" style="width: 70%;"></div>
-                    </div>
-                </div>
-                <!-- Add more languages here -->
-            </div>
-
-            <div class="tab-content" id="frameworks">
-                <h2>Frameworks</h2>
-                <div class="skill-bar">
-                    <div class="skill-name">React</div>
-                    <div class="bar">
-                        <div class="fill" style="width: 75%;"></div>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-name">Angular</div>
-                    <div class="bar">
-                        <div class="fill" style="width: 60%;"></div>
-                    </div>
-                </div>
-                <!-- Add more frameworks here -->
-            </div>
-
-            <div class="tab-content" id="tech">
-                <h2>Technologies</h2>
-                <div class="skill-bar">
-                    <div class="skill-name">Docker</div>
-                    <div class="bar">
-                        <div class="fill" style="width: 70%;"></div>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-name">GraphQL</div>
-                    <div class="bar">
-                        <div class="fill" style="width: 65%;"></div>
-                    </div>
-                </div>
-                <!-- Add more technologies here -->
-            </div>
-
-            <div class="tab-content" id="interests">
-                <h2>Personal Interests</h2>
-                <p>In my free time, I enjoy hiking, playing guitar, and exploring new technologies. These activities help me stay creative and inspired.</p>
-            </div>
-        </section>
-    </main>
+        </div>
+        <!-- Add more languages here -->
+    </div>
     
-    <footer id="footer-placeholder"></footer>
+    <div class="tab-content" id="frameworks">
+        <h2>Frameworks</h2>
+        <div class="skill-bar">
+            <div class="skill-name">React</div>
+            <div class="bar">
+                <div class="fill" style="width: 75%;"></div>
+            </div>
+        </div>
+        <!-- Add more frameworks here -->
+    </div>
     
-    <script src="scripts/placeHolders.js" defer></script> <!-- Added defer to ensure script loads after content -->
-    <script src="scripts/tabs.js" defer></script> <!-- Added defer to handle tab functionality -->
+    <div class="tab-content" id="tech">
+        <h2>Technologies</h2>
+        <div class="skill-bar">
+            <div class="skill-name">Docker</div>
+            <div class="bar">
+                <div class="fill" style="width: 70%;"></div>
+            </div>
+        </div>
+        <!-- Add more technologies here -->
+    </div>
+    
+    <div class="tab-content" id="interests">
+        <h2>Personal Interests</h2>
+        <p>In my free time, I enjoy [hobbies/interests]. This includes [specific activities], which help me stay creative and inspired.</p>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
