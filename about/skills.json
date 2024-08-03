@@ -168,7 +168,47 @@
         "duration": 40,
         "projectUrl": ""
     },
+{
+        "name": "Poetry",
+        "type": "technology",
+        "proficiency": 40,
+        "duration": 20,
+        "projectUrl": ""
+    },
 
+{
+        "name": "npm",
+        "type": "technology",
+        "proficiency": 70,
+        "duration": 70,
+        "projectUrl": ""
+    },
+
+{
+        "name": "Figma",
+        "type": "technology",
+        "proficiency": 80,
+        "duration": 70,
+        "projectUrl": ""
+    },        
+        
+{
+        "name": "OpenCV",
+        "type": "technology",
+        "proficiency": 65,
+        "duration": 80,
+        "projectUrl": ""
+    },
+
+
+{
+        "name": "PostgreSQL",
+        "type": "technology",
+        "proficiency": 60,
+        "duration": 40,
+        "projectUrl": ""
+    },
+        
     {
         "name": "MongoDB",
         "type": "technology",
