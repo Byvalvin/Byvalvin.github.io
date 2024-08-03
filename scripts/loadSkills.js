@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 skillName.textContent = skill.name;
                 skillDiv.appendChild(skillName);
 
+                // Create a container for the bars
+                const barContainer = document.createElement('div');
+                barContainer.classList.add('bar-container');
+
                 // Create and append proficiency bar
                 const proficiencyBar = document.createElement('div');
                 proficiencyBar.classList.add('bar');
@@ -25,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 proficiencyFill.style.width = `${skill.proficiency}%`;
                 proficiencyFill.style.backgroundColor = getColor(skill.type, 'proficiency');
                 proficiencyBar.appendChild(proficiencyFill);
-                skillDiv.appendChild(proficiencyBar);
 
                 // Create and append duration bar
                 const durationBar = document.createElement('div');
@@ -35,7 +38,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 durationFill.style.width = `${skill.duration}%`;
                 durationFill.style.backgroundColor = getColor(skill.type, 'experience');
                 durationBar.appendChild(durationFill);
-                skillDiv.appendChild(durationBar);
+
+                // Append bars to the container
+                barContainer.appendChild(proficiencyBar);
+                barContainer.appendChild(durationBar);
+
+                // Append bar container to skillDiv
+                skillDiv.appendChild(barContainer);
 
                 // Create and append project button if URL is provided
                 if (skill.projectUrl) {
