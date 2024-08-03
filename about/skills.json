@@ -55,7 +55,32 @@
         "duration": 60,
         "projectUrl": ""
     },
-    
+
+
+    {
+        "name": "Swift",
+        "type": "language",
+        "proficiency": 70,
+        "duration": 50,
+        "projectUrl": ""
+    },
+
+    {
+        "name": "Dart",
+        "type": "language",
+        "proficiency": 75,
+        "duration": 40,
+        "projectUrl": ""
+    },
+
+    {
+        "name": "Julia",
+        "type": "language",
+        "proficiency": 60,
+        "duration": 30,
+        "projectUrl": ""
+    },
+        
     {
         "name": "React",
         "type": "framework",
