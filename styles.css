@@ -1302,6 +1302,10 @@ footer {
 
 .tab-link:hover, .tab-link.active {
     background-color: #ddd;
+    background: #fff;
+    border-color: #ccc;
+    border-bottom: 2px solid transparent;
+    font-weight: bold;
 }
 
 /* Tab content styling */
