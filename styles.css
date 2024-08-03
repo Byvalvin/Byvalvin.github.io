@@ -1316,16 +1316,14 @@ footer {
 
 /* Tab content styling */
 .tab-content {
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow wrapping to new rows */
-    gap: 20px; /* Space between columns */
+    display: none;
     padding: 20px;
     border: 1px solid #ddd;
     border-top: none;
 }
 
 .tab-content.active {
-    display: flex; /* Ensure active content is displayed as flex */
+    display: block; /* Ensure active content is displayed as flex */
 }
 
 /* Skill bars styling */
