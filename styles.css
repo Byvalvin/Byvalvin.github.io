@@ -1657,11 +1657,7 @@ footer {
 
 /*About Responsive css*/
 /* Responsive Design */
-@media (max-width: 1200px) {
-    .category-container {
-        flex: 1 1 calc(50% - 20px); /* 2 columns on smaller screens */
-    }
-}
+
 @media (max-width: 768px) {
     .tab-list {
         flex-direction: column;
@@ -1679,4 +1675,5 @@ footer {
 
     .category-container {
         flex: 1 1 100%; /* Single column on very small screens */
-    }}
+    }
+}
