@@ -6,14 +6,26 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
 
-            // Remove active class from all tab links and contents
-            tabLinks.forEach(link => link.classList.remove('active'));
+            // Remove active class and ARIA attributes from all tab links and contents
+            tabLinks.forEach(link => {
+                link.classList.remove('active');
+                link.setAttribute('aria-selected', 'false');
+            });
             tabContents.forEach(content => content.classList.remove('active'));
 
-            // Add active class to the clicked tab and corresponding content
+            // Add active class and ARIA attributes to the clicked tab and corresponding content
             const targetTab = document.querySelector(`#${link.dataset.tab}`);
             link.classList.add('active');
+            link.setAttribute('aria-selected', 'true');
             targetTab.classList.add('active');
+        });
+
+        // Add keyboard support
+        link.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                link.click();
+            }
         });
     });
 
