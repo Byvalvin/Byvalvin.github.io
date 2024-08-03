@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(data => {
             const containers = {
-                language: document.getElementById('languages-container'),
-                framework: document.getElementById('frameworks-container'),
-                technology: document.getElementById('tech-container')
+                language: document.getElementById('languages'),
+                framework: document.getElementById('frameworks'),
+                technology: document.getElementById('tech')
             };
 
             // Keep track of created categories to avoid duplicates
