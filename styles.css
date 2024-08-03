@@ -1308,6 +1308,11 @@ footer {
     font-weight: bold;
 }
 
+.tab-link:focus {
+    outline: 2px solid #0056b3; /* or any color that suits your design */
+    outline-offset: 2px;
+}
+
 /* Tab content styling */
 .tab-content {
     display: none;
