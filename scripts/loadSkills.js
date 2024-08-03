@@ -8,18 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 technology: document.getElementById('tech')
             };
 
-            const fragment = document.createDocumentFragment();
-
             data.forEach(skill => {
                 const skillDiv = createSkillBar(skill);
                 const container = containers[skill.type];
                 if (container) {
-                    fragment.appendChild(skillDiv);
+                    container.appendChild(skillDiv);
                 }
             });
-
-            // Append all skill bars at once to reduce DOM reflows
-            Object.values(containers).forEach(container => container.appendChild(fragment));
         })
         .catch(error => console.error('Error loading skills:', error));
 });
