@@ -1331,7 +1331,7 @@ footer {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    max-width: 600px; /* Set a maximum width for skill bars */
+    max-width: 100%; /* Set a maximum width for skill bars ; max-width: 600px; /* Set a maximum width for skill bars */
     margin-left: auto;
     margin-right: auto; /* Center skill bars */
 }
@@ -1379,6 +1379,18 @@ footer {
 
 .tech-bar .fill {
     background-color: #ff9800; /* Orange for technologies */
+}
+
+/* Column layout for categories */
+.category-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.category-container h3 {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 /* Button styling */
@@ -1656,5 +1668,10 @@ footer {
     .skill-bar {
         width: 100%;
         margin: 0 auto;
+    }
+
+    .category-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
