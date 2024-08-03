@@ -2,8 +2,8 @@
     {
         "name": "JavaScript",
         "type": "language",
-        "proficiency": 80,  // Proficiency level as a percentage
-        "duration": 30,     // Duration as a percentage of total time
+        "proficiency": 80,  
+        "duration": 30,    
         "projectUrl": "project-details.html#javascript"
     },
     {
