@@ -1,14 +1,11 @@
-document.addEventListener('DOMContentLoaded', () => {
-    fetch('about/skills.json')
-        .then(response => response.json())
-        .then(data => {
-            populateSkills(data);
-        })
-        .catch(error => {
-            console.error('Error loading skills data:', error);
-        });
+fetch('about/skills.json')
+    .then(response => response.json())
+    .then(data => {
+        populateSkills(data);
+    })
+    .catch(error => {
+        console.error('Error loading skills data:', error);
 });
-
 function populateSkills(data) {
     // Helper function to create a skill bar
     function createSkillBar(name, proficiency, duration, projectUrl, type) {
