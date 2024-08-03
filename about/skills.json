@@ -1,0 +1,44 @@
+[
+    {
+        "name": "JavaScript",
+        "type": "language",
+        "proficiency": 80,  // Proficiency level as a percentage
+        "duration": 30,     // Duration as a percentage of total time
+        "projectUrl": "project-details.html#javascript"
+    },
+    {
+        "name": "Python",
+        "type": "language",
+        "proficiency": 70,
+        "duration": 20,
+        "projectUrl": "project-details.html#python"
+    },
+    {
+        "name": "React",
+        "type": "framework",
+        "proficiency": 75,
+        "duration": 15,
+        "projectUrl": "project-details.html#react"
+    },
+    {
+        "name": "Angular",
+        "type": "framework",
+        "proficiency": 60,
+        "duration": 10,
+        "projectUrl": "project-details.html#angular"
+    },
+    {
+        "name": "Docker",
+        "type": "technology",
+        "proficiency": 70,
+        "duration": 5,
+        "projectUrl": "project-details.html#docker"
+    },
+    {
+        "name": "GraphQL",
+        "type": "technology",
+        "proficiency": 65,
+        "duration": 5,
+        "projectUrl": "project-details.html#graphql"
+    }
+]
