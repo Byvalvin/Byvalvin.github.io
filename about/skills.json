@@ -1,18 +1,61 @@
 [
+        
+    {
+        "name": "C",
+        "type": "language",
+        "proficiency": 65,
+        "duration": 70,
+        "projectUrl": ""
+    },
+
+    {
+        "name": "C++",
+        "type": "language",
+        "proficiency": 88,
+        "duration": 90,
+        "projectUrl": ""
+    },    
+    
     {
         "name": "JavaScript",
         "type": "language",
         "proficiency": 80,  
-        "duration": 30,    
-        "projectUrl": "project-details.html#javascript"
+        "duration": 60,    
+        "projectUrl": ""
     },
+    
     {
         "name": "Python",
         "type": "language",
         "proficiency": 70,
-        "duration": 20,
-        "projectUrl": "project-details.html#python"
+        "duration": 100,
+        "projectUrl": ""
     },
+
+    {
+        "name": "Java",
+        "type": "language",
+        "proficiency": 75,
+        "duration": 80,
+        "projectUrl": ""
+    },
+
+    {
+        "name": "HTML",
+        "type": "language",
+        "proficiency": 80,
+        "duration": 60,
+        "projectUrl": ""
+    },
+
+    {
+        "name": "CSS",
+        "type": "language",
+        "proficiency": 70,
+        "duration": 60,
+        "projectUrl": ""
+    },
+    
     {
         "name": "React",
         "type": "framework",
@@ -40,7 +83,7 @@
     {
         "name": "Django",
         "type": "framework",
-        "proficiency": 70,
+        "proficiency": 75,
         "duration": 40,
         "projectUrl": "project-details.html#angular"
     },
@@ -52,6 +95,14 @@
         "duration": 20,
         "projectUrl": "project-details.html#angular"
     },    
+
+    {
+        "name": "FastAPI",
+        "type": "framework",
+        "proficiency": 70,
+        "duration": 40,
+        "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
+    },
     
     {
         "name": "GitHub",
@@ -66,5 +117,15 @@
         "proficiency": 80,
         "duration": 75,
         "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
+    },
+
+    {
+        "name": "MongoDB",
+        "type": "technology",
+        "proficiency": 60,
+        "duration": 20,
+        "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
     }
+
+
 ]
