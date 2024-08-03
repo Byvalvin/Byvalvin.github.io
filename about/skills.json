@@ -56,8 +56,22 @@
         "projectUrl": ""
     },
 
+    {
+        "name": "Typescript",
+        "type": "language",
+        "proficiency": 10,
+        "duration": 20,
+        "projectUrl": ""
+    },
 
     {
+        "name": "Go",
+        "type": "language",
+        "proficiency": 20,
+        "duration": 20,
+        "projectUrl": ""
+    },
+{
         "name": "Swift",
         "type": "language",
         "proficiency": 70,
