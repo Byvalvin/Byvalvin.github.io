@@ -1306,6 +1306,7 @@ footer {
     border-color: #ccc;
     border-bottom: 2px solid transparent;
     font-weight: bold;
+    color: #333;
 }
 
 .tab-link:focus {
@@ -1344,6 +1345,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px; /* Space between bars */
+    margin-top: 10px;
 }
 
 /* Each bar's styling */
@@ -1354,6 +1356,7 @@ footer {
     height: 20px;
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 
 .fill {
@@ -1362,7 +1365,7 @@ footer {
     top: 0;
     left: 0;
     border-radius: 4px;
-    transition: width 0.3s;
+    transition: width 0.3s ease-in-out;
 }
 
 /* Color differentiation for skill bars */
@@ -1389,15 +1392,17 @@ footer {
     color: #fff;
     text-decoration: none;
     text-align: center;
+    transition: background-color 0.3s;
 }
 
 .button:hover {
     background-color: #0056b3;
 }
 
-
-
-
+.button:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 4px;
+}
 
 
 
@@ -1636,3 +1641,20 @@ footer {
 }
 
 
+/*About Responsive css*/
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tab-list {
+        flex-direction: column;
+    }
+
+    .tab-link {
+        text-align: center;
+        padding: 12px;
+    }
+
+    .skill-bar {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
