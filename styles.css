@@ -1501,26 +1501,41 @@ footer {
 
 /**/
 /* Tabs Container */
-/* Tabs Container */
-.tabs {
+.about-tabs {
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 1200px; /* Adjust as needed */
     text-align: center;
 }
 
-.tab-button {
-    display: inline-block;
-    padding: 10px 20px;
+.tab-list {
+    list-style: none;
+    padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center; /* Center tabs horizontally */
+}
+
+.tab-list li {
+    flex: 1; /* Ensure each tab takes equal space */
+}
+
+.tab-link {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f9f9f9;
     border: 1px solid #ccc;
-    background: #f9f9f9;
+    border-radius: 5px 5px 0 0;
+    margin: 0;
     cursor: pointer;
+    text-align: center;
     font-size: 16px;
 }
 
-.tab-button.active {
-    background: #e0e0e0;
-    border-bottom: 2px solid #fff;
+.tab-link.active {
+    background-color: #fff;
+    border-bottom: 2px solid #4caf50; /* Highlight active tab */
     font-weight: bold;
 }
 
@@ -1529,6 +1544,7 @@ footer {
     padding: 20px;
     border: 1px solid #ccc;
     border-top: none;
+    border-radius: 0 0 5px 5px;
 }
 
 .tab-content.active {
