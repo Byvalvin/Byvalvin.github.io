@@ -54,6 +54,8 @@ function createSkillBar(skill) {
         button.classList.add('button');
         button.href = skill.projectUrl;
         button.textContent = 'See Details';
+        button.target = '_blank'; // Open in new tab
+        button.rel = 'noopener noreferrer'; // Security best practice        
         skillDiv.appendChild(button);
     }
 
