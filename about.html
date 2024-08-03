@@ -19,13 +19,81 @@
     </header>
     
     <main>
-        <section class="about-content">
-            <p>Coming soon...</p>
+        <section class="about-tabs">
+            <ul class="tab-list">
+                <li><a href="#intro" class="tab-link active" data-tab="intro">Introduction</a></li>
+                <li><a href="#languages" class="tab-link" data-tab="languages">Languages</a></li>
+                <li><a href="#frameworks" class="tab-link" data-tab="frameworks">Frameworks</a></li>
+                <li><a href="#tech" class="tab-link" data-tab="tech">Technologies</a></li>
+                <li><a href="#interests" class="tab-link" data-tab="interests">Interests</a></li>
+            </ul>
+
+            <div class="tab-content" id="intro">
+                <h2>Introduction</h2>
+                <p>Hello! I'm Daniel Asimiakwini, a web developer specializing in creating dynamic and user-friendly websites. I have a passion for coding and a love for technology.</p>
+            </div>
+
+            <div class="tab-content" id="languages">
+                <h2>Languages</h2>
+                <div class="skill-bar">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="bar">
+                        <div class="fill" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-name">Python</div>
+                    <div class="bar">
+                        <div class="fill" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <!-- Add more languages here -->
+            </div>
+
+            <div class="tab-content" id="frameworks">
+                <h2>Frameworks</h2>
+                <div class="skill-bar">
+                    <div class="skill-name">React</div>
+                    <div class="bar">
+                        <div class="fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-name">Angular</div>
+                    <div class="bar">
+                        <div class="fill" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <!-- Add more frameworks here -->
+            </div>
+
+            <div class="tab-content" id="tech">
+                <h2>Technologies</h2>
+                <div class="skill-bar">
+                    <div class="skill-name">Docker</div>
+                    <div class="bar">
+                        <div class="fill" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-name">GraphQL</div>
+                    <div class="bar">
+                        <div class="fill" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <!-- Add more technologies here -->
+            </div>
+
+            <div class="tab-content" id="interests">
+                <h2>Personal Interests</h2>
+                <p>In my free time, I enjoy hiking, playing guitar, and exploring new technologies. These activities help me stay creative and inspired.</p>
+            </div>
         </section>
     </main>
     
     <footer id="footer-placeholder"></footer>
     
     <script src="scripts/placeHolders.js" defer></script> <!-- Added defer to ensure script loads after content -->
+    <script src="scripts/tabs.js" defer></script> <!-- Added defer to handle tab functionality -->
 </body>
 </html>
