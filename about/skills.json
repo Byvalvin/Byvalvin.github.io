@@ -173,6 +173,7 @@
     {
         "name": "GitHub",
         "type": "technology",
+        "category": "DevTools",
         "proficiency": 85,
         "duration": 60,
         "projectUrl": "https://byvalvin.github.io/project-details.html?id=qrapp"
@@ -181,6 +182,7 @@
     {
         "name": "Visual Studio Code",
         "type": "technology",
+        "category": "DevTools",
         "proficiency": 80,
         "duration": 75,
         "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
@@ -189,6 +191,7 @@
 {
         "name": "Android Studio",
         "type": "technology",
+        "category": "DevTools",
         "proficiency": 80,
         "duration": 70,
         "projectUrl": ""
@@ -197,6 +200,7 @@
 {
         "name": "Firebase",
         "type": "technology",
+        "category": "Database",
         "proficiency": 60,
         "duration": 40,
         "projectUrl": ""
@@ -204,6 +208,7 @@
 {
         "name": "Poetry",
         "type": "technology",
+        "category": "DevTools",
         "proficiency": 40,
         "duration": 20,
         "projectUrl": ""
@@ -212,6 +217,7 @@
 {
         "name": "npm",
         "type": "technology",
+        "category": "DevTools",
         "proficiency": 70,
         "duration": 70,
         "projectUrl": ""
@@ -220,6 +226,7 @@
 {
         "name": "Figma",
         "type": "technology",
+        "category": "DevTools",
         "proficiency": 80,
         "duration": 70,
         "projectUrl": ""
@@ -228,6 +235,7 @@
 {
         "name": "OpenCV",
         "type": "technology",
+        "category": "",
         "proficiency": 65,
         "duration": 80,
         "projectUrl": ""
@@ -237,6 +245,7 @@
 {
         "name": "PostgreSQL",
         "type": "technology",
+        "category": "Database",
         "proficiency": 60,
         "duration": 40,
         "projectUrl": ""
@@ -245,6 +254,7 @@
     {
         "name": "MongoDB",
         "type": "technology",
+        "category": "Database",
         "proficiency": 60,
         "duration": 20,
         "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
