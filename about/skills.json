@@ -3,6 +3,7 @@
     {
         "name": "C",
         "type": "language",
+        "category": "General-Purpose",
         "proficiency": 65,
         "duration": 70,
         "projectUrl": ""
@@ -11,6 +12,7 @@
     {
         "name": "C++",
         "type": "language",
+        "category": "General-Purpose",
         "proficiency": 88,
         "duration": 90,
         "projectUrl": ""
@@ -19,6 +21,7 @@
     {
         "name": "JavaScript",
         "type": "language",
+        "category": "General-Purpose",
         "proficiency": 80,  
         "duration": 60,    
         "projectUrl": ""
@@ -27,6 +30,7 @@
     {
         "name": "Python",
         "type": "language",
+        "category": "General-Purpose",
         "proficiency": 70,
         "duration": 100,
         "projectUrl": ""
@@ -35,6 +39,7 @@
     {
         "name": "Java",
         "type": "language",
+        "category": "General-Purpose",
         "proficiency": 75,
         "duration": 80,
         "projectUrl": ""
@@ -43,6 +48,7 @@
     {
         "name": "HTML",
         "type": "language",
+        "category": "Specialised",
         "proficiency": 80,
         "duration": 60,
         "projectUrl": ""
@@ -51,6 +57,7 @@
     {
         "name": "CSS",
         "type": "language",
+        "category": "Specialised",
         "proficiency": 70,
         "duration": 60,
         "projectUrl": ""
@@ -59,6 +66,7 @@
     {
         "name": "Typescript",
         "type": "language",
+        "category": "Specialised",
         "proficiency": 10,
         "duration": 20,
         "projectUrl": ""
@@ -67,6 +75,7 @@
     {
         "name": "Go",
         "type": "language",
+        "category": "General-Purpose",
         "proficiency": 20,
         "duration": 20,
         "projectUrl": ""
@@ -74,6 +83,7 @@
 {
         "name": "Swift",
         "type": "language",
+        "category": "Specialised",
         "proficiency": 70,
         "duration": 50,
         "projectUrl": ""
@@ -82,6 +92,7 @@
     {
         "name": "Dart",
         "type": "language",
+        "category": "Specialised",
         "proficiency": 75,
         "duration": 40,
         "projectUrl": ""
@@ -90,6 +101,7 @@
     {
         "name": "Julia",
         "type": "language",
+        "category": "Math & Data Analysis",
         "proficiency": 60,
         "duration": 30,
         "projectUrl": ""
@@ -98,6 +110,7 @@
 {
         "name": "MATLAB",
         "type": "language",
+        "category": "Math & Data Analysis",
         "proficiency": 70,
         "duration": 40,
         "projectUrl": ""
@@ -106,6 +119,7 @@
     {
         "name": "React",
         "type": "framework",
+        "category": "Frontend",
         "proficiency": 75,
         "duration": 15,
         "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
@@ -114,6 +128,7 @@
     {
         "name": "Vue",
         "type": "framework",
+        "category": "Frontend",
         "proficiency": 60,
         "duration": 25,
         "projectUrl": ""
@@ -122,6 +137,7 @@
     {
         "name": "Express",
         "type": "framework",
+        "category": "Backend",
         "proficiency": 60,
         "duration": 20,
         "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
@@ -130,6 +146,7 @@
     {
         "name": "Django",
         "type": "framework",
+        "category": "Backend",
         "proficiency": 75,
         "duration": 40,
         "projectUrl": "project-details.html#angular"
@@ -138,6 +155,7 @@
     {
         "name": "Flask",
         "type": "framework",
+        "category": "Backend",
         "proficiency": 60,
         "duration": 20,
         "projectUrl": "project-details.html#angular"
@@ -146,6 +164,7 @@
     {
         "name": "FastAPI",
         "type": "framework",
+        "category": "Backend",
         "proficiency": 70,
         "duration": 40,
         "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
