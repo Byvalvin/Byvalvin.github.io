@@ -1316,9 +1316,7 @@ footer {
 
 /* Tab content styling */
 .tab-content {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    gap: 20px; /* Space between columns */
+    display: none;
     padding: 20px;
     border: 1px solid #ddd;
     border-top: none;
@@ -1657,7 +1655,6 @@ footer {
 
 /*About Responsive css*/
 /* Responsive Design */
-
 @media (max-width: 768px) {
     .tab-list {
         flex-direction: column;
@@ -1674,6 +1671,7 @@ footer {
     }
 
     .category-container {
-        flex: 1 1 100%; /* Single column on very small screens */
+        flex-direction: column;
+        align-items: center;
     }
 }
