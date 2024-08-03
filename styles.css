@@ -1271,58 +1271,51 @@ footer {
 
 /*ABOUT PAGE*/
 /* Tabs Container */
-/* Tabs Container */
+/* Tab buttons styling */
 .about-tabs {
-    margin: 20px auto;
-    max-width: 1200px; /* Adjust as needed */
-    text-align: center;
+    margin: 20px;
 }
 
 .tab-list {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
-    margin: 0;
     display: flex;
-    justify-content: center; /* Center tabs horizontally */
+    justify-content: space-around;
+    border-bottom: 2px solid #ddd;
 }
 
 .tab-list li {
-    flex: 1; /* Ensure each tab takes equal space */
+    margin: 0;
 }
 
 .tab-link {
-    display: block;
-    padding: 10px 20px;
     text-decoration: none;
+    padding: 10px 20px;
+    display: block;
     color: #333;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px 5px 0 0;
-    margin: 0;
-    cursor: pointer;
-    text-align: center;
-    font-size: 16px;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    background-color: #f8f8f8;
+    transition: background-color 0.3s;
 }
 
-.tab-link.active {
-    background-color: #fff;
-    border-bottom: 2px solid #4caf50; /* Highlight active tab */
-    font-weight: bold;
+.tab-link:hover, .tab-link.active {
+    background-color: #ddd;
 }
 
+/* Tab content styling */
 .tab-content {
     display: none;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-top: none;
-    border-radius: 0 0 5px 5px;
 }
 
 .tab-content.active {
     display: block;
 }
 
-/* Skill Bars */
+/* Skill bars styling */
 .skill-bar {
     margin-bottom: 20px;
 }
@@ -1332,54 +1325,54 @@ footer {
     margin-bottom: 5px;
 }
 
-.bars {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
 .bar {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.bar-label {
-    font-size: 14px;
-    color: #333;
-}
-
-.bar-fill {
+    background-color: #f3f3f3;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     height: 20px;
-    background: #4caf50;
-    border-radius: 5px;
     position: relative;
+    width: 100%;
 }
 
-.bar-fill:before {
-    content: attr(style);
+.fill {
+    height: 100%;
     position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #fff;
-    font-size: 14px;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    transition: width 0.3s;
 }
 
-.btn {
+/* Color differentiation for skill bars */
+.language-bar .fill {
+    background-color: #4caf50; /* Green for languages */
+}
+
+.framework-bar .fill {
+    background-color: #2196f3; /* Blue for frameworks */
+}
+
+.tech-bar .fill {
+    background-color: #ff9800; /* Orange for technologies */
+}
+
+/* Button styling */
+.button {
     display: inline-block;
-    margin-top: 10px;
     padding: 10px 20px;
-    text-decoration: none;
-    background-color: #4caf50;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
     color: #fff;
-    border-radius: 5px;
-    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
 }
 
-.btn:hover {
-    background-color: #45a049;
+.button:hover {
+    background-color: #0056b3;
 }
+
 
 /*CONTACT PAGE*/
 /* Add styles for the custom contact section */
