@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <meta name="description" content="About page for Byvalvin. Learn more about the creator, Daniel Asimiakwini.">
+    <meta name="keywords" content="About, Byvalvin, Daniel Asimiakwini">
+    <meta name="author" content="Daniel Asimiakwini">
+    <title>About - Byvalvin</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts/loadFont.js" defer></script> <!-- Added defer to ensure script loads after content -->
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar-container" id="navbar-placeholder"></nav>
+    
+    <!-- Tabs Navigation -->
     <div class="tabs">
         <button class="tab-button active" data-tab="introduction">Introduction</button>
         <button class="tab-button" data-tab="languages">Languages</button>
@@ -14,7 +22,8 @@
         <button class="tab-button" data-tab="tech">Technologies</button>
         <button class="tab-button" data-tab="interests">Interests</button>
     </div>
-    
+
+    <!-- Tab Content -->
     <div class="tab-content active" id="introduction">
         <h1>About Me</h1>
         <img src="your-photo.jpg" alt="Your Name">
@@ -60,6 +69,9 @@
         <p>In my free time, I enjoy [hobbies/interests]. This includes [specific activities], which help me stay creative and inspired.</p>
     </div>
 
-    <script src="scripts.js"></script>
+    <footer id="footer-placeholder"></footer>
+    
+    <script src="scripts/placeHolders.js" defer></script> <!-- Added defer to ensure script loads after content -->
+    <script src="scripts/tabs.js" defer></script> <!-- Added defer to handle tab functionality -->
 </body>
 </html>
