@@ -1,33 +1,71 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Define categories for each skill type
+    const categories = {
+        language: ['General-Purpose', 'Specialised', 'Math & Data Analysis'],
+        framework: ['Frontend', 'Backend', 'Other'],
+        technology: ['DevTools', 'Database', 'DevOps', 'Other']
+    };
+
+    // Default category if no match is found
+    const defaultCategory = {
+        language: 'General-Purpose',
+        framework: 'Other',
+        technology: 'Other'
+    };
+
     fetch('about/skills.json')
         .then(response => response.json())
         .then(data => {
             const containers = {
-                language: document.getElementById('languages'),
-                framework: document.getElementById('frameworks'),
-                technology: document.getElementById('tech')
+                language: document.getElementById('languages-container'),
+                framework: document.getElementById('frameworks-container'),
+                technology: document.getElementById('tech-container')
+            };
+
+            // Keep track of created categories to avoid duplicates
+            const createdCategories = {
+                language: {},
+                framework: {},
+                technology: {}
             };
 
             data.forEach(skill => {
                 const skillDiv = createSkillBar(skill);
-                const container = containers[skill.type];
-                if (container) {
-                    container.appendChild(skillDiv);
+                const type = skill.type;
+                const category = skill.category || defaultCategory[type];
+                
+                // Create category section if it doesn't exist
+                if (!categories[type].includes(category)) {
+                    console.warn(`Category "${category}" not found for type "${type}". Using default category.`);
+                    category = defaultCategory[type];
                 }
+
+                if (!createdCategories[type][category]) {
+                    const categoryContainer = document.createElement('div');
+                    categoryContainer.classList.add('category-container');
+                    const categoryTitle = document.createElement('h3');
+                    categoryTitle.textContent = category;
+                    categoryContainer.appendChild(categoryTitle);
+                    containers[type].appendChild(categoryContainer);
+
+                    // Track the created category
+                    createdCategories[type][category] = categoryContainer;
+                }
+
+                // Append the skill bar to the corresponding category container
+                createdCategories[type][category].appendChild(skillDiv);
             });
         })
         .catch(error => console.error('Error loading skills:', error));
 });
 
 function createSkillBar(skill) {
-    //error handle
     const validTypes = ['language', 'framework', 'technology'];
     if (!validTypes.includes(skill.type)) {
         console.error(`Invalid skill type: ${skill.type}`);
         return;
     }
 
-    // creation of skill bar
     const skillDiv = document.createElement('div');
     skillDiv.classList.add('skill-bar', `${skill.type}-bar`);
 
@@ -49,8 +87,8 @@ function createSkillBar(skill) {
         button.classList.add('button');
         button.href = skill.projectUrl;
         button.textContent = 'See Details';
-        button.target = '_blank'; // Open in new tab
-        button.rel = 'noopener noreferrer'; // Security best practice        
+        button.target = '_blank';
+        button.rel = 'noopener noreferrer';
         skillDiv.appendChild(button);
     }
 
