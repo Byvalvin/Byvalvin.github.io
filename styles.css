@@ -1496,3 +1496,102 @@ footer {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 }
+
+
+
+/**/
+/* Tabs Container */
+.about-tabs {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Tab Buttons */
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #ccc;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    transition: background 0.3s;
+}
+
+.tab-button:hover {
+    background: #ddd;
+}
+
+.tab-button.active {
+    background: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.tab-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    border-bottom: 2px solid #ccc;
+    margin: 0;
+}
+
+.tab-list li {
+    margin: 0;
+}
+
+.tab-link {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.tab-link.active {
+    background: #f9f9f9;
+    border-color: #ddd;
+    border-bottom: 2px solid #fff;
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Skill Bars */
+.skill-bar {
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.bar {
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 20px;
+    background: #4caf50;
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
