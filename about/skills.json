@@ -18,27 +18,53 @@
         "type": "framework",
         "proficiency": 75,
         "duration": 15,
-        "projectUrl": "project-details.html#react"
+        "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
     },
+
     {
-        "name": "Angular",
+        "name": "Vue",
         "type": "framework",
         "proficiency": 60,
-        "duration": 10,
+        "duration": 25,
+        "projectUrl": ""
+    }, 
+    
+    {
+        "name": "Express",
+        "type": "framework",
+        "proficiency": 60,
+        "duration": 20,
+        "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
+    },
+    
+    {
+        "name": "Django",
+        "type": "framework",
+        "proficiency": 70,
+        "duration": 40,
         "projectUrl": "project-details.html#angular"
     },
+
     {
-        "name": "Docker",
+        "name": "Flask",
+        "type": "framework",
+        "proficiency": 60,
+        "duration": 20,
+        "projectUrl": "project-details.html#angular"
+    },    
+    
+    {
+        "name": "GitHub",
         "type": "technology",
-        "proficiency": 70,
-        "duration": 5,
-        "projectUrl": "project-details.html#docker"
+        "proficiency": 85,
+        "duration": 60,
+        "projectUrl": "https://byvalvin.github.io/project-details.html?id=qrapp"
     },
     {
-        "name": "GraphQL",
+        "name": "Visual Studio Code",
         "type": "technology",
-        "proficiency": 65,
-        "duration": 5,
-        "projectUrl": "project-details.html#graphql"
+        "proficiency": 80,
+        "duration": 75,
+        "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
     }
 ]
