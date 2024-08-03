@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function populateSkills(data) {
     // Helper function to create a skill bar
-    function createSkillBar(name, proficiency, experience, type) {
+    function createSkillBar(name, proficiency, duration, projectUrl, type) {
         // Create skill bar container
         const skillBar = document.createElement('div');
         skillBar.classList.add('skill-bar', `${type}-bar`);
@@ -33,14 +33,23 @@ function populateSkills(data) {
         skillBar.appendChild(proficiencyBar);
         
         // Create and append experience bar
-        const experienceBar = document.createElement('div');
-        experienceBar.classList.add('bar');
-        const experienceFill = document.createElement('div');
-        experienceFill.classList.add('fill');
-        experienceFill.style.width = `${experience}%`;
-        experienceFill.style.backgroundColor = getColor(type, 'experience');
-        experienceBar.appendChild(experienceFill);
-        skillBar.appendChild(experienceBar);
+        const durationBar = document.createElement('div');
+        durationBar.classList.add('bar');
+        const durationFill = document.createElement('div');
+        durationFill.classList.add('fill');
+        durationFill.style.width = `${duration}%`;
+        durationFill.style.backgroundColor = getColor(type, 'experience');
+        durationBar.appendChild(durationFill);
+        skillBar.appendChild(durationBar);
+
+        // Create and append project button if URL is provided
+        if (projectUrl) {
+            const button = document.createElement('a');
+            button.classList.add('button');
+            button.href = projectUrl;
+            button.textContent = 'See Projects';
+            skillBar.appendChild(button);
+        }
         
         return skillBar;
     }
@@ -77,7 +86,8 @@ function populateSkills(data) {
         const skillElement = createSkillBar(
             skill.name,
             skill.proficiency,    // percentage of how good you are
-            skill.experience,     // percentage of time used
+            skill.duration,       // percentage of time used
+            skill.projectUrl,     // URL to the project details
             skill.type            // type: language, framework, tech
         );
 
