@@ -1269,6 +1269,117 @@ footer {
     transform: translateY(0); /* Reset transform on click */
 }
 
+/*ABOUT PAGE*/
+/* Tabs Container */
+/* Tabs Container */
+.about-tabs {
+    margin: 20px auto;
+    max-width: 1200px; /* Adjust as needed */
+    text-align: center;
+}
+
+.tab-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center tabs horizontally */
+}
+
+.tab-list li {
+    flex: 1; /* Ensure each tab takes equal space */
+}
+
+.tab-link {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
+    margin: 0;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+.tab-link.active {
+    background-color: #fff;
+    border-bottom: 2px solid #4caf50; /* Highlight active tab */
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Skill Bars */
+.skill-bar {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.bars {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bar-label {
+    font-size: 14px;
+    color: #333;
+}
+
+.bar-fill {
+    height: 20px;
+    background: #4caf50;
+    border-radius: 5px;
+    position: relative;
+}
+
+.bar-fill:before {
+    content: attr(style);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 14px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
 
 /*CONTACT PAGE*/
 /* Add styles for the custom contact section */
@@ -1498,79 +1609,3 @@ footer {
 }
 
 
-
-/**/
-/* Tabs Container */
-.about-tabs {
-    margin: 20px auto;
-    max-width: 1200px; /* Adjust as needed */
-    text-align: center;
-}
-
-.tab-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center; /* Center tabs horizontally */
-}
-
-.tab-list li {
-    flex: 1; /* Ensure each tab takes equal space */
-}
-
-.tab-link {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #333;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px 5px 0 0;
-    margin: 0;
-    cursor: pointer;
-    text-align: center;
-    font-size: 16px;
-}
-
-.tab-link.active {
-    background-color: #fff;
-    border-bottom: 2px solid #4caf50; /* Highlight active tab */
-    font-weight: bold;
-}
-
-.tab-content {
-    display: none;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-top: none;
-    border-radius: 0 0 5px 5px;
-}
-
-.tab-content.active {
-    display: block;
-}
-
-/* Skill Bars */
-.skill-bar {
-    margin-bottom: 15px;
-}
-
-.skill-name {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.bar {
-    width: 100%;
-    background: #e0e0e0;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.fill {
-    height: 20px;
-    background: #4caf50;
-    border-radius: 5px;
-    transition: width 0.5s ease;
-}
