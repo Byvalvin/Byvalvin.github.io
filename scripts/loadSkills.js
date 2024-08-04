@@ -1,7 +1,7 @@
 const categories = {
     language: ['General-Purpose', 'Specialised', 'Math & Data Analysis'],
     framework: ['Frontend', 'Backend', 'Other'],
-    technology: ['DevTools', 'Database', 'DevOps', 'Deployment', 'Other']
+    technology: ['DevTools', 'Database', 'DevOps', 'Other']
 };
 
 const defaultCategory = {
