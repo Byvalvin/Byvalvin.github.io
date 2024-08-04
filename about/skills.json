@@ -147,8 +147,16 @@
         "duration": 40,
         "projectUrl": ""
     }, 
-    
-    {
+
+{
+        "name": "TailwindCSS",
+        "type": "framework",
+        "category": "Frontend",
+        "proficiency": 80,
+        "duration": 40,
+        "projectUrl": ""
+    }, 
+{
         "name": "Express",
         "type": "framework",
         "category": "Backend",
@@ -238,6 +246,14 @@
     },
 
 {
+        "name": "Node",
+        "type": "technology",
+        "category": "DevTools",
+        "proficiency": 70,
+        "duration": 70,
+        "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
+    },
+{
         "name": "Figma",
         "type": "technology",
         "category": "DevTools",
@@ -272,6 +288,23 @@
         "proficiency": 60,
         "duration": 20,
         "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
+    },
+        
+    {
+        "name": "Netlify",
+        "type": "technology",
+        "category": "Deployment",
+        "proficiency": 70,
+        "duration": 20,
+        "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
+    },
+        
+    {
+        "name": "Render",
+        "type": "technology",
+        "category": "Deployment",
+        "proficiency": 75,
+        "duration": 20,
+        "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
     }
-
 ]
