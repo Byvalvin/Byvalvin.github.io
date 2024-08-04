@@ -11,6 +11,23 @@ document.addEventListener('DOMContentLoaded', () => {
         technology: 'Other'
     };
 
+    const colors = {
+        language: {
+            proficiency: '#4caf50',
+            experience: '#a5d6a7'
+        },
+        framework: {
+            proficiency: '#2196f3',
+            experience: '#90caf9'
+        },
+        technology: {
+            proficiency: '#ff9800',
+            experience: '#ffcc80'
+        }
+    };
+    
+    const legends = colors;
+
     fetch('about/skills.json')
         .then(response => response.json())
         .then(data => {
@@ -50,6 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 createdCategories[type][category].appendChild(skillDiv);
             });
+
+            // Create legends dynamically
+            createLegends();
         })
         .catch(error => console.error('Error loading skills:', error));
 });
@@ -104,20 +124,41 @@ function createBar(barType, widthPercentage, type) {
 }
 
 function getColor(type, barType) {
-    const colors = {
-        language: {
-            proficiency: '#4caf50',
-            experience: '#a5d6a7'
-        },
-        framework: {
-            proficiency: '#2196f3',
-            experience: '#90caf9'
-        },
-        technology: {
-            proficiency: '#ff9800',
-            experience: '#ffcc80'
-        }
+    return colors[type]?.[barType] || '#ccc';
+}
+
+function createLegends() {
+    const legendContainers = {
+        language: document.querySelector('#languages .legend'),
+        framework: document.querySelector('#frameworks .legend'),
+        technology: document.querySelector('#tech .legend')
     };
 
-    return colors[type]?.[barType] || '#ccc';
+    Object.keys(legends).forEach(type => {
+        const legendContainer = legendContainers[type];
+
+        if (legendContainer) {
+            Object.keys(legends[type]).forEach(barType => {
+                const legendItem = document.createElement('div');
+                legendItem.classList.add('legend-item');
+
+                const colorBar = document.createElement('div');
+                colorBar.classList.add('bar');
+                colorBar.classList.add('fill');
+                colorBar.classList.add(barType);
+                colorBar.style.backgroundColor = legends[type][barType];
+                colorBar.style.width = '20px';
+                colorBar.style.height = '20px';
+                colorBar.style.borderRadius = '4px';
+
+                const label = document.createElement('span');
+                label.textContent = barType.charAt(0).toUpperCase() + barType.slice(1);
+
+                legendItem.appendChild(colorBar);
+                legendItem.appendChild(label);
+
+                legendContainer.appendChild(legendItem);
+            });
+        }
+    });
 }
