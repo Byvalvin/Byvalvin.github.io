@@ -83,12 +83,10 @@ const addComponent = ({ placeholderID, htmlURL }) => {
                     document.body.appendChild(feelingLuckyScript);
                 } else if(htmlURL === 'footer.html'){
                     // Update the copyright year dynamically
-                    document.addEventListener('DOMContentLoaded', () => {
-                        const yearSpan = document.getElementById('year');
-                        if (yearSpan) {
-                            yearSpan.textContent = new Date().getFullYear();
-                        }
-                    });
+                   const yearSpan = document.getElementById('year');
+                    if (yearSpan) {
+                        yearSpan.textContent = new Date().getFullYear();
+                    }
                     
                 } else {
                     console.log(`${htmlURL} loaded.`);
