@@ -1269,6 +1269,7 @@ footer {
     transform: translateY(0); /* Reset transform on click */
 }
 
+
 /*ABOUT PAGE*/
 /* Tabs Container */
 /* Tab buttons styling */
@@ -1282,7 +1283,7 @@ footer {
     padding: 0;
     display: flex;
     justify-content: space-around;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid var(--contr-bg);
 }
 
 .tab-list li {
@@ -1293,20 +1294,19 @@ footer {
     text-decoration: none;
     padding: 10px 20px;
     display: block;
-    color: #333;
-    border: 1px solid #ddd;
+    color: var(--body-dark-text-color);
+    border: 1px solid var(--contr-bg);
     border-bottom: none;
-    background-color: #f8f8f8;
+    background-color: var(--body-bg-color);
     transition: background-color 0.3s;
 }
 
 .tab-link:hover, .tab-link.active {
-    background-color: #ddd;
-    background: #fff;
-    border-color: #ccc;
+    background-color: var(--body-light-text-color);
+    border-color: var(--contr-bg);
     border-bottom: 2px solid transparent;
     font-weight: bold;
-    color: #333;
+    color: var(--body-dark-text-color);
 }
 
 .tab-link:focus {
@@ -1337,15 +1337,16 @@ footer {
 
 .legend-item span {
     font-size: 14px;
-    color: #333;
+    color: var(--body-dark-text-color);
 }
 
 /* Tab content styling */
 .tab-content {
     display: none;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--contr-bg);
     border-top: none;
+    background-color: var(--body-bg-color);
 }
 
 .tab-content.active {
@@ -1363,15 +1364,16 @@ footer {
     flex: 1; /* Each category takes available space */
     min-width: 200px; /* Minimum width for each column */
     box-sizing: border-box;
-    border: 1px solid #ddd;
+    border: 1px solid var(--contr-bg);
     padding: 10px;
     border-radius: 4px;
-    background-color: #f8f8f8;
+    background-color: var(--body-bg-color);
 }
 
 .category-container h3 {
     text-align: center;
     margin-bottom: 10px;
+    color: var(--body-dark-text-color);
 }
 
 /* Skill bars styling */
@@ -1379,7 +1381,7 @@ footer {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    max-width: 100%; /* Set a maximum width for skill bars ; max-width: 600px; /* Set a maximum width for skill bars */
+    max-width: 100%; /* Set a maximum width for skill bars */
     margin-left: auto;
     margin-right: auto; /* Center skill bars */
 }
@@ -1394,6 +1396,7 @@ footer {
 .skill-name {
     font-weight: bold;
     margin: 0;
+    color: var(--body-dark-text-color);
 }
 
 .bar-container {
@@ -1405,8 +1408,8 @@ footer {
 
 /* Each bar's styling */
 .bar {
-    background-color: #f3f3f3;
-    border: 1px solid #ddd;
+    background-color: var(--contr-bg);
+    border: 1px solid var(--contr-bg);
     border-radius: 4px;
     height: 15px;
     position: relative;
@@ -1425,17 +1428,16 @@ footer {
 
 /* Color differentiation for skill bars */
 .language-bar .fill {
-    background-color: #4caf50; /* Green for languages */
+    background-color: var(--btn-main-bg-color); /* Green for languages */
 }
 
 .framework-bar .fill {
-    background-color: #2196f3; /* Blue for frameworks */
+    background-color: var(--nav-hv-btn-bg-color); /* Blue for frameworks */
 }
 
 .tech-bar .fill {
-    background-color: #ff9800; /* Orange for technologies */
+    background-color: var(--hero-bg-color); /* Orange for technologies */
 }
-
 
 /* Button styling */
 .button {
@@ -1443,7 +1445,7 @@ footer {
     padding: 5px 10px;
     font-size: 10px; /* Adjust font size if needed */
     border: none;
-    border-radius: 50%;
+    border-radius: 25%;
     background-color: var(--main-bg-color);
     color: var(--body-light-text-color);
     text-decoration: none;
@@ -1459,9 +1461,6 @@ footer {
     outline: 2px solid var(--btn-main-bg-hv-color);
     outline-offset: 4px;
 }
-
-
-
 
 
 
