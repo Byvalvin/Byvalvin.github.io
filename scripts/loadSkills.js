@@ -1,12 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Define categories for each skill type
     const categories = {
         language: ['General-Purpose', 'Specialised', 'Math & Data Analysis'],
         framework: ['Frontend', 'Backend', 'Other'],
         technology: ['DevTools', 'Database', 'DevOps', 'Other']
     };
 
-    // Default category if no match is found
     const defaultCategory = {
         language: 'General-Purpose',
         framework: 'Other',
@@ -17,12 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(data => {
             const containers = {
-                language: document.getElementById('languages'),
-                framework: document.getElementById('frameworks'),
-                technology: document.getElementById('tech')
+                language: document.getElementById('languages-columns'),
+                framework: document.getElementById('frameworks-columns'),
+                technology: document.getElementById('tech-columns')
             };
 
-            // Keep track of created categories to avoid duplicates
             const createdCategories = {
                 language: {},
                 framework: {},
@@ -32,9 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
             data.forEach(skill => {
                 const skillDiv = createSkillBar(skill);
                 const type = skill.type;
-                const category = skill.category || defaultCategory[type];
-                
-                // Create category section if it doesn't exist
+                let category = skill.category || defaultCategory[type];
+
                 if (!categories[type].includes(category)) {
                     console.warn(`Category "${category}" not found for type "${type}". Using default category.`);
                     category = defaultCategory[type];
@@ -43,16 +39,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (!createdCategories[type][category]) {
                     const categoryContainer = document.createElement('div');
                     categoryContainer.classList.add('category-container');
+                    categoryContainer.classList.add(`${type}-column`); // Add column class
                     const categoryTitle = document.createElement('h3');
                     categoryTitle.textContent = category;
                     categoryContainer.appendChild(categoryTitle);
                     containers[type].appendChild(categoryContainer);
 
-                    // Track the created category
                     createdCategories[type][category] = categoryContainer;
                 }
 
-                // Append the skill bar to the corresponding category container
                 createdCategories[type][category].appendChild(skillDiv);
             });
         })
