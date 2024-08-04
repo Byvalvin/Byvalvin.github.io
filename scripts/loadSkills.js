@@ -1,32 +1,32 @@
+const categories = {
+    language: ['General-Purpose', 'Specialised', 'Math & Data Analysis'],
+    framework: ['Frontend', 'Backend', 'Other'],
+    technology: ['DevTools', 'Database', 'DevOps', 'Other']
+};
+
+const defaultCategory = {
+    language: 'General-Purpose',
+    framework: 'Other',
+    technology: 'Other'
+};
+
+const colors = {
+    language: {
+        proficiency: '#4caf50',
+        experience: '#a5d6a7'
+    },
+    framework: {
+        proficiency: '#2196f3',
+        experience: '#90caf9'
+    },
+    technology: {
+        proficiency: '#ff9800',
+        experience: '#ffcc80'
+    }
+};
+const legends = colors;
+
 document.addEventListener('DOMContentLoaded', () => {
-    const categories = {
-        language: ['General-Purpose', 'Specialised', 'Math & Data Analysis'],
-        framework: ['Frontend', 'Backend', 'Other'],
-        technology: ['DevTools', 'Database', 'DevOps', 'Other']
-    };
-
-    const defaultCategory = {
-        language: 'General-Purpose',
-        framework: 'Other',
-        technology: 'Other'
-    };
-
-    const colors = {
-        language: {
-            proficiency: '#4caf50',
-            experience: '#a5d6a7'
-        },
-        framework: {
-            proficiency: '#2196f3',
-            experience: '#90caf9'
-        },
-        technology: {
-            proficiency: '#ff9800',
-            experience: '#ffcc80'
-        }
-    };
-    
-    const legends = colors;
 
     fetch('about/skills.json')
         .then(response => response.json())
