@@ -1,37 +1,18 @@
 [
-        
-    {
-        "name": "C",
-        "type": "language",
-        "category": "General-Purpose",
-        "proficiency": 65,
-        "duration": 70,
-        "projectUrl": ""
-    },
-
-    {
+        {
         "name": "C++",
         "type": "language",
         "category": "General-Purpose",
         "proficiency": 88,
         "duration": 90,
         "projectUrl": ""
-    },    
-    
-    {
-        "name": "JavaScript",
-        "type": "language",
-        "category": "General-Purpose",
-        "proficiency": 80,  
-        "duration": 60,    
-        "projectUrl": ""
-    },
-    
+    },   
+
     {
         "name": "Python",
         "type": "language",
         "category": "General-Purpose",
-        "proficiency": 70,
+        "proficiency": 90,
         "duration": 100,
         "projectUrl": ""
     },
@@ -42,8 +23,31 @@
         "category": "General-Purpose",
         "proficiency": 75,
         "duration": 80,
+        "projectUrl": "https://byvalvin.github.io/project-details.html?id=qrapp"
+    },
+
+    {
+        "name": "JavaScript",
+        "type": "language",
+        "category": "General-Purpose",
+        "proficiency": 80,  
+        "duration": 60,    
+        "projectUrl": "https://github.com/Byvalvin/Byvalvin.github.io/"
+    },
+        
+    {
+        "name": "C",
+        "type": "language",
+        "category": "General-Purpose",
+        "proficiency": 65,
+        "duration": 70,
         "projectUrl": ""
     },
+
+    
+
+
+
 
     {
         "name": "HTML",
@@ -51,16 +55,16 @@
         "category": "Specialised",
         "proficiency": 80,
         "duration": 60,
-        "projectUrl": ""
+        "projectUrl": "https://github.com/Byvalvin/Byvalvin.github.io/"
     },
 
     {
         "name": "CSS",
         "type": "language",
         "category": "Specialised",
-        "proficiency": 70,
+        "proficiency": 78,
         "duration": 60,
-        "projectUrl": ""
+        "projectUrl": "https://github.com/Byvalvin/Byvalvin.github.io/"
     },
 
     {
@@ -90,20 +94,30 @@
     },
 
     {
+        "name": "Kotlin",
+        "type": "language",
+        "category": "Specialised",
+        "proficiency": 70,
+        "duration": 80,
+        "projectUrl": ""
+    },
+        
+    {
         "name": "Dart",
         "type": "language",
         "category": "Specialised",
         "proficiency": 75,
         "duration": 40,
-        "projectUrl": ""
+        "projectUrl": "https://byvalvin.github.io/project-details.html?id=aranimal"
     },
+        
 
     {
         "name": "Julia",
         "type": "language",
         "category": "Math & Data Analysis",
-        "proficiency": 60,
-        "duration": 30,
+        "proficiency": 70,
+        "duration": 60,
         "projectUrl": ""
     },
         
@@ -111,7 +125,7 @@
         "name": "MATLAB",
         "type": "language",
         "category": "Math & Data Analysis",
-        "proficiency": 70,
+        "proficiency": 75,
         "duration": 40,
         "projectUrl": ""
     },
@@ -121,7 +135,7 @@
         "type": "framework",
         "category": "Frontend",
         "proficiency": 75,
-        "duration": 15,
+        "duration": 40,
         "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
     },
 
@@ -130,7 +144,7 @@
         "type": "framework",
         "category": "Frontend",
         "proficiency": 60,
-        "duration": 25,
+        "duration": 40,
         "projectUrl": ""
     }, 
     
@@ -149,7 +163,7 @@
         "category": "Backend",
         "proficiency": 75,
         "duration": 40,
-        "projectUrl": "project-details.html#angular"
+        "projectUrl": ""
     },
 
     {
@@ -158,7 +172,7 @@
         "category": "Backend",
         "proficiency": 60,
         "duration": 20,
-        "projectUrl": "project-details.html#angular"
+        "projectUrl": ""
     },    
 
     {
@@ -167,7 +181,7 @@
         "category": "Backend",
         "proficiency": 70,
         "duration": 40,
-        "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
+        "projectUrl": ""
     },
     
     {
@@ -194,7 +208,7 @@
         "category": "DevTools",
         "proficiency": 80,
         "duration": 70,
-        "projectUrl": ""
+        "projectUrl": "https://byvalvin.github.io/project-details.html?id=qrapp"
     },        
 
 {
@@ -203,7 +217,7 @@
         "category": "Database",
         "proficiency": 60,
         "duration": 40,
-        "projectUrl": ""
+        "projectUrl": "https://byvalvin.github.io/project-details.html?id=qrapp"
     },
 {
         "name": "Poetry",
@@ -211,7 +225,7 @@
         "category": "DevTools",
         "proficiency": 40,
         "duration": 20,
-        "projectUrl": ""
+        "projectUrl": "https://byvalvin.github.io/project-details.html?id=aranimal"
     },
 
 {
@@ -220,7 +234,7 @@
         "category": "DevTools",
         "proficiency": 70,
         "duration": 70,
-        "projectUrl": ""
+        "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
     },
 
 {
@@ -229,7 +243,7 @@
         "category": "DevTools",
         "proficiency": 80,
         "duration": 70,
-        "projectUrl": ""
+        "projectUrl": "https://byvalvin.github.io/project-details.html?id=qrapp"
     },        
         
 {
@@ -238,7 +252,7 @@
         "category": "",
         "proficiency": 65,
         "duration": 80,
-        "projectUrl": ""
+        "projectUrl": "https://byvalvin.github.io/project-details.html?id=aranimal"
     },
 
 
@@ -248,7 +262,7 @@
         "category": "Database",
         "proficiency": 60,
         "duration": 40,
-        "projectUrl": ""
+        "projectUrl": "https://byvalvin.github.io/project-details.html?id=aranimal"
     },
         
     {
