@@ -84,6 +84,46 @@ function createSkillBar(skill) {
     const skillDiv = document.createElement('div');
     skillDiv.classList.add('skill-bar', `${skill.type}-bar`);
 
+    const skillHeader = document.createElement('div');
+    skillHeader.classList.add('skill-header');
+
+    const skillName = document.createElement('div');
+    skillName.classList.add('skill-name');
+    skillName.textContent = skill.name;
+
+    const button = document.createElement('a');
+    button.classList.add('button');
+    button.href = skill.projectUrl;
+    button.textContent = 'Example'; // Changed button text
+    button.target = '_blank';
+    button.rel = 'noopener noreferrer';
+
+    skillHeader.appendChild(skillName);
+    skillHeader.appendChild(button);
+    skillDiv.appendChild(skillHeader);
+
+    const barContainer = document.createElement('div');
+    barContainer.classList.add('bar-container');
+
+    barContainer.appendChild(createBar('proficiency', skill.proficiency, skill.type));
+    barContainer.appendChild(createBar('experience', skill.duration, skill.type));
+
+    skillDiv.appendChild(barContainer);
+
+    return skillDiv;
+}
+
+/*
+function createSkillBar(skill) {
+    const validTypes = ['language', 'framework', 'technology'];
+    if (!validTypes.includes(skill.type)) {
+        console.error(`Invalid skill type: ${skill.type}`);
+        return;
+    }
+
+    const skillDiv = document.createElement('div');
+    skillDiv.classList.add('skill-bar', `${skill.type}-bar`);
+
     const skillName = document.createElement('div');
     skillName.classList.add('skill-name');
     skillName.textContent = skill.name;
@@ -109,7 +149,7 @@ function createSkillBar(skill) {
 
     return skillDiv;
 }
-
+*/
 function createBar(barType, widthPercentage, type) {
     const bar = document.createElement('div');
     bar.classList.add('bar');
