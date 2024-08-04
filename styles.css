@@ -1310,7 +1310,7 @@ footer {
 }
 
 .tab-link:focus {
-    outline: 2px solid #0056b3; /* or any color that suits your design */
+    outline: 2px solid var(--btn-main-bg-hv-color); /* or any color that suits your design */
     outline-offset: 2px;
 }
 
@@ -1441,22 +1441,22 @@ footer {
 .button {
     display: inline-block;
     padding: 5px 10px;
-    margin-top: 10px;
+    font-size: 10px; /* Adjust font size if needed */
     border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: #fff;
+    border-radius: 50%;
+    background-color: var(--main-bg-color);
+    color: var(--body-light-text-color);
     text-decoration: none;
     text-align: center;
     transition: background-color 0.3s;
 }
 
 .button:hover {
-    background-color: #0056b3;
+    background-color: var(--btn-main-bg-hv-color);
 }
 
 .button:focus {
-    outline: 2px solid #0056b3;
+    outline: 2px solid var(--btn-main-bg-hv-color);
     outline-offset: 4px;
 }
 
