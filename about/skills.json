@@ -262,14 +262,6 @@
         "projectUrl": "https://byvalvin.github.io/project-details.html?id=qrapp"
     },        
         
-{
-        "name": "OpenCV",
-        "type": "technology",
-        "category": "",
-        "proficiency": 65,
-        "duration": 80,
-        "projectUrl": "https://byvalvin.github.io/project-details.html?id=aranimal"
-    },
 
 
 {
@@ -307,4 +299,13 @@
         "duration": 20,
         "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
     }
+
+{
+        "name": "OpenCV",
+        "type": "technology",
+        "category": "",
+        "proficiency": 65,
+        "duration": 80,
+        "projectUrl": "https://byvalvin.github.io/project-details.html?id=aranimal"
+    },
 ]
