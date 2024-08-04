@@ -331,6 +331,7 @@
 }
 
 /*Cyberpunk Glow*/
+/*Nice*/
 [data-theme='16'] {
     --body-bg-color: #2e2e2e;
     --body-darker-text-color: #ff007f;
@@ -1270,6 +1271,206 @@ footer {
 }
 
 
+/*ABOUT PAGE*/
+/* Tabs Container */
+/* Tab buttons styling */
+
+.about-tabs {
+    margin: 20px;
+}
+
+.tab-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid var(--contr-bg);
+}
+
+.tab-list li {
+    margin: 0;
+}
+
+.tab-link {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    color: var(--body-dark-text-color);
+    border: 1px solid var(--contr-bg);
+    border-bottom: none;
+    background-color: var(--body-bg-color);
+    transition: background-color 0.3s;
+}
+
+.tab-link:hover, .tab-link.active {
+    background-color: var(--body-light-text-color);
+    border-color: var(--contr-bg);
+    border-bottom: 2px solid transparent;
+    font-weight: bold;
+    color: var(--body-dark-text-color);
+}
+
+.tab-link:focus {
+    outline: 2px solid var(--btn-main-bg-hv-color); /* or any color that suits your design */
+    outline-offset: 2px;
+}
+
+/* Styling for legend */
+.legend {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between legend items */
+    margin-bottom: 20px; /* Space below the legend */
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between color bar and text */
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px; /* Change to 50% for circle */
+    background-color: #ccc; /* Default color, will be overridden */
+}
+
+.legend-item span {
+    font-size: 14px;
+    color: var(--body-dark-text-color);
+}
+
+/* Tab content styling */
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid var(--contr-bg);
+    border-top: none;
+    background-color: var(--body-bg-color);
+}
+
+.tab-content.active {
+    display: block; /* Ensure active content is displayed as flex */
+}
+
+/* Column layout for categories */
+.columns-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next row */
+    gap: 20px; /* Space between columns */
+}
+
+.category-container {
+    flex: 1; /* Each category takes available space */
+    min-width: 200px; /* Minimum width for each column */
+    box-sizing: border-box;
+    border: 1px solid var(--contr-bg);
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--body-bg-color);
+}
+
+.category-container h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--body-dark-text-color);
+}
+
+/* Skill bars styling */
+.skill-bar {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%; /* Set a maximum width for skill bars */
+    margin-left: auto;
+    margin-right: auto; /* Center skill bars */
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align name and button to opposite ends */
+    margin-bottom: 10px; /* Space below header */
+}
+
+.skill-name {
+    font-weight: bold;
+    margin: 0;
+    color: var(--body-dark-text-color);
+}
+
+.bar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between bars */
+    margin-top: 10px;
+}
+
+/* Each bar's styling */
+.bar {
+    background-color: var(--contr-bg);
+    border: 1px solid var(--contr-bg);
+    border-radius: 4px;
+    height: 15px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Color differentiation for skill bars */
+.language-bar .fill {
+    background-color: var(--btn-main-bg-color); /* Green for languages */
+}
+
+.framework-bar .fill {
+    background-color: var(--nav-hv-btn-bg-color); /* Blue for frameworks */
+}
+
+.tech-bar .fill {
+    background-color: var(--hero-bg-color); /* Orange for technologies */
+}
+
+/* Button styling */
+.button {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 10px; /* Adjust font size if needed */
+    border: none;
+    border-radius: 50px;
+    background-color: var(--main-bg-color);
+    color: var(--body-light-text-color);
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s; /* Add transform for smooth scaling effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.button:hover {
+    background-color: var(--btn-main-bg-hv-color);
+    transform: scale(1.05); /* Slightly scale up the button on hover */
+}
+
+.button:focus {
+    outline: 2px solid var(--btn-main-bg-hv-color);
+    outline-offset: 4px;
+}
+
+
+
+
+
+
+
 /*CONTACT PAGE*/
 /* Add styles for the custom contact section */
 .custom-contact-section {
@@ -1494,5 +1695,52 @@ footer {
 @media only screen and (max-width: 768px){
     #other-project-details .project-images {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+
+/*About Responsive css*/
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .category-container {
+        flex: 1 1 calc(50% - 20px); /* Two columns layout on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .tab-list {
+        flex-direction: column;
+    }
+
+    .tab-link {
+        text-align: center;
+        padding: 12px;
+    }
+
+    .legend {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .legend-item {
+        margin-bottom: 10px;
+    }    
+
+    .skill-bar {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .category-container {
+        flex: 1 1 100%; /* Single column layout on small screens */
+    }    
+
+    .skill-header {
+        flex-direction: column; /* Stack name and button on small screens */
+        align-items: flex-start;
+    }
+
+    .button {
+        margin-top: 5px; /* Space between button and name */
     }
 }
