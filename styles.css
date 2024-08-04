@@ -1456,6 +1456,7 @@ footer {
 
 .button:hover {
     background-color: var(--btn-main-bg-hv-color);
+    transform: scale(1.05); /* Slightly scale up the button on hover */
 }
 
 .button:focus {
