@@ -1445,12 +1445,13 @@ footer {
     padding: 5px 10px;
     font-size: 10px; /* Adjust font size if needed */
     border: none;
-    border-radius: 25%;
+    border-radius: 50px;
     background-color: var(--main-bg-color);
     color: var(--body-light-text-color);
     text-decoration: none;
     text-align: center;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s; /* Add transform for smooth scaling effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 .button:hover {
