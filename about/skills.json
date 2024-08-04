@@ -293,7 +293,7 @@
     {
         "name": "Netlify",
         "type": "technology",
-        "category": "Deployment",
+        "category": "DevOps",
         "proficiency": 70,
         "duration": 20,
         "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
@@ -302,7 +302,7 @@
     {
         "name": "Render",
         "type": "technology",
-        "category": "Deployment",
+        "category": "DevOps",
         "proficiency": 75,
         "duration": 20,
         "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
