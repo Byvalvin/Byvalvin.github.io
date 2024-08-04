@@ -1326,6 +1326,28 @@ footer {
     display: block; /* Ensure active content is displayed as flex */
 }
 
+/* Column layout for categories */
+.columns-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next row */
+    gap: 20px; /* Space between columns */
+}
+
+.category-container {
+    flex: 1; /* Each category takes available space */
+    min-width: 200px; /* Minimum width for each column */
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+.category-container h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 /* Skill bars styling */
 .skill-bar {
     margin-bottom: 20px;
@@ -1381,25 +1403,6 @@ footer {
     background-color: #ff9800; /* Orange for technologies */
 }
 
-/* Column layout for categories */
-/*
-.category-container {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-}
-*/
-
-.category-container {
-    flex: 1 1 calc(33.333% - 20px); /* Three columns layout with some gap */
-    box-sizing: border-box;
-    margin-bottom: 20px;
-}
-
-.category-container h3 {
-    text-align: center;
-    margin-bottom: 10px;
-}
 
 /* Button styling */
 .button {
