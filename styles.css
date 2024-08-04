@@ -1328,11 +1328,11 @@ footer {
     gap: 5px; /* Space between color bar and text */
 }
 
-.legend-item .bar {
+.color-box {
     width: 20px;
     height: 20px;
-    border-radius: 4px;
-    background-color: #ccc;
+    border-radius: 4px; /* Change to 50% for circle */
+    background-color: #ccc; /* Default color, will be overridden */
 }
 
 .legend-item span {
