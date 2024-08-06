@@ -1496,10 +1496,15 @@ footer {
     flex: 1;
     min-width: 200px; /* Adjust based on your design */
     text-align: center;
-    padding: 20px;
     border-radius: 10px; /* Add rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     background-color: #f9f9f9; /* Light background color */
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .interest-item img {
@@ -1517,9 +1522,29 @@ footer {
     color: var(--text-color); /* Use your text color */
 }
 
+.interest-item:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+}
 
+.example-content {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+}
 
+.interest-item.active .example-content {
+    display: block;
+}
 
+.example-content img {
+    max-width: 100%;
+}
+
+.example-content video, .example-content audio {
+    max-width: 100%;
+}
 
 
 
