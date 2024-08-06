@@ -25,6 +25,6 @@ const applyStoredPreferences = () => {
     }
 };
 
-// Apply preferences when the DOM content is fully loaded
+// Apply preferences when the DOM content is fully loaded(will be loaded by now)
 applyStoredPreferences();
 
