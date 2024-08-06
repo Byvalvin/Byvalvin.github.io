@@ -24,10 +24,8 @@ const colors = {
         experience: '#ffcc80'
     }
 };
-const legends = colors;
 
 document.addEventListener('DOMContentLoaded', () => {
-
     fetch('about/skills.json')
         .then(response => response.json())
         .then(data => {
@@ -55,8 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (!createdCategories[type][category]) {
                     const categoryContainer = document.createElement('div');
-                    categoryContainer.classList.add('category-container');
-                    categoryContainer.classList.add(`${type}-column`); // Add column class
+                    categoryContainer.classList.add('category-container', `${type}-column`); // classList.add(items) add items in order of apperanace
                     const categoryTitle = document.createElement('h3');
                     categoryTitle.textContent = category;
                     categoryContainer.appendChild(categoryTitle);
@@ -90,17 +87,18 @@ function createSkillBar(skill) {
     const skillName = document.createElement('div');
     skillName.classList.add('skill-name');
     skillName.textContent = skill.name;
-
     skillHeader.appendChild(skillName);
-    if(skill.projectUrl){
+
+    if (skill.projectUrl) {
         const button = document.createElement('a');
         button.classList.add('button');
         button.href = skill.projectUrl;
-        button.textContent = 'Example'; // Changed button text
+        button.textContent = 'Example';
         button.target = '_blank';
         button.rel = 'noopener noreferrer';
         skillHeader.appendChild(button);
     }
+
     skillDiv.appendChild(skillHeader);
 
     const barContainer = document.createElement('div');
@@ -113,7 +111,6 @@ function createSkillBar(skill) {
 
     return skillDiv;
 }
-
 
 function createBar(barType, widthPercentage, type) {
     const bar = document.createElement('div');
@@ -139,20 +136,20 @@ function createLegends() {
         technology: document.querySelector('#tech .legend')
     };
 
-    Object.keys(legends).forEach(type => {
+    Object.keys(legendContainers).forEach(type => {
         const legendContainer = legendContainers[type];
 
         if (legendContainer) {
             // Clear previous legends if any
             legendContainer.innerHTML = '';
 
-            Object.keys(legends[type]).forEach(barType => {
+            Object.keys(colors[type]).forEach(barType => {
                 const legendItem = document.createElement('div');
                 legendItem.classList.add('legend-item');
 
                 const colorBox = document.createElement('div');
-                colorBox.classList.add('color-box'); // Updated class for legend color box
-                colorBox.style.backgroundColor = legends[type][barType];
+                colorBox.classList.add('color-box');
+                colorBox.style.backgroundColor = colors[type][barType];
 
                 const label = document.createElement('span');
                 label.textContent = barType.charAt(0).toUpperCase() + barType.slice(1);
@@ -165,3 +162,4 @@ function createLegends() {
         }
     });
 }
+
