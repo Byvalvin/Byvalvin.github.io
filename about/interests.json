@@ -2,16 +2,22 @@
     {
         "name": "Drawing & Animation",
         "description": "Capturing imagination and creativity through art and animation.",
-        "icon": "images/drawing.jpg"
+        "icon": "images/drawing-icon.jpg",
+        "type": "image",
+        "content": "images/drawing.jpg"
     },
     {
         "name": "Playing Bass",
         "description": "Finding rhythm and expression through music.",
-        "icon": "images/bass.jpg"
+        "icon": "images/bass-icon.jpg",
+        "type": "video",
+        "content": "audios/bass-performance.mp4"
     },
     {
         "name": "Stories, Myths & Poetry",
         "description": "Exploring rich narratives and poetic expressions.",
-        "icon": "images/stories.png"
+        "icon": "images/stories-icon.png",
+        "type": "text",
+        "content": "Read some of my favorite short stories and poems."
     }
 ]
