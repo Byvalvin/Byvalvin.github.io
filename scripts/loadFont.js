@@ -19,14 +19,27 @@
  * @param {string} fontName - The name of the font to apply (e.g., 'Poppins:wght@300;400;600').
  */
 const changeFont = (fontName) => {
+    // Validate the fontName parameter
+    if (typeof fontName !== 'string' || !fontName.trim()) {
+        console.error('Invalid font name.');
+        return;
+    }
+
     let fontLink = document.querySelector('link[href*="fonts.googleapis.com"]');
     
+    // Construct the new font URL
+    const fontUrl = `https://fonts.googleapis.com/css2?family=${fontName}&display=swap`;
+
     if (fontLink) {
-        fontLink.href = `https://fonts.googleapis.com/css2?family=${fontName}&display=swap`;
+        // Only update if the URL is different to avoid unnecessary changes
+        if (fontLink.href !== fontUrl) {
+            fontLink.href = fontUrl;
+        }
     } else {
+        // Create and append the new link element if it does not exist
         fontLink = document.createElement('link');
         fontLink.rel = 'stylesheet';
-        fontLink.href = `https://fonts.googleapis.com/css2?family=${fontName}&display=swap`;
+        fontLink.href = fontUrl;
         document.head.appendChild(fontLink);
     }
 };
