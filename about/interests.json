@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Drawing & Animation",
+        "description": "Capturing imagination and creativity through art and animation.",
+        "icon": "images/drawing.jpg"
+    },
+    {
+        "name": "Playing Bass",
+        "description": "Finding rhythm and expression through music.",
+        "icon": "images/bass.jpg"
+    },
+    {
+        "name": "Stories, Myths & Poetry",
+        "description": "Exploring rich narratives and poetic expressions.",
+        "icon": "images/stories.png"
+    }
+]
