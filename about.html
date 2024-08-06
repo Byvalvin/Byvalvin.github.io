@@ -20,7 +20,7 @@
     
     <main>
         <section class="about-tabs">
-            <ul class="tab-list">
+            <ul class="tab-list" role="tablist">
                 <li><a href="#intro" class="tab-link active" role="tab" aria-controls="intro" data-tab="intro" aria-selected="true">Introduction</a></li>
                 <li><a href="#languages" class="tab-link" role="tab" aria-controls="languages" data-tab="languages" aria-selected="false">Languages</a></li>
                 <li><a href="#frameworks" class="tab-link" role="tab" aria-controls="frameworks" data-tab="frameworks" aria-selected="false">Frameworks</a></li>
@@ -28,7 +28,7 @@
                 <li><a href="#interests" class="tab-link" role="tab" aria-controls="interests" data-tab="interests" aria-selected="false">Interests</a></li>
             </ul>
 
-            <div class="tab-content active" id="intro">
+            <div class="tab-content active" id="intro" role="tabpanel" aria-labelledby="tab-intro">
                 <h2>Introduction</h2>
                 <p>Hello! I'm Daniel Asimiakwini, a passionate web developer with a flair for crafting dynamic, user-centric websites. 
                     My journey began with a fascination for solving complex problems in style. 
@@ -36,7 +36,7 @@
                 </p>
             </div>
 
-            <div class="tab-content" id="languages">
+            <div class="tab-content" id="languages" role="tabpanel" aria-labelledby="tab-languages">
                 <h2>Languages</h2>
                 <div class="legend"></div> <!-- Legend will be inserted here -->
                 <div class="columns-container" id="languages-columns">
@@ -44,7 +44,7 @@
                 </div>
             </div>
             
-            <div class="tab-content" id="frameworks">
+            <div class="tab-content" id="frameworks" role="tabpanel" aria-labelledby="tab-frameworks">
                 <h2>Frameworks</h2>
                 <div class="legend"></div> <!-- Legend will be inserted here -->
                 <div class="columns-container" id="frameworks-columns">
@@ -52,7 +52,7 @@
                 </div>
             </div>
             
-            <div class="tab-content" id="tech">
+            <div class="tab-content" id="tech" role="tabpanel" aria-labelledby="tab-tech">
                 <h2>Technologies</h2>
                 <div class="legend"></div> <!-- Legend will be inserted here -->
                 <div class="columns-container" id="tech-columns">
@@ -60,7 +60,7 @@
                 </div>
             </div>            
             
-            <div class="tab-content" id="interests">
+            <div class="tab-content" id="interests" role="tabpanel" aria-labelledby="tab-interests">
                 <h2>Personal Interests</h2>
                 <p>Beyond the world of coding, I find joy in drawing & animation, playing bass, stories, myths and poetry. 
                     These activities not only invigorate my creativity but also offer fresh perspectives that I bring to my projects. 
