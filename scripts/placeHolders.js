@@ -18,9 +18,7 @@ const highlightActiveLink = () => {
 
 // Function to add a component to the page
 const addComponent = ({ placeholderID, htmlURL }) => {
-    console.log(`Adding component to ${placeholderID}`);
-
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", () => {
         const componentPlaceholder = document.getElementById(placeholderID);
 
         if (!componentPlaceholder) {
@@ -33,63 +31,36 @@ const addComponent = ({ placeholderID, htmlURL }) => {
 
         // Construct the URL to fetch the HTML component
         const url = `components/${htmlURL}`;
-        
+
         // Configure the XMLHttpRequest
         xhr.open('GET', url, true);
 
         // Setup onload callback
         xhr.onload = function() {
             if (xhr.status === 200) {
-                // Insert the received HTML into the placeholder
                 componentPlaceholder.innerHTML = xhr.responseText;
 
                 if (htmlURL === 'navbar.html') {
                     highlightActiveLink();
 
-                    // Add event listener for menu toggle
                     const menuToggle = document.getElementById('menu-toggle');
                     const navLinks = document.getElementById('nav-links');
 
                     if (menuToggle && navLinks) {
                         menuToggle.addEventListener('click', () => {
-                            console.log("Hamburger menu clicked");
                             navLinks.classList.toggle('active');
                         });
-                    } else {
-                        console.warn('Menu toggle or nav links element not found');
                     }
 
                     // Dynamically load additional scripts
-                    const feelingLuckyScript = document.createElement('script');
-                    feelingLuckyScript.src = 'scripts/feelingLucky.js';
-                    feelingLuckyScript.defer;
-                    feelingLuckyScript.onload = () => {
-                        console.log('Feeling Lucky script loaded.');
-
-                        const preferencesScript = document.createElement('script');
-                        preferencesScript.src = 'scripts/applyPreferences.js';
-                        preferencesScript.defer;
-                        preferencesScript.onload = () => {
-                            console.log('Preferences script loaded.');
-                        };
-                        preferencesScript.onerror = () => {
-                            console.error('Failed to load Preferences script.');
-                        };
-                        document.body.appendChild(preferencesScript);
-                    };
-                    feelingLuckyScript.onerror = () => {
-                        console.error('Failed to load Feeling Lucky script.');
-                    };
-                    document.body.appendChild(feelingLuckyScript);
-                } else if(htmlURL === 'footer.html'){
+                    loadScript('scripts/feelingLucky.js', 'Feeling Lucky script loaded.');
+                    loadScript('scripts/applyPreferences.js', 'Preferences script loaded.');
+                } else if (htmlURL === 'footer.html') {
                     // Update the copyright year dynamically
-                   const yearSpan = document.getElementById('year');
+                    const yearSpan = document.getElementById('year');
                     if (yearSpan) {
                         yearSpan.textContent = new Date().getFullYear();
                     }
-                    
-                } else {
-                    console.log(`${htmlURL} loaded.`);
                 }
             } else {
                 console.error(`Failed to load ${htmlURL}: Status ${xhr.status}`);
@@ -99,12 +70,21 @@ const addComponent = ({ placeholderID, htmlURL }) => {
         // Setup onerror callback
         xhr.onerror = function() {
             console.error(`Failed to load ${htmlURL}: Network error`);
-            // Optional: Display a user-friendly error message or fallback content
         };
 
         // Send the request
         xhr.send();
     });
+};
+
+// Function to load a script dynamically
+const loadScript = (src, successMessage) => {
+    const script = document.createElement('script');
+    script.src = src;
+    script.defer = true;
+    script.onload = () => console.log(successMessage);
+    script.onerror = () => console.error(`Failed to load ${src}`);
+    document.body.appendChild(script);
 };
 
 // Array of components to include
