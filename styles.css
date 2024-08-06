@@ -43,6 +43,7 @@
 }
 
 /* Color Scheme 3 */
+/*3*/
 [data-theme='3'] {
     --body-bg-color: #fcfcfc;
     --body-darker-text-color: #666;
@@ -65,6 +66,7 @@
 }
 
 /*Solarised*/
+/*4*/
 [data-theme='4'] {
     --body-bg-color: #002b36;
     --body-darker-text-color: #93a1a1;
@@ -87,9 +89,10 @@
 }
 
 /*Dark Purple*/
+/*1*/
 [data-theme='5'] {
     --body-bg-color: #2c003e;
-    --body-darker-text-color: #e0b3ff;
+    --body-darker-text-color: #cc9fcb;
     --body-dark-text-color: #d1a3d0;
     --body-light-text-color: #f3e5f5;
     --main-bg-color: #3e004c;
@@ -109,6 +112,7 @@
 }
 
 /*Ocean Breeze*/
+/*3*/
 [data-theme='6'] {
     --body-bg-color: #e0f7fa;
     --body-darker-text-color: #00695c;
@@ -131,6 +135,7 @@
 }
 
 /*Warm Autumn*/
+/*3*/
 [data-theme='7'] {
     --body-bg-color: #ffebee;
     --body-darker-text-color: #bf360c;
@@ -153,6 +158,7 @@
 }
 
 /*Neon Lights*/
+/*1*/
 [data-theme='8'] {
     --body-bg-color: #000000;
     --body-darker-text-color: #39ff14;
@@ -175,6 +181,7 @@
 }
 
 /*Elegant Black & Gold*/
+/*1*/
 [data-theme='9'] {
     --body-bg-color: #212121;
     --body-darker-text-color: #d4af37;
@@ -219,6 +226,7 @@
 }
 
 /*Tropical Sunset*/
+/*3*/
 [data-theme='11'] {
     --body-bg-color: #ffccbc;
     --body-darker-text-color: #ff5722;
@@ -241,6 +249,7 @@
 }
 
 /*Retro Neon*/
+/*1*/
 [data-theme='12'] {
     --body-bg-color: #1c1c1c;
     --body-darker-text-color: #ff00ff;
@@ -264,6 +273,7 @@
 
 
 /*Earthly Tones*/
+/*4*/
 [data-theme='13'] {
     --body-bg-color: #f5f5dc;
     --body-darker-text-color: #6d4c41;
@@ -286,6 +296,7 @@
 }
 
 /*Winter Wonderland*/
+/*4*/
 [data-theme='14'] {
     --body-bg-color: #e0f7fa;
     --body-darker-text-color: #004d40;
@@ -332,6 +343,7 @@
 
 /*Cyberpunk Glow*/
 /*Nice*/
+/*1*/
 [data-theme='16'] {
     --body-bg-color: #2e2e2e;
     --body-darker-text-color: #ff007f;
@@ -354,6 +366,7 @@
 }
 
 /*Zen Garden*/
+/*1*/
 [data-theme='17'] {
     --body-bg-color: #f0f4f8;
     --body-darker-text-color: #00796b;
@@ -376,6 +389,7 @@
 }
 
 /*Vibrant Citrus*/
+/*1*/
 [data-theme='18'] {
     --body-bg-color: #fff3e0;
     --body-darker-text-color: #ff6f00;
@@ -398,6 +412,7 @@
 }
 
 /*Verdant Oasis*/
+/*1*/
 [data-theme='19'] {
     --body-bg-color: #e8f5e9; /* Light green background */
     --body-darker-text-color: #2e7d32; /* Dark green text */
@@ -420,6 +435,7 @@
 }
 
 /*Classic Noir*/
+/*1*/
 [data-theme='20'] {
     --body-bg-color: #2e2e2e; /* Dark gray background */
     --body-darker-text-color: #1c1c1c; /* Almost black text */
@@ -442,6 +458,7 @@
 }
 
 /*Tennyson*/
+/*1*/
 [data-theme='21'] {
     --body-bg-color: #0f0f0f; /* Dark background */
     --body-darker-text-color: #0a0a0a; /* Very dark gray text */
@@ -464,6 +481,7 @@
 }
 
 /*Starry Night*/
+/*1*/
 [data-theme='22'] {
     --body-bg-color: #002b36; /* Deep, dark blue for the night sky */
     --body-darker-text-color: #0d0d0d; /* Very dark gray for text */
@@ -488,6 +506,7 @@
 
 
 /* Vintage Typewriter */
+/*1*/
 [data-theme='23'] {
     --body-bg-color: #f9f4e8; /* Off-white with a warm, yellowish tone, simulating aged typewriter paper */
     --body-darker-text-color: #141414; /* Deep dark gray */
@@ -512,6 +531,7 @@
 
 
 /* Forest Retreat */
+/*1*/
 [data-theme='24'] {
     --body-bg-color: #e8f5e9; /* Light green for a fresh look */
     --body-darker-text-color: #1b5e20; /* Dark green for text */
@@ -535,6 +555,7 @@
 
 
 /* CSS Hell */
+/*1*/
 [data-theme='25'] {
     --body-bg-color: #ff00ff; /* Bright magenta for a jarring background */
     --body-darker-text-color: #009900; /* Even darker neon green */
