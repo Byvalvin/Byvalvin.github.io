@@ -53,9 +53,11 @@ const addComponent = ({ placeholderID, htmlURL }) => {
                     }
 
                     // Dynamically load additional scripts
-                    loadScript('scripts/feelingLucky.js', 'Feeling Lucky script loaded.').onload = () =>{
-                        loadScript('scripts/applyPreferences.js', 'Preferences script loaded.');
-                    };
+                    const next = {
+                        src:'scripts/applyPreferences.js',
+                        msg:'Preferences script loaded.'
+                    }
+                    loadScript('scripts/feelingLucky.js', 'Feeling Lucky script loaded.', next);
                     
                     
                 } else if (htmlURL === 'footer.html') {
@@ -80,15 +82,19 @@ const addComponent = ({ placeholderID, htmlURL }) => {
     });
 };
 
-// Function to load a script dynamically
-const loadScript = (src, successMessage) => {
+// Function to load chained scripts dynamically
+const loadScript = (src, successMessage, nextScript) => {
     const script = document.createElement('script');
     script.src = src;
     script.defer = true;
-    script.onload = () => console.log(successMessage);
+    script.onload = () => {
+        console.log(successMessage);
+        if(nextScript){
+            loadScript(nextScript.src, nextScript.msg, nextScript.next);
+        }
+    }
     script.onerror = () => console.error(`Failed to load ${src}`);
     document.body.appendChild(script);
-    return script; // to chain
 };
 
 // Array of components to include
