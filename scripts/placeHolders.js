@@ -53,8 +53,11 @@ const addComponent = ({ placeholderID, htmlURL }) => {
                     }
 
                     // Dynamically load additional scripts
-                    loadScript('scripts/feelingLucky.js', 'Feeling Lucky script loaded.');
-                    loadScript('scripts/applyPreferences.js', 'Preferences script loaded.');
+                    loadScript('scripts/feelingLucky.js', 'Feeling Lucky script loaded.').onload = () =>{
+                        loadScript('scripts/applyPreferences.js', 'Preferences script loaded.');
+                    };
+                    
+                    
                 } else if (htmlURL === 'footer.html') {
                     // Update the copyright year dynamically
                     const yearSpan = document.getElementById('year');
@@ -85,6 +88,7 @@ const loadScript = (src, successMessage) => {
     script.onload = () => console.log(successMessage);
     script.onerror = () => console.error(`Failed to load ${src}`);
     document.body.appendChild(script);
+    return script; // to chain
 };
 
 // Array of components to include
