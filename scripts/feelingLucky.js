@@ -32,13 +32,5 @@ if (feelingLuckyButton) {
         event.preventDefault(); // Prevent default anchor behavior
         applySettings();
     });
-
-    // Load previously selected settings from localStorage on page load
-    document.addEventListener('DOMContentLoaded', () => {
-        const savedTheme = localStorage.getItem('selectedTheme') || 'default';
-        const savedFont = localStorage.getItem('selectedFont') || 'Poppins:wght@300;400;600';
-        body.setAttribute('data-theme', savedTheme);
-        changeFont(savedFont); // Use the function from loadFont.js
-    });
 }
 
