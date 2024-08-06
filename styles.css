@@ -1315,6 +1315,26 @@ footer {
     outline-offset: 2px;
 }
 
+/* Introduction Section Styling */
+.intro-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust gap as needed */
+    margin-top: 20px;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+
 /* Styling for legend */
 .legend {
     display: flex;
@@ -1463,6 +1483,38 @@ footer {
 .button:focus {
     outline: 2px solid var(--btn-main-bg-hv-color);
     outline-offset: 4px;
+}
+
+/* Interests Section Styling */
+.interests-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust gap as needed */
+}
+
+.interest-item {
+    flex: 1;
+    min-width: 200px; /* Adjust based on your design */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.interest-item img {
+    max-width: 100px; /* Adjust based on your design */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.interest-item h3 {
+    margin: 10px 0;
+    color: var(--primary-color); /* Use your primary color */
+}
+
+.interest-item p {
+    color: var(--text-color); /* Use your text color */
 }
 
 
