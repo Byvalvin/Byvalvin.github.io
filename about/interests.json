@@ -9,14 +9,14 @@
     {
         "name": "Playing Bass",
         "description": "Finding rhythm and expression through music.",
-        "icon": "about/images/bass-icon.g",
+        "icon": "about/images/bass-icon.jpg",
         "type": "video",
         "content": "audios/bass-performance.mp4"
     },
     {
         "name": "Stories, Myths & Poetry",
         "description": "Exploring rich narratives and poetic expressions.",
-        "icon": "about/images/stories-icon.png",
+        "icon": "about/images/stories-icon.jpg",
         "type": "text",
         "content": "Read some of my favorite short stories and poems."
     }
