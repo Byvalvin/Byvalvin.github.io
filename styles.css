@@ -22,6 +22,7 @@
 }
 
 /* Color Scheme 2 */
+/*3*/
 [data-theme='2'] {
     --body-bg-color: #f0f4f8;
     --body-darker-text-color: #222;
@@ -44,7 +45,7 @@
 }
 
 /* Color Scheme 3 */
-/*3*/
+/*2*/
 [data-theme='3'] {
     --body-bg-color: #fcfcfc;
     --body-darker-text-color: #666;
@@ -67,7 +68,7 @@
 }
 
 /*Solarised*/
-/*4*/
+/*5*/
 [data-theme='4'] {
     --body-bg-color: #002b36;
     --body-darker-text-color: #93a1a1;
@@ -90,10 +91,10 @@
 }
 
 /*Dark Purple*/
-/*1*/
+/*4*/
 [data-theme='5'] {
     --body-bg-color: #2c003e;
-    --body-darker-text-color: #cc9fcb;
+    --body-darker-text-color: #a85e99;
     --body-dark-text-color: #d1a3d0;
     --body-light-text-color: #f3e5f5;
     --main-bg-color: #3e004c;
@@ -116,7 +117,7 @@
 /*3*/
 [data-theme='6'] {
     --body-bg-color: #e0f7fa;
-    --body-darker-text-color: #00695c;
+    --body-darker-text-color: #00395c;
     --body-dark-text-color: #004d40;
     --body-light-text-color: #80deea;
     --main-bg-color: #00796b;
@@ -139,7 +140,7 @@
 /*3*/
 [data-theme='7'] {
     --body-bg-color: #ffebee;
-    --body-darker-text-color: #bf360c;
+    --body-darker-text-color: #6f360c;
     --body-dark-text-color: #c62828;
     --body-light-text-color: #fce4ec;
     --main-bg-color: #d32f2f;
@@ -149,7 +150,7 @@
     --hero-bg-color: #c62828;
     --proj-btn-bg-color: #ff7043;
     --btn-bg-hv-color: #e64a19;
-    --h-text-color: #bf360c;
+    --h-text-color: #8f360c;
     --contact-bg-color: #d32f2f;
     --tech-card-acc-bd-bg: #f8bbd0;
     --acc-title-hv: #d32f2f;
@@ -159,7 +160,7 @@
 }
 
 /*Neon Lights*/
-/*1*/
+/*5*/
 [data-theme='8'] {
     --body-bg-color: #000000;
     --body-darker-text-color: #39ff14;
@@ -172,7 +173,7 @@
     --hero-bg-color: #00bfae;
     --proj-btn-bg-color: #c51162;
     --btn-bg-hv-color: #d500f9;
-    --h-text-color: #ff1744;
+    --h-text-color: #df1744;
     --contact-bg-color: #d500f9;
     --tech-card-acc-bd-bg: #212121;
     --acc-title-hv: #d500f9;
@@ -182,7 +183,7 @@
 }
 
 /*Elegant Black & Gold*/
-/*1*/
+/*3*/
 [data-theme='9'] {
     --body-bg-color: #212121;
     --body-darker-text-color: #d4af37;
@@ -1520,7 +1521,7 @@ footer {
     text-align: center;
     border-radius: 10px; /* Add rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    background-color: #f9f9f9; /* Light background color */
+    background-color: var(--body-bg-color); /* Light background color */
     cursor: pointer;
     border: 1px solid #ddd;
     padding: 20px;
@@ -1537,15 +1538,15 @@ footer {
 
 .interest-item h3 {
     margin: 10px 0;
-    color: var(--primary-color); /* Use your primary color */
+    color: var(--body-darker-text-color); /* Use your primary color */
 }
 
 .interest-item p {
-    color: var(--text-color); /* Use your text color */
+    color: var(--body-dark-text-color); /* Use your text color */
 }
 
 .interest-item:hover {
-    background-color: #f0f0f0;
+    background-color: (--main-bg-color);
     transform: scale(1.02);
 }
 
