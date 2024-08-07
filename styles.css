@@ -1346,11 +1346,13 @@ footer {
 }
 
 /* Introduction Section Styling */
+
+/* Introduction Section Styling */
 .intro-container {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    gap: 20px; /* Adjust gap as needed */
+    flex-direction: row; /* Arrange items horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Space between text and image */
     margin-top: 20px;
     max-width: 800px; /* Limit the container width */
     margin-left: auto;
@@ -1358,11 +1360,13 @@ footer {
 }
 
 .intro-text {
+    flex: 1; /* Allow text to take available space */
     max-width: 600px; /* Limit the width of the text container */
-    text-align: center; /* Center align the text */
+    text-align: left; /* Align text to the left */
 }
 
 .intro-image {
+    flex-shrink: 0; /* Prevent the image from shrinking */
     max-width: 300px; /* Set a maximum width for the image */
     display: flex; /* Use flexbox to center image within its container */
     justify-content: center;
@@ -1375,7 +1379,6 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
     object-fit: cover; /* Ensure image covers container without distortion */
 }
-
 
 /* Styling for legend */
 .legend {
