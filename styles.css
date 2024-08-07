@@ -439,11 +439,11 @@
 }
 
 /*Classic Noir*/
-/*1*/
+/*5*/
 [data-theme='20'] {
     --body-bg-color: #2e2e2e; /* Dark gray background */
     --body-darker-text-color: #4f4f4f; /* Almost black text */
-    --body-dark-text-color: #333333; /* Dark gray text */
+    --body-dark-text-color: #777; /* Dark gray text */
     --body-light-text-color: #e0e0e0; /* Light gray text */
     --main-bg-color: #1a1a1a; /* Nearly black background */
     --nav-hv-btn-bg-color: #444; /* Dark gray hover effect */
@@ -462,11 +462,11 @@
 }
 
 /*Tennyson*/
-/*1*/
+/*5*/
 [data-theme='21'] {
     --body-bg-color: #0f0f0f; /* Dark background */
     --body-darker-text-color: #0a0a0a; /* Very dark gray text */
-    --body-dark-text-color: #1a1a1a; /* Dark gray text */
+    --body-dark-text-color: #009e49; /* Dark gray text */
     --body-light-text-color: #f0f0f0; /* Light gray text */
     --main-bg-color: #101010; /* Slightly lighter dark background */
     --nav-hv-btn-bg-color: #00ff00; /* Bright green hover effect */
@@ -485,11 +485,11 @@
 }
 
 /*Starry Night*/
-/*1*/
+/*5*/
 [data-theme='22'] {
     --body-bg-color: #002b36; /* Deep, dark blue for the night sky */
-    --body-darker-text-color: #0d0d0d; /* Very dark gray for text */
-    --body-dark-text-color: #1c1c1c; /* Dark gray text */
+    --body-darker-text-color: #4a4a4a; /* Very dark gray for text */
+    --body-dark-text-color: #7e7e7e; /* Dark gray text */
     --body-light-text-color: #f0f0f0; /* Soft, light gray text */
     --main-bg-color: #003366; /* Deep blue for main sections */
     --nav-hv-btn-bg-color: #ffeb3b; /* Bright yellow for hover effects */
