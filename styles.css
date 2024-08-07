@@ -465,18 +465,18 @@
 /*5*/
 [data-theme='21'] {
     --body-bg-color: #0f0f0f; /* Dark background */
-    --body-darker-text-color: #0a0a0a; /* Very dark gray text */
+    --body-darker-text-color: #004d27; /* Very dark gray text */
     --body-dark-text-color: #009e49; /* Dark gray text */
-    --body-light-text-color: #f0f0f0; /* Light gray text */
+    --body-light-text-color: #00a859; /* Light gray text */
     --main-bg-color: #101010; /* Slightly lighter dark background */
     --nav-hv-btn-bg-color: #00ff00; /* Bright green hover effect */
     --btn-main-bg-color: #00a859; /* Ben 10 green button color */
     --btn-main-bg-hv-color: #00c853; /* Lighter green button hover color */
-    --hero-bg-color: #00bfae; /* Bright teal hero section background */
+    --hero-bg-color: #fff; /* Bright teal hero section background */
     --proj-btn-bg-color: #00c853; /* Green project buttons */
     --btn-bg-hv-color: #009c66; /* Darker green for button hover effect */
-    --h-text-color: #ffffff; /* White for headings */
-    --contact-bg-color: #00a859; /* Ben 10 green contact section background */
+    --h-text-color: ##f0f0f0; /* White for headings */
+    --contact-bg-color: #f0f0f0; /* Ben 10 green contact section background */
     --tech-card-acc-bd-bg: #1a1a1a; /* Dark background for tech card */
     --acc-title-hv: #00ff00; /* Bright green for accordion title hover */
     --contr-bg: #101010; /* Dark background for containers */
