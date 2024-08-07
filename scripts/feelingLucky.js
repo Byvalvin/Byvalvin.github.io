@@ -25,6 +25,13 @@ const applySettings = () => {
     const newFont = fonts[(fonts.indexOf(currentFont) + 1) % fonts.length];
     changeFont(newFont); // Use the function from loadFont.js
     localStorage.setItem('selectedFont', newFont);
+
+     // Change logo image based on theme
+    if (newTheme === '21') {
+        logoImage.src = 'images/omnitrix1.jpg'; // Set to Omnitrix image
+    } else {
+        logoImage.src = 'images/Byvalvin.jpeg'; // Set to default logo
+    }
 };
 
 if (feelingLuckyButton) {
