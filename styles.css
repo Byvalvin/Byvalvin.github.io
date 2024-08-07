@@ -1327,6 +1327,11 @@ footer {
     transition: background-color 0.3s;
 }
 
+.tab-link i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 1.2em; /* Adjust icon size */
+}
+
 .tab-link:hover, .tab-link.active {
     background-color: var(--body-light-text-color);
     border-color: var(--contr-bg);
