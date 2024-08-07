@@ -7,6 +7,7 @@
     <meta name="keywords" content="About, Byvalvin, Daniel Asimiakwini">
     <meta name="author" content="Daniel Asimiakwini">
     <title>About - Byvalvin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="scripts/loadFont.js" defer></script> <!-- Added defer to ensure script loads after content -->
 </head>
@@ -21,11 +22,35 @@
     <main>
         <section class="about-tabs">
             <ul class="tab-list" role="tablist">
-                <li><a href="#intro" class="tab-link active" role="tab" aria-controls="intro" data-tab="intro" aria-selected="true">Introduction</a></li>
-                <li><a href="#languages" class="tab-link" role="tab" aria-controls="languages" data-tab="languages" aria-selected="false">Languages</a></li>
-                <li><a href="#frameworks" class="tab-link" role="tab" aria-controls="frameworks" data-tab="frameworks" aria-selected="false">Frameworks</a></li>
-                <li><a href="#tech" class="tab-link" role="tab" aria-controls="tech" data-tab="tech" aria-selected="false">Technologies</a></li>
-                <li><a href="#interests" class="tab-link" role="tab" aria-controls="interests" data-tab="interests" aria-selected="false">Interests</a></li>
+                <li><a href="#intro" class="tab-link active" role="tab" aria-controls="intro" data-tab="intro" aria-selected="true">
+                        <i class="fas fa-user"></i>
+                        Introduction
+                    </a>
+                </li>
+                
+                <li><a href="#languages" class="tab-link" role="tab" aria-controls="languages" data-tab="languages" aria-selected="false">
+                        <i class="fas fa-code"></i>
+                        Languages
+                    </a>
+                </li>
+                
+                <li><a href="#frameworks" class="tab-link" role="tab" aria-controls="frameworks" data-tab="frameworks" aria-selected="false">
+                        Frameworks
+                        <i class="fas fa-cogs"></i>
+                </a>
+                </li>
+                
+                <li><a href="#tech" class="tab-link" role="tab" aria-controls="tech" data-tab="tech" aria-selected="false">
+                        Technologies
+                        <i class="fas fa-tools">
+                    </a>
+                </li>
+                
+                <li><a href="#interests" class="tab-link" role="tab" aria-controls="interests" data-tab="interests" aria-selected="false">
+                        Interests
+                        <i class="fas fa-heart">
+                    </a>
+                </li>
             </ul>
 
             <div class="tab-content active" id="intro" role="tabpanel" aria-labelledby="tab-intro">
