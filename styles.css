@@ -1839,6 +1839,21 @@ footer {
         padding: 12px;
     }
 
+    .intro-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+    
+    .intro-text {
+        text-align: center; /* Center align the text on smaller screens */
+        max-width: 100%; /* Allow text to use full width of the container */
+    }
+    
+    .intro-image {
+        max-width: 100%; /* Allow image to use full width of the container */
+        margin-top: 20px; /* Add margin at the top of the image */
+    }
+    
     .legend {
         flex-direction: column;
         align-items: flex-start;
