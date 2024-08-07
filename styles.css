@@ -1343,19 +1343,24 @@ footer {
 /* Introduction Section Styling */
 .intro-container {
     display: flex;
-    align-items: flex-start; /* Align items to the start for a more compact look */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
     gap: 20px; /* Adjust gap as needed */
     margin-top: 20px;
+    max-width: 800px; /* Limit the container width */
+    margin-left: auto;
+    margin-right: auto; /* Center the container horizontally */
 }
 
 .intro-text {
-    flex: 2; /* Give more space to text */
-    max-width: 600px; /* Optional: Limit the width of the text container */
+    max-width: 600px; /* Limit the width of the text container */
+    text-align: center; /* Center align the text */
 }
 
 .intro-image {
-    flex: 1; /* Smaller proportion compared to text */
     max-width: 300px; /* Set a maximum width for the image */
+    display: flex; /* Use flexbox to center image within its container */
+    justify-content: center;
 }
 
 .intro-image img {
