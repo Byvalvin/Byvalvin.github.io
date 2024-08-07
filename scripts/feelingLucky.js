@@ -28,9 +28,9 @@ const applySettings = () => {
 
      // Change logo image based on theme
     if (newTheme === '21') {
-        logoImage.src = 'images/omnitrix1.jpg'; // Set to Omnitrix image
+        feelingLuckyButton.src = 'images/omnitrix1.jpg'; // Set to Omnitrix image
     } else {
-        logoImage.src = 'images/Byvalvin.jpeg'; // Set to default logo
+        feelingLuckyButton.src = 'images/Byvalvin.jpeg'; // Set to default logo
     }
 };
 
