@@ -26,7 +26,7 @@ const applyStoredPreferences = () => {
     }
 
     // Change logo image based on theme
-    const feelingLuckyButton = document.querySelector(.logo-img);
+    const feelingLuckyButton = document.querySelector(".logo-img");
     if (storedTheme === '21') {
         feelingLuckyButton.src = 'images/omnitrix1.jpg'; // Set to Omnitrix image
     } else {
