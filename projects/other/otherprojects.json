@@ -41,7 +41,7 @@
             "images": ["excalibur.jpg", "excalibur2.jpg","excalibur3.jpg","excalibur5.jpg"],    
             "videos": [],
             "githubLink": "https://github.com/Byvalvin/Excalibur",
-            "tryItOutLink": "https://samasa101.github.io/excaliburhtml/",
+            "tryItOutLink": "https://samasa101.github.io/excaliburhtml",
             "gamedirect": "https://samasa101.github.io/excaliburhtml/Repath/www/index.html",
             "otherDetailsPage": "other-project-details.html?id=excalibur-game"
         },
@@ -64,9 +64,10 @@
         {
             "name": "Edge Filter",
             "description": "An image filter that identifies and highlights image edges only. (Used to make my profile)",
-            "images": [],
+            "images": ["gan.jpg", "ganED.jpg"],
             "videos": [],
-            "githubLink": "https://github.com/example/edge-filter",
+            "githubLink": "https://github.com/Byvalvin/Edge-Filter",
+            "tryItOutLink": "https://byvalvin.github.io/Edge-Filter",
             "otherDetailsPage": "other-project-details.html?id=edge-filter"
         }
     ]
