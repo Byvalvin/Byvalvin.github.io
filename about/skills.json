@@ -270,5 +270,13 @@
         "proficiency": 65,
         "duration": 80,
         "projectUrl": "https://byvalvin.github.io/project-details.html?id=aranimal"
+    },
+    {
+        "name": "OpenGL",
+        "type": "technology",
+        "category": "API",
+        "proficiency": 40,
+        "duration": 20,
+        "projectUrl": ""
     }
 ]
