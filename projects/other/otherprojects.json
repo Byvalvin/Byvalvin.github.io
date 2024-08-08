@@ -64,7 +64,7 @@
         {
             "name": "Edge Filter",
             "description": "An image filter that identifies and highlights image edges only. (Used to make my profile)",
-            "images": ["gan.jpg", "ganED.jpg"],
+            "images": ["gan.jpeg", "ganED.jpg"],
             "videos": [],
             "githubLink": "https://github.com/Byvalvin/Edge-Filter",
             "tryItOutLink": "https://byvalvin.github.io/Edge-Filter",
