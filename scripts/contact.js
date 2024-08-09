@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Clear the form on submit
+        /*
         contactForm.addEventListener('submit', (event) => {
             // Optionally, prevent the default form submission if handling via AJAX
             // event.preventDefault();
@@ -43,5 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
             // Optionally, show a success message
             contactFormWrapper.innerHTML = '<p class="thank-you">Thank you for your message!</p>';
         });
+        */
     });
 });
