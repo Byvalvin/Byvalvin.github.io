@@ -28,5 +28,20 @@ document.addEventListener('DOMContentLoaded', () => {
             wordCountSpan.textContent = wordLimit;
             alert(`You can only enter up to ${wordLimit} words.`);
         }
+
+        // Clear the form on submit
+        contactForm.addEventListener('submit', (event) => {
+            // Optionally, prevent the default form submission if handling via AJAX
+            // event.preventDefault();
+    
+            // Clear the form fields
+            contactForm.reset();
+            
+            // Optionally hide the form after submission
+            contactForm.style.display = 'none';
+    
+            // Optionally, show a success message
+            contactFormWrapper.innerHTML = '<p class="thank-you">Thank you for your message!</p>';
+        });
     });
 });
