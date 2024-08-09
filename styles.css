@@ -1713,6 +1713,14 @@ footer {
     background-color: var(--btn-main-bg-hv-color); /* Darker button background on hover */
 }
 
+/* Word count info style */
+.word-count-info {
+    font-size: 0.9rem; /* Slightly smaller font size */
+    color: var(--body-dark-text-color); /* Match text color */
+    margin-top: 0.5em; /* Space above the word count */
+    text-align: left; /* Align text to the left */
+}
+
 /* Thank you message style */
 .thank-you {
     font-size: 1.2rem;
@@ -1720,7 +1728,6 @@ footer {
     margin-top: 20px;
     color: var(--body-dark-text-color); /* Dark gray text */
 }
-
 
 
 /*4) MEDIA QUERIES*/
