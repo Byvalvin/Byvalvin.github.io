@@ -9,6 +9,7 @@
     <title>Contact - Byvalvin</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts/loadFont.js" defer></script>
+    <script src="scripts/toggleForm.js" defer></script> <!-- Add script for toggling the form -->
 </head>
 <body>
     <nav id="navbar-placeholder"></nav>
@@ -26,11 +27,11 @@
         </section>
 
         <!-- Contact Form Wrapper -->
-        <div class="contact-form-wrapper">
-            <p class="message-prompt">Or send a message:</p>
+        <div class="contact-form-wrapper" id="contact-form-wrapper">
+            <p class="message-prompt" id="show-form-button">Or send a message:</p>
             
             <!-- Contact Form -->
-            <form action="https://formsubmit.co/your-email@example.com" method="POST" class="contact-form">
+            <form action="https://formsubmit.co/your-email@example.com" method="POST" class="contact-form" id="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Your Name" required>
                 
@@ -51,3 +52,4 @@
     <script src="scripts/placeHolders.js" defer></script>
 </body>
 </html>
+
