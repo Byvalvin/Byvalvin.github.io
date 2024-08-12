@@ -1137,10 +1137,10 @@ footer {
     transition: background-color 0.3s;
 }
 .project-buttons .code-btn {
-    background-color: var(--nav-hv-color); /* Blue for code */
+    background-color: var(--nav-hv-btn-bg-color); /* Blue for code */
 }
 .project-buttons .try-btn {
-    background-color: var(--proj-try-btn); /* Green for try it out */
+    background-color: var(--proj-btn-bg-color); /* Green for try it out */
 }
 .project-buttons .btn:hover {
     opacity: 0.8;
