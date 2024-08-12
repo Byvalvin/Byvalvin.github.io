@@ -1592,8 +1592,7 @@ footer {
 }
 
 
-
-/*CONTACT PAGE*/
+/* CONTACT PAGE */
 /* Add styles for the custom contact section */
 .custom-contact-section {
     background-color: var(--contact-bg-color); /* Purple background */
@@ -1604,32 +1603,125 @@ footer {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .custom-contact-section h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
+
 .custom-contact-section p {
     font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 20px;
 }
+
 .custom-contact-section ul {
     list-style-type: none;
     margin-bottom: 20px;
 }
+
 .custom-contact-section ul li {
     font-size: 1.1rem;
     line-height: 1.6;
     color: var(--contr-bg); /* Light gray text */
 }
+
 .custom-contact-section ul li a {
     color: var(--body-light-text-color); /* White link color */
     text-decoration: none;
     transition: color 0.3s ease;
 }
+
 .custom-contact-section ul li a:hover {
     color: var(--nav-hv-color); /* Light blue on hover */
 }
+
+/* Add styling for the contact form wrapper */
+.contact-form-wrapper {
+    margin-top: 40px; /* Space above the form wrapper */
+    padding: 20px; /* Padding inside the wrapper */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for wrapper */
+    background-color: var(--body-light-text-color); /* Light background for the form */
+    max-width: 600px; /* Limit width */
+    margin-left: auto; /* Center the wrapper */
+    margin-right: auto; /* Center the wrapper */
+}
+
+/* Hide the contact form initially */
+.contact-form {
+    display: none; /* Hide the form by default */
+}
+
+/* Style the message prompt */
+.message-prompt {
+    font-size: 1.5rem; /* Slightly larger font for emphasis */
+    margin-bottom: 20px; /* Space below the prompt */
+    font-weight: bold; /* Bold text */
+    color: var(--body-dark-text-color); /* Darker text color */
+    text-align: center; /* Center-align text */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Style the contact form */
+.contact-form {
+    background-color: var(--body-light-text-color); /* Use light color for the form background */
+    padding: 20px; /* Padding for form content */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for form */
+}
+
+/* Style the form labels */
+.contact-form label {
+    display: block;
+    font-size: 1.2rem; /* Font size for labels */
+    margin: 0.75em 0; /* Space around labels */
+    color: var(--body-dark-text-color); /* Darker text for labels */
+}
+
+/* Style the form inputs and textarea */
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Full width */
+    padding: 0.75em; /* Padding inside inputs */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    margin-bottom: 1.5em; /* Space between fields */
+    box-sizing: border-box; /* Ensure padding and border are included in total width */
+    font-size: 1rem; /* Font size for text fields */
+}
+
+/* Style the form textarea */
+.contact-form textarea {
+    min-height: 150px; /* Minimum height for textarea */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Style the submit button */
+.contact-form button {
+    background-color: var(--btn-main-bg-color); /* Main button background color */
+    color: var(--body-light-text-color); /* Button text color */
+    border: none; /* Remove default border */
+    padding: 0.75em 1.5em; /* Padding inside the button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.1rem; /* Font size for button text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.contact-form button:hover {
+    background-color: var(--btn-main-bg-hv-color); /* Darker button background on hover */
+}
+
+/* Word count info style */
+.word-count-info {
+    font-size: 0.9rem; /* Slightly smaller font size */
+    color: var(--body-dark-text-color); /* Match text color */
+    margin-top: 0.5em; /* Space above the word count */
+    text-align: left; /* Align text to the left */
+}
+
+/* Thank you message style */
 .thank-you {
     font-size: 1.2rem;
     text-align: center;

@@ -8,7 +8,8 @@
     <meta name="author" content="Daniel Asimiakwini">
     <title>Contact - Byvalvin</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts/loadFont.js" defer></script> <!-- Added defer to ensure scripts load after content -->
+    <script src="scripts/loadFont.js" defer></script>
+    <script src="scripts/contact.js" defer></script> <!-- Consolidated JS file -->
 </head>
 <body>
     <nav id="navbar-placeholder"></nav>
@@ -24,10 +25,32 @@
                 <li><strong>GitHub:</strong> <a href="https://github.com/Byvalvin" target="_blank" rel="noopener noreferrer">Byvalvin</a></li>
             </ul>
         </section>
+
+        <!-- Contact Form Wrapper -->
+        <div class="contact-form-wrapper" id="contact-form-wrapper">
+            <p class="message-prompt" id="show-form-button">Or send a message:</p>
+            
+            <!-- Contact Form -->
+            <form action="https://formsubmit.co/52462363ec23db0cf4edc0cb1e16f4f8" method="POST" class="contact-form" id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Dear Daniel," required></textarea>
+                
+                <p class="word-count-info">Words: <span id="word-count">0</span>/500</p>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        
         <p class="thank-you">Thank you for visiting!</p>
     </main>
     <footer id="footer-placeholder"></footer>
 
-    <script src="scripts/placeHolders.js" defer></script> <!-- Added defer to ensure scripts load after content -->
+    <script src="scripts/placeHolders.js" defer></script>
 </body>
 </html>
