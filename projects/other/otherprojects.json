@@ -14,7 +14,8 @@
             "images": [],
             "videos": [],
             "githubLink": "https://github.com/Byvalvin/Editor",
-            "otherDetailsPage": "other-project-details.html?id=ed-editor"
+            "otherDetailsPage": "other-project-details.html?id=ed-editor",
+            "tryItOutLink":"https://byvalvin.github.io/Editor/"
         },
         {
             "name": "Text Klondike",
