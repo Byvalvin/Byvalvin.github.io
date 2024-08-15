@@ -11,7 +11,7 @@
         {
             "name": "ED-like Text Editor",
             "description": "A recreation of the ed editor of the 60s; a line-by-line text and file editor. This editor supports a large subset of commands supported by the original ed.",
-            "images": ["ed2.jpg", "ed3.jpg", "ed5.jpg"],
+            "images": ["ed2.JPG", "ed3.JPG", "ed5.JPG"],
             "videos": [],
             "githubLink": "https://github.com/Byvalvin/Editor",
             "otherDetailsPage": "other-project-details.html?id=ed-editor",
