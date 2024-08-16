@@ -1226,11 +1226,13 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centers grid items horizontally */
+    align-items: center; /* Centers grid items vertically */
+    text-align: center; /* Ensures images are centered */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 #other-project-details .project-images img {
     width: 100%;
     height: auto;
@@ -1238,7 +1240,9 @@ footer {
     transition: transform 0.3s ease;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Ensure there's no extra margin */
 }
+
 #other-project-details .project-images img:hover {
     transform: scale(1.05);
 }
