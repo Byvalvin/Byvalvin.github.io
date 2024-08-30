@@ -14,10 +14,17 @@ document.addEventListener('DOMContentLoaded', () => {
         tabContents.forEach(content => content.classList.remove('active'));
 
         // Add active class and ARIA attributes to the clicked tab and its content
-        const targetTab = document.querySelector(`#${e.target.dataset.tab}`);
+        const tabId = e.target.dataset.tab;
+        const targetTab = document.querySelector(`#${tabId}`);
         e.target.classList.add('active');
         e.target.setAttribute('aria-selected', 'true');
-        targetTab.classList.add('active');
+
+        if (targetTab) {
+            targetTab.classList.add('active');
+        } else {
+            console.error(`No tab content found for ID: ${tabId}`);
+        }
+        
     };
 
     // Attach click and keyboard event listeners to each tab link
