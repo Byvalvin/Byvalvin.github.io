@@ -841,6 +841,10 @@ footer {
     height: auto; /* Show content when expanded */
 }
 
+.about-card .home-about-link{
+    color: var(--h-text-color); /* Maintain accent color for the card title */
+}
+
 .about-card img {
     transition: opacity 0.3s ease; /* Smooth transition for image opacity */
 }
