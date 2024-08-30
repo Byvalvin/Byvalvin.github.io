@@ -844,7 +844,19 @@ footer {
 .about-card .home-about-link{
     color: var(--h-text-color); /* Maintain accent color for the link to about page */
     text-decoration: none;
+    transition: all 0.3s ease; /* Smooth transition */
+    margin-top: 5px;
 }
+
+.about-card .home-about-link:hover{ /* Hover effect */
+    border: 2px var(--h-text-color); /* Border color and thickness */
+    padding: 5px; /* Adjust padding to fit border */
+    color: var(--body-light-text-color); /* Optional: change text color on hover */
+    font-size: 1.1em; /* Increase font size slightly */
+    border-radius: 4px; /* Optional: rounded corners for the border */
+}
+
+
 
 .about-card img {
     transition: opacity 0.3s ease; /* Smooth transition for image opacity */
