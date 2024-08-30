@@ -842,7 +842,8 @@ footer {
 }
 
 .about-card .home-about-link{
-    color: var(--h-text-color); /* Maintain accent color for the card title */
+    color: var(--h-text-color); /* Maintain accent color for the link to about page */
+    text-decoration: none;
 }
 
 .about-card img {
