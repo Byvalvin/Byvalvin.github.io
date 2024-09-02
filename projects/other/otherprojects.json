@@ -22,7 +22,7 @@
             "description": "Klondike, but as a text-based game. Adds an extra layer of difficulty in that the table isn't always shown. You will have to remember where you placed your cards!",
             "images": [],
             "videos": [],
-            "githubLink": "https://github.com/Byvalvin/Klondike",
+            "githubLink": "https://github.com/Byvalvin/Klondike/tree/web-version-v3",
             "otherDetailsPage": "other-project-details.html?id=text-klondike",
             "tryItOutLink": "https://byvalvin.github.io/Klondike/"
         },
