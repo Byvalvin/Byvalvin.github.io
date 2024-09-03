@@ -8,13 +8,15 @@ const highlightActiveLink = () => {
 
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
-        if (currentLocation === href || (currentLocation === '/' && href === 'index.html')) {
+        // Match href against the currentLocation, considering base URL if necessary
+        if (currentLocation === '/' && href === 'index.html' || currentLocation === href) {
             link.classList.add('active');
         } else {
             link.classList.remove('active');
         }
     });
 };
+
 
 // Function to add a component to the page
 const addComponent = ({ placeholderID, htmlURL }) => {
