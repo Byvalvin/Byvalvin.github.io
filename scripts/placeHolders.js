@@ -3,17 +3,27 @@
 
 // Function to highlight the active link in the navbar
 const highlightActiveLink = () => {
-    const currentLocation = window.location.pathname;
-    console.log(currentLocation);
+    // Get the current path without leading slash
+    let currentLocation = window.location.pathname;
+    if (currentLocation.startsWith('/')) {
+        currentLocation = currentLocation.substring(1);
+    }
+
     const navLinks = document.querySelectorAll('.nav-links li a');
 
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
+        
+        // Normalize href to remove leading slash
+        let normalizedHref = href;
+        if (normalizedHref.startsWith('/')) {
+            normalizedHref = normalizedHref.substring(1);
+        }
 
         // Handle root path and trailing slashes
-        const isActive = (currentLocation === '/' && href === 'index.html') ||
-                         (currentLocation === href) ||
-                         (currentLocation.endsWith('/') && href === currentLocation.slice(0, -1));
+        const isActive = (currentLocation === '' && href === 'index.html') ||
+                         (currentLocation === normalizedHref) ||
+                         (currentLocation.endsWith('/') && normalizedHref === currentLocation.slice(0, -1));
 
         if (isActive) {
             link.classList.add('active');
@@ -22,6 +32,7 @@ const highlightActiveLink = () => {
         }
     });
 };
+
 
 
 
