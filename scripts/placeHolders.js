@@ -5,6 +5,7 @@
 const highlightActiveLink = () => {
     // Get the current path without leading slash
     let currentLocation = window.location.pathname;
+    console.log(currentLocation);
     if (currentLocation.startsWith('/')) {
         currentLocation = currentLocation.substring(1);
     }
