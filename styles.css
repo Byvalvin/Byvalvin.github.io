@@ -7,6 +7,7 @@
     --body-light-text-color: #fafafa;
     --main-bg-color: #1a1a1a;
     --nav-hv-btn-bg-color: #007bff;
+    --active-link-color: #dc3545;
     --btn-main-bg-color: #17a2b8;
     --btn-main-bg-hv-color: #138496;
     --hero-bg-color: #0056b3;
@@ -30,6 +31,7 @@
     --body-light-text-color: #ffffff;
     --main-bg-color: #4a4a4a;
     --nav-hv-btn-bg-color: #00bfff;
+    --active-link-color: #e03e3e;
     --btn-main-bg-color: #6c757d;
     --btn-main-bg-hv-color: #5a6268;
     --hero-bg-color: #007bff;
@@ -53,6 +55,7 @@
     --body-light-text-color: #f8f9fa;
     --main-bg-color: #343a40;
     --nav-hv-btn-bg-color: #ff5722;
+    --active-link-color: #009688;
     --btn-main-bg-color: #ff9800;
     --btn-main-bg-hv-color: #f57c00;
     --hero-bg-color: #ff5722;
@@ -76,6 +79,7 @@
     --body-light-text-color: #fdf6e3;
     --main-bg-color: #073642;
     --nav-hv-btn-bg-color: #586e75;
+    --active-link-color: #dc32ff;
     --btn-main-bg-color: #2aa198;
     --btn-main-bg-hv-color: #268986;
     --hero-bg-color: #073642;
@@ -99,6 +103,7 @@
     --body-light-text-color: #f3e5f5;
     --main-bg-color: #3e004c;
     --nav-hv-btn-bg-color: #9c27b0;
+    --active-link-color: #d500f9;
     --btn-main-bg-color: #6a1b9a;
     --btn-main-bg-hv-color: #4a0072;
     --hero-bg-color: #9c27b0;
@@ -122,6 +127,7 @@
     --body-light-text-color: #80deea;
     --main-bg-color: #00796b;
     --nav-hv-btn-bg-color: #004d40;
+    --active-link-color: #004d40;
     --btn-main-bg-color: #00bcd4;
     --btn-main-bg-hv-color: #00838f;
     --hero-bg-color: #004d40;
@@ -145,6 +151,7 @@
     --body-light-text-color: #fce4ec;
     --main-bg-color: #d32f2f;
     --nav-hv-btn-bg-color: #c62828;
+    --active-link-color: #d32f2f;
     --btn-main-bg-color: #e57373;
     --btn-main-bg-hv-color: #d32f2f;
     --hero-bg-color: #c62828;
@@ -168,6 +175,7 @@
     --body-light-text-color: #00e676;
     --main-bg-color: #3d3d3d;
     --nav-hv-btn-bg-color: #ff1744;
+    --active-link-color: #00e676;
     --btn-main-bg-color: #d500f9;
     --btn-main-bg-hv-color: #c51162;
     --hero-bg-color: #00bfae;
@@ -191,6 +199,7 @@
     --body-light-text-color: #fffde7;
     --main-bg-color: #424242;
     --nav-hv-btn-bg-color: #d4af37;
+    --active-link-color: #d4af37;
     --btn-main-bg-color: #ffeb3b;
     --btn-main-bg-hv-color: #fdd835;
     --hero-bg-color: #d4af37;
@@ -214,6 +223,7 @@
     --body-light-text-color: #b2ebf2;
     --main-bg-color: #004d40;
     --nav-hv-btn-bg-color: #00bcd4;
+    --active-link-color: #00796b;
     --btn-main-bg-color: #00acc1;
     --btn-main-bg-hv-color: #00838f;
     --hero-bg-color: #00bcd4;
@@ -237,6 +247,7 @@
     --body-light-text-color: #ffebee;
     --main-bg-color: #ff7043;
     --nav-hv-btn-bg-color: #ff7043;
+    --active-link-color: #ff7043;
     --btn-main-bg-color: #ffab91;
     --btn-main-bg-hv-color: #ff8a65;
     --hero-bg-color: #ff5722;
@@ -260,6 +271,7 @@
     --body-light-text-color: #bfcc00;
     --main-bg-color: #2c2c2c;
     --nav-hv-btn-bg-color: #ff00ff;
+    --active-link-color: #00ffff;
     --btn-main-bg-color: #00ffff;
     --btn-main-bg-hv-color: #ff00cc;
     --hero-bg-color: #ff00ff;
@@ -284,6 +296,7 @@
     --body-light-text-color: #dbe6e8;
     --main-bg-color: #8d6e63;
     --nav-hv-btn-bg-color: #8d6e63;
+    --active-link-color: #8d6e63;
     --btn-main-bg-color: #bcaaa4;
     --btn-main-bg-hv-color: #a1887f;
     --hero-bg-color: #8d6e63;
@@ -307,6 +320,7 @@
     --body-light-text-color: #b2ebf2;
     --main-bg-color: #00acc1;
     --nav-hv-btn-bg-color: #00acc1;
+    --active-link-color: #004d40;
     --btn-main-bg-color: #00bcd4;
     --btn-main-bg-hv-color: #00838f;
     --hero-bg-color: #004d40;
@@ -331,6 +345,7 @@
     --body-light-text-color: #fce4ec;
     --main-bg-color: #e57373;
     --nav-hv-btn-bg-color: #c2185b;
+    --active-link-color: #ec407a;
     --btn-main-bg-color: #f48fb1;
     --btn-main-bg-hv-color: #ec407a;
     --hero-bg-color: #f48fb1;
@@ -355,6 +370,7 @@
     --body-light-text-color: #e0f7fa;
     --main-bg-color: #4a148c;
     --nav-hv-btn-bg-color: #ff007f;
+    --active-link-color: #ff007f;
     --btn-main-bg-color: #00e5ff;
     --btn-main-bg-hv-color: #ff004c;
     --hero-bg-color: #4a148c;
@@ -378,6 +394,7 @@
     --body-light-text-color: #e0f2f1;
     --main-bg-color: #004d40;
     --nav-hv-btn-bg-color: #00796b;
+    --active-link-color: #009688;
     --btn-main-bg-color: #009688;
     --btn-main-bg-hv-color: #00796b;
     --hero-bg-color: #004d40;
@@ -401,6 +418,7 @@
     --body-light-text-color: #ffe0b2;
     --main-bg-color: #ff6f00;
     --nav-hv-btn-bg-color: #ff6f00;
+    --active-link-color: #ff8f00;
     --btn-main-bg-color: #ffab00;
     --btn-main-bg-hv-color: #ff8f00;
     --hero-bg-color: #ff6f00;
@@ -424,6 +442,7 @@
     --body-light-text-color: #c8e6c9; /* Light green text */
     --main-bg-color: #4caf50; /* Vibrant green background */
     --nav-hv-btn-bg-color: #66bb6a; /* Green hover effect */
+    --active-link-color: #2e7d32;
     --btn-main-bg-color: #43a047; /* Main button color */
     --btn-main-bg-hv-color: #2e7d32; /* Button hover color */
     --hero-bg-color: #388e3c; /* Hero section background */
@@ -447,6 +466,7 @@
     --body-light-text-color: #e0e0e0; /* Light gray text */
     --main-bg-color: #1a1a1a; /* Nearly black background */
     --nav-hv-btn-bg-color: #444; /* Dark gray hover effect */
+    --active-link-color: #e0e0e0;
     --btn-main-bg-color: #555; /* Medium gray button color */
     --btn-main-bg-hv-color: #777; /* Lighter gray button hover color */
     --hero-bg-color: #000; /* Pure black hero section background */
@@ -470,6 +490,7 @@
     --body-light-text-color: #00a859; /* Light gray text */
     --main-bg-color: #101010; /* Slightly lighter dark background */
     --nav-hv-btn-bg-color: #00ff00; /* Bright green hover effect */
+    --active-link-color: #00ff00;
     --btn-main-bg-color: #00a859; /* Ben 10 green button color */
     --btn-main-bg-hv-color: #00c853; /* Lighter green button hover color */
     --hero-bg-color: #fff; /* Bright teal hero section background */
@@ -493,6 +514,7 @@
     --body-light-text-color: #f0f0f0; /* Soft, light gray text */
     --main-bg-color: #003366; /* Deep blue for main sections */
     --nav-hv-btn-bg-color: #ffeb3b; /* Bright yellow for hover effects */
+    --active-link-color: #f1cf04;
     --btn-main-bg-color: #004d40; /* Dark teal for buttons */
     --btn-main-bg-hv-color: #00796b; /* Lighter teal for button hover */
     --hero-bg-color: #003366; /* Deep blue for hero section */
@@ -518,6 +540,7 @@
     --body-light-text-color: #333333; /* Soft, light gray text */
     --main-bg-color: #eae6d3; /* Soft beige for main sections, resembling the color of old typewriter paper */
     --nav-hv-btn-color: #5c5c5c; /* Medium gray for navbar button hover, representing typewriter ink smudges */
+    --active-link-color: #6d4c41;
     --btn-main-bg-color: #d0d0d0; /* Light gray for buttons, like the surface of old typewriter keys */
     --btn-main-bg-hv-color: #b0b0b0; /* Medium gray for button hover, similar to worn typewriter keys */
     --hero-bg-color: #f4f0e9; /* Very light beige for hero section, reflecting a well-worn typewriter page */
@@ -543,6 +566,7 @@
     --body-light-text-color: #2e7d32; /* Forest green for text */
     --main-bg-color: #ffffff; /* White for main sections */
     --nav-hv-btn-bg-color: #388e3c; /* Darker green for navbar hover effects */
+    --active-link-color: #4a90e2;
     --btn-main-bg-color: #66bb6a; /* Medium green for buttons */
     --btn-main-bg-hv-color: #2e7d32; /* Dark green for button hover effects */
     --hero-bg-color: #a5d6a7; /* Soft green for hero section */
@@ -567,6 +591,7 @@
     --body-light-text-color: #00ff00;   
     --main-bg-color: #ffff00; /* Bright yellow for main sections, clashing with other colors */
     --nav-hv-btn-color: #00ffff; /* Cyan for navbar button hover, adding to the chaos */
+    --active-link-color: #8e44ad;
     --btn-main-bg-color: #ff0000; /* Bright red for buttons, ensuring they stand out */
     --btn-main-bg-hv-color: #ff6600; /* Orange for button hover effects, creating additional contrast */
     --hero-bg-color: #ff1493; /* Deep pink for hero section, clashing with other elements */
@@ -588,6 +613,7 @@
     --body-light-text-color: #fff;
     --main-bg-color: #2c3e50;
     --nav-hv-btn-bg-color: #3498db;
+    --active-link-color: #ff6f61;
     --btn-main-bg-color: #28a745;
     --btn-main-bg-hv-color: #218838;
     --hero-bg-color: #27ae60;
