@@ -4,6 +4,7 @@
 // Function to highlight the active link in the navbar
 const highlightActiveLink = () => {
     const currentLocation = window.location.pathname;
+    console.log(currentLocation);
     const navLinks = document.querySelectorAll('.nav-links li a');
 
     navLinks.forEach(link => {
