@@ -20,7 +20,7 @@
         {
             "name": "Text Klondike",
             "description": "Klondike, but as a text-based game. Adds an extra layer of difficulty in that the table isn't always shown. You will have to remember where you placed your cards!",
-            "images": ["klondike1.JPG", "klondike2.JPG", "klondike3.jpg"],
+            "images": ["klondike1.JPG", "klondike2.JPG", "klondike.jpg"],
             "videos": [],
             "githubLink": "https://github.com/Byvalvin/Klondike/tree/web-version-v3",
             "otherDetailsPage": "other-project-details.html?id=text-klondike",
