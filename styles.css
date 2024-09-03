@@ -657,6 +657,7 @@ body, html {
     font-weight: bold;
 }
 
+/* Navbar link styles */
 .nav-links {
     list-style-type: none;
     display: flex;
@@ -675,6 +676,13 @@ body, html {
 .nav-links li a:focus {
     color: var(--nav-hv-color);
 }
+
+/* Highlight the active link */
+.nav-links li a.active {
+    font-weight: bold; /* or another style to indicate active state */
+    color: var(--active-link-color, #f00); /* Fallback color if --active-link-color is not defined */
+}
+
 
 /* Hamburger Menu */
 .menu-toggle {
