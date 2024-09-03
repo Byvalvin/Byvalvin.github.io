@@ -23,7 +23,7 @@ const highlightActiveLink = () => {
 
         // Handle root path and trailing slashes
         const isActive = (currentLocation === '' && href === 'index.html') ||
-                         (currentLocation === normalizedHref) ||
+                         ((currentLocation === normalizedHref) || currentLocation.includes(normalizedHref)) ||
                          (currentLocation.endsWith('/') && normalizedHref === currentLocation.slice(0, -1));
 
         if (isActive) {
