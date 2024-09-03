@@ -10,6 +10,14 @@ const highlightActiveLink = () => {
         currentLocation = currentLocation.substring(1);
     }
 
+    // Handle special case for root path
+    const isRootPath = currentLocation === '' || currentLocation === 'index.html';
+
+    // Get the first 7 characters of the current location, if available
+    const currentLocationFirst7Chars = currentLocation.length >= 7
+        ? currentLocation.substring(0, 7)
+        : currentLocation;
+
     const navLinks = document.querySelectorAll('.nav-links li a');
 
     navLinks.forEach(link => {
@@ -21,10 +29,18 @@ const highlightActiveLink = () => {
             normalizedHref = normalizedHref.substring(1);
         }
 
-        // Handle root path and trailing slashes
-        const isActive = (currentLocation === '' && href === 'index.html') ||
-                         ( (currentLocation === normalizedHref) || currentLocation.includes(normalizedHref) ) ||
-                         ( currentLocation.endsWith('/') && (normalizedHref === currentLocation.slice(0, -1) || currentLocation.slice(0, -1).includes(normalizedHref)) );
+        // Handle special case for href
+        const isHrefRoot = normalizedHref === '' || normalizedHref === 'index.html';
+        
+        // Get the first 7 characters of the href, if available
+        const hrefFirst7Chars = normalizedHref.length >= 7
+            ? normalizedHref.substring(0, 7)
+            : normalizedHref;
+
+        // Check if href matches the currentLocation, matches the first 7 characters, or is a root path
+        const isActive = isRootPath && isHrefRoot ||
+                         (currentLocation === normalizedHref) ||
+                         (currentLocationFirst7Chars === hrefFirst7Chars);
 
         if (isActive) {
             link.classList.add('active');
@@ -33,6 +49,7 @@ const highlightActiveLink = () => {
         }
     });
 };
+
 
 
 
