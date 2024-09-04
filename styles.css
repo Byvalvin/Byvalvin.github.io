@@ -700,7 +700,7 @@ body, html {
 
 .nav-links li a:hover,
 .nav-links li a:focus {
-    color: var(--nav-hv-color);
+    color: var(--nav-hv-btn-bg-color, --proj-btn-bg-color);
 }
 
 /* Highlight the active link */
