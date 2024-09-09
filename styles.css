@@ -1435,6 +1435,78 @@ footer {
     object-fit: cover; /* Ensure image covers container without distortion */
 }
 
+/* Horizontal Timeline Container */
+.horizontal-timeline {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px 0;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.timeline-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.timeline-item {
+    display: inline-block;
+    width: 300px; /* Adjust width as needed */
+    background-color: var(--body-bg-color);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.timeline-content h4 {
+    margin: 0;
+    color: var(--body-dark-text-color);
+}
+
+/* Accordion Styles */
+.accordion-btn {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 5px;
+}
+
+.accordion-btn:hover {
+    background-color: #0056b3;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: var(--body-bg-color);
+}
+
+.accordion-content h4 {
+    margin: 0;
+    color: var(--body-dark-text-color);
+}
+
+
 /* Styling for legend */
 .legend {
     display: flex;
