@@ -10,19 +10,18 @@ document.addEventListener('DOMContentLoaded', () => {
             data.forEach((item, index) => {
                 const timelineItem = document.createElement('div');
                 timelineItem.classList.add('timeline-item');
-                if (index === 0) timelineItem.classList.add('active');
                 
+                const logo = document.createElement('img');
+                logo.src = item.logo;
+                logo.alt = item.title;
+                logo.style.maxWidth = '100%';
+
                 const content = document.createElement('div');
                 content.classList.add('timeline-content');
                 content.innerHTML = `
                     <h4>${item.title}</h4>
                     <p>${item.description}</p>
                 `;
-
-                const logo = document.createElement('img');
-                logo.src = item.logo;
-                logo.alt = item.title;
-                logo.style.maxWidth = '100%';
 
                 timelineItem.appendChild(logo);
                 timelineItem.appendChild(content);
@@ -43,8 +42,28 @@ document.addEventListener('DOMContentLoaded', () => {
                     item.classList.toggle('active', index === currentIndex);
                 });
 
+                // Show/Hide arrows based on scroll position
                 leftArrow.classList.toggle('show', currentIndex > 0);
                 rightArrow.classList.toggle('show', currentIndex < items.length - visibleCount);
+                
+                // Remove old dots
+                const existingDots = document.querySelectorAll('.dot');
+                existingDots.forEach(dot => dot.remove());
+
+                // Add dots for items not in view
+                if (currentIndex > 0) {
+                    const leftDot = document.createElement('div');
+                    leftDot.className = 'dot';
+                    leftDot.style.left = `${items[0].offsetLeft - 20}px`;
+                    container.appendChild(leftDot);
+                }
+
+                if (currentIndex < items.length - 1) {
+                    const rightDot = document.createElement('div');
+                    rightDot.className = 'dot';
+                    rightDot.style.left = `${items[items.length - 1].offsetLeft + items[items.length - 1].offsetWidth}px`;
+                    container.appendChild(rightDot);
+                }
             }
 
             leftArrow.addEventListener('click', () => {
@@ -69,6 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
+            // Initialize
             updateTimeline();
         })
         .catch(error => console.error('Error loading the timeline data:', error));
