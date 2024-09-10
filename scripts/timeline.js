@@ -45,8 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Show/Hide arrows based on scroll position
                 leftArrow.classList.toggle('show', currentIndex > 0);
                 rightArrow.classList.toggle('show', currentIndex < items.length - visibleCount);
-                
-                // Remove old dots
+
+                // Remove existing dots
                 const existingDots = document.querySelectorAll('.dot');
                 existingDots.forEach(dot => dot.remove());
 
@@ -54,14 +54,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (currentIndex > 0) {
                     const leftDot = document.createElement('div');
                     leftDot.className = 'dot';
-                    leftDot.style.left = `${items[0].offsetLeft - 20}px`;
+                    leftDot.style.left = `${items[currentIndex - 1].offsetLeft}px`;
                     container.appendChild(leftDot);
                 }
 
                 if (currentIndex < items.length - 1) {
                     const rightDot = document.createElement('div');
                     rightDot.className = 'dot';
-                    rightDot.style.left = `${items[items.length - 1].offsetLeft + items[items.length - 1].offsetWidth}px`;
+                    rightDot.style.left = `${items[currentIndex + 1].offsetLeft}px`;
                     container.appendChild(rightDot);
                 }
             }
