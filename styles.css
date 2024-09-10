@@ -1449,27 +1449,30 @@ footer {
 /* Ensure wrapper does not exceed container bounds */
 .timeline-wrapper {
     display: flex;
+    gap: 15px; /* Adjust the gap between items */
     transition: transform 0.3s ease-in-out; /* Smooth scrolling effect */
+    align-items: center; /* Center items vertically */
 }
 
 /* Individual timeline items */
 .timeline-item {
-    flex: 0 0 auto; /* Prevent items from shrinking */
-    width: 300px; /* Adjust width as needed */
+    flex: 0 0 200px; /* Adjust width to make items smaller */
     background-color: var(--body-bg-color);
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 15px;
+    padding: 10px; /* Reduced padding for smaller items */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth scaling and fading */
-    opacity: 0.5; /* Dim inactive items */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0.6; /* Dim inactive items */
+    max-width: 100%; /* Prevent overflow */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
 /* Active state for prominently displayed item */
 .timeline-item.active {
-    transform: scale(1.2); /* Enlarge active item */
+    transform: scale(1.1); /* Slightly enlarge the active item */
     opacity: 1; /* Full opacity for active item */
 }
 
@@ -1477,7 +1480,7 @@ footer {
 .timeline-date {
     font-weight: bold;
     color: var(--btn-main-bg-color);
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* Adjust margin for date */
 }
 
 /* Content styling */
@@ -1494,9 +1497,9 @@ footer {
     background-color: var(--btn-main-bg-color);
     color: var(--body-light-text-color);
     border: none;
-    font-size: 24px;
+    font-size: 20px; /* Adjust font size for arrows */
     cursor: pointer;
-    padding: 10px;
+    padding: 8px;
     border-radius: 50%;
     z-index: 1;
     transition: background-color 0.3s;
@@ -1519,7 +1522,7 @@ footer {
     background-color: var(--btn-main-bg-color);
     color: var(--body-light-text-color);
     border: none;
-    padding: 10px;
+    padding: 8px; /* Adjust padding for accordion button */
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -1531,7 +1534,7 @@ footer {
 
 .accordion-content {
     display: none;
-    padding: 15px;
+    padding: 10px; /* Adjust padding for accordion content */
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-top: 5px;
@@ -1542,6 +1545,7 @@ footer {
     margin: 0;
     color: var(--body-dark-text-color);
 }
+
 
 
 /* Styling for legend */
