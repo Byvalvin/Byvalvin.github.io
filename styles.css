@@ -1453,7 +1453,6 @@ footer {
     align-items: center;
     overflow: hidden;
     white-space: nowrap;
-    width: 100%;
     justify-content: center; /* Center items horizontally */
 }
 
@@ -1469,12 +1468,13 @@ footer {
     justify-content: center;
     color: var(--body-dark-text-color);
     text-align: center;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .focus {
     background-color: var(--btn-main-bg-color);
     color: var(--body-light-text-color);
+    transform: scale(1.1); /* Slightly enlarge the focused item */
 }
 
 .dot {
@@ -1499,6 +1499,7 @@ footer {
     position: absolute;
     right: 0;
 }
+
 
 
 
