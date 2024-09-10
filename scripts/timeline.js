@@ -70,7 +70,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             function updateTimeline() {
                 const itemWidth = items[0].offsetWidth + 15; // Adjust based on gap
-                const offset = -currentIndex * itemWidth;
+                const maxOffset = (items.length - visibleCount) * itemWidth;
+                const offset = Math.max(-currentIndex * itemWidth, -maxOffset); // Ensure offset is within bounds
                 timelineWrapper.style.transform = `translateX(${offset}px)`;
                 
                 items.forEach((item, index) => {
