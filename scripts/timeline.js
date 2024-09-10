@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 const accordionContent = document.createElement('div');
                 accordionContent.classList.add('accordion-content');
-                accordionContent.innerHTML = item.details;
+                accordionContent.textContent = item.details; // Use textContent instead of innerHTML
                 
                 content.appendChild(title);
                 content.appendChild(description);
