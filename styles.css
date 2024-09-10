@@ -1452,7 +1452,7 @@ footer {
     display: flex;
     overflow: hidden;
     position: relative;
-    max-width: 100%;
+    width: calc(100% / 3 * 3); /* Ensures wrapper width fits 3 items */
 }
 
 /* Timeline Item */
