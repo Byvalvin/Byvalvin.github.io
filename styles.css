@@ -1571,11 +1571,11 @@ footer {
 }
 
 .left-arrow {
-    left: 10px; /* Adjust to ensure it’s placed appropriately */
+    left: 10px; /* Adjust as needed to avoid overlap */
 }
 
 .right-arrow {
-    right: 10px; /* Adjust to ensure it’s placed appropriately */
+    right: 10px; /* Adjust as needed to avoid overlap */
 }
 
 
