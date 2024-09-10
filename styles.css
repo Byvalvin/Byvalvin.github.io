@@ -1438,7 +1438,7 @@ footer {
 /* Horizontal Timeline Container */
 .horizontal-timeline {
     position: relative;
-    overflow: hidden; /* Hide items outside the viewport */
+    overflow: hidden;
     padding: 20px 0;
     max-width: 100%;
     border: 1px solid var(--contr-bg);
@@ -1446,18 +1446,31 @@ footer {
     background-color: var(--body-light-text-color);
 }
 
+/* Timeline Line */
+.timeline-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--btn-main-bg-color);
+    z-index: 0;
+    transform: translateY(-50%);
+}
+
 /* Ensure wrapper does not exceed container bounds */
 .timeline-wrapper {
     display: flex;
-    gap: 10px; /* Reduced gap between items for better spacing */
-    transition: transform 0.3s ease-in-out; /* Smooth scrolling effect */
-    align-items: center; /* Center items vertically */
-    padding: 0 10px; /* Add padding to ensure items are contained */
+    gap: 15px;
+    transition: transform 0.3s ease-in-out;
+    align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
-/* Active State for Timeline Item */
+/* Individual timeline items */
 .timeline-item {
-    flex: 0 0 180px; /* Adjust width */
+    flex: 0 0 200px;
     background-color: var(--body-bg-color);
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -1466,36 +1479,35 @@ footer {
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 0.6;
+    opacity: 0.3; /* Dim inactive items */
     max-width: 100%;
     box-sizing: border-box;
 }
 
-/* Only highlight the active item when in view */
-.timeline-item.active {
-    transform: scale(1.1);
-    opacity: 1;
+/* Logo Image */
+.timeline-item img {
+    max-width: 100px; /* Adjust size as needed */
+    display: block;
+    margin: 0 auto;
 }
 
+/* Active state for prominently displayed item */
+.timeline-item.active {
+    transform: scale(1.2); /* Enlarge the active item */
+    opacity: 1; /* Full opacity for active item */
+}
 
 /* Date styling */
 .timeline-date {
     font-weight: bold;
     color: var(--btn-main-bg-color);
-    margin-bottom: 6px; /* Adjust margin for date */
-    font-size: 14px; /* Smaller font size for date */
+    margin-bottom: 8px;
 }
 
 /* Content styling */
 .timeline-content h4 {
     margin: 0;
     color: var(--body-dark-text-color);
-    font-size: 16px; /* Adjust font size for titles */
-}
-
-.timeline-content p {
-    margin: 5px 0 0; /* Adjust margin for description */
-    font-size: 14px; /* Adjust font size for descriptions */
 }
 
 /* Arrow Buttons */
@@ -1510,7 +1522,7 @@ footer {
     cursor: pointer;
     padding: 8px;
     border-radius: 50%;
-    z-index: 1;
+    z-index: 2; /* Ensure arrows are on top of content */
     transition: background-color 0.3s;
 }
 
@@ -1527,25 +1539,20 @@ footer {
 }
 
 /* Accordion Styles */
-/* Accordion Button */
 .accordion-btn {
-    background-color: var(--btn-main-bg-color); /* Theme color */
+    background-color: var(--btn-main-bg-color);
     color: var(--body-light-text-color);
     border: none;
-    padding: 5px 10px; /* Smaller padding for a cleaner look */
+    padding: 8px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 14px; /* Adjust font size */
-    transition: background-color 0.3s, color 0.3s;
-    margin-top: 10px; /* Space between content and button */
+    transition: background-color 0.3s;
 }
 
 .accordion-btn:hover {
-    background-color: var(--btn-main-bg-hv-color); /* Hover effect */
-    color: var(--body-light-text-color); /* Maintain text color on hover */
+    background-color: var(--btn-main-bg-hv-color);
 }
 
-/* Accordion Content */
 .accordion-content {
     display: none;
     padding: 10px;
@@ -1558,12 +1565,8 @@ footer {
 .accordion-content h4 {
     margin: 0;
     color: var(--body-dark-text-color);
-    font-size: 16px; /* Adjust font size for accordion content title */
 }
 
-.accordion-content p {
-    font-size: 14px; /* Adjust font size for accordion content description */
-}
 
 
 
