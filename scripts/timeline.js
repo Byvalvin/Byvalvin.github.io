@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const timelineContainer = document.getElementById('timeline');
     const leftArrow = document.getElementById('left-arrow');
     const rightArrow = document.getElementById('right-arrow');
-
     let timelineData = [];
     let currentIndex = 0;
 
@@ -23,23 +22,28 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderTimeline() {
         timelineContainer.innerHTML = ''; // Clear existing content
 
-        timelineData.forEach((item, index) => {
+        // Calculate the number of items to show (2 or 3)
+        const visibleCount = 3;
+        const start = Math.max(0, currentIndex - Math.floor(visibleCount / 2));
+        const end = Math.min(timelineData.length, start + visibleCount);
+
+        for (let i = start; i < end; i++) {
             const timelineItem = document.createElement('div');
             timelineItem.classList.add('timeline-item');
-            if (index === currentIndex) {
+            if (i === currentIndex) {
                 timelineItem.classList.add('focus');
             } else {
                 timelineItem.classList.add('dot');
             }
 
             timelineItem.innerHTML = `
-                <div class="timeline-date">${item.date}</div>
-                <div class="timeline-title">${item.title}</div>
-                <div class="timeline-description">${item.description}</div>
+                <div class="timeline-date">${timelineData[i].date}</div>
+                <div class="timeline-title">${timelineData[i].title}</div>
+                <div class="timeline-description">${timelineData[i].description}</div>
             `;
 
             timelineContainer.appendChild(timelineItem);
-        });
+        }
     }
 
     function updateArrows() {
@@ -63,4 +67,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch and render timeline data on page load
     fetchTimelineData();
 });
-
