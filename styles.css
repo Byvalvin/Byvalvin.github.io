@@ -1451,9 +1451,9 @@ footer {
 .timeline {
     display: flex;
     align-items: center;
-    overflow: hidden;
+    overflow-x: auto;
     white-space: nowrap;
-    justify-content: center; /* Center items horizontally */
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
 }
 
 .timeline-item {
