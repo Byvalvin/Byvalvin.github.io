@@ -1557,6 +1557,13 @@ footer {
     border-radius: 50%;
     z-index: 2;
     transition: background-color 0.3s;
+    opacity: 0; /* Default to hidden */
+    pointer-events: none; /* Disable clicks if hidden */
+}
+
+.arrow.show {
+    opacity: 1; /* Make visible when needed */
+    pointer-events: auto; /* Enable clicks */
 }
 
 .arrow:hover {
