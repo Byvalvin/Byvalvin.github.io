@@ -20,15 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function renderTimeline() {
         timelineContainer.innerHTML = ''; // Clear existing content
-
+    
         const visibleCount = 3;
         const start = Math.max(0, currentIndex - 1);
         const end = Math.min(timelineData.length, currentIndex + 2);
-
+    
         // Show items to the left and right of the current index
         for (let i = start; i < end; i++) {
             const timelineItem = document.createElement('div');
-
+    
             if (i === currentIndex) {
                 timelineItem.classList.add('timeline-item', 'focus');
                 timelineItem.innerHTML = `
@@ -43,16 +43,24 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 timelineItem.classList.add('dot');
             }
-
+    
             timelineContainer.appendChild(timelineItem);
         }
-
+    
         // Adjust the container width to fit all visible items
-        /*
-        const totalWidth = (end - start) * 150; // Adjust based on item width and margin
+        const itemWidth = 200; // Width of the timeline item
+        const margin = 30; // Margin between items
+        const totalWidth = (end - start) * (itemWidth + margin); // Adjust based on item width and margin
         timelineContainer.style.width = `${totalWidth}px`;
-        */
+    
+        // Smooth scroll to the current index
+        const centerOffset = (currentIndex - start) * (itemWidth + margin);
+        timelineContainer.scrollTo({
+            left: centerOffset - (timelineContainer.clientWidth / 2) + (itemWidth / 2),
+            behavior: 'smooth'
+        });
     }
+
 
     function updateArrows() {
         leftArrow.style.display = currentIndex > 0 ? 'block' : 'none';
