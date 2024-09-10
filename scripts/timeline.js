@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             let currentIndex = 0;
             const items = document.querySelectorAll('.timeline-item');
-            const visibleCount = 1; // Number of visible items in the viewport
+            const visibleCount = 3; // Number of visible items in the viewport
 
             function updateTimeline() {
                 const itemWidth = items[0].offsetWidth + 15; // Adjust based on gap
