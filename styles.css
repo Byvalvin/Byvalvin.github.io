@@ -1455,26 +1455,28 @@ footer {
     padding: 0 10px; /* Add padding to ensure items are contained */
 }
 
-/* Individual timeline items */
+/* Active State for Timeline Item */
 .timeline-item {
-    flex: 0 0 180px; /* Adjust width to make items smaller */
+    flex: 0 0 180px; /* Adjust width */
     background-color: var(--body-bg-color);
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 8px; /* Reduced padding for smaller items */
+    padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 0.6; /* Dim inactive items */
-    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    opacity: 0.6;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
-/* Active state for prominently displayed item */
+/* Only highlight the active item when in view */
 .timeline-item.active {
-    transform: scale(1.1); /* Slightly enlarge the active item */
-    opacity: 1; /* Full opacity for active item */
+    transform: scale(1.1);
+    opacity: 1;
 }
+
 
 /* Date styling */
 .timeline-date {
@@ -1525,24 +1527,28 @@ footer {
 }
 
 /* Accordion Styles */
+/* Accordion Button */
 .accordion-btn {
-    background-color: var(--btn-main-bg-color);
+    background-color: var(--btn-main-bg-color); /* Theme color */
     color: var(--body-light-text-color);
     border: none;
-    padding: 6px 12px; /* Adjust padding for accordion button */
+    padding: 5px 10px; /* Smaller padding for a cleaner look */
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 14px; /* Adjust font size for accordion button */
+    font-size: 14px; /* Adjust font size */
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px; /* Space between content and button */
 }
 
 .accordion-btn:hover {
-    background-color: var(--btn-main-bg-hv-color);
+    background-color: var(--btn-main-bg-hv-color); /* Hover effect */
+    color: var(--body-light-text-color); /* Maintain text color on hover */
 }
 
+/* Accordion Content */
 .accordion-content {
     display: none;
-    padding: 8px; /* Adjust padding for accordion content */
+    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-top: 5px;
