@@ -1442,7 +1442,7 @@ footer {
     align-items: center;
     position: relative;
     width: 80%; /* Adjust width to fit the design */
-    max-width: 800px; /* Ensure the container does not exceed a certain width */
+    max-width: 900px; /* Ensure the container does not exceed a certain width */
     overflow: hidden;
     margin: 0 auto; /* Center the container */
     padding: 20px 0;
@@ -1457,35 +1457,64 @@ footer {
 }
 
 .timeline-item {
-    width: 100px;
-    height: 100px;
-    margin: 0 10px;
-    border-radius: 50%;
-    background-color: lightgray;
+    width: 200px; /* Square card size */
+    height: 250px; /* Square card size */
+    margin: 0 15px;
+    border: 2px solid var(--contr-bg);
+    border-radius: 8px; /* Rounded corners */
+    background-color: var(--body-light-text-color);
+    color: var(--body-dark-text-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    color: var(--body-dark-text-color);
-    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
     transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    overflow: hidden; /* Ensure content does not overflow */
 }
 
 .focus {
     background-color: var(--btn-main-bg-color);
     color: var(--body-light-text-color);
-    transform: scale(1.1); /* Slightly enlarge the focused item */
+    transform: scale(1.05); /* Slightly enlarge the focused item */
+}
+
+.timeline-logo {
+    width: 60px; /* Adjust logo size */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.timeline-content {
+    flex: 1;
+}
+
+.timeline-date {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.timeline-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.timeline-description {
+    margin-bottom: 10px;
+}
+
+.timeline-details {
+    font-size: 0.9em;
+    color: #666; /* Lighter text color for details */
 }
 
 .dot {
     width: 20px; /* Small dot size */
     height: 20px; /* Small dot size */
-    margin: 0 10px; /* Space around dots */
+    margin: 0 15px; /* Space around dots */
     border-radius: 50%;
     background-color: var(--contr-bg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .arrow {
@@ -1506,6 +1535,7 @@ footer {
     position: absolute;
     right: 0;
 }
+
 
 
 
