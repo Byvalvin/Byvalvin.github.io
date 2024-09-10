@@ -1456,10 +1456,11 @@ footer {
     transition: transform 0.5s ease-in-out; /* Smooth transition */
 }
 
+/* Adjusting timeline-item for better flexibility and responsiveness */
 .timeline-item {
-    width: 200px; /* Square card size */
-    height: 250px; /* Square card size */
-    margin: 0 15px;
+    min-width: 200px; /* Ensure a minimum width for each item */
+    max-width: 250px; /* Allow items to grow up to a maximum width */
+    margin: 0 15px; /* Space around items */
     border: 2px solid var(--contr-bg);
     border-radius: 8px; /* Rounded corners */
     background-color: var(--body-light-text-color);
@@ -1467,11 +1468,15 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 15px; /* More padding for better spacing */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
     transition: background-color 0.3s, transform 0.3s;
     text-align: center;
-    overflow: hidden; /* Ensure content does not overflow */
+    overflow: visible; /* Allow content to overflow if necessary */
+    /* Ensuring flexible height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .focus {
@@ -1480,32 +1485,39 @@ footer {
     transform: scale(1.05); /* Slightly enlarge the focused item */
 }
 
+/* Ensuring logo fits well within the card */
 .timeline-logo {
-    width: 60px; /* Adjust logo size */
+    max-width: 80px; /* Limit logo size */
     height: auto;
     margin-bottom: 10px;
 }
 
+/* Adjust text sizes for better readability */
 .timeline-content {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content is spaced well */
 }
 
 .timeline-date {
     font-weight: bold;
+    font-size: 1.1em; /* Slightly larger date text */
     margin-bottom: 5px;
 }
 
 .timeline-title {
-    font-size: 1.2em;
+    font-size: 1.3em; /* Larger title text */
     margin-bottom: 10px;
 }
 
 .timeline-description {
+    font-size: 1em; /* Standard size for description */
     margin-bottom: 10px;
 }
 
 .timeline-details {
-    font-size: 0.9em;
+    font-size: 0.9em; /* Slightly smaller details text */
     color: #666; /* Lighter text color for details */
 }
 
@@ -1535,6 +1547,7 @@ footer {
     position: absolute;
     right: 0;
 }
+
 
 
 
