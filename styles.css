@@ -1437,19 +1437,23 @@ footer {
 
 /* Horizontal Timeline Container */
 .horizontal-timeline {
-    overflow-x: auto;
-    white-space: nowrap;
+    position: relative; /* Ensure positioning context for arrows */
+    overflow: hidden; /* Hide overflow to keep layout clean */
     padding: 20px 0;
     max-width: 100%;
-    border: 1px solid #ddd;
+    border: 1px solid var(--contr-bg);
     border-radius: 5px;
+    background-color: var(--body-light-text-color); /* Ensure background color contrasts */
 }
 
+/* Ensure wrapper does not exceed container bounds */
 .timeline-wrapper {
     display: flex;
     gap: 20px;
+    transition: transform 0.3s ease-in-out; /* Smooth scrolling effect */
 }
 
+/* Individual timeline items */
 .timeline-item {
     display: inline-block;
     width: 300px; /* Adjust width as needed */
@@ -1460,36 +1464,65 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
+    transition: transform 0.3s ease-in-out; /* Smooth scaling */
 }
 
+/* Active state for enlarged item */
+.timeline-item.active {
+    transform: scale(1.2); /* Enlarge active item */
+}
+
+/* Date styling */
 .timeline-date {
     font-weight: bold;
-    color: #007bff;
+    color: var(--btn-main-bg-color); /* Use theme color for consistency */
     margin-bottom: 10px;
 }
 
+/* Content styling */
 .timeline-content h4 {
     margin: 0;
     color: var(--body-dark-text-color);
 }
 
+/* Arrow Buttons */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--btn-main-bg-color);
+    color: var(--body-light-text-color);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1; /* Ensure arrows are on top of content */
+    transition: background-color 0.3s;
+}
+
+.arrow:hover {
+    background-color: var(--btn-main-bg-hv-color); /* Highlight on hover */
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+
+/* Accordion Styles */
 /* Accordion Styles */
 .accordion-btn {
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    padding: 10px;
-    text-align: left;
-    width: 100%;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s;
-    margin-top: 5px;
+    background-color: var(--btn-main-bg-color); /* Consistent with theme */
+    color: var(--body-light-text-color);
 }
 
 .accordion-btn:hover {
-    background-color: #0056b3;
+    background-color: var(--btn-main-bg-hv-color);
 }
 
 .accordion-content {
@@ -1500,6 +1533,7 @@ footer {
     margin-top: 5px;
     background-color: var(--body-bg-color);
 }
+
 
 .accordion-content h4 {
     margin: 0;
