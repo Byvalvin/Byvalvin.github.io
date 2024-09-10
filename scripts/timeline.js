@@ -34,16 +34,15 @@ document.addEventListener('DOMContentLoaded', () => {
             if (i === currentIndex) {
                 timelineItem.classList.add('timeline-item');
                 timelineItem.classList.add('focus');
+                timelineItem.innerHTML = `
+                    <div class="timeline-date">${timelineData[i].date}</div>
+                    <div class="timeline-title">${timelineData[i].title}</div>
+                    <div class="timeline-description">${timelineData[i].description}</div>
+                `;
             } else {
                 timelineItem.classList.remove('timeline-item');
                 timelineItem.classList.add('dot');
             }
-
-            timelineItem.innerHTML = `
-                <div class="timeline-date">${timelineData[i].date}</div>
-                <div class="timeline-title">${timelineData[i].title}</div>
-                <div class="timeline-description">${timelineData[i].description}</div>
-            `;
 
             timelineContainer.appendChild(timelineItem);
         }
