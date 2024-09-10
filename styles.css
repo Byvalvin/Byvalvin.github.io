@@ -1449,24 +1449,24 @@ footer {
 /* Ensure wrapper does not exceed container bounds */
 .timeline-wrapper {
     display: flex;
-    gap: 15px; /* Adjust the gap between items */
+    gap: 10px; /* Reduced gap between items for better spacing */
     transition: transform 0.3s ease-in-out; /* Smooth scrolling effect */
     align-items: center; /* Center items vertically */
+    padding: 0 10px; /* Add padding to ensure items are contained */
 }
 
 /* Individual timeline items */
 .timeline-item {
-    flex: 0 0 200px; /* Adjust width to make items smaller */
+    flex: 0 0 180px; /* Adjust width to make items smaller */
     background-color: var(--body-bg-color);
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 10px; /* Reduced padding for smaller items */
+    padding: 8px; /* Reduced padding for smaller items */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0.6; /* Dim inactive items */
-    max-width: 100%; /* Prevent overflow */
     box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
@@ -1480,13 +1480,20 @@ footer {
 .timeline-date {
     font-weight: bold;
     color: var(--btn-main-bg-color);
-    margin-bottom: 8px; /* Adjust margin for date */
+    margin-bottom: 6px; /* Adjust margin for date */
+    font-size: 14px; /* Smaller font size for date */
 }
 
 /* Content styling */
 .timeline-content h4 {
     margin: 0;
     color: var(--body-dark-text-color);
+    font-size: 16px; /* Adjust font size for titles */
+}
+
+.timeline-content p {
+    margin: 5px 0 0; /* Adjust margin for description */
+    font-size: 14px; /* Adjust font size for descriptions */
 }
 
 /* Arrow Buttons */
@@ -1497,7 +1504,7 @@ footer {
     background-color: var(--btn-main-bg-color);
     color: var(--body-light-text-color);
     border: none;
-    font-size: 20px; /* Adjust font size for arrows */
+    font-size: 20px;
     cursor: pointer;
     padding: 8px;
     border-radius: 50%;
@@ -1510,11 +1517,11 @@ footer {
 }
 
 .left-arrow {
-    left: 10px; /* Adjust based on design */
+    left: 10px;
 }
 
 .right-arrow {
-    right: 10px; /* Adjust based on design */
+    right: 10px;
 }
 
 /* Accordion Styles */
@@ -1522,10 +1529,11 @@ footer {
     background-color: var(--btn-main-bg-color);
     color: var(--body-light-text-color);
     border: none;
-    padding: 8px; /* Adjust padding for accordion button */
+    padding: 6px 12px; /* Adjust padding for accordion button */
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-size: 14px; /* Adjust font size for accordion button */
 }
 
 .accordion-btn:hover {
@@ -1534,7 +1542,7 @@ footer {
 
 .accordion-content {
     display: none;
-    padding: 10px; /* Adjust padding for accordion content */
+    padding: 8px; /* Adjust padding for accordion content */
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-top: 5px;
@@ -1544,6 +1552,11 @@ footer {
 .accordion-content h4 {
     margin: 0;
     color: var(--body-dark-text-color);
+    font-size: 16px; /* Adjust font size for accordion content title */
+}
+
+.accordion-content p {
+    font-size: 14px; /* Adjust font size for accordion content description */
 }
 
 
