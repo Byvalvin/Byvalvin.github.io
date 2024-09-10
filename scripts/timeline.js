@@ -24,12 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Calculate the number of items to show (2 or 3)
         const visibleCount = 3;
-        const start = Math.max(0, currentIndex - Math.floor(visibleCount / 2));
-        const end = Math.min(timelineData.length, start + visibleCount);
+        const start = Math.max(0, currentIndex - 1);
+        const end = Math.min(timelineData.length, currentIndex + 2);
 
+        // Show items to the left and right of the current index
         for (let i = start; i < end; i++) {
             const timelineItem = document.createElement('div');
             timelineItem.classList.add('timeline-item');
+
             if (i === currentIndex) {
                 timelineItem.classList.add('focus');
             } else {
@@ -44,6 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             timelineContainer.appendChild(timelineItem);
         }
+
+        // Adjust the container width to fit all visible items
+        const totalWidth = (end - start) * 120; // Adjust based on item width and margin
+        timelineContainer.style.width = `${totalWidth}px`;
     }
 
     function updateArrows() {
@@ -67,3 +73,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch and render timeline data on page load
     fetchTimelineData();
 });
+
