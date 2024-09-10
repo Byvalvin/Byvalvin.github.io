@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             let currentIndex = 0;
             const items = document.querySelectorAll('.timeline-item');
+            const visibleCount = 3; // Number of visible items in the viewport
 
             function updateTimeline() {
                 const offset = -currentIndex * (items[0].offsetWidth + 20); // Adjust based on margin
@@ -84,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             rightArrow.addEventListener('click', () => {
-                if (currentIndex < items.length - 1) {
+                if (currentIndex < items.length - visibleCount) {
                     currentIndex++;
                     updateTimeline();
                 }
