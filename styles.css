@@ -1444,6 +1444,8 @@ footer {
     border: 1px solid var(--contr-bg);
     border-radius: 5px;
     background-color: var(--body-light-text-color);
+    display: flex; /* Use flex to ensure arrows don’t overlap items */
+    align-items: center;
 }
 
 /* Timeline Line */
@@ -1466,34 +1468,33 @@ footer {
     align-items: center;
     position: relative;
     z-index: 1;
+    flex: 1; /* Allow flex container to adjust based on screen size */
 }
 
 /* Individual timeline items */
 .timeline-item {
-    flex: 0 0 100px; /* Fixed width for all items */
     background-color: var(--body-bg-color);
     border: 1px solid #ddd;
-    border-radius: 50%; /* Make all items circular */
-    padding: 10px;
+    border-radius: 50%;
+    padding: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 0.2; /* Dim non-active items */
-    width: 30px; /* Size for non-active items */
-    height: 30px;
+    opacity: 0.6; /* Dim non-active items */
+    width: 20px; /* Size for non-active items */
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--body-light-text-color); /* Ensure text is visible */
     font-size: 12px; /* Adjust text size for dots */
     text-align: center;
-    line-height: 1.2;
 }
 
 /* Logo Image for Focused Item */
 .timeline-item img {
-    max-width: 20px; /* Adjust size as needed for the logo */
+    max-width: 15px; /* Adjust size as needed for the logo */
     display: block;
     margin: 0 auto;
 }
@@ -1502,18 +1503,17 @@ footer {
 .timeline-item.active {
     transform: scale(1.5); /* Enlarge the active item */
     opacity: 1; /* Full opacity for active item */
-    width: 100px; /* Larger width for active item */
-    height: 100px; /* Larger height for active item */
-    border-radius: 50%; /* Keep circular */
+    width: 50px; /* Larger width for active item */
+    height: 50px; /* Larger height for active item */
     background-color: var(--body-bg-color); /* Ensure background for active item */
 }
 
 /* Content styling for focused item */
 .timeline-content {
-    text-align: center; /* Center text in content */
-    position: absolute; /* Overlay on the active item */
+    text-align: center;
+    position: absolute;
     width: 200px; /* Adjust width as needed */
-    top: 120%; /* Position below the item */
+    top: 100%; /* Position below the item */
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--body-light-text-color);
@@ -1522,7 +1522,7 @@ footer {
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 2;
-    opacity: 1; /* Ensure content is visible */
+    opacity: 1;
 }
 
 /* Hide content of non-active items */
@@ -1547,7 +1547,6 @@ footer {
 .arrow {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     background-color: var(--btn-main-bg-color);
     color: var(--body-light-text-color);
     border: none;
@@ -1559,6 +1558,7 @@ footer {
     transition: background-color 0.3s;
     opacity: 0; /* Default to hidden */
     pointer-events: none; /* Disable clicks if hidden */
+    transform: translateY(-50%);
 }
 
 .arrow.show {
@@ -1571,12 +1571,13 @@ footer {
 }
 
 .left-arrow {
-    left: 10px;
+    left: 10px; /* Adjust to ensure it’s placed appropriately */
 }
 
 .right-arrow {
-    right: 10px;
+    right: 10px; /* Adjust to ensure it’s placed appropriately */
 }
+
 
 /* Accordion Styles */
 .accordion-btn {
@@ -2177,6 +2178,23 @@ footer {
         max-width: 100%; /* Allow image to use full width of the container */
         margin-top: 20px; /* Add margin at the top of the image */
     }
+
+    .timeline-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .timeline-item {
+        width: 60px;
+        height: 60px;
+        font-size: 10px;
+    }
+    
+    .timeline-item.active {
+        width: 80px;
+        height: 80px;
+        font-size: 12px;
+    }
     
     .legend {
         flex-direction: column;
@@ -2203,5 +2221,11 @@ footer {
 
     .button {
         margin-top: 5px; /* Space between button and name */
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline-content {
+        width: 150px;
     }
 }
