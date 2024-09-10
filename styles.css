@@ -1444,8 +1444,11 @@ footer {
     border: 1px solid var(--contr-bg);
     border-radius: 5px;
     background-color: var(--body-light-text-color);
-    display: flex; /* Use flex to ensure arrows don’t overlap items */
+    display: flex;
     align-items: center;
+    justify-content: center; /* Center the items */
+    overflow-x: hidden; /* Hide overflowing items */
+    white-space: nowrap; /* Prevent line breaks */
 }
 
 /* Timeline Line */
@@ -1505,7 +1508,6 @@ footer {
     opacity: 1; /* Full opacity for active item */
     width: 50px; /* Larger width for active item */
     height: 50px; /* Larger height for active item */
-    background-color: var(--body-bg-color); /* Ensure background for active item */
 }
 
 /* Content styling for focused item */
