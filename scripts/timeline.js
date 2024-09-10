@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="timeline-date">${timelineData[i].date}</div>
                         <div class="timeline-title">${timelineData[i].title}</div>
                         <div class="timeline-description">${timelineData[i].description}</div>
-                        <div class="timeline-details">${timelineData[i].details}</div>
                     </div>
                 `;
             } else {
@@ -48,17 +47,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     
         // Adjust the container width to fit all visible items
+        /*
         const itemWidth = 200; // Width of the timeline item
         const margin = 30; // Margin between items
         const totalWidth = (end - start) * (itemWidth + margin); // Adjust based on item width and margin
         timelineContainer.style.width = `${totalWidth}px`;
-    
-        // Smooth scroll to the current index
-        const centerOffset = (currentIndex - start) * (itemWidth + margin);
-        timelineContainer.scrollTo({
-            left: centerOffset - (timelineContainer.clientWidth / 2) + (itemWidth / 2),
-            behavior: 'smooth'
-        });
+        */
     }
 
 
