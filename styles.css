@@ -1441,8 +1441,10 @@ footer {
     display: flex;
     align-items: center;
     position: relative;
-    width: 100%;
+    width: 80%; /* Adjust width to fit the design */
+    max-width: 800px; /* Ensure the container does not exceed a certain width */
     overflow: hidden;
+    margin: 0 auto; /* Center the container */
     padding: 20px 0;
 }
 
@@ -1451,7 +1453,8 @@ footer {
     align-items: center;
     overflow: hidden;
     white-space: nowrap;
-    width: calc(100% - 80px); /* Adjust width to account for arrows */
+    width: 100%;
+    justify-content: center; /* Center items horizontally */
 }
 
 .timeline-item {
@@ -1466,6 +1469,7 @@ footer {
     justify-content: center;
     color: var(--body-dark-text-color);
     text-align: center;
+    transition: background-color 0.3s;
 }
 
 .focus {
@@ -1495,6 +1499,7 @@ footer {
     position: absolute;
     right: 0;
 }
+
 
 
 /* Accordion Styles */
