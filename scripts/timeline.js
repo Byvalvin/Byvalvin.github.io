@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 date.textContent = item.date;
 
                 const logo = document.createElement('img');
-                logo.src = item.logo;
+                logo.src = item.logo; // Ensure logo field is available in JSON
                 logo.alt = item.title;
 
                 const content = document.createElement('div');
