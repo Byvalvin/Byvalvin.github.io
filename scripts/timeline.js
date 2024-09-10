@@ -1,4 +1,3 @@
-// timeline.js
 document.addEventListener('DOMContentLoaded', () => {
     const timelineContainer = document.getElementById('timeline');
     const leftArrow = document.getElementById('left-arrow');
@@ -22,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderTimeline() {
         timelineContainer.innerHTML = ''; // Clear existing content
 
-        // Calculate the number of items to show (2 or 3)
         const visibleCount = 3;
         const start = Math.max(0, currentIndex - 1);
         const end = Math.min(timelineData.length, currentIndex + 2);
@@ -30,17 +28,15 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show items to the left and right of the current index
         for (let i = start; i < end; i++) {
             const timelineItem = document.createElement('div');
-
+            
             if (i === currentIndex) {
-                timelineItem.classList.add('timeline-item');
-                timelineItem.classList.add('focus');
+                timelineItem.classList.add('timeline-item', 'focus');
                 timelineItem.innerHTML = `
                     <div class="timeline-date">${timelineData[i].date}</div>
                     <div class="timeline-title">${timelineData[i].title}</div>
                     <div class="timeline-description">${timelineData[i].description}</div>
                 `;
             } else {
-                timelineItem.classList.remove('timeline-item');
                 timelineItem.classList.add('dot');
             }
 
@@ -48,10 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Adjust the container width to fit all visible items
-        /*
         const totalWidth = (end - start) * 120; // Adjust based on item width and margin
         timelineContainer.style.width = `${totalWidth}px`;
-        */
     }
 
     function updateArrows() {
@@ -75,4 +69,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch and render timeline data on page load
     fetchTimelineData();
 });
-
