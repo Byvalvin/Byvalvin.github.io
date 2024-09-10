@@ -1455,6 +1455,7 @@ footer {
     transition: transform 0.3s ease;
     align-items: center;
     position: relative;
+    max-width: 100%;
 }
 
 /* Timeline Item */
@@ -1536,6 +1537,14 @@ footer {
     right: 10px;
 }
 
+/* Container for Dots */
+.dot {
+    background-color: #7f8c8d;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+}
 
 /* Accordion Styles */
 .accordion-btn {
