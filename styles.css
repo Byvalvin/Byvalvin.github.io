@@ -1436,121 +1436,77 @@ footer {
 }
 
 /* Horizontal Timeline Container */
+/* Timeline Container */
 .horizontal-timeline {
     position: relative;
+    width: 100%;
     overflow: hidden;
+    background-color: #fff;
     padding: 20px 0;
-    max-width: 100%;
-    border: 1px solid var(--contr-bg);
-    border-radius: 5px;
-    background-color: var(--body-light-text-color);
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the items */
-    overflow-x: hidden; /* Hide overflowing items */
-    white-space: nowrap; /* Prevent line breaks */
+    justify-content: center;
 }
 
-/* Timeline Line */
-.timeline-line {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--btn-main-bg-color);
-    z-index: 0;
-    transform: translateY(-50%);
-}
-
-/* Ensure wrapper does not exceed container bounds */
+/* Timeline Wrapper */
 .timeline-wrapper {
     display: flex;
     gap: 15px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease;
     align-items: center;
     position: relative;
-    z-index: 1;
-    flex: 1; /* Allow flex container to adjust based on screen size */
 }
 
-/* Individual timeline items */
+/* Timeline Item */
 .timeline-item {
-    background-color: var(--body-bg-color);
-    border: 1px solid #ddd;
+    background-color: #2c3e50;
     border-radius: 50%;
     padding: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 0.6; /* Dim non-active items */
-    width: 20px; /* Size for non-active items */
+    width: 20px;
     height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--body-light-text-color); /* Ensure text is visible */
-    font-size: 12px; /* Adjust text size for dots */
+    color: #fff;
+    font-size: 12px;
     text-align: center;
+    transition: transform 0.3s, width 0.3s, height 0.3s;
 }
 
-/* Logo Image for Focused Item */
-.timeline-item img {
-    max-width: 15px; /* Adjust size as needed for the logo */
-    display: block;
-    margin: 0 auto;
-}
-
-/* Active state for prominently displayed item */
+/* Active State */
 .timeline-item.active {
-    transform: scale(1.5); /* Enlarge the active item */
-    opacity: 1; /* Full opacity for active item */
-    width: 50px; /* Larger width for active item */
-    height: 50px; /* Larger height for active item */
+    transform: scale(1.5);
+    width: 60px;
+    height: 60px;
+    background-color: #27ae60;
 }
 
-/* Content styling for focused item */
+/* Timeline Content */
 .timeline-content {
-    text-align: center;
+    display: none;
     position: absolute;
-    width: 200px; /* Adjust width as needed */
-    top: 100%; /* Position below the item */
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--body-light-text-color);
+    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 2;
-    opacity: 1;
 }
 
-/* Hide content of non-active items */
-.timeline-item:not(.active) .timeline-content {
-    display: none;
-}
-
-/* Date styling */
-.timeline-date {
-    font-weight: bold;
-    color: var(--btn-main-bg-color);
-    margin-bottom: 8px;
-}
-
-/* Content styling */
-.timeline-content h4 {
-    margin: 0;
-    color: var(--body-dark-text-color);
+/* Show content for active item */
+.timeline-item.active .timeline-content {
+    display: block;
 }
 
 /* Arrow Buttons */
 .arrow {
     position: absolute;
     top: 50%;
-    background-color: var(--btn-main-bg-color);
-    color: var(--body-light-text-color);
+    background-color: #3498db;
+    color: #fff;
     border: none;
     font-size: 20px;
     cursor: pointer;
@@ -1558,26 +1514,26 @@ footer {
     border-radius: 50%;
     z-index: 2;
     transition: background-color 0.3s;
-    opacity: 0; /* Default to hidden */
-    pointer-events: none; /* Disable clicks if hidden */
+    opacity: 0;
+    pointer-events: none;
     transform: translateY(-50%);
 }
 
 .arrow.show {
-    opacity: 1; /* Make visible when needed */
-    pointer-events: auto; /* Enable clicks */
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .arrow:hover {
-    background-color: var(--btn-main-bg-hv-color);
+    background-color: #2980b9;
 }
 
 .left-arrow {
-    left: 10px; /* Adjust as needed to avoid overlap */
+    left: 10px;
 }
 
 .right-arrow {
-    right: 10px; /* Adjust as needed to avoid overlap */
+    right: 10px;
 }
 
 
