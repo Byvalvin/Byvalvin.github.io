@@ -1470,7 +1470,7 @@ footer {
 
 /* Individual timeline items */
 .timeline-item {
-    flex: 0 0 200px;
+    flex: 0 0 100px; /* Smaller width for items */
     background-color: var(--body-bg-color);
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -1479,14 +1479,18 @@ footer {
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 0.3; /* Dim inactive items */
-    max-width: 100%;
-    box-sizing: border-box;
+    opacity: 0.1; /* Dim non-active items */
+    width: 20px; /* Make non-active items dots */
+    height: 20px;
+    border-radius: 50%; /* Make non-active items circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Logo Image */
 .timeline-item img {
-    max-width: 100px; /* Adjust size as needed */
+    max-width: 60px; /* Adjust size as needed */
     display: block;
     margin: 0 auto;
 }
@@ -1495,6 +1499,8 @@ footer {
 .timeline-item.active {
     transform: scale(1.2); /* Enlarge the active item */
     opacity: 1; /* Full opacity for active item */
+    width: 200px; /* Larger width for active item */
+    height: auto; /* Adjust height for active item */
 }
 
 /* Date styling */
@@ -1522,7 +1528,7 @@ footer {
     cursor: pointer;
     padding: 8px;
     border-radius: 50%;
-    z-index: 2; /* Ensure arrows are on top of content */
+    z-index: 2;
     transition: background-color 0.3s;
 }
 
@@ -1566,6 +1572,7 @@ footer {
     margin: 0;
     color: var(--body-dark-text-color);
 }
+
 
 
 
