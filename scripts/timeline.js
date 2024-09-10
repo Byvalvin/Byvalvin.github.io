@@ -33,10 +33,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const visibleCount = 3;
 
             function updateTimeline() {
-                const itemWidth = items[0].offsetWidth + 15;
+                const itemWidth = items[0].offsetWidth + 20; // Adjust for margin or padding
+                const halfVisible = Math.floor(visibleCount / 2);
                 const maxOffset = (items.length - visibleCount) * itemWidth;
-                const offset = Math.max(-currentIndex * itemWidth, -maxOffset);
-                wrapper.style.transform = `translateX(${offset}px)`;
+                const offset = Math.max(
+                    Math.min(currentIndex - halfVisible, items.length - visibleCount) * itemWidth,
+                    0
+                );
+                wrapper.style.transform = `translateX(-${offset}px)`;
 
                 items.forEach((item, index) => {
                     item.classList.toggle('active', index === currentIndex);
@@ -74,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             rightArrow.addEventListener('click', () => {
-                if (currentIndex < items.length - visibleCount) {
+                if (currentIndex < items.length - 1) {
                     currentIndex++;
                     updateTimeline();
                 }
