@@ -1441,7 +1441,6 @@ footer {
     position: relative;
     width: 100%;
     overflow: hidden;
-    background-color: #fff;
     padding: 20px 0;
     display: flex;
     align-items: center;
@@ -1451,9 +1450,7 @@ footer {
 /* Timeline Wrapper */
 .timeline-wrapper {
     display: flex;
-    gap: 15px;
-    transition: transform 0.3s ease;
-    align-items: center;
+    overflow: hidden;
     position: relative;
     max-width: 100%;
 }
@@ -1462,7 +1459,6 @@ footer {
 .timeline-item {
     background-color: #2c3e50;
     border-radius: 50%;
-    padding: 5px;
     width: 20px;
     height: 20px;
     display: flex;
@@ -1471,6 +1467,7 @@ footer {
     color: #fff;
     font-size: 12px;
     text-align: center;
+    position: relative;
     transition: transform 0.3s, width 0.3s, height 0.3s;
 }
 
@@ -1537,7 +1534,7 @@ footer {
     right: 10px;
 }
 
-/* Container for Dots */
+/* Dot Styling */
 .dot {
     background-color: #7f8c8d;
     width: 15px;
