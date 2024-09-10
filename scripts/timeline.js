@@ -28,13 +28,17 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show items to the left and right of the current index
         for (let i = start; i < end; i++) {
             const timelineItem = document.createElement('div');
-            
+
             if (i === currentIndex) {
                 timelineItem.classList.add('timeline-item', 'focus');
                 timelineItem.innerHTML = `
-                    <div class="timeline-date">${timelineData[i].date}</div>
-                    <div class="timeline-title">${timelineData[i].title}</div>
-                    <div class="timeline-description">${timelineData[i].description}</div>
+                    <img src="${timelineData[i].logo}" alt="${timelineData[i].title}" class="timeline-logo">
+                    <div class="timeline-content">
+                        <div class="timeline-date">${timelineData[i].date}</div>
+                        <div class="timeline-title">${timelineData[i].title}</div>
+                        <div class="timeline-description">${timelineData[i].description}</div>
+                        <div class="timeline-details">${timelineData[i].details}</div>
+                    </div>
                 `;
             } else {
                 timelineItem.classList.add('dot');
@@ -45,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Adjust the container width to fit all visible items
         /*
-        const totalWidth = (end - start) * 120; // Adjust based on item width and margin
+        const totalWidth = (end - start) * 150; // Adjust based on item width and margin
         timelineContainer.style.width = `${totalWidth}px`;
         */
     }
