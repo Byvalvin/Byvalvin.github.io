@@ -1437,82 +1437,65 @@ footer {
 
 /* Horizontal Timeline Container */
 /* Timeline Container */
-/* styles.css */
-.horizontal-timeline {
+.timeline-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.timeline {
     display: flex;
     align-items: center;
     overflow: hidden;
-    position: relative;
-    width: 100%;
-    margin: 20px 0;
-}
-
-.timeline-wrapper {
-    display: flex;
-    transition: transform 0.3s ease;
-    overflow: hidden;
     white-space: nowrap;
-    width: 100%;
+    width: calc(100% - 80px); /* Adjust width to account for arrows */
 }
 
 .timeline-item {
-    display: inline-block;
-    width: 150px; /* Adjust based on logo and title size */
-    height: auto;
-    margin: 0 10px;
-    border-radius: 50%;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    position: relative;
-}
-
-.timeline-logo {
     width: 100px;
     height: 100px;
+    margin: 0 10px;
     border-radius: 50%;
-    object-fit: cover;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--body-dark-text-color);
+    text-align: center;
 }
 
-.timeline-title {
-    margin-top: 5px;
-    font-size: 14px;
+.focus {
+    background-color: var(--btn-main-bg-color);
+    color: var(--body-light-text-color);
 }
 
-.timeline-item.active {
-    background-color: #f00;
+.dot {
+    background-color: var(--contr-bg);
 }
 
 .arrow {
-    background: none;
+    background-color: transparent;
     border: none;
     font-size: 24px;
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
+    padding: 0 10px;
+    z-index: 10;
 }
 
 .left-arrow {
+    position: absolute;
     left: 0;
 }
 
 .right-arrow {
+    position: absolute;
     right: 0;
 }
 
-
-/* Dot Styling */
-.dot {
-    background-color: #7f8c8d;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    position: absolute;
-}
 
 /* Accordion Styles */
 .accordion-btn {
