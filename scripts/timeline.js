@@ -69,7 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const visibleCount = 3; // Number of visible items in the viewport
 
             function updateTimeline() {
-                const offset = -currentIndex * (items[0].offsetWidth + 20); // Adjust based on margin
+                const itemWidth = items[0].offsetWidth + 15; // Adjust based on gap
+                const offset = -currentIndex * itemWidth;
                 timelineWrapper.style.transform = `translateX(${offset}px)`;
                 
                 items.forEach((item, index) => {
