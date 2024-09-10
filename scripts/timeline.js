@@ -1,87 +1,66 @@
 // timeline.js
 document.addEventListener('DOMContentLoaded', () => {
-    const timelineContainer = document.getElementById('timeline-wrapper');
-    const leftArrow = document.querySelector('.left-arrow');
-    const rightArrow = document.querySelector('.right-arrow');
-    const detailsInfo = document.createElement('p');
-    detailsInfo.id = 'details-info';
-    detailsInfo.textContent = 'Select an item to see details.';
-    document.getElementById('timeline-container').appendChild(detailsInfo);
+    const timelineContainer = document.getElementById('timeline');
+    const leftArrow = document.getElementById('left-arrow');
+    const rightArrow = document.getElementById('right-arrow');
 
     let timelineData = [];
     let currentIndex = 0;
 
-    // Fetch the timeline data from the JSON file
-    fetch('about/timeline.json')
-        .then(response => response.json())
-        .then(data => {
-            timelineData = data;
-            createTimelineItems();
-            updateTimeline();
-        })
-        .catch(error => console.error('Error fetching timeline data:', error));
-
-    function createTimelineItems() {
-        timelineData.forEach((item, index) => {
-            const div = document.createElement('div');
-            div.className = 'timeline-item';
-            div.dataset.index = index;
-            div.dataset.details = item.details;
-            
-            // Create and append item elements
-            const logo = document.createElement('img');
-            logo.src = item.logo;
-            logo.alt = item.title;
-            logo.className = 'timeline-logo';
-
-            const title = document.createElement('div');
-            title.className = 'timeline-title';
-            title.textContent = item.title;
-
-            div.appendChild(logo);
-            div.appendChild(title);
-            
-            div.addEventListener('click', () => {
-                currentIndex = index;
-                updateTimeline();
+    function fetchTimelineData() {
+        fetch('about/timeline.json')
+            .then(response => response.json())
+            .then(data => {
+                timelineData = data;
+                renderTimeline();
+                updateArrows();
+            })
+            .catch(error => {
+                console.error('Error fetching timeline data:', error);
             });
-
-            timelineContainer.appendChild(div);
-        });
     }
 
-    function updateTimeline() {
-        const items = document.querySelectorAll('.timeline-item');
-        items.forEach((item, index) => {
+    function renderTimeline() {
+        timelineContainer.innerHTML = ''; // Clear existing content
+
+        timelineData.forEach((item, index) => {
+            const timelineItem = document.createElement('div');
+            timelineItem.classList.add('timeline-item');
             if (index === currentIndex) {
-                item.classList.add('active');
-                detailsInfo.textContent = timelineData[index].details;
+                timelineItem.classList.add('focus');
             } else {
-                item.classList.remove('active');
+                timelineItem.classList.add('dot');
             }
+
+            timelineItem.innerHTML = `
+                <div class="timeline-date">${item.date}</div>
+                <div class="timeline-title">${item.title}</div>
+                <div class="timeline-description">${item.description}</div>
+            `;
+
+            timelineContainer.appendChild(timelineItem);
         });
+    }
 
-        const offset = -currentIndex * (items[0].offsetWidth + 20); // Adjust for margin
-        timelineContainer.style.transform = `translateX(${offset}px)`;
-
+    function updateArrows() {
         leftArrow.style.display = currentIndex > 0 ? 'block' : 'none';
-        rightArrow.style.display = currentIndex < items.length - 1 ? 'block' : 'none';
+        rightArrow.style.display = currentIndex < timelineData.length - 1 ? 'block' : 'none';
     }
 
-    function moveLeft() {
-        if (currentIndex > 0) {
+    function navigateTimeline(direction) {
+        if (direction === 'left' && currentIndex > 0) {
             currentIndex--;
-            updateTimeline();
-        }
-    }
-
-    function moveRight() {
-        if (currentIndex < timelineData.length - 1) {
+        } else if (direction === 'right' && currentIndex < timelineData.length - 1) {
             currentIndex++;
-            updateTimeline();
         }
+        renderTimeline();
+        updateArrows();
     }
 
-    leftArrow.addEventListener('click', moveLeft);
-    rightArrow.addEventListener('click', moveRight);
+    leftArrow.addEventListener('click', () => navigateTimeline('left'));
+    rightArrow.addEventListener('click', () => navigateTimeline('right'));
+
+    // Fetch and render timeline data on page load
+    fetchTimelineData();
 });
+
