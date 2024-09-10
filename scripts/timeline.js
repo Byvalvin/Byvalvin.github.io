@@ -44,8 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Adjust the container width to fit all visible items
+        /*
         const totalWidth = (end - start) * 120; // Adjust based on item width and margin
         timelineContainer.style.width = `${totalWidth}px`;
+        */
     }
 
     function updateArrows() {
