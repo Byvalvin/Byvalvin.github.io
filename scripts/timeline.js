@@ -5,6 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const container = document.getElementById('timeline-container');
             const wrapper = document.createElement('div');
             wrapper.classList.add('timeline-wrapper');
+            
+            const line = document.createElement('div');
+            line.classList.add('timeline-line');
+            container.appendChild(line);
 
             data.forEach((item, index) => {
                 const timelineItem = document.createElement('div');
@@ -14,16 +18,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 const date = document.createElement('div');
                 date.classList.add('timeline-date');
                 date.textContent = item.date;
-                
+
+                const logo = document.createElement('img');
+                logo.src = item.logo;
+                logo.alt = item.title;
+
                 const content = document.createElement('div');
                 content.classList.add('timeline-content');
                 
                 const title = document.createElement('h4');
                 title.textContent = item.title;
-                
+
                 const description = document.createElement('p');
                 description.textContent = item.description;
-                
+
                 const accordionBtn = document.createElement('button');
                 accordionBtn.classList.add('accordion-btn');
                 accordionBtn.textContent = 'More Details';
@@ -32,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 accordionContent.classList.add('accordion-content');
                 accordionContent.textContent = item.details; // Use textContent instead of innerHTML
                 
+                content.appendChild(logo);
                 content.appendChild(title);
                 content.appendChild(description);
                 content.appendChild(accordionBtn);
@@ -66,16 +75,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
             let currentIndex = 0;
             const items = document.querySelectorAll('.timeline-item');
-            const visibleCount = 3; // Number of visible items in the viewport
+            const visibleCount = 1; // Number of visible items in the viewport
 
             function updateTimeline() {
                 const itemWidth = items[0].offsetWidth + 15; // Adjust based on gap
                 const maxOffset = (items.length - visibleCount) * itemWidth;
                 const offset = Math.max(-currentIndex * itemWidth, -maxOffset); // Ensure offset is within bounds
                 timelineWrapper.style.transform = `translateX(${offset}px)`;
-                
+
                 items.forEach((item, index) => {
-                    item.classList.toggle('active', index >= currentIndex && index < currentIndex + visibleCount);
+                    item.classList.toggle('active', index === currentIndex);
                 });
             }
 
