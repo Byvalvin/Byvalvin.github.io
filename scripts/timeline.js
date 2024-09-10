@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 timelineWrapper.style.transform = `translateX(${offset}px)`;
                 
                 items.forEach((item, index) => {
-                    item.classList.toggle('active', index === currentIndex);
+                    item.classList.toggle('active', index >= currentIndex && index < currentIndex + visibleCount);
                 });
             }
 
