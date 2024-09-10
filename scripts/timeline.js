@@ -86,6 +86,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 items.forEach((item, index) => {
                     item.classList.toggle('active', index === currentIndex);
                 });
+
+                // Show/Hide arrows based on scroll position
+                leftArrow.classList.toggle('show', currentIndex > 0);
+                rightArrow.classList.toggle('show', currentIndex < items.length - visibleCount);
             }
 
             leftArrow.addEventListener('click', () => {
