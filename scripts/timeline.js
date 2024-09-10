@@ -90,6 +90,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Show/Hide arrows based on scroll position
                 leftArrow.classList.toggle('show', currentIndex > 0);
                 rightArrow.classList.toggle('show', currentIndex < items.length - visibleCount);
+
+                // Position arrows to avoid overlapping timeline items
+                leftArrow.style.top = `${container.offsetHeight / 2}px`;
+                rightArrow.style.top = `${container.offsetHeight / 2}px`;
             }
 
             leftArrow.addEventListener('click', () => {
