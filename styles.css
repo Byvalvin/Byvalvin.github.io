@@ -1479,28 +1479,55 @@ footer {
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 0.3; /* Dim non-active items */
-    width: 40px; /* Size for non-active items */
-    height: 40px;
+    opacity: 0.2; /* Dim non-active items */
+    width: 30px; /* Size for non-active items */
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--body-light-text-color); /* Ensure text is visible */
+    font-size: 12px; /* Adjust text size for dots */
+    text-align: center;
+    line-height: 1.2;
 }
 
-/* Logo Image */
+/* Logo Image for Focused Item */
 .timeline-item img {
-    max-width: 30px; /* Adjust size as needed for the logo */
+    max-width: 20px; /* Adjust size as needed for the logo */
     display: block;
     margin: 0 auto;
 }
 
 /* Active state for prominently displayed item */
 .timeline-item.active {
-    transform: scale(1.2); /* Enlarge the active item */
+    transform: scale(1.5); /* Enlarge the active item */
     opacity: 1; /* Full opacity for active item */
     width: 100px; /* Larger width for active item */
     height: 100px; /* Larger height for active item */
     border-radius: 50%; /* Keep circular */
+    background-color: var(--body-bg-color); /* Ensure background for active item */
+}
+
+/* Content styling for focused item */
+.timeline-content {
+    text-align: center; /* Center text in content */
+    position: absolute; /* Overlay on the active item */
+    width: 200px; /* Adjust width as needed */
+    top: 120%; /* Position below the item */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--body-light-text-color);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    opacity: 1; /* Ensure content is visible */
+}
+
+/* Hide content of non-active items */
+.timeline-item:not(.active) .timeline-content {
+    display: none;
 }
 
 /* Date styling */
@@ -1511,10 +1538,6 @@ footer {
 }
 
 /* Content styling */
-.timeline-content {
-    text-align: center; /* Center text in content */
-}
-
 .timeline-content h4 {
     margin: 0;
     color: var(--body-dark-text-color);
