@@ -6,9 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const wrapper = document.createElement('div');
             wrapper.classList.add('timeline-wrapper');
 
-            data.forEach(item => {
+            data.forEach((item, index) => {
                 const timelineItem = document.createElement('div');
                 timelineItem.classList.add('timeline-item');
+                if (index === 0) timelineItem.classList.add('active'); // Set the first item as active
                 
                 const date = document.createElement('div');
                 date.classList.add('timeline-date');
@@ -51,6 +52,55 @@ document.addEventListener('DOMContentLoaded', () => {
                     content.style.display = content.style.display === 'block' ? 'none' : 'block';
                 });
             });
+
+            // Handle the carousel behavior
+            const timelineWrapper = document.querySelector('.timeline-wrapper');
+            const leftArrow = document.createElement('button');
+            leftArrow.className = 'arrow left-arrow';
+            leftArrow.innerHTML = '&lt;';
+            const rightArrow = document.createElement('button');
+            rightArrow.className = 'arrow right-arrow';
+            rightArrow.innerHTML = '&gt;';
+            container.appendChild(leftArrow);
+            container.appendChild(rightArrow);
+
+            let currentIndex = 0;
+            const items = document.querySelectorAll('.timeline-item');
+
+            function updateTimeline() {
+                const offset = -currentIndex * (items[0].offsetWidth + 20); // Adjust based on margin
+                timelineWrapper.style.transform = `translateX(${offset}px)`;
+                
+                items.forEach((item, index) => {
+                    item.classList.toggle('active', index === currentIndex);
+                });
+            }
+
+            leftArrow.addEventListener('click', () => {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateTimeline();
+                }
+            });
+
+            rightArrow.addEventListener('click', () => {
+                if (currentIndex < items.length - 1) {
+                    currentIndex++;
+                    updateTimeline();
+                }
+            });
+
+            // Optional: Handle arrow key navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') {
+                    leftArrow.click();
+                } else if (e.key === 'ArrowRight') {
+                    rightArrow.click();
+                }
+            });
+
+            // Initialize
+            updateTimeline();
         })
         .catch(error => console.error('Error loading the timeline data:', error));
 });
