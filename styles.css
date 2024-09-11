@@ -1479,10 +1479,12 @@ footer {
     justify-content: space-between;
 }
 
-.focus {
+/* Focused Timeline Item Styling */
+.timeline-item.focus {
     background-color: var(--btn-main-bg-color);
     color: var(--body-light-text-color);
     transform: scale(1.05); /* Slightly enlarge the focused item */
+    z-index: 2; /* Ensure the focused item is above other items */
 }
 
 /* Ensuring logo fits well within the card */
@@ -2127,6 +2129,9 @@ footer {
     .category-container {
         flex: 1 1 calc(50% - 20px); /* Two columns layout on medium screens */
     }
+    .timeline-container {
+        width: 90%; /* Adjust width on medium screens */
+    }
 }
 
 @media (max-width: 768px) {
@@ -2170,7 +2175,15 @@ footer {
         height: 80px;
         font-size: 12px;
     }
-    
+        .timeline-item.focus {
+        width: 80px;
+        height: 80px;
+        font-size: 12px;
+    }
+
+    .timeline-content {
+        width: 150px; /* Limit width for smaller screens */
+    }
     .legend {
         flex-direction: column;
         align-items: flex-start;
