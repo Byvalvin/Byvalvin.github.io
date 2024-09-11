@@ -21,22 +21,23 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderTimeline() {
         timelineContainer.innerHTML = ''; // Clear existing content
     
-        const visibleCount = 3;
+        const visibleCount = 3; // Number of items to show at a time
         const start = Math.max(0, currentIndex - 1);
         const end = Math.min(timelineData.length, currentIndex + 2);
     
         // Show items to the left and right of the current index
         for (let i = start; i < end; i++) {
             const timelineItem = document.createElement('div');
-    
+            const itemData = timelineData[i];
+
             if (i === currentIndex) {
                 timelineItem.classList.add('timeline-item', 'focus');
                 timelineItem.innerHTML = `
-                    <img src="${timelineData[i].logo}" alt="${timelineData[i].title}" class="timeline-logo">
+                    <img src="${itemData.logo}" alt="${itemData.title}" class="timeline-logo">
                     <div class="timeline-content">
-                        <div class="timeline-date">${timelineData[i].date}</div>
-                        <div class="timeline-title">${timelineData[i].title}</div>
-                        <div class="timeline-description">${timelineData[i].description}</div>
+                        <div class="timeline-date">${itemData.date}</div>
+                        <div class="timeline-title">${itemData.title}</div>
+                        <div class="timeline-description">${itemData.description}</div>
                     </div>
                 `;
             } else {
@@ -45,16 +46,18 @@ document.addEventListener('DOMContentLoaded', () => {
     
             timelineContainer.appendChild(timelineItem);
         }
-    
-        // Adjust the container width to fit all visible items
-        /*
-        const itemWidth = 200; // Width of the timeline item
-        const margin = 30; // Margin between items
-        const totalWidth = (end - start) * (itemWidth + margin); // Adjust based on item width and margin
-        timelineContainer.style.width = `${totalWidth}px`;
-        */
-    }
 
+        // Center the focused item
+        const timelineItems = Array.from(timelineContainer.getElementsByClassName('timeline-item'));
+        const focusedItem = timelineItems.find(item => item.classList.contains('focus'));
+        
+        if (focusedItem) {
+            const containerWidth = timelineContainer.clientWidth;
+            const itemWidth = focusedItem.offsetWidth;
+            const offset = focusedItem.offsetLeft - (containerWidth / 2) + (itemWidth / 2);
+            timelineContainer.scrollLeft = offset;
+        }
+    }
 
     function updateArrows() {
         leftArrow.style.display = currentIndex > 0 ? 'block' : 'none';
