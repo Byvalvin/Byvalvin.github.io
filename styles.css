@@ -1441,25 +1441,18 @@ footer {
     display: flex;
     align-items: center;
     position: relative;
-    width: 80%; /* Adjust width to fit the design */
-    max-width: 900px; /* Ensure the container does not exceed a certain width */
+    width: 80%;
+    max-width: 100%; /* Allow container to fit within the viewport */
     overflow: hidden;
     margin: 0 auto; /* Center the container */
     padding: 20px 0;
 }
 
-.timeline {
-    display: flex;
-    align-items: center;
-    overflow-x: auto;
-    white-space: nowrap;
-    transition: transform 0.5s ease-in-out; /* Smooth transition */
-}
-
-/* Adjusting timeline-item for better flexibility and responsiveness */
+/* Timeline Items */
 .timeline-item {
-    min-width: 200px; /* Ensure a minimum width for each item */
-    max-width: 250px; /* Allow items to grow up to a maximum width */
+    flex: 1; /* Allow items to grow and shrink */
+    min-width: 200px; /* Minimum width */
+    max-width: 300px; /* Maximum width */
     margin: 0 15px; /* Space around items */
     border: 2px solid var(--contr-bg);
     border-radius: 8px; /* Rounded corners */
@@ -1468,15 +1461,10 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px; /* More padding for better spacing */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s, transform 0.3s;
     text-align: center;
-    overflow: visible; /* Allow content to overflow if necessary */
-    /* Ensuring flexible height */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 /* Focused Timeline Item Styling */
