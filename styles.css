@@ -1441,9 +1441,9 @@ footer {
     display: flex;
     align-items: center;
     position: relative;
-    width: 80%;
-    max-width: 100%; /* Allow container to fit within the viewport */
-    overflow: hidden;
+    width: 80%; /* Width of the visible timeline window */
+    max-width: 900px; /* Maximum width to ensure it doesn't get too wide */
+    overflow: hidden; /* Hide overflow to create a "window" effect */
     margin: 0 auto; /* Center the container */
     padding: 20px 0;
     white-space: nowrap; /* Ensure items are displayed in a row */
