@@ -1446,9 +1446,18 @@ footer {
     overflow: hidden;
     margin: 0 auto; /* Center the container */
     padding: 20px 0;
+    white-space: nowrap; /* Ensure items are displayed in a row */
 }
 
-/* Timeline Items */
+/* Timeline */
+.timeline {
+    display: flex;
+    align-items: center;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scroll */
+}
+
+/* Timeline Item */
 .timeline-item {
     flex: 1; /* Allow items to grow and shrink */
     min-width: 200px; /* Minimum width */
@@ -1465,6 +1474,7 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s, transform 0.3s;
     text-align: center;
+    position: relative; /* For positioning dots */
 }
 
 /* Focused Timeline Item Styling */
@@ -1537,6 +1547,7 @@ footer {
     position: absolute;
     right: 0;
 }
+
 
 
 
