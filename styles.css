@@ -1453,7 +1453,7 @@ footer {
     overflow: hidden;
     position: relative;
     flex: 1;
-    padding: 10px; /* Add padding to avoid content touching the edges */
+    padding: 20px; /* Add padding to avoid content touching the edges */
 }
 
 .timeline-content {
@@ -1464,7 +1464,7 @@ footer {
     background-color: var(--body-bg-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin: 0 auto; /* Center content */
+    margin: 10px auto; /* Center content */
 }
 
 .timeline-dots {
@@ -1475,15 +1475,19 @@ footer {
     gap: 10px;
     position: absolute;
     bottom: 10px;
+    margin-top: 10px; /* Space between content and dots */
+    padding: 10px 0; /* Vertical padding to ensure dots aren't touching container line */
     left: 0;
     right: 0;
+    
 }
 
 .dot {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #ccc; /* Default color for dots */
+    margin: 0 5px; /* Space between dots */
+    background-color: var(--contr-bg); /* Default color for dots */
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
 }
