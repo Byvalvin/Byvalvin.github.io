@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateTimeline() {
-        const dotWidth = 15; // Adjusted width for dot
+        const dotWidth = 15; // Width of each dot
         const dotSpacing = 30; // Space between dots
         const itemWidth = dotWidth + dotSpacing; // Total width for each dot + space
 
@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+        // Update content
         const currentItem = items[currentIndex];
         timelineContent.innerHTML = `
             <h3>${currentItem.title}</h3>
