@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0; // Start at the first item
 
     // Fetch and load timeline data
-    fetch('path/to/timeline.json')
+    fetch('about/timeline.json')
         .then(response => response.json())
         .then(data => {
             items = data;
