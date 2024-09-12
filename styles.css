@@ -1474,7 +1474,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 15px; /* Increased space between dots */
     position: relative; /* Position relative to place the line */
     margin-top: 20px; /* Space between content and dots */
     padding: 10px 0; /* Vertical padding to ensure dots aren't touching container line */
@@ -1498,7 +1498,7 @@ footer {
     width: 15px; /* Increased size for better hit area */
     height: 15px;
     border-radius: 50%;
-    margin: 0 10px; /* Increased space between dots */
+    margin: 0; /* Remove side margin */
     background-color: var(--contr-bg); /* Default color for dots */
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
@@ -1547,11 +1547,11 @@ footer {
 
 /* Specific Positioning for Left and Right Buttons */
 .nav-button.left {
-    left: 20px; /* Increased space from the edge */
+    left: 10px; /* Adjusted space from the edge */
 }
 
 .nav-button.right {
-    right: 20px; /* Increased space from the edge */
+    right: 10px; /* Adjusted space from the edge */
 }
 
 
