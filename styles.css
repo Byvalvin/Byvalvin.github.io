@@ -1456,6 +1456,21 @@ footer {
     padding: 10px; /* Add padding to avoid content touching the edges */
 }
 
+/* Timeline Header and Logo */
+.timeline-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.timeline-logo {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
 .timeline-content {
     flex: 2;
     padding: 20px;
