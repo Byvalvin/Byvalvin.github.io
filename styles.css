@@ -1475,11 +1475,13 @@ footer {
     flex: 2;
     padding: 20px;
     border: 1px solid var(--contr-bg);
-    border-radius: 8px;
+    border-radius: 12px; /* Increased border-radius for a softer look */
     background-color: var(--body-bg-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
     text-align: center;
     margin: 0 auto; /* Center content */
+    max-width: 80%; /* Limit width to ensure readability */
+    word-wrap: break-word; /* Ensure long words break properly */
 }
 
 /* Timeline Dots Styling */
@@ -1488,20 +1490,21 @@ footer {
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 10px;
+    bottom: 20px; /* Increased spacing from the bottom */
     left: 0;
     right: 0;
-    padding: 0 20px; /* Add padding to avoid dots touching the edges */
+    padding: 0 40px; /* Increased padding for better spacing */
 }
 
 .dot {
-    width: 20px; /* Increased size */
-    height: 20px; /* Increased size */
+    width: 15px; /* Increased size */
+    height: 15px; /* Increased size */
     border-radius: 50%;
     background-color: #ccc; /* Default color for dots */
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
     position: relative;
+    margin: 0 15px; /* Increased margin for spacing between dots */
 }
 
 .dot.active {
@@ -1546,7 +1549,7 @@ footer {
 
 .nav-button:hover {
     background-color: var(--btn-main-bg-hv-color);
-    transform: scale(1.1); /* Slightly increase size on hover */
+    transform: scale(1.01); /* Slightly increase size on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
@@ -1556,11 +1559,11 @@ footer {
 }
 
 .nav-button.left {
-    left: 20px; /* Increased distance from the edge */
+    left: 30px; /* Increased distance from the edge */
 }
 
 .nav-button.right {
-    right: 20px; /* Increased distance from the edge */
+    right: 30px; /* Increased distance from the edge */
 }
 
 
