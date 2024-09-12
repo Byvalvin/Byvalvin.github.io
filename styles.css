@@ -1436,84 +1436,58 @@ footer {
 }
 
 /* Horizontal Timeline Container */
-/* Timeline Container */
+
+
+
+/* Timeline Container Styling */
 .timeline-container {
     display: flex;
     align-items: center;
     position: relative;
-    width: 80%; /* Width of the visible timeline window */
-    max-width: 900px; /* Maximum width to ensure it doesn't get too wide */
-    overflow: hidden; /* Hide overflow to create a "window" effect */
-    margin: 0 auto; /* Center the container */
-    padding: 20px 0;
-    white-space: nowrap; /* Ensure items are displayed in a row */
+    width: 100%;
+    overflow: hidden;
+    max-width: 1000px; /* Adjust as needed */
+    margin: auto;
 }
 
-/* Timeline */
+.timeline-wrapper {
+    flex: 1;
+    overflow: hidden;
+}
+
 .timeline {
     display: flex;
-    align-items: center;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    scroll-behavior: smooth; /* Smooth scroll */
+    transition: transform 0.3s ease;
 }
 
-/* Timeline Item */
 .timeline-item {
-    flex: 1; /* Allow items to grow and shrink */
-    min-width: 200px; /* Minimum width */
-    max-width: 300px; /* Maximum width */
-    margin: 0 15px; /* Space around items */
-    border: 2px solid var(--contr-bg);
-    border-radius: 8px; /* Rounded corners */
-    background-color: var(--body-light-text-color);
-    color: var(--body-dark-text-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, transform 0.3s;
+    min-width: 100px; /* Adjust based on item size */
+    margin: 0 10px;
     text-align: center;
-    position: relative; /* For positioning dots */
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-/* Focused Timeline Item Styling */
-.timeline-item.focus {
-    background-color: var(--btn-main-bg-color);
+.timeline-item.active {
     color: var(--body-light-text-color);
-    transform: scale(1.05); /* Slightly enlarge the focused item */
-    z-index: 2; /* Ensure the focused item is above other items */
+    background-color: var(--btn-main-bg-color);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
 }
 
-/* Ensuring logo fits well within the card */
-.timeline-logo {
-    max-width: 80px; /* Limit logo size */
-    height: auto;
-    margin-bottom: 10px;
-}
-
-/* Adjust text sizes for better readability */
 .timeline-content {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Ensure content is spaced well */
-}
-
-.timeline-date {
-    font-weight: bold;
-    font-size: 1.1em; /* Slightly larger date text */
-    margin-bottom: 5px;
-}
-
-.timeline-title {
-    font-size: 1.3em; /* Larger title text */
-    margin-bottom: 10px;
-}
-
-.timeline-description {
-    font-size: 1em; /* Standard size for description */
-    margin-bottom: 10px;
+    padding: 20px;
+    border: 1px solid var(--contr-bg);
+    border-radius: 8px;
+    background-color: var(--body-bg-color);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-details {
@@ -1529,21 +1503,25 @@ footer {
     background-color: var(--contr-bg);
 }
 
-.arrow {
-    background-color: transparent;
+.nav-button {
+    background: transparent;
     border: none;
-    font-size: 24px;
     cursor: pointer;
-    padding: 0 10px;
-    z-index: 10;
+    font-size: 2rem;
+    color: var(--btn-main-bg-color);
+    transition: color 0.3s;
 }
 
-.left-arrow {
+.nav-button:hover {
+    color: var(--btn-main-bg-hv-color);
+}
+
+.nav-button.left {
     position: absolute;
     left: 0;
 }
 
-.right-arrow {
+.nav-button.right {
     position: absolute;
     right: 0;
 }
