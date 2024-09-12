@@ -70,4 +70,20 @@ document.addEventListener('DOMContentLoaded', () => {
             updateTimeline();
         }
     });
+
+     // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateTimeline();
+            }
+        } else if (e.key === 'ArrowRight') {
+            if (currentIndex < items.length - 1) {
+                currentIndex++;
+                updateTimeline();
+            }
+        }
+    });
+    
 });
