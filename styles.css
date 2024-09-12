@@ -1496,34 +1496,44 @@ footer {
     background-color: var(--btn-main-bg-hv-color); /* Color on hover */
 }
 
+/* Larger Navigation Buttons */
 .nav-button {
     background-color: var(--btn-main-bg-color);
     color: var(--body-light-text-color);
     border: none;
     border-radius: 50%;
-    padding: 10px;
+    padding: 15px; /* Increased padding for larger buttons */
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-    font-size: 18px;
-    line-height: 0;
+    font-size: 24px; /* Increase font size for better visibility */
+    line-height: 0; /* Remove extra line-height space */
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10; /* Ensure buttons are above other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for better visibility */
 }
 
+/* Hover and Focus States */
 .nav-button:hover {
     background-color: var(--btn-main-bg-hv-color);
-    transform: scale(1.05);
+    transform: scale(1.1); /* Slightly scale up on hover without moving */
 }
 
+.nav-button:focus {
+    outline: 2px solid var(--btn-main-bg-hv-color);
+    outline-offset: 4px;
+}
+
+/* Specific Positioning for Left and Right Buttons */
 .nav-button.left {
-    left: 10px;
+    left: 15px; /* Increased space from the edge */
 }
 
 .nav-button.right {
-    right: 10px;
+    right: 15px; /* Increased space from the edge */
 }
+
 
 
 
