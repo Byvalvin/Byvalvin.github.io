@@ -36,8 +36,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateTimeline() {
-        const itemWidth = 80; // Adjust as needed for responsiveness
-        timelineWrapper.scrollLeft = currentIndex * itemWidth - (timelineWrapper.clientWidth / 2 - itemWidth / 2);
+        const dotSize = 10; // Size of each dot from CSS
+        const dotSpacing = 10; // Space between dots from CSS
+        const itemWidth = dotSize + dotSpacing; // Total width for each dot + space
+
+        // Calculate the scroll position to center the current item
+        const totalDotsWidth = items.length * itemWidth;
+        const offset = Math.min(
+            (currentIndex * itemWidth) - (timelineWrapper.clientWidth / 2 - itemWidth / 2),
+            totalDotsWidth - timelineWrapper.clientWidth
+        );
+
+        timelineWrapper.scrollLeft = Math.max(0, offset);
 
         // Update dot states
         document.querySelectorAll('.dot').forEach((dot, index) => {
@@ -57,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
     }
 
+    // Navigation buttons
     navButtons.left.addEventListener('click', () => {
         if (currentIndex > 0) {
             currentIndex--;
@@ -71,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-     // Keyboard navigation
+    // Keyboard navigation
     document.addEventListener('keydown', (e) => {
         if (e.key === 'ArrowLeft') {
             if (currentIndex > 0) {
@@ -85,5 +96,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
-    
 });
