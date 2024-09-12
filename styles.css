@@ -1480,8 +1480,6 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
     text-align: center;
     margin: 0 auto; /* Center content */
-    max-width: 80%; /* Limit width to ensure readability */
-    word-wrap: break-word; /* Ensure long words break properly */
 }
 
 /* Timeline Dots Styling */
@@ -1493,12 +1491,12 @@ footer {
     bottom: 20px; /* Increased spacing from the bottom */
     left: 0;
     right: 0;
-    padding: 0 40px; /* Increased padding for better spacing */
+    padding: 0 20px; /* Increased padding for better spacing */
 }
 
 .dot {
-    width: 15px; /* Increased size */
-    height: 15px; /* Increased size */
+    width: 12px; /* Increased size */
+    height: 12px; /* Increased size */
     border-radius: 50%;
     background-color: #ccc; /* Default color for dots */
     cursor: pointer;
@@ -1543,7 +1541,6 @@ footer {
     justify-content: center;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     z-index: 10; /* Ensure buttons are above other content */
 }
 
