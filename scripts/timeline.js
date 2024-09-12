@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const timelineContainer = document.querySelector('.timeline');
+    const timelineWrapper = document.querySelector('.timeline-wrapper');
     const timelineContent = document.querySelector('.timeline-content');
     const timelineDots = document.querySelector('.timeline-dots');
     const navButtons = {
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         right: document.querySelector('.nav-button.right')
     };
     let items = [];
-    let currentIndex = 0; // Start at the first item
+    let currentIndex = 0;
 
     // Fetch and load timeline data
     fetch('about/timeline.json')
@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateTimeline() {
-        const itemWidth = 80; // Adjust based on item size
-        timelineContainer.scrollLeft = currentIndex * itemWidth - (timelineContainer.clientWidth / 2 - itemWidth / 2);
+        const itemWidth = 80; // Adjust as needed for responsiveness
+        timelineWrapper.scrollLeft = currentIndex * itemWidth - (timelineWrapper.clientWidth / 2 - itemWidth / 2);
 
         // Update dot states
         document.querySelectorAll('.dot').forEach((dot, index) => {
