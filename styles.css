@@ -1436,9 +1436,6 @@ footer {
 }
 
 /* Horizontal Timeline Container */
-
-
-
 /* Timeline Container Styling */
 .timeline-container {
     display: flex;
@@ -1457,23 +1454,33 @@ footer {
 
 .timeline {
     display: flex;
+    justify-content: center;
+    align-items: center;
     transition: transform 0.3s ease;
 }
 
 .timeline-item {
-    min-width: 100px; /* Adjust based on item size */
+    min-width: 40px; /* Adjust based on item size */
     margin: 0 10px;
     text-align: center;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.timeline-item.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc; /* Dot color */
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .timeline-item.active {
     color: var(--body-light-text-color);
     background-color: var(--btn-main-bg-color);
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1488,19 +1495,6 @@ footer {
     background-color: var(--body-bg-color);
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.timeline-details {
-    font-size: 0.9em; /* Slightly smaller details text */
-    color: #666; /* Lighter text color for details */
-}
-
-.dot {
-    width: 20px; /* Small dot size */
-    height: 20px; /* Small dot size */
-    margin: 0 15px; /* Space around dots */
-    border-radius: 50%;
-    background-color: var(--contr-bg);
 }
 
 .nav-button {
@@ -1525,6 +1519,7 @@ footer {
     position: absolute;
     right: 0;
 }
+
 
 
 
