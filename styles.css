@@ -1436,89 +1436,90 @@ footer {
 }
 
 /* Horizontal Timeline Container */
-/* Timeline Container Styling */
-.timeline-container {
+/* Timeline Wrapper Styling */
+.timeline-wrapper {
     display: flex;
     align-items: center;
-    position: relative;
     width: 100%;
-    overflow: hidden;
-    max-width: 1000px; /* Adjust as needed */
+    max-width: 1000px;
     margin: auto;
-}
-
-.timeline-wrapper {
-    flex: 1;
-    overflow: hidden;
+    position: relative;
 }
 
 .timeline {
+    flex: 1;
     display: flex;
-    justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease;
-}
-
-.timeline-item {
-    min-width: 40px; /* Adjust based on item size */
-    margin: 0 10px;
-    text-align: center;
-    cursor: pointer;
+    overflow: hidden;
     position: relative;
 }
 
-.timeline-item.dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ccc; /* Dot color */
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.timeline-item.active {
-    color: var(--body-light-text-color);
-    background-color: var(--btn-main-bg-color);
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.8em;
-}
-
 .timeline-content {
-    flex: 1;
+    flex: 2;
     padding: 20px;
     border: 1px solid var(--contr-bg);
     border-radius: 8px;
     background-color: var(--body-bg-color);
-    text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.timeline-dots {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc; /* Default color for dots */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.dot.active {
+    background-color: var(--btn-main-bg-color); /* Highlight color for the active dot */
+}
+
+.dot:hover {
+    background-color: var(--btn-main-bg-hv-color); /* Color on hover */
 }
 
 .nav-button {
-    background: transparent;
+    background-color: var(--btn-main-bg-color);
+    color: var(--body-light-text-color);
     border: none;
+    border-radius: 50%;
+    padding: 10px;
     cursor: pointer;
-    font-size: 2rem;
-    color: var(--btn-main-bg-color);
-    transition: color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 18px;
+    line-height: 0;
 }
 
 .nav-button:hover {
-    color: var(--btn-main-bg-hv-color);
+    background-color: var(--btn-main-bg-hv-color);
+    transform: scale(1.05);
 }
 
 .nav-button.left {
     position: absolute;
-    left: 0;
+    left: 10px;
 }
 
 .nav-button.right {
     position: absolute;
-    right: 0;
+    right: 10px;
 }
+
 
 
 
