@@ -1,82 +1,71 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const timelineContainer = document.getElementById('timeline');
-    const leftArrow = document.getElementById('left-arrow');
-    const rightArrow = document.getElementById('right-arrow');
-    let timelineData = [];
-    let currentIndex = 0;
+    const timelineContainer = document.querySelector('.timeline');
+    const timelineContent = document.querySelector('.timeline-content');
+    const timelineWrapper = document.querySelector('.timeline-wrapper');
+    const navButtons = {
+        left: document.querySelector('.nav-button.left'),
+        right: document.querySelector('.nav-button.right')
+    };
+    let items = [];
+    let currentIndex = 1; // Start at the second item
 
-    function fetchTimelineData() {
-        fetch('about/timeline.json')
-            .then(response => response.json())
-            .then(data => {
-                timelineData = data;
-                renderTimeline();
-                updateArrows();
-            })
-            .catch(error => {
-                console.error('Error fetching timeline data:', error);
-            });
-    }
+    // Fetch and load timeline data
+    fetch('about/timeline.json')
+        .then(response => response.json())
+        .then(data => {
+            items = data;
+            populateTimeline();
+            updateTimeline();
+        })
+        .catch(error => console.error('Error loading timeline data:', error));
 
-    function renderTimeline() {
-        timelineContainer.innerHTML = ''; // Clear existing content
-    
-        const visibleCount = 3; // Number of items to show at a time
-        const start = Math.max(0, currentIndex - 1);
-        const end = Math.min(timelineData.length, currentIndex + 2);
-    
-        // Show items to the left and right of the current index
-        for (let i = start; i < end; i++) {
+    function populateTimeline() {
+        timelineContainer.innerHTML = '';
+        items.forEach((item, index) => {
             const timelineItem = document.createElement('div');
-            const itemData = timelineData[i];
-
-            if (i === currentIndex) {
-                timelineItem.classList.add('timeline-item', 'focus');
-                timelineItem.innerHTML = `
-                    <img src="${itemData.logo}" alt="${itemData.title}" class="timeline-logo">
-                    <div class="timeline-content">
-                        <div class="timeline-date">${itemData.date}</div>
-                        <div class="timeline-title">${itemData.title}</div>
-                        <div class="timeline-description">${itemData.description}</div>
-                    </div>
-                `;
-            } else {
-                timelineItem.classList.add('dot');
-            }
-    
+            timelineItem.classList.add('timeline-item');
+            timelineItem.dataset.index = index;
+            timelineItem.innerHTML = `
+                <img src="${item.logo}" alt="${item.title}" style="width: 20px; height: 20px;">
+                <div>${item.title}</div>
+            `;
+            timelineItem.addEventListener('click', () => {
+                currentIndex = index;
+                updateTimeline();
+            });
             timelineContainer.appendChild(timelineItem);
-        }
-
-        // Center the focused item
-        const timelineItems = Array.from(timelineContainer.getElementsByClassName('timeline-item'));
-        const focusedItem = timelineItems.find(item => item.classList.contains('focus'));
-        
-        if (focusedItem) {
-            const containerWidth = timelineContainer.clientWidth;
-            const itemWidth = focusedItem.offsetWidth;
-            const offset = focusedItem.offsetLeft - (containerWidth / 2) + (itemWidth / 2);
-            timelineContainer.scrollLeft = offset;
-        }
+        });
     }
 
-    function updateArrows() {
-        leftArrow.style.display = currentIndex > 0 ? 'block' : 'none';
-        rightArrow.style.display = currentIndex < timelineData.length - 1 ? 'block' : 'none';
+    function updateTimeline() {
+        const centerIndex = Math.max(0, Math.min(items.length - 1, currentIndex));
+        const itemWidth = 120; // Adjust based on item size
+        timelineWrapper.scrollLeft = centerIndex * itemWidth - (timelineWrapper.clientWidth / 2 - itemWidth / 2);
+
+        document.querySelectorAll('.timeline-item').forEach((item, index) => {
+            item.classList.toggle('active', index === centerIndex);
+        });
+
+        const currentItem = items[centerIndex];
+        timelineContent.innerHTML = `
+            <h3>${currentItem.title}</h3>
+            <p>${currentItem.date}</p>
+            <p>${currentItem.description}</p>
+            <p>${currentItem.details}</p>
+        `;
     }
 
-    function navigateTimeline(direction) {
-        if (direction === 'left' && currentIndex > 0) {
+    navButtons.left.addEventListener('click', () => {
+        if (currentIndex > 0) {
             currentIndex--;
-        } else if (direction === 'right' && currentIndex < timelineData.length - 1) {
-            currentIndex++;
+            updateTimeline();
         }
-        renderTimeline();
-        updateArrows();
-    }
+    });
 
-    leftArrow.addEventListener('click', () => navigateTimeline('left'));
-    rightArrow.addEventListener('click', () => navigateTimeline('right'));
-
-    // Fetch and render timeline data on page load
-    fetchTimelineData();
+    navButtons.right.addEventListener('click', () => {
+        if (currentIndex < items.length - 1) {
+            currentIndex++;
+            updateTimeline();
+        }
+    });
 });
