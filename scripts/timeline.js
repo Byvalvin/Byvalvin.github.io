@@ -36,8 +36,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateTimeline() {
-        const itemWidth = 80; // Adjust as needed for responsiveness
-        timelineWrapper.scrollLeft = currentIndex * itemWidth - (timelineWrapper.clientWidth / 2 - itemWidth / 2);
+        // Calculate item width based on dot size and spacing
+        const dotSize = 10; // Width and height of the dot
+        const dotSpacing = 10; // Space between dots
+        const itemWidth = dotSize + dotSpacing;
+
+        // Center the current dot in the viewport
+        const totalDotsWidth = items.length * itemWidth;
+        const offset = Math.min(
+            (currentIndex * itemWidth) - (timelineWrapper.clientWidth / 2 - itemWidth / 2),
+            totalDotsWidth - timelineWrapper.clientWidth
+        );
+
+        timelineWrapper.scrollLeft = Math.max(0, offset);
 
         // Update dot states
         document.querySelectorAll('.dot').forEach((dot, index) => {
@@ -57,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
     }
 
+    // Navigation buttons
     navButtons.left.addEventListener('click', () => {
         if (currentIndex > 0) {
             currentIndex--;
@@ -71,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-     // Keyboard navigation
+    // Keyboard navigation
     document.addEventListener('keydown', (e) => {
         if (e.key === 'ArrowLeft') {
             if (currentIndex > 0) {
@@ -85,5 +97,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
-    
 });
