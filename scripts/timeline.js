@@ -36,8 +36,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateTimeline() {
-        const itemWidth = 80; // Adjust as needed for responsiveness
-        timelineWrapper.scrollLeft = currentIndex * itemWidth - (timelineWrapper.clientWidth / 2 - itemWidth / 2);
+        const dotWidth = 15; // Adjusted width for dot
+        const dotSpacing = 30; // Space between dots
+        const itemWidth = dotWidth + dotSpacing; // Total width for each dot + space
+
+        // Center the current dot
+        const totalDotsWidth = items.length * itemWidth;
+        const offset = Math.min(
+            (currentIndex * itemWidth) - (timelineWrapper.clientWidth / 2 - itemWidth / 2),
+            totalDotsWidth - timelineWrapper.clientWidth
+        );
+
+        timelineWrapper.scrollLeft = Math.max(0, offset);
 
         // Update dot states
         document.querySelectorAll('.dot').forEach((dot, index) => {
