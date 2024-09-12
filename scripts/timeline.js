@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
         right: document.querySelector('.nav-button.right')
     };
     let items = [];
-    let currentIndex = 1; // Start at the second item
+    let currentIndex = 0; // Start at the first item
 
     // Fetch and load timeline data
-    fetch('about/timeline.json')
+    fetch('path/to/timeline.json')
         .then(response => response.json())
         .then(data => {
             items = data;
@@ -24,11 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
         items.forEach((item, index) => {
             const timelineItem = document.createElement('div');
             timelineItem.classList.add('timeline-item');
+            if (index !== currentIndex) {
+                timelineItem.classList.add('dot');
+            }
             timelineItem.dataset.index = index;
-            timelineItem.innerHTML = `
+            timelineItem.innerHTML = index === currentIndex ? `
                 <img src="${item.logo}" alt="${item.title}" style="width: 20px; height: 20px;">
                 <div>${item.title}</div>
-            `;
+            ` : '';
             timelineItem.addEventListener('click', () => {
                 currentIndex = index;
                 updateTimeline();
@@ -39,11 +42,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateTimeline() {
         const centerIndex = Math.max(0, Math.min(items.length - 1, currentIndex));
-        const itemWidth = 120; // Adjust based on item size
+        const itemWidth = 80; // Adjust based on item size
         timelineWrapper.scrollLeft = centerIndex * itemWidth - (timelineWrapper.clientWidth / 2 - itemWidth / 2);
 
         document.querySelectorAll('.timeline-item').forEach((item, index) => {
-            item.classList.toggle('active', index === centerIndex);
+            if (index === centerIndex) {
+                item.classList.add('active');
+                item.classList.remove('dot');
+                item.innerHTML = `
+                    <img src="${items[index].logo}" alt="${items[index].title}" style="width: 30px; height: 30px;">
+                    <div>${items[index].title}</div>
+                `;
+            } else {
+                item.classList.remove('active');
+                item.classList.add('dot');
+                item.innerHTML = '';
+            }
         });
 
         const currentItem = items[centerIndex];
