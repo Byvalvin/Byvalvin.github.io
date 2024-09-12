@@ -60,7 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const currentItem = items[currentIndex];
         timelineContent.innerHTML = `
-            <h3>${currentItem.title}</h3>
+            <div class="timeline-header">
+                <img src="${currentItem.logo}" alt="${currentItem.title} Logo" class="timeline-logo">
+                <h3>${currentItem.title}</h3>
+            </div>
             <p>${currentItem.date}</p>
             <p>${currentItem.description}</p>
             <p>${currentItem.details}</p>
@@ -97,3 +100,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
