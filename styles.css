@@ -1511,16 +1511,21 @@ footer {
     background-color: var(--btn-main-bg-hv-color); /* Color on hover */
 }
 
+/* Navigation Buttons Styling */
 .nav-button {
     background-color: var(--btn-main-bg-color);
     color: var(--body-light-text-color);
     border: none;
     border-radius: 50%;
-    padding: 10px;
+    width: 50px; /* Increased size */
+    height: 50px; /* Increased size */
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-    font-size: 18px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    font-size: 24px; /* Adjusted font size for better visibility */
     line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -1529,16 +1534,23 @@ footer {
 
 .nav-button:hover {
     background-color: var(--btn-main-bg-hv-color);
-    transform: scale(1.05);
+    transform: scale(1.1); /* Slightly increase size on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.nav-button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.5); /* Add custom focus outline */
 }
 
 .nav-button.left {
-    left: 10px;
+    left: 20px; /* Increased distance from the edge */
 }
 
 .nav-button.right {
-    right: 10px;
+    right: 20px; /* Increased distance from the edge */
 }
+
 
 
 
