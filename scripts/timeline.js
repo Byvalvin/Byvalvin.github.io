@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         timelineDots.innerHTML = '';
         items.forEach((item, index) => {
             const dot = document.createElement('div');
-            dot.classList.add('dot');
+            dot.classList.add('timeline-dot');
             if (index === currentIndex) {
                 dot.classList.add('active');
             }
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         timelineWrapper.scrollLeft = currentIndex * itemWidth - (timelineWrapper.clientWidth / 2 - itemWidth / 2);
 
         // Update dot states
-        document.querySelectorAll('.dot').forEach((dot, index) => {
+        document.querySelectorAll('.timeline-dot').forEach((dot, index) => {
             if (index === currentIndex) {
                 dot.classList.add('active');
             } else {
@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
     }
 
+    // Navigation Buttons
     navButtons.left.addEventListener('click', () => {
         if (currentIndex > 0) {
             currentIndex--;
@@ -68,6 +69,21 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentIndex < items.length - 1) {
             currentIndex++;
             updateTimeline();
+        }
+    });
+
+    // Arrow Key Navigation
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowLeft') {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateTimeline();
+            }
+        } else if (event.key === 'ArrowRight') {
+            if (currentIndex < items.length - 1) {
+                currentIndex++;
+                updateTimeline();
+            }
         }
     });
 });
