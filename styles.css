@@ -1482,25 +1482,26 @@ footer {
     margin: 0 auto; /* Center content */
 }
 
+/* Timeline Dots Styling */
 .timeline-dots {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10px;
     position: absolute;
     bottom: 10px;
     left: 0;
     right: 0;
+    padding: 0 20px; /* Add padding to avoid dots touching the edges */
 }
 
 .dot {
-    width: 10px;
-    height: 10px;
+    width: 20px; /* Increased size */
+    height: 20px; /* Increased size */
     border-radius: 50%;
     background-color: #ccc; /* Default color for dots */
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
+    position: relative;
 }
 
 .dot.active {
@@ -1511,14 +1512,25 @@ footer {
     background-color: var(--btn-main-bg-hv-color); /* Color on hover */
 }
 
+.timeline-dots::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 2px;
+    background-color: #ccc; /* Color of the line connecting dots */
+    z-index: -1; /* Ensure line is behind the dots */
+}
+
 /* Navigation Buttons Styling */
 .nav-button {
     background-color: var(--btn-main-bg-color);
     color: var(--body-light-text-color);
     border: none;
     border-radius: 50%;
-    width: 50px; /* Increased size */
-    height: 50px; /* Increased size */
+    width: 60px; /* Increased size */
+    height: 60px; /* Increased size */
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
     font-size: 24px; /* Adjusted font size for better visibility */
@@ -1550,6 +1562,7 @@ footer {
 .nav-button.right {
     right: 20px; /* Increased distance from the edge */
 }
+
 
 
 
