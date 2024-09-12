@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const timelineContainer = document.querySelector('.timeline');
     const timelineContent = document.querySelector('.timeline-content');
-    const timelineWrapper = document.querySelector('.timeline-wrapper');
+    const timelineDots = document.querySelector('.timeline-dots');
     const navButtons = {
         left: document.querySelector('.nav-button.left'),
         right: document.querySelector('.nav-button.right')
@@ -20,47 +20,35 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error('Error loading timeline data:', error));
 
     function populateTimeline() {
-        timelineContainer.innerHTML = '';
+        timelineDots.innerHTML = '';
         items.forEach((item, index) => {
-            const timelineItem = document.createElement('div');
-            timelineItem.classList.add('timeline-item');
-            if (index !== currentIndex) {
-                timelineItem.classList.add('dot');
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (index === currentIndex) {
+                dot.classList.add('active');
             }
-            timelineItem.dataset.index = index;
-            timelineItem.innerHTML = index === currentIndex ? `
-                <img src="${item.logo}" alt="${item.title}" style="width: 20px; height: 20px;">
-                <div>${item.title}</div>
-            ` : '';
-            timelineItem.addEventListener('click', () => {
+            dot.addEventListener('click', () => {
                 currentIndex = index;
                 updateTimeline();
             });
-            timelineContainer.appendChild(timelineItem);
+            timelineDots.appendChild(dot);
         });
     }
 
     function updateTimeline() {
-        const centerIndex = Math.max(0, Math.min(items.length - 1, currentIndex));
         const itemWidth = 80; // Adjust based on item size
-        timelineWrapper.scrollLeft = centerIndex * itemWidth - (timelineWrapper.clientWidth / 2 - itemWidth / 2);
+        timelineContainer.scrollLeft = currentIndex * itemWidth - (timelineContainer.clientWidth / 2 - itemWidth / 2);
 
-        document.querySelectorAll('.timeline-item').forEach((item, index) => {
-            if (index === centerIndex) {
-                item.classList.add('active');
-                item.classList.remove('dot');
-                item.innerHTML = `
-                    <img src="${items[index].logo}" alt="${items[index].title}" style="width: 30px; height: 30px;">
-                    <div>${items[index].title}</div>
-                `;
+        // Update dot states
+        document.querySelectorAll('.dot').forEach((dot, index) => {
+            if (index === currentIndex) {
+                dot.classList.add('active');
             } else {
-                item.classList.remove('active');
-                item.classList.add('dot');
-                item.innerHTML = '';
+                dot.classList.remove('active');
             }
         });
 
-        const currentItem = items[centerIndex];
+        const currentItem = items[currentIndex];
         timelineContent.innerHTML = `
             <h3>${currentItem.title}</h3>
             <p>${currentItem.date}</p>
