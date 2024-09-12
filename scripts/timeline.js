@@ -36,18 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateTimeline() {
-        const dotWidth = 15; // Width of each dot
-        const dotSpacing = 30; // Space between dots
-        const itemWidth = dotWidth + dotSpacing; // Total width for each dot + space
-
-        // Center the current dot
-        const totalDotsWidth = items.length * itemWidth;
-        const offset = Math.min(
-            (currentIndex * itemWidth) - (timelineWrapper.clientWidth / 2 - itemWidth / 2),
-            totalDotsWidth - timelineWrapper.clientWidth
-        );
-
-        timelineWrapper.scrollLeft = Math.max(0, offset);
+        const itemWidth = 80; // Adjust as needed for responsiveness
+        timelineWrapper.scrollLeft = currentIndex * itemWidth - (timelineWrapper.clientWidth / 2 - itemWidth / 2);
 
         // Update dot states
         document.querySelectorAll('.dot').forEach((dot, index) => {
@@ -58,7 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Update content
         const currentItem = items[currentIndex];
         timelineContent.innerHTML = `
             <h3>${currentItem.title}</h3>
@@ -68,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
     }
 
-    // Navigation buttons
     navButtons.left.addEventListener('click', () => {
         if (currentIndex > 0) {
             currentIndex--;
@@ -80,21 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentIndex < items.length - 1) {
             currentIndex++;
             updateTimeline();
-        }
-    });
-
-    // Keyboard navigation
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') {
-            if (currentIndex > 0) {
-                currentIndex--;
-                updateTimeline();
-            }
-        } else if (e.key === 'ArrowRight') {
-            if (currentIndex < items.length - 1) {
-                currentIndex++;
-                updateTimeline();
-            }
         }
     });
 });
