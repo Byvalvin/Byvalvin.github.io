@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to handle keyboard navigation
     const handleKeyDown = (e) => {
+        deactivateAllTabs();
         if (e.key === 'Tab') {
             e.preventDefault();
             const index = Array.from(tabLinks).indexOf(e.target);
