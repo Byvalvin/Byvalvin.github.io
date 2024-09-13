@@ -1492,6 +1492,16 @@ footer {
     height: 20px; /* Adjusted height to make room for the line */
 }
 
+.timeline-dots::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 2px;
+    background-color: #ccc; /* Color of the line connecting dots */
+    z-index: 0; /* Ensure line is behind the dots */
+}
 .dot {
     width: 12px; /* Increased size */
     height: 12px; /* Increased size */
