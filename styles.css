@@ -1511,16 +1511,6 @@ footer {
     background-color: var(--btn-main-bg-hv-color); /* Color on hover */
 }
 
-.timeline-dots::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    height: 2px;
-    background-color: #ccc; /* Color of the line connecting dots */
-    z-index: 0; /* Ensure line is behind the dots */
-}
 
 /* Navigation Buttons Styling */
 .nav-button {
