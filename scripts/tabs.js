@@ -2,6 +2,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const tabLinks = document.querySelectorAll('.tab-link');
     const tabContents = document.querySelectorAll('.tab-content');
 
+    // tab selection
+    const handleTabSelection = (tabId) => {
+        const targetTab = document.querySelector(`#${tabId}`);
+        if (targetTab) {
+            targetTab.classList.add('active');
+        } else {
+            console.error(`No tab content found for ID: ${tabId}`);
+            return; // Exit early if no target tab is found
+        }
+    }
     // Function to handle tab switching
     const handleTabClick = (e) => {
         e.preventDefault();
@@ -25,13 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
         clickedTab.classList.add('active');
         clickedTab.setAttribute('aria-selected', 'true');
 
-        const targetTab = document.querySelector(`#${tabId}`);
-        if (targetTab) {
-            targetTab.classList.add('active');
-        } else {
-            console.error(`No tab content found for ID: ${tabId}`);
-            return; // Exit early if no target tab is found
-        }
+        // use id to select tab
+        handleTabSelection(tabId);
     };
 
      // Function to handle keyboard navigation
@@ -41,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const index = Array.from(tabLinks).indexOf(e.target);
             const nextIndex = (index + 1) % tabLinks.length;
             tabLinks[nextIndex].focus();
-            handleTabClick({ currentTarget: tabLinks[nextIndex] });
+            handleTabSelection(nextIndex);
         }
     };
 
