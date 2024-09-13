@@ -1480,6 +1480,8 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
     text-align: center;
     margin: 0 auto; /* Center content */
+    position: relative;
+    z-index: 1; /* Ensure content is above the timeline line */
 }
 
 /* Timeline Dots Styling */
@@ -1491,7 +1493,7 @@ footer {
     bottom: 20px; /* Increased spacing from the bottom */
     left: 0;
     right: 0;
-    padding: 0 20px; /* Increased padding for better spacing */
+    padding: 0 40px; /* Increased padding for better spacing */
     height: 20px; /* Adjusted height to make room for the line */
 }
 
@@ -1523,6 +1525,8 @@ footer {
     height: 2px;
     background-color: #ccc; /* Color of the line connecting dots */
     z-index: 0; /* Ensure line is behind the dots */
+    /* Adjust the width of the line to fit between the first and last dot */
+    width: calc(100% - 40px); /* Subtract the left and right padding */
 }
 
 /* Navigation Buttons Styling */
