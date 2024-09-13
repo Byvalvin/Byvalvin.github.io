@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const clickedTab = e.currentTarget; // Use e.currentTarget instead of e.target
         const tabId = clickedTab.dataset.tab;
+        console.log(tabId);
 
         if (!tabId) {
             console.error('No tab ID found for the clicked tab.');
