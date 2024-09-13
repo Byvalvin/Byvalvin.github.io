@@ -1,24 +1,24 @@
 [
     {
         "date": "2015 - 2018",
-        "title": "Full IB",
-        "description": "Explored software development and coding.",
+        "title": "IB Diploma",
+        "description": "Developed critical thinking, adaptability, and research skills.",
         "logo": "about/images/ib.png",
-        "details": "Experimented with programming languages and tools."
+        "details": "Honed my ability to learn independently, adapt to complex challenges, and engage in rigorous research; a strong foundation for my future studies."
     },
     {
         "date": "2019 - 2024",
         "title": "University of Alberta - CS Honours",
-        "description": "Pursued a BSc. with Honors in Computing Science.",
+        "description": "Pursued a BSc. with Honours in Computing Science.",
         "logo": "about/images/uoa.png",
-        "details": "Algorithms, Data structures, and Software engineering. Graduated First Class Honors and received scholarships."
+        "details": "Specialized in algorithms, data structures, and software engineering. Graduated with First Class Honors and received multiple scholarships."
     },
     {
         "date": "2021 - 2023",
         "title": "Arts For YoungSTARS",
         "description": "President and Advisor",
         "logo": "about/images/afys.png",
-        "details": "Coordinated executive board and team activities, managed budgets, organized events, and handled logistics for fundraising and safety."
+        "details": "Led the executive board, managed budgets, organized events, and handled logistics for fundraising and safety."
     },
     {
         "date": "2021",
@@ -35,4 +35,3 @@
         "details": "Defined product requirements, prioritized features, designed educational games, and developed an organism identification system using OpenCV."
     }
 ]
-
