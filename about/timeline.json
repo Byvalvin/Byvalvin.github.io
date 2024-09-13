@@ -31,7 +31,7 @@
         "date": "2023",
         "title": "Product Owner",
         "description": "Aquatic Biosphere Project",
-        "logo": "about/images/abp.png",
+        "logo": "about/images/abp.webp",
         "details": "Defined product requirements, prioritized features, designed educational games, and developed an organism identification system using OpenCV."
     }
 ]
