@@ -1,86 +1,38 @@
 [
     {
-        "date": "2010 - 2012",
-        "title": "Full IB Student",
+        "date": "2015 - 2018",
+        "title": "Full IB",
         "description": "Explored software development and coding.",
         "logo": "about/images/ib.png",
         "details": "Experimented with programming languages and tools."
     },
     {
-        "date": "2013 - 2017",
+        "date": "2019 - 2024",
         "title": "University of Alberta - CS Honours",
-        "description": "Pursued a Computer Science Honours degree.",
+        "description": "Pursued a Bachelor of Science with Honors in Computing Science.",
         "logo": "about/images/uoa.png",
-        "details": "Specialized in algorithms, data structures, and software engineering."
+        "details": "Specialized in algorithms, data structures, and software engineering. Graduated with First Class Honors and received scholarships."
     },
     {
-        "date": "2018 - Present",
-        "title": "Freelance and Small Organizations",
-        "description": "Worked on various projects for small organizations.",
-        "logo": "about/images/abp.webp",
-        "details": "Developed web applications, optimized systems, and collaborated with teams."
-    },
-        {
-        "date": "2010 - 2012",
-        "title": "Full IB Student",
-        "description": "Explored software development and coding.",
-        "logo": "path/to/logo1.png",
-        "details": "Experimented with programming languages and tools."
+        "date": "2021 - 2023",
+        "title": "Arts For YoungSTARS",
+        "description": "President and Advisor",
+        "logo": "about/images/afys.png",
+        "details": "Coordinated executive board and team activities, managed budgets, organized events, and handled logistics for fundraising and safety."
     },
     {
-        "date": "2013 - 2017",
-        "title": "University of Alberta - CS Honours",
-        "description": "Pursued a Computer Science Honours degree.",
-        "logo": "path/to/logo2.png",
-        "details": "Specialized in algorithms, data structures, and software engineering."
+        "date": "2021",
+        "title": "Research Assistant",
+        "description": "Laboratory of Intelligent Manufacturing Design and Automation",
+        "logo": "about/images/limda.png",
+        "details": "Developed iOS and Android applications, applied machine learning models, and established frameworks for image classification in app development."
     },
     {
-        "date": "2018 - Present",
-        "title": "Freelance and Small Organizations",
-        "description": "Worked on various projects for small organizations.",
-        "logo": "path/to/logo3.png",
-        "details": "Developed web applications, optimized systems, and collaborated with teams."
-    },
-        {
-        "date": "2010 - 2012",
-        "title": "Full IB Student",
-        "description": "Explored software development and coding.",
-        "logo": "path/to/logo1.png",
-        "details": "Experimented with programming languages and tools."
-    },
-    {
-        "date": "2013 - 2017",
-        "title": "University of Alberta - CS Honours",
-        "description": "Pursued a Computer Science Honours degree.",
-        "logo": "path/to/logo2.png",
-        "details": "Specialized in algorithms, data structures, and software engineering."
-    },
-    {
-        "date": "2018 - Present",
-        "title": "Freelance and Small Organizations",
-        "description": "Worked on various projects for small organizations.",
-        "logo": "path/to/logo3.png",
-        "details": "Developed web applications, optimized systems, and collaborated with teams."
-    },
-        {
-        "date": "2010 - 2012",
-        "title": "Full IB Student",
-        "description": "Explored software development and coding.",
-        "logo": "path/to/logo1.png",
-        "details": "Experimented with programming languages and tools."
-    },
-    {
-        "date": "2013 - 2017",
-        "title": "University of Alberta - CS Honours",
-        "description": "Pursued a Computer Science Honours degree.",
-        "logo": "path/to/logo2.png",
-        "details": "Specialized in algorithms, data structures, and software engineering."
-    },
-    {
-        "date": "2018 - Present",
-        "title": "Freelance and Small Organizations",
-        "description": "Worked on various projects for small organizations.",
-        "logo": "path/to/logo3.png",
-        "details": "Developed web applications, optimized systems, and collaborated with teams."
+        "date": "2023",
+        "title": "Product Owner",
+        "description": "Aquatic Biosphere Project",
+        "logo": "about/images/abp.png",
+        "details": "Defined product requirements, prioritized features, designed educational games, and developed an organism identification system using OpenCV."
     }
 ]
+
