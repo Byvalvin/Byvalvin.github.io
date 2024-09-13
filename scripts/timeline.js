@@ -36,8 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateTimeline() {
-        const dotSize = 10; // Size of each dot from CSS
-        const dotSpacing = 10; // Space between dots from CSS
+        // Update the position of the timeline dots
+        const dotSize = 12; // Size of each dot
+        const dotSpacing = 15; // Space between dots
         const itemWidth = dotSize + dotSpacing; // Total width for each dot + space
 
         // Calculate the scroll position to center the current item
@@ -51,13 +52,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Update dot states
         document.querySelectorAll('.dot').forEach((dot, index) => {
-            if (index === currentIndex) {
-                dot.classList.add('active');
-            } else {
-                dot.classList.remove('active');
-            }
+            dot.classList.toggle('active', index === currentIndex);
         });
 
+        // Update the content based on the current index
         const currentItem = items[currentIndex];
         timelineContent.innerHTML = `
             <div class="timeline-header">
