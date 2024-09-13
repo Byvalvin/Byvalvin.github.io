@@ -86,8 +86,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }
+
+        // Update navigation buttons visibility
+        updateNavButtonVisibility();
     }
 
+    function updateNavButtonVisibility() {
+        // Show or hide navigation buttons based on current index
+        navButtons.left.style.display = currentIndex > 0 ? 'block' : 'none';
+        navButtons.right.style.display = currentIndex < items.length - 1 ? 'block' : 'none';
+    }
 
     // Navigation buttons
     navButtons.left.addEventListener('click', () => {
@@ -119,4 +127,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
 
