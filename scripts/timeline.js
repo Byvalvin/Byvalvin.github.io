@@ -40,21 +40,21 @@ document.addEventListener('DOMContentLoaded', () => {
         const dotSize = 12; // Size of each dot
         const dotSpacing = 15; // Space between dots
         const itemWidth = dotSize + dotSpacing; // Total width for each dot + space
-
+    
         // Calculate the scroll position to center the current item
         const totalDotsWidth = items.length * itemWidth;
         const offset = Math.min(
             (currentIndex * itemWidth) - (timelineWrapper.clientWidth / 2 - itemWidth / 2),
             totalDotsWidth - timelineWrapper.clientWidth
         );
-
+    
         timelineWrapper.scrollLeft = Math.max(0, offset);
-
+    
         // Update dot states
         document.querySelectorAll('.dot').forEach((dot, index) => {
             dot.classList.toggle('active', index === currentIndex);
         });
-
+    
         // Update the content based on the current index
         const currentItem = items[currentIndex];
         timelineContent.innerHTML = `
@@ -64,9 +64,30 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <p>${currentItem.date}</p>
             <p>${currentItem.description}</p>
-            <p>${currentItem.details}</p>
+            <button class="accordion-btn">Show Details</button>
+            <div class="accordion-content">
+                <h4>Details</h4>
+                <p>${currentItem.details}</p>
+            </div>
         `;
+    
+        // Attach event listener to the accordion button
+        const accordionBtn = document.querySelector('.accordion-btn');
+        const accordionContent = document.querySelector('.accordion-content');
+    
+        if (accordionBtn && accordionContent) {
+            accordionBtn.addEventListener('click', () => {
+                if (accordionContent.style.display === 'none' || accordionContent.style.display === '') {
+                    accordionContent.style.display = 'block';
+                    accordionBtn.textContent = 'Hide Details';
+                } else {
+                    accordionContent.style.display = 'none';
+                    accordionBtn.textContent = 'Show Details';
+                }
+            });
+        }
     }
+
 
     // Navigation buttons
     navButtons.left.addEventListener('click', () => {
