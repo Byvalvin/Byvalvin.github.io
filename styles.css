@@ -1481,7 +1481,6 @@ footer {
     text-align: center;
     margin: 0 auto; /* Center content */
     position: relative;
-    z-index: 1; /* Ensure content is above the timeline line */
 }
 
 /* Timeline Dots Styling */
