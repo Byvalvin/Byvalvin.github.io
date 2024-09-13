@@ -1481,6 +1481,9 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
     text-align: center;
     margin: 0 auto; /* Center content */
+    margin-right: 80px; /* Add margin to the right to prevent content from being covered by the right button */
+    margin-left: 80px;  /* Add margin to the left to prevent content from being covered by the left button */
+    box-sizing: border-box; /* Ensure padding and border are included in the width and height */
 }
 
 /* Timeline Dots Styling */
@@ -1590,7 +1593,7 @@ footer {
     border-radius: 5px;
     margin-top: 5px;
     background-color: var(--body-bg-color);
-    font-size: 12px; /* Smaller font size for details text */
+    font-size: 14px; /* Smaller font size for details text */
 }
 
 .accordion-content h4 {
