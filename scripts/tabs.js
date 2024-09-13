@@ -2,57 +2,58 @@ document.addEventListener('DOMContentLoaded', () => {
     const tabLinks = document.querySelectorAll('.tab-link');
     const tabContents = document.querySelectorAll('.tab-content');
 
-    // tab selection
-    const handleTabSelection = (tabId) => {
-        const targetTab = document.querySelector(`#${tabId}`);
-        if (targetTab) {
-            targetTab.classList.add('active');
-        } else {
-            console.error(`No tab content found for ID: ${tabId}`);
-            return; // Exit early if no target tab is found
-        }
-    }
-    // Function to handle tab switching
-    const handleTabClick = (e) => {
-        e.preventDefault();
-        
-        const clickedTab = e.currentTarget; // Use e.currentTarget instead of e.target
-        const tabId = clickedTab.dataset.tab;
-        console.log(tabId);
-
-        if (!tabId) {
-            console.error('No tab ID found for the clicked tab.');
-            return; // Exit early if no tab ID is found
-        }
-
-        // Remove active class and ARIA attributes from all tabs and contents
+    // Function to remove active class and ARIA attributes from all tabs and contents
+    const deactivateAllTabs = () => {
         tabLinks.forEach(link => {
             link.classList.remove('active');
             link.setAttribute('aria-selected', 'false');
         });
         tabContents.forEach(content => content.classList.remove('active'));
-
-        // Add active class and ARIA attributes to the clicked tab and its content
-        clickedTab.classList.add('active');
-        clickedTab.setAttribute('aria-selected', 'true');
-
-        // use id to select tab
-        handleTabSelection(tabId);
     };
 
-     // Function to handle keyboard navigation
+    // Function to activate a specific tab and its content
+    const activateTab = (clickedTab) => {
+        const tabId = clickedTab.dataset.tab;
+
+        if (!tabId) {
+            console.error('No tab ID found for the clicked tab.');
+            return;
+        }
+
+        const targetTab = document.querySelector(`#${tabId}`);
+
+        if (targetTab) {
+            clickedTab.classList.add('active');
+            clickedTab.setAttribute('aria-selected', 'true');
+            targetTab.classList.add('active');
+        } else {
+            console.error(`No tab content found for ID: ${tabId}`);
+        }
+    };
+
+    // Function to handle tab click
+    const handleTabClick = (e) => {
+        e.preventDefault();
+        const clickedTab = e.currentTarget;
+        deactivateAllTabs();
+        activateTab(clickedTab);
+    };
+
+    // Function to handle keyboard navigation
     const handleKeyDown = (e) => {
         if (e.key === 'Tab') {
             e.preventDefault();
             const index = Array.from(tabLinks).indexOf(e.target);
             const nextIndex = (index + 1) % tabLinks.length;
             tabLinks[nextIndex].focus();
-            console.log( tabLinks[nextIndex]);
-            handleTabSelection(nextIndex);
+            activateTab(tabLinks[nextIndex]);
+        } else if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            activateTab(e.currentTarget);
         }
     };
 
-    // Attach click and keyboard event listeners to each tab link
+    // Attach event listeners
     tabLinks.forEach(link => {
         link.addEventListener('click', handleTabClick);
         link.addEventListener('keydown', handleKeyDown);
