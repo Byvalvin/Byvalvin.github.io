@@ -1492,6 +1492,7 @@ footer {
     left: 0;
     right: 0;
     padding: 0 20px; /* Increased padding for better spacing */
+    height: 20px; /* Adjusted height to make room for the line */
 }
 
 .dot {
@@ -1521,7 +1522,7 @@ footer {
     top: 50%;
     height: 2px;
     background-color: #ccc; /* Color of the line connecting dots */
-    z-index: -1; /* Ensure line is behind the dots */
+    z-index: 0; /* Ensure line is behind the dots */
 }
 
 /* Navigation Buttons Styling */
