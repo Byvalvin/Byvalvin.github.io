@@ -1480,7 +1480,6 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
     text-align: center;
     margin: 0 auto; /* Center content */
-    margin-bottom: 40px; /* Adjust this value to control spacing */
 }
 
 /* Timeline Dots Styling */
