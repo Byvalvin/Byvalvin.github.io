@@ -9,9 +9,9 @@
     {
         "date": "2019 - 2024",
         "title": "University of Alberta - CS Honours",
-        "description": "Pursued a Bachelor of Science with Honors in Computing Science.",
+        "description": "Pursued a BSc. with Honors in Computing Science.",
         "logo": "about/images/uoa.png",
-        "details": "Specialized in algorithms, data structures, and software engineering. Graduated with First Class Honors and received scholarships."
+        "details": "Algorithms, Data structures, and Software engineering. Graduated First Class Honors and received scholarships."
     },
     {
         "date": "2021 - 2023",
@@ -25,7 +25,7 @@
         "title": "Research Assistant",
         "description": "Laboratory of Intelligent Manufacturing Design and Automation",
         "logo": "about/images/limda.png",
-        "details": "Developed iOS and Android applications, applied machine learning models, and established frameworks for image classification in app development."
+        "details": "Developed iOS and Android applications, applied machine learning models, and established frameworks for image classification."
     },
     {
         "date": "2023",
