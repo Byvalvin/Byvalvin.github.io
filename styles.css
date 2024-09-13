@@ -1590,6 +1590,7 @@ footer {
     border-radius: 5px;
     margin-top: 5px;
     background-color: var(--body-bg-color);
+    font-size: 10px; /* Smaller font size for details text */
 }
 
 .accordion-content h4 {
