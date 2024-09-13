@@ -1462,11 +1462,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
     margin-bottom: 2px;
 }
 
 .timeline-logo {
-    width: 40px; /* Adjust size as needed */
+    width: 50px; /* Adjust size as needed */
     height: auto;
     margin-right: 5px;
     border-radius: 50%;
@@ -1555,16 +1556,6 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* Accordion Styles */
 /* Subtle Accordion Styles */
 .accordion-btn {
@@ -1590,6 +1581,7 @@ footer {
     display: none;
     padding: 10px;
     border: 1px solid #ddd;
+    border-top: 1px solid var(--contr-bg); /* Border color for better visibility */
     border-radius: 5px;
     margin-top: 5px;
     background-color: var(--body-bg-color);
@@ -2148,6 +2140,7 @@ footer {
     }
     .timeline-container {
         width: 90%; /* Adjust width on medium screens */
+        margin: 0 auto; /* Center the timeline container */
     }
 }
 
@@ -2178,33 +2171,30 @@ footer {
 
     .timeline-wrapper {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center; /* Center align items align-items: flex-start;*/
     }
 
     .timeline-dots {
         flex-direction: column;
+        align-items: center; /* Center align dots */
         gap: 5px; /* Adjust gap for better spacing on smaller screens */
-        bottom: 20px; /* Move dots further down for better visibility */
+        bottom: 10px; /* Move dots further down for better visibility */
     }
     
     .timeline-content {
         width: 100%; /* Allow content to use full width */
-        padding: 15px; /* Adjust padding for better readability */
+        padding: 10px; /* Adjust padding for better readability */
     }    
     .timeline-item {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         font-size: 10px;
     }
     
-    .timeline-item.active {
-        width: 80px;
-        height: 80px;
-        font-size: 12px;
-    }
-        .timeline-item.focus {
-        width: 80px;
-        height: 80px;
+    .timeline-item.active,
+    .timeline-item.focus {
+        width: 60px;
+        height: 60px;
         font-size: 12px;
     }
 
@@ -2241,17 +2231,29 @@ footer {
 
 @media (max-width: 480px) {
     .timeline-content {
-        width: 100%;
-        padding: 10px; /* Reduce padding on very small screens */
+        padding: 5px; /* Reduce padding on very small screens */
+    }
+    .timeline-item {
+        width: 40px; /* Further reduce size for very small screens */
+        height: 40px;
+        font-size: 10px;
     }
 
+    .timeline-item.active,
+    .timeline-item.focus {
+        width: 50px;
+        height: 50px;
+        font-size: 12px;
+    }
+    
+
     .dot {
-        width: 8px;
-        height: 8px;
+        width: 6px;
+        height: 6px;
     }
 
     .nav-button {
-        padding: 8px;
-        font-size: 16px;
+        padding: 5px;
+        font-size: 14px;
     }
 }
