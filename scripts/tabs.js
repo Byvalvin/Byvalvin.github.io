@@ -34,15 +34,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+     // Function to handle keyboard navigation
+    const handleKeyDown = (e) => {
+        if (e.key === 'Tab') {
+            e.preventDefault();
+            const index = Array.from(tabLinks).indexOf(e.target);
+            const nextIndex = (index + 1) % tabLinks.length;
+            tabLinks[nextIndex].focus();
+            handleTabClick({ currentTarget: tabLinks[nextIndex] });
+        }
+    };
+
     // Attach click and keyboard event listeners to each tab link
     tabLinks.forEach(link => {
         link.addEventListener('click', handleTabClick);
-        link.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                handleTabClick(e);
-            }
-        });
+        link.addEventListener('keydown', handleKeyDown);
     });
 
     // Initialize the first tab as active
