@@ -80,13 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="accordion-body technologies-body" id="technologies">
                     ${techCards}
                 </div>
-                <h3 class="accordion-title" data-target="contributions" aria-controls="contributions" aria-expanded="false">
-                    My Contributions
-                    <span class="chevron">&#9660;</span>
-                </h3>
-                <div class="accordion-body contributions-body" id="contributions">
-                    ${contrItems}
-                </div>
                 <h3>Best Features</h3>
                 <p>${project.bestFeatures}</p>
                 <h3>Rating</h3>

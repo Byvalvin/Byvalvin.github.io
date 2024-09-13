@@ -1435,6 +1435,170 @@ footer {
     object-fit: cover; /* Ensure image covers container without distortion */
 }
 
+/* Horizontal Timeline Container */
+/* Timeline Wrapper Styling */
+.timeline-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    overflow: hidden; /* Ensure overflow is hidden for better control */
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column; /* Stack content and dots vertically */
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    flex: 1;
+    padding: 10px; /* Add padding to avoid content touching the edges */
+}
+
+/* Timeline Header and Logo */
+.timeline-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 2px;
+}
+
+.timeline-logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.timeline-content {
+    flex: 2;
+    padding: 20px;
+    border: 1px solid var(--contr-bg);
+    border-radius: 12px; /* Increased border-radius for a softer look */
+    background-color: var(--body-bg-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    text-align: center;
+    margin: 0 auto; /* Center content */
+    margin-right: 80px; /* Add margin to the right to prevent content from being covered by the right button */
+    margin-left: 80px;  /* Add margin to the left to prevent content from being covered by the left button */
+    box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+}
+
+/* Timeline Dots Styling */
+.timeline-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px; /* Increased padding for better spacing */
+    height: 20px; /* Adjusted height to make room for the line */
+}
+
+.dot {
+    width: 12px; /* Increased size */
+    height: 12px; /* Increased size */
+    border-radius: 50%;
+    background-color: #ccc; /* Default color for dots */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    position: relative;
+    margin: 0 15px; /* Increased margin for spacing between dots */
+}
+
+.dot.active {
+    background-color: var(--btn-main-bg-color); /* Highlight color for the active dot */
+}
+
+.dot:hover {
+    background-color: var(--btn-main-bg-hv-color); /* Color on hover */
+}
+
+
+/* Navigation Buttons Styling */
+.nav-button {
+    background-color: var(--btn-main-bg-color);
+    color: var(--body-light-text-color);
+    border: none;
+    border-radius: 50%;
+    width: 60px; /* Increased size */
+    height: 60px; /* Increased size */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    font-size: 24px; /* Adjusted font size for better visibility */
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    z-index: 10; /* Ensure buttons are above other content */
+}
+
+.nav-button:hover {
+    background-color: var(--btn-main-bg-hv-color);
+    transform: scale(1.01); /* Slightly increase size on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.nav-button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.5); /* Add custom focus outline */
+}
+
+.nav-button.left {
+    left: 30px; /* Increased distance from the edge */
+}
+
+.nav-button.right {
+    right: 30px; /* Increased distance from the edge */
+}
+
+
+/* Accordion Styles */
+/* Subtle Accordion Styles */
+.accordion-btn {
+    background-color: transparent; /* Remove background color */
+    color: var(--body-dark-text-color); /* Use a more subdued text color */
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s, border-color 0.3s; /* Transition effects for color and border */
+    font-size: 14px; /* Smaller font size for subtlety */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid var(--body-darker-text-color); /* Add a thin border */
+    background: none; /* Remove background */
+}
+
+.accordion-btn:hover {
+    color: var(--btn-main-bg-color); /* Change text color on hover for subtle effect */
+    border-color: var(--btn-main-bg-color); /* Highlight border on hover */
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: 1px solid var(--contr-bg); /* Border color for better visibility */
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: var(--body-bg-color);
+    font-size: 14px; /* Smaller font size for details text */
+}
+
+.accordion-content h4 {
+    margin: 0;
+    color: var(--body-dark-text-color);
+}
+
+
+
+
+
+
+
 /* Styling for legend */
 .legend {
     display: flex;
@@ -1974,6 +2138,10 @@ footer {
     .category-container {
         flex: 1 1 calc(50% - 20px); /* Two columns layout on medium screens */
     }
+    .timeline-container {
+        width: 90%; /* Adjust width on medium screens */
+        margin: 0 auto; /* Center the timeline container */
+    }
 }
 
 @media (max-width: 768px) {
@@ -2000,7 +2168,39 @@ footer {
         max-width: 100%; /* Allow image to use full width of the container */
         margin-top: 20px; /* Add margin at the top of the image */
     }
+
+    .timeline-wrapper {
+        flex-direction: column;
+        align-items: center; /* Center align items align-items: flex-start;*/
+    }
+
+    .timeline-dots {
+        flex-direction: column;
+        align-items: center; /* Center align dots */
+        gap: 5px; /* Adjust gap for better spacing on smaller screens */
+        bottom: 10px; /* Move dots further down for better visibility */
+    }
     
+    .timeline-content {
+        width: 100%; /* Allow content to use full width */
+        padding: 10px; /* Adjust padding for better readability */
+    }    
+    .timeline-item {
+        width: 50px;
+        height: 50px;
+        font-size: 10px;
+    }
+    
+    .timeline-item.active,
+    .timeline-item.focus {
+        width: 60px;
+        height: 60px;
+        font-size: 12px;
+    }
+
+    .timeline-content {
+        width: 150px; /* Limit width for smaller screens */
+    }
     .legend {
         flex-direction: column;
         align-items: flex-start;
@@ -2026,5 +2226,34 @@ footer {
 
     .button {
         margin-top: 5px; /* Space between button and name */
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline-content {
+        padding: 5px; /* Reduce padding on very small screens */
+    }
+    .timeline-item {
+        width: 40px; /* Further reduce size for very small screens */
+        height: 40px;
+        font-size: 10px;
+    }
+
+    .timeline-item.active,
+    .timeline-item.focus {
+        width: 50px;
+        height: 50px;
+        font-size: 12px;
+    }
+    
+
+    .dot {
+        width: 6px;
+        height: 6px;
+    }
+
+    .nav-button {
+        padding: 5px;
+        font-size: 14px;
     }
 }

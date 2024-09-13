@@ -1,20 +1,37 @@
 [
     {
-        "date": "2010 - 2012",
-        "title": "Full IB Student",
-        "description": "Started exploring software development and coding during my time as a Full IB student, developing a passion for technology.",
-        "details": "<p>During this period, I experimented with various programming languages and tools, which laid the foundation for my future career in software development.</p>"
+        "date": "2015 - 2018",
+        "title": "International Baccalaureate",
+        "description": "Developed critical thinking, adaptability, and research skills.",
+        "logo": "about/images/ib.png",
+        "details": "Honed my ability to learn independently, adapt to complex challenges, and engage in rigorous research; a strong foundation for my future studies."
     },
     {
-        "date": "2013 - 2017",
+        "date": "2019 - 2024",
         "title": "University of Alberta - CS Honours",
-        "description": "Pursued a Computer Science Honours degree at the University of Alberta, gaining in-depth knowledge and experience in software development.",
-        "details": "<p>I specialized in several areas including algorithms, data structures, and software engineering, participating in various projects and internships.</p>"
+        "description": "Pursued a BSc. with Honours in Computing Science.",
+        "logo": "about/images/uoa.png",
+        "details": "Specialized in algorithms, data structures, and software engineering. Graduated with First Class Honors and received multiple scholarships."
     },
     {
-        "date": "2018 - Present",
-        "title": "Freelance and Small Organizations",
-        "description": "Worked on various projects for small organizations, applying my skills to solve real-world problems and continue growing as a developer.",
-        "details": "<p>My work involved developing web applications, optimizing systems, and collaborating with teams to deliver high-quality solutions.</p>"
+        "date": "2021 - 2023",
+        "title": "Arts For YoungSTARS",
+        "description": "President and Advisor",
+        "logo": "about/images/afys.png",
+        "details": "Led the executive board, managed budgets, organized events, and handled logistics for fundraising and safety."
+    },
+    {
+        "date": "2021",
+        "title": "Research Assistant",
+        "description": "Laboratory of Intelligent Manufacturing Design and Automation",
+        "logo": "about/images/limda.png",
+        "details": "Developed iOS and Android applications, applied machine learning models, and established frameworks for image classification."
+    },
+    {
+        "date": "2023",
+        "title": "Product Owner",
+        "description": "Aquatic Biosphere Project",
+        "logo": "about/images/abp.webp",
+        "details": "Defined product requirements, prioritized features, designed educational games, and developed an organism identification system using OpenCV."
     }
 ]
