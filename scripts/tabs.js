@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const index = Array.from(tabLinks).indexOf(e.target);
             const nextIndex = (index + 1) % tabLinks.length;
             tabLinks[nextIndex].focus();
+            console.log( tabLinks[nextIndex]);
             handleTabSelection(nextIndex);
         }
     };
