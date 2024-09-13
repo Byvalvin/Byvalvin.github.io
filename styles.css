@@ -1461,13 +1461,13 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 .timeline-logo {
     width: 40px; /* Adjust size as needed */
     height: auto;
-    margin-right: 10px;
+    margin-right: 5px;
     border-radius: 50%;
 }
 
