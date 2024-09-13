@@ -1449,6 +1449,7 @@ footer {
 
 .timeline {
     display: flex;
+    flex-direction: column; /* Stack content and dots vertically */
     align-items: center;
     overflow: hidden;
     position: relative;
