@@ -10,14 +10,14 @@
         "date": "2013 - 2017",
         "title": "University of Alberta - CS Honours",
         "description": "Pursued a Computer Science Honours degree.",
-        "logo": "path/to/logo2.png",
+        "logo": "about/images/uoa.png",
         "details": "Specialized in algorithms, data structures, and software engineering."
     },
     {
         "date": "2018 - Present",
         "title": "Freelance and Small Organizations",
         "description": "Worked on various projects for small organizations.",
-        "logo": "path/to/logo3.png",
+        "logo": "about/images/abp.webp",
         "details": "Developed web applications, optimized systems, and collaborated with teams."
     },
         {
