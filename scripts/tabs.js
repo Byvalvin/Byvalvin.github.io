@@ -48,9 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const nextIndex = (index + 1) % tabLinks.length;
             tabLinks[nextIndex].focus();
             activateTab(tabLinks[nextIndex]);
-        } else if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            activateTab(e.currentTarget);
         }
     };
 
