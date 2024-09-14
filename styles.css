@@ -2184,6 +2184,9 @@ footer {
     .timeline-content {
         width: 100%; /* Allow content to use full width */
         padding: 10px; /* Adjust padding for better readability */
+        margin-right: 40px; /* Add margin to the right to prevent content from being covered by the right button */
+        margin-left: 40px;  /* Add margin to the left to prevent content from being covered by the left button */
+        
     }    
     .timeline-item {
         width: 50px;
@@ -2232,6 +2235,9 @@ footer {
 @media (max-width: 480px) {
     .timeline-content {
         padding: 5px; /* Reduce padding on very small screens */
+        margin-right: 40px; /* Add margin to the right to prevent content from being covered by the right button */
+        margin-left: 40px;  /* Add margin to the left to prevent content from being covered by the left button */
+        
     }
     .timeline-item {
         width: 40px; /* Further reduce size for very small screens */
