@@ -97,13 +97,13 @@ document.addEventListener('DOMContentLoaded', () => {
         navButtons.right.style.display = currentIndex < items.length - 1 ? 'block' : 'none';
     }
 
-    function moveLeft = () => {
+    const moveLeft = () => {
         if (currentIndex > 0) {
             currentIndex--;
             updateTimeline();
         }
     }
-    function moveRight = () => {
+    const moveRight = () => {
         if (currentIndex < items.length - 1) {
             currentIndex++;
             updateTimeline();
