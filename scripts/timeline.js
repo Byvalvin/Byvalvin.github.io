@@ -36,26 +36,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateTimeline() {
-        // Update the position of the timeline dots
         const dotSize = 12; // Size of each dot
         const dotSpacing = 15; // Space between dots
         const itemWidth = dotSize + dotSpacing; // Total width for each dot + space
-    
-        // Calculate the scroll position to center the current item
+
         const totalDotsWidth = items.length * itemWidth;
         const offset = Math.min(
             (currentIndex * itemWidth) - (timelineWrapper.clientWidth / 2 - itemWidth / 2),
             totalDotsWidth - timelineWrapper.clientWidth
         );
-    
+
         timelineWrapper.scrollLeft = Math.max(0, offset);
-    
-        // Update dot states
+
         document.querySelectorAll('.dot').forEach((dot, index) => {
             dot.classList.toggle('active', index === currentIndex);
         });
-    
-        // Update the content based on the current index
+
         const currentItem = items[currentIndex];
         timelineContent.innerHTML = `
             <div class="timeline-header">
@@ -70,11 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>${currentItem.details}</p>
             </div>
         `;
-    
-        // Attach event listener to the accordion button
+
         const accordionBtn = document.querySelector('.accordion-btn');
         const accordionContent = document.querySelector('.accordion-content');
-    
+
         if (accordionBtn && accordionContent) {
             accordionBtn.addEventListener('click', () => {
                 if (accordionContent.style.display === 'none' || accordionContent.style.display === '') {
@@ -87,12 +82,10 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // Update navigation buttons visibility
         updateNavButtonVisibility();
     }
 
     function updateNavButtonVisibility() {
-        // Show or hide navigation buttons based on current index
         navButtons.left.style.display = currentIndex > 0 ? 'block' : 'none';
         navButtons.right.style.display = currentIndex < items.length - 1 ? 'block' : 'none';
     }
@@ -103,30 +96,26 @@ document.addEventListener('DOMContentLoaded', () => {
             updateTimeline();
         }
     }
+
     const moveRight = () => {
         if (currentIndex < items.length - 1) {
             currentIndex++;
             updateTimeline();
         }
     }
-    // Navigation buttons
-    navButtons.left.addEventListener('click', () => {
-        moveLeft();
-    });
 
-    navButtons.right.addEventListener('click', () => {
-        moveRight();
-    });
+    navButtons.left.addEventListener('click', moveLeft);
+    navButtons.right.addEventListener('click', moveRight);
 
-    // Keyboard navigation
     document.addEventListener('keydown', (e) => {
-        e.preventDefault();
-        if (e.key === 'ArrowLeft') {
-            moveLeft();
-        } else if (e.key === 'ArrowRight') {
-            moveRight();
+        // Only handle arrow keys if focus is not on a tab link
+        const focusedElement = document.activeElement;
+        if (!focusedElement.classList.contains('tab-link')) {
+            if (e.key === 'ArrowLeft') {
+                moveLeft();
+            } else if (e.key === 'ArrowRight') {
+                moveRight();
+            }
         }
     });
 });
-
-
