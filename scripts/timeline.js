@@ -97,33 +97,34 @@ document.addEventListener('DOMContentLoaded', () => {
         navButtons.right.style.display = currentIndex < items.length - 1 ? 'block' : 'none';
     }
 
-    // Navigation buttons
-    navButtons.left.addEventListener('click', () => {
+    function moveLeft = () => {
         if (currentIndex > 0) {
             currentIndex--;
             updateTimeline();
         }
-    });
-
-    navButtons.right.addEventListener('click', () => {
+    }
+    function moveRight = () => {
         if (currentIndex < items.length - 1) {
             currentIndex++;
             updateTimeline();
         }
+    }
+    // Navigation buttons
+    navButtons.left.addEventListener('click', () => {
+        moveLeft();
+    });
+
+    navButtons.right.addEventListener('click', () => {
+        moveRight();
     });
 
     // Keyboard navigation
     document.addEventListener('keydown', (e) => {
+        e.preventDefault();
         if (e.key === 'ArrowLeft') {
-            if (currentIndex > 0) {
-                currentIndex--;
-                updateTimeline();
-            }
+            moveLeft();
         } else if (e.key === 'ArrowRight') {
-            if (currentIndex < items.length - 1) {
-                currentIndex++;
-                updateTimeline();
-            }
+            moveRight();
         }
     });
 });
