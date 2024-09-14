@@ -94,17 +94,15 @@ document.addEventListener('DOMContentLoaded', () => {
             updateTimeline();
         }
     }
-
     const moveRight = () => {
         if (currentIndex < items.length - 1) {
             currentIndex++;
             updateTimeline();
         }
     }
-
     navButtons.left.addEventListener('click', moveLeft);
     navButtons.right.addEventListener('click', moveRight);
-
+    
     document.addEventListener('keydown', (e) => {
         if (e.key === 'ArrowLeft') {
                 moveLeft();
