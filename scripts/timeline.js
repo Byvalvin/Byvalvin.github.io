@@ -69,7 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const accordionBtn = document.querySelector('.accordion-btn');
         const accordionContent = document.querySelector('.accordion-content');
-
         if (accordionBtn && accordionContent) {
             accordionBtn.addEventListener('click', () => {
                 if (accordionContent.style.display === 'none' || accordionContent.style.display === '') {
@@ -81,7 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }
-
         updateNavButtonVisibility();
     }
 
@@ -108,14 +106,11 @@ document.addEventListener('DOMContentLoaded', () => {
     navButtons.right.addEventListener('click', moveRight);
 
     document.addEventListener('keydown', (e) => {
-        // Only handle arrow keys if focus is not on a tab link
-        const focusedElement = document.activeElement;
-        if (!focusedElement.classList.contains('tab-link')) {
-            if (e.key === 'ArrowLeft') {
+        if (e.key === 'ArrowLeft') {
                 moveLeft();
-            } else if (e.key === 'ArrowRight') {
-                moveRight();
-            }
+        } else if (e.key === 'ArrowRight') {
+            moveRight();
         }
     });
+    
 });
