@@ -7,6 +7,8 @@ const highlightActiveLink = () => {
     let currentLocation = window.location.pathname.split('?')[0];
     currentLocation = currentLocation.endsWith('/') ? currentLocation.slice(0, -1) : currentLocation;
 
+    console.log("current", currentLocation);
+
     // Handle special case for root path
     const isRootPath = currentLocation === '' || currentLocation === '/index.html';
 
@@ -15,6 +17,7 @@ const highlightActiveLink = () => {
 
     navLinks.forEach(link => {
         let href = link.getAttribute('href');
+        console.log("nl",href);
         
         // Normalize href to remove leading slash and query parameters
         href = href.split('?')[0];
