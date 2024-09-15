@@ -670,10 +670,12 @@ body, html {
     border-radius: 50%;
     object-fit: cover;
     margin-right: 10px;
+    transition: transform 0.3s ease; /* Add a transition effect */
 }
 .navbar .logo-img:hover,
 .navbar .logo-img:focus{
     cursor: pointer;
+    transform: scale(1.05); /* Slight zoom effect on hover/focus */
 }
 
 .navbar .navbar-brand {
