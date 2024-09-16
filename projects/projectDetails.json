@@ -1,87 +1,86 @@
-
 {
     "qrapp": {
         "title": "QRapp",
-        "description": "QRapp is designed to be a fun, engaging and social experience for users. You choose the way you play: You can be a casual collector of the highest, lowest or coolest codes or compete against friends and other QR Hunters for top positions on one the many leaderboards. As you play, you might become aware of the fact that these codes are everywhere! ",
+        "description": "QRapp is all about making QR code hunting fun and social! You can collect codes, compete with friends for top spots on various leaderboards, or just enjoy spotting codes everywhere you go. Whether you're into casual collecting or serious competition, there's something here for you.",
         "images": ["qrapp1.jpg", "qrapp2.jpg", "qrapp7.jpg", "qrapp4.jpg", "qrapp5.jpg"],
         "videos": ["QRAPP.webm"],
         "technologies": {
-            "Android Studio": "IDE, Frontend, business logic and connection to Backend",
-            "Figma": "Wireframing and Storyboarding",
-            "Firebase": "Data Storage and Management",
-            "Java": "Formal programming language",
-            "Google Maps API": "Getting and setting location data",
-            "GitHub": "Version Control, Documentation and Task management."
+            "Android Studio": "Used for frontend development and connecting to the backend.",
+            "Figma": "For designing wireframes and storyboards.",
+            "Firebase": "Handles data storage and management.",
+            "Java": "The programming language used.",
+            "Google Maps API": "Manages location data.",
+            "GitHub": "Used for version control, documentation, and task management."
         },
         "contributions": [
-            "Ensuring all our work is properly documented on github and github wiki pages",
-            "Keeping meeting minutes for all meetings and documenting them",
-            "Storyboarding all use cases and user experiences",
-            "Business Logic for placing code on a map, Creation of the Map Page and Map UI/UX Design",
-            "Integration of the Google Maps API",
-            "Business logic for ranking users and Creation of the Leaderboard pages",
-            "App Layout and Navigation planning and setup"
+            "Documented all work on GitHub and the GitHub wiki.",
+            "Kept minutes for all meetings.",
+            "Designed storyboards for use cases and user experiences.",
+            "Developed the map feature, including its UI/UX design.",
+            "Integrated Google Maps API.",
+            "Developed the ranking system and leaderboard pages.",
+            "Planned and set up app layout and navigation."
         ],
-        "bestFeatures": "Excellent user interface and performance: The look and feel of the app is excellent. We put alot of thought an planning into catching the users attention and keep it as they use the app. I believe it is one of the more beautiful and well designed apps I have worked on.",
+        "bestFeatures": "The app's user interface and performance are top-notch. We put a lot of effort into making it visually appealing and engaging. It's definitely one of the most beautifully designed apps I've worked on.",
         "rating": 4.0,
         "codeUrl": "https://github.com/Byvalvin/QRAPP"
     },
     "aranimal": {
         "title": "AR Animal Identification",
-        "description": "The AR Animal Identification app is part of Aquatic Biosphere's many projects designed to spread awareness and raise funds to support, uphold and maintain the Albertan Biosphere. Aquatic Biosphere is a non-profit with a singular mission: 'To educate, inspire and empower people to play an active role in the conservation of our aquatic ecosystems.' We designed this app exactly for this purpose. It is designed to accompany a trailer with a vinyl sticker illustrating various organisms of the Albertan Bioshpere. Users will be able to identify these organisms and learn about them from interactive games and activities. The app is also designed to allow for effortless customization for admin roles to add, remove and modify information presented to users. Create a profile and experience the wonders of the Albertan Biosphere.",
+        "description": "This app is part of a project by Aquatic Biosphere, aimed at raising awareness and funds for the Albertan Biosphere. It pairs with a vinyl sticker showcasing local organisms. Users can identify and learn about these creatures through interactive games and activities. The app also features easy customization for admins to update information.",
         "images": ["aranimal1.jpg", "aranimal3.jpg", "aranimal4.jpg", "aranimal5.jpg", "aranimal6.jpg"],
         "videos": ["ARANIMAL.webm"],
         "technologies": {
-            "Android Studio": "IDE",
-            "Figma": "Wireframing and Storyboarding",
-            "Flutter": "Frontend, Business Logic, Connection to Backend",
-            "FastAPI": "Backend, Creating API endpoints to and from Database and for Image Recognition",
-            "PostgreSQL": "Data Storage and Management",
-            "OpenCV": "Computer Vision Library used for Image Processing and Image Identification",
-            "Poetry": "Package Management",
-            "Cybera": "Cloud Infrastructure and services",
-            "Uvicorn": "Serve/deploy internal image recognition and User APIs",
-            "GitHub": "Version Control, Documentation and Task management.",
-            "VuePress": "Creation of a simple website for Full Documentation and Project Planning"
+            "Android Studio": "IDE for development.",
+            "Figma": "Used for wireframing and storyboarding.",
+            "Flutter": "For frontend development and connecting to the backend.",
+            "FastAPI": "Creates API endpoints for image recognition and database interactions.",
+            "PostgreSQL": "Data storage and management.",
+            "OpenCV": "For image processing and identification.",
+            "Poetry": "Manages project dependencies.",
+            "Cybera": "Provides cloud infrastructure and services.",
+            "Uvicorn": "Serves and deploys APIs for image recognition and user interactions.",
+            "GitHub": "Handles version control, documentation, and task management.",
+            "VuePress": "Used for creating a website with full project documentation."
         },
         "contributions": [
-            "Ensuring all our work is properly documented on github + VuePress.js and github wiki pages",
-            "Keeping meeting minutes for all meetings and documenting them",
-            "Storyboarding all use cases and user experiences",
-            "Image Recognition process and methods using OpenCV and integration of system into app",
-            "Optimisation of Image Processing",
-            "Games and Activities Design and Architecture Planning",
-            "All Game-related Pages and Control Logic",
-            "Admin page setup"
+            "Documented work on GitHub and VuePress.",
+            "Took meeting minutes and kept documentation.",
+            "Designed use cases and user experiences.",
+            "Developed image recognition with OpenCV and integrated it into the app.",
+            "Optimized image processing.",
+            "Designed and planned games and activities.",
+            "Created game-related pages and control logic.",
+            "Set up the admin page."
         ],
-        "bestFeatures": "Cross-Platform and Cross-Device compatibility. It was important that we make the app as accessible as possible to reach as many users as possible. The app is designed to work on many different phones(tested 4 year old phones), on both Android and iOS ecosystems and on mobile devices like tablets. Accessibility at its finest",
-        "rating": 4.2,    
+        "bestFeatures": "The app’s cross-platform compatibility is a highlight. It works well on various devices, including older phones, and is accessible on both Android and iOS. It’s all about making the app as inclusive as possible.",
+        "rating": 4.2,
         "codeUrl": ""
     },
     "proquest": {
         "title": "ProQuest",
-        "description": "ProQuest is a concept website created to help agents find the best team for their players and scouts find the best players for their teams. ProQuest does this by allowing the addition of players and teams to the site and an opportunity to showcase capabilities, talent and potential. The site is also designed to track the performance of both players and teams to provide users an estimate of their strengths. Users can also play around in the planner page, a page that allows testing and sharing of different formations, tactics and players.",
+        "description": "ProQuest helps agents find the best teams and scouts find top players. Users can add players and teams, track performance, and test out different tactics in the planner. It’s all about showcasing talent and strategic planning.",
         "images": ["proquest1.png", "proquest2.png", "proquest3.png"],
         "videos": ["proquest.mp4"],
         "technologies": {
-            "Visual Studio Code": "Integrated Development Environment (IDE) for coding",
-            "Figma": "Wireframing, prototyping, and storyboarding",
-            "TailwindCSS": "Utility-first CSS framework for styling and UI/UX design",
-            "Vite": "Fast, modern build tool for React project setup",
-            "React": "Frontend - JS library for building user interfaces and frontend logic",
-            "Express": "Backend - Fast, unopinionated, minimalist web framework for Node.js",
-            "MongoDB": "NoSQL database for data storage and management",
-            "Javascript": "Formal programming language",
-            "Node": "JS runtime environment for executing JS code outside a browser",
-            "npm": "Package manager for Node.js, facilitating dependency management and project deployment",
-            "Render": "Cloud platform for serving and deploying APIs",
-            "Netlify": "Platform for deploying frontend applications and managing web projects",
-            "GitHub": "Version control system for tracking changes in source code, along with project documentation and task management"
+            "Visual Studio Code": "IDE for coding.",
+            "Figma": "Used for wireframing, prototyping, and storyboarding.",
+            "TailwindCSS": "A CSS framework for styling and design.",
+            "Vite": "A build tool for setting up React projects.",
+            "React": "JavaScript library for building user interfaces.",
+            "Express": "Backend framework for Node.js.",
+            "MongoDB": "NoSQL database for managing data.",
+            "Javascript": "The programming language used.",
+            "Node": "Runtime environment for executing JavaScript outside the browser.",
+            "npm": "Package manager for Node.js.",
+            "Render": "Cloud platform for serving and deploying APIs.",
+            "Netlify": "Deploys frontend applications and manages web projects.",
+            "GitHub": "Version control for source code, documentation, and task management."
         },
         "contributions": [
-            "This was a solo project"
+            "This was a solo project."
         ],
-        "bestFeatures": "There are quite a few features I am proud of; The multi-filtration system on the Players Page, The dynamic css that maintains excellent UI/UX across different screen sizes and devices, The randomly generated list of players on the home page. The best of them is the Planner Page. Users can have a lot of fun making their own concept teams with any formation they desire and share them with other users.",
+        "bestFeatures": "I'm proud of several features: the multi-filtration system on the Players Page, dynamic CSS for different screen sizes, and the planner page where users can create and share their team setups. The planner page, in particular, offers a lot of fun and customization options.",
         "rating": 4.7,
         "codeUrl": "https://github.com/Byvalvin/proquest"
     }
