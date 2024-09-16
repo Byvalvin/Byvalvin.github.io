@@ -31,13 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const generateProjectDetailsHTML = (project) => {
                 // Sanitize the image and video URLs
                 const projectImages = project.images.map(image => 
-                    `<img src="projects/other/${image}" alt="${project.name} image" />`
+                    `<img src="projects/other/images/${image}" alt="${image} image" />`
                 ).join('');
 
                 const projectVideos = project.videos.map(video => 
                     video.startsWith("https://") ? 
                         `<iframe src="${video}" frameborder="0" allowfullscreen></iframe>` : 
-                        `<video controls><source src="projects/other/${video}" type="video/mp4" /></video>`
+                        `<video controls><source src="projects/other/videos/${video}" type="video/mp4" /></video>`
                 ).join('');
 
                 // Render the "Code" link if GitHub link exists
