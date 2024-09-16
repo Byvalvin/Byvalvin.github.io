@@ -6,10 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to create project card HTML
     const createProjectCard = (project) => {
+        // Truncate description if it's too long
         const truncatedDescription = project.description.length > descriptionLength 
             ? project.description.substring(0, descriptionLength) + '...' 
             : project.description;
 
+        // Create a new card element
         const card = document.createElement('div');
         card.classList.add('project-card');
         card.innerHTML = `
@@ -19,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         `;
 
-        // Add event listeners for accessibility and navigation
+        // Add event listeners for navigation and accessibility
         card.addEventListener('click', () => {
             window.location.href = project.otherDetailsPage;
         });
@@ -34,15 +36,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Fetch projects data from JSON file
     fetch('projects/other/otherprojects.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.json();
+        })
         .then(data => {
-            // Check if the data is valid
-            if (!data.projects || !Array.isArray(data.projects)) {
-                throw new Error('Invalid project data');
+            // Check if the data structure is correct
+            if (!Array.isArray(data) || data.length === 0) {
+                throw new Error('No projects found or invalid data structure');
             }
 
             // Create and append project cards
-            data.projects.forEach(project => {
+            data.forEach(project => {
                 const card = createProjectCard(project);
                 projectList.appendChild(card);
             });
