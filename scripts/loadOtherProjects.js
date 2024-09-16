@@ -44,13 +44,13 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(data => {
             // Check if the data structure is correct
-            const projects = data.projects;
-            if (!Array.isArray(projects) || projects.length === 0) {
+            const otherProjects = data.projects;
+            if (!Array.isArray(otherProjects) || otherProjects.length === 0) {
                 throw new Error('No projects found or invalid data structure');
             }
 
             // Create and append project cards
-            projects.forEach(project => {
+            otherProjects.forEach(project => {
                 const card = createProjectCard(project);
                 projectList.appendChild(card);
             });
