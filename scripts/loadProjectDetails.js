@@ -61,11 +61,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 ${project.codeUrl ? 
                   `<a href="${project.codeUrl}" class="btn code-btn" target="_blank" rel="noopener noreferrer">
                       <i class="fab fa-github"></i>
+                      <span class="btn-text">View Code</span>
                     </a>
                 ` : ''}
                 ${project.tryItOutUrl ? 
                   `<a href="${project.tryItOutUrl}" class="btn try-btn" target="_blank" rel="noopener noreferrer">
                       <i class="fa-solid fa-circle-play"></i>
+                      <span class="btn-text">Try It Out</span>
                   </a>
                   ` : ''}
             `;
