@@ -1,14 +1,10 @@
-
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     // Function to parse query parameters from URL
-    const getParameterByName = (name, url) => {
-        if (!url) url = window.location.href;
+    const getParameterByName = (name, url = window.location.href) => {
         name = name.replace(/[\[\]]/g, '\\$&');
         const regex = new RegExp(`[?&]${name}(=([^&#]*)|&|#|$)`);
         const results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        return results ? decodeURIComponent(results[2].replace(/\+/g, ' ')) : null;
     };
 
     // Retrieve project ID from URL query parameter
@@ -23,8 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(data => {
             // Find the project details from the JSON data based on projectId
-            // const project = data.projects.find(p => p.id === projectId);
-            const project = data.projects.find(p => p.otherDetailsPage === `other-project-details.html?id=${projectId}`);
+            const project = data.projects.find(p => p.otherDetailsPage.includes(`id=${projectId}`));
             
             if (!project) {
                 console.error(`Project with ID ${projectId} not found.`);
@@ -35,18 +30,23 @@ document.addEventListener('DOMContentLoaded', function() {
             // Function to generate HTML for project details
             const generateProjectDetailsHTML = (project) => {
                 // Sanitize the image and video URLs
-                const projectImages = project.images.map(image => `<img src="projects/other/images/${image}" alt="${image}" />`).join('');
-                const projectVideos = project.videos.map(video => {
-                    return video.startsWith("https://") ? 
+                const projectImages = project.images.map(image => 
+                    `<img src="projects/other/${image}" alt="${project.name} image" />`
+                ).join('');
+
+                const projectVideos = project.videos.map(video => 
+                    video.startsWith("https://") ? 
                         `<iframe src="${video}" frameborder="0" allowfullscreen></iframe>` : 
-                        `<video controls><source src="projects/other/videos/${video}" type="video/mp4" /></video>`;
-                }).join('');
+                        `<video controls><source src="projects/other/${video}" type="video/mp4" /></video>`
+                ).join('');
 
                 // Render the "Code" link if GitHub link exists
-                const githubLinkHTML = project.githubLink ? `<a class="code-link" href="${project.githubLink}" target="_blank" rel="noopener noreferrer">Code</a>` : '';
-                
+                const githubLinkHTML = project.githubLink ? 
+                    `<a class="code-link" href="${project.githubLink}" target="_blank" rel="noopener noreferrer">View on GitHub</a>` : '';
+
                 // Render the "Try it out" link if tryItOutLink exists
-                const tryItOutLinkHTML = project.tryItOutLink ? `<a class="try-it-out-link" href="${project.tryItOutLink}" target="_blank" rel="noopener noreferrer">Try it out</a>` : '';
+                const tryItOutLinkHTML = project.tryItOutLink ? 
+                    `<a class="try-it-out-link" href="${project.tryItOutLink}" target="_blank" rel="noopener noreferrer">Try it out</a>` : '';
                 
                 return `
                     <h2>${project.name}</h2>
