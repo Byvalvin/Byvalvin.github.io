@@ -1,16 +1,13 @@
 // loadProjectDetails.js
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("Document loaded");
+    console.log("Project details loaded");
 
     // Function to parse query parameters from URL
     const getParameterByName = (name, url = window.location.href) => {
-        name = name.replace(/[\[\]]/g, '\\$&');
         const regex = new RegExp(`[?&]${name}(=([^&#]*)|&|#|$)`);
         const results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        return results && results[2] ? decodeURIComponent(results[2].replace(/\+/g, ' ')) : null;
     };
 
     const projectId = getParameterByName('id');
@@ -19,9 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch project details from JSON file
     fetch('projects/projectDetails.json')
         .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
+            if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
             return response.json();
         })
         .then(data => {
@@ -32,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Generate HTML for project images, videos, tech cards, and contributions
+            // Generate HTML for project elements
             const projectImages = project.images.map(image => `
                 <img src="projects/${projectId}/images/${image}" alt="${project.title} image" class="project-image">
             `).join('');
@@ -47,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const techCards = Object.entries(project.technologies).map(([tech, description]) => `
                 <div class="tech-card">
                     <div class="tech-icon">
-                        <img src="projects/icons/${tech.split(' ').join('').toLowerCase()}.svg" alt="${tech}">
+                        <img src="projects/icons/${tech.replace(/\s+/g, '').toLowerCase()}.svg" alt="${tech}">
                     </div>
                     <div class="tech-info">
                         <h4>${tech}</h4>
@@ -67,6 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ${project.tryItOutUrl ? `<a href="${project.tryItOutUrl}" class="btn try-btn" target="_blank" rel="noopener noreferrer">Try It Out</a>` : ''}
             `;
 
+            // Populate the project details container
             const projectDetailsContainer = document.getElementById('project-details');
             projectDetailsContainer.innerHTML = `
                 <h2>${project.title}</h2>
@@ -102,5 +98,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             });
         })
-        .catch(error => console.error('Error loading project details:', error));
+        .catch(error => {
+            console.error('Error loading project details:', error);
+            document.getElementById('project-details').innerHTML = `<p>Error loading project details. Please try again later.</p>`;
+        });
 });
+
