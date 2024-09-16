@@ -2,25 +2,25 @@
     "projects": [
         {
             "name": "StarCraft II Stalker Rush Bot",
-            "description": "A bot made in C++ with a Protoss Stalker Rush Build. The bot has a win rate ~70 against the CheatMoney and CheatVision difficulties and ~45% against CheatInsane",
-            "images": ["FiringSquad.jpg", "FiringSquad2.jpg","StalkerRally.jpg", "WarpGatesReady.jpg"],
+            "description": "A C++ bot designed for a Protoss Stalker Rush strategy. 70% win rate against CheatMoney and CheatVision difficulties, and around 45% against CheatInsane.",
+            "images": ["FiringSquad.jpg", "FiringSquad2.jpg", "StalkerRally.jpg", "WarpGatesReady.jpg"],
             "videos": ["AttackingVideo.webm", "ScoutRecordingMiniMap.webm"],
             "githubLink": "https://github.com/Byvalvin/StarCraftIIBot-cpp",
             "otherDetailsPage": "other-project-details.html?id=stalker-bot"
         },
         {
             "name": "ED-like Text Editor",
-            "description": "A recreation of the ed editor of the 60s; a line-by-line text and file editor. This editor supports a large subset of commands supported by the original ed.",
+            "description": "A modern take on the classic ed editor from the 60s. This text editor supports many of the commands from the original ed.",
             "images": ["ed2.JPG", "ed3.JPG", "ed5.JPG"],
             "videos": [],
             "githubLink": "https://github.com/Byvalvin/Editor/tree/web-version",
             "otherDetailsPage": "other-project-details.html?id=ed-editor",
-            "tryItOutLink":"https://byvalvin.github.io/Editor/"
+            "tryItOutLink": "https://byvalvin.github.io/Editor/"
         },
         {
             "name": "Text Klondike",
-            "description": "Klondike, but as a text-based game. Adds an extra layer of difficulty in that the table isn't always shown. You will have to remember where you placed your cards!",
-            "images": ["klondike1.JPG", "klondike2.JPG", "klondike5.JPG",  "klondike.JPG"],
+            "description": "A text-based version of Klondike Solitaire. The challenge here is that the table isn't always visible, so you'll need to remember where you placed your cards!",
+            "images": ["klondike1.JPG", "klondike2.JPG", "klondike5.JPG", "klondike.JPG"],
             "videos": [],
             "githubLink": "https://github.com/Byvalvin/Klondike/tree/web-version-v3",
             "otherDetailsPage": "other-project-details.html?id=text-klondike",
@@ -28,19 +28,19 @@
         },
         {
             "name": "Sanctuary",
-            "description": "An action stealth game made with Javascript and RPG MakerMV. Sanctuary tells the story of a far future in space when Earth is no more. A single spaceship, The Sanctuary, is sent out in hopes of preservation of beauty and life. In this future, a need for lab assistants and companionship leads a brilliant scientist and her team to use old texts and stories to build cat-like androids to help them maintain the ship. As it turns out, their is more life on the ship than the passengers had thought.",
-            "images": ["pawsible.jpg",  "Bridge.jpg", "Mikey.jpg", "finalcutscene.jpg"],
+            "description": "An action stealth game built with JavaScript and RPG Maker MV. Set in a distant future where Earth is gone, you control The Sanctuary, a spaceship carrying cat-like androids and a few humans. Explore the ship and uncover its secrets.",
+            "images": ["pawsible.jpg", "Bridge.jpg", "Mikey.jpg", "finalcutscene.jpg"],
             "videos": ["sanctuarytrailer.webm"],
             "githubLink": "https://github.com/Byvalvin/Sanctuary",
             "tryItOutLink": "https://chris5ualberta.github.io/",
             "gamedirect": "https://chris5ualberta.github.io/SanctuaryGold/index.html",
             "otherDetailsPage": "other-project-details.html?id=sanctuary-game",
-            "fullgameDL":"https://drive.google.com/drive/folders/1Le6cIn9wxFvws06BYc4IXNtDyHCakolY?usp=share_link"
+            "fullgameDL": "https://drive.google.com/drive/folders/1Le6cIn9wxFvws06BYc4IXNtDyHCakolY?usp=share_link"
         },
         {
             "name": "Excalibur's Renewal",
-            "description": "A short RPG made with Javascript and RPG MakerMV. In Excalibur's Renewal, A young knight embarks on a quest to ensure another successful harvest season for his home town, Marisacordia. He alone must journey outside the borders, an act forbidden by law since the town's birth. He is gifted several weapons and artifacts for the journey and the town prays to the Mariscordian gods to guide his every step. He soon learns the truth behind the seemingly eternal success of Mariscordia and is faced with a grave choice: appease the gods of Marisacordia or watch them burn it to the ground!",
-            "images": ["excalibur.jpg", "excalibur2.jpg","excalibur3.jpg","excalibur5.jpg"],    
+            "description": "A short RPG created with JavaScript and RPG Maker MV. Follow a young knight on a quest to secure a good harvest for his town, Marisacordia. He must venture beyond the town's borders, an act forbidden by law. Along the way, he discovers the truth about his town's prosperity and faces a tough decision.",
+            "images": ["excalibur.jpg", "excalibur2.jpg", "excalibur3.jpg", "excalibur5.jpg"],
             "videos": [],
             "githubLink": "https://github.com/Byvalvin/Excalibur",
             "tryItOutLink": "https://samasa101.github.io/excaliburhtml",
@@ -49,7 +49,7 @@
         },
         {
             "name": "Naive Bayes Document Classifier",
-            "description": "A document classifier that uses Naive Bayes principles to sort documents into different classes.",
+            "description": "A simple document classifier that uses Naive Bayes to sort documents into different categories.",
             "images": [],
             "videos": [],
             "githubLink": "https://github.com/example/document-classifier",
@@ -57,7 +57,7 @@
         },
         {
             "name": "Self Driving Car Simulator",
-            "description": "Uses neural networks to train and test self-driving cars in a Udacity-based Car simulator. Pytorch used to code the neural networks",
+            "description": "Trains and tests self-driving cars using neural networks in a Udacity-based car simulator. Built with PyTorch.",
             "images": [],
             "videos": ["https://www.youtube.com/embed/Pg1sJniHWPE", "https://www.youtube.com/embed/GSWrpgIM-1k"],
             "githubLink": "https://github.com/Byvalvin/SelfDrivingCarSimulator",
@@ -65,7 +65,7 @@
         },
         {
             "name": "Edge Filter",
-            "description": "An image filter that identifies and highlights image edges only. (Used to make my profile)",
+            "description": "An image filter that highlights edges in images. (Used in my profile picture!)",
             "images": ["lenna.jpg", "lennaED.jpg", "gan.jpeg", "ganED.jpg"],
             "videos": [],
             "githubLink": "https://github.com/Byvalvin/Edge-Filter",
