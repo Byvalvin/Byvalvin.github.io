@@ -16,23 +16,19 @@ const highlightActiveLink = () => {
 
     navLinks.forEach(link => {
         let href = link.getAttribute('href');
-
+        
         // Normalize href to remove leading slash and query parameters
         href = cleanLink(href);
 
         // Determine if the href is an active link
         const isActive = isRootPath && (href === '' || href === 'index.html') ||
                          (currentLocation === href) ||
-                         (currentLocation.startsWith(href) && href.length >= 7);
-        if(isActive){
-            console.log("nl",href);
-        }
+                         (currentLocation.startsWith(href));
+        
+        if(isActive){console.log("active",href);}
         link.classList.toggle('active', isActive);
     });
 };
-
-
-
 
 
 // Function to fetch and add a component to the page
@@ -58,10 +54,11 @@ const addComponent = ({ placeholderID, htmlURL }) => {
                 if (htmlURL === 'navbar.html') {
                     highlightActiveLink();
                     setupNavbarToggle();
-                    loadScript('scripts/applyPreferences.js', 'Preferences script loaded.', {
+                    const next = {
                         src: 'scripts/feelingLucky.js',
                         msg: 'Feeling Lucky script loaded.'
-                    });
+                    }
+                    loadScript('scripts/applyPreferences.js', 'Preferences script loaded.', next);
                 } else if (htmlURL === 'footer.html') {
                     updateFooterYear();
                 }
@@ -70,18 +67,10 @@ const addComponent = ({ placeholderID, htmlURL }) => {
     });
 };
 
-//Function to clean
-const cleanLink = (link) => {
-    return removeSlashes(removeQueryArguments(link));
-}
-const removeSlashes = (link) => {
-    let outLink = link.endsWith('/') ? link.slice(0, -1) : link;
-    outLink = outLink.startsWith('/') ? outLink.slice(1) : outLink;
-    return outLink;
-}
-const removeQueryArguments = (link) => {
-    return link.split('?')[0];
-}
+// Helper functions to clean URLs
+const cleanLink = (link) => removeSlashes(removeQueryArguments(link));
+const removeSlashes = (link) => link.endsWith('/') ? link.slice(0, -1) : link.startsWith('/') ? link.slice(1) : link;
+const removeQueryArguments = (link) => link.split('?')[0];
 
 // Function to setup navbar toggle
 const setupNavbarToggle = () => {
@@ -91,6 +80,9 @@ const setupNavbarToggle = () => {
     if (menuToggle && navLinks) {
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
+            // Update ARIA attribute for accessibility
+            const isExpanded = navLinks.classList.contains('active');
+            menuToggle.setAttribute('aria-expanded', isExpanded);
         });
     }
 };
