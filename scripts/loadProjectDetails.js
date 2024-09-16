@@ -58,8 +58,16 @@ document.addEventListener('DOMContentLoaded', () => {
             `).join('');
 
             const buttonsHTML = `
-                ${project.codeUrl ? `<a href="${project.codeUrl}" class="btn code-btn" target="_blank" rel="noopener noreferrer">View Code</a>` : ''}
-                ${project.tryItOutUrl ? `<a href="${project.tryItOutUrl}" class="btn try-btn" target="_blank" rel="noopener noreferrer">Try It Out</a>` : ''}
+                ${project.codeUrl ? 
+                  `<a href="${project.codeUrl}" class="btn code-btn" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-github"></i>
+                    </a>
+                ` : ''}
+                ${project.tryItOutUrl ? 
+                  `<a href="${project.tryItOutUrl}" class="btn try-btn" target="_blank" rel="noopener noreferrer">
+                      <i class="fa-solid fa-circle-play"></i>
+                  </a>
+                  ` : ''}
             `;
 
             // Populate the project details container
