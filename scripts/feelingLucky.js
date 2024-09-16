@@ -27,11 +27,8 @@ const applySettings = () => {
     localStorage.setItem('selectedFont', newFont);
 
      // Change logo image based on theme
-    if (newTheme === '21') {
-        feelingLuckyButton.src = 'images/omnitrix1.jpg'; // Set to Omnitrix image
-    } else {
-        feelingLuckyButton.src = 'images/Byvalvin.jpeg'; // Set to default logo
-    }
+    const logoSrc = newTheme === '21' ? 'images/omnitrix1.jpg' : 'images/Byvalvin.jpeg';
+    feelingLuckyButton.src = logoSrc;
 };
 
 if (feelingLuckyButton) {
