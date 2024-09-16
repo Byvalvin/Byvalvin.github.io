@@ -750,6 +750,7 @@ footer {
 
 .btn:hover {
     background-color: var(--btn-main-bg-hv-color);
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -839,6 +840,7 @@ footer {
 .about-card:hover, 
 .about-card.expanded{
     background-color: var(--main-bg-color); /* Dark background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     color: var(--body-light-text-color); /* White text color on hover */
 }
 .about-card h2 {
