@@ -70,6 +70,7 @@ const addComponent = ({ placeholderID, htmlURL }) => {
 // Helper functions to clean URLs
 const cleanLink = (link) => removeSlashes(removeQueryArguments(link));
 const removeSlashes = (link) => link.endsWith('/') ? link.slice(0, -1) : link.startsWith('/') ? link.slice(1) : link;
+// const removeSlashes = (link) => link.replace(/^\/|\/$/g, ''); // Remove leading and trailing slashes
 const removeQueryArguments = (link) => link.split('?')[0];
 
 // Function to setup navbar toggle
