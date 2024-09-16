@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const generateProjectDetailsHTML = (project) => {
                 // Sanitize the image and video URLs
                 const projectImages = project.images.map(image => 
-                    `<img src="projects/other/images/${image}" alt="${image} image" />`
+                    `<img src="projects/other/images/${image}" alt="${image}" />`
                 ).join('');
 
                 const projectVideos = project.videos.map(video => 
