@@ -23,7 +23,7 @@ const highlightActiveLink = () => {
         // Determine if the href is an active link
         const isActive = isRootPath && (href === '' || href === 'index.html') ||
                          (currentLocation === href) ||
-                         (currentLocation.startsWith(href));
+                         (first7Chars(currentLocation)==first7Chars(href));
         
         if(isActive){console.log("active",href);}
         link.classList.toggle('active', isActive);
@@ -72,6 +72,9 @@ const cleanLink = (link) => removeSlashes(removeQueryArguments(link));
 const removeSlashes = (link) => link.endsWith('/') ? link.slice(0, -1) : link.startsWith('/') ? link.slice(1) : link;
 // const removeSlashes = (link) => link.replace(/^\/|\/$/g, ''); // Remove leading and trailing slashes
 const removeQueryArguments = (link) => link.split('?')[0];
+
+// Helper for embedded links for projects: Get the first 7 characters of the href, if available
+const first7Chars = (link) => link.length >= 7? link.substring(0, 7) : link;
 
 // Function to setup navbar toggle
 const setupNavbarToggle = () => {
