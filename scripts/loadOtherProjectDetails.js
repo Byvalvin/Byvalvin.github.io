@@ -42,11 +42,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Render the "Code" link if GitHub link exists
                 const githubLinkHTML = project.githubLink ? 
-                    `<a class="code-link" href="${project.githubLink}" target="_blank" rel="noopener noreferrer">View on GitHub</a>` : '';
+                    `<a class="code-link" href="${project.githubLink}" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>` : '';
 
                 // Render the "Try it out" link if tryItOutLink exists
                 const tryItOutLinkHTML = project.tryItOutLink ? 
-                    `<a class="try-it-out-link" href="${project.tryItOutLink}" target="_blank" rel="noopener noreferrer">Try it out</a>` : '';
+                    `<a class="try-it-out-link" href="${project.tryItOutLink}" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-play"></i>
+                    </a>` : '';
                 
                 return `
                     <h2>${project.name}</h2>
