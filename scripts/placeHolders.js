@@ -4,31 +4,29 @@
 // Function to highlight the active link in the navbar
 const highlightActiveLink = () => {
     // Get the current path without leading slash and with query parameters removed
-    let currentLocation = window.location.pathname.split('?')[0];
-    currentLocation = currentLocation.endsWith('/') ? currentLocation.slice(0, -1) : currentLocation;
-
+    let currentLocation = window.location.pathname;
+    currentLocation = cleanLink(currentLocation);
     console.log("current", currentLocation);
 
     // Handle special case for root path
-    const isRootPath = currentLocation === '' || currentLocation === '/index.html';
+    const isRootPath = currentLocation === '' || currentLocation === 'index.html';
 
     // Get the nav links
     const navLinks = document.querySelectorAll('.nav-links li a');
 
     navLinks.forEach(link => {
         let href = link.getAttribute('href');
-        console.log("nl",href);
-        
+
         // Normalize href to remove leading slash and query parameters
-        href = href.split('?')[0];
-        href = href.endsWith('/') ? href.slice(0, -1) : href;
-        href = href.startsWith('/') ? href.slice(1) : href;
+        href = cleanLink(href);
 
         // Determine if the href is an active link
         const isActive = isRootPath && (href === '' || href === 'index.html') ||
                          (currentLocation === href) ||
                          (currentLocation.startsWith(href) && href.length >= 7);
-
+        if(isActive){
+            console.log("nl",href);
+        }
         link.classList.toggle('active', isActive);
     });
 };
@@ -71,6 +69,19 @@ const addComponent = ({ placeholderID, htmlURL }) => {
             .catch(error => console.error(error));
     });
 };
+
+//Function to clean
+const cleanLink = (link) => {
+    return removeSlashes(removeQueryArguments(link));
+}
+const removeSlashes = (link) => {
+    let outLink = link.endsWith('/') ? link.slice(0, -1) : link;
+    outLink = outLink.startsWith('/') ? outLink.slice(1) : outLink;
+    return outLink;
+}
+const removeQueryArguments = (link) => {
+    return link.split('?')[0];
+}
 
 // Function to setup navbar toggle
 const setupNavbarToggle = () => {
