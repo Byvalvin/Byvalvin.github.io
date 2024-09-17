@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const dark = 'var(--body-dark-text-color)';
         if (contactForm.style.display === 'none' || contactForm.style.display === '') {
             contactForm.style.display = 'block';
-            /*
+            
             if(contactFormWrapper.style.backgroundColor !== light || contactFormWrapper.style.color!==dark){
                 contactFormWrapper.style.backgroundColor = light; // Ensure background color is set
                 contactFormWrapper.style.color = dark; // Ensure background color is set
             }
-            */
+            
             
         } else {
             contactForm.style.display = 'none';
