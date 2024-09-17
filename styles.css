@@ -195,7 +195,7 @@
 [data-theme='9'] {
     --body-bg-color: #212121;
     --body-darker-text-color: #d4af37;
-    --body-dark-text-color: #f5f5f5;
+    --body-dark-text-color: #d0d0d0;
     --body-light-text-color: #fffde7;
     --main-bg-color: #424242;
     --nav-hv-btn-bg-color: #d4af37;
@@ -1938,10 +1938,16 @@ footer {
     padding: 20px; /* Padding inside the wrapper */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for wrapper */
-    background-color: var(--body-light-text-color); /* Light background for the form */
+    background-color: var(--body-dark-text-color); /* Light background for the form */
+    color: var(--body-light-text-color);
     max-width: 600px; /* Limit width */
     margin-left: auto; /* Center the wrapper */
     margin-right: auto; /* Center the wrapper */
+}
+.contact-form-wrapper:hover,
+.contact-form-wrapper:active{
+    background-color: var(--body-light-text-color); /* Light background for the form */
+    color: var(--body-dark-text-color);
 }
 
 /* Hide the contact form initially */
