@@ -1943,11 +1943,13 @@ footer {
     max-width: 600px; /* Limit width */
     margin-left: auto; /* Center the wrapper */
     margin-right: auto; /* Center the wrapper */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 .contact-form-wrapper:hover,
 .contact-form-wrapper:active{
     background-color: var(--body-light-text-color); /* Light background for the form */
     color: var(--body-dark-text-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Darker box shadow when active */
 }
 
 /* Hide the contact form initially */
@@ -1960,9 +1962,13 @@ footer {
     font-size: 1.5rem; /* Slightly larger font for emphasis */
     margin-bottom: 20px; /* Space below the prompt */
     font-weight: bold; /* Bold text */
-    color: var(--body-dark-text-color); /* Darker text color */
     text-align: center; /* Center-align text */
     cursor: pointer; /* Pointer cursor on hover */
+}
+/* Hover and Active State for Message Prompt */
+.contact-form-wrapper:hover .message-prompt,
+.contact-form-wrapper.active .message-prompt {
+    color: var(--body-dark-text-color); /* Dark text color when active or hovered */
 }
 
 /* Style the contact form */
