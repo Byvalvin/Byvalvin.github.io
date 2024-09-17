@@ -1213,7 +1213,7 @@ footer {
 
 .project-buttons .btn:hover {
     opacity: 0.8; /* Slightly transparent on hover */
-    transform: scale(1.01); /* Slightly enlarge the button on hover */
+    transform: translateY(+2px); /* Subtle -lift/+drop effect */
 }
 
 /* Hide text by default */
@@ -1411,7 +1411,7 @@ footer {
 }
 #other-project-details .project-links .code-link:hover {
     background-color: var(--proj-code-link-hv-color); /* Darker shade for hover effect */
-    transform: translateY(-2px); /* Subtle lift effect */
+    transform: translateY(+2px); /* Subtle lift/drop effect */
 }
 #other-project-details .project-links .code-link:active {
     transform: translateY(0); /* Reset transform on click */
@@ -1423,7 +1423,7 @@ footer {
 
 #other-project-details .project-links .try-it-out-link:hover {
     background-color: var(--btn-main-bg-hv-color); /* Darker shade for hover effect */
-    transform: translateY(-2px); /* Subtle lift effect */
+    transform: translateY(+2px); /* Subtle lift/drop effect */
 }
 #other-project-details .project-links .try-it-out-link:active {
     transform: translateY(0); /* Reset transform on click */
