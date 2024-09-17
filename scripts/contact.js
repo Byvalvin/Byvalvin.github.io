@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
             
         } else {
             contactForm.style.display = 'none';
-           // contactFormWrapper.style.backgroundColor = ''; // Reset background color
+            contactFormWrapper.style.backgroundColor = 'var(--body-dark-text-color)'; // Ensure background color is set
+            contactFormWrapper.style.color = 'var(--body-light-text-color)'; // Ensure background color is set
         }
     });
 
