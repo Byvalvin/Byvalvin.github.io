@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     showFormButton.addEventListener('click', () => {
         if (contactForm.style.display === 'none' || contactForm.style.display === '') {
             contactForm.style.display = 'block';
-            //contactFormWrapper.style.backgroundColor = 'var(--body-light-text-color)'; // Ensure background color is set
+            contactFormWrapper.style.backgroundColor = 'var(--body-light-text-color)'; // Ensure background color is set
+            contactFormWrapper.style.color = 'var(--body-dark-text-color)'; // Ensure background color is set
+            
         } else {
             contactForm.style.display = 'none';
            // contactFormWrapper.style.backgroundColor = ''; // Reset background color
