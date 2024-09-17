@@ -1176,6 +1176,10 @@ footer {
 #project-details .contribution-item:last-of-type {
     border-bottom: none;
 }
+
+
+
+
 /* Project Details Buttons */
 .project-buttons {
     margin-top: 20px;
@@ -1186,7 +1190,7 @@ footer {
     flex-direction: column; /* Arrange items vertically */
     align-items: center;
     justify-content: center;
-    padding: 10px 20px;
+    padding: 10px; /* Adjust padding as needed */
     margin-right: 10px;
     border-radius: 5px;
     color: var(--body-light-text-color);
@@ -1214,9 +1218,9 @@ footer {
 .project-buttons .btn .btn-text {
     display: none; /* Hide text initially */
     position: absolute;
-    bottom: 100%; /* Position text above the button */
+    bottom: calc(100% + 8px); /* Position text above the button with some space */
     left: 50%;
-    transform: translateX(-50%) translateY(-10px); /* Center text horizontally and adjust vertical position */
+    transform: translateX(-50%); /* Center text horizontally */
     background-color: rgba(0, 0, 0, 0.7); /* Background for text */
     color: #fff; /* Text color */
     padding: 5px 10px; /* Padding for text */
@@ -1235,8 +1239,12 @@ footer {
 /* Style the icons */
 .project-buttons .btn i {
     font-size: 24px; /* Adjust icon size */
+    padding: 10px; /* Padding around the icon to create background effect */
+    border-radius: 50%; /* Circular background around the icon */
+    background-color: rgba(0, 0, 0, 0.2); /* Background color around icon */
     margin-bottom: 8px; /* Space between icon and text */
 }
+
 
 
 
