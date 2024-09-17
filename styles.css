@@ -1239,10 +1239,6 @@ footer {
 /* Style the icons */
 .project-buttons .btn i {
     font-size: 24px; /* Adjust icon size */
-    padding: 10px; /* Padding around the icon to create background effect */
-    border-radius: 50%; /* Circular background around the icon */
-    background-color: rgba(0, 0, 0, 0.2); /* Background color around icon */
-    margin-bottom: 8px; /* Space between icon and text */
 }
 
 
