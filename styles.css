@@ -1364,9 +1364,10 @@ footer {
 /* Common styles for both buttons */
 #other-project-details .project-links {
     margin-top: 20px;
+    display: flex; /* Use flexbox for alignment */
 }
 #other-project-details .project-links a {
-    display: inline-block;
+    display: inline-flex;
     color: var(--body-light-text-color);
     text-align: center;
     text-decoration: none;
@@ -1384,12 +1385,12 @@ footer {
 #other-project-details .project-links a .btn-text {
     display: none; /* Hide text initially */
     position: absolute;
-    top: -30px; /* Position text above the button */
+    top: 100%; /* Position text above the button */
     left: 50%;
     transform: translateX(-50%); /* Center text horizontally */
     background-color: rgba(0, 0, 0, 0.7); /* Background color for text */
     color: #fff; /* Text color */
-    padding: 6px 12px; /* Padding for text */
+    padding: 4px 8px; /* Padding for text */
     border-radius: 4px; /* Rounded corners for text background */
     white-space: nowrap; /* Prevent text wrapping */
     font-size: 0.9rem; /* Text size */
