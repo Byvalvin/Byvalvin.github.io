@@ -1183,10 +1183,11 @@ footer {
 /* Project Details Buttons */
 .project-buttons {
     margin-top: 20px;
+    display: flex; /* Use flexbox for alignment */
 }
 
 .project-buttons .btn {
-    display: inline-flex;
+    display: flex; /* Use flexbox for alignment */
     flex-direction: column; /* Arrange items vertically */
     align-items: center;
     justify-content: center;
@@ -1212,13 +1213,14 @@ footer {
 
 .project-buttons .btn:hover {
     opacity: 0.8; /* Slightly transparent on hover */
+    transform: scale(1.01); /* Slightly enlarge the button on hover */
 }
 
 /* Hide text by default */
 .project-buttons .btn .btn-text {
     display: none; /* Hide text initially */
     position: absolute;
-    bottom: calc(100% + 8px); /* Position text above the button with some space */
+    bottom: 100%; /* Position text above the button with some space */
     left: 50%;
     transform: translateX(-50%); /* Center text horizontally */
     background-color: rgba(0, 0, 0, 0.7); /* Background for text */
