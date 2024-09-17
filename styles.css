@@ -1180,8 +1180,11 @@ footer {
 .project-buttons {
     margin-top: 20px;
 }
+
 .project-buttons .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px 20px;
     margin-right: 10px;
     border-radius: 5px;
@@ -1189,40 +1192,51 @@ footer {
     text-align: center;
     text-decoration: none;
     font-size: 1rem;
-    transition: background-color 0.3s;
+    position: relative; /* Positioning context for text */
+    transition: background-color 0.3s, opacity 0.3s;
 }
+
+/* Default button styles */
 .project-buttons .code-btn {
     background-color: var(--nav-hv-btn-bg-color); /* Blue for code */
 }
+
 .project-buttons .try-btn {
     background-color: var(--proj-btn-bg-color); /* Green for try it out */
 }
+
 .project-buttons .btn:hover {
-    opacity: 0.8;
+    opacity: 0.8; /* Slightly transparent on hover */
 }
 
+/* Hide text by default */
 .project-buttons .btn .btn-text {
-    display: none; /* Hide text by default */
+    display: none; /* Hide text initially */
     position: absolute;
-    left: 50px; /* Adjust as needed */
+    left: 60px; /* Adjust as needed to position text */
     background-color: rgba(0, 0, 0, 0.7); /* Background for text */
     color: #fff; /* Text color */
     padding: 5px 10px; /* Padding for text */
     border-radius: 3px; /* Rounded corners */
     white-space: nowrap; /* Prevent text from wrapping */
-    font-size: 0.9rem; /* Adjust text size if needed */
+    font-size: 0.9rem; /* Text size */
     top: 50%;
     transform: translateY(-50%);
+    transition: opacity 0.3s;
 }
 
+/* Show text on hover */
 .project-buttons .btn:hover .btn-text {
-    display: block; /* Show text on hover */
+    display: block; /* Show text when hovered */
+    opacity: 1; /* Ensure text is fully visible */
 }
 
+/* Style the icons */
 .project-buttons .btn i {
-    margin-right: 8px; /* Space between icon and text */
     font-size: 24px; /* Adjust icon size */
+    margin-right: 8px; /* Space between icon and text */
 }
+
 
 /*OTHER PROJECTS PAGE*/
 /* projects list*/
