@@ -1378,7 +1378,6 @@ footer {
 
 #other-project-details .project-links a i {
     font-size: 24px; /* Icon size */
-    margin-right: 8px; /* Space between icon and text */
 }
 #other-project-details .project-links a .btn-text {
     display: none; /* Hide text initially */
