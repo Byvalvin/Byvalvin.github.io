@@ -1358,6 +1358,8 @@ footer {
     aspect-ratio: 16 / 9;
 }
 
+/* Other Project Details Buttons */
+/* Common styles for both buttons */
 #other-project-details .project-links {
     margin-top: 20px;
 }
@@ -1369,8 +1371,36 @@ footer {
     border-radius: 4px;
     margin-right: 10px;
     font-size: 1.1rem;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative; /* For positioning text */
 }
+
+.project-links a i {
+    font-size: 24px; /* Icon size */
+    margin-right: 8px; /* Space between icon and text */
+}
+.project-links a .btn-text {
+    display: none; /* Hide text initially */
+    position: absolute;
+    top: -30px; /* Position text above the button */
+    left: 50%;
+    transform: translateX(-50%); /* Center text horizontally */
+    background-color: rgba(0, 0, 0, 0.7); /* Background color for text */
+    color: #fff; /* Text color */
+    padding: 6px 12px; /* Padding for text */
+    border-radius: 4px; /* Rounded corners for text background */
+    white-space: nowrap; /* Prevent text wrapping */
+    font-size: 0.9rem; /* Text size */
+    transition: opacity 0.3s ease;
+}
+
+/* Show text on hover */
+.project-links a:hover .btn-text {
+    display: block; /* Show text when hovered */
+    opacity: 1; /* Full visibility */
+}
+
+
 /* Styling for "Code" link */
 #other-project-details .project-links .code-link {
     background-color: var(--main-bg-color); /* Purple color */
