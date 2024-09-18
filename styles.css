@@ -1946,11 +1946,19 @@ footer {
     transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 .contact-form-wrapper:hover,
-.contact-form-wrapper:active{
+.contact-form-wrapper.active{
     background-color: var(--body-light-text-color); /* Light background for the form */
     color: var(--body-dark-text-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Darker box shadow when active */
 }
+/* Hover effect for the default state */
+.contact-form-wrapper:not(.active):hover,
+.contact-form-wrapper:not(.active):active {
+    background-color: var(--body-light-text-color);
+    color: var(--body-dark-text-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
 
 /* Hide the contact form initially */
 .contact-form {
@@ -1964,11 +1972,6 @@ footer {
     font-weight: bold; /* Bold text */
     text-align: center; /* Center-align text */
     cursor: pointer; /* Pointer cursor on hover */
-}
-/* Hover and Active State for Message Prompt */
-.contact-form-wrapper:hover .message-prompt,
-.contact-form-wrapper.active .message-prompt {
-    color: var(--body-dark-text-color); /* Dark text color when active or hovered */
 }
 
 /* Style the contact form */
