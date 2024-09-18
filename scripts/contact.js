@@ -1,3 +1,5 @@
+// contact.js
+
 document.addEventListener('DOMContentLoaded', () => {
     // Form Toggle Functionality
     const showFormButton = document.getElementById('show-form-button');
