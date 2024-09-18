@@ -635,6 +635,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    height: 100%;
+}
 body, html {
     font-family: 'Poppins', sans-serif; /* Updated to use Poppins */ /*font-family: 'Roboto', sans-serif;*/
     line-height: 1.6;
@@ -647,7 +650,6 @@ body, html {
 /* Main Content Styles */
 .main {
     max-width: 900px;
-    height: 100%;
     margin: 0 auto;
     padding: 20px;
 }
