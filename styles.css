@@ -637,6 +637,7 @@
 }
 body{
     min-height: 100vh; /* Ensure body covers at least full viewport height */
+    display: flex;
     flex-direction: column;
 }
 body, html {
