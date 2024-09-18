@@ -636,7 +636,7 @@
     padding: 0;
 }
 body{
-    height: 100%;
+    min-height: 100vh; /* Ensure body covers at least full viewport height */
 }
 body, html {
     font-family: 'Poppins', sans-serif; /* Updated to use Poppins */ /*font-family: 'Roboto', sans-serif;*/
