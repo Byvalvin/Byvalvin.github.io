@@ -647,6 +647,7 @@ body, html {
 /* Main Content Styles */
 .main {
     max-width: 900px;
+    height: 100%;
     margin: 0 auto;
     padding: 20px;
 }
