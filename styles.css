@@ -638,7 +638,6 @@
 body, html {
     font-family: 'Poppins', sans-serif; /* Updated to use Poppins */ /*font-family: 'Roboto', sans-serif;*/
     line-height: 1.6;
-    height: 100%;
     margin: 0;
     padding: 0;
     background-color: var(--body-bg-color); /* Light gray background */
