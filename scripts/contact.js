@@ -7,26 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactFormWrapper = document.getElementById('contact-form-wrapper');
 
     showFormButton.addEventListener('click', () => {
-        const light = 'var(--body-light-text-color)';
-        const dark = 'var(--body-dark-text-color)';
         if (contactForm.style.display === 'none' || contactForm.style.display === '') {
             contactForm.style.display = 'block';
-            /*
-            if(contactFormWrapper.style.backgroundColor !== light || contactFormWrapper.style.color!==dark){
-                contactFormWrapper.style.backgroundColor = light; // Ensure background color is set
-                contactFormWrapper.style.color = dark; // Ensure background color is set
-            }
-            */
-            
-            
+            contactFormWrapper.classList.add('active');
         } else {
             contactForm.style.display = 'none';
-            /*
-            if(contactFormWrapper.style.backgroundColor !== dark || contactFormWrapper.style.color!==light){
-                contactFormWrapper.style.backgroundColor = dark; // Ensure background color is set
-                contactFormWrapper.style.color = light; // Ensure background color is set
-            }
-            */
+            contactFormWrapper.classList.remove('active');
         }
     });
 
