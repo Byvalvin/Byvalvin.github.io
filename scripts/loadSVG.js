@@ -12,6 +12,7 @@ const loadSVG = () => {
             const svgElement = document.querySelector('#contact-icon svg');
             if (svgElement) {
                 // Set the color for the SVG
+                console.log(getComputedStyle(document.documentElement).getPropertyValue('--body-light-text-color').trim(), "rotary colours");
                 svgElement.setAttribute('fill', getComputedStyle(document.documentElement).getPropertyValue('--body-light-text-color').trim());
                 
                 // Set size and other attributes
