@@ -942,6 +942,8 @@ footer {
 .contact-header i {
     font-size: 4rem; /* Adjust size as needed */
     color: var(--body-light-text-color); /* Ensure it matches your color scheme */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
 }
 .contact-section p {
     font-size: 1.2rem;
