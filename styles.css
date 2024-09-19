@@ -940,8 +940,8 @@ footer {
     align-items: center; /* Center align items */
 }
 .contact-header i {
-    font-size: 2rem; /* Adjust size as needed */
-    margin-bottom: 10px; /* Space between icon and text */
+    font-size: 3.5rem; /* Adjust size as needed */
+    margin-bottom: 5px; /* Space between icon and text */
     color: var(--body-light-text-color); /* Ensure it matches your color scheme */
 }
 .contact-section p {
