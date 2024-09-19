@@ -2368,6 +2368,7 @@ footer {
 
     .nav-button {
         padding: 5px;
+        margin: 0 20px;
         font-size: 14px;
     }
 }
