@@ -940,7 +940,7 @@ footer {
     color: var(--body-light-text-color);
     margin-bottom: 20px;
 }
-.contact-icon {
+#contact-icon {
     width: 24px; /* Adjust size as needed */
     height: 24px; /* Adjust size as needed */
     transition: color 0.3s ease; /* Smooth color transition */
