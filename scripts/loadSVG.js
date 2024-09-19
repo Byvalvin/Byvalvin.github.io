@@ -17,6 +17,3 @@ const loadSVG = ()=> {
         })
         .catch(error => console.error('Error loading SVG:', error));
 }
-
-// Call the function to load the SVG
-loadSVG();
