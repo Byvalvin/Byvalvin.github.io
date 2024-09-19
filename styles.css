@@ -940,7 +940,7 @@ footer {
     align-items: center; /* Center align items */
 }
 .contact-header i {
-    font-size: 5rem; /* Adjust size as needed */
+    font-size: 4rem; /* Adjust size as needed */
     color: var(--body-light-text-color); /* Ensure it matches your color scheme */
 }
 .contact-section p {
