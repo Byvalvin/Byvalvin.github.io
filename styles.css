@@ -1548,6 +1548,7 @@ footer {
     position: relative;
     flex: 1;
     padding: 10px; /* Add padding to avoid content touching the edges */
+    margin: 0 80px;
 }
 
 /* Timeline Header and Logo */
