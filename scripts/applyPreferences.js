@@ -17,7 +17,7 @@ const applyStoredPreferences = () => {
         // Set to a default dark theme (e.g., '8')
         const randDarkThemeIndex = Math.floor(Math.random()*darkThemes.length);
         body.setAttribute('data-theme', darkThemes[randDarkThemeIndex]); // Choose one of your darker themes
-        localStorage.setItem('selectedTheme', 'darkThemes[randDarkThemeIndex]); // Save this preference
+        localStorage.setItem('selectedTheme', darkThemes[randDarkThemeIndex]); // Save this preference
         console.log('Dark theme applied by default: ', darkThemes[randDarkThemeIndex]);
     } else if (storedTheme) {
         // Apply stored theme if available
