@@ -1993,6 +1993,7 @@ footer {
 .plane-icon {
     display: none; /* Initially hidden */
     margin-left: 5px; /* Space between text and icon */
+    color: var(--body-dark-text-color);
 }
 
 .message-prompt:hover .plane-icon {
