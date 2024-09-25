@@ -1990,6 +1990,15 @@ footer {
     text-align: center; /* Center-align text */
     cursor: pointer; /* Pointer cursor on hover */
 }
+.plane-icon {
+    display: none; /* Initially hidden */
+    margin-left: 5px; /* Space between text and icon */
+}
+
+.message-prompt:hover .plane-icon {
+    display: inline; /* Show icon on hover */
+}
+
 
 /* Style the contact form */
 .contact-form {
