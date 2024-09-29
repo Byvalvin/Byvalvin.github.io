@@ -606,6 +606,32 @@
     --proj-try-btn: #adff2f; /* Green-yellow for "try" buttons, keeping with the theme */
 }
 
+/* Pink Noir */
+/*5*/
+[data-theme='26'] {
+    --body-bg-color: #ffeef8; /* Light pink for background */
+    --body-darker-text-color: #d5006d; /* Dark pink for darker text */
+    --body-dark-text-color: #c2185b; /* Medium dark pink for text */
+    --body-light-text-color: #fff; /* White for light text */
+    --main-bg-color: #000; /* Black for main sections */
+    --nav-hv-btn-bg-color: #ff1f6d; /* Medium pink for navbar hover effects */
+    --active-link-color: #d5006d; /* Dark pink for active links */
+    --btn-main-bg-color: #ff4081; /* Bright pink for buttons */
+    --btn-main-bg-hv-color: #ff1f6d; /* Darker pink for button hover */
+    --hero-bg-color: #ff69b4; /* Bright pink for hero section */
+    --proj-btn-bg-color: #ff4081; /* Bright pink for project buttons */
+    --btn-bg-hv-color: #ff1f6d; /* Darker pink for button hover effects */
+    --h-text-color: #d5006d; /* Dark pink for headings */
+    --contact-bg-color: #ff80ab; /* Soft pink for contact section */
+    --tech-card-acc-bd-bg: #f8bbd0; /* Light pink for tech card backgrounds */
+    --acc-title-hv: #d81b60; /* Medium dark pink for accordion title hover */
+    --contr-bg: #fff; /* White for container backgrounds */
+    --proj-code-link-hv-color: #ff1f6d; /* Dark pink for code link hover */
+    --proj-try-btn: #ff4081; /* Bright pink for "try" buttons */
+}
+
+
+
 :root{
     --body-bg-color: #f4f4f9;
     --body-darker-text-color: #555;
