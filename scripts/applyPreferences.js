@@ -10,7 +10,7 @@ const applyStoredPreferences = () => {
     // Check current time
     const currentHour = new Date().getHours();
     const darkTime = 18;
-    const darkThemes = ['4', '5', '8', '12', '16', '20', '22'];
+    const darkThemes = ['4', '5', '8', '12', '16', '20', '22', '26'];
 
     // Apply dark theme if it's 6 PM or later
     if (currentHour >= darkTime && !storedTheme) {
