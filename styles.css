@@ -1551,7 +1551,7 @@ footer {
     position: relative;
     flex: 1;
     padding: 10px; /* Add padding to avoid content touching the edges */
-    margin: 0 80px;
+    margin: 0 40px;
 }
 
 /* Timeline Header and Logo */
@@ -1646,10 +1646,12 @@ footer {
 
 .nav-button.left {
     left: 30px; /* Increased distance from the edge */
+    margin-right: auto;
 }
 
 .nav-button.right {
     right: 30px; /* Increased distance from the edge */
+    margin-left: auto;
 }
 
 
@@ -2329,6 +2331,11 @@ footer {
     .timeline-content {
         width: 200px; /* Limit width for smaller screens */
     }
+    .nav-button {
+        width: 40px; /* Reduce size for smaller screens */
+        height: 40px; /* Reduce size for smaller screens */
+        font-size: 16px; /* Adjust font size */
+    }
     .legend {
         flex-direction: column;
         align-items: flex-start;
@@ -2384,8 +2391,11 @@ footer {
     }
 
     .nav-button {
+        width: 30px; /* Further reduce size for very small screens */
+        height: 30px; /* Further reduce size for very small screens */
         padding: 5px;
         margin: 0 20px;
         font-size: 14px;
     }
+
 }
