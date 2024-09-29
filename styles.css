@@ -2446,7 +2446,7 @@ footer {
     .nav-button {
         width: 40px; /* Further reduce size for very small screens */
         height: 40px; /* Further reduce size for very small screens */
-        padding: 5px;
+        padding: 6px;
         margin: 0 20px;
         font-size: 14px;
     }
