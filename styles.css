@@ -633,23 +633,23 @@
 /* Pink Noir Dark */
 /*6*/
 [data-theme='27'] {
-    --body-bg-color: #000; /* Black for background */
+    --body-bg-color: #1c1c1c; /* Black for background */
     --body-darker-text-color: #ff80ab; /* Soft pink for darker text */
     --body-dark-text-color: #ff1f6d; /* Medium pink for text */
     --body-light-text-color: #fff; /* White for light text */
-    --main-bg-color: #000; /* Black for main sections */
+    --main-bg-color: #1c1c1c; /* Black for main sections */
     --nav-hv-btn-bg-color: #d5006d; /* Dark pink for navbar hover effects */
     --active-link-color: #ff1f6d; /* Medium pink for active links */
     --btn-main-bg-color: #d5006d; /* Dark pink for buttons */
     --btn-main-bg-hv-color: #ff4081; /* Bright pink for button hover */
-    --hero-bg-color: #000; /* Black for hero section */
+    --hero-bg-color: #1c1c1c; /* Black for hero section */
     --proj-btn-bg-color: #ff4081; /* Bright pink for project buttons */
     --btn-bg-hv-color: #ff1f6d; /* Darker pink for button hover effects */
     --h-text-color: #ff80ab; /* Soft pink for headings */
-    --contact-bg-color: #1c1c1c; /* Dark gray for contact section */
+    --contact-bg-color: #000; /* Dark gray for contact section */
     --tech-card-acc-bd-bg: #333; /* Dark gray for tech card backgrounds */
     --acc-title-hv: #ff4081; /* Bright pink for accordion title hover */
-    --contr-bg: #000; /* Black for container backgrounds */
+    --contr-bg: #1c1c1c; /* Black for container backgrounds */
     --proj-code-link-hv-color: #ff80ab; /* Soft pink for code link hover */
     --proj-try-btn: #d5006d; /* Dark pink for "try" buttons */
 }
