@@ -52,7 +52,7 @@
             "description": "A simple document classifier that uses Naive Bayes to sort documents into different categories.",
             "images": [],
             "videos": [],
-            "githubLink": "https://github.com/example/document-classifier",
+            "githubLink": "",
             "otherDetailsPage": "other-project-details.html?id=document-classifier"
         },
         {
@@ -60,7 +60,7 @@
             "description": "Trains and tests self-driving cars using neural networks in a Udacity-based car simulator. Built with PyTorch.",
             "images": [],
             "videos": ["https://www.youtube.com/embed/Pg1sJniHWPE", "https://www.youtube.com/embed/GSWrpgIM-1k"],
-            "githubLink": "https://github.com/Byvalvin/SelfDrivingCarSimulator",
+            "githubLink": "",
             "otherDetailsPage": "other-project-details.html?id=self-driving-car"
         },
         {
