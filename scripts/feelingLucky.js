@@ -10,7 +10,7 @@ const fonts = ['Poppins:wght@300;400;600', 'Roboto:wght@400;700', 'Lora:wght@400
                'Source+Sans+Pro:wght@400;700', 'Open+Sans:wght@300;400;600', 'Raleway:wght@400;700',
                'Merriweather:wght@400;700','Playfair+Display:wght@400;700', 'Montserrat:wght@400;700',  'Arial', 'Verdana'
               ];
-const themes = ['default', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18','19','20','21','22','23','24','25',
+const themes = ['default', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18','19','20','21','22','23','24','25', '26',
                ];
 
 const applySettings = () => {
