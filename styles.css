@@ -1645,12 +1645,12 @@ footer {
 }
 
 .nav-button.left {
-    left: 30px; /* Increased distance from the edge */
+    left: 0px; /* Increased distance from the edge */
     margin-right: auto;
 }
 
 .nav-button.right {
-    right: 30px; /* Increased distance from the edge */
+    right: 0px; /* Increased distance from the edge */
     margin-left: auto;
 }
 
