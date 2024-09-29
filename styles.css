@@ -642,7 +642,7 @@
     --active-link-color: #ff1f6d; /* Medium pink for active links */
     --btn-main-bg-color: #d5006d; /* Dark pink for buttons */
     --btn-main-bg-hv-color: #ff4081; /* Bright pink for button hover */
-    --hero-bg-color: #1c1c1c; /* Dark gray for hero section */
+    --hero-bg-color: #000; /* Black for hero section */
     --proj-btn-bg-color: #ff4081; /* Bright pink for project buttons */
     --btn-bg-hv-color: #ff1f6d; /* Darker pink for button hover effects */
     --h-text-color: #ff80ab; /* Soft pink for headings */
