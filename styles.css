@@ -649,7 +649,7 @@
     --contact-bg-color: #000; /* Dark gray for contact section */
     --tech-card-acc-bd-bg: #333; /* Dark gray for tech card backgrounds */
     --acc-title-hv: #ff4081; /* Bright pink for accordion title hover */
-    --contr-bg: #1c1c1c; /* Black for container backgrounds */
+    --contr-bg: #ff4081; /* Black for container backgrounds */
     --proj-code-link-hv-color: #ff80ab; /* Soft pink for code link hover */
     --proj-try-btn: #d5006d; /* Dark pink for "try" buttons */
 }
