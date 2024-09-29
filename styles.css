@@ -889,6 +889,8 @@ footer {
     text-decoration: none;
     transition: all 0.3s ease; /* Smooth transition */
     margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .about-card .home-about-link:hover{ /* Hover effect */
@@ -1381,6 +1383,7 @@ footer {
 #other-project-details .project-links {
     margin-top: 20px;
     display: flex; /* Use flexbox for alignment */
+    justify-content: flex-end;
 }
 #other-project-details .project-links a {
     display: inline-flex;
@@ -2045,6 +2048,8 @@ footer {
     cursor: pointer; /* Pointer cursor on hover */
     font-size: 1.1rem; /* Font size for button text */
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    display: flex; 
+    margin-left: auto
 }
 
 .contact-form button:hover {
@@ -2057,6 +2062,7 @@ footer {
     color: var(--body-dark-text-color); /* Match text color */
     margin-top: 0.5em; /* Space above the word count */
     text-align: left; /* Align text to the left */
+    display: flex;
 }
 
 /* Thank you message style */
