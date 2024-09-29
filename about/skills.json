@@ -27,16 +27,24 @@
         "name": "JavaScript",
         "type": "language",
         "category": "General-Purpose",
-        "proficiency": 80,
-        "duration": 60,
+        "proficiency": 87,
+        "duration": 80,
         "projectUrl": "https://byvalvin.github.io/other-project-details.html?id=text-klondike"
+    },
+    {
+        "name": "C#",
+        "type": "language",
+        "category": "General-Purpose",
+        "proficiency": 85,
+        "duration": 60,
+        "projectUrl": ""
     },
     {
         "name": "C",
         "type": "language",
         "category": "General-Purpose",
-        "proficiency": 65,
-        "duration": 70,
+        "proficiency": 70,
+        "duration": 80,
         "projectUrl": ""
     },
     {
@@ -59,8 +67,8 @@
         "name": "Typescript",
         "type": "language",
         "category": "Specialised",
-        "proficiency": 40,
-        "duration": 20,
+        "proficiency": 70,
+        "duration": 40,
         "projectUrl": "https://byvalvin.github.io/other-project-details.html?id=edge-filter"
     },
     {
@@ -116,7 +124,7 @@
         "type": "framework",
         "category": "Frontend",
         "proficiency": 75,
-        "duration": 40,
+        "duration": 60,
         "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
     },
     {
@@ -132,23 +140,23 @@
         "type": "framework",
         "category": "Frontend",
         "proficiency": 80,
-        "duration": 40,
+        "duration": 60,
         "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
     },
     {
         "name": "Express",
         "type": "framework",
         "category": "Backend",
-        "proficiency": 60,
-        "duration": 20,
+        "proficiency": 70,
+        "duration": 60,
         "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
     },
     {
         "name": "Django",
         "type": "framework",
         "category": "Backend",
-        "proficiency": 75,
-        "duration": 40,
+        "proficiency": 80,
+        "duration": 60,
         "projectUrl": ""
     },
     {
@@ -156,7 +164,7 @@
         "type": "framework",
         "category": "Backend",
         "proficiency": 60,
-        "duration": 20,
+        "duration": 40,
         "projectUrl": ""
     },
     {
@@ -172,15 +180,23 @@
         "type": "technology",
         "category": "DevTools",
         "proficiency": 85,
-        "duration": 60,
+        "duration": 90,
         "projectUrl": "https://byvalvin.github.io/project-details.html?id=qrapp"
+    },
+    {
+        "name": "Unity",
+        "type": "technology",
+        "category": "Game Development",
+        "proficiency": 70,
+        "duration": 50,     
+        "projectUrl": ""
     },
     {
         "name": "Visual Studio Code",
         "type": "technology",
         "category": "DevTools",
-        "proficiency": 80,
-        "duration": 75,
+        "proficiency": 82,
+        "duration": 80,
         "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
     },
     {
