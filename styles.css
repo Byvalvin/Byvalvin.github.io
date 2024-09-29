@@ -1202,6 +1202,7 @@ footer {
 .project-buttons {
     margin-top: 20px;
     display: flex; /* Use flexbox for alignment */
+    justify-content: flex-end;
 }
 
 .project-buttons .btn {
