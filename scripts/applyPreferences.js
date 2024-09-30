@@ -9,8 +9,10 @@ const applyStoredPreferences = () => {
 
     // Check current time
     const currentHour = new Date().getHours();
+    const lightTime;
+    const lightThemes = ['0','1','2','3','7', '9', '10', '11', '13', '14', '15', '17', '18', '19','21','22', '23', '24', '26']
     const darkTime = 18;
-    const darkThemes = ['4', '5', '8', '12', '16', '20', '22', '27'];
+    const darkThemes = ['4', '5', '6', '8', '12', '16', '20', '22', '27'];
 
     // Apply dark theme if it's 6 PM or later
     if (currentHour >= darkTime && !storedTheme) {
@@ -25,6 +27,11 @@ const applyStoredPreferences = () => {
         console.log(`Theme applied: ${storedTheme}`);
     } else {
         console.log('No theme preference found.');
+        // Set light theme
+        const randLightThemeIndex = Math.floor(Math.random()*lightThemes.length);
+        body.setAttribute('data-theme', lightThemes[randLightThemeIndex]); // Choose one of your darker themes
+        localStorage.setItem('selectedTheme', lightThemes[randLightThemeIndex]); // Save this preference
+        console.log('Dark theme applied by default: ', lightThemes[randLightThemeIndex]); 
     }
 
     // Apply stored font if available
