@@ -537,7 +537,7 @@
     --body-bg-color: #f9f4e8; /* Off-white with a warm, yellowish tone, simulating aged typewriter paper */
     --body-darker-text-color: #141414; /* Deep dark gray */
     --body-dark-text-color: #1f1f1f; /* Darker gray */
-    --body-light-text-color: #333333; /* Soft, light gray text */
+    --body-light-text-color: #777777; /* Soft, light gray text */
     --main-bg-color: #eae6d3; /* Soft beige for main sections, resembling the color of old typewriter paper */
     --nav-hv-btn-color: #5c5c5c; /* Medium gray for navbar button hover, representing typewriter ink smudges */
     --active-link-color: #6d4c41;
@@ -547,7 +547,7 @@
     --proj-btn-bg-color: #c0c0c0; /* Gray for project buttons, mimicking the look of old paper textures */
     --btn-bg-hv-color: #a0a0a0; /* Darker gray for button hover effects, as if ink was used heavily on the paper */
     --h-text-color: #444444; /* Dark gray for headings, similar to typewriter ink strokes */
-    --contact-bg-color: #d9d9d9; /* Light gray for contact section, evoking the feel of aged paper with typewriter text */
+    --contact-bg-color: #333333; /* Light gray for contact section, evoking the feel of aged paper with typewriter text */
     --tech-card-acc-bd-bg: #ece9e0; /* Off-white with a slight beige tint for tech card backgrounds, like old typewriter paper */
     --acc-title-hv-color: #6e6e6e; /* Medium gray for accordion title hover effects, mimicking faded typewriter ink */
     --contr-bg-color: #f5f2e8; /* Very light beige for container backgrounds, resembling old paper with typewritten text */
@@ -563,7 +563,7 @@
     --body-bg-color: #e8f5e9; /* Light green for a fresh look */
     --body-darker-text-color: #1b5e20; /* Dark green for text */
     --body-dark-text-color: ##1f5b26; /* Darker green */
-    --body-light-text-color: #2e7d32; /* Forest green for text */
+    --body-light-text-color: #2e6d32; /* Forest green for text */
     --main-bg-color: #ffffff; /* White for main sections */
     --nav-hv-btn-bg-color: #388e3c; /* Darker green for navbar hover effects */
     --active-link-color: #4a90e2;
@@ -571,7 +571,7 @@
     --btn-main-bg-hv-color: #2e7d32; /* Dark green for button hover effects */
     --hero-bg-color: #a5d6a7; /* Soft green for hero section */
     --proj-btn-bg-color: #66bb6a; /* Medium green for project buttons */
-    --btn-bg-hv-color: #2e7d32; /* Dark green for button hover effects */
+    --btn-bg-hv-color: #66bb6a; /* Dark green for button hover effects */
     --h-text-color: #1b5e20; /* Dark green for headings */
     --contact-bg-color: #e8f5e9; /* Light green for contact section */
     --tech-card-acc-bd-bg: #c8e6c9; /* Light green for tech card backgrounds */
