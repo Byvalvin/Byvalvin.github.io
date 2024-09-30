@@ -9,8 +9,8 @@ const applyStoredPreferences = () => {
 
     // Check current time
     const currentHour = new Date().getHours();
-    const lightTime;
-    const lightThemes = ['0','1','2','3','7', '9', '10', '11', '13', '14', '15', '17', '18', '19','21','22', '23', '24', '26']
+    const lightTime = 12;
+    const lightThemes = ['0','1','2','3','7', '9', '10', '11', '13', '14', '15', '17', '18', '19','21','22', '23', '24', '26'];
     const darkTime = 18;
     const darkThemes = ['4', '5', '6', '8', '12', '16', '20', '22', '27'];
 
