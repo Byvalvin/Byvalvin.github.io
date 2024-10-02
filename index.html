@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="styles.css">
     <script src="scripts/loadFont.js" defer></script>
     <script>
-        window.addEventListener('popstate', (event) => {
-            const sectionId = event.state ? event.state.sectionId : 'home';
-            showSection(null, sectionId);
+        window.addEventListener('load', (event) => {
+            const initialSection = window.location.hash ? window.location.hash.substring(1) : 'home';
+            showSection(event, initialSection);
         });
-
 
         window.addEventListener('popstate', (event) => {
             const sectionId = event.state ? event.state.sectionId : 'home';
@@ -357,7 +356,7 @@
     <script src="scripts/loadInterests.js" defer></script>
 
     <!--Contact-->
-    <!--no other scripts-->
+    <script src="scripts/contact.js" defer></script>
 
     <!--SPA functionality-->
     <script>
@@ -373,13 +372,19 @@
             document.getElementById(sectionId).style.display = 'block'; // Show the selected section
 
             // Highlight the active link
-            highlightActiveLink(sectionId);
+            highlightActiveLinkSection(sectionId);
 
             // Change the URL without reloading the page
             const newUrl = `#${sectionId}`;
             window.history.pushState({ sectionId }, '', newUrl);
         }
 
+        function highlightActiveLinkSection(sectionId) {
+            const links = document.querySelectorAll('.nav-links a');
+            links.forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === `#${sectionId}`);
+            });
+        }
     </script>
 
 

@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'A QR Code Hunting App.',
             images: ['qrapp9.jpg'],
             detailsPage: '#project-details?id=qrapp'
-            //detailsPage: 'project-details.html?id=qrapp'
         },
         {
             id: 'aranimal',
@@ -16,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'An educational and interactive app designed to inform and teach users about the Albertan Biosphere.',
             images: ['aranimal2.jpg'],
             detailsPage: '#project-details?id=aranimal'
-            //detailsPage: 'project-details.html?id=aranimal'
         },
         {
             id: 'proquest',
@@ -24,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'A site for Agents and Scouts to find the best teams for their players and the best players for their teams.',
             images: ['proquest1.png'],
             detailsPage: '#project-details?id=proquest'
-            //detailsPage: 'project-details.html?id=proquest'
         }
         // Add more projects as needed
     ];
@@ -52,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h2>${project.title}</h2>
                     <p>${project.description}</p>
                     <div class="project-images">${projectImages}</div>
-                    <a href="${project.detailsPage}" class="btn btn-primary" onclick="showSection('otherProjects');>View Details</a>
+                    <a href="${project.detailsPage}" class="btn btn-primary" onclick="showSection(event, 'otherProjects');">View Details</a>
                 </div>
             `;
 
@@ -60,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
             projectSection.addEventListener('click', (event) => {
                 // Avoid navigating if the click was on the link itself
                 if (event.target.tagName !== 'A') {
-                    window.location.href = project.detailsPage;
+                    showSection(event, project.id); // Use showSection to change the view without reloading
                 }
             });
 

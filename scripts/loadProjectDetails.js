@@ -62,14 +62,12 @@ document.addEventListener('DOMContentLoaded', () => {
                   `<a href="${project.codeUrl}" class="btn code-btn" target="_blank" rel="noopener noreferrer">
                       <i class="fab fa-github"></i>
                       <span class="btn-text">View Code</span>
-                    </a>
-                ` : ''}
+                    </a>` : ''}
                 ${project.tryItOutUrl ? 
                   `<a href="${project.tryItOutUrl}" class="btn try-btn" target="_blank" rel="noopener noreferrer">
                       <i class="fa-solid fa-circle-play"></i>
                       <span class="btn-text">Try It Out</span>
-                  </a>
-                  ` : ''}
+                  </a>` : ''}
             `;
 
             // Populate the project details container
@@ -113,4 +111,3 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('project-details').innerHTML = `<p>Error loading project details. Please try again later.</p>`;
         });
 });
-

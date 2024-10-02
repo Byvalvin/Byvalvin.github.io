@@ -1,17 +1,15 @@
 // loadOtherProjects.js
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     const projectList = document.getElementById('other-project-list');
     const descriptionLength = 100; // Adjust as needed
 
     // Function to create project card HTML
     const createProjectCard = (project) => {
-        // Truncate description if it's too long
         const truncatedDescription = project.description.length > descriptionLength 
             ? project.description.substring(0, descriptionLength) + '...' 
             : project.description;
 
-        // Create a new card element
         const card = document.createElement('div');
         card.classList.add('project-card');
         card.innerHTML = `
@@ -21,13 +19,15 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         `;
 
-        // Add event listeners for navigation and accessibility
+        // Add event listeners for navigation
         card.addEventListener('click', () => {
-            window.location.href = project.otherDetailsPage;
+            window.location.hash = `#other-project-details?id=${project.id}`; // Update URL
+            loadOtherProjectDetails(project.id); // Load project details
         });
         card.addEventListener('keypress', (e) => {
             if (e.key === 'Enter' || e.key === ' ') {
-                window.location.href = project.otherDetailsPage;
+                window.location.hash = `#other-project-details?id=${project.id}`;
+                loadOtherProjectDetails(project.id);
             }
         });
 
@@ -37,19 +37,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Fetch projects data from JSON file
     fetch('projects/other/otherprojects.json')
         .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
+            if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
             return response.json();
         })
         .then(data => {
-            // Check if the data structure is correct
             const otherProjects = data.projects;
             if (!Array.isArray(otherProjects) || otherProjects.length === 0) {
                 throw new Error('No projects found or invalid data structure');
             }
 
-            // Create and append project cards
             otherProjects.forEach(project => {
                 const card = createProjectCard(project);
                 projectList.appendChild(card);
@@ -57,8 +53,6 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => {
             console.error('Error loading projects:', error);
-
-            // Display an error message to the user
             projectList.innerHTML = '<p>Sorry, we were unable to load the projects at this time. Please try again later.</p>';
         });
 });
