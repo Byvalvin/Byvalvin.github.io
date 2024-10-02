@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'ProQuest',
             description: 'A site for Agents and Scouts to find the best teams for their players and the best players for their teams.',
             images: ['proquest1.png'],
-            detailsPage: 'project-details?id=proquest'
+            detailsPage: '#project-details?id=proquest'
             //detailsPage: 'project-details.html?id=proquest'
         }
         // Add more projects as needed
