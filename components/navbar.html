@@ -1,6 +1,5 @@
 
 <!-- Navbar Component -->
-
 <nav class="navbar">
     <div class="logo-container">
         <img src="images/Byvalvin.jpeg" alt="Byvalvin Logo" class="logo-img"> 
@@ -12,11 +11,12 @@
         <span class="bar"></span>
     </div>
     <ul class="nav-links" id="nav-links" role="navigation">
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="other-projects.html">Other Projects</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" onclick="showSection('home');">Home</a></li>
+        <li><a href="projects.html" onclick="showSection('projects');">Projects</a></li>
+        <li><a href="other-projects.html" onclick="showSection('otherProjects');">Other Projects</a></li>
+        <li><a href="about.html" onclick="showSection('about');">About</a></li>
+        <li><a href="contact.html" onclick="showSection('contact');">Contact</a></li>
     </ul>
 </nav>
+
 

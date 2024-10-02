@@ -23,13 +23,14 @@ const highlightActiveLink = () => {
         // Determine if the href is an active link
         const isActive = isRootPath && (href === '' || href === 'index.html') ||
                          (currentLocation === href) ||
-                         (first7Chars(currentLocation)==first7Chars(href));
+                         (first7Chars(currentLocation) === first7Chars(href));
         
-        if(isActive){console.log("active",href);}
+        if (isActive) {
+            console.log("active", href);
+        }
         link.classList.toggle('active', isActive);
     });
 };
-
 
 // Function to fetch and add a component to the page
 const addComponent = ({ placeholderID, htmlURL }) => {
@@ -51,14 +52,10 @@ const addComponent = ({ placeholderID, htmlURL }) => {
             .then(html => {
                 componentPlaceholder.innerHTML = html;
 
+                // Call highlightActiveLink when navbar is loaded
                 if (htmlURL === 'navbar.html') {
                     highlightActiveLink();
                     setupNavbarToggle();
-                    const next = {
-                        src: 'scripts/feelingLucky.js',
-                        msg: 'Feeling Lucky script loaded.'
-                    }
-                    loadScript('scripts/applyPreferences.js', 'Preferences script loaded.', next);
                 } else if (htmlURL === 'footer.html') {
                     updateFooterYear();
                 }
@@ -70,11 +67,10 @@ const addComponent = ({ placeholderID, htmlURL }) => {
 // Helper functions to clean URLs
 const cleanLink = (link) => removeSlashes(removeQueryArguments(link));
 const removeSlashes = (link) => link.endsWith('/') ? link.slice(0, -1) : link.startsWith('/') ? link.slice(1) : link;
-// const removeSlashes = (link) => link.replace(/^\/|\/$/g, ''); // Remove leading and trailing slashes
 const removeQueryArguments = (link) => link.split('?')[0];
 
 // Helper for embedded links for projects: Get the first 7 characters of the href, if available
-const first7Chars = (link) => link.length >= 7? link.substring(0, 7) : link;
+const first7Chars = (link) => link.length >= 7 ? link.substring(0, 7) : link;
 
 // Function to setup navbar toggle
 const setupNavbarToggle = () => {
@@ -97,21 +93,6 @@ const updateFooterYear = () => {
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
     }
-};
-
-// Function to load scripts dynamically
-const loadScript = (src, successMessage, nextScript) => {
-    const script = document.createElement('script');
-    script.src = src;
-    script.defer = true;
-    script.onload = () => {
-        console.log(successMessage);
-        if (nextScript) {
-            loadScript(nextScript.src, nextScript.msg, nextScript.next);
-        }
-    };
-    script.onerror = () => console.error(`Failed to load ${src}`);
-    document.body.appendChild(script);
 };
 
 // Array of components to include
