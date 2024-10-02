@@ -10,15 +10,15 @@
     <script>
         window.addEventListener('load', () => {
             const initialSection = window.location.hash ? window.location.hash.substring(1) : 'home';
-            showSection(initialSection);
+            showSection(event, initialSection);
         });
 
         window.addEventListener('popstate', (event) => {
             if (event.state && event.state.sectionId) {
-                showSection(event.state.sectionId);
+                showSection(event, event.state.sectionId);
             } else {
                 // Navigate to home if no state is found
-                showSection('home');
+                showSection(event, 'home');
             }
         });
     </script>
@@ -37,7 +37,7 @@
                 <h1>Welcome to My Portfolio!</h1>
                 <p>I'm a software designer specializing in web development, app design, and machine learning.</p>
                 <div class="btn-group">
-                    <a href="#projects" class="btn projects-btn" onclick="showSection('projects');" data-link>
+                    <a href="#projects" class="btn projects-btn" onclick="showSection(event, 'projects');" data-link>
                         <i class="fa-solid fa-folder"></i>
                         <span>View Projects</span>
                     </a>
@@ -107,7 +107,7 @@
                         Contact Me
                     </h2>
                     <p>Got a question or a project in mind? Let’s connect!</p>
-                    <a href="#contact" class="btn" data-link onclick="showSection('contact');">Contact Me</a>
+                    <a href="#contact" class="btn" data-link onclick="showSection(event, 'contact');">Contact Me</a>
                 </div>
             </section>
         </main>
