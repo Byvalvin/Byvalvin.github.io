@@ -362,7 +362,11 @@
 
     <!--SPA functionality-->
     <script>
-        function showSection(sectionId) {
+        function showSection(event, sectionId) {
+            if (event) {
+                event.preventDefault(); // Prevent default link behavior
+            }
+
             const sections = document.querySelectorAll('.section');
             sections.forEach(section => {
                 section.style.display = 'none'; // Hide all sections
@@ -376,6 +380,7 @@
             const newUrl = `#${sectionId}`;
             window.history.pushState({ sectionId }, '', newUrl);
         }
+
     </script>
 
 
