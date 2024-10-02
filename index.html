@@ -365,7 +365,7 @@
             highlightActiveLink(sectionId);
 
             // Change the URL without reloading the page
-            const newUrl = `${window.location.origin}/${sectionId}.html`;
+            const newUrl = `#${sectionId}`;
             window.history.pushState({ sectionId }, '', newUrl);
         }
     </script>
