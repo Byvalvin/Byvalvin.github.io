@@ -3,100 +3,366 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Byvalvin's portfolio showcasing expertise in web development, app design, and machine learning. Explore projects and contact information.">
     <title>Byvalvin - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="scripts/loadFont.js" defer></script>
 </head>
 <body>
-    <!-- Navbar -->
-    <div class="navbar-container" id="navbar-placeholder" role="navigation" aria-label="Main Navigation"></div>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Welcome to My Portfolio!</h1>
-            <p>I'm a software designer specializing in web development, app design, and machine learning.</p>
-            <div class="btn-group">
-                <a href="projects.html" class="btn projects-btn" data-link>
-                    <i class="fa-solid fa-folder"></i>
-                    <span>View Projects</span>
-                </a>
-                <a href="https://github.com/Byvalvin" class="btn github-btn" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i>
-                    <span>Visit GitHub</span>
-                </a>
+    <!-- Navbar Placeholder -->
+    <nav class="navbar-container" id="navbar-placeholder" role="navigation" aria-label="Main Navigation">
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+            <li><a href="#" onclick="showSection('about')">About Me</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+    
+
+    <!-- Home Section -->
+    <div id="home" class="section" style="display: block;">
+        <!-- Home Content -->
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-content">
+                <h1>Welcome to My Portfolio!</h1>
+                <p>I'm a software designer specializing in web development, app design, and machine learning.</p>
+                <div class="btn-group">
+                    <a href="projects.html" class="btn projects-btn" data-link>
+                        <i class="fa-solid fa-folder"></i>
+                        <span>View Projects</span>
+                    </a>
+                    <a href="https://github.com/Byvalvin" class="btn github-btn" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                        <span>Visit GitHub</span>
+                    </a>
+                </div>
             </div>
-        </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- About Section -->
+            <section class="about-section">
+                <div class="about-card" role="button" tabindex="0" onclick="toggleCard(this)" onkeypress="if(event.key === 'Enter') toggleCard(this)">
+                    <i class="fas fa-user about-icon"></i>
+                    <div class="card-title">Who Am I?</div>
+                    <div class="card-content">
+                        <p>
+                            With 4+ years in software design, I turn complex problems into simple solutions. 
+                            Skilled in frontend, backend, and database management, I deliver clean, efficient code.
+                        </p>
+                        <a href="about.html" class="home-about-link">More About Me</a>
+                    </div>
+                </div>
+            
+                <div class="about-card" role="button" tabindex="0" onclick="toggleCard(this)" onkeypress="if(event.key === 'Enter') toggleCard(this)">
+                    <i class="fas fa-briefcase about-icon"></i>
+                    <div class="card-title">What I Do?</div>
+                    <div class="card-content">
+                        <p>
+                            I design systems, websites, and apps, integrating machine learning to create smart solutions. 
+                            My approach blends analysis with innovation for effective results.
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="about-card" role="button" tabindex="0" onclick="toggleCard(this)" onkeypress="if(event.key === 'Enter') toggleCard(this)">
+                    <i class="fas fa-star about-icon"></i>
+                    <div class="card-title">Why Hire Me?</div>
+                    <div class="card-content">
+                        <p>
+                            I combine creativity with technical skills to deliver impactful projects. 
+                            My collaborative nature and clear communication help turn your ideas into user-focused solutions.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <script>
+                function toggleCard(card) {
+                    const cards = document.querySelectorAll('.about-card');
+                    cards.forEach(c => {
+                        if (c !== card) {
+                            c.classList.remove('expanded');
+                        }
+                    });
+                    card.classList.toggle('expanded');
+                }
+            </script>
+
+            <!-- Contact Section -->
+            <section class="contact-section">
+                <div class="contact-content">
+                    <h2 class="contact-header">
+                        <i class="fa-solid fa-pager"></i>
+                        Contact Me
+                    </h2>
+                    <p>Got a question or a project in mind? Let’s connect!</p>
+                    <a href="contact.html" class="btn" data-link>Contact Me</a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="section" style="display: none;">
+        <!-- Page Header -->
+        <header class="page-header">
+            <h1>My Projects</h1>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <div id="project-list" class="projects-container">
+                <!-- Projects will be dynamically loaded here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Project Details Section -->
+    <header>
     </header>
+    <main>
+        <section id="project-details"></section> <!-- Placeholder for project details -->
+    </main>
 
-    <!-- Main Content -->
-    <main class="main">
-        <!-- About Section -->
-        <section class="about-section">
-            <div class="about-card" role="button" tabindex="0" onclick="toggleCard(this)" onkeypress="if(event.key === 'Enter') toggleCard(this)">
-                <i class="fas fa-user about-icon"></i>
-                <div class="card-title">Who Am I?</div>
-                <div class="card-content">
-                    <p>
-                        With 4+ years in software design, I turn complex problems into simple solutions. 
-                        Skilled in frontend, backend, and database management, I deliver clean, efficient code.
-                    </p>
-                    <a href="about.html" class="home-about-link">More About Me</a>
-                </div>
-            </div>
-        
-            <div class="about-card" role="button" tabindex="0" onclick="toggleCard(this)" onkeypress="if(event.key === 'Enter') toggleCard(this)">
-                <i class="fas fa-briefcase about-icon"></i>
-                <div class="card-title">What I Do?</div>
-                <div class="card-content">
-                    <p>
-                        I design systems, websites, and apps, integrating machine learning to create smart solutions. 
-                        My approach blends analysis with innovation for effective results.
-                    </p>
-                </div>
-            </div>
-        
-            <div class="about-card" role="button" tabindex="0" onclick="toggleCard(this)" onkeypress="if(event.key === 'Enter') toggleCard(this)">
-                <i class="fas fa-star about-icon"></i>
-                <div class="card-title">Why Hire Me?</div>
-                <div class="card-content">
-                    <p>
-                        I combine creativity with technical skills to deliver impactful projects. 
-                        My collaborative nature and clear communication help turn your ideas into user-focused solutions.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <script>
-            function toggleCard(card) {
-                const cards = document.querySelectorAll('.about-card');
-                cards.forEach(c => {
-                    if (c !== card) {
-                        c.classList.remove('expanded');
-                    }
-                });
-                card.classList.toggle('expanded');
-            }
-        </script>
+    <!-- Other Projects Section -->
+    <header class="page-header">
+        <h1>Other Projects</h1>
+    </header>
+    <main>
+        <ul class="other-project-list" id="other-project-list"></ul>
+    </main>
 
-        <!-- Contact Section -->
-        <section class="contact-section">
-            <div class="contact-content">
-                <h2 class="contact-header">
-                    <i class="fa-solid fa-pager"></i>
-                    Contact Me
-                </h2>
-                <p>Got a question or a project in mind? Let’s connect!</p>
-                <a href="contact.html" class="btn" data-link>Contact Me</a>
+
+    <!-- Other Project Details Section -->
+    <header>
+        <!-- You can add a page-specific header here if needed -->
+    </header>
+    <main>
+        <section id="other-project-details" aria-labelledby="project-title"></section> <!-- Placeholder for other project details -->
+    </main>
+
+    <!-- About Me Section -->
+    <header class="page-header">
+        <h1>About Me</h1>
+    </header>
+    
+    <main>
+        <section class="about-tabs">
+            <ul class="tab-list" role="tablist">
+                <li><a href="#intro" class="tab-link active" role="tab" aria-controls="intro" data-tab="intro" aria-selected="true">
+                        <i class="fas fa-user"></i>
+                        Introduction
+                    </a>
+                </li>
+                
+                <li><a href="#languages" class="tab-link" role="tab" aria-controls="languages" data-tab="languages" aria-selected="false">
+                        <i class="fas fa-code"></i>
+                        Languages
+                    </a>
+                </li>
+                
+                <li><a href="#frameworks" class="tab-link" role="tab" aria-controls="frameworks" data-tab="frameworks" aria-selected="false">
+                        <i class="fas fa-cogs"></i>
+                        Frameworks
+                    </a>
+                </li>
+                
+                <li><a href="#tech" class="tab-link" role="tab" aria-controls="tech" data-tab="tech" aria-selected="false">
+                        <i class="fas fa-tools"></i>
+                        Technologies        
+                    </a>
+                </li>
+                
+                <li><a href="#interests" class="tab-link" role="tab" aria-controls="interests" data-tab="interests" aria-selected="false">
+                        <i class="fas fa-heart"></i>
+                        Interests       
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content active" id="intro" role="tabpanel" aria-labelledby="tab-intro">
+                <h2>Introduction</h2>
+                <div class="intro-container">
+                    <div class="intro-text">
+                        <p>Hello! I'm Daniel Asimiakwini, a passionate software developer with a flair for crafting dynamic, user-centric websites. 
+                            My journey began with a fascination for solving complex problems in style. 
+                            I relish tackling new challenges and am always eager to explore cutting-edge technologies
+                            that redefine the digital landscape.
+                        </p>
+                        <!--
+                            Brief Bio or Fun Fact: brief biography or a fun fact about yourself to make the introduction more engaging.
+                            Call to Action: call-to-action button or link, such as “Learn More About My Work” or “Contact Me”.
+                            Testimonials: section for brief testimonials or quotes from people you’ve worked with.
+                            Timeline or Career Highlights: short timeline or highlight key milestones in your career.
+                            Personal Touch: small section about personal hobbies or interests with relevant images.
+                            Interactive Element: interactive element like a short video introduction or a carousel of images related to your work or hobbies.
+                        -->
+                    </div>
+                    <div class="intro-image">
+                        <img src="about/images/intro.jpg" alt="Introduction Image">
+                    </div>
+                </div>
+                <div class="timeline-wrapper">
+                    <button class="nav-button left">‹</button>
+                    <div class="timeline">
+                        <div class="timeline-content"></div>
+                        <div class="timeline-dots"></div>
+                    </div>
+                    <button class="nav-button right">›</button>
+                </div>
+
+
             </div>
+
+            <div class="tab-content" id="languages" role="tabpanel" aria-labelledby="tab-languages">
+                <h2>Languages</h2>
+                <div class="legend"></div> <!-- Legend will be inserted here -->
+                <div class="columns-container" id="languages-columns">
+                    <!-- Skill bars will be inserted here by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="tab-content" id="frameworks" role="tabpanel" aria-labelledby="tab-frameworks">
+                <h2>Frameworks</h2>
+                <div class="legend"></div> <!-- Legend will be inserted here -->
+                <div class="columns-container" id="frameworks-columns">
+                    <!-- Skill bars will be inserted here by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="tab-content" id="tech" role="tabpanel" aria-labelledby="tab-tech">
+                <h2>Technologies</h2>
+                <div class="legend"></div> <!-- Legend will be inserted here -->
+                <div class="columns-container" id="tech-columns">
+                    <!-- Skill bars will be inserted here by JavaScript -->
+                </div>
+            </div>            
+            
+            <div class="tab-content" id="interests" role="tabpanel" aria-labelledby="tab-interests">
+                <h2>Personal Interests</h2>
+                <div class="interests-container" id="interests-container">
+                    <!-- Dynamic content will be inserted here by JavaScript -->
+                </div>
+            </div>
+
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer-container" id="footer-placeholder"></footer>
 
-    <script src="scripts/placeHolders.js" defer></script>
+    <!-- Contact Section -->
+    <header>
+    </header>
+    <main>
+        <section class="custom-contact-section" aria-labelledby="contact-heading">
+            <h1 id="contact-heading" class="contact-header">
+                <i class="fa-solid fa-pager"></i>
+                Contact Me
+            </h1>
+  
+            <p>Feel free to reach out using the contact information below:</p>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:kwinidan@gmail.com">kwinidan@gmail.com</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    +1 (587) 434-9320
+                </li>
+                <li>
+                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/Byvalvin" target="_blank" rel="noopener noreferrer">Byvalvin</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contact Form Wrapper -->
+        <div class="contact-form-wrapper" id="contact-form-wrapper">
+            <p class="message-prompt" id="show-form-button">
+                Or send a message: <i class="fa-solid fa-paper-plane plane-icon"></i>
+            </p>
+            
+            <!-- Contact Form -->
+            <form action="https://formsubmit.co/52462363ec23db0cf4edc0cb1e16f4f8" method="POST" class="contact-form" id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Dear Daniel," required></textarea>
+                
+                <p class="word-count-info">Words: <span id="word-count">0</span>/500</p>
+                
+                <button type="submit">
+                    <i class="fa-solid fa-paper-plane"></i> 
+                </button>
+            </form>
+        </div>
+        
+        <p class="thank-you">Thank you for visiting!</p>
+    </main>
+
+
+
+
+    <!-- Other Sections Here... -->
+
+    <!-- About Section -->
+    <div id="about" class="section" style="display: none;">
+        <!-- About Content -->
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section" style="display: none;">
+        <!-- Contact Content -->
+    </div>
+
+    <!-- Footer Placeholder -->
+    <footer id="footer-placeholder"></footer>
+
+    <!-- All Scripts -->
+    <!-- was on all pages -->
+    <script src="scripts/placeHolders.js" defer></script> 
+
+    <!--Projects-->
+    <script src="scripts/loadProjects.js" defer></script>
+
+    <!--Project Details-->
+    <script src="scripts/loadProjectDetails.js" defer></script>
+
+    <!--Other Projects-->
+    <script src="scripts/loadOtherProjects.js" defer></script>
+
+    <!--Other Project Details-->
+    <script src="scripts/loadOtherProjectDetails.js" defer></script>
+    
+
+    <!--About Me-->
+    <script src="scripts/tabs.js" defer></script> 
+    <script src="scripts/timeline.js" defer></script>
+    <script src="scripts/loadSkills.js" defer></script> 
+    <script src="scripts/loadInterests.js" defer></script>
+
+    <!--Contact-->
+    <!--no other scripts-->
+
+    <!--SPA functionality-->
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+
+
 </body>
 </html>
