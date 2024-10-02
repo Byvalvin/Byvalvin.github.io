@@ -56,6 +56,11 @@ const addComponent = ({ placeholderID, htmlURL }) => {
                 if (htmlURL === 'navbar.html') {
                     highlightActiveLink();
                     setupNavbarToggle();
+                    const next = {
+                        src: 'scripts/feelingLucky.js',
+                        msg: 'Feeling Lucky script loaded.'
+                    }
+                    loadScript('scripts/applyPreferences.js', 'Preferences script loaded.', next);
                 } else if (htmlURL === 'footer.html') {
                     updateFooterYear();
                 }
@@ -93,6 +98,21 @@ const updateFooterYear = () => {
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
     }
+};
+
+// Function to load scripts dynamically
+const loadScript = (src, successMessage, nextScript) => {
+    const script = document.createElement('script');
+    script.src = src;
+    script.defer = true;
+    script.onload = () => {
+        console.log(successMessage);
+        if (nextScript) {
+            loadScript(nextScript.src, nextScript.msg, nextScript.next);
+        }
+    };
+    script.onerror = () => console.error(`Failed to load ${src}`);
+    document.body.appendChild(script);
 };
 
 // Array of components to include
