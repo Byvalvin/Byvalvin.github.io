@@ -8,19 +8,16 @@
     <link rel="stylesheet" href="styles.css">
     <script src="scripts/loadFont.js" defer></script>
     <script>
-        window.addEventListener('load', () => {
+        window.addEventListener('load', (event) => {
             const initialSection = window.location.hash ? window.location.hash.substring(1) : 'home';
             showSection(event, initialSection);
         });
 
         window.addEventListener('popstate', (event) => {
-            if (event.state && event.state.sectionId) {
-                showSection(event, event.state.sectionId);
-            } else {
-                // Navigate to home if no state is found
-                showSection(event, 'home');
-            }
+            const sectionId = event.state ? event.state.sectionId : 'home';
+            showSection(null, sectionId);
         });
+
     </script>
 </head>
 <body>
