@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     showSection(event, 'projectDetails'); // Show project details section
                     //window.history.pushState({ sectionId: 'projectDetails', projectId }, '', `#project-details?id=${projectId}`);
                     //window.history.pushState({ sectionId: 'projectDetails', projectId }, '', `#project-details?id=${projectId}`);
-                    //loadProjectDetails(project.id); // Load the project details
+                    loadProjectDetails(project.id); // Load the project details
                 }
             });
 

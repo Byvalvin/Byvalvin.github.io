@@ -82,4 +82,10 @@ window.addEventListener('hashchange', () => {
         showSection(null, sectionId);
     }
 });
-
+// Load other project details on initial page load if applicable
+window.addEventListener('load', () => {
+    const projectId = getOtherProjectId();
+    if (projectId) {
+        loadOtherProjectDetails(projectId);
+    }
+});
