@@ -22,20 +22,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Add event listeners for navigation
         card.addEventListener('click', (event) => {
-            console.log("clicked card"+projectId);
-            
-            showSection(event, 'otherProjectDetails', projectId); // Show project details section
-            //event.preventDefault(); // Prevent default link behavior
-            //loadOtherProjectDetails(project.otherDetailsPage.split('=')[1]); // Extract ID from URL
-            
+            console.log("clicked card"+projectId);  
+            showSection(event, 'otherProjectDetails', projectId); // Show other project details section
+
         });
 
         card.addEventListener('keypress', (e) => {
             if (e.key === 'Enter' || e.key === ' ') {
-                //e.preventDefault(); // Prevent default link behavior
-                showSection(e, 'otherProjectDetails', projectId); // Show project details section
-                //loadOtherProjectDetails(project.otherDetailsPage.split('=')[1]); // Extract ID from URL
-                
+                showSection(e, 'otherProjectDetails', projectId); // Show other project details section
             }
         });
 

@@ -72,20 +72,3 @@ const loadOtherProjectDetails = (projectId) => {
         });
 };
 
-window.addEventListener('hashchange', () => {
-
-    const projectId = getOtherProjectId();
-    console.log("the hash has indeed changed"+projectId);
-    if (window.location.hash.startsWith('#other-project-details') && projectId) {
-        loadOtherProjectDetails(projectId);
-    } 
-});
-
-// Load other project details on initial page load if applicable
-window.addEventListener('load', () => {
-    console.log("on loading the other poject details");
-    const projectId = getOtherProjectId();
-    if (projectId) {
-        loadOtherProjectDetails(projectId);
-    }
-});

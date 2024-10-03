@@ -60,10 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
             projectSection.addEventListener('click', (event) => {
                 if (event.target.tagName !== 'A') { // If not clicking on the link
                     showSection(event, 'projectDetails', project.id); // Show project details section
-                    //window.history.pushState({ sectionId: 'projectDetails', projectId }, '', `#project-details?id=${projectId}`);
-                    //window.history.pushState({ sectionId: 'projectDetails', projectId }, '', `#project-details?id=${projectId}`);
-                    //console.log("called loadprojectDetails from here loadProjects file");
-                    //loadProjectDetails(project.id); // Load the project details
                 }
             });
 
