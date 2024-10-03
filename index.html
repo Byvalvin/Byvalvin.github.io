@@ -26,24 +26,19 @@
 
             // Handle special case for project details
             if (section === 'projectDetails') {
-                //const projectId = getParameterByName('id'); // Assuming this function is available
                 console.log("executed in sp",projectId);
                 if (projectId) {
-                    console.log("called loadprojectDetails from here sp");
                     loadProjectDetails(projectId); // Load details for the specific project
                 }
             }
 
             // Handle special case for other project details
             if (section === 'otherProjectDetails') {
-                //const projectId = getOtherProjectId(); // Assuming this function is available
                 console.log("executed other in sp",projectId);
                 if (projectId) {
                     loadOtherProjectDetails(projectId); // Load details for the specific project
                 }
             }
-
-
             highlightActiveLink(); // Update active link highlighting
         }
 
@@ -59,24 +54,6 @@
             const initialSection = window.location.hash ? window.location.hash.substring(1) : 'home';
             showSection(null, initialSection, null);
         });
-
-        // window.addEventListener('hashchange', () => {
-        //     const projectId = getParameterByName('id');
-        //     const projectIdOther = getOtherProjectId();
-        //     console.log("executed in sp hash change",projectId);
-        //     if (window.location.hash.startsWith('#project-details') && projectId) {
-        //         console.log("called loadprojectDetails from here sp 2");
-        //         loadProjectDetails(projectId);
-        //         console.log("executed in sp a  proj");
-        //     }else if (window.location.hash.startsWith('#other-project-details') && projectIdOther) {
-        //         loadOtherProjectDetails(projectIdOther);
-        //         console.log("executed in sp an other proj",projectIdOther);
-        //     } else {
-        //         const sectionId = window.location.hash.substring(1);
-        //         showSection(null, sectionId);
-        //     }
-        // });
-
 
 
 
@@ -387,8 +364,6 @@
     </div>
     
 
-
-
     <!-- Footer Placeholder -->
     <footer id="footer-placeholder"></footer>
 
@@ -409,7 +384,6 @@
     <!--Other Project Details-->
     <script src="scripts/loadOtherProjectDetails.js" defer></script>
     
-
     <!--About Me-->
     <script src="scripts/tabs.js" defer></script> 
     <script src="scripts/timeline.js" defer></script>
@@ -418,8 +392,6 @@
 
     <!--Contact-->
     <script src="scripts/contact.js" defer></script>
-
-
 
 </body>
 </html>
