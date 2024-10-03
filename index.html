@@ -24,54 +24,40 @@
                 activeSection.style.display = 'block';
             }
 
-            // Update the URL and history
-            const sectionId = ['projectDetails','otherProjectDetails'].includes(section) ? `${section}?id=${projectId}` : section; // Use 'projects' for back navigation
+            // Define sectionId for URL update
+            const sectionId = ['projectDetails', 'otherProjectDetails'].includes(section) 
+                            ? `${section}?id=${projectId}` 
+                            : section;
+
             const state = { sectionId: section, projectId: projectId };
-            
-            console.log(section);
-            // Handle special cases 
-            switch(section){
+
+            // Handle special cases
+            switch (section) {
                 case 'home':
-                    // Just update the URL without adding to history
-                    window.history.replaceState(state, '', `#${sectionId}`);
-                    break;
-
                 case 'projects':
-                    // Just update the URL without adding to history
-                    window.history.replaceState(state, '', `#${sectionId}`);
-                    break;
                 case 'otherProjects':
-                    // Just update the URL without adding to history
-                    window.history.replaceState(state, '', `#${sectionId}`);
-                    break;
-
                 case 'about':
-                    // Just update the URL without adding to history
-                    window.history.replaceState(state, '', `#${sectionId}`);
-                    break;
                 case 'contact':
-                    // Just update the URL without adding to history
-                    window.history.replaceState(state, '', `#${sectionId}`);
+                    // Push state for main sections
+                    window.history.pushState(state, '', `#${sectionId}`);
                     break;
 
                 case 'projectDetails':
-                    console.log("executed in sp",projectId);
+                    console.log("executed in sp", projectId);
                     if (projectId) {
                         loadProjectDetails(projectId); // Load details for the specific project
                     }
-                    // Push state for sub-pages only
-                    const backstate = { sectionId: 'projects', projectId: null };
-                    window.history.pushState(backstate, '', `#${backstate.sectionId}`);
+                    // Use replaceState for subpages to avoid forward navigation
+                    window.history.replaceState(state, '', `#${sectionId}`);
                     break;
 
                 case 'otherProjectDetails':
-                    console.log("executed other in sp",projectId);
+                    console.log("executed other in sp", projectId);
                     if (projectId) {
                         loadOtherProjectDetails(projectId); // Load details for the specific project
                     }
-                    // Push state for sub-pages only
-                    const backstate = { sectionId: 'otherProjects', projectId: null };
-                    window.history.pushState(backstate, '', `#${backstate.sectionId}`);
+                    // Use replaceState for subpages to avoid forward navigation
+                    window.history.replaceState(state, '', `#${sectionId}`);
                     break;
             }
 
@@ -79,11 +65,17 @@
         }
 
 
+
         // Handle back/forward navigation
         window.addEventListener('popstate', (event) => {
-            const sectionId = event.state ? event.state.sectionId : 'home';
-            console.log("changing popong state");
-            showSection(event, sectionId, null);
+            if (event.state) {
+                const sectionId = event.state.sectionId;
+                console.log("Changing to:", sectionId);
+                showSection(event, sectionId, null);
+            } else {
+                // Default to home if no state
+                showSection(event, 'home', null);
+            }
         });
 
         // Initial load setup
