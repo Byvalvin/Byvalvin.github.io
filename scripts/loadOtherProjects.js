@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Add event listeners for navigation
         card.addEventListener('click', (event) => {
             console.log("clicked card"+project.name);
-            showSection(event, 'OtherProjectDetails'); // Show project details section
+            showSection(event, 'otherProjectDetails'); // Show project details section
             //event.preventDefault(); // Prevent default link behavior
             loadOtherProjectDetails(project.otherDetailsPage.split('=')[1]); // Extract ID from URL
             
