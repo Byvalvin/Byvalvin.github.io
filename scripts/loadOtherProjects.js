@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to create project card HTML
     const createProjectCard = (project) => {
+        const projectId = project.otherDetailsPage.split('=')[1];
         const truncatedDescription = project.description.length > descriptionLength 
             ? project.description.substring(0, descriptionLength) + '...' 
             : project.description;
@@ -21,18 +22,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Add event listeners for navigation
         card.addEventListener('click', (event) => {
-            console.log("clicked card"+project.name);
-            showSection(event, 'otherProjectDetails'); // Show project details section
+            console.log("clicked card"+projectId);
+            
+            showSection(event, 'otherProjectDetails', projectId); // Show project details section
             //event.preventDefault(); // Prevent default link behavior
-            loadOtherProjectDetails(project.otherDetailsPage.split('=')[1]); // Extract ID from URL
+            //loadOtherProjectDetails(project.otherDetailsPage.split('=')[1]); // Extract ID from URL
             
         });
 
         card.addEventListener('keypress', (e) => {
             if (e.key === 'Enter' || e.key === ' ') {
                 //e.preventDefault(); // Prevent default link behavior
-                showSection(e, 'otherProjectDetails'); // Show project details section
-                loadOtherProjectDetails(project.otherDetailsPage.split('=')[1]); // Extract ID from URL
+                showSection(e, 'otherProjectDetails', projectId); // Show project details section
+                //loadOtherProjectDetails(project.otherDetailsPage.split('=')[1]); // Extract ID from URL
                 
             }
         });

@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h2>${project.title}</h2>
                     <p>${project.description}</p>
                     <div class="project-images">${projectImages}</div>
-                    <a href="#project-details?id=${project.id}" class="btn btn-primary" onclick="showSection(event, 'projectDetails');">View Details</a>
+                    <a href="#project-details?id=${project.id}" class="btn btn-primary" onclick="showSection(event, 'projectDetails', ${project.id});">View Details</a>
                 </div>
             `;
         
