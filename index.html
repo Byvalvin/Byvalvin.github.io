@@ -361,7 +361,8 @@
     <!--SPA functionality-->
     <script>
         function showSection(event, section) {
-            event.preventDefault(); // Prevent default anchor behavior
+            if(event)
+                event.preventDefault(); // Prevent default anchor behavior
 
             const sections = document.querySelectorAll('.section'); // Assuming each section has a class of 'section'
             sections.forEach(sec => {
