@@ -361,8 +361,7 @@
     <!--SPA functionality-->
     <script>
         function showSection(event, section) {
-            if(event)
-                event.preventDefault(); // Prevent default anchor behavior
+            if (event) event.preventDefault(); // Prevent default anchor behavior
 
             const sections = document.querySelectorAll('.section'); // Assuming each section has a class of 'section'
             sections.forEach(sec => {
@@ -374,8 +373,12 @@
                 activeSection.style.display = 'block'; // Show the selected section
             }
 
+            // Update the URL without reloading the page
+            window.history.pushState({ sectionId: section }, '', `#${section}`);
+
             highlightActiveLink(); // Update active link highlighting
         }
+
 
     </script>
 

@@ -11,7 +11,9 @@ const highlightActiveLink = () => {
         const isActive = href === currentSection;
         link.classList.toggle('active', isActive);
     });
+    
 };
+
 
 
 // Function to fetch and add a component to the page
