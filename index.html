@@ -28,7 +28,7 @@
             const sectionId = ['projectDetails','otherProjectDetails'].includes(section) ? `${section}?id=${projectId}` : section; // Use 'projects' for back navigation
             const state = { sectionId: section, projectId: projectId };
             
-
+            console.log(section);
             // Handle special cases 
             switch(section){
                 case 'home':
@@ -73,7 +73,6 @@
                     break;
             }
 
-
             highlightActiveLink(); // Update active link highlighting
         }
 
@@ -81,6 +80,7 @@
         // Handle back/forward navigation
         window.addEventListener('popstate', (event) => {
             const sectionId = event.state ? event.state.sectionId : 'home';
+            console.log("changing popong state");
             showSection(event, sectionId, null);
         });
 
