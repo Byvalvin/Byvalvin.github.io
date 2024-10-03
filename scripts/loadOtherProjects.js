@@ -21,9 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Add event listeners for navigation
         card.addEventListener('click', (event) => {
-            event.preventDefault(); // Prevent default link behavior
-            loadOtherProjectDetails(project.otherDetailsPage.split('=')[1]); // Extract ID from URL
+            console.log("clicked card"+project.name);
             showSection(event, 'OtherProjectDetails'); // Show project details section
+            //event.preventDefault(); // Prevent default link behavior
+            loadOtherProjectDetails(project.otherDetailsPage.split('=')[1]); // Extract ID from URL
+            
         });
 
         card.addEventListener('keypress', (e) => {

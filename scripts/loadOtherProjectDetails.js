@@ -2,6 +2,7 @@
 
 // Function to get the project ID from the URL hash
 function getOtherProjectId() {
+    console.log("used this id getter")
     const hash = window.location.hash;
     const regex = /id=([^&]+)/; // Updated to capture IDs with potential additional parameters
     const match = hash.match(regex);
@@ -72,7 +73,9 @@ const loadOtherProjectDetails = (projectId) => {
 };
 
 window.addEventListener('hashchange', () => {
+
     const projectId = getOtherProjectId();
+    console.log("the hash has indeed changed"+projectId);
     if (window.location.hash.startsWith('#other-project-details') && projectId) {
         loadOtherProjectDetails(projectId);
     } 
@@ -80,6 +83,7 @@ window.addEventListener('hashchange', () => {
 
 // Load other project details on initial page load if applicable
 window.addEventListener('load', () => {
+    console.log("on loading the other poject details");
     const projectId = getOtherProjectId();
     if (projectId) {
         loadOtherProjectDetails(projectId);

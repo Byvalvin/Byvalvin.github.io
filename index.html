@@ -27,6 +27,7 @@
             // Handle special case for project details
             if (section === 'projectDetails') {
                 const projectId = getParameterByName('id'); // Assuming this function is available
+                console.log("executed in sp",projectId);
                 if (projectId) {
                     loadProjectDetails(projectId); // Load details for the specific project
                 }
@@ -35,6 +36,7 @@
             // Handle special case for other project details
             if (section === 'otherProjectDetails') {
                 const projectId = getParameterByName('id'); // Assuming this function is available
+                console.log("executed other in sp",projectId);
                 if (projectId) {
                     loadOtherProjectDetails(projectId); // Load details for the specific project
                 }
@@ -61,10 +63,13 @@
 
         window.addEventListener('hashchange', () => {
             const projectId = getParameterByName('id');
+            console.log("executed in sp hash change",projectId);
             if (window.location.hash.startsWith('#project-details') && projectId) {
                 loadProjectDetails(projectId);
+                console.log("executed in sp a  proj");
             }else if (window.location.hash.startsWith('#other-project-details') && projectId) {
                 loadOtherProjectDetails(projectId);
+                console.log("executed in sp an other proj",projectId);
             } else {
                 const sectionId = window.location.hash.substring(1);
                 showSection(null, sectionId);
