@@ -7,16 +7,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="scripts/loadFont.js" defer></script>
-    <script>
-        window.addEventListener('load', (event) => {
-            const initialSection = window.location.hash ? window.location.hash.substring(1) : 'home';
-            showSection(null, initialSection);
-        });
 
+    <!--SPA functionality-->
+    <script>
+        // Function to show different sections
+        function showSection(event, section) {
+            if (event) event.preventDefault();
+
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(sec => {
+                sec.style.display = 'none';
+            });
+
+            const activeSection = document.getElementById(section);
+            if (activeSection) {
+                activeSection.style.display = 'block';
+            }
+
+            // Use pushState for navigation
+            window.history.pushState({ sectionId: section }, '', `#${section}`);
+
+            highlightActiveLink(); // Update active link highlighting
+        }
+
+        // Handle back/forward navigation
         window.addEventListener('popstate', (event) => {
             const sectionId = event.state ? event.state.sectionId : 'home';
             showSection(null, sectionId);
         });
+
+        // Initial load setup
+        window.addEventListener('load', () => {
+            const initialSection = window.location.hash ? window.location.hash.substring(1) : 'home';
+            showSection(null, initialSection);
+        });
+
 
 
     </script>
@@ -358,29 +383,6 @@
     <!--Contact-->
     <script src="scripts/contact.js" defer></script>
 
-    <!--SPA functionality-->
-    <script>
-        function showSection(event, section) {
-            if (event) event.preventDefault(); // Prevent default anchor behavior
-
-            const sections = document.querySelectorAll('.section'); // Assuming each section has a class of 'section'
-            sections.forEach(sec => {
-                sec.style.display = 'none'; // Hide all sections
-            });
-
-            const activeSection = document.getElementById(section);
-            if (activeSection) {
-                activeSection.style.display = 'block'; // Show the selected section
-            }
-
-            // Update the URL without reloading the page
-            window.history.pushState({ sectionId: section }, '', `#${section}`);
-
-            highlightActiveLink(); // Update active link highlighting
-        }
-
-
-    </script>
 
 
 </body>
