@@ -30,6 +30,7 @@
                             : section;
 
             const state = { sectionId: section, projectId: projectId };
+            let backState = null; // back from sub pages
 
             // Handle special cases
             switch (section) {
@@ -39,7 +40,7 @@
                 case 'about':
                 case 'contact':
                     // Push state for main sections
-                    window.history.pushState(state, '', `#${sectionId}`);
+                    window.history.replaceState(state, '', `#${sectionId}`);
                     break;
 
                 case 'projectDetails':
@@ -48,7 +49,9 @@
                         loadProjectDetails(projectId); // Load details for the specific project
                     }
                     // Use replaceState for subpages to avoid forward navigation
-                    window.history.replaceState(state, '', `#${sectionId}`);
+                    //window.history.replaceState(state, '', `#${sectionId}`);
+                    backState = { sectionId: 'projects', projectId: null };
+                    window.history.pushState(backState, '', `#${backState.sectionId}`);
                     break;
 
                 case 'otherProjectDetails':
