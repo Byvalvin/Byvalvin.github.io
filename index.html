@@ -24,10 +24,16 @@
                 activeSection.style.display = 'block';
             }
 
+            // Update the URL and history
+            const sectionId = ['projectDetails','otherProjectDetails'].includes(section) ? `${section}?id=${projectId}` : section; // Use 'projects' for back navigation
+            const state = { sectionId: section, projectId: projectId };
+            
+
             // Handle special case for project details
             if (section === 'projectDetails') {
                 console.log("executed in sp",projectId);
                 if (projectId) {
+                    window.history.pushState(state, '', `#${sectionId}`);
                     loadProjectDetails(projectId); // Load details for the specific project
                 }
             }
@@ -36,6 +42,7 @@
             if (section === 'otherProjectDetails') {
                 console.log("executed other in sp",projectId);
                 if (projectId) {
+                    window.history.pushState(state, '', `#${sectionId}`);
                     loadOtherProjectDetails(projectId); // Load details for the specific project
                 }
             }
