@@ -26,7 +26,7 @@
 
             // Handle special case for project details
             if (section === 'projectDetails') {
-                const projectId = getParameterByName('id'); // Assuming this function is available
+                //const projectId = getParameterByName('id'); // Assuming this function is available
                 console.log("executed in sp",projectId);
                 if (projectId) {
                     console.log("called loadprojectDetails from here sp");
@@ -36,7 +36,7 @@
 
             // Handle special case for other project details
             if (section === 'otherProjectDetails') {
-                const projectId = getOtherProjectId(); // Assuming this function is available
+                //const projectId = getOtherProjectId(); // Assuming this function is available
                 console.log("executed other in sp",projectId);
                 if (projectId) {
                     loadOtherProjectDetails(projectId); // Load details for the specific project
@@ -53,31 +53,31 @@
         // Handle back/forward navigation
         window.addEventListener('popstate', (event) => {
             const sectionId = event.state ? event.state.sectionId : 'home';
-            showSection(null, sectionId);
+            showSection(null, sectionId, null);
         });
 
         // Initial load setup
         window.addEventListener('load', () => {
             const initialSection = window.location.hash ? window.location.hash.substring(1) : 'home';
-            showSection(null, initialSection);
+            showSection(null, initialSection, null);
         });
 
-        window.addEventListener('hashchange', () => {
-            const projectId = getParameterByName('id');
-            const projectIdOther = getOtherProjectId();
-            console.log("executed in sp hash change",projectId);
-            if (window.location.hash.startsWith('#project-details') && projectId) {
-                console.log("called loadprojectDetails from here sp 2");
-                loadProjectDetails(projectId);
-                console.log("executed in sp a  proj");
-            }else if (window.location.hash.startsWith('#other-project-details') && projectIdOther) {
-                loadOtherProjectDetails(projectIdOther);
-                console.log("executed in sp an other proj",projectIdOther);
-            } else {
-                const sectionId = window.location.hash.substring(1);
-                showSection(null, sectionId);
-            }
-        });
+        // window.addEventListener('hashchange', () => {
+        //     const projectId = getParameterByName('id');
+        //     const projectIdOther = getOtherProjectId();
+        //     console.log("executed in sp hash change",projectId);
+        //     if (window.location.hash.startsWith('#project-details') && projectId) {
+        //         console.log("called loadprojectDetails from here sp 2");
+        //         loadProjectDetails(projectId);
+        //         console.log("executed in sp a  proj");
+        //     }else if (window.location.hash.startsWith('#other-project-details') && projectIdOther) {
+        //         loadOtherProjectDetails(projectIdOther);
+        //         console.log("executed in sp an other proj",projectIdOther);
+        //     } else {
+        //         const sectionId = window.location.hash.substring(1);
+        //         showSection(null, sectionId);
+        //     }
+        // });
 
 
 
@@ -98,7 +98,7 @@
                 <h1>Welcome to My Portfolio!</h1>
                 <p>I'm a software designer specializing in web development, app design, and machine learning.</p>
                 <div class="btn-group">
-                    <a href="#projects" class="btn projects-btn" onclick="showSection(event, 'projects');" data-link>
+                    <a href="#projects" class="btn projects-btn" onclick="showSection(event, 'projects', null);" data-link>
                         <i class="fa-solid fa-folder"></i>
                         <span>View Projects</span>
                     </a>
@@ -122,7 +122,7 @@
                             With 4+ years in software design, I turn complex problems into simple solutions. 
                             Skilled in frontend, backend, and database management, I deliver clean, efficient code.
                         </p>
-                        <a href="#about" class="home-about-link" onclick="showSection(event, 'about');">More About Me</a>
+                        <a href="#about" class="home-about-link" onclick="showSection(event, 'about', null);">More About Me</a>
                     </div>
                 </div>
             
@@ -168,7 +168,7 @@
                         Contact Me
                     </h2>
                     <p>Got a question or a project in mind? Let’s connect!</p>
-                    <a href="#contact" class="btn" data-link onclick="showSection(event, 'contact');">Contact Me</a>
+                    <a href="#contact" class="btn" data-link onclick="showSection(event, 'contact', null);">Contact Me</a>
                 </div>
             </section>
         </main>
