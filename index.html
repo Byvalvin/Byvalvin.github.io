@@ -81,7 +81,7 @@
         // Handle back/forward navigation
         window.addEventListener('popstate', (event) => {
             const sectionId = event.state ? event.state.sectionId : 'home';
-            showSection(null, sectionId, null);
+            showSection(event, sectionId, null);
         });
 
         // Initial load setup
