@@ -31,23 +31,45 @@
 
             // Handle special cases 
             switch(section){
+                case 'home':
+                    // Just update the URL without adding to history
+                    window.history.replaceState({}, '', `#${section}`);
+                    break;
+
                 case 'projects':
-                    window.history.pushState(state, '', `#${sectionId}`);
+                    // Just update the URL without adding to history
+                    window.history.replaceState({}, '', `#${section}`);
                     break;
                 case 'otherProjects':
-                    window.history.pushState(state, '', `#${sectionId}`);
+                    // Just update the URL without adding to history
+                    window.history.replaceState({}, '', `#${section}`);
                     break;
+
+                case 'about':
+                    // Just update the URL without adding to history
+                    window.history.replaceState({}, '', `#${section}`);
+                    break;
+                case 'contact':
+                    // Just update the URL without adding to history
+                    window.history.replaceState({}, '', `#${section}`);
+                    break;
+
                 case 'projectDetails':
                     console.log("executed in sp",projectId);
                     if (projectId) {
                         loadProjectDetails(projectId); // Load details for the specific project
                     }
+                    // Push state for sub-pages only
+                    window.history.pushState(state, '', `#${sectionId}`);
                     break;
+
                 case 'otherProjectDetails':
                     console.log("executed other in sp",projectId);
                     if (projectId) {
                         loadOtherProjectDetails(projectId); // Load details for the specific project
                     }
+                    // Push state for sub-pages only
+                    window.history.pushState(state, '', `#${sectionId}`);
                     break;
             }
 
