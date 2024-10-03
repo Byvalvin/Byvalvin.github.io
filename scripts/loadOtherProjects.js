@@ -30,9 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         card.addEventListener('keypress', (e) => {
             if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault(); // Prevent default link behavior
+                //e.preventDefault(); // Prevent default link behavior
+                showSection(e, 'otherProjectDetails'); // Show project details section
                 loadOtherProjectDetails(project.otherDetailsPage.split('=')[1]); // Extract ID from URL
-                showSection(e, 'OtherProjectDetails'); // Show project details section
+                
             }
         });
 

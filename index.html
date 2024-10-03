@@ -11,7 +11,7 @@
     <!--SPA functionality-->
     <script>
         // Function to show different sections
-        function showSection(event, section) {
+        function showSection(event, section, projectId) {
             if (event) event.preventDefault();
 
             const sections = document.querySelectorAll('.section');
@@ -29,6 +29,7 @@
                 const projectId = getParameterByName('id'); // Assuming this function is available
                 console.log("executed in sp",projectId);
                 if (projectId) {
+                    console.log("called loadprojectDetails from here sp");
                     loadProjectDetails(projectId); // Load details for the specific project
                 }
             }
@@ -66,6 +67,7 @@
             const projectIdOther = getOtherProjectId();
             console.log("executed in sp hash change",projectId);
             if (window.location.hash.startsWith('#project-details') && projectId) {
+                console.log("called loadprojectDetails from here sp 2");
                 loadProjectDetails(projectId);
                 console.log("executed in sp a  proj");
             }else if (window.location.hash.startsWith('#other-project-details') && projectIdOther) {
