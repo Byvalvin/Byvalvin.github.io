@@ -24,11 +24,20 @@
                 activeSection.style.display = 'block';
             }
 
+            // Handle special case for project details
+            if (section === 'projectDetails') {
+                const projectId = getParameterByName('id'); // Assuming this function is available
+                if (projectId) {
+                    loadProjectDetails(projectId); // Load details for the specific project
+                }
+            }
+
             // Use pushState for navigation
             window.history.pushState({ sectionId: section }, '', `#${section}`);
 
             highlightActiveLink(); // Update active link highlighting
         }
+
 
         // Handle back/forward navigation
         window.addEventListener('popstate', (event) => {
@@ -41,6 +50,17 @@
             const initialSection = window.location.hash ? window.location.hash.substring(1) : 'home';
             showSection(null, initialSection);
         });
+
+        window.addEventListener('hashchange', () => {
+            const projectId = getParameterByName('id');
+            if (window.location.hash.startsWith('#project-details') && projectId) {
+                loadProjectDetails(projectId);
+            } else {
+                const sectionId = window.location.hash.substring(1);
+                showSection(null, sectionId);
+            }
+        });
+
 
 
 
