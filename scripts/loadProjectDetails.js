@@ -1,5 +1,13 @@
 // loadProjectDetails.js
 
+// Function to parse query parameters from URL
+function getParameterByName(name, url = window.location.href) {
+    const regex = new RegExp(`[?&]${name}(=([^&#]*)|&|#|$)`);
+    const results = regex.exec(url);
+    return results && results[2] ? decodeURIComponent(results[2].replace(/\+/g, ' ')) : null;
+}
+
+
 function loadProjectDetails(projectId) {
     console.log("Loading project details for ID:", projectId);
 
@@ -105,6 +113,7 @@ function loadProjectDetails(projectId) {
 // Call loadProjectDetails when the projectDetails section is shown
 window.addEventListener('hashchange', () => {
     const projectId = getParameterByName('id');
+    console.log("Hash changed, project ID:", projectId); // Add this line
     if (projectId) {
         loadProjectDetails(projectId);
     }
