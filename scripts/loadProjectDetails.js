@@ -118,3 +118,10 @@ window.addEventListener('hashchange', () => {
         loadProjectDetails(projectId);
     }
 });
+// Load project details on initial page load if applicable
+window.addEventListener('load', () => {
+    const projectId = getParameterByName('id');
+    if (projectId) {
+        loadProjectDetails(projectId);
+    }
+});
