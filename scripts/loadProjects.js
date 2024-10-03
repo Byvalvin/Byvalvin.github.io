@@ -49,9 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h2>${project.title}</h2>
                     <p>${project.description}</p>
                     <div class="project-images">${projectImages}</div>
-                    <a href="#project-details?id=${project.id}" class="btn btn-primary" onclick="showSection(event, 'projectDetails'); loadProjectDetails('${project.id}');">View Details</a>
+                    <a href="#project-details?id=${project.id}" class="btn btn-primary" onclick="showSection(event, 'projectDetails');">View Details</a>
                 </div>
             `;
+        
         
 
             // Add a click event listener to navigate to project details page
