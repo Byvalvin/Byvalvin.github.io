@@ -1,13 +1,12 @@
 // loadOtherProjectDetails.js
 
 // Function to get the project ID from the URL hash
-function getOtherProjectId (){
+function getOtherProjectId() {
     const hash = window.location.hash;
-    const regex = /id=(\w+)/; // Assuming project IDs are alphanumeric
+    const regex = /id=([^&]+)/; // Updated to capture IDs with potential additional parameters
     const match = hash.match(regex);
     return match ? match[1] : null; // Return the project ID or null if not found
 };
-
 
 const loadOtherProjectDetails = (projectId) => {
     const projectDetailsContainer = document.getElementById('other-project-details');
@@ -20,7 +19,7 @@ const loadOtherProjectDetails = (projectId) => {
             return response.json();
         })
         .then(data => {
-            const project = data.projects.find(p => p.id === projectId);
+            const project = data.projects.find(p => p.otherDetailsPage.includes(`id=${projectId}`));
 
             if (!project) {
                 console.error(`Project with ID ${projectId} not found.`);
@@ -72,13 +71,13 @@ const loadOtherProjectDetails = (projectId) => {
         });
 };
 
-
 window.addEventListener('hashchange', () => {
     const projectId = getOtherProjectId();
     if (window.location.hash.startsWith('#other-project-details') && projectId) {
         loadOtherProjectDetails(projectId);
     } 
 });
+
 // Load other project details on initial page load if applicable
 window.addEventListener('load', () => {
     const projectId = getOtherProjectId();
