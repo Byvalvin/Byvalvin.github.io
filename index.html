@@ -33,25 +33,25 @@
             switch(section){
                 case 'home':
                     // Just update the URL without adding to history
-                    window.history.replaceState(state, '', `#${section}`);
+                    window.history.replaceState(state, '', `#${sectionId}`);
                     break;
 
                 case 'projects':
                     // Just update the URL without adding to history
-                    window.history.replaceState(state, '', `#${section}`);
+                    window.history.replaceState(state, '', `#${sectionId}`);
                     break;
                 case 'otherProjects':
                     // Just update the URL without adding to history
-                    window.history.replaceState(state, '', `#${section}`);
+                    window.history.replaceState(state, '', `#${sectionId}`);
                     break;
 
                 case 'about':
                     // Just update the URL without adding to history
-                    window.history.replaceState(state, '', `#${section}`);
+                    window.history.replaceState(state, '', `#${sectionId}`);
                     break;
                 case 'contact':
                     // Just update the URL without adding to history
-                    window.history.replaceState(state, '', `#${section}`);
+                    window.history.replaceState(state, '', `#${sectionId}`);
                     break;
 
                 case 'projectDetails':
@@ -89,8 +89,6 @@
             const initialSection = window.location.hash ? window.location.hash.substring(1) : 'home';
             showSection(null, initialSection, null);
         });
-
-
 
     </script>
 </head>
