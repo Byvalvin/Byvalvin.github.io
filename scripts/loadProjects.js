@@ -49,19 +49,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h2>${project.title}</h2>
                     <p>${project.description}</p>
                     <div class="project-images">${projectImages}</div>
-                    <a href="#project-details?id=${project.id}" class="btn btn-primary" onclick="showSection(event, 'projectDetails');">View Details</a>
+                    <a href="#project-details?id=${project.id}" class="btn btn-primary">View Details</a>
                 </div>
             `;
         
         
 
             // Add a click event listener to navigate to project details page
-            projectSection.addEventListener('click', (event) => {
-                // Avoid navigating if the click was on the link itself
-                if (event.target.tagName !== 'A') {
-                    showSection(event, project.id); // Use showSection to change the view without reloading
-                }
-            });
+            // projectSection.addEventListener('click', (event) => {
+            //     // Avoid navigating if the click was on the link itself
+            //     if (event.target.tagName !== 'A') {
+            //         showSection(event, project.id); // Use showSection to change the view without reloading
+            //     }
+            // });
 
             projectList.appendChild(projectSection);
         });
