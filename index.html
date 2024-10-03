@@ -32,6 +32,14 @@
                 }
             }
 
+            // Handle special case for other project details
+            if (section === 'otherProjectDetails') {
+                const projectId = getParameterByName('id'); // Assuming this function is available
+                if (projectId) {
+                    loadOtherProjectDetails(projectId); // Load details for the specific project
+                }
+            }
+
             // Use pushState for navigation
             //window.history.pushState({ sectionId: section }, '', `#${section}`);
 
@@ -55,6 +63,8 @@
             const projectId = getParameterByName('id');
             if (window.location.hash.startsWith('#project-details') && projectId) {
                 loadProjectDetails(projectId);
+            }else if (window.location.hash.startsWith('#other-project-details') && projectId) {
+                loadOtherProjectDetails(projectId);
             } else {
                 const sectionId = window.location.hash.substring(1);
                 showSection(null, sectionId);

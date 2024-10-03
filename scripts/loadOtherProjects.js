@@ -20,9 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
 
         // Add event listeners for navigation
-        card.addEventListener('click', () => {
-            window.location.hash = `#other-project-details?id=${project.id}`; // Update URL
+        card.addEventListener('click', (event) => {
+            showSection(event, 'OtherProjectDetails'); // Show project details section
+            //window.location.hash = `#other-project-details?id=${project.id}`; // Update URL
+            //window.history.pushState({ sectionId: 'OtherProjectDetails', projectId }, '', `#other-project-details?id=${project.id}`);
             loadOtherProjectDetails(project.id); // Load project details
+
         });
         card.addEventListener('keypress', (e) => {
             if (e.key === 'Enter' || e.key === ' ') {
