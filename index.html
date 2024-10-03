@@ -60,7 +60,8 @@
                         loadProjectDetails(projectId); // Load details for the specific project
                     }
                     // Push state for sub-pages only
-                    window.history.pushState(state, '', `#${sectionId}`);
+                    const backstate = { sectionId: 'projects', projectId: null };
+                    window.history.pushState(backstate, '', `#${backstate.sectionId}`);
                     break;
 
                 case 'otherProjectDetails':
@@ -69,7 +70,8 @@
                         loadOtherProjectDetails(projectId); // Load details for the specific project
                     }
                     // Push state for sub-pages only
-                    window.history.pushState(state, '', `#${sectionId}`);
+                    const backstate = { sectionId: 'otherProjects', projectId: null };
+                    window.history.pushState(backstate, '', `#${backstate.sectionId}`);
                     break;
             }
 
