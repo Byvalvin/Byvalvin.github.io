@@ -3,9 +3,8 @@
 
 // Function to highlight the active link in the navbar
 const highlightActiveLink = () => {
-    // Get the current section from the hash
     const currentSection = window.location.hash.substring(1) || 'home'; // Default to 'home'
-    const navLinks = document.querySelectorAll('.navbar-container a');
+    const navLinks = document.querySelectorAll('.navbar a');
 
     navLinks.forEach(link => {
         const href = link.getAttribute('href').substring(1); // Remove the leading '#'
@@ -13,6 +12,7 @@ const highlightActiveLink = () => {
         link.classList.toggle('active', isActive);
     });
 };
+
 
 // Function to fetch and add a component to the page
 const addComponent = ({ placeholderID, htmlURL }) => {

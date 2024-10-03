@@ -10,7 +10,7 @@
     <script>
         window.addEventListener('load', (event) => {
             const initialSection = window.location.hash ? window.location.hash.substring(1) : 'home';
-            showSection(event, initialSection);
+            showSection(null, initialSection);
         });
 
         window.addEventListener('popstate', (event) => {
@@ -360,31 +360,22 @@
 
     <!--SPA functionality-->
     <script>
-        function showSection(event, sectionId) {
-            if (event) {
-                event.preventDefault(); // Prevent default link behavior
+        function showSection(event, section) {
+            event.preventDefault(); // Prevent default anchor behavior
+
+            const sections = document.querySelectorAll('.section'); // Assuming each section has a class of 'section'
+            sections.forEach(sec => {
+                sec.style.display = 'none'; // Hide all sections
+            });
+
+            const activeSection = document.getElementById(section);
+            if (activeSection) {
+                activeSection.style.display = 'block'; // Show the selected section
             }
 
-            const sections = document.querySelectorAll('.section');
-            sections.forEach(section => {
-                section.style.display = 'none'; // Hide all sections
-            });
-            document.getElementById(sectionId).style.display = 'block'; // Show the selected section
-
-            // Highlight the active link
-            highlightActiveLinkSection(sectionId);
-
-            // Change the URL without reloading the page
-            const newUrl = `#${sectionId}`;
-            window.history.pushState({ sectionId }, '', newUrl);
+            highlightActiveLink(); // Update active link highlighting
         }
 
-        function highlightActiveLinkSection(sectionId) {
-            const links = document.querySelectorAll('.nav-links a');
-            links.forEach(link => {
-                link.classList.toggle('active', link.getAttribute('href') === `#${sectionId}`);
-            });
-        }
     </script>
 
 
