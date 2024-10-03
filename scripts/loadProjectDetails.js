@@ -109,19 +109,3 @@ function loadProjectDetails(projectId) {
             document.getElementById('project-details').innerHTML = `<p>Error loading project details. Please try again later.</p>`;
         });
 }
-
-// Call loadProjectDetails when the projectDetails section is shown
-window.addEventListener('hashchange', () => {
-    const projectId = getParameterByName('id');
-    console.log("Hash changed, project ID:", projectId); // Add this line
-    if (projectId) {
-        loadProjectDetails(projectId);
-    }
-});
-// Load project details on initial page load if applicable
-window.addEventListener('load', () => {
-    const projectId = getParameterByName('id');
-    if (projectId) {
-        loadProjectDetails(projectId);
-    }
-});

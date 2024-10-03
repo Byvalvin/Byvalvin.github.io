@@ -29,23 +29,29 @@
             const state = { sectionId: section, projectId: projectId };
             
 
-            // Handle special case for project details
-            if (section === 'projectDetails') {
-                console.log("executed in sp",projectId);
-                if (projectId) {
+            // Handle special cases 
+            switch(section){
+                case 'projects':
                     window.history.pushState(state, '', `#${sectionId}`);
-                    loadProjectDetails(projectId); // Load details for the specific project
-                }
+                    break;
+                case 'otherProjects':
+                    window.history.pushState(state, '', `#${sectionId}`);
+                    break;
+                case 'projectDetails':
+                    console.log("executed in sp",projectId);
+                    if (projectId) {
+                        loadProjectDetails(projectId); // Load details for the specific project
+                    }
+                    break;
+                case 'otherProjectDetails':
+                    console.log("executed other in sp",projectId);
+                    if (projectId) {
+                        loadOtherProjectDetails(projectId); // Load details for the specific project
+                    }
+                    break;
             }
 
-            // Handle special case for other project details
-            if (section === 'otherProjectDetails') {
-                console.log("executed other in sp",projectId);
-                if (projectId) {
-                    window.history.pushState(state, '', `#${sectionId}`);
-                    loadOtherProjectDetails(projectId); // Load details for the specific project
-                }
-            }
+
             highlightActiveLink(); // Update active link highlighting
         }
 
