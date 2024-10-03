@@ -1,17 +1,7 @@
 // loadProjectDetails.js
 
-document.addEventListener('DOMContentLoaded', () => {
-    console.log("Project details loaded");
-
-    // Function to parse query parameters from URL
-    const getParameterByName = (name, url = window.location.href) => {
-        const regex = new RegExp(`[?&]${name}(=([^&#]*)|&|#|$)`);
-        const results = regex.exec(url);
-        return results && results[2] ? decodeURIComponent(results[2].replace(/\+/g, ' ')) : null;
-    };
-
-    const projectId = getParameterByName('id');
-    console.log("Project ID:", projectId);
+function loadProjectDetails(projectId) {
+    console.log("Loading project details for ID:", projectId);
 
     // Fetch project details from JSON file
     fetch('projects/projectDetails.json')
@@ -27,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Generate HTML for project elements
+            // Generate HTML for project elements (same as your original implementation)
             const projectImages = project.images.map(image => `
                 <img src="projects/${projectId}/images/${image}" alt="${project.title} image" class="project-image">
             `).join('');
@@ -110,4 +100,12 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Error loading project details:', error);
             document.getElementById('project-details').innerHTML = `<p>Error loading project details. Please try again later.</p>`;
         });
+}
+
+// Call loadProjectDetails when the projectDetails section is shown
+window.addEventListener('hashchange', () => {
+    const projectId = getParameterByName('id');
+    if (projectId) {
+        loadProjectDetails(projectId);
+    }
 });
