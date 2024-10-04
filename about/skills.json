@@ -5,7 +5,7 @@
         "category": "General-Purpose",
         "proficiency": 88,
         "duration": 90,
-        "projectUrl": "https://byvalvin.github.io/other-project-details.html?id=stalker-bot"
+        "projectUrl": "https://byvalvin.github.io/#otherProjectDetails.html?id=stalker-bot"
     },
     {
         "name": "Python",
@@ -21,7 +21,7 @@
         "category": "General-Purpose",
         "proficiency": 75,
         "duration": 80,
-        "projectUrl": "https://byvalvin.github.io/project-details.html?id=qrapp"
+        "projectUrl": "https://byvalvin.github.io/#projectDetails.html?id=qrapp"
     },
     {
         "name": "JavaScript",
@@ -29,7 +29,7 @@
         "category": "General-Purpose",
         "proficiency": 87,
         "duration": 80,
-        "projectUrl": "https://byvalvin.github.io/other-project-details.html?id=text-klondike"
+        "projectUrl": "https://byvalvin.github.io/#otherProjectDetails.html?id=text-klondike"
     },
     {
         "name": "C#",
@@ -69,7 +69,7 @@
         "category": "Specialised",
         "proficiency": 70,
         "duration": 40,
-        "projectUrl": "https://byvalvin.github.io/other-project-details.html?id=edge-filter"
+        "projectUrl": "https://byvalvin.github.io/#otherProjectDetails.html?id=edge-filter"
     },
     {
         "name": "Go",
@@ -101,7 +101,7 @@
         "category": "Specialised",
         "proficiency": 75,
         "duration": 40,
-        "projectUrl": "https://byvalvin.github.io/project-details.html?id=aranimal"
+        "projectUrl": "https://byvalvin.github.io/#projectDetails.html?id=aranimal"
     },
     {
         "name": "Julia",
@@ -125,7 +125,7 @@
         "category": "Frontend",
         "proficiency": 75,
         "duration": 60,
-        "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
+        "projectUrl": "https://byvalvin.github.io/#projectDetails.html?id=proquest"
     },
     {
         "name": "Vue",
@@ -141,7 +141,7 @@
         "category": "Frontend",
         "proficiency": 80,
         "duration": 60,
-        "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
+        "projectUrl": "https://byvalvin.github.io/#projectDetails.html?id=proquest"
     },
     {
         "name": "Express",
@@ -149,7 +149,7 @@
         "category": "Backend",
         "proficiency": 70,
         "duration": 60,
-        "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
+        "projectUrl": "https://byvalvin.github.io/#projectDetails.html?id=proquest"
     },
     {
         "name": "Django",
@@ -181,7 +181,7 @@
         "category": "DevTools",
         "proficiency": 85,
         "duration": 90,
-        "projectUrl": "https://byvalvin.github.io/project-details.html?id=qrapp"
+        "projectUrl": "https://byvalvin.github.io/#projectDetails.html?id=qrapp"
     },
     {
         "name": "Unity",
@@ -197,7 +197,7 @@
         "category": "DevTools",
         "proficiency": 82,
         "duration": 80,
-        "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
+        "projectUrl": "https://byvalvin.github.io/#projectDetails.html?id=proquest"
     },
     {
         "name": "Android Studio",
@@ -205,7 +205,7 @@
         "category": "DevTools",
         "proficiency": 80,
         "duration": 70,
-        "projectUrl": "https://byvalvin.github.io/project-details.html?id=qrapp"
+        "projectUrl": "https://byvalvin.github.io/#projectDetails.html?id=qrapp"
     },
     {
         "name": "Firebase",
@@ -213,7 +213,7 @@
         "category": "Database",
         "proficiency": 60,
         "duration": 40,
-        "projectUrl": "https://byvalvin.github.io/project-details.html?id=qrapp"
+        "projectUrl": "https://byvalvin.github.io/#projectDetails.html?id=qrapp"
     },
     {
         "name": "Poetry",
@@ -221,7 +221,7 @@
         "category": "DevTools",
         "proficiency": 40,
         "duration": 20,
-        "projectUrl": "https://byvalvin.github.io/project-details.html?id=aranimal"
+        "projectUrl": "https://byvalvin.github.io/#projectDetails.html?id=aranimal"
     },
     {
         "name": "npm",
@@ -229,7 +229,7 @@
         "category": "DevTools",
         "proficiency": 70,
         "duration": 70,
-        "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
+        "projectUrl": "https://byvalvin.github.io/#projectDetails.html?id=proquest"
     },
     {
         "name": "Node",
@@ -237,7 +237,7 @@
         "category": "DevTools",
         "proficiency": 70,
         "duration": 70,
-        "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
+        "projectUrl": "https://byvalvin.github.io/#projectDetails.html?id=proquest"
     },
     {
         "name": "Figma",
@@ -245,7 +245,7 @@
         "category": "DevTools",
         "proficiency": 80,
         "duration": 70,
-        "projectUrl": "https://byvalvin.github.io/project-details.html?id=qrapp"
+        "projectUrl": "https://byvalvin.github.io/#projectDetails.html?id=qrapp"
     },
     {
         "name": "PostgreSQL",
@@ -253,7 +253,7 @@
         "category": "Database",
         "proficiency": 60,
         "duration": 40,
-        "projectUrl": "https://byvalvin.github.io/project-details.html?id=aranimal"
+        "projectUrl": "https://byvalvin.github.io/#projectDetails.html?id=aranimal"
     },
     {
         "name": "MongoDB",
@@ -261,7 +261,7 @@
         "category": "Database",
         "proficiency": 60,
         "duration": 20,
-        "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
+        "projectUrl": "https://byvalvin.github.io/#projectDetails.html?id=proquest"
     },
     {
         "name": "Netlify",
@@ -269,7 +269,7 @@
         "category": "DevOps",
         "proficiency": 70,
         "duration": 20,
-        "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
+        "projectUrl": "https://byvalvin.github.io/#projectDetails.html?id=proquest"
     },
     {
         "name": "Render",
@@ -277,7 +277,7 @@
         "category": "DevOps",
         "proficiency": 75,
         "duration": 20,
-        "projectUrl": "https://byvalvin.github.io/project-details.html?id=proquest"
+        "projectUrl": "https://byvalvin.github.io/#projectDetails.html?id=proquest"
     },
     {
         "name": "OpenCV",
@@ -285,7 +285,7 @@
         "category": "Computer Vision",
         "proficiency": 65,
         "duration": 80,
-        "projectUrl": "https://byvalvin.github.io/project-details.html?id=aranimal"
+        "projectUrl": "https://byvalvin.github.io/#projectDetails.html?id=aranimal"
     },
     {
         "name": "OpenGL",
