@@ -786,19 +786,21 @@ body, html {
 /* Back buttons for sub pages {project details, other project details}*/
 /* Back button styles */
 .back-button {
-    background: none;
-    border: none;
-    color: var(--body-darker-text-color); /* Subtle gray color */
+    background: var(--proj-btn-bg-color, #3498ab); /* Use a project button color */
+    border: 2px solid var(--h-text-color, #e74c3c); /* Accent border color */
+    color: var(--body-light-text-color, #fff); /* White text for contrast */
     cursor: pointer;
     font-size: 16px; /* Adjust size as needed */
     padding: 10px 15px; /* Space around the text */
     text-decoration: none; /* Remove underline */
     position: relative; /* Position for the hover effect */
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    border-radius: 5px; /* Rounded corners */
 }
 
 .back-button:hover {
-    color: var(--h-text-color); /* Accent color on hover */
+    background: var(--h-text-color, #e74c3c); /* Change to accent color on hover */
+    color: var(--body-light-text-color, #fff); /* Keep text white on hover */
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
@@ -807,6 +809,7 @@ body, html {
     margin-right: 8px; /* Space between icon and text */
     vertical-align: middle; /* Align icon vertically with text */
 }
+
 
 
 /* Footer Styles */
