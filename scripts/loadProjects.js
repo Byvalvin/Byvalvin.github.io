@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Project list container not found.');
             return;
         }
-
         projectData.forEach(project => {
             const projectSection = document.createElement('section');
             projectSection.classList.add('project');
@@ -49,12 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h2>${project.title}</h2>
                     <p>${project.description}</p>
                     <div class="project-images">${projectImages}</div>
-                    <a href="#projectDetails?id=${project.id}" class="btn btn-primary" onclick="showSection(event, 'projectDetails', ${project.id});">View Details</a>
+                    <a href="#projectDetails?id=${project.id}" class="btn btn-primary" onclick="showSection(event, 'projectDetails', '${project.id}');">View Details</a>
                 </div>
             `;
         
-        
-
             // Add a click event listener to navigate to project details page
             // Add a click event listener for the entire section
             projectSection.addEventListener('click', (event) => {

@@ -12,16 +12,12 @@
     <script>
         function addBackButton(htmlLocation, destination, data) {
             const defaultBack = '←'; const otherBack = 'Back';
-            const backButton = document.createElement('button'); 
-            backButton.className = 'back-button'; 
-            backButton.innerHTML = defaultBack;  // Default content
+            const backButton = document.createElement('button'); backButton.className = 'back-button'; backButton.innerHTML = defaultBack;  // Default content
             backButton.onclick = (event) => showSection(event, destination, data);
 
             // Add hover event listeners to change text
-            backButton.addEventListener('mouseover', () => backButton.innerHTML = otherBack) // Change to show "Back" on hover
-
-
-            backButton.addEventListener('mouseout', () => backButton.innerHTML = defaultBack) // Revert to original on mouse out
+            backButton.addEventListener('mouseover', () => backButton.innerHTML = otherBack); // Change to show "Back" on hover
+            backButton.addEventListener('mouseout', () => backButton.innerHTML = defaultBack); // Revert to original on mouse out
 
             document.querySelector(htmlLocation).appendChild(backButton);
         }
@@ -65,7 +61,7 @@
             highlightActiveLink(); // Update active link highlighting
         }
 
-        // Initial load setup
+        // Initial load and reloads setup
         window.addEventListener('load', () => {
             const initialHash = window.location.hash ? window.location.hash.substring(1) : 'home';
             const [baseSection, projectId] = initialHash.split('?'); // Separate section from projectId
