@@ -105,11 +105,11 @@ function createSkillBar(skill) {
             const hash = url.hash ? url.hash.substring(1) : ''; // Get the part after the hash
 
             const projectId = url.searchParams.get('id');
-            const targetPage = hash.replace('Details', 's'); // Replace "Details" with "s"
+            const targetPage = hash.split('?').replace('Details', 's'); // Replace "Details" with "s"
             console.log(projectId, targetPage);
             
             showSection(event, targetPage, 'about', projectId);
-            window.open(skill.projectUrl, '_blank'); // Open in a new tab
+            //window.open(skill.projectUrl, '_blank'); // Open in a new tab
         };
         skillHeader.appendChild(button); // Append the button to the skill header
     }
