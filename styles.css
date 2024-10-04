@@ -796,6 +796,7 @@ body, html {
     position: relative; /* Position for the hover effect */
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition */
     border-radius: 5px; /* Rounded corners */
+    margin: 15px; /* Add margin for spacing away from edges */
 }
 
 .back-button:hover {
