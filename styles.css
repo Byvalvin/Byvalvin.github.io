@@ -784,19 +784,29 @@ body, html {
 }
 
 /* Back buttons for sub pages {project details, other project details}*/
+/* Back button styles */
 .back-button {
     background: none;
     border: none;
-    color: #555; /* Subtle gray color */
+    color: var(--body-darker-text-color); /* Subtle gray color */
     cursor: pointer;
     font-size: 16px; /* Adjust size as needed */
     padding: 10px 15px; /* Space around the text */
-    text-decoration: underline; /* Underlined for emphasis */
-    transition: color 0.3s ease; /* Smooth color transition */
+    text-decoration: none; /* Remove underline */
+    position: relative; /* Position for the hover effect */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
 }
 
 .back-button:hover {
-    color: #000; /* Darker color on hover */
+    color: var(--h-text-color); /* Accent color on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.back-button::before {
+    content: '←'; /* Add an arrow or icon */
+    font-size: 20px; /* Adjust size as needed */
+    margin-right: 8px; /* Space between icon and text */
+    vertical-align: middle; /* Align icon vertically with text */
 }
 
 
