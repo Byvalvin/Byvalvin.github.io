@@ -8,11 +8,17 @@ const highlightActiveLink = () => {
 
     navLinks.forEach(link => {
         const href = link.getAttribute('href').substring(1); // Remove the leading '#'
-        const isActive = href === currentSection;
+        let isActive = href === currentSection;
+
+        // Check for subpages related to projects and other projects
+        if (currentSection.startsWith('projectDetails') || currentSection.startsWith('otherProjectDetails')) {
+            isActive = href === 'projects' || href === 'otherProjects';
+        }
+
         link.classList.toggle('active', isActive);
     });
-    
 };
+
 
 
 
