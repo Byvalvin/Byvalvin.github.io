@@ -783,6 +783,23 @@ body, html {
     transition: 0.3s;
 }
 
+/* Back buttons for sub pages {project details, other project details}*/
+.back-button {
+    background: none;
+    border: none;
+    color: #555; /* Subtle gray color */
+    cursor: pointer;
+    font-size: 16px; /* Adjust size as needed */
+    padding: 10px 15px; /* Space around the text */
+    text-decoration: underline; /* Underlined for emphasis */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.back-button:hover {
+    color: #000; /* Darker color on hover */
+}
+
+
 /* Footer Styles */
 footer {
     background-color: var(--main-bg-color);

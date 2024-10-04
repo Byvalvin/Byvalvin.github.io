@@ -10,7 +10,16 @@
 
     <!--SPA functionality-->
     <script>
+        function addBackButton(htmlLocation, destination, data){
+            const backButton = document.createElement('button');
+            backButton.className = 'back-button';
+            backButton.textContent = 'Back';
+            backButton.onclick = (event) => showSection(event, destination, data);
+            
+            document.querySelector(htmlLocation).appendChild(backButton);
+        }
         const backButton = (event, destination) =>`<button onclick="showSection(${event}, ${destination} , null);" class="back-button">Back</button>`
+
         // Function to show different sections
         function showSection(event, section, projectId) {
             if (event) event.preventDefault();
@@ -200,7 +209,9 @@
     <!-- Project Details Section -->
     <div id="projectDetails" class="section" style="display: none;">
         <header>
-            <script>backButton(event, 'projects')</script>
+            <script>
+                addBackButton('#projectDetails header', event, 'projects');
+            </script>
         </header>
         <main>
             <section id="project-details"></section> <!-- Placeholder for project details -->
@@ -222,7 +233,9 @@
     <div id="otherProjectDetails" class="section" style="display: none;">
         <header>
             <!-- You can add a page-specific header here if needed -->
-            <script>backButton(event, 'otherProjects')</script>
+            <script>
+                addBackButton('#otherProjectDetails header', event, 'otherProjects');
+            </script>
         </header>
         <main>
             <section id="other-project-details" aria-labelledby="project-title"></section> <!-- Placeholder for other project details -->
