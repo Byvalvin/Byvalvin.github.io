@@ -805,15 +805,6 @@ body, html {
     color: var(--body-light-text-color, #fff); /* Keep text white on hover */
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
-.back-button::after {
-    content: ''; /* Initially empty */
-    display: none; /* Hidden by default */
-}
-
-.back-button:hover::after {
-    content: 'Back'; /* Text to show on hover */
-    margin-left: 8px; /* Space between icon and text */
-}
 
 .back-button::before {
     font-size: 20px; /* Adjust size as needed */

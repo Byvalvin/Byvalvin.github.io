@@ -10,11 +10,22 @@
 
     <!--SPA functionality-->
     <script>
-        function addBackButton(htmlLocation, destination, data){
-            const backButton = document.createElement('button'); backButton.className = 'back-button'; backButton.innerHTML = '←';  // Use innerHTML if you want to include icons or text
+        function addBackButton(htmlLocation, destination, data) {
+            const defaultBack = '←'; const otherBack = 'Back';
+            const backButton = document.createElement('button'); 
+            backButton.className = 'back-button'; 
+            backButton.innerHTML = defaultBack;  // Default content
             backButton.onclick = (event) => showSection(event, destination, data);
+
+            // Add hover event listeners to change text
+            backButton.addEventListener('mouseover', () => backButton.innerHTML = otherBack) // Change to show "Back" on hover
+
+
+            backButton.addEventListener('mouseout', () => backButton.innerHTML = defaultBack) // Revert to original on mouse out
+
             document.querySelector(htmlLocation).appendChild(backButton);
         }
+
         // Function to show different sections
         function showSection(event, section, projectId) {
             if (event) event.preventDefault();
@@ -43,7 +54,6 @@
                 case 'projectDetails':
                     console.log("executed in sp", projectId);
                     if (projectId) loadProjectDetails(projectId); // Load details for the specific project
-                    backState = { sectionId: 'projects', projectId: null };
                     break;
 
                 case 'otherProjectDetails':
@@ -59,7 +69,7 @@
         window.addEventListener('load', () => {
             const initialHash = window.location.hash ? window.location.hash.substring(1) : 'home';
             const [baseSection, projectId] = initialHash.split('?'); // Separate section from projectId
-            //const projectId = query ? new URLSearchParams(query).get('id') : null; // Extract projectId
+            //const projectId = query ? new URLSearchParams(query).get('id') : null; // Extract projectId(dont need this necessary as the manual method id working)
             showSection(null, baseSection, projectId ? projectId.split('=')[1] : null); // Pass the projectId if it exists
         });
 
