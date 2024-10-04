@@ -74,9 +74,8 @@
             //const projectId = query ? new URLSearchParams(query).get('id') : null; // Extract projectId(dont need this necessary as the manual method id working)
             const pageEvent = null; // no event fro load and reload
 
-            console.log(initialHash);
             const data = projectId ? projectId.split('=')[1] : null;
-            showSection(pageEvent, baseSection, pageFrom, data); // Pass the projectId if it exists
+            showSection(pageEvent, baseSection, initialHash, data); // Pass the projectId if it exists
         });
 
 
