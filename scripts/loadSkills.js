@@ -104,6 +104,7 @@ function createSkillBar(skill) {
             //event.preventDefault();
             //const projectId = new URL(skill.projectUrl).searchParams.get('id'); // Get project ID from URL
             const targetPage = (skill.projectUrl.split('?')[0]).substring(1);
+            console.log(targetPage);
             const projectId = skill.projectUrl.split('=')[1]; // manual way is tried and true
             showSection(event, targetPage, projectId); // Call your function
             //window.open(skill.projectUrl, '_blank'); // Open the project URL in a new tab
