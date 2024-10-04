@@ -49,8 +49,6 @@
                 case 'otherProjects':
                 case 'about':
                 case 'contact':
-                    // Push state for main sections
-                    //window.history.replaceState(state, '', `#${sectionId}`);
                     break;
 
                 case 'projectDetails':
@@ -58,8 +56,6 @@
                     if (projectId) {
                         loadProjectDetails(projectId); // Load details for the specific project
                     }
-                    // Use replaceState for subpages to avoid forward navigation
-                    //window.history.replaceState(state, '', `#${sectionId}`);
                     backState = { sectionId: 'projects', projectId: null };
                     //window.history.pushState(backState, '', `#${sectionId}`);
                     break;
@@ -69,10 +65,11 @@
                     if (projectId) {
                         loadOtherProjectDetails(projectId); // Load details for the specific project
                     }
-                    // Use replaceState for subpages to avoid forward navigation
-                    //window.history.replaceState(state, '', `#${sectionId}`);
+
+                    
                     break;
             }
+            window.history.replaceState(state, '', `#${sectionId}`);
 
             highlightActiveLink(); // Update active link highlighting
         }
