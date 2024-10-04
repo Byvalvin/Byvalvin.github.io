@@ -103,7 +103,8 @@ function createSkillBar(skill) {
         button.onclick = (event) => {
             //event.preventDefault();
             //const projectId = new URL(skill.projectUrl).searchParams.get('id'); // Get project ID from URL
-            const targetPage = (skill.projectUrl.split('?')[0]).substring(1);
+            const url = new URL(skill.projectUrl);
+            const targetPage = url.hash ? url.hash.split('?')[0].substring(1) : ''; // Get the part after the hash
             console.log(targetPage);
             const projectId = skill.projectUrl.split('=')[1]; // manual way is tried and true
             showSection(event, targetPage, projectId); // Call your function
