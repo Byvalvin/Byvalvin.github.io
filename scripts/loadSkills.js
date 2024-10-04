@@ -101,11 +101,11 @@ function createSkillBar(skill) {
         button.textContent = 'Example'; // Can change this text as needed
 
         button.onclick = (event) => {
-            event.preventDefault();
+            //event.preventDefault();
             //const projectId = new URL(skill.projectUrl).searchParams.get('id'); // Get project ID from URL
             const projectId = skill.projectUrl.split('=')[1]; // manual way is tried and true
             showSection(event, 'projectDetails', projectId); // Call your function
-            window.open(skill.projectUrl, '_blank'); // Open the project URL in a new tab
+            //window.open(skill.projectUrl, '_blank'); // Open the project URL in a new tab
         };
         skillHeader.appendChild(button); // Append the button to the skill header
     }
