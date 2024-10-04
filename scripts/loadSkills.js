@@ -101,9 +101,13 @@ function createSkillBar(skill) {
         button.textContent = 'Example'; // Can change this text as needed
 
         button.onclick = (event) => {
-            const projectId = new URL(skill.projectUrl).searchParams.get('id');
-            const targetPage = new URL(skill.projectUrl).hash ? new URL(skill.projectUrl).hash.substring(1) : '';
-            console.log("targ: ",targetPage);
+            const url = new URL(skill.projectUrl);
+            const hash = url.hash ? url.hash.substring(1) : ''; // Get the part after the hash
+
+            const projectId = url.searchParams.get('id');
+            const targetPage = hash.replace('Details', 's'); // Replace "Details" with "s"
+            console.log(projectId, targetPage);
+            
             showSection(event, targetPage, 'about', projectId);
             window.open(skill.projectUrl, '_blank'); // Open in a new tab
         };
