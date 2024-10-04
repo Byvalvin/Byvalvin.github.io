@@ -11,7 +11,7 @@
     <!--SPA functionality-->
     <script>
         function addBackButton(htmlLocation, destination, data){
-            const backButton = document.createElement('button'); backButton.className = 'back-button'; backButton.textContent =  '←';  //Add an arrow or icon
+            const backButton = document.createElement('button'); backButton.className = 'back-button'; backButton.innerHTML = '←';  // Use innerHTML if you want to include icons or text
             backButton.onclick = (event) => showSection(event, destination, data);
             document.querySelector(htmlLocation).appendChild(backButton);
         }
@@ -59,6 +59,7 @@
         window.addEventListener('load', () => {
             const initialHash = window.location.hash ? window.location.hash.substring(1) : 'home';
             const [baseSection, projectId] = initialHash.split('?'); // Separate section from projectId
+            //const projectId = query ? new URLSearchParams(query).get('id') : null; // Extract projectId
             showSection(null, baseSection, projectId ? projectId.split('=')[1] : null); // Pass the projectId if it exists
         });
 
