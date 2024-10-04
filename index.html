@@ -11,15 +11,10 @@
     <!--SPA functionality-->
     <script>
         function addBackButton(htmlLocation, destination, data){
-            const backButton = document.createElement('button');
-            backButton.className = 'back-button';
-            backButton.textContent =  '←';  //Add an arrow or icon
+            const backButton = document.createElement('button'); backButton.className = 'back-button'; backButton.textContent =  '←';  //Add an arrow or icon
             backButton.onclick = (event) => showSection(event, destination, data);
-            
             document.querySelector(htmlLocation).appendChild(backButton);
         }
-        const backButton = (event, destination) =>`<button onclick="showSection(${event}, ${destination} , null);" class="back-button">Back</button>`
-
         // Function to show different sections
         function showSection(event, section, projectId) {
             if (event) event.preventDefault();
@@ -30,17 +25,11 @@
             });
 
             const activeSection = document.getElementById(section);
-            if (activeSection) {
-                activeSection.style.display = 'block';
-            }
+            if (activeSection) {activeSection.style.display = 'block';}
 
             // Define sectionId for URL update
-            const sectionId = ['projectDetails', 'otherProjectDetails'].includes(section) 
-                            ? `${section}?id=${projectId}` 
-                            : section;
-
+            const sectionId = ['projectDetails', 'otherProjectDetails'].includes(section) ?`${section}?id=${projectId}` : section;
             const state = { sectionId: section, projectId: projectId };
-            let backState = null; // back from sub pages
 
             // Handle special cases
             switch (section) {
@@ -53,48 +42,26 @@
 
                 case 'projectDetails':
                     console.log("executed in sp", projectId);
-                    if (projectId) {
-                        loadProjectDetails(projectId); // Load details for the specific project
-                    }
+                    if (projectId) loadProjectDetails(projectId); // Load details for the specific project
                     backState = { sectionId: 'projects', projectId: null };
-                    //window.history.pushState(backState, '', `#${sectionId}`);
                     break;
 
                 case 'otherProjectDetails':
                     console.log("executed other in sp", projectId);
-                    if (projectId) {
-                        loadOtherProjectDetails(projectId); // Load details for the specific project
-                    }
-
-                    
+                    if (projectId) loadOtherProjectDetails(projectId); // Load details for the specific project
                     break;
             }
             window.history.replaceState(state, '', `#${sectionId}`);
-
             highlightActiveLink(); // Update active link highlighting
         }
 
-
-
-        // Handle back/forward navigation
-        /*
-        window.addEventListener('popstate', (event) => {
-            if (event.state) {
-                const sectionId = event.state.sectionId;
-                console.log("Changing to:", sectionId);
-                showSection(event, sectionId, null);
-            } else {
-                // Default to home if no state
-                showSection(event, 'home', null);
-            }
-        });
-        */
-
         // Initial load setup
         window.addEventListener('load', () => {
-            const initialSection = window.location.hash ? window.location.hash.substring(1) : 'home';
-            showSection(null, initialSection, null);
+            const initialHash = window.location.hash ? window.location.hash.substring(1) : 'home';
+            const [baseSection, projectId] = initialHash.split('?'); // Separate section from projectId
+            showSection(null, baseSection, projectId ? projectId.split('=')[1] : null); // Pass the projectId if it exists
         });
+
 
     </script>
 </head>
@@ -163,15 +130,7 @@
                 </div>
             </section>
             <script>
-                function toggleCard(card) {
-                    const cards = document.querySelectorAll('.about-card');
-                    cards.forEach(c => {
-                        if (c !== card) {
-                            c.classList.remove('expanded');
-                        }
-                    });
-                    card.classList.toggle('expanded');
-                }
+                function toggleCard(card) {document.querySelectorAll('.about-card').forEach(c => {c.classList.toggle('expanded', c === card);});}
             </script>
 
             <!-- Contact Section -->
@@ -309,8 +268,6 @@
                         </div>
                         <button class="nav-button right">›</button>
                     </div>
-    
-    
                 </div>
     
                 <div class="tab-content" id="languages" role="tabpanel" aria-labelledby="tab-languages">
@@ -402,7 +359,6 @@
                     </button>
                 </form>
             </div>
-            
             <p class="thank-you">Thank you for visiting!</p>
         </main>
     
@@ -415,7 +371,6 @@
     <!-- All Scripts -->
     <!-- was on all pages -->
     <script src="scripts/placeHolders.js" defer></script>
-
 
     <!--Projects-->
     <script src="scripts/loadProjects.js" defer></script>

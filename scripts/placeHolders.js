@@ -5,7 +5,6 @@
 const highlightActiveLink = () => {
     const currentSection = window.location.hash.substring(1) || 'home'; // Default to 'home'
     const navLinks = document.querySelectorAll('.navbar a');
-
     navLinks.forEach(link => {
         const href = link.getAttribute('href').substring(1); // Remove the leading '#'
         let isActive = false;
@@ -16,16 +15,11 @@ const highlightActiveLink = () => {
         } else if (currentSection.startsWith('otherProjectDetails')) {
             isActive = href === 'otherProjects';
         } else {
-            // Default case: check against the current section
-            isActive = href === currentSection;
+            isActive = href === currentSection; // Default case: check against the current section
         }
-
         link.classList.toggle('active', isActive);
     });
 };
-
-
-
 
 
 // Function to fetch and add a component to the page
@@ -94,9 +88,8 @@ const loadScript = (src, successMessage, nextScript) => {
     script.defer = true;
     script.onload = () => {
         console.log(successMessage);
-        if (nextScript) {
-            loadScript(nextScript.src, nextScript.msg, nextScript.next);
-        }
+        if (nextScript) loadScript(nextScript.src, nextScript.msg, nextScript.next);
+        
     };
     script.onerror = () => console.error(`Failed to load ${src}`);
     document.body.appendChild(script);
