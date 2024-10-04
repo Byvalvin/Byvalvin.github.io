@@ -76,7 +76,8 @@
             const [baseSection, projectId] = initialHash.split('?'); // Separate section from projectId
             //const projectId = query ? new URLSearchParams(query).get('id') : null; // Extract projectId(dont need this necessary as the manual method id working)
             const pageEvent = null; // no event fro load and reload
-
+            const sourcePage = initialHash.split('?')[0].replace('Details', 's'); // Replace "Details" with "s"
+            console.log("load or reload", "going to/currently on", baseSection, "full hash", initialHash,"came from", sourcePage);
             const data = projectId ? projectId.split('=')[1] : null;
             showSection(pageEvent, baseSection, initialHash, data); // Pass the projectId if it exists
         });

@@ -105,7 +105,7 @@ function createSkillBar(skill) {
             const hash = url.hash ? url.hash.substring(1) : ''; // Get the part after the hash
 
             const projectId = url.searchParams.get('id');
-            const targetPage = hash.split('?')[0].replace('Details', 's'); // Replace "Details" with "s"
+            const targetPage = hash.split('?')[0];
             console.log(projectId, targetPage);
             
             showSection(event, targetPage, 'about', projectId);
