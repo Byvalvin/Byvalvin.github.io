@@ -13,7 +13,7 @@
         function addBackButton(htmlLocation, destination, data){
             const backButton = document.createElement('button');
             backButton.className = 'back-button';
-            backButton.textContent = 'Back';
+            backButton.textContent =  '←';  //Add an arrow or icon
             backButton.onclick = (event) => showSection(event, destination, data);
             
             document.querySelector(htmlLocation).appendChild(backButton);

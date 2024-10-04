@@ -803,7 +803,6 @@ body, html {
 }
 
 .back-button::before {
-    content: '←'; /* Add an arrow or icon */
     font-size: 20px; /* Adjust size as needed */
     margin-right: 8px; /* Space between icon and text */
     vertical-align: middle; /* Align icon vertically with text */

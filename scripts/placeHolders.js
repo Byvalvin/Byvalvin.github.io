@@ -8,16 +8,22 @@ const highlightActiveLink = () => {
 
     navLinks.forEach(link => {
         const href = link.getAttribute('href').substring(1); // Remove the leading '#'
-        let isActive = href === currentSection;
+        let isActive = false;
 
-        // Check for subpages related to projects and other projects
-        if (currentSection.startsWith('projectDetails') || currentSection.startsWith('otherProjectDetails')) {
-            isActive = href === 'projects' || href === 'otherProjects';
+        // Check for specific subpages
+        if (currentSection.startsWith('projectDetails')) {
+            isActive = href === 'projects';
+        } else if (currentSection.startsWith('otherProjectDetails')) {
+            isActive = href === 'otherProjects';
+        } else {
+            // Default case: check against the current section
+            isActive = href === currentSection;
         }
 
         link.classList.toggle('active', isActive);
     });
 };
+
 
 
 
