@@ -11,6 +11,9 @@
     <!--SPA functionality-->
     <script>
         function addBackButton(htmlLocation, destination, data) {
+            const existingButton = document.querySelector(`${htmlLocation} .back-button`);
+            if (existingButton) existingButton.remove(); // Remove existing back button
+            
             const defaultBack = '←'; const otherBack = 'Back';
             const backButton = document.createElement('button'); backButton.className = 'back-button'; backButton.innerHTML = defaultBack;  // Default content
             backButton.onclick = (event) => showSection(event, destination, null, data);
@@ -51,7 +54,7 @@
                     console.log("executed in sp", projectId);
                     if (projectId){
                         loadProjectDetails(projectId); // Load details for the specific project
-                        addBackButton('#projectDetails header', fromSection? fromSection:'projectDetails', null);
+                        addBackButton('#projectDetails header', fromSection || 'projects', null);
                     }
                     break;
 
@@ -59,7 +62,7 @@
                     console.log("executed other in sp", projectId);
                     if (projectId){
                         loadOtherProjectDetails(projectId); // Load details for the specific project
-                        addBackButton('#otherProjectDetails header', fromSection? fromSection:'otherProjectDetails', null);
+                        addBackButton('#otherProjectDetails header', fromSection || 'otherProjects', null);
                     }
                     break;
             }
