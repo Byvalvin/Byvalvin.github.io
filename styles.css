@@ -2081,9 +2081,12 @@ footer {
     color: var(--body-dark-text-color);
 }
 
+
+/* Show icon on hover 
 .message-prompt:hover .plane-icon {
-    display: inline; /* Show icon on hover */
+    display: inline; 
 }
+*/
 
 
 /* Style the contact form */
