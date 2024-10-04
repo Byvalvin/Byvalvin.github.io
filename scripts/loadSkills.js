@@ -90,13 +90,24 @@ function createSkillBar(skill) {
     skillHeader.appendChild(skillName);
 
     if (skill.projectUrl) {
-        const button = document.createElement('a');
+        const button = document.createElement('button'); // Create a button instead of an anchor(more control over onclick. This is needed to call showSection)
         button.classList.add('button');
-        button.href = skill.projectUrl;
-        button.textContent = 'Example';
-        button.target = '_blank';
-        button.rel = 'noopener noreferrer';
-        skillHeader.appendChild(button);
+        /*
+        for if was an a tag
+        button.href = skill.projectUrl; // Set the URL from the skill object
+        button.target = '_blank'; // Open in a new tab
+        button.rel = 'noopener noreferrer'; // Security best practice
+        */
+        button.textContent = 'Example'; // Can change this text as needed
+
+        button.onclick = (event) => {
+            event.preventDefault();
+            //const projectId = new URL(skill.projectUrl).searchParams.get('id'); // Get project ID from URL
+            const projectId = skill.projectUrl.split('=')[1]; // manual way is tried and true
+            showSection(event, 'projectDetails', projectId); // Call your function
+            window.open(skill.projectUrl, '_blank'); // Open the project URL in a new tab
+        };
+        skillHeader.appendChild(button); // Append the button to the skill header
     }
 
     skillDiv.appendChild(skillHeader);
