@@ -41,7 +41,7 @@
                 case 'about':
                 case 'contact':
                     // Push state for main sections
-                    window.history.replaceState(state, '', `#${sectionId}`);
+                    //window.history.replaceState(state, '', `#${sectionId}`);
                     break;
 
                 case 'projectDetails':
@@ -52,7 +52,7 @@
                     // Use replaceState for subpages to avoid forward navigation
                     //window.history.replaceState(state, '', `#${sectionId}`);
                     backState = { sectionId: 'projects', projectId: null };
-                    window.history.pushState(backState, '', `#${sectionId}`);
+                    //window.history.pushState(backState, '', `#${sectionId}`);
                     break;
 
                 case 'otherProjectDetails':
@@ -61,7 +61,7 @@
                         loadOtherProjectDetails(projectId); // Load details for the specific project
                     }
                     // Use replaceState for subpages to avoid forward navigation
-                    window.history.replaceState(state, '', `#${sectionId}`);
+                    //window.history.replaceState(state, '', `#${sectionId}`);
                     break;
             }
 
@@ -71,6 +71,7 @@
 
 
         // Handle back/forward navigation
+        /*
         window.addEventListener('popstate', (event) => {
             if (event.state) {
                 const sectionId = event.state.sectionId;
@@ -81,6 +82,7 @@
                 showSection(event, 'home', null);
             }
         });
+        */
 
         // Initial load setup
         window.addEventListener('load', () => {
