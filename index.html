@@ -30,9 +30,7 @@
             if (event) event.preventDefault();
 
             // Store the source page in sessionStorage
-            if (fromSection) {
-                sessionStorage.setItem('sourcePage', fromSection);
-            }
+            if (fromSection) sessionStorage.setItem('sourcePage', fromSection);
 
             const sections = document.querySelectorAll('.section');
             sections.forEach(sec => {
@@ -54,7 +52,6 @@
                 case 'about':
                 case 'contact':
                     break;
-
                 case 'projectDetails':
                     console.log("executed in sp", projectId);
                     if (projectId){
@@ -62,7 +59,6 @@
                         addBackButton('#projectDetails header', fromSection || 'projects', null);
                     }
                     break;
-
                 case 'otherProjectDetails':
                     console.log("executed other in sp", projectId);
                     if (projectId){
@@ -79,13 +75,13 @@
         window.addEventListener('load', () => {
             const initialHash = window.location.hash ? window.location.hash.substring(1) : 'home';
             const [baseSection, projectId] = initialHash.split('?'); // Separate section from projectId
+            const defaultSourcePage = initialHash.split('?')[0].replace('Details', 's'); // Replace "Details" with "s"
 
             //const projectId = query ? new URLSearchParams(query).get('id') : null; // Extract projectId(dont need this necessary as the manual method id working)
             const pageEvent = null; // no event fro load and reload
-            const defaultSourcePage = initialHash.split('?')[0].replace('Details', 's'); // Replace "Details" with "s"
-            const sourcePage = sessionStorage.getItem('sourcePage') || defaultSourcePage;
+            const sourcePage = sessionStorage.getItem('sourcePage') || defaultSourcePage; // useful for reloading sub pages, store info in user session
             const data = projectId ? projectId.split('=')[1] : null;
-            //console.log("load or reload", "going to/currently on", baseSection, "with id", data, "full hash", initialHash,"came from", sourcePage);
+            
             showSection(pageEvent, baseSection, sourcePage, data); // Pass the projectId if it exists
         });
 

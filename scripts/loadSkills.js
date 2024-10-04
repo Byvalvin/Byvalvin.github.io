@@ -106,7 +106,6 @@ function createSkillBar(skill) {
 
             const projectId = hash.split('=')[1]; // manual way is tried and true
             const targetPage = hash.split('?')[0];
-            //console.log(url, skill.projectUrl, projectId, targetPage);
             
             showSection(event, targetPage, 'about', projectId);
             //window.open(skill.projectUrl, '_blank'); // Open in a new tab
