@@ -104,9 +104,9 @@ function createSkillBar(skill) {
             const url = new URL(skill.projectUrl);
             const hash = url.hash ? url.hash.substring(1) : ''; // Get the part after the hash
 
-            const projectId = url.searchParams.get('id');
+            const projectId = hash.split('=')[1]; // manual way is tried and true
             const targetPage = hash.split('?')[0];
-            console.log(projectId, targetPage);
+            console.log(url, skill.projectUrl, projectId, targetPage);
             
             showSection(event, targetPage, 'about', projectId);
             //window.open(skill.projectUrl, '_blank'); // Open in a new tab
