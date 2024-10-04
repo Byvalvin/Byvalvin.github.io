@@ -137,7 +137,15 @@
                 </div>
             </section>
             <script>
-                function toggleCard(card) {document.querySelectorAll('.about-card').forEach(c => {c.classList.toggle('expanded', c === card);});}
+                function toggleCard(card) {
+                    const cards = document.querySelectorAll('.about-card');
+                    cards.forEach(c => {
+                        if (c !== card) {
+                            c.classList.remove('expanded');
+                        }
+                    });
+                    card.classList.toggle('expanded');
+                }
             </script>
 
             <!-- Contact Section -->
@@ -370,7 +378,6 @@
         </main>
     
     </div>
-    
 
     <!-- Footer Placeholder -->
     <footer id="footer-placeholder"></footer>
