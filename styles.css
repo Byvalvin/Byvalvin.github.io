@@ -2081,7 +2081,7 @@ footer {
     cursor: pointer; /* Pointer cursor on hover */
 }
 .plane-icon {
-    display: none; /* Initially hidden */
+    display: inline; /* Initially hidden */
     margin-left: 5px; /* Space between text and icon */
     color: var(--body-dark-text-color);
 }
