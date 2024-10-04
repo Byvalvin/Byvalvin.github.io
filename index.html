@@ -10,6 +10,7 @@
 
     <!--SPA functionality-->
     <script>
+        const backButton = (event, destination) =>`<button onclick="showSection(${event}, ${destination} , null);" class="back-button">Back</button>`
         // Function to show different sections
         function showSection(event, section, projectId) {
             if (event) event.preventDefault();
@@ -197,6 +198,7 @@
     <!-- Project Details Section -->
     <div id="projectDetails" class="section" style="display: none;">
         <header>
+            <script>backButton(event, 'projects')</script>
         </header>
         <main>
             <section id="project-details"></section> <!-- Placeholder for project details -->
@@ -218,6 +220,7 @@
     <div id="otherProjectDetails" class="section" style="display: none;">
         <header>
             <!-- You can add a page-specific header here if needed -->
+            <script>backButton(event, 'otherProjects')</script>
         </header>
         <main>
             <section id="other-project-details" aria-labelledby="project-title"></section> <!-- Placeholder for other project details -->
