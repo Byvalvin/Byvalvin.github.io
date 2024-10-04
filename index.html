@@ -29,6 +29,11 @@
         function showSection(event, section, fromSection, projectId) {
             if (event) event.preventDefault();
 
+            // Store the source page in sessionStorage
+            if (fromSection) {
+                sessionStorage.setItem('sourcePage', fromSection);
+            }
+
             const sections = document.querySelectorAll('.section');
             sections.forEach(sec => {
                 sec.style.display = 'none';
@@ -74,11 +79,13 @@
         window.addEventListener('load', () => {
             const initialHash = window.location.hash ? window.location.hash.substring(1) : 'home';
             const [baseSection, projectId] = initialHash.split('?'); // Separate section from projectId
+
             //const projectId = query ? new URLSearchParams(query).get('id') : null; // Extract projectId(dont need this necessary as the manual method id working)
             const pageEvent = null; // no event fro load and reload
-            const sourcePage = initialHash.split('?')[0].replace('Details', 's'); // Replace "Details" with "s"
+            const defaultSourcePage = initialHash.split('?')[0].replace('Details', 's'); // Replace "Details" with "s"
+            const sourcePage = sessionStorage.getItem('sourcePage') || defaultSourcePage;
             const data = projectId ? projectId.split('=')[1] : null;
-            console.log("load or reload", "going to/currently on", baseSection, "with id", data, "full hash", initialHash,"came from", sourcePage);
+            //console.log("load or reload", "going to/currently on", baseSection, "with id", data, "full hash", initialHash,"came from", sourcePage);
             showSection(pageEvent, baseSection, sourcePage, data); // Pass the projectId if it exists
         });
 
