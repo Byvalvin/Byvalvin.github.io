@@ -103,6 +103,7 @@ function createSkillBar(skill) {
         button.onclick = (event) => {
             const projectId = new URL(skill.projectUrl).searchParams.get('id');
             const targetPage = new URL(skill.projectUrl).hash ? new URL(skill.projectUrl).hash.substring(1) : '';
+            console.log("targ: ",targetPage);
             showSection(event, targetPage, 'about', projectId);
             window.open(skill.projectUrl, '_blank'); // Open in a new tab
         };
