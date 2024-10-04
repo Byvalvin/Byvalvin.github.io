@@ -90,26 +90,28 @@ function createSkillBar(skill) {
     skillHeader.appendChild(skillName);
 
     if (skill.projectUrl) {
-        const button = document.createElement('button'); // Create a button instead of an anchor(more control over onclick. This is needed to call showSection)
-        button.classList.add('button');
-        /*
-        for if was an a tag
-        button.href = skill.projectUrl; // Set the URL from the skill object
-        button.target = '_blank'; // Open in a new tab
-        button.rel = 'noopener noreferrer'; // Security best practice
-        */
-        button.textContent = 'Example'; // Can change this text as needed
-
-        button.onclick = (event) => {
-            const url = new URL(skill.projectUrl);
-            const hash = url.hash ? url.hash.substring(1) : ''; // Get the part after the hash
-
-            const projectId = hash.split('=')[1]; // manual way is tried and true
-            const targetPage = hash.split('?')[0];
-            
-            showSection(event, targetPage, 'about', projectId);
-            //window.open(skill.projectUrl, '_blank'); // Open in a new tab
-        };
+        let button = null;
+        if(skill.projectUrl.includes('#')){ // is it a link to a portfolio page?
+            button = document.createElement('button'); // Create a button instead of an anchor(more control over onclick. This is needed to call showSection)
+            button.classList.add('button');
+            button.textContent = 'Example'; // Can change this text as needed
+            button.onclick = (event) => {
+                const url = new URL(skill.projectUrl);
+                const hash = url.hash ? url.hash.substring(1) : ''; // Get the part after the hash
+                const projectId = hash.split('=')[1]; // manual way is tried and true
+                const targetPage = hash.split('?')[0];
+                showSection(event, targetPage, 'about', projectId);
+                //window.open(skill.projectUrl, '_blank'); // Open in a new tab
+            };
+        }else{ // a regular link 
+            button = document.createElement('a');
+            button.classList.add('button');
+            button.href = skill.projectUrl; // Set the URL from the skill object
+            button.textContent = 'Example';
+            button.target = '_blank'; // Open in a new tab
+            button.rel = 'noopener noreferrer'; // Security best practice
+        }
+        
         skillHeader.appendChild(button); // Append the button to the skill header
     }
 
