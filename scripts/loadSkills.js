@@ -106,9 +106,10 @@ function createSkillBar(skill) {
             const url = new URL(skill.projectUrl);
             const targetPage = url.hash ? url.hash.split('?')[0].substring(1) : ''; // Get the part after the hash
             console.log(targetPage);
+            const from = 'about';
             const projectId = skill.projectUrl.split('=')[1]; // manual way is tried and true
-            showSection(event, targetPage, projectId); // Call your function
-            //window.open(skill.projectUrl, '_blank'); // Open the project URL in a new tab
+            showSection(event, targetPage, from, projectId); // Call your function
+            window.open(skill.projectUrl, '_blank'); // Open the project URL in a new tab
         };
         skillHeader.appendChild(button); // Append the button to the skill header
     }

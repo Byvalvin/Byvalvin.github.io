@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h2>${project.title}</h2>
                     <p>${project.description}</p>
                     <div class="project-images">${projectImages}</div>
-                    <a href="#projectDetails?id=${project.id}" class="btn btn-primary" onclick="showSection(event, 'projectDetails', '${project.id}');">View Details</a>
+                    <a href="#projectDetails?id=${project.id}" class="btn btn-primary" onclick="showSection(event, 'projectDetails', 'projects', '${project.id}');">View Details</a>
                 </div>
             `;
         
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Add a click event listener for the entire section
             projectSection.addEventListener('click', (event) => {
                 if (event.target.tagName !== 'A') { // If not clicking on the link
-                    showSection(event, 'projectDetails', project.id); // Show project details section
+                    showSection(event, 'projectDetails', 'projects', project.id); // Show project details section
                 }
             });
 

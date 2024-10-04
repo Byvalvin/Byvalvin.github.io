@@ -13,7 +13,7 @@
         function addBackButton(htmlLocation, destination, data) {
             const defaultBack = '←'; const otherBack = 'Back';
             const backButton = document.createElement('button'); backButton.className = 'back-button'; backButton.innerHTML = defaultBack;  // Default content
-            backButton.onclick = (event) => showSection(event, destination, data);
+            backButton.onclick = (event) => showSection(event, destination, null, data);
 
             // Add hover event listeners to change text
             backButton.addEventListener('mouseover', () => backButton.innerHTML = otherBack); // Change to show "Back" on hover
@@ -23,7 +23,7 @@
         }
 
         // Function to show different sections
-        function showSection(event, section, projectId) {
+        function showSection(event, section, fromSection, projectId) {
             if (event) event.preventDefault();
 
             const sections = document.querySelectorAll('.section');
@@ -49,12 +49,18 @@
 
                 case 'projectDetails':
                     console.log("executed in sp", projectId);
-                    if (projectId) loadProjectDetails(projectId); // Load details for the specific project
+                    if (projectId){
+                        loadProjectDetails(projectId); // Load details for the specific project
+                        addBackButton('#projectDetails header', fromSection? fromSection:'projectDetails', null);
+                    }
                     break;
 
                 case 'otherProjectDetails':
                     console.log("executed other in sp", projectId);
-                    if (projectId) loadOtherProjectDetails(projectId); // Load details for the specific project
+                    if (projectId){
+                        loadOtherProjectDetails(projectId); // Load details for the specific project
+                        addBackButton('#otherProjectDetails header', fromSection? fromSection:'otherProjectDetails', null);
+                    }
                     break;
             }
             window.history.replaceState(state, '', `#${sectionId}`);
@@ -66,7 +72,12 @@
             const initialHash = window.location.hash ? window.location.hash.substring(1) : 'home';
             const [baseSection, projectId] = initialHash.split('?'); // Separate section from projectId
             //const projectId = query ? new URLSearchParams(query).get('id') : null; // Extract projectId(dont need this necessary as the manual method id working)
-            showSection(null, baseSection, projectId ? projectId.split('=')[1] : null); // Pass the projectId if it exists
+            const pageEvent = null; // no event fro load and reload
+
+            const pageFrom = baseSection.split('#')[1]; 
+            console.log(pageFrom);
+            const data = projectId ? projectId.split('=')[1] : null;
+            showSection(pageEvent, baseSection, pageFrom, data); // Pass the projectId if it exists
         });
 
 
@@ -86,7 +97,7 @@
                 <h1>Welcome to My Portfolio!</h1>
                 <p>I'm a software designer specializing in web development, app design, and machine learning.</p>
                 <div class="btn-group">
-                    <a href="#projects" class="btn projects-btn" onclick="showSection(event, 'projects', null);" data-link>
+                    <a href="#projects" class="btn projects-btn" onclick="showSection(event,'projects', null, null);" data-link>
                         <i class="fa-solid fa-folder"></i>
                         <span>View Projects</span>
                     </a>
@@ -110,7 +121,7 @@
                             With 4+ years in software design, I turn complex problems into simple solutions. 
                             Skilled in frontend, backend, and database management, I deliver clean, efficient code.
                         </p>
-                        <a href="#about" class="home-about-link" onclick="showSection(event, 'about', null);">More About Me</a>
+                        <a href="#about" class="home-about-link" onclick="showSection(event, 'about', null, null);">More About Me</a>
                     </div>
                 </div>
             
@@ -156,7 +167,7 @@
                         Contact Me
                     </h2>
                     <p>Got a question or a project in mind? Let’s connect!</p>
-                    <a href="#contact" class="btn" data-link onclick="showSection(event, 'contact', null);">Contact Me</a>
+                    <a href="#contact" class="btn" data-link onclick="showSection(event, 'contact',null, null);">Contact Me</a>
                 </div>
             </section>
         </main>
@@ -180,9 +191,6 @@
     <!-- Project Details Section -->
     <div id="projectDetails" class="section" style="display: none;">
         <header>
-            <script>
-                addBackButton('#projectDetails header', 'projects', null);
-            </script>
         </header>
         <main>
             <section id="project-details"></section> <!-- Placeholder for project details -->
@@ -204,9 +212,6 @@
     <div id="otherProjectDetails" class="section" style="display: none;">
         <header>
             <!-- You can add a page-specific header here if needed -->
-            <script>
-                addBackButton('#otherProjectDetails header', 'otherProjects', null);
-            </script>
         </header>
         <main>
             <section id="other-project-details" aria-labelledby="project-title"></section> <!-- Placeholder for other project details -->

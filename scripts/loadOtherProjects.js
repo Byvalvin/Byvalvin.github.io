@@ -23,13 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // Add event listeners for navigation
         card.addEventListener('click', (event) => {
             console.log("clicked card"+projectId);  
-            showSection(event, 'otherProjectDetails', projectId); // Show other project details section
+            showSection(event, 'otherProjectDetails', 'otherProjects', projectId); // Show other project details section
 
         });
 
         card.addEventListener('keypress', (e) => {
             if (e.key === 'Enter' || e.key === ' ') {
-                showSection(e, 'otherProjectDetails', projectId); // Show other project details section
+                showSection(e, 'otherProjectDetails', 'otherProjects', projectId); // Show other project details section
             }
         });
 
