@@ -707,7 +707,7 @@ body, html {
     padding: 20px;
 }
 
-/*Loading content*/
+/* Loading content */
 .loading-screen {
     position: fixed;
     top: 0;
@@ -722,6 +722,7 @@ body, html {
     z-index: 1000; /* Ensure it’s above all other content */
     font-family: 'Poppins', sans-serif; /* Use the same font */
     color: var(--body-light-text-color); /* White text for contrast */
+    text-align: center; /* Center text alignment */
 }
 
 .loader {
@@ -742,7 +743,20 @@ body, html {
     margin-top: 15px;
     font-size: 1.2em;
     color: var(--body-light-text-color); /* Ensure the text is visible */
+    max-width: 80%; /* Limit text width for better readability */
+    line-height: 1.5; /* Improve line spacing */
 }
+
+/* Optional: Add a fade-in effect */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.loading-screen {
+    animation: fadeIn 0.5s ease-in; /* Fade-in effect */
+}
+
 
 
 /*2) COMPONENTS*/
