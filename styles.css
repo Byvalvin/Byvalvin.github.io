@@ -1619,8 +1619,6 @@ footer {
 }
 
 /* Introduction Section Styling */
-
-/* Introduction Section Styling */
 .intro-container {
     display: flex;
     flex-direction: row; /* Arrange items horizontally */
@@ -1638,11 +1636,15 @@ footer {
     text-align: left; /* Align text to the left */
 }
 .text-container {
-    padding: 20px; /* Adjust as needed */
-    background-color: rgba(255, 255, 255, 0.8); /* Optional background for contrast */
-    border-radius: 5px; /* Optional rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+    background-color: var(--body-bg-color); /* Same as body background */
+    color: var(--body-dark-text-color); /* Text color */
+    border: 2px solid var(--body-dark-text-color); /* Border color matches the text */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding for inner content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px 0; /* Space around the container */
 }
+
 
 
 .intro-image {
