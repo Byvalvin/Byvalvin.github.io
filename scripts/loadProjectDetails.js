@@ -10,6 +10,11 @@ function getParameterByName(name, url = window.location.href) {
 
 function loadProjectDetails(projectId) {
     console.log("Loading project details for ID:", projectId);
+    const projectDetailsContainer = document.getElementById('project-details');
+
+    // Show loading screen
+    const loadingScreen = document.getElementById('loading-screen');
+    loadingScreen.style.display = 'flex';
 
     // Fetch project details from JSON file
     fetch('projects/projectDetails.json')
@@ -21,7 +26,8 @@ function loadProjectDetails(projectId) {
             const project = data[projectId];
             if (!project) {
                 console.error(`Project with ID ${projectId} not found.`);
-                document.getElementById('project-details').innerHTML = `<p>Project not found.</p>`;
+                projectDetailsContainer.innerHTML = `<p>Project not found.</p>`;
+                loadingScreen.style.display = 'none'; // Hide loading screen
                 return;
             }
 
@@ -69,7 +75,6 @@ function loadProjectDetails(projectId) {
             `;
 
             // Populate the project details container
-            const projectDetailsContainer = document.getElementById('project-details');
             projectDetailsContainer.innerHTML = `
                 <h2>${project.title}</h2>
                 <p>${project.description}</p>
@@ -88,6 +93,7 @@ function loadProjectDetails(projectId) {
                 <p>${project.rating}</p>
                 <div class="project-buttons">${buttonsHTML}</div>
             `;
+            loadingScreen.style.display = 'none'; // Hide loading screen
 
             // Add event listeners for accordion functionality
             document.querySelectorAll('.accordion-title').forEach(header => {
@@ -106,6 +112,7 @@ function loadProjectDetails(projectId) {
         })
         .catch(error => {
             console.error('Error loading project details:', error);
-            document.getElementById('project-details').innerHTML = `<p>Error loading project details. Please try again later.</p>`;
+            projectDetailsContainer.innerHTML = `<p>Error loading project details. Please try again later.</p>`;
+            loadingScreen.style.display = 'none'; // Hide loading screen
         });
 }
