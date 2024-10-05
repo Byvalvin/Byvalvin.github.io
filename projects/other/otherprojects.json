@@ -6,7 +6,7 @@
             "images": ["FiringSquad.jpg", "FiringSquad2.jpg", "StalkerRally.jpg", "WarpGatesReady.jpg"],
             "videos": ["AttackingVideo.webm", "ScoutRecordingMiniMap.webm"],
             "githubLink": "https://github.com/Byvalvin/StarCraftIIBot-cpp",
-            "otherDetailsPage": "other-project-details.html?id=stalker-bot"
+            "otherDetailsPage": "#other-project-details?id=stalker-bot"
         },
         {
             "name": "ED-like Text Editor",
@@ -14,7 +14,7 @@
             "images": ["ed2.JPG", "ed3.JPG", "ed5.JPG"],
             "videos": [],
             "githubLink": "https://github.com/Byvalvin/Editor/tree/web-version",
-            "otherDetailsPage": "other-project-details.html?id=ed-editor",
+            "otherDetailsPage": "#other-project-details?id=ed-editor",
             "tryItOutLink": "https://byvalvin.github.io/Editor/"
         },
         {
@@ -23,7 +23,7 @@
             "images": ["klondike1.JPG", "klondike2.JPG", "klondike5.JPG", "klondike.JPG"],
             "videos": [],
             "githubLink": "https://github.com/Byvalvin/Klondike/tree/web-version-v3",
-            "otherDetailsPage": "other-project-details.html?id=text-klondike",
+            "otherDetailsPage": "#other-project-details?id=text-klondike",
             "tryItOutLink": "https://byvalvin.github.io/Klondike/"
         },
         {
@@ -34,7 +34,7 @@
             "githubLink": "https://github.com/Byvalvin/Sanctuary",
             "tryItOutLink": "https://chris5ualberta.github.io/",
             "gamedirect": "https://chris5ualberta.github.io/SanctuaryGold/index.html",
-            "otherDetailsPage": "other-project-details.html?id=sanctuary-game",
+            "otherDetailsPage": "#other-project-details?id=sanctuary-game",
             "fullgameDL": "https://drive.google.com/drive/folders/1Le6cIn9wxFvws06BYc4IXNtDyHCakolY?usp=share_link"
         },
         {
@@ -45,7 +45,7 @@
             "githubLink": "https://github.com/Byvalvin/Excalibur",
             "tryItOutLink": "https://samasa101.github.io/excaliburhtml",
             "gamedirect": "https://samasa101.github.io/excaliburhtml/Repath/www/index.html",
-            "otherDetailsPage": "other-project-details.html?id=excalibur-game"
+            "otherDetailsPage": "#other-project-details?id=excalibur-game"
         },
         {
             "name": "Naive Bayes Document Classifier",
@@ -53,7 +53,7 @@
             "images": [],
             "videos": [],
             "githubLink": "",
-            "otherDetailsPage": "other-project-details.html?id=document-classifier"
+            "otherDetailsPage": "#other-project-details?id=document-classifier"
         },
         {
             "name": "Self Driving Car Simulator",
@@ -61,7 +61,7 @@
             "images": [],
             "videos": ["https://www.youtube.com/embed/Pg1sJniHWPE", "https://www.youtube.com/embed/GSWrpgIM-1k"],
             "githubLink": "",
-            "otherDetailsPage": "other-project-details.html?id=self-driving-car"
+            "otherDetailsPage": "#other-project-details?id=self-driving-car"
         },
         {
             "name": "Edge Filter",
@@ -70,7 +70,7 @@
             "videos": [],
             "githubLink": "https://github.com/Byvalvin/Edge-Filter",
             "tryItOutLink": "https://byvalvin.github.io/Edge-Filter",
-            "otherDetailsPage": "other-project-details.html?id=edge-filter"
+            "otherDetailsPage": "#other-project-details?id=edge-filter"
         }
     ]
 }

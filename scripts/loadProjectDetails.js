@@ -1,17 +1,15 @@
 // loadProjectDetails.js
 
-document.addEventListener('DOMContentLoaded', () => {
-    console.log("Project details loaded");
+// Function to parse query parameters from URL
+function getParameterByName(name, url = window.location.href) {
+    const regex = new RegExp(`[?&]${name}(=([^&#]*)|&|#|$)`);
+    const results = regex.exec(url);
+    return results && results[2] ? decodeURIComponent(results[2].replace(/\+/g, ' ')) : null;
+}
 
-    // Function to parse query parameters from URL
-    const getParameterByName = (name, url = window.location.href) => {
-        const regex = new RegExp(`[?&]${name}(=([^&#]*)|&|#|$)`);
-        const results = regex.exec(url);
-        return results && results[2] ? decodeURIComponent(results[2].replace(/\+/g, ' ')) : null;
-    };
 
-    const projectId = getParameterByName('id');
-    console.log("Project ID:", projectId);
+function loadProjectDetails(projectId) {
+    console.log("Loading project details for ID:", projectId);
 
     // Fetch project details from JSON file
     fetch('projects/projectDetails.json')
@@ -27,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Generate HTML for project elements
+            // Generate HTML for project elements (same as your original implementation)
             const projectImages = project.images.map(image => `
                 <img src="projects/${projectId}/images/${image}" alt="${project.title} image" class="project-image">
             `).join('');
@@ -62,14 +60,12 @@ document.addEventListener('DOMContentLoaded', () => {
                   `<a href="${project.codeUrl}" class="btn code-btn" target="_blank" rel="noopener noreferrer">
                       <i class="fab fa-github"></i>
                       <span class="btn-text">View Code</span>
-                    </a>
-                ` : ''}
+                    </a>` : ''}
                 ${project.tryItOutUrl ? 
                   `<a href="${project.tryItOutUrl}" class="btn try-btn" target="_blank" rel="noopener noreferrer">
                       <i class="fa-solid fa-circle-play"></i>
                       <span class="btn-text">Try It Out</span>
-                  </a>
-                  ` : ''}
+                  </a>` : ''}
             `;
 
             // Populate the project details container
@@ -112,5 +108,4 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Error loading project details:', error);
             document.getElementById('project-details').innerHTML = `<p>Error loading project details. Please try again later.</p>`;
         });
-});
-
+}

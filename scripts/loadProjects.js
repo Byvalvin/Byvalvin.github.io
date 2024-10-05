@@ -7,21 +7,21 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'QRapp',
             description: 'A QR Code Hunting App.',
             images: ['qrapp9.jpg'],
-            detailsPage: 'project-details.html?id=qrapp'
+            detailsPage: '#project-details?id=qrapp'
         },
         {
             id: 'aranimal',
             title: 'AR Animal Identification',
             description: 'An educational and interactive app designed to inform and teach users about the Albertan Biosphere.',
             images: ['aranimal2.jpg'],
-            detailsPage: 'project-details.html?id=aranimal'
+            detailsPage: '#project-details?id=aranimal'
         },
         {
             id: 'proquest',
             title: 'ProQuest',
             description: 'A site for Agents and Scouts to find the best teams for their players and the best players for their teams.',
             images: ['proquest1.png'],
-            detailsPage: 'project-details.html?id=proquest'
+            detailsPage: '#project-details?id=proquest'
         }
         // Add more projects as needed
     ];
@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Project list container not found.');
             return;
         }
-
         projectData.forEach(project => {
             const projectSection = document.createElement('section');
             projectSection.classList.add('project');
@@ -49,15 +48,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h2>${project.title}</h2>
                     <p>${project.description}</p>
                     <div class="project-images">${projectImages}</div>
-                    <a href="${project.detailsPage}" class="btn btn-primary">View Details</a>
+                    <a href="#projectDetails?id=${project.id}" class="btn btn-primary" onclick="showSection(event, 'projectDetails', 'projects', '${project.id}');">View Details</a>
                 </div>
             `;
-
+        
             // Add a click event listener to navigate to project details page
+            // Add a click event listener for the entire section
             projectSection.addEventListener('click', (event) => {
-                // Avoid navigating if the click was on the link itself
-                if (event.target.tagName !== 'A') {
-                    window.location.href = project.detailsPage;
+                if (event.target.tagName !== 'A') { // If not clicking on the link
+                    showSection(event, 'projectDetails', 'projects', project.id); // Show project details section
                 }
             });
 

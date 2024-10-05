@@ -3,29 +3,20 @@
 
 // Function to highlight the active link in the navbar
 const highlightActiveLink = () => {
-    // Get the current path without leading slash and with query parameters removed
-    let currentLocation = window.location.pathname;
-    currentLocation = cleanLink(currentLocation);
-    console.log("current", currentLocation);
-
-    // Handle special case for root path
-    const isRootPath = currentLocation === '' || currentLocation === 'index.html';
-
-    // Get the nav links
-    const navLinks = document.querySelectorAll('.nav-links li a');
-
+    const currentSection = window.location.hash.substring(1) || 'home'; // Default to 'home'
+    const navLinks = document.querySelectorAll('.navbar a');
     navLinks.forEach(link => {
-        let href = link.getAttribute('href');
-        
-        // Normalize href to remove leading slash and query parameters
-        href = cleanLink(href);
+        const href = link.getAttribute('href').substring(1); // Remove the leading '#'
+        let isActive = false;
 
-        // Determine if the href is an active link
-        const isActive = isRootPath && (href === '' || href === 'index.html') ||
-                         (currentLocation === href) ||
-                         (first7Chars(currentLocation)==first7Chars(href));
-        
-        if(isActive){console.log("active",href);}
+        // Check for specific subpages
+        if (currentSection.startsWith('projectDetails')) {
+            isActive = href === 'projects';
+        } else if (currentSection.startsWith('otherProjectDetails')) {
+            isActive = href === 'otherProjects';
+        } else {
+            isActive = href === currentSection; // Default case: check against the current section
+        }
         link.classList.toggle('active', isActive);
     });
 };
@@ -51,6 +42,7 @@ const addComponent = ({ placeholderID, htmlURL }) => {
             .then(html => {
                 componentPlaceholder.innerHTML = html;
 
+                // Call highlightActiveLink when navbar is loaded
                 if (htmlURL === 'navbar.html') {
                     highlightActiveLink();
                     setupNavbarToggle();
@@ -67,15 +59,6 @@ const addComponent = ({ placeholderID, htmlURL }) => {
     });
 };
 
-// Helper functions to clean URLs
-const cleanLink = (link) => removeSlashes(removeQueryArguments(link));
-const removeSlashes = (link) => link.endsWith('/') ? link.slice(0, -1) : link.startsWith('/') ? link.slice(1) : link;
-// const removeSlashes = (link) => link.replace(/^\/|\/$/g, ''); // Remove leading and trailing slashes
-const removeQueryArguments = (link) => link.split('?')[0];
-
-// Helper for embedded links for projects: Get the first 7 characters of the href, if available
-const first7Chars = (link) => link.length >= 7? link.substring(0, 7) : link;
-
 // Function to setup navbar toggle
 const setupNavbarToggle = () => {
     const menuToggle = document.getElementById('menu-toggle');
@@ -84,7 +67,6 @@ const setupNavbarToggle = () => {
     if (menuToggle && navLinks) {
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-            // Update ARIA attribute for accessibility
             const isExpanded = navLinks.classList.contains('active');
             menuToggle.setAttribute('aria-expanded', isExpanded);
         });
@@ -106,9 +88,8 @@ const loadScript = (src, successMessage, nextScript) => {
     script.defer = true;
     script.onload = () => {
         console.log(successMessage);
-        if (nextScript) {
-            loadScript(nextScript.src, nextScript.msg, nextScript.next);
-        }
+        if (nextScript) loadScript(nextScript.src, nextScript.msg, nextScript.next);
+        
     };
     script.onerror = () => console.error(`Failed to load ${src}`);
     document.body.appendChild(script);
@@ -122,3 +103,9 @@ const components = [
 
 // Add each component to the page
 components.forEach(addComponent);
+
+// Highlight active link on initial load
+window.addEventListener('load', highlightActiveLink);
+
+// Highlight active link on hash change
+window.addEventListener('hashchange', highlightActiveLink);

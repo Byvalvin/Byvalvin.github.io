@@ -1,26 +1,27 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Function to parse query parameters from URL
-    const getParameterByName = (name, url = window.location.href) => {
-        name = name.replace(/[\[\]]/g, '\\$&');
-        const regex = new RegExp(`[?&]${name}(=([^&#]*)|&|#|$)`);
-        const results = regex.exec(url);
-        return results ? decodeURIComponent(results[2].replace(/\+/g, ' ')) : null;
-    };
+// loadOtherProjectDetails.js
 
-    // Retrieve project ID from URL query parameter
-    const projectId = getParameterByName('id');
+// Function to get the project ID from the URL hash
+function getOtherProjectId() {
+    console.log("used this id getter")
+    const hash = window.location.hash;
+    const regex = /id=([^&]+)/; // Updated to capture IDs with potential additional parameters
+    const match = hash.match(regex);
+    return match ? match[1] : null; // Return the project ID or null if not found
+};
 
-    // Display loading message while fetching data
+const loadOtherProjectDetails = (projectId) => {
     const projectDetailsContainer = document.getElementById('other-project-details');
     projectDetailsContainer.innerHTML = '<p>Loading project details...</p>';
 
     // Fetch projects data from JSON file
     fetch('projects/other/otherprojects.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+            return response.json();
+        })
         .then(data => {
-            // Find the project details from the JSON data based on projectId
             const project = data.projects.find(p => p.otherDetailsPage.includes(`id=${projectId}`));
-            
+
             if (!project) {
                 console.error(`Project with ID ${projectId} not found.`);
                 projectDetailsContainer.innerHTML = '<p>Project not found.</p>';
@@ -29,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Function to generate HTML for project details
             const generateProjectDetailsHTML = (project) => {
-                // Sanitize the image and video URLs
                 const projectImages = project.images.map(image => 
                     `<img src="projects/other/images/${image}" alt="${image}" />`
                 ).join('');
@@ -40,15 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         `<video controls><source src="projects/other/videos/${video}" type="video/mp4" /></video>`
                 ).join('');
 
-                // Render the "Code" link if GitHub link exists
                 const githubLinkHTML = project.githubLink ? 
                     `<a class="code-link" href="${project.githubLink}" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github"></i>
                         <span class="btn-text">View on Github</span>
-                        
                     </a>` : '';
 
-                // Render the "Try it out" link if tryItOutLink exists
                 const tryItOutLinkHTML = project.tryItOutLink ? 
                     `<a class="try-it-out-link" href="${project.tryItOutLink}" target="_blank" rel="noopener noreferrer">
                         <i class="fa-solid fa-play"></i>
@@ -67,11 +64,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
             };
 
-            // Display project details on the page
             projectDetailsContainer.innerHTML = generateProjectDetailsHTML(project);
         })
         .catch(error => {
             console.error('Error loading project details:', error);
             projectDetailsContainer.innerHTML = '<p>Sorry, we were unable to load the project details at this time. Please try again later.</p>';
         });
-});
+};
+
