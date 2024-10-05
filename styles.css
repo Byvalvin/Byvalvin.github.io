@@ -707,6 +707,58 @@ body, html {
     padding: 20px;
 }
 
+/* Loading content */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44, 62, 80, 0.9); /* Dark background with transparency */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it’s above all other content */
+    font-family: 'Poppins', sans-serif; /* Use the same font */
+    color: var(--body-light-text-color); /* White text for contrast */
+    text-align: center; /* Center text alignment */
+}
+
+.loader {
+    border: 8px solid rgba(255, 255, 255, 0.2); /* Light grey border */
+    border-top: 8px solid var(--h-text-color); /* Use your highlight color */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-screen p {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: var(--body-light-text-color); /* Ensure the text is visible */
+    max-width: 80%; /* Limit text width for better readability */
+    line-height: 1.5; /* Improve line spacing */
+}
+
+/* Optional: Add a fade-in effect */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.loading-screen {
+    animation: fadeIn 0.5s ease-in; /* Fade-in effect */
+}
+
+
+
 /*2) COMPONENTS*/
 /*NAVBAR*/
 
@@ -1581,8 +1633,6 @@ footer {
 }
 
 /* Introduction Section Styling */
-
-/* Introduction Section Styling */
 .intro-container {
     display: flex;
     flex-direction: row; /* Arrange items horizontally */
@@ -1599,6 +1649,17 @@ footer {
     max-width: 600px; /* Limit the width of the text container */
     text-align: left; /* Align text to the left */
 }
+.text-container {
+    background-color: var(--body-bg-color); /* Same as body background */
+    color: var(--body-dark-text-color); /* Text color */
+    border: 2px solid var(--body-dark-text-color); /* Border color matches the text */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding for inner content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px 0; /* Space around the container */
+}
+
+
 
 .intro-image {
     flex-shrink: 0; /* Prevent the image from shrinking */

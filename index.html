@@ -92,6 +92,12 @@
     <!-- Navbar Placeholder -->
     <nav class="navbar-container" id="navbar-placeholder" role="navigation" aria-label="Main Navigation">
     </nav>
+
+    <!--Loading Screen-->
+    <div id="loading-screen" class="loading-screen" style="display: none;">
+        <div class="loader"></div>
+        <p>Loading project details...</p>
+    </div>    
     
     <!-- Home Section -->
     <div id="home" class="section" style="display: block;">
@@ -267,11 +273,14 @@
                     <h2>Introduction</h2>
                     <div class="intro-container">
                         <div class="intro-text">
-                            <p>Hello! I'm Daniel Asimiakwini, a passionate software developer with a flair for crafting dynamic, user-centric websites. 
-                                My journey began with a fascination for solving complex problems in style. 
-                                I relish tackling new challenges and am always eager to explore cutting-edge technologies
-                                that redefine the digital landscape.
-                            </p>
+                            <div class="text-container"> <!-- New container for the paragraph -->
+                                <p>Hello! I'm Daniel Asimiakwini, a passionate software developer with a flair for crafting dynamic, user-centric websites. 
+                                    My journey began with a fascination for solving complex problems in style. 
+                                    I relish tackling new challenges and am always eager to explore cutting-edge technologies
+                                    that redefine the digital landscape.
+                                </p>
+                            </div>
+                            
                             <!--
                                 Brief Bio or Fun Fact: brief biography or a fun fact about yourself to make the introduction more engaging.
                                 Call to Action: call-to-action button or link, such as “Learn More About My Work” or “Contact Me”.
