@@ -71,6 +71,15 @@ const setupNavbarToggle = () => {
             menuToggle.setAttribute('aria-expanded', isExpanded);
         });
     }
+
+    // Close the menu when a link is clicked
+    const links = navLinks.querySelectorAll('a'); // Select all links within the nav
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active'); // Remove active class to close the menu
+            menuToggle.setAttribute('aria-expanded', 'false'); // Update aria-expanded attribute
+        });
+    });
 };
 
 // Function to update the footer year dynamically
