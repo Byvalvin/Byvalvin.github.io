@@ -1778,11 +1778,6 @@ footer {
 }
 
 
-
-
-
-
-
 /* Styling for legend */
 .legend {
     display: flex;
@@ -2087,13 +2082,6 @@ footer {
 }
 
 
-/* Show icon on hover 
-.message-prompt:hover .plane-icon {
-    display: inline; 
-}
-*/
-
-
 /* Style the contact form */
 .contact-form {
     background-color: var(--body-light-text-color); /* Use light color for the form background */
@@ -2185,12 +2173,10 @@ footer {
     .nav-links.active {
         display: flex;
     }
-
     .nav-links li {
         margin: 0;
         text-align: center;
     }
-
     .nav-links li a {
         padding: 15px;
         display: block;
