@@ -707,6 +707,44 @@ body, html {
     padding: 20px;
 }
 
+/*Loading content*/
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44, 62, 80, 0.9); /* Dark background with transparency */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it’s above all other content */
+    font-family: 'Poppins', sans-serif; /* Use the same font */
+    color: var(--body-light-text-color); /* White text for contrast */
+}
+
+.loader {
+    border: 8px solid rgba(255, 255, 255, 0.2); /* Light grey border */
+    border-top: 8px solid var(--h-text-color); /* Use your highlight color */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-screen p {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: var(--body-light-text-color); /* Ensure the text is visible */
+}
+
+
 /*2) COMPONENTS*/
 /*NAVBAR*/
 

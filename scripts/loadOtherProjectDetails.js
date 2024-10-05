@@ -11,7 +11,10 @@ function getOtherProjectId() {
 
 const loadOtherProjectDetails = (projectId) => {
     const projectDetailsContainer = document.getElementById('other-project-details');
-    projectDetailsContainer.innerHTML = '<p>Loading project details...</p>';
+
+    // Show loading screen
+    const loadingScreen = document.getElementById('loading-screen');
+    loadingScreen.style.display = 'flex';
 
     // Fetch projects data from JSON file
     fetch('projects/other/otherprojects.json')
@@ -25,6 +28,7 @@ const loadOtherProjectDetails = (projectId) => {
             if (!project) {
                 console.error(`Project with ID ${projectId} not found.`);
                 projectDetailsContainer.innerHTML = '<p>Project not found.</p>';
+                loadingScreen.style.display = 'none'; // Hide loading screen
                 return;
             }
 
@@ -65,10 +69,12 @@ const loadOtherProjectDetails = (projectId) => {
             };
 
             projectDetailsContainer.innerHTML = generateProjectDetailsHTML(project);
+            loadingScreen.style.display = 'none'; // Hide loading screen after loading is done
         })
         .catch(error => {
             console.error('Error loading project details:', error);
             projectDetailsContainer.innerHTML = '<p>Sorry, we were unable to load the project details at this time. Please try again later.</p>';
+            loadingScreen.style.display = 'none'; // Hide loading screen on error
         });
 };
 
