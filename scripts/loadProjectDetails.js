@@ -93,7 +93,7 @@ function loadProjectDetails(projectId) {
                 <p>${project.rating}</p>
                 <div class="project-buttons">${buttonsHTML}</div>
             `;
-            loadingScreen.style.display = 'none'; // Hide loading screen
+            //loadingScreen.style.display = 'none'; // Hide loading screen
 
             // Add event listeners for accordion functionality
             document.querySelectorAll('.accordion-title').forEach(header => {
