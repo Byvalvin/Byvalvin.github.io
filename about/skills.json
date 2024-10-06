@@ -264,6 +264,14 @@
         "projectUrl": "https://byvalvin.github.io/#projectDetails?id=proquest"
     },
     {
+        "name": "SQLite",
+        "type": "technology",
+        "category": "Database",
+        "proficiency": 50,
+        "duration": 40,
+        "projectUrl": ""
+    },
+    {
         "name": "Netlify",
         "type": "technology",
         "category": "DevOps",
