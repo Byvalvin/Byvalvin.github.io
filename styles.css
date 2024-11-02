@@ -626,8 +626,8 @@
     --tech-card-acc-bd-bg: #f8bbd0; /* Light pink for tech card backgrounds */
     --acc-title-hv: #d81b60; /* Medium dark pink for accordion title hover */
     --contr-bg: #fff; /* White for container backgrounds */
-    --proj-code-link-hv-color: #000; /* Dark pink for code link hover */
-    --proj-try-btn: #ff1f6d; /* Bright pink for "try" buttons */
+    --proj-code-link-hv-color: #ff1f6d; /* Dark pink for code link hover */
+    --proj-try-btn: #ff4081; /* Bright pink for "try" buttons */
 }
 
 /* Pink Noir Dark */
