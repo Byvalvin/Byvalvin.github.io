@@ -698,6 +698,7 @@ body, html {
     padding: 0;
     background-color: var(--body-bg-color); /* Light gray background */
     color: var(--body-dark-text-color); /* Dark gray text */
+    scroll-behavior: smooth;
 }
 
 /* Main Content Styles */
