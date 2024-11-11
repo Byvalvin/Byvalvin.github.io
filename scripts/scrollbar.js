@@ -6,8 +6,8 @@ function adjustForScrollbar() {
         document.body.style.paddingRight = '0px';
     }
 }
-// Adjust on page load
-window.addEventListener('load', adjustForScrollbar);
+// Run the function on initial page load to handle scrollbar before rendering
+window.addEventListener('DOMContentLoaded', adjustForScrollbar);
 
-// Adjust on resize (in case the page size changes or the scrollbar appears/disappears)
+// Run the function on resize in case the page size or scrollbar presence changes
 window.addEventListener('resize', adjustForScrollbar);
