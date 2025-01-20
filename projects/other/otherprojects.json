@@ -48,6 +48,16 @@
             "otherDetailsPage": "#other-project-details?id=excalibur-game"
         },
         {
+            "name": "Chess Unity",
+            "description": "A tactical chess playground",
+            "images": [],
+            "videos": [],
+            "githubLink": "https://github.com/Byvalvin/ChessUnity",
+            "tryItOutLink": "./ChessUnity.html",
+            "gamedirect": "https://samasa101.github.io/excalibur.html/Repath/www/index.html",
+            "otherDetailsPage": "#other-project-details?id=chess-unity"
+        },
+        {
             "name": "Naive Bayes Document Classifier",
             "description": "A simple document classifier that uses Naive Bayes to sort documents into different categories.",
             "images": [],
