@@ -52,8 +52,8 @@
             "description": "A tactical chess playground",
             "images": [],
             "videos": [],
-            "githubLink": "https://github.com/Byvalvin/ChessUnity",
-            "tryItOutLink": "./ChessUnity.html",
+            "githubLink": "https://github.com/Byvalvin/Chess-Unity",
+            "tryItOutLink": "./ChessUnity/ChessUnity.html",
             "gamedirect": "https://samasa101.github.io/excalibur.html/Repath/www/index.html",
             "otherDetailsPage": "#other-project-details?id=chess-unity"
         },
