@@ -58,14 +58,17 @@ const loadOtherProjectDetails = (projectId) => {
                 
                 // Loop through technologies and display them, handle both icon and image
                 const techListHTML = project.technologies ? 
-                    Object.keys(project.technologies).map(tech => {
+                    Object.keys(project.technologies).map((tech, index) => {
                         const techData = project.technologies[tech];
                         let techHTML = '';
-
+            
+                        // Calculate staggered position based on index
+                        const staggerClass = index % 2 === 0 ? 'tech-item-left' : 'tech-item-right';
+            
                         if (techData.icon) {
                             // If icon exists
                             techHTML = `
-                                <div class="tech-item" data-tech="${tech}">
+                                <div class="tech-item ${staggerClass}" data-tech="${tech}">
                                     <i class="tech-icon fa ${techData.icon || 'fa-cogs'}"></i>
                                     <span class="tooltip">${techData.description}</span>
                                 </div>
@@ -73,7 +76,7 @@ const loadOtherProjectDetails = (projectId) => {
                         } else if (techData.image) {
                             // If image exists
                             techHTML = `
-                                <div class="tech-item" data-tech="${tech}">
+                                <div class="tech-item ${staggerClass}" data-tech="${tech}">
                                     <img src="${techData.image}" alt="${tech}" class="tech-icon-img" />
                                     <span class="tooltip">${techData.description}</span>
                                 </div>
