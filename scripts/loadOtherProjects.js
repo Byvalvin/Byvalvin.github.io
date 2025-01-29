@@ -17,9 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="project-card-header" role="button" tabindex="0" aria-label="${project.name}">
                 <div class="project-card-header-content">
                     <h2>${project.name}</h2>
-                    ${project.images && project.images.length > 0 
-                        ? `<img src="projects/other/headerImages/${project.name}" alt="${project.name} image" class="project-card-image">`
-                        : ''}
+                    <!-- Icon for the project -->
+                    <i class="fas fa-chess-pawn project-card-icon"></i> <!-- Pawn icon from Font Awesome -->
                 </div>
                 <p>${truncatedDescription}</p>
             </div>
