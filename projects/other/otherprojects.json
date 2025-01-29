@@ -42,6 +42,17 @@
             "icon": "fas fa-space-shuttle"  
         },
         {
+            "name": "QRapp",
+            "description": "A QR Code Hunting App",
+            "images": ["qrapp1.jpg", "qrapp2.jpg", "qrapp7.jpg", "qrapp4.jpg", "qrapp5.jpg"],
+            "videos": ["QRAPP.webm"],
+            "githubLink": "https://github.com/Byvalvin/QRAPP",
+            "tryItOutLink": "",
+            "gamedirect": "",
+            "otherDetailsPage": "#other-project-details?id=qrapp",
+            "icon": "fa-solid fa-qrcode"
+        },
+        {
             "name": "Excalibur's Renewal",
             "description": "A short RPG created with JavaScript and RPG Maker MV. Follow a young knight on a quest to secure a good harvest for his town, Marisacordia. He must venture beyond the town's borders, an act forbidden by law. Along the way, he discovers the truth about his town's prosperity and faces a tough decision.",
             "images": ["excalibur.jpg", "excalibur2.jpg", "excalibur3.jpg", "excalibur5.jpg"],
@@ -51,17 +62,6 @@
             "gamedirect": "https://samasa101.github.io/excalibur.html/Repath/www/index.html",
             "otherDetailsPage": "#other-project-details?id=excalibur-game",
             "icon": "fa-solid fa-shield-halved"
-        },
-        {
-            "name": "Chess Unity",
-            "description": "A tactical chess playground",
-            "images": [],
-            "videos": [],
-            "githubLink": "https://github.com/Byvalvin/Chess-Unity",
-            "tryItOutLink": "./projects/other/ChessUnity/ChessUnity.html",
-            "gamedirect": "https://samasa101.github.io/excalibur.html/Repath/www/index.html",
-            "otherDetailsPage": "#other-project-details?id=chess-unity",
-            "icon": "fa-solid fa-chess-pawn" 
         },
         {
             "name": "Naive Bayes Document Classifier",
