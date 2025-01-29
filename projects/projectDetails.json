@@ -61,7 +61,7 @@
         "pawnspath": {
         "title": "Pawn’s Path: An Endgame Forge",
         "description": "A tactical chess playground designed to help players hone their skills by focusing on endgame scenarios. Players can learn, practice, and play. The game is built with a minimalist style to focus on the strategy and decisions behind each move.",
-        "images": ["pawnspath1.jpg",],
+        "images": ["pawnspath1.jpg"],
         "videos": [],
         "technologies": {
             "Unity": "Chess GUI and logic",
