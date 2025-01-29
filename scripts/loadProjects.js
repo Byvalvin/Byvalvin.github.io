@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 'pawnspath',
             title: "Pawn's Path: An Endgame Forge",
             description: 'A tactical chess playground',
-            images: ['pawnspath1.JPG'],
+            images: ['pawnspath1.jpg'],
             detailsPage: '#project-details?id=pawnspath'
         },
         // Add more projects as needed
