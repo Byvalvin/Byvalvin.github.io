@@ -1583,52 +1583,54 @@ footer {
     display: block; /* Show text when hovered */
     opacity: 1; /* Full visibility */
 }
+
+
 /* Make sure the technologies are displayed horizontally */
 .technologies {
     display: flex;
-    flex-wrap: wrap; /* To handle overflow and wrap if there are too many technologies */
+    flex-wrap: nowrap; /* Prevent wrapping so the icons stay in one line */
     gap: 10px;
     margin-top: 20px;
     justify-content: flex-start; /* Align to the left */
-    position: relative; /* For positioning staggered items */
-    z-index: 10; /* Ensure tech items are above other elements */
+    position: relative; /* For stacking effect */
+    z-index: 10; /* Ensure tech items stay above other elements */
 }
 
-/* Style the individual tech items */
+/* Style the individual tech items (cards) */
 #other-project-details .tech-item {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     padding: 10px;
     background-color: #f4f4f4;
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s ease, opacity 0.3s ease;
     z-index: 2; /* Ensures items stack properly when staggered */
+    opacity: 1; /* Default opacity */
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Stagger the position slightly */
-#other-project-details .tech-item:nth-child(odd) {
-    transform: translateX(-10px);  /* Shift left for odd items */
+/* Stagger the position slightly to create the card stack effect */
+#other-project-details .tech-item:nth-child(n+2) {
+    transform: translateX(-15px);  /* Shift left */
+    z-index: 1;  /* Lower the z-index of overlapping items */
 }
 
-#other-project-details .tech-item:nth-child(even) {
-    transform: translateX(10px);  /* Shift right for even items */
+#other-project-details .tech-item:nth-child(n+3) {
+    transform: translateX(-30px);  /* Further shift left for subsequent items */
+    z-index: 0;  /* Lower z-index for more overlap */
+}
+
+#other-project-details .tech-item:nth-child(n+4) {
+    transform: translateX(-45px);  /* More shift */
 }
 
 /* Tech icon style */
-#other-project-details .tech-item i {
-    font-size: 24px;
-    color: #333;
-}
-
-/* For images as tech icons */
-.tech-icon-img {
-    width: 30px; /* Adjust size as needed */
-    height: 30px;
-    object-fit: contain;
-    margin-right: 10px;
+#other-project-details .tech-item i,
+#other-project-details .tech-item img {
+    width: 40px;  /* Adjust size as needed */
+    height: 40px;
+    object-fit: contain; /* Ensure icons/images scale properly */
 }
 
 /* Tooltip styling */
