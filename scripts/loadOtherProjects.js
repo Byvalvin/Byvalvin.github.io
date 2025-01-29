@@ -15,7 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
         card.classList.add('project-card');
         card.innerHTML = `
             <div class="project-card-header" role="button" tabindex="0" aria-label="${project.name}">
-                <h2>${project.name}</h2>
+                <div class="project-card-header-content">
+                    <h2>${project.name}</h2>
+                    ${project.images && project.images.length > 0 
+                        ? `<img src="projects/other/headerImages/${project.name}" alt="${project.name} image" class="project-card-image">`
+                        : ''}
+                </div>
                 <p>${truncatedDescription}</p>
             </div>
         `;
