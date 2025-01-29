@@ -58,13 +58,14 @@
         "rating": 4.7,
         "codeUrl": "https://github.com/Byvalvin/proquest"
     },
-        "pawnspath": {
+    "pawnspath": {
         "title": "Pawn’s Path: An Endgame Forge",
         "description": "A tactical chess playground designed to help players hone their skills by focusing on endgame scenarios. Players can learn, practice, and play. The game is built with a minimalist style to focus on the strategy and decisions behind each move.",
         "images": ["pawnspath1.jpg"],
         "videos": [],
         "technologies": {
             "Unity": "Chess GUI and logic",
+            "Python": "training RL/ML models for bots",
             "draw.io":"Creating sprites",
             "GitHub": "Used for version control and project management."
         },
