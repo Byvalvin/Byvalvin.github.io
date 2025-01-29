@@ -1583,74 +1583,84 @@ footer {
     display: block; /* Show text when hovered */
     opacity: 1; /* Full visibility */
 }
-
-/* Container for technologies */
+/* Make sure the technologies are displayed horizontally */
 .technologies {
     display: flex;
-    flex-wrap: wrap;  /* Allow for wrapping of items */
-    justify-content: flex-start;  /* Align to the left */
-    gap: 10px;  /* Space between items */
-    max-width: 60%;  /* Limit width of the tech list */
-    position: absolute;  /* Position it on the left */
-    left: 10px;  /* Keep it on the left side */
+    flex-wrap: wrap; /* To handle overflow and wrap if there are too many technologies */
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: flex-start; /* Align to the left */
+    position: relative; /* For positioning staggered items */
+    z-index: 10; /* Ensure tech items are above other elements */
 }
 
-/* Each tech item */
-.tech-item {
+/* Style the individual tech items */
+#other-project-details .tech-item {
     position: relative;
-    display: inline-block;
-    margin: 0 10px; /* Horizontal spacing between items */
-    transition: transform 0.3s ease, margin-left 0.3s ease; /* Transition effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 2; /* Ensures items stack properly when staggered */
 }
 
 /* Stagger the position slightly */
-.tech-item-left {
-    transform: translateX(-10px);  /* Shift left */
+#other-project-details .tech-item:nth-child(odd) {
+    transform: translateX(-10px);  /* Shift left for odd items */
 }
 
-.tech-item-right {
-    transform: translateX(10px);  /* Shift right */
+#other-project-details .tech-item:nth-child(even) {
+    transform: translateX(10px);  /* Shift right for even items */
 }
 
-/* Style for the tech icons (FontAwesome or Images) */
-.tech-icon, .tech-icon-img {
-    width: 40px;  /* Adjust size of icons */
-    height: 40px;
-    object-fit: contain;  /* Make sure the icon fits */
-    transition: transform 0.3s ease;  /* Animation for scaling */
+/* Tech icon style */
+#other-project-details .tech-item i {
+    font-size: 24px;
+    color: #333;
 }
 
+/* For images as tech icons */
 .tech-icon-img {
-    border-radius: 5px;  /* Optional: make image corners rounded */
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+    object-fit: contain;
+    margin-right: 10px;
 }
 
-/* Tooltip text */
-.tooltip {
+/* Tooltip styling */
+#other-project-details .tooltip {
     visibility: hidden;
     position: absolute;
-    bottom: -25px;
+    bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
+    padding: 5px 10px;
     background-color: #333;
     color: #fff;
-    padding: 5px 10px;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 14px;
     opacity: 0;
-    transition: opacity 0.3s ease, bottom 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 /* Show tooltip on hover */
-.tech-item:hover .tooltip {
+#other-project-details .tech-item:hover .tooltip {
     visibility: visible;
     opacity: 1;
-    bottom: -35px;  /* Shift the tooltip upwards */
+    bottom: -40px;
+    transition: opacity 0.3s ease, bottom 0.3s ease;
 }
 
-/* Optional: Add a hover scale effect to icons */
-.tech-item:hover .tech-icon, .tech-item:hover .tech-icon-img {
-    transform: scale(1.1);  /* Slightly increase the size of the icon on hover */
+/* Hover effect on tech items */
+#other-project-details .tech-item:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
 }
+
 
 
 
