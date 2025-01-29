@@ -9,11 +9,11 @@
         "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine."
     },
     "Java": {
-        "image": "path/to/java-logo.png",  // Using an image here
+        "image": "path/to/java-logo.png",  
         "description": "A programming language and computing platform."
     },
     "MongoDB": {
-        "image": "path/to/mongodb-logo.png",  // Using an image here
+        "image": "path/to/mongodb-logo.png",  
         "description": "A NoSQL database program."
     }
 }
