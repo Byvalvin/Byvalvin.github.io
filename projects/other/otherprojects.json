@@ -81,6 +81,17 @@
             "githubLink": "https://github.com/Byvalvin/Edge-Filter",
             "tryItOutLink": "https://byvalvin.github.io/Edge-Filter",
             "otherDetailsPage": "#other-project-details?id=edge-filter"
+        },
+
+        {
+            "name": "NodeNet",
+            "description": "A social media platform where users can sign up, log in, post images, and make friends.It allows users to share moments and connect with others in a community setting.",
+            "images": [],
+            "videos": [],
+            "githubLink": "https://github.com/Byvalvin/nodenet",
+            "tryItOutLink": "https://nodenet-fb7f.onrender.com/",
+            "otherDetailsPage": "#other-project-details?id=nodenet"
         }
+
     ]
 }
