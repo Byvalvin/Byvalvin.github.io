@@ -56,11 +56,25 @@ const loadOtherProjectDetails = (projectId) => {
                         <span class="btn-text">Try It Out</span>
                     </a>` : '';
                 
+                // Loop through technologies and display them
+                const techListHTML = project.technologies ? 
+                    Object.keys(project.technologies).map(tech => {
+                        return `
+                            <div class="tech-item" data-tech="${tech}">
+                                <i class="tech-icon fa ${project.technologies[tech].icon || 'fa-cogs'}"></i>
+                                <span class="tooltip">${project.technologies[tech].description}</span>
+                            </div>
+                        `;
+                    }).join('') : '';
+                
                 return `
                     <h2>${project.name}</h2>
                     <p>${project.description}</p>
                     <div class="project-images">${projectImages}</div>
                     <div class="project-videos">${projectVideos}</div>
+                    <div class="technologies">
+                        ${techListHTML}
+                    </div>
                     <div class="project-links">
                         ${githubLinkHTML}
                         ${tryItOutLinkHTML}
