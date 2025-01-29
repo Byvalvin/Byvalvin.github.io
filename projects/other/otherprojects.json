@@ -126,7 +126,7 @@
                 "draw.io": {
                     "image": "path/to/mongodb-logo.png",  
                     "description": "A NoSQL database program."
-                }
+                },
                 "Figma": {
                     "image": "path/to/mongodb-logo.png",  
                     "description": "A NoSQL database program."
@@ -163,7 +163,7 @@
                 "Javascript": {
                     "image": "path/to/mongodb-logo.png",  
                     "description": "A NoSQL database program."
-                },
+                }
             }
             "githubLink": "https://github.com/Byvalvin/Excalibur",
             "tryItOutLink": "",
@@ -185,8 +185,7 @@
                 "Python": {
                     "image": "path/to/java-logo.png",  
                     "description": "A programming language and computing platform."
-                },
-
+                }
             }
             "otherDetailsPage": "#other-project-details?id=document-classifier",
             "icon": "fas fa-cogs" 
@@ -231,8 +230,7 @@
                 "Typescript": {
                     "image": "path/to/mongodb-logo.png",  
                     "description": "A NoSQL database program."
-                },
-
+                }
             }
             "githubLink": "https://github.com/Byvalvin/Edge-Filter",
             "tryItOutLink": "https://byvalvin.github.io/Edge-Filter",
@@ -260,8 +258,7 @@
                 "Render": {
                     "image": "path/to/mongodb-logo.png",  
                     "description": "A NoSQL database program."
-                },
-
+                }
             }
             "githubLink": "https://github.com/Byvalvin/nodenet",
             "tryItOutLink": "https://github.com/Byvalvin/nodenet",
