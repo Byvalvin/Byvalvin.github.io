@@ -1438,6 +1438,30 @@ footer {
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
+/* Container for project card content */
+.project-card-header-content {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    gap: 10px; /* Space between the icon and text */
+}
+
+/* Style the project name */
+.project-card-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Style for the icon */
+.project-card-icon {
+    font-size: 24px; /* Icon size */
+    color: #333; /* Icon color */
+}
+
+/* Optionally style the description */
+.project-card-header p {
+    font-size: 1rem;
+    color: #555;
+}
 .project-card p {
     font-size: 1.1rem;
     line-height: 1.6;
@@ -1447,6 +1471,7 @@ footer {
     text-overflow: ellipsis; /* Add ellipsis if text overflows */
     margin-bottom: 10px;
 }
+
 
 
 /*OTHER PROJECT DETAILS PAGE*/
