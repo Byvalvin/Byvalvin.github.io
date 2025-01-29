@@ -61,7 +61,7 @@
             "tryItOutLink": "./projects/other/ChessUnity/ChessUnity.html",
             "gamedirect": "https://samasa101.github.io/excalibur.html/Repath/www/index.html",
             "otherDetailsPage": "#other-project-details?id=chess-unity",
-            "icon": "fas fa-chess" 
+            "icon": "fa-solid fa-chess-pawn" 
         },
         {
             "name": "Naive Bayes Document Classifier",
