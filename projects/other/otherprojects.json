@@ -22,7 +22,7 @@
                     "image": "path/to/mongodb-logo.png",  
                     "description": "A NoSQL database program."
                 }
-            }
+            },
             "githubLink": "https://github.com/Byvalvin/StarCraftIIBot-cpp",
             "otherDetailsPage": "#other-project-details?id=stalker-bot",
             "icon": "fas fa-robot" 
@@ -45,7 +45,7 @@
                     "image": "path/to/mongodb-logo.png",  
                     "description": "A NoSQL database program."
                 }
-            }
+            },
             "githubLink": "https://github.com/Byvalvin/Editor/tree/web-version",
             "otherDetailsPage": "#other-project-details?id=ed-editor",
             "tryItOutLink": "https://byvalvin.github.io/Editor/",
@@ -69,7 +69,7 @@
                     "image": "path/to/mongodb-logo.png",  
                     "description": "A NoSQL database program."
                 }
-            }
+            },
             "githubLink": "https://github.com/Byvalvin/Klondike/tree/web-version-v3",
             "otherDetailsPage": "#other-project-details?id=text-klondike",
             "tryItOutLink": "https://byvalvin.github.io/Klondike/",
@@ -97,7 +97,7 @@
                     "image": "path/to/mongodb-logo.png",  
                     "description": "A NoSQL database program."
                 }
-            }
+            },
             "githubLink": "https://github.com/Byvalvin/Sanctuary",
             "tryItOutLink": "https://chris5ualberta.github.io/",
             "gamedirect": "https://chris5ualberta.github.io/SanctuaryGold/index.html",
@@ -139,7 +139,7 @@
                     "image": "path/to/mongodb-logo.png",  
                     "description": "A NoSQL database program."
                 }
-            }
+            },
             "githubLink": "https://github.com/Byvalvin/QRAPP",
             "tryItOutLink": "",
             "gamedirect": "",
@@ -164,7 +164,7 @@
                     "image": "path/to/mongodb-logo.png",  
                     "description": "A NoSQL database program."
                 }
-            }
+            },
             "githubLink": "https://github.com/Byvalvin/Excalibur",
             "tryItOutLink": "",
             "gamedirect": "https://samasa101.github.io/excalibur.html/Repath/www/index.html",
@@ -176,7 +176,6 @@
             "description": "A simple document classifier that uses Naive Bayes to sort documents into different categories.",
             "images": [],
             "videos": [],
-            "githubLink": "",
             "technologies": {
                 "VSCode": {
                     "icon": "fa-react",
@@ -186,7 +185,8 @@
                     "image": "path/to/java-logo.png",  
                     "description": "A programming language and computing platform."
                 }
-            }
+            },
+            "githubLink": "",
             "otherDetailsPage": "#other-project-details?id=document-classifier",
             "icon": "fas fa-cogs" 
         },
@@ -204,7 +204,7 @@
                     "image": "path/to/java-logo.png",  
                     "description": "A programming language and computing platform."
                 }
-            }
+            },
             "githubLink": "",
             "otherDetailsPage": "#other-project-details?id=self-driving-car",
             "icon": "fas fa-car"  
@@ -231,7 +231,7 @@
                     "image": "path/to/mongodb-logo.png",  
                     "description": "A NoSQL database program."
                 }
-            }
+            },
             "githubLink": "https://github.com/Byvalvin/Edge-Filter",
             "tryItOutLink": "https://byvalvin.github.io/Edge-Filter",
             "otherDetailsPage": "#other-project-details?id=edge-filter",
@@ -259,7 +259,7 @@
                     "image": "path/to/mongodb-logo.png",  
                     "description": "A NoSQL database program."
                 }
-            }
+            },
             "githubLink": "https://github.com/Byvalvin/nodenet",
             "tryItOutLink": "https://github.com/Byvalvin/nodenet",
             "otherDetailsPage": "#other-project-details?id=nodenet",
