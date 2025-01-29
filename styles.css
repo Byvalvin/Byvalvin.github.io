@@ -1584,6 +1584,68 @@ footer {
     opacity: 1; /* Full visibility */
 }
 
+/* Make sure the technologies are displayed horizontally */
+.technologies {
+    display: flex;
+    flex-wrap: wrap; /* To handle overflow and wrap if there are too many technologies */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Style the individual tech items */
+#other-project-details .tech-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Tech icon style */
+#other-project-details .tech-item i {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Tooltip styling */
+#other-project-details .tooltip {
+    visibility: hidden;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show tooltip on hover */
+#other-project-details .tech-item:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    bottom: -40px;
+    transition: opacity 0.3s ease, bottom 0.3s ease;
+}
+
+/* Hover effect on tech items */
+#other-project-details .tech-item:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Optional: Add some padding to the container for visual appeal */
+#other-project-details .project-links {
+    margin-top: 20px;
+}
+
 
 /* Styling for "Code" link */
 #other-project-details .project-links .code-link {
