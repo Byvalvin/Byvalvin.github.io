@@ -6,7 +6,8 @@
             "images": ["FiringSquad.jpg", "FiringSquad2.jpg", "StalkerRally.jpg", "WarpGatesReady.jpg"],
             "videos": ["AttackingVideo.webm", "ScoutRecordingMiniMap.webm"],
             "githubLink": "https://github.com/Byvalvin/StarCraftIIBot-cpp",
-            "otherDetailsPage": "#other-project-details?id=stalker-bot"
+            "otherDetailsPage": "#other-project-details?id=stalker-bot",
+            "icon": "fas fa-robot"  // Robot icon for bot project
         },
         {
             "name": "ED-like Text Editor",
@@ -15,7 +16,8 @@
             "videos": [],
             "githubLink": "https://github.com/Byvalvin/Editor/tree/web-version",
             "otherDetailsPage": "#other-project-details?id=ed-editor",
-            "tryItOutLink": "https://byvalvin.github.io/Editor/"
+            "tryItOutLink": "https://byvalvin.github.io/Editor/",
+            "icon": "fas fa-edit"  // Edit icon for text editor
         },
         {
             "name": "Text Klondike",
@@ -24,7 +26,8 @@
             "videos": [],
             "githubLink": "https://github.com/Byvalvin/Klondike/tree/web-version-v3",
             "otherDetailsPage": "#other-project-details?id=text-klondike",
-            "tryItOutLink": "https://byvalvin.github.io/Klondike/"
+            "tryItOutLink": "https://byvalvin.github.io/Klondike/",
+            "icon": "fas fa-cards"  // Cards icon for Solitaire game
         },
         {
             "name": "Sanctuary",
@@ -35,7 +38,8 @@
             "tryItOutLink": "https://chris5ualberta.github.io/",
             "gamedirect": "https://chris5ualberta.github.io/SanctuaryGold/index.html",
             "otherDetailsPage": "#other-project-details?id=sanctuary-game",
-            "fullgameDL": "https://drive.google.com/drive/folders/1Le6cIn9wxFvws06BYc4IXNtDyHCakolY?usp=share_link"
+            "fullgameDL": "https://drive.google.com/drive/folders/1Le6cIn9wxFvws06BYc4IXNtDyHCakolY?usp=share_link",
+            "icon": "fas fa-space-shuttle"  // Space shuttle icon for space-themed game
         },
         {
             "name": "Excalibur's Renewal",
@@ -45,7 +49,8 @@
             "githubLink": "https://github.com/Byvalvin/Excalibur",
             "tryItOutLink": "",
             "gamedirect": "https://samasa101.github.io/excalibur.html/Repath/www/index.html",
-            "otherDetailsPage": "#other-project-details?id=excalibur-game"
+            "otherDetailsPage": "#other-project-details?id=excalibur-game",
+            "icon": "fas fa-sword"  // Sword icon for RPG game
         },
         {
             "name": "Chess Unity",
@@ -55,7 +60,8 @@
             "githubLink": "https://github.com/Byvalvin/Chess-Unity",
             "tryItOutLink": "./projects/other/ChessUnity/ChessUnity.html",
             "gamedirect": "https://samasa101.github.io/excalibur.html/Repath/www/index.html",
-            "otherDetailsPage": "#other-project-details?id=chess-unity"
+            "otherDetailsPage": "#other-project-details?id=chess-unity",
+            "icon": "fas fa-chess"  // Chess icon for chess game
         },
         {
             "name": "Naive Bayes Document Classifier",
@@ -63,7 +69,8 @@
             "images": [],
             "videos": [],
             "githubLink": "",
-            "otherDetailsPage": "#other-project-details?id=document-classifier"
+            "otherDetailsPage": "#other-project-details?id=document-classifier",
+            "icon": "fas fa-cogs"  // Gear icon for machine learning or classification project
         },
         {
             "name": "Self Driving Car Simulator",
@@ -71,7 +78,8 @@
             "images": [],
             "videos": ["https://www.youtube.com/embed/Pg1sJniHWPE", "https://www.youtube.com/embed/GSWrpgIM-1k"],
             "githubLink": "",
-            "otherDetailsPage": "#other-project-details?id=self-driving-car"
+            "otherDetailsPage": "#other-project-details?id=self-driving-car",
+            "icon": "fas fa-car"  // Car icon for self-driving car project
         },
         {
             "name": "Edge Filter",
@@ -80,18 +88,18 @@
             "videos": [],
             "githubLink": "https://github.com/Byvalvin/Edge-Filter",
             "tryItOutLink": "https://byvalvin.github.io/Edge-Filter",
-            "otherDetailsPage": "#other-project-details?id=edge-filter"
+            "otherDetailsPage": "#other-project-details?id=edge-filter",
+            "icon": "fas fa-image"  // Image icon for image filter project
         },
-
         {
             "name": "NodeNet",
-            "description": "A social media platform where users can sign up, log in, post images, and make friends.It allows users to share moments and connect with others in a community setting.",
+            "description": "A social media platform where users can sign up, log in, post images, and make friends. It allows users to share moments and connect with others in a community setting.",
             "images": [],
             "videos": [],
             "githubLink": "https://github.com/Byvalvin/nodenet",
             "tryItOutLink": "https://github.com/Byvalvin/nodenet",
-            "otherDetailsPage": "#other-project-details?id=nodenet"
+            "otherDetailsPage": "#other-project-details?id=nodenet",
+            "icon": "fas fa-users"  // Users icon for social media platform
         }
-
     ]
 }
