@@ -5,6 +5,24 @@
             "description": "A C++ bot designed for a Protoss Stalker Rush strategy. 70% win rate against CheatMoney and CheatVision difficulties, and around 45% against CheatInsane.",
             "images": ["FiringSquad.jpg", "FiringSquad2.jpg", "StalkerRally.jpg", "WarpGatesReady.jpg"],
             "videos": ["AttackingVideo.webm", "ScoutRecordingMiniMap.webm"],
+            "technologies": {
+                "C++": {
+                    "icon": "fa-react",
+                    "description": "A JavaScript library for building user interfaces."
+                },
+                "VSCode": {
+                    "icon": "fa-node",
+                    "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine."
+                },
+                "GitHub": {
+                    "image": "path/to/java-logo.png",  
+                    "description": "A programming language and computing platform."
+                },
+                "bash": {
+                    "image": "path/to/mongodb-logo.png",  
+                    "description": "A NoSQL database program."
+                }
+            }
             "githubLink": "https://github.com/Byvalvin/StarCraftIIBot-cpp",
             "otherDetailsPage": "#other-project-details?id=stalker-bot",
             "icon": "fas fa-robot" 
@@ -14,6 +32,20 @@
             "description": "A modern take on the classic ed editor from the 60s. This text editor supports many of the commands from the original ed.",
             "images": ["ed2.JPG", "ed3.JPG", "ed5.JPG"],
             "videos": [],
+            "technologies": {
+                "Javascript": {
+                    "icon": "fa-react",
+                    "description": "A JavaScript library for building user interfaces."
+                },
+                "GitHub": {
+                    "image": "path/to/mongodb-logo.png",  
+                    "description": "A NoSQL database program."
+                },
+                "Python": {
+                    "image": "path/to/mongodb-logo.png",  
+                    "description": "A NoSQL database program."
+                }
+            }
             "githubLink": "https://github.com/Byvalvin/Editor/tree/web-version",
             "otherDetailsPage": "#other-project-details?id=ed-editor",
             "tryItOutLink": "https://byvalvin.github.io/Editor/",
@@ -24,6 +56,20 @@
             "description": "A text-based version of Klondike Solitaire. The challenge here is that the table isn't always visible, so you'll need to remember where you placed your cards!",
             "images": ["klondike1.JPG", "klondike2.JPG", "klondike5.JPG", "klondike.JPG"],
             "videos": [],
+            "technologies": {
+                "Javascript": {
+                    "icon": "fa-react",
+                    "description": "A JavaScript library for building user interfaces."
+                },
+                "GitHub": {
+                    "image": "path/to/java-logo.png",  
+                    "description": "A programming language and computing platform."
+                },
+                "Python": {
+                    "image": "path/to/mongodb-logo.png",  
+                    "description": "A NoSQL database program."
+                }
+            }
             "githubLink": "https://github.com/Byvalvin/Klondike/tree/web-version-v3",
             "otherDetailsPage": "#other-project-details?id=text-klondike",
             "tryItOutLink": "https://byvalvin.github.io/Klondike/",
@@ -34,6 +80,24 @@
             "description": "An action stealth game built with JavaScript and RPG Maker MV. Set in a distant future where Earth is gone, you control The Sanctuary, a spaceship carrying cat-like androids and a few humans. Explore the ship and uncover its secrets.",
             "images": ["pawsible.jpg", "Bridge.jpg", "Mikey.jpg", "finalcutscene.jpg"],
             "videos": ["sanctuarytrailer.webm"],
+            "technologies": {
+                "RPG Maker MV": {
+                    "icon": "fa-react",
+                    "description": "A JavaScript library for building user interfaces."
+                },
+                "GitHub": {
+                    "image": "path/to/java-logo.png",  
+                    "description": "A programming language and computing platform."
+                },
+                "Javascript": {
+                    "image": "path/to/mongodb-logo.png",  
+                    "description": "A NoSQL database program."
+                },
+                "Trello": {
+                    "image": "path/to/mongodb-logo.png",  
+                    "description": "A NoSQL database program."
+                }
+            }
             "githubLink": "https://github.com/Byvalvin/Sanctuary",
             "tryItOutLink": "https://chris5ualberta.github.io/",
             "gamedirect": "https://chris5ualberta.github.io/SanctuaryGold/index.html",
@@ -46,6 +110,36 @@
             "description": "A QR Code Hunting App",
             "images": ["qrapp1.jpg", "qrapp2.jpg", "qrapp7.jpg", "qrapp5.jpg"],
             "videos": ["QRAPP.webm"],
+            "technologies": {
+                "Android Studio": {
+                    "icon": "fa-react",
+                    "description": "A JavaScript library for building user interfaces."
+                },
+                "GitHub": {
+                    "image": "path/to/java-logo.png",  
+                    "description": "A programming language and computing platform."
+                },
+                "Java": {
+                    "image": "path/to/mongodb-logo.png",  
+                    "description": "A NoSQL database program."
+                },
+                "draw.io": {
+                    "image": "path/to/mongodb-logo.png",  
+                    "description": "A NoSQL database program."
+                }
+                "Figma": {
+                    "image": "path/to/mongodb-logo.png",  
+                    "description": "A NoSQL database program."
+                },
+                "Firebase": {
+                    "image": "path/to/mongodb-logo.png",  
+                    "description": "A NoSQL database program."
+                },
+                "Google Maps API": {
+                    "image": "path/to/mongodb-logo.png",  
+                    "description": "A NoSQL database program."
+                }
+            }
             "githubLink": "https://github.com/Byvalvin/QRAPP",
             "tryItOutLink": "",
             "gamedirect": "",
@@ -57,6 +151,20 @@
             "description": "A short RPG created with JavaScript and RPG Maker MV. Follow a young knight on a quest to secure a good harvest for his town, Marisacordia. He must venture beyond the town's borders, an act forbidden by law. Along the way, he discovers the truth about his town's prosperity and faces a tough decision.",
             "images": ["excalibur.jpg", "excalibur2.jpg", "excalibur3.jpg", "excalibur5.jpg"],
             "videos": [],
+            "technologies": {
+                "RPG Maker MV": {
+                    "icon": "fa-react",
+                    "description": "A JavaScript library for building user interfaces."
+                },
+                "GitHub": {
+                    "image": "path/to/java-logo.png",  
+                    "description": "A programming language and computing platform."
+                },
+                "Javascript": {
+                    "image": "path/to/mongodb-logo.png",  
+                    "description": "A NoSQL database program."
+                },
+            }
             "githubLink": "https://github.com/Byvalvin/Excalibur",
             "tryItOutLink": "",
             "gamedirect": "https://samasa101.github.io/excalibur.html/Repath/www/index.html",
@@ -69,6 +177,17 @@
             "images": [],
             "videos": [],
             "githubLink": "",
+            "technologies": {
+                "VSCode": {
+                    "icon": "fa-react",
+                    "description": "A JavaScript library for building user interfaces."
+                },
+                "Python": {
+                    "image": "path/to/java-logo.png",  
+                    "description": "A programming language and computing platform."
+                },
+
+            }
             "otherDetailsPage": "#other-project-details?id=document-classifier",
             "icon": "fas fa-cogs" 
         },
@@ -77,6 +196,16 @@
             "description": "Trains and tests self-driving cars using neural networks in a Udacity-based car simulator. Built with PyTorch.",
             "images": [],
             "videos": ["https://www.youtube.com/embed/Pg1sJniHWPE", "https://www.youtube.com/embed/GSWrpgIM-1k"],
+            "technologies": {
+                "Python": {
+                    "icon": "fa-react",
+                    "description": "A JavaScript library for building user interfaces."
+                },
+                "Pytorch": {
+                    "image": "path/to/java-logo.png",  
+                    "description": "A programming language and computing platform."
+                }
+            }
             "githubLink": "",
             "otherDetailsPage": "#other-project-details?id=self-driving-car",
             "icon": "fas fa-car"  
@@ -86,6 +215,25 @@
             "description": "An image filter that highlights edges in images. (Used in my profile picture!)",
             "images": ["lenna.jpg", "lennaED.jpg", "gan.jpeg", "ganED.jpg"],
             "videos": [],
+            "technologies": {
+                "Python": {
+                    "icon": "fa-react",
+                    "description": "A JavaScript library for building user interfaces."
+                },
+                "GitHub": {
+                    "image": "path/to/java-logo.png",  
+                    "description": "A programming language and computing platform."
+                },
+                "Javascript": {
+                    "image": "path/to/mongodb-logo.png",  
+                    "description": "A NoSQL database program."
+                },
+                "Typescript": {
+                    "image": "path/to/mongodb-logo.png",  
+                    "description": "A NoSQL database program."
+                },
+
+            }
             "githubLink": "https://github.com/Byvalvin/Edge-Filter",
             "tryItOutLink": "https://byvalvin.github.io/Edge-Filter",
             "otherDetailsPage": "#other-project-details?id=edge-filter",
@@ -96,6 +244,25 @@
             "description": "A social media platform where users can sign up, log in, post images, and make friends. It allows users to share moments and connect with others in a community setting.",
             "images": [],
             "videos": [],
+            "technologies": {
+                "Django": {
+                    "icon": "fa-react",
+                    "description": "A JavaScript library for building user interfaces."
+                },
+                "GitHub": {
+                    "image": "path/to/java-logo.png",  
+                    "description": "A programming language and computing platform."
+                },
+                "Javascript": {
+                    "image": "path/to/mongodb-logo.png",  
+                    "description": "A NoSQL database program."
+                },
+                "Render": {
+                    "image": "path/to/mongodb-logo.png",  
+                    "description": "A NoSQL database program."
+                },
+
+            }
             "githubLink": "https://github.com/Byvalvin/nodenet",
             "tryItOutLink": "https://github.com/Byvalvin/nodenet",
             "otherDetailsPage": "#other-project-details?id=nodenet",
