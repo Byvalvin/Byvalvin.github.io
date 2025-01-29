@@ -3,13 +3,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const projectData = [
         {
-            id: 'qrapp',
-            title: 'QRapp',
-            description: 'A QR Code Hunting App.',
-            images: ['qrapp9.jpg'],
-            detailsPage: '#project-details?id=qrapp'
-        },
-        {
             id: 'aranimal',
             title: 'AR Animal Identification',
             description: 'An educational and interactive app designed to inform and teach users about the Albertan Biosphere.',
@@ -22,8 +15,25 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'A site for Agents and Scouts to find the best teams for their players and the best players for their teams.',
             images: ['proquest1.png'],
             detailsPage: '#project-details?id=proquest'
-        }
+        },
+        {
+            id: 'pawnspath',
+            title: "Pawn's Path: An Endgame Forge",
+            description: 'A tactical chess playground',
+            images: [''],
+            detailsPage: '#project-details?id=pawnspath'
+        },
         // Add more projects as needed
+    ];
+
+    const oldProjects = [
+        {
+            id: 'qrapp',
+            title: 'QRapp',
+            description: 'A QR Code Hunting App.',
+            images: ['qrapp9.jpg'],
+            detailsPage: '#project-details?id=qrapp'
+        },
     ];
 
     const projectList = document.getElementById('project-list');
