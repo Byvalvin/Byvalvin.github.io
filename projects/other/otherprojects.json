@@ -44,7 +44,7 @@
         {
             "name": "QRapp",
             "description": "A QR Code Hunting App",
-            "images": ["qrapp1.jpg", "qrapp2.jpg", "qrapp7.jpg", "qrapp4.jpg", "qrapp5.jpg"],
+            "images": ["qrapp1.jpg", "qrapp2.jpg", "qrapp7.jpg", "qrapp5.jpg"],
             "videos": ["QRAPP.webm"],
             "githubLink": "https://github.com/Byvalvin/QRAPP",
             "tryItOutLink": "",
