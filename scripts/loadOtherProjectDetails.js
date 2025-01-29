@@ -58,32 +58,30 @@ const loadOtherProjectDetails = (projectId) => {
                 
                 // Loop through technologies and display them, handle both icon and image
                 const techListHTML = project.technologies ? 
-                    Object.keys(project.technologies).map((tech, index) => {
+                    Object.keys(project.technologies).map(tech => {
                         const techData = project.technologies[tech];
                         let techHTML = '';
-            
-                        // Calculate staggered position based on index
-                        const staggerClass = index % 2 === 0 ? 'tech-item-left' : 'tech-item-right';
-            
+                
                         if (techData.icon) {
-                            // If icon exists
+                            // If icon exists, display only the icon initially
                             techHTML = `
-                                <div class="tech-item ${staggerClass}" data-tech="${tech}">
+                                <div class="tech-item" data-tech="${tech}">
                                     <i class="tech-icon fa ${techData.icon || 'fa-cogs'}"></i>
-                                    <span class="tooltip">${techData.description}</span>
+                                    <span class="tooltip">${tech}</span>  <!-- Tooltip shows the technology title -->
                                 </div>
                             `;
                         } else if (techData.image) {
-                            // If image exists
+                            // If image exists, display only the image initially
                             techHTML = `
-                                <div class="tech-item ${staggerClass}" data-tech="${tech}">
+                                <div class="tech-item" data-tech="${tech}">
                                     <img src="${techData.image}" alt="${tech}" class="tech-icon-img" />
-                                    <span class="tooltip">${techData.description}</span>
+                                    <span class="tooltip">${tech}</span>  <!-- Tooltip shows the technology title -->
                                 </div>
                             `;
                         }
                         return techHTML;
                     }).join('') : '';
+
                 
                 return `
                     <h2>${project.name}</h2>
