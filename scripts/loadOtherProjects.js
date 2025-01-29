@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="project-card-header" role="button" tabindex="0" aria-label="${project.name}">
                 <div class="project-card-header-content">
                     <h2>${project.name}</h2>
-                    <!-- Icon for the project -->
-                    <i class="fas fa-chess-pawn project-card-icon"></i> <!-- Pawn icon from Font Awesome -->
+                    <!-- Use the icon from the project data -->
+                    <i class="${project.icon} project-card-icon"></i> <!-- Dynamic icon -->
                 </div>
                 <p>${truncatedDescription}</p>
             </div>
