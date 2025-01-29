@@ -7,7 +7,7 @@
             "videos": ["AttackingVideo.webm", "ScoutRecordingMiniMap.webm"],
             "githubLink": "https://github.com/Byvalvin/StarCraftIIBot-cpp",
             "otherDetailsPage": "#other-project-details?id=stalker-bot",
-            "icon": "fas fa-robot"  // Robot icon for bot project
+            "icon": "fas fa-robot" 
         },
         {
             "name": "ED-like Text Editor",
@@ -17,7 +17,7 @@
             "githubLink": "https://github.com/Byvalvin/Editor/tree/web-version",
             "otherDetailsPage": "#other-project-details?id=ed-editor",
             "tryItOutLink": "https://byvalvin.github.io/Editor/",
-            "icon": "fas fa-edit"  // Edit icon for text editor
+            "icon": "fas fa-edit" 
         },
         {
             "name": "Text Klondike",
@@ -27,7 +27,7 @@
             "githubLink": "https://github.com/Byvalvin/Klondike/tree/web-version-v3",
             "otherDetailsPage": "#other-project-details?id=text-klondike",
             "tryItOutLink": "https://byvalvin.github.io/Klondike/",
-            "icon": "fas fa-cards"  // Cards icon for Solitaire game
+            "icon": "fas fa-cards"  
         },
         {
             "name": "Sanctuary",
@@ -39,7 +39,7 @@
             "gamedirect": "https://chris5ualberta.github.io/SanctuaryGold/index.html",
             "otherDetailsPage": "#other-project-details?id=sanctuary-game",
             "fullgameDL": "https://drive.google.com/drive/folders/1Le6cIn9wxFvws06BYc4IXNtDyHCakolY?usp=share_link",
-            "icon": "fas fa-space-shuttle"  // Space shuttle icon for space-themed game
+            "icon": "fas fa-space-shuttle"  
         },
         {
             "name": "Excalibur's Renewal",
@@ -50,7 +50,7 @@
             "tryItOutLink": "",
             "gamedirect": "https://samasa101.github.io/excalibur.html/Repath/www/index.html",
             "otherDetailsPage": "#other-project-details?id=excalibur-game",
-            "icon": "fas fa-sword"  // Sword icon for RPG game
+            "icon": "fas fa-sword"
         },
         {
             "name": "Chess Unity",
@@ -61,7 +61,7 @@
             "tryItOutLink": "./projects/other/ChessUnity/ChessUnity.html",
             "gamedirect": "https://samasa101.github.io/excalibur.html/Repath/www/index.html",
             "otherDetailsPage": "#other-project-details?id=chess-unity",
-            "icon": "fas fa-chess"  // Chess icon for chess game
+            "icon": "fas fa-chess" 
         },
         {
             "name": "Naive Bayes Document Classifier",
@@ -70,7 +70,7 @@
             "videos": [],
             "githubLink": "",
             "otherDetailsPage": "#other-project-details?id=document-classifier",
-            "icon": "fas fa-cogs"  // Gear icon for machine learning or classification project
+            "icon": "fas fa-cogs" 
         },
         {
             "name": "Self Driving Car Simulator",
@@ -79,7 +79,7 @@
             "videos": ["https://www.youtube.com/embed/Pg1sJniHWPE", "https://www.youtube.com/embed/GSWrpgIM-1k"],
             "githubLink": "",
             "otherDetailsPage": "#other-project-details?id=self-driving-car",
-            "icon": "fas fa-car"  // Car icon for self-driving car project
+            "icon": "fas fa-car"  
         },
         {
             "name": "Edge Filter",
@@ -89,7 +89,7 @@
             "githubLink": "https://github.com/Byvalvin/Edge-Filter",
             "tryItOutLink": "https://byvalvin.github.io/Edge-Filter",
             "otherDetailsPage": "#other-project-details?id=edge-filter",
-            "icon": "fas fa-image"  // Image icon for image filter project
+            "icon": "fas fa-image"  
         },
         {
             "name": "NodeNet",
@@ -99,7 +99,7 @@
             "githubLink": "https://github.com/Byvalvin/nodenet",
             "tryItOutLink": "https://github.com/Byvalvin/nodenet",
             "otherDetailsPage": "#other-project-details?id=nodenet",
-            "icon": "fas fa-users"  // Users icon for social media platform
+            "icon": "fas fa-users"  
         }
     ]
 }
