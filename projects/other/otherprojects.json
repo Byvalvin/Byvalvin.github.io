@@ -14,7 +14,7 @@
                     "description": "A JavaScript library for building user interfaces."
                 },
                 "VSCode": {
-                    "image": "projects/icons/vscode.svg",
+                    "image": "projects/icons/visualstudiocode.svg",
                     "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine."
                 },
                 "GitHub": {
