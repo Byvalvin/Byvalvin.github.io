@@ -868,7 +868,7 @@ body, html {
 
 
 /* Footer Styles */
-btn {
+.btn {
     display: inline-block;
     background-color: var(--btn-main-bg-color);
     color: var(--body-light-text-color);
