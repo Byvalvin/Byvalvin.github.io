@@ -64,7 +64,8 @@
         "images": ["pawnspath1.jpg"],
         "videos": [],
         "technologies": {
-            "Unity": "Chess GUI and logic",
+            "Unity": "Chess GUI and other Graphics and UI related elements",
+            "C#": "Business Logic, Algorithms and data processing",
             "Python": "training RL/ML models for bots",
             "draw":"Creating sprites and other assets",
             "GitHub": "Used for version control and project management."
