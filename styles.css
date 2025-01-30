@@ -907,21 +907,21 @@ footer a:hover {
 
 #github-link {
     display: inline-block;
-    padding: 12px; /* Make it clickable area larger */
+    padding: 10px; /* Make it clickable area larger */
     border: 2px solid #333;
     border-radius: 50%; /* Circular button */
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 #github-link:hover {
-    background-color: #333; /* Dark background on hover */
-    border-color: #0073e6; /* Change border color on hover */
+    background-color: #0073e5; /* Dark background on hover */
+    border-color: #0073e5; /* Change border color on hover */
     cursor: pointer;
 }
 
 #github-link .github-icon {
-    width: 50px; /* Increase size of GitHub icon */
-    height: 50px; /* Increase size of GitHub icon */
+    width: 25px; /* Increase size of GitHub icon */
+    height: 20px; /* Increase size of GitHub icon */
 }
 
 #resume-download {
@@ -949,8 +949,6 @@ footer a:hover {
     font-size: 1.5rem; /* Larger size for more prominence */
     font-weight: bold; /* Make the separator bold */
 }
-
-
 
 
 
