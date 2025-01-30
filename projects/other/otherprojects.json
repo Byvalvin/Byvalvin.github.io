@@ -7,22 +7,22 @@
             "videos": ["AttackingVideo.webm", "ScoutRecordingMiniMap.webm"],
             "technologies": {
                 "Starcraft II: Wings of Liberty":{
-                    "image":"projects/icons/starcraft"
+                    "image":"projects/icons/starcraft.svg"
                 },
                 "C++": {
-                    "icon": "projects/icons/c",
+                    "image": "projects/icons/c-plus-plus.svg",
                     "description": "A JavaScript library for building user interfaces."
                 },
                 "VSCode": {
-                    "icon": "projects/icons/vscode",
+                    "image": "projects/icons/vscode.svg",
                     "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine."
                 },
                 "GitHub": {
-                    "icon": "fa-brands fa-github",  
+                    "image": "projects/icons/github.svg",  
                     "description": "A programming language and computing platform."
                 },
                 "bash": {
-                    "image": "path/to/mongodb-logo.png",  
+                    "image": "projects/icons/bash.svg",  
                     "description": "A NoSQL database program."
                 }
             },
@@ -37,15 +37,15 @@
             "videos": [],
             "technologies": {
                 "Javascript": {
-                    "icon": "fa-brands fa-js",
+                    "image": "projects/icons/javascript.svg",
                     "description": "A JavaScript library for building user interfaces."
                 },
                 "GitHub": {
-                    "image": "path/to/mongodb-logo.png",  
+                    "image": "projects/icons/github.svg",  
                     "description": "A NoSQL database program."
                 },
                 "Python": {
-                    "image": "path/to/mongodb-logo.png",  
+                    "image": "projects/icons/python.svg",  
                     "description": "A NoSQL database program."
                 }
             },
@@ -61,15 +61,15 @@
             "videos": [],
             "technologies": {
                 "Javascript": {
-                    "icon": "fa-react",
+                    "image": "projects/icons/javascript.svg",
                     "description": "A JavaScript library for building user interfaces."
                 },
                 "GitHub": {
-                    "image": "path/to/java-logo.png",  
+                    "image": "projects/icons/github.svg",  
                     "description": "A programming language and computing platform."
                 },
                 "Python": {
-                    "image": "path/to/mongodb-logo.png",  
+                    "image": "projects/icons/python.svg",  
                     "description": "A NoSQL database program."
                 }
             },
@@ -85,19 +85,19 @@
             "videos": ["sanctuarytrailer.webm"],
             "technologies": {
                 "RPG Maker MV": {
-                    "icon": "fa-react",
+                    "image": "projects/icons/rpgmakermv.svg",
                     "description": "A JavaScript library for building user interfaces."
                 },
                 "GitHub": {
-                    "image": "path/to/java-logo.png",  
+                    "image": "projects/icons/github.svg",  
                     "description": "A programming language and computing platform."
                 },
                 "Javascript": {
-                    "image": "path/to/mongodb-logo.png",  
+                    "image": "projects/icons/javascript.svg",  
                     "description": "A NoSQL database program."
                 },
                 "Trello": {
-                    "image": "path/to/mongodb-logo.png",  
+                    "image": "projects/icons/trello.svg",  
                     "description": "A NoSQL database program."
                 }
             },
@@ -115,15 +115,15 @@
             "videos": ["QRAPP.webm"],
             "technologies": {
                 "Android Studio": {
-                    "icon": "projects",
+                    "icon": "projects/icons/androidstudio.svg",
                     "description": "A JavaScript library for building user interfaces."
                 },
                 "GitHub": {
-                    "image": "path/to/java-logo.png",  
+                    "image": "projects/icons/github.svg",  
                     "description": "A programming language and computing platform."
                 },
                 "Java": {
-                    "image": "fa-brands fa-java",  
+                    "image": "projects/icons/java.svg",  
                     "description": "A NoSQL database program."
                 },
                 "draw.io": {
@@ -131,7 +131,7 @@
                     "description": "A NoSQL database program."
                 },
                 "Figma": {
-                    "image": "fa-brands fa-figma",  
+                    "image": "projects/icons/figma.svg",  
                     "description": "A NoSQL database program."
                 },
                 "Firebase": {
@@ -156,15 +156,15 @@
             "videos": [],
             "technologies": {
                 "RPG Maker MV": {
-                    "icon": "fa-react",
+                    "image": "projects/icons/rpgmakermv.svg",
                     "description": "A JavaScript library for building user interfaces."
                 },
                 "GitHub": {
-                    "image": "path/to/java-logo.png",  
+                    "image": "projects/icons/github.svg",  
                     "description": "A programming language and computing platform."
                 },
                 "Javascript": {
-                    "image": "path/to/mongodb-logo.png",  
+                    "image": "projects/icons/javascript.svg",  
                     "description": "A NoSQL database program."
                 }
             },
@@ -181,11 +181,11 @@
             "videos": [],
             "technologies": {
                 "VSCode": {
-                    "icon": "fa-react",
+                    "image": "projects/icons/visualstudiocode.svg",
                     "description": "A JavaScript library for building user interfaces."
                 },
                 "Python": {
-                    "image": "path/to/java-logo.png",  
+                    "image": "projects/icons/python.svg",  
                     "description": "A programming language and computing platform."
                 }
             },
@@ -200,11 +200,11 @@
             "videos": ["https://www.youtube.com/embed/Pg1sJniHWPE", "https://www.youtube.com/embed/GSWrpgIM-1k"],
             "technologies": {
                 "Python": {
-                    "icon": "fa-react",
+                    "image": "projects/icons/python.svg",
                     "description": "A JavaScript library for building user interfaces."
                 },
                 "Pytorch": {
-                    "image": "path/to/java-logo.png",  
+                    "image": "projects/icons/pytorch.svg",  
                     "description": "A programming language and computing platform."
                 }
             },
@@ -219,19 +219,19 @@
             "videos": [],
             "technologies": {
                 "Python": {
-                    "icon": "fa-react",
+                    "image": "projects/icons/python.svg",
                     "description": "A JavaScript library for building user interfaces."
                 },
                 "GitHub": {
-                    "image": "path/to/java-logo.png",  
+                    "image": "projects/icons/github.svg",  
                     "description": "A programming language and computing platform."
                 },
                 "Javascript": {
-                    "image": "path/to/mongodb-logo.png",  
+                    "image": "projects/icons/javascript.svg",  
                     "description": "A NoSQL database program."
                 },
                 "Typescript": {
-                    "image": "path/to/mongodb-logo.png",  
+                    "image": "projects/icons/typescript.svg",  
                     "description": "A NoSQL database program."
                 }
             },
@@ -247,19 +247,19 @@
             "videos": [],
             "technologies": {
                 "Django": {
-                    "icon": "projects/icons/django.svg",
+                    "image": "projects/icons/django.svg",
                     "description": "A JavaScript library for building user interfaces."
                 },
                 "GitHub": {
-                    "image": "path/to/java-logo.png",  
+                    "image": "projects/icons/github.svg",  
                     "description": "A programming language and computing platform."
                 },
                 "Javascript": {
-                    "image": "path/to/mongodb-logo.png",  
+                    "image": "projects/icons/javascript.svg",  
                     "description": "A NoSQL database program."
                 },
                 "Render": {
-                    "image": "path/to/mongodb-logo.png",  
+                    "image": "projects/icons/render.svg",  
                     "description": "A NoSQL database program."
                 }
             },
