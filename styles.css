@@ -1608,31 +1608,26 @@ footer {
     opacity: 1; /* Default opacity */
 }
 
-/* Stack the items one on top of the other with slight horizontal and vertical offsets */
+/* Stack the items horizontally with slight horizontal overlap, no vertical overlap */
 #other-project-details .tech-item:nth-child(1) {
     left: 0;
-    top: 0;
 }
 
 #other-project-details .tech-item:nth-child(2) {
-    left: 15px;  /* Slightly overlap with the previous item */
-    top: 10px;   /* Slight vertical overlap */
+    left: 30px;  /* Slight overlap with the previous item */
 }
 
 #other-project-details .tech-item:nth-child(3) {
-    left: 30px;  /* Further overlap */
-    top: 20px;
+    left: 60px;  /* Further overlap */
 }
 
 #other-project-details .tech-item:nth-child(4) {
-    left: 45px;  /* Further overlap */
-    top: 30px;
+    left: 90px;  /* Further overlap */
 }
 
-/* After the first few items, all items will stack using the same offset */
+/* After the first few items, all items will stack using the same horizontal offset */
 #other-project-details .tech-item:nth-child(n+5) {
-    left: 50px;  /* Start with the same position for all subsequent items */
-    top: 40px;
+    left: 120px;  /* Start with the same position for all subsequent items */
 }
 
 /* Tech icon style */
