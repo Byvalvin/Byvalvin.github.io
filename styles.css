@@ -868,6 +868,22 @@ body, html {
 
 
 /* Footer Styles */
+btn {
+    display: inline-block;
+    background-color: var(--btn-main-bg-color);
+    color: var(--body-light-text-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--btn-main-bg-hv-color);
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 footer {
     background-color: var(--main-bg-color);
     color: var(--body-light-text-color);
