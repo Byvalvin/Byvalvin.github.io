@@ -126,6 +126,10 @@
                     "image": "projects/icons/java.svg",  
                     "description": "A NoSQL database program."
                 },
+                "Figma": {
+                    "image": "projects/icons/figma.svg",  
+                    "description": "Create Mockup/Wireframes and Prototyping"
+                },
                 "draw.io": {
                     "image": "projects/icons/draw.svg",  
                     "description": "A NoSQL database program."
