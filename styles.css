@@ -867,37 +867,26 @@ body, html {
 
 
 
-
 /* Footer Styles */
 footer {
     background-color: var(--main-bg-color);
     color: var(--body-light-text-color);
-    padding: 15px 20px;
+    padding: 20px 20px; /* Adjusted for better spacing */
     text-align: center;
     margin-top: auto;
-    font-size: 0.9rem;
-}
-
-.btn {
-    display: inline-block;
-    background-color: var(--btn-main-bg-color);
-    color: var(--body-light-text-color);
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    margin-top: 15px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: var(--btn-main-bg-hv-color);
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1rem; /* Slightly larger text for readability */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column;
+    gap: 15px; /* Space between the content blocks */
 }
 
 .footer-content {
     display: flex;
     align-items: center; /* Align everything horizontally */
-    gap: 20px; /* Space between the buttons section and the copyright year */
+    justify-content: center; /* Center the footer content */
+    gap: 20px; /* Space between buttons section and copyright year */
 }
 
 .footer-links {
@@ -916,9 +905,22 @@ footer a:hover {
     color: #0073e6; /* Blue color on hover */
 }
 
+#github-link {
+    display: inline-block;
+    padding: 10px; /* Make it clickable area larger */
+    border: 2px solid #333;
+    border-radius: 50%; /* Circular button */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#github-link:hover {
+    background-color: #333; /* Dark background on hover */
+    border-color: #0073e6; /* Change border color on hover */
+    cursor: pointer;
+}
+
 #github-link i {
     font-size: 24px; /* GitHub icon size */
-    margin-right: 8px;
 }
 
 #resume-download {
@@ -943,7 +945,10 @@ footer a:hover {
 .separator {
     margin: 0 10px; /* Space around the pipe */
     color: #333;
+    font-size: 1.5rem; /* Larger size for more prominence */
+    font-weight: bold; /* Make the separator bold */
 }
+
 
 
 
