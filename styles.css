@@ -1667,7 +1667,7 @@ footer a:hover {
 #other-project-details .tech-item {
     position: absolute; /* Absolute positioning for overlap */
     padding: 10px;
-    background-color: #f4f4f4;
+    background-color: var(--body-darker-text-color);
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s ease, opacity 0.3s ease, z-index 0s ease;
