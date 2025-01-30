@@ -43,17 +43,24 @@ function loadProjectDetails(projectId) {
                 </video>
             `).join('');
 
-            const techCards = Object.entries(project.technologies).map(([tech, description]) => `
-                <div class="tech-card">
-                    <div class="tech-icon">
-                        <img src="projects/icons/${tech.replace(/\s+/g, '').toLowerCase()}.svg" alt="${tech}">
+            const techCards = Object.entries(project.technologies).map(([tech, description]) => {
+                // Handle special case for "C#"
+                const techIcon = tech === 'C#' ? 
+                    `projects/icons/c%23.svg` : 
+                    `projects/icons/${tech.replace(/\s+/g, '').toLowerCase()}.svg`;
+            
+                return `
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <img src="${techIcon}" alt="${tech}">
+                        </div>
+                        <div class="tech-info">
+                            <h4>${tech}</h4>
+                            <p>${description}</p>
+                        </div>
                     </div>
-                    <div class="tech-info">
-                        <h4>${tech}</h4>
-                        <p>${description}</p>
-                    </div>
-                </div>
-            `).join('');
+                `;
+            }).join('');
 
             const contrItems = project.contributions.map(contr => `
                 <div class="contribution-item">
