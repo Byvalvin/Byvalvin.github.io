@@ -894,14 +894,19 @@ footer {
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.footer-content {
+    display: flex;
+    align-items: center; /* Align everything horizontally */
+    gap: 20px; /* Space between the buttons section and the copyright year */
+}
 
 .footer-links {
     display: flex;
-    align-items: center; /* Align items horizontally */
-    gap: 10px; /* Space between the items */
+    align-items: center; /* Align buttons and separator horizontally */
+    gap: 10px; /* Space between the GitHub icon, pipe, and resume button */
 }
 
-.footer-links a {
+footer a {
     text-decoration: none;
     color: #333;
     display: inline-block;
@@ -939,7 +944,6 @@ footer a:hover {
     margin: 0 10px; /* Space around the pipe */
     color: #333;
 }
-
 
 
 
