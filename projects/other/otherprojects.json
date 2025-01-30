@@ -6,16 +6,19 @@
             "images": ["FiringSquad.jpg", "FiringSquad2.jpg", "StalkerRally.jpg", "WarpGatesReady.jpg"],
             "videos": ["AttackingVideo.webm", "ScoutRecordingMiniMap.webm"],
             "technologies": {
+                "Starcraft II: Wings of Liberty":{
+                    "image":"projects/icons/starcraft"
+                },
                 "C++": {
-                    "icon": "fa-react",
+                    "icon": "projects/icons/c",
                     "description": "A JavaScript library for building user interfaces."
                 },
                 "VSCode": {
-                    "icon": "fa-node",
+                    "icon": "projects/icons/vscode",
                     "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine."
                 },
                 "GitHub": {
-                    "image": "path/to/java-logo.png",  
+                    "icon": "fa-brands fa-github",  
                     "description": "A programming language and computing platform."
                 },
                 "bash": {
@@ -34,7 +37,7 @@
             "videos": [],
             "technologies": {
                 "Javascript": {
-                    "icon": "fa-react",
+                    "icon": "fa-brands fa-js",
                     "description": "A JavaScript library for building user interfaces."
                 },
                 "GitHub": {
@@ -120,23 +123,23 @@
                     "description": "A programming language and computing platform."
                 },
                 "Java": {
-                    "image": "path/to/mongodb-logo.png",  
+                    "image": "fa-brands fa-java"",  
                     "description": "A NoSQL database program."
                 },
                 "draw.io": {
-                    "image": "path/to/mongodb-logo.png",  
+                    "image": "projects/icons/draw",  
                     "description": "A NoSQL database program."
                 },
                 "Figma": {
-                    "image": "path/to/mongodb-logo.png",  
+                    "image": "fa-brands fa-figma",  
                     "description": "A NoSQL database program."
                 },
                 "Firebase": {
-                    "image": "path/to/mongodb-logo.png",  
+                    "image": "projects/icons/firebase.svg",  
                     "description": "A NoSQL database program."
                 },
                 "Google Maps API": {
-                    "image": "path/to/mongodb-logo.png",  
+                    "image": "projects/icons/googlemapsapi.svg",  
                     "description": "A NoSQL database program."
                 }
             },
