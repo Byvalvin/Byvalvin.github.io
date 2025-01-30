@@ -6,6 +6,10 @@
             "images": ["FiringSquad.jpg", "FiringSquad2.jpg", "StalkerRally.jpg", "WarpGatesReady.jpg"],
             "videos": ["AttackingVideo.webm", "ScoutRecordingMiniMap.webm"],
             "technologies": {
+                "GitHub": {
+                    "image": "projects/icons/github.svg",  
+                    "description": "A programming language and computing platform."
+                },
                 "Starcraft II: Wings of Liberty":{
                     "image":"projects/icons/starcraft.svg"
                 },
@@ -13,13 +17,9 @@
                     "image": "projects/icons/c-plus-plus.svg",
                     "description": "A JavaScript library for building user interfaces."
                 },
-                "VSCode": {
+                "Visual Studio Code": {
                     "image": "projects/icons/visualstudiocode.svg",
                     "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine."
-                },
-                "GitHub": {
-                    "image": "projects/icons/github.svg",  
-                    "description": "A programming language and computing platform."
                 },
                 "bash": {
                     "image": "projects/icons/bash.svg",  
@@ -36,13 +36,13 @@
             "images": ["ed2.JPG", "ed3.JPG", "ed5.JPG"],
             "videos": [],
             "technologies": {
-                "Javascript": {
-                    "image": "projects/icons/javascript.svg",
-                    "description": "A JavaScript library for building user interfaces."
-                },
                 "GitHub": {
                     "image": "projects/icons/github.svg",  
                     "description": "A NoSQL database program."
+                },
+                "Javascript": {
+                    "image": "projects/icons/javascript.svg",
+                    "description": "A JavaScript library for building user interfaces."
                 },
                 "Python": {
                     "image": "projects/icons/python.svg",  
@@ -60,13 +60,13 @@
             "images": ["klondike1.JPG", "klondike2.JPG", "klondike5.JPG", "klondike.JPG"],
             "videos": [],
             "technologies": {
-                "Javascript": {
-                    "image": "projects/icons/javascript.svg",
-                    "description": "A JavaScript library for building user interfaces."
-                },
                 "GitHub": {
                     "image": "projects/icons/github.svg",  
                     "description": "A programming language and computing platform."
+                },
+                "Javascript": {
+                    "image": "projects/icons/javascript.svg",
+                    "description": "A JavaScript library for building user interfaces."
                 },
                 "Python": {
                     "image": "projects/icons/python.svg",  
@@ -84,13 +84,13 @@
             "images": ["pawsible.jpg", "Bridge.jpg", "Mikey.jpg", "finalcutscene.jpg"],
             "videos": ["sanctuarytrailer.webm"],
             "technologies": {
-                "RPG Maker MV": {
-                    "image": "projects/icons/rpgmakermv.svg",
-                    "description": "A JavaScript library for building user interfaces."
-                },
                 "GitHub": {
                     "image": "projects/icons/github.svg",  
                     "description": "A programming language and computing platform."
+                },
+                "RPG Maker MV": {
+                    "image": "projects/icons/rpgmakermv.svg",
+                    "description": "A JavaScript library for building user interfaces."
                 },
                 "Javascript": {
                     "image": "projects/icons/javascript.svg",  
@@ -114,13 +114,13 @@
             "images": ["qrapp1.jpg", "qrapp2.jpg", "qrapp7.jpg", "qrapp5.jpg"],
             "videos": ["QRAPP.webm"],
             "technologies": {
-                "Android Studio": {
-                    "icon": "projects/icons/androidstudio.svg",
-                    "description": "A JavaScript library for building user interfaces."
-                },
                 "GitHub": {
                     "image": "projects/icons/github.svg",  
                     "description": "A programming language and computing platform."
+                },
+                "Android Studio": {
+                    "icon": "projects/icons/androidstudio.svg",
+                    "description": "A JavaScript library for building user interfaces."
                 },
                 "Java": {
                     "image": "projects/icons/java.svg",  
@@ -155,13 +155,13 @@
             "images": ["excalibur.jpg", "excalibur2.jpg", "excalibur3.jpg", "excalibur5.jpg"],
             "videos": [],
             "technologies": {
-                "RPG Maker MV": {
-                    "image": "projects/icons/rpgmakermv.svg",
-                    "description": "A JavaScript library for building user interfaces."
-                },
                 "GitHub": {
                     "image": "projects/icons/github.svg",  
                     "description": "A programming language and computing platform."
+                },
+                "RPG Maker MV": {
+                    "image": "projects/icons/rpgmakermv.svg",
+                    "description": "A JavaScript library for building user interfaces."
                 },
                 "Javascript": {
                     "image": "projects/icons/javascript.svg",  
@@ -180,7 +180,7 @@
             "images": [],
             "videos": [],
             "technologies": {
-                "VSCode": {
+                "Visual Studio Code": {
                     "image": "projects/icons/visualstudiocode.svg",
                     "description": "A JavaScript library for building user interfaces."
                 },
@@ -218,13 +218,13 @@
             "images": ["lenna.jpg", "lennaED.jpg", "gan.jpeg", "ganED.jpg"],
             "videos": [],
             "technologies": {
-                "Python": {
-                    "image": "projects/icons/python.svg",
-                    "description": "A JavaScript library for building user interfaces."
-                },
                 "GitHub": {
                     "image": "projects/icons/github.svg",  
                     "description": "A programming language and computing platform."
+                },
+                "Python": {
+                    "image": "projects/icons/python.svg",
+                    "description": "A JavaScript library for building user interfaces."
                 },
                 "Javascript": {
                     "image": "projects/icons/javascript.svg",  
@@ -246,13 +246,13 @@
             "images": [],
             "videos": [],
             "technologies": {
-                "Django": {
-                    "image": "projects/icons/django.svg",
-                    "description": "A JavaScript library for building user interfaces."
-                },
                 "GitHub": {
                     "image": "projects/icons/github.svg",  
                     "description": "A programming language and computing platform."
+                },
+                "Django": {
+                    "image": "projects/icons/django.svg",
+                    "description": "A JavaScript library for building user interfaces."
                 },
                 "Javascript": {
                     "image": "projects/icons/javascript.svg",  
