@@ -10,9 +10,6 @@
                     "image": "projects/icons/github.svg",  
                     "description": "A programming language and computing platform."
                 },
-                "Starcraft II: Wings of Liberty":{
-                    "image":"projects/icons/starcraft.svg"
-                },
                 "C++": {
                     "image": "projects/icons/c-plus-plus.svg",
                     "description": "A JavaScript library for building user interfaces."
@@ -24,6 +21,9 @@
                 "bash": {
                     "image": "projects/icons/bash.svg",  
                     "description": "A NoSQL database program."
+                },
+                "Starcraft II: Wings of Liberty":{
+                    "image":"projects/icons/starcraft.svg"
                 }
             },
             "githubLink": "https://github.com/Byvalvin/StarCraftIIBot-cpp",
@@ -88,10 +88,6 @@
                     "image": "projects/icons/github.svg",  
                     "description": "A programming language and computing platform."
                 },
-                "RPG Maker MV": {
-                    "image": "projects/icons/rpgmakermv.svg",
-                    "description": "A JavaScript library for building user interfaces."
-                },
                 "Javascript": {
                     "image": "projects/icons/javascript.svg",  
                     "description": "A NoSQL database program."
@@ -99,6 +95,10 @@
                 "Trello": {
                     "image": "projects/icons/trello.svg",  
                     "description": "A NoSQL database program."
+                },
+                "RPG Maker MV": {
+                    "image": "projects/icons/rpgmakermv.svg",
+                    "description": "A JavaScript library for building user interfaces."
                 }
             },
             "githubLink": "https://github.com/Byvalvin/Sanctuary",
@@ -159,13 +159,13 @@
                     "image": "projects/icons/github.svg",  
                     "description": "A programming language and computing platform."
                 },
-                "RPG Maker MV": {
-                    "image": "projects/icons/rpgmakermv.svg",
-                    "description": "A JavaScript library for building user interfaces."
-                },
                 "Javascript": {
                     "image": "projects/icons/javascript.svg",  
                     "description": "A NoSQL database program."
+                },
+                "RPG Maker MV": {
+                    "image": "projects/icons/rpgmakermv.svg",
+                    "description": "A JavaScript library for building user interfaces."
                 }
             },
             "githubLink": "https://github.com/Byvalvin/Excalibur",
@@ -250,10 +250,6 @@
                     "image": "projects/icons/github.svg",  
                     "description": "A programming language and computing platform."
                 },
-                "Django": {
-                    "image": "projects/icons/django.svg",
-                    "description": "A JavaScript library for building user interfaces."
-                },
                 "Javascript": {
                     "image": "projects/icons/javascript.svg",  
                     "description": "A NoSQL database program."
@@ -261,6 +257,10 @@
                 "Render": {
                     "image": "projects/icons/render.svg",  
                     "description": "A NoSQL database program."
+                },
+                "Django": {
+                    "image": "projects/icons/django.svg",
+                    "description": "A JavaScript library for building user interfaces."
                 }
             },
             "githubLink": "https://github.com/Byvalvin/nodenet",
