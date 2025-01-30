@@ -66,7 +66,7 @@
         "technologies": {
             "Unity": "Chess GUI and logic",
             "Python": "training RL/ML models for bots",
-            "draw.io":"Creating sprites",
+            "draw":"Creating sprites and other assets",
             "GitHub": "Used for version control and project management."
         },
         "contributions": [
