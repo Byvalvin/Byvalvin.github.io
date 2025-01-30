@@ -48,6 +48,14 @@
         "projectUrl": ""
     },
     {
+        "name": "Bash, Powershell",
+        "type": "language",
+        "category": "Specialised",
+        "proficiency": 90,
+        "duration": 80,
+        "projectUrl": ""
+    },
+    {
         "name": "HTML",
         "type": "language",
         "category": "Specialised",
