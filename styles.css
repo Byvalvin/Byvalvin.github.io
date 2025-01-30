@@ -895,6 +895,51 @@ footer {
 }
 
 
+.footer-links {
+    display: flex;
+    align-items: center; /* Align items horizontally */
+    gap: 10px; /* Space between the items */
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+}
+
+footer a:hover {
+    color: #0073e6; /* Blue color on hover */
+}
+
+#github-link i {
+    font-size: 24px; /* GitHub icon size */
+    margin-right: 8px;
+}
+
+#resume-download {
+    display: inline-block;
+}
+
+#resume-download .resume-icon {
+    width: 40px; /* Adjust the size of the SVG */
+    height: 40px;
+    padding: 10px; /* Add padding for clickable area */
+    border: 2px solid #333; /* Border to make it look like a button */
+    border-radius: 50%; /* Circular button shape */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#resume-download .resume-icon:hover {
+    background-color: #28a745; /* Green background on hover */
+    border-color: #218838; /* Darker green border on hover */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.separator {
+    margin: 0 10px; /* Space around the pipe */
+    color: #333;
+}
+
 
 
 
