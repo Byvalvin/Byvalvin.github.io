@@ -1669,7 +1669,6 @@ footer a:hover {
     padding: 10px;
     background-color: var(--body-darker-text-color);
     border-radius: 5px;
-    cursor: pointer;
     transition: transform 0.3s ease, opacity 0.3s ease, z-index 0s ease;
     z-index: 2; /* Ensures items stack properly when staggered */
     opacity: 1; /* Default opacity */
