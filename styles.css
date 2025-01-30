@@ -1589,7 +1589,7 @@ footer {
 .technologies {
     display: flex;
     flex-wrap: nowrap; /* Prevent wrapping so the icons stay in one line */
-    gap: 10px;
+    gap: 0; /* Remove any gap */
     margin-top: 20px;
     justify-content: flex-start; /* Align to the left */
     position: relative; /* For stacking effect */
@@ -1598,31 +1598,41 @@ footer {
 
 /* Style the individual tech items (cards) */
 #other-project-details .tech-item {
-    position: relative;
-    display: inline-block;
+    position: absolute; /* Absolute positioning for overlap */
     padding: 10px;
     background-color: #f4f4f4;
     border-radius: 5px;
     cursor: pointer;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease, z-index 0s ease;
     z-index: 2; /* Ensures items stack properly when staggered */
     opacity: 1; /* Default opacity */
-    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Stagger the position slightly to create the card stack effect */
-#other-project-details .tech-item:nth-child(n+2) {
-    transform: translateX(-15px);  /* Shift left */
-    z-index: 1;  /* Lower the z-index of overlapping items */
+/* Stack the items one on top of the other with slight horizontal and vertical offsets */
+#other-project-details .tech-item:nth-child(1) {
+    left: 0;
+    top: 0;
 }
 
-#other-project-details .tech-item:nth-child(n+3) {
-    transform: translateX(-30px);  /* Further shift left for subsequent items */
-    z-index: 0;  /* Lower z-index for more overlap */
+#other-project-details .tech-item:nth-child(2) {
+    left: 15px;  /* Slightly overlap with the previous item */
+    top: 10px;   /* Slight vertical overlap */
 }
 
-#other-project-details .tech-item:nth-child(n+4) {
-    transform: translateX(-45px);  /* More shift */
+#other-project-details .tech-item:nth-child(3) {
+    left: 30px;  /* Further overlap */
+    top: 20px;
+}
+
+#other-project-details .tech-item:nth-child(4) {
+    left: 45px;  /* Further overlap */
+    top: 30px;
+}
+
+/* After the first few items, all items will stack using the same offset */
+#other-project-details .tech-item:nth-child(n+5) {
+    left: 50px;  /* Start with the same position for all subsequent items */
+    top: 40px;
 }
 
 /* Tech icon style */
@@ -1657,11 +1667,13 @@ footer {
     transition: opacity 0.3s ease, bottom 0.3s ease;
 }
 
-/* Hover effect on tech items */
+/* Hover effect on tech items (bring to the front and move up/down) */
 #other-project-details .tech-item:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
+    transform: translateY(-10px); /* Move it slightly up */
+    z-index: 10; /* Bring it to the front */
+    opacity: 1; /* Keep it fully visible */
 }
+
 
 
 
