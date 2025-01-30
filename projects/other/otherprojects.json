@@ -115,7 +115,7 @@
             "videos": ["QRAPP.webm"],
             "technologies": {
                 "Android Studio": {
-                    "icon": "fa-react",
+                    "icon": "projects",
                     "description": "A JavaScript library for building user interfaces."
                 },
                 "GitHub": {
@@ -123,7 +123,7 @@
                     "description": "A programming language and computing platform."
                 },
                 "Java": {
-                    "image": "fa-brands fa-java"",  
+                    "image": "fa-brands fa-java",  
                     "description": "A NoSQL database program."
                 },
                 "draw.io": {
@@ -247,7 +247,7 @@
             "videos": [],
             "technologies": {
                 "Django": {
-                    "icon": "fa-react",
+                    "icon": "projects/icons/django.svg",
                     "description": "A JavaScript library for building user interfaces."
                 },
                 "GitHub": {
