@@ -119,7 +119,7 @@
                     "description": "A programming language and computing platform."
                 },
                 "Android Studio": {
-                    "icon": "projects/icons/androidstudio.svg",
+                    "image": "projects/icons/androidstudio.svg",
                     "description": "A JavaScript library for building user interfaces."
                 },
                 "Java": {
