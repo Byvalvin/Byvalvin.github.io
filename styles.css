@@ -930,14 +930,14 @@ footer a:hover {
 }
 
 #github-link:hover {
-    background-color: #0073e5; /* Dark background on hover */
-    border-color: #0073e5; /* Change border color on hover */
+    background-color: #0073e5; /* Darker blue on hover */
+    border-color: #005bb5; /* Darker blue border on hover */
     cursor: pointer;
 }
 
 #github-link .github-icon {
     width: 25px; /* Increase size of GitHub icon */
-    height: 19px; /* Increase size of GitHub icon */
+    height: 18px; /* Increase size of GitHub icon */
 }
 
 #resume-download {
