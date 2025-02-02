@@ -921,6 +921,24 @@ footer a:hover {
     color: #0073e6; /* Blue color on hover */
 }
 
+
+#discord-link {
+    display: inline-block;
+}
+#discord-link .discord-icon {
+    width: 50px; /* Increase size of GitHub icon */
+    height: 50px; /* Increase size of GitHub icon */
+    padding: 12px; /* Make it clickable area larger */
+    border: 2px solid #333;
+    border-radius: 50%; /* Circular button */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+#discord-link-link .discord-icon:hover {
+    background-color: #ffcc00; /* Lighter yellow */
+    border-color: #ffb300; /* Slightly darker yellow border */
+    cursor: pointer;
+}
+
 #github-link {
     display: inline-block;
 }
