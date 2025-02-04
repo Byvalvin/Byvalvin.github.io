@@ -78,7 +78,7 @@
         "bestFeatures": "Pawn's Path focuses on endgame mastery with a variety of challenges, from defensive to offensive strategies. Key features include customizable endgame setups, the ability to challenge different types of bots, multiplayer support for competitive play, and the minimalist interface that keeps players focused on strategy. The endgame scenarios are highly diverse and cater to both beginner and advanced players.",
         "rating": 4.1,
         "codeUrl": "https://github.com/Byvalvin/Chess-Unity",
-        "tryItOutUrl": "other/ChessUnity/ChessUnity.html"
+        "tryItOutUrl": "projects/pawnspath/ChessUnity.html"
     }
 
 }
