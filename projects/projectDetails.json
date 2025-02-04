@@ -30,7 +30,7 @@
         "bestFeatures": "The app’s cross-platform compatibility is a highlight. It works well on various devices, including older phones, and is accessible on both Android and iOS. It’s all about making the app as inclusive as possible.",
         "rating": 4.2,
         "codeUrl": "https://github.com/Byvalvin/AR-Animal-Identification",
-        "tryItOutLink":"https://github.com/Byvalvin/AR-Animal-Identification/releases"
+        "tryItOutUrl":"https://github.com/Byvalvin/AR-Animal-Identification/releases"
     },
     "proquest": {
         "title": "ProQuest",
@@ -58,7 +58,7 @@
         "bestFeatures": "I'm proud of several features: the multi-filtration system on the Players Page, dynamic CSS for different screen sizes, and the planner page where users can create and share their team setups. The planner page, in particular, offers a lot of fun and customization options.",
         "rating": 4.7,
         "codeUrl": "https://github.com/Byvalvin/proquest",
-        "tryItOutLink":"https://github.com/Byvalvin/proquest/blob/main/README.md"
+        "tryItOutUrl":"https://github.com/Byvalvin/proquest/blob/main/README.md"
     },
     "pawnspath": {
         "title": "Pawn’s Path: An Endgame Forge",
@@ -78,7 +78,7 @@
         "bestFeatures": "Pawn's Path focuses on endgame mastery with a variety of challenges, from defensive to offensive strategies. Key features include customizable endgame setups, the ability to challenge different types of bots, multiplayer support for competitive play, and the minimalist interface that keeps players focused on strategy. The endgame scenarios are highly diverse and cater to both beginner and advanced players.",
         "rating": 4.1,
         "codeUrl": "https://github.com/Byvalvin/Chess-Unity",
-        "tryItOutLink": "other/ChessUnity/ChessUnity.html"
+        "tryItOutUrl": "other/ChessUnity/ChessUnity.html"
     }
 
 }
