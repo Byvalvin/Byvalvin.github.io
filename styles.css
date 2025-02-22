@@ -1737,25 +1737,9 @@ border-color: #7f1e23; /* Darker burgundy border */
 }
 
 /* Stack the items horizontally with slight horizontal overlap, no vertical overlap */
-#other-project-details .tech-item:nth-child(n+1) {
-    position: absolute;
-    left: calc(30px * (n - 1)); /* Start with the first item at left: 0 */
-}
-
-#other-project-details .tech-item:nth-child(n+2) {
-    left: calc(30px * (n - 1));
-}
-
-#other-project-details .tech-item:nth-child(n+3) {
-    left: calc(30px * (n - 1));
-}
-
-#other-project-details .tech-item:nth-child(n+4) {
-    left: calc(30px * (n - 1));
-}
-
-#other-project-details .tech-item:nth-child(n+5) {
-    left: calc(30px * (n - 1));
+#other-project-details .tech-item {
+  position: absolute;
+  left: calc(30px * (var(--item-index) - 1));
 }
 
 /* Tech icon style */
