@@ -271,6 +271,38 @@
             "tryItOutLink": "https://github.com/Byvalvin/nodenet/blob/main/README.md",
             "otherDetailsPage": "#other-project-details?id=nodenet",
             "icon": "fas fa-users"  
-        }
+        },
+        {
+            "name": "SolarIQ",
+            "description": "Monitoring Solar Panel Efficiency ",
+            "images": ["solariq.JPG", "solariq-logo.JPG"],
+            "videos": ["EnergyMonitoring.webm"],
+            "technologies": {
+                "GitHub": {
+                    "image": "projects/icons/github.svg",  
+                    "description": "A programming language and computing platform."
+                },
+                "Javascript": {
+                    "image": "projects/icons/javascript.svg",
+                    "description": "A JavaScript library for building user interfaces."
+                },
+                "Gunicorn": {
+                    "image": "projects/icons/gunicorn.svg",  
+                    "description": "A programming language and computing platform."
+                },
+                "ChartJS": {
+                    "image": "projects/icons/chartjs.svg",
+                    "description": "A JavaScript library for building user interfaces."
+                },
+                "Flask": {
+                    "image": "projects/icons/flask.svg",  
+                    "description": "A NoSQL database program."
+                }
+            },
+            "githubLink": "https://github.com/Byvalvin/Sol-Eye",
+            "otherDetailsPage": "#other-project-details?id=solariq",
+            "tryItOutLink": "https://sol-eye.onrender.com/",
+            "icon": "fa-solid fa-solar-panel"  
+        },
     ]
 }
