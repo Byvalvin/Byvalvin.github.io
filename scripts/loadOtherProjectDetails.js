@@ -58,14 +58,14 @@ const loadOtherProjectDetails = (projectId) => {
                 
                 // Loop through technologies and display them, handle both icon and image
                 const techListHTML = project.technologies ? 
-                    Object.keys(project.technologies).map(tech => {
+                    Object.keys(project.technologies).map((tech, index) => {
                         const techData = project.technologies[tech];
                         let techHTML = '';
-                
+                        
                         if (techData.icon) {
                             // If icon exists, display only the icon initially
                             techHTML = `
-                                <div class="tech-item" data-tech="${tech}">
+                                <div class="tech-item" data-tech="${tech}" style="--item-index: ${index + 1}">
                                     <i class="tech-icon fa ${techData.icon || 'fa-cogs'}"></i>
                                     <span class="tooltip">${tech}</span>  <!-- Tooltip shows the technology title -->
                                 </div>
@@ -73,7 +73,7 @@ const loadOtherProjectDetails = (projectId) => {
                         } else if (techData.image) {
                             // If image exists, display only the image initially
                             techHTML = `
-                                <div class="tech-item" data-tech="${tech}">
+                                <div class="tech-item" data-tech="${tech}" style="--item-index: ${index + 1}">
                                     <img src="${techData.image}" alt="${tech}" class="tech-icon-img" />
                                     <span class="tooltip">${tech}</span>  <!-- Tooltip shows the technology title -->
                                 </div>
@@ -81,6 +81,7 @@ const loadOtherProjectDetails = (projectId) => {
                         }
                         return techHTML;
                     }).join('') : '';
+
 
                 
                 return `
