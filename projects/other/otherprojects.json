@@ -286,6 +286,10 @@
                     "image": "projects/icons/javascript.svg",
                     "description": "A JavaScript library for building user interfaces."
                 },
+                "Render": {
+                    "image": "projects/icons/render.svg",  
+                    "description": "A NoSQL database program."
+                },
                 "Gunicorn": {
                     "image": "projects/icons/gunicorn.svg",  
                     "description": "A programming language and computing platform."
