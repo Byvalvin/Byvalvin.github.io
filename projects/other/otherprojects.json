@@ -275,7 +275,7 @@
         {
             "name": "SolarIQ",
             "description": "Monitoring Solar Panel Efficiency ",
-            "images": ["solariq.JPG", "solariq-logo.JPG"],
+            "images": ["solariq.JPG", "solariq-logo.jpg"],
             "videos": ["EnergyMonitoring.webm"],
             "technologies": {
                 "GitHub": {
