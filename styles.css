@@ -654,6 +654,51 @@
     --proj-try-btn: #d5006d; /* Dark pink for "try" buttons */
 }
 
+/* Simple Dark Theme */
+[data-theme='28'] {
+    --body-bg-color: #000; /* Black for background */
+    --body-darker-text-color: #333; /* Dark gray for darker text */
+    --body-dark-text-color: #fff; /* White for text */
+    --body-light-text-color: #fff; /* White for light text */
+    --main-bg-color: #111; /* Very dark gray for main sections */
+    --nav-hv-btn-bg-color: #27ae60; /* Green for navbar hover effects */
+    --active-link-color: #27ae60; /* Green for active links */
+    --btn-main-bg-color: #27ae60; /* Green for buttons */
+    --btn-main-bg-hv-color: #2ecc71; /* Light green for button hover */
+    --hero-bg-color: #000; /* Black for hero section */
+    --proj-btn-bg-color: #2ecc71; /* Light green for project buttons */
+    --btn-bg-hv-color: #27ae60; /* Green for button hover effects */
+    --h-text-color: #27ae60; /* Green for headings */
+    --contact-bg-color: #333; /* Dark gray for contact section */
+    --tech-card-acc-bd-bg: #222; /* Dark gray for tech card backgrounds */
+    --acc-title-hv: #2ecc71; /* Light green for accordion title hover */
+    --contr-bg: #fff; /* White for container backgrounds */
+    --proj-code-link-hv-color: #27ae60; /* Green for code link hover */
+    --proj-try-btn: #2ecc71; /* Light green for "try" buttons */
+}
+
+/* Simple Light Theme */
+[data-theme='29'] {
+    --body-bg-color: #fff; /* White for background */
+    --body-darker-text-color: #333; /* Dark gray for darker text */
+    --body-dark-text-color: #000; /* Black for text */
+    --body-light-text-color: #000; /* Black for light text */
+    --main-bg-color: #f4f4f4; /* Light gray for main sections */
+    --nav-hv-btn-bg-color: #27ae60; /* Green for navbar hover effects */
+    --active-link-color: #27ae60; /* Green for active links */
+    --btn-main-bg-color: #27ae60; /* Green for buttons */
+    --btn-main-bg-hv-color: #2ecc71; /* Light green for button hover */
+    --hero-bg-color: #fff; /* White for hero section */
+    --proj-btn-bg-color: #2ecc71; /* Light green for project buttons */
+    --btn-bg-hv-color: #27ae60; /* Green for button hover effects */
+    --h-text-color: #27ae60; /* Green for headings */
+    --contact-bg-color: #eee; /* Very light gray for contact section */
+    --tech-card-acc-bd-bg: #fff; /* White for tech card backgrounds */
+    --acc-title-hv: #2ecc71; /* Light green for accordion title hover */
+    --contr-bg: #f9f9f9; /* Light gray for container backgrounds */
+    --proj-code-link-hv-color: #27ae60; /* Green for code link hover */
+    --proj-try-btn: #2ecc71; /* Light green for "try" buttons */
+}
 
 
 
