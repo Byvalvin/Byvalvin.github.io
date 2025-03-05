@@ -683,7 +683,7 @@
     --body-darker-text-color: #333; /* Dark gray for darker text */
     --body-dark-text-color: #000; /* Black for text */
     --body-light-text-color: #000; /* Black for light text */
-    --main-bg-color: #f4f4f4; /* Light gray for main sections */
+    --main-bg-color: #fff; /* Light gray for main sections */
     --nav-hv-btn-bg-color: #27ae60; /* Green for navbar hover effects */
     --active-link-color: #27ae60; /* Green for active links */
     --btn-main-bg-color: #27ae60; /* Green for buttons */
