@@ -262,29 +262,29 @@
     --proj-try-btn: #ffab91;
 }
 
-/*Retro Neon*/
-/*3*/
+/* Retro Neon */
 [data-theme='12'] {
-    --body-bg-color: #1c1c1c;
-    --body-darker-text-color: #ff00ff;
-    --body-dark-text-color: #00ffff;
-    --body-light-text-color: #bfcc00;
-    --main-bg-color: #2c2c2c;
-    --nav-hv-btn-bg-color: #ff00ff;
-    --active-link-color: #00ffff;
-    --btn-main-bg-color: #00ffff;
-    --btn-main-bg-hv-color: #ff00cc;
-    --hero-bg-color: #ff00ff;
-    --proj-btn-bg-color: #00ffff;
-    --btn-bg-hv-color: #ff00cc;
-    --h-text-color: #ff00ff;
-    --contact-bg-color: #00ffff;
-    --tech-card-acc-bd-bg: #2c2c2c;
-    --acc-title-hv: #ff00cc;
-    --contr-bg: #2c2c2c;
-    --proj-code-link-hv-color: #00ffff;
-    --proj-try-btn: #ff00ff;
+    --body-bg-color: #121212; /* Very dark background for a smoother contrast */
+    --body-darker-text-color: #ff4081; /* Slightly muted pink */
+    --body-dark-text-color: #33b5b5; /* Softer cyan */
+    --body-light-text-color: #ffee58; /* Gentle neon yellow for better readability */
+    --main-bg-color: #212121; /* A deep, dark grayish background */
+    --nav-hv-btn-bg-color: #ff4081; /* Soft neon pink on hover */
+    --active-link-color: #33b5b5; /* Cool cyan for active links */
+    --btn-main-bg-color: #33b5b5; /* Muted cyan for button backgrounds */
+    --btn-main-bg-hv-color: #ff80ab; /* Light pink hover on buttons */
+    --hero-bg-color: #212121; /* Warm pink for hero section */
+    --proj-btn-bg-color: #33b5b5; /* Cyan buttons to complement other elements */
+    --btn-bg-hv-color: #ff80ab; /* Soft pink hover effect */
+    --h-text-color: #ff4081; /* Light pink for headlines */
+    --contact-bg-color: #33b5b5; /* Cyan for the contact section */
+    --tech-card-acc-bd-bg: #212121; /* Subtle dark gray background for tech cards */
+    --acc-title-hv: #ff80ab; /* Soft pink hover for accordion titles */
+    --contr-bg: #212121; /* Dark gray background for contrast */
+    --proj-code-link-hv-color: #33b5b5; /* Soft cyan for code link hover */
+    --proj-try-btn: #ff80ab; /* Light pink try buttons */
 }
+
 
 
 /*Earthly Tones*/
