@@ -1,6 +1,63 @@
 {
     "projects": [
         {
+            "name": "ChopAPI",
+            "description": "A comprehensive API for African and Carribean cuisine",
+            "images": [],
+            "videos": [],
+            "technologies": {
+                "GitHub": {
+                    "image": "projects/icons/github.svg",  
+                    "description": "A programming language and computing platform."
+                },
+                "Typescript": {
+                    "image": "projects/icons/typescript.svg",
+                    "description": "A JavaScript library for building user interfaces."
+                },
+                "Visual Studio Code": {
+                    "image": "projects/icons/visualstudiocode.svg",
+                    "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine."
+                },
+                "Vercel": {
+                    "image": "projects/icons/vercel.svg",  
+                    "description": "A NoSQL database program."
+                },
+                "npm":{
+                    "image":"projects/icons/npm.svg"
+                },
+                "Node": {
+                    "image": "projects/icons/node.svg",  
+                    "description": "A programming language and computing platform."
+                },
+                "Express": {
+                    "image": "projects/icons/express.svg",
+                    "description": "A JavaScript library for building user interfaces."
+                },
+                "PostgreSQL": {
+                    "image": "projects/icons/postresql.svg",
+                    "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine."
+                },
+                "Supabase": {
+                    "image": "projects/icons/supabase.svg",  
+                    "description": "A NoSQL database program."
+                },
+                "Redis":{
+                    "image":"projects/icons/redis.svg"
+                },
+                "Jest": {
+                    "image": "projects/icons/jest.svg",
+                    "description": "A JavaScript library for building user interfaces."
+                },
+                "Sequelize": {
+                    "image": "projects/icons/sequelize.svg",
+                    "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine."
+                }
+            },
+            "githubLink": "https://github.com/Byvalvin/ChopAPI",
+            "otherDetailsPage": "#other-project-details?id=chopAPI",
+            "icon": "fa-solid fa-bowl-food"
+        },
+        {
             "name": "StarCraft II Stalker Rush Bot",
             "description": "A C++ bot designed for a Protoss Stalker Rush strategy. 70% win rate against CheatMoney and CheatVision difficulties, and around 45% against CheatInsane.",
             "images": ["FiringSquad.jpg", "FiringSquad2.jpg", "StalkerRally.jpg", "WarpGatesReady.jpg"],
