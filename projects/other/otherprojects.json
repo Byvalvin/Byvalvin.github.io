@@ -34,7 +34,7 @@
                     "description": "A JavaScript library for building user interfaces."
                 },
                 "PostgreSQL": {
-                    "image": "projects/icons/postresql.svg",
+                    "image": "projects/icons/postgresql.svg",
                     "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine."
                 },
                 "Supabase": {
@@ -55,7 +55,7 @@
             },
             "githubLink": "https://github.com/Byvalvin/ChopAPI",
             "otherDetailsPage": "#other-project-details?id=chopAPI",
-            "icon": "fas fa-solid fa-bowl-food"
+            "icon": "fa-solid fa-seedling"
         },
         {
             "name": "StarCraft II Stalker Rush Bot",
