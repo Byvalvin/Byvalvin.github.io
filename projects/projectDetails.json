@@ -68,7 +68,9 @@
         "technologies": {
             "Unity": "Chess GUI and other Graphics and UI related elements",
             "C#": "Business Logic, Algorithms and Data processing",
-            "Python": "Training RL/ML models for bots",
+            "Python": "Data processing and preparation",
+            "Selenium":"Web scraping master - grandmaster chess games",
+            "Pytorch": "Training RL/ML models for bots",
             "draw":"Creating sprites and other assets",
             "GitHub": "Used for version control and project management."
         },
