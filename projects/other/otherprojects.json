@@ -55,7 +55,7 @@
             },
             "githubLink": "https://github.com/Byvalvin/ChopAPI",
             "otherDetailsPage": "#other-project-details?id=chopAPI",
-            "icon": "fa-solid fa-bowl-food"
+            "icon": "fas fa-solid fa-bowl-food"
         },
         {
             "name": "StarCraft II Stalker Rush Bot",
