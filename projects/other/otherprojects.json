@@ -44,6 +44,9 @@
                 "Redis":{
                     "image":"projects/icons/redis.svg"
                 },
+                "Upstash":{
+                    "image":"projects/icons/upstash.svg"
+                },
                 "Jest": {
                     "image": "projects/icons/jest.svg",
                     "description": "A JavaScript library for building user interfaces."
