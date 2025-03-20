@@ -67,20 +67,16 @@
             "videos": ["AttackingVideo.webm", "ScoutRecordingMiniMap.webm"],
             "technologies": {
                 "GitHub": {
-                    "image": "projects/icons/github.svg",  
-                    "description": "A programming language and computing platform."
+                    "image": "projects/icons/github.svg"
                 },
                 "C++": {
-                    "image": "projects/icons/c-plus-plus.svg",
-                    "description": "A JavaScript library for building user interfaces."
+                    "image": "projects/icons/c-plus-plus.svg"
                 },
                 "Visual Studio Code": {
-                    "image": "projects/icons/visualstudiocode.svg",
-                    "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine."
+                    "image": "projects/icons/visualstudiocode.svg"
                 },
                 "bash": {
-                    "image": "projects/icons/bash.svg",  
-                    "description": "A NoSQL database program."
+                    "image": "projects/icons/bash.svg"
                 },
                 "Starcraft II: Wings of Liberty":{
                     "image":"projects/icons/starcraft.svg"
@@ -97,16 +93,13 @@
             "videos": [],
             "technologies": {
                 "GitHub": {
-                    "image": "projects/icons/github.svg",  
-                    "description": "A NoSQL database program."
+                    "image": "projects/icons/github.svg"
                 },
                 "Javascript": {
-                    "image": "projects/icons/javascript.svg",
-                    "description": "A JavaScript library for building user interfaces."
+                    "image": "projects/icons/javascript.svg"
                 },
                 "Python": {
-                    "image": "projects/icons/python.svg",  
-                    "description": "A NoSQL database program."
+                    "image": "projects/icons/python.svg"
                 }
             },
             "githubLink": "https://github.com/Byvalvin/Editor/tree/web-version",
