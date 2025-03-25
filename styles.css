@@ -970,8 +970,7 @@ footer a:hover {
 background-color: #6f42c1; /* Deep purple */
 border-color: #5a34a3; /* Darker purple border */
 
-background-color: #f77f00; /* Muted orange */
-border-color: #e86b00; /* Darker orange border */
+
 
 background-color: #1e6f5c; /* Teal */
 border-color: #155a47; /* Darker teal border */
@@ -1061,6 +1060,23 @@ border-color: #7f1e23; /* Darker burgundy border */
     background-color: #28a745; /* Green background on hover */
     border-color: #218838; /* Darker green border on hover */
     cursor: pointer; /* Change cursor to pointer */
+}
+
+#credly-link {
+    display: inline-block;
+}
+#credly-link .credly-icon {
+    width: 50px; /* Increase size of GitHub icon */
+    height: 50px; /* Increase size of GitHub icon */
+    padding: 12px; /* Make it clickable area larger */
+    border: 2px solid #333;
+    border-radius: 50%; /* Circular button */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+#credly-link .credly-icon:hover {
+    background-color: #f77f00; /* Muted orange */
+    border-color: #e86b00; /* Darker orange border */
+    cursor: pointer;
 }
 
 .separator {
