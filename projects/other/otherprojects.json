@@ -58,6 +58,7 @@
             },
             "githubLink": "https://github.com/Byvalvin/ChopAPI",
             "otherDetailsPage": "#other-project-details?id=chopAPI",
+            "tryItOutLink": "https://chop-api-nine.vercel.app/chop/api/docs",
             "icon": "fa-solid fa-seedling"
         },
         {
