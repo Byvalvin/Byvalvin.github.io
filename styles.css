@@ -2002,14 +2002,6 @@ border-color: #7f1e23; /* Darker burgundy border */
     justify-content: center;
     gap: 10px;
     margin-bottom: 2px;
-    max-height: 80px; /* Limit header height */
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.timeline-description {
-    max-height: 120px; /* Limit description height */
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .timeline-logo {
@@ -2019,41 +2011,20 @@ border-color: #7f1e23; /* Darker burgundy border */
     border-radius: 50%;
 }
 
-/* .timeline-content {
+.timeline-content {
     flex: 2;
     padding: 20px;
     border: 1px solid var(--contr-bg);
-    border-radius: 12px; 
+    border-radius: 12px; /* Increased border-radius for a softer look */
     background-color: var(--body-bg-color);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
     text-align: center;
-    margin: 0 auto; /
-    margin-right: 80px; 
-    margin-left: 80px;  
-    box-sizing: border-box;
-} */
-.timeline-content {
-    flex: 1; /* Ensures each timeline item takes up equal space */
-    margin: 0; /* Remove the margin for individual items */
-    max-width: 300px; /* Limit width per item */
-    padding: 20px;
-    border: 1px solid var(--contr-bg);
-    border-radius: 12px;
-    background-color: var(--body-bg-color);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    text-align: center;
-    margin: 0 auto;
-    margin-right: 80px;
-    margin-left: 80px;
-    box-sizing: border-box;
-
-    min-height: 250px; /* Ensures a minimum height */
-    max-height: 400px; /* Adjust max height if content is too long */
-    overflow: hidden; /* Avoid content overflow */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Distribute space inside the box */
+    margin: 0 auto; /* Center content */
+    margin-right: 80px; /* Add margin to the right to prevent content from being covered by the right button */
+    margin-left: 80px;  /* Add margin to the left to prevent content from being covered by the left button */
+    box-sizing: border-box; /* Ensure padding and border are included in the width and height */
 }
+
 
 /* Timeline Dots Styling */
 .timeline-dots {
