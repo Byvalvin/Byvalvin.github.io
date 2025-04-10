@@ -22,15 +22,15 @@
     },
     {
         "date": "2021",
-        "title": "Research Assistant",
-        "description": "Laboratory of Intelligent Manufacturing Design and Automation",
+        "title": "Laboratory of Intelligent Manufacturing Design and Automation",
+        "description": "Research Assistant",
         "logo": "about/images/limda.jpg",
         "details": "Developed iOS and Android applications, applied machine learning models, and established frameworks for image classification."
     },
     {
         "date": "2023",
-        "title": "Product Owner",
-        "description": "Aquatic Biosphere Project",
+        "title": "Aquatic Biosphere Project",
+        "description": "Product Owner",
         "logo": "about/images/abp.webp",
         "details": "Defined product requirements, prioritized features, designed educational games, and developed an organism identification system using OpenCV."
     }
