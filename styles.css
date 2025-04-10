@@ -1971,7 +1971,7 @@ border-color: #7f1e23; /* Darker burgundy border */
 
 /* Horizontal Timeline Container */
 /* Timeline Wrapper Styling */
-/* .timeline-wrapper {
+.timeline-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1991,30 +1991,8 @@ border-color: #7f1e23; /* Darker burgundy border */
     flex: 1;
     padding: 10px; 
     margin: 0 40px;
-} */
+} 
 
-.timeline-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Adjust alignment */
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    position: relative;
-    overflow: hidden; /* Ensure overflow is hidden for better control */
-}
-
-.timeline {
-    display: flex;
-    flex-direction: row; /* Display items in a row */
-    align-items: flex-start;
-    overflow: hidden;
-    position: relative;
-    flex: 1;
-    gap: 20px; /* Adjust gap between items */
-    margin: 0 40px;
-    padding: 10px;
-}
 
 
 /* Timeline Header and Logo */
