@@ -3,12 +3,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     const projectData = [
         {
-            id: 'aranimal',
-            title: 'AR Animal Identification',
-            description: 'An educational and interactive app designed to inform and teach users about the Albertan Biosphere.',
-            images: ['aranimal2.jpg'],
-            detailsPage: '#project-details?id=aranimal'
+            id: 'slate',
+            title: "Slate",
+            description: 'Your Personal Fitness guide',
+            images: ['slate.png'],
+            detailsPage: '#project-details?id=slate'
         },
+
         {
             id: 'proquest',
             title: 'ProQuest',
@@ -33,6 +34,13 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'A QR Code Hunting App.',
             images: ['qrapp9.jpg'],
             detailsPage: '#project-details?id=qrapp'
+        },
+        {
+            id: 'aranimal',
+            title: 'AR Animal Identification',
+            description: 'An educational and interactive app designed to inform and teach users about the Albertan Biosphere.',
+            images: ['aranimal2.jpg'],
+            detailsPage: '#project-details?id=aranimal'
         },
     ];
 
