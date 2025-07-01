@@ -81,6 +81,35 @@
         "rating": 4.1,
         "codeUrl": "https://github.com/Byvalvin/Chess-Unity",
         "tryItOutUrl": "projects/pawnspath/ChessUnity.html"
+    },
+   "slate": {
+        "title": "Slate: Your Personal Fitness Guide",
+        "description": "A mobile app that acts as a Personal Guide, Progress Tracker, and Accountability Partner that empowers users to create personalized fitness programs tailored to their goals.",
+        "images": ["slate2.jpg", "slate3.jpg", "slate4.jpg", "slate5.jpg"],
+        "videos": [],
+        "technologies": {
+            "React Native": "Handles UI components and overall mobile application interface.",
+            "Typescript": "Frontend; Manages business logic, algorithms, and data processing.",
+            "Javascript": "Backend; Used for additional data handling and integration logic.",
+            "Expo": "Framework used for app development and deployment.",
+            "Express": "Manages server-side logic and API endpoints.",
+            "MongoDB": "Stores user profiles, fitness plans, and progress data.",
+            "Visual Studio Code": "Primary development environment for coding and version control.",
+            "Vercel": "Used for hosting front-end services and deployments.",
+            "OpenAI": "Powers intelligent features like chat support or personalized suggestions.",
+            "Stripe": "Handles secure payment processing for premium features.",
+            "GoogleAPIs": "Google OAuth2 Integration.",
+            "GitHub": "Used for version control and project collaboration."
+        },
+        "contributions": [
+            "Backend Setup and Management",
+            "Integration with Google Cloud Services",
+            "Deployment Strategy and Management"
+        ],
+        "bestFeatures": "Enables anyone to build a personalized fitness plan, helping users stay motivated, track their progress, and achieve their health goals.",
+        "rating": 4.3,
+        "codeUrl": "https://github.com/Byvalvin/SLATE-APP",
+        "tryItOutUrl": "https://github.com/Byvalvin/SLATE-APP/releases"
     }
 
 }

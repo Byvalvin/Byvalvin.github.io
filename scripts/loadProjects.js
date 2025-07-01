@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 'slate',
             title: "Slate",
-            description: 'Your Personal Fitness guide',
+            description: 'A Personal Fitness guide, Progress Tracker and that uses ',
             images: ['slate.png'],
             detailsPage: '#project-details?id=slate'
         },
