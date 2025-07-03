@@ -162,7 +162,7 @@
     {
         "name": "Django",
         "type": "framework",
-        "category": "Backend",
+        "category": "Fullstack",
         "proficiency": 80,
         "duration": 60,
         "projectUrl": ""
@@ -330,7 +330,7 @@
 {
   "name": "Next.js",
   "type": "framework",
-  "category": "Frontend",
+  "category": "Fullstack",
   "proficiency": 70,
   "duration": 68,
   "projectUrl": ""
