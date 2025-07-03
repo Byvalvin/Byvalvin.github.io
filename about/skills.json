@@ -310,5 +310,102 @@
         "proficiency": 40,
         "duration": 20,
         "projectUrl": ""
-    }
+    },
+    {
+  "name": "Expo",
+  "type": "framework",
+  "category": "Frontend",
+  "proficiency": 70,
+  "duration": 65,
+  "projectUrl": "https://byvalvin.github.io/#projectDetails?id=slate"
+},
+{
+  "name": "React Native",
+  "type": "framework",
+  "category": "Frontend",
+  "proficiency": 75,
+  "duration": 70,
+  "projectUrl": "https://byvalvin.github.io/#projectDetails?id=slate"
+},
+{
+  "name": "Next.js",
+  "type": "framework",
+  "category": "Frontend",
+  "proficiency": 70,
+  "duration": 68,
+  "projectUrl": ""
+},
+{
+  "name": "Jest",
+  "type": "library",
+  "category": "Testing",
+  "proficiency": 65,
+  "duration": 60,
+  "projectUrl": "https://byvalvin.github.io/#otherProjectDetails?id=chopAPI"
+},
+{
+  "name": "Sequelize",
+  "type": "library",
+  "category": "Database",
+  "proficiency": 70,
+  "duration": 66,
+  "projectUrl": "https://byvalvin.github.io/#otherProjectDetails?id=chopAPI"
+},
+{
+  "name": "Redis",
+  "type": "technology",
+  "category": "Database",
+  "proficiency": 65,
+  "duration": 60,
+  "projectUrl": "https://byvalvin.github.io/#otherProjectDetails?id=chopAPI"
+},
+{
+  "name": "Stripe",
+  "type": "technology",
+  "category": "Payments",
+  "proficiency": 75,
+  "duration": 72,
+  "projectUrl": "https://byvalvin.github.io/#projectDetails?id=slate"
+},
+{
+  "name": "Upstash",
+  "type": "technology",
+  "category": "Cloud Services",
+  "proficiency": 60,
+  "duration": 60,
+  "projectUrl": "https://byvalvin.github.io/#otherProjectDetails?id=chopAPI"
+},
+{
+  "name": "Supabase",
+  "type": "technology",
+  "category": "Database & Auth",
+  "proficiency": 70,
+  "duration": 68,
+  "projectUrl": "https://byvalvin.github.io/#otherProjectDetails?id=chopAPI"
+},
+{
+  "name": "Vercel",
+  "type": "technology",
+  "category": "Deployment",
+  "proficiency": 75,
+  "duration": 70,
+  "projectUrl": ""
+},
+{
+  "name": "Google Cloud Console",
+  "type": "platform",
+  "category": "Cloud Services",
+  "proficiency": 65,
+  "duration": 62,
+  "projectUrl": "https://byvalvin.github.io/#projectDetails?id=slate"
+},
+{
+  "name": "Cloudinary",
+  "type": "technology",
+  "category": "Media Management",
+  "proficiency": 70,
+  "duration": 64,
+  "projectUrl": "https://byvalvin.github.io/#projectDetails?id=slate"
+}
+
 ]

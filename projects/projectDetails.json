@@ -1,4 +1,31 @@
 {
+    "qrapp": {
+        "title": "QRapp",
+        "description": "QRapp is all about making QR code hunting fun and social! You can collect codes, compete with friends for top spots on various leaderboards, or just enjoy spotting codes everywhere you go. Whether you're into casual collecting or serious competition, there's something here for you.",
+        "images": ["qrapp1.jpg", "qrapp2.jpg", "qrapp7.jpg", "qrapp4.jpg", "qrapp5.jpg"],
+        "videos": ["QRAPP.webm"],
+        "technologies": {
+            "Android Studio": "Used for frontend development and connecting to the backend.",
+            "Figma": "For designing wireframes and storyboards.",
+            "Firebase": "Handles data storage and management.",
+            "Java": "The programming language used.",
+            "Google Maps API": "Manages location data.",
+            "GitHub": "Used for version control, documentation, and task management."
+        },
+        "contributions": [
+            "Documented all work on GitHub and the GitHub wiki.",
+            "Kept minutes for all meetings.",
+            "Designed storyboards for use cases and user experiences.",
+            "Developed the map feature, including its UI/UX design.",
+            "Integrated Google Maps API.",
+            "Developed the ranking system and leaderboard pages.",
+            "Planned and set up app layout and navigation."
+        ],
+        "bestFeatures": "The app's user interface and performance are top-notch. We put a lot of effort into making it visually appealing and engaging. It's definitely one of the most beautifully designed apps I've worked on.",
+        "rating": 4.0,
+        "codeUrl": "https://github.com/Byvalvin/QRAPP"
+    },
+
     "aranimal": {
         "title": "AR Animal Identification",
         "description": "This app is part of a project by Aquatic Biosphere, aimed at raising awareness and funds for the Albertan Biosphere. It pairs with a vinyl sticker showcasing local organisms. Users can identify and learn about these creatures through interactive games and activities. The app also features easy customization for admins to update information.",
@@ -32,6 +59,7 @@
         "codeUrl": "https://github.com/Byvalvin/AR-Animal-Identification",
         "tryItOutUrl":"https://github.com/Byvalvin/AR-Animal-Identification/releases"
     },
+
     "proquest": {
         "title": "ProQuest",
         "description": "ProQuest helps agents find the best teams and scouts find top players. Users can add players and teams, track performance, and test out different tactics in the planner. It’s all about showcasing talent and strategic planning.",
@@ -60,6 +88,7 @@
         "codeUrl": "https://github.com/Byvalvin/proquest",
         "tryItOutUrl":"https://github.com/Byvalvin/proquest/blob/main/README.md"
     },
+
     "pawnspath": {
         "title": "Pawn’s Path: An Endgame Forge",
         "description": "A tactical chess playground designed to help players hone their skills by focusing on endgame scenarios. Players can learn, practice, and play. The game is built with a minimalist style to focus on the strategy and decisions behind each move.",
@@ -82,6 +111,7 @@
         "codeUrl": "https://github.com/Byvalvin/Chess-Unity",
         "tryItOutUrl": "projects/pawnspath/ChessUnity.html"
     },
+    
    "slate": {
         "title": "Slate: Your Personal Fitness Guide",
         "description": "A mobile app that acts as a Personal Guide, Progress Tracker, and Accountability Partner that empowers users to create personalized fitness programs tailored to their goals.",
