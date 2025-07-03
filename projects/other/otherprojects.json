@@ -394,7 +394,7 @@
                 "description": "Manages project dependencies."
                 },
                 "Cybera": {
-                "image": "projects/icons/cloud.svg",
+                "image": "projects/icons/cybera.svg",
                 "description": "Provides cloud infrastructure and services."
                 },
                 "Uvicorn": {
@@ -415,7 +415,7 @@
             "tryItOutLink": "https://github.com/Byvalvin/AR-Animal-Identification/releases",
             "icon": "fa-solid fa-paw"
         },
-        
+
         {
             "name": "ProQuest",
             "description": "ProQuest helps agents find the best teams and scouts find top players. Users can add players and teams, track performance, and test out different tactics in the planner. It’s all about showcasing talent and strategic planning.",
@@ -423,7 +423,7 @@
             "videos": ["proquest.mp4"],
             "technologies": {
                 "Visual Studio Code": {
-                "image": "projects/icons/vscode.svg",
+                "image": "projects/icons/visualstudiocode.svg",
                 "description": "IDE for coding."
                 },
                 "Figma": {
@@ -431,7 +431,7 @@
                 "description": "Used for wireframing, prototyping, and storyboarding."
                 },
                 "TailwindCSS": {
-                "image": "projects/icons/tailwind.svg",
+                "image": "projects/icons/tailwindcss.svg",
                 "description": "A CSS framework for styling and design."
                 },
                 "Vite": {
