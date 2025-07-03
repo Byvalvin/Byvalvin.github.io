@@ -9,14 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
             images: ['slate.png'],
             detailsPage: '#project-details?id=slate'
         },
-
         {
-            id: 'proquest',
-            title: 'ProQuest',
-            description: 'A site for Agents and Scouts to find the best teams for their players and the best players for their teams.',
-            images: ['proquest1.png'],
-            detailsPage: '#project-details?id=proquest'
+            id: 'chop',
+            title: 'Chop',
+            description: 'A website for recipes of the greatest African and Afro-Carribean Cuisine.',
+            images: ['chop1.jpg'],
+            detailsPage: '#project-details?id=chop'
         },
+
         {
             id: 'pawnspath',
             title: "Pawn's Path: An Endgame Forge",
@@ -41,6 +41,13 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'An educational and interactive app designed to inform and teach users about the Albertan Biosphere.',
             images: ['aranimal2.jpg'],
             detailsPage: '#project-details?id=aranimal'
+        },
+        {
+            id: 'proquest',
+            title: 'ProQuest',
+            description: 'A site for Agents and Scouts to find the best teams for their players and the best players for their teams.',
+            images: ['proquest1.png'],
+            detailsPage: '#project-details?id=proquest'
         },
     ];
 
