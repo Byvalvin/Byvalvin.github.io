@@ -414,6 +414,71 @@
             "otherDetailsPage": "#other-project-details?id=aranimal",
             "tryItOutLink": "https://github.com/Byvalvin/AR-Animal-Identification/releases",
             "icon": "fa-solid fa-paw"
+        },
+        
+        {
+            "name": "ProQuest",
+            "description": "ProQuest helps agents find the best teams and scouts find top players. Users can add players and teams, track performance, and test out different tactics in the planner. It’s all about showcasing talent and strategic planning.",
+            "images": ["proquest1.png", "proquest2.png", "proquest3.png"],
+            "videos": ["proquest.mp4"],
+            "technologies": {
+                "Visual Studio Code": {
+                "image": "projects/icons/vscode.svg",
+                "description": "IDE for coding."
+                },
+                "Figma": {
+                "image": "projects/icons/figma.svg",
+                "description": "Used for wireframing, prototyping, and storyboarding."
+                },
+                "TailwindCSS": {
+                "image": "projects/icons/tailwind.svg",
+                "description": "A CSS framework for styling and design."
+                },
+                "Vite": {
+                "image": "projects/icons/vite.svg",
+                "description": "A build tool for setting up React projects."
+                },
+                "React": {
+                "image": "projects/icons/react.svg",
+                "description": "JavaScript library for building user interfaces."
+                },
+                "Express": {
+                "image": "projects/icons/express.svg",
+                "description": "Backend framework for Node.js."
+                },
+                "MongoDB": {
+                "image": "projects/icons/mongodb.svg",
+                "description": "NoSQL database for managing data."
+                },
+                "Javascript": {
+                "image": "projects/icons/javascript.svg",
+                "description": "The programming language used."
+                },
+                "Node": {
+                "image": "projects/icons/node.svg",
+                "description": "Runtime environment for executing JavaScript outside the browser."
+                },
+                "npm": {
+                "image": "projects/icons/npm.svg",
+                "description": "Package manager for Node.js."
+                },
+                "Render": {
+                "image": "projects/icons/render.svg",
+                "description": "Cloud platform for serving and deploying APIs."
+                },
+                "Netlify": {
+                "image": "projects/icons/netlify.svg",
+                "description": "Deploys frontend applications and manages web projects."
+                },
+                "GitHub": {
+                "image": "projects/icons/github.svg",
+                "description": "Version control for source code, documentation, and task management."
+                }
+            },
+            "githubLink": "https://github.com/Byvalvin/proquest",
+            "otherDetailsPage": "#other-project-details?id=proquest",
+            "tryItOutLink": "https://github.com/Byvalvin/proquest/blob/main/README.md",
+            "icon": "fa-solid fa-futbol"
         }
 
     ]
