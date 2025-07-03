@@ -188,10 +188,6 @@
                     "image": "projects/icons/draw.svg",  
                     "description": "A NoSQL database program."
                 },
-                "Figma": {
-                    "image": "projects/icons/figma.svg",  
-                    "description": "A NoSQL database program."
-                },
                 "Firebase": {
                     "image": "projects/icons/firebase.svg",  
                     "description": "A NoSQL database program."
@@ -361,6 +357,64 @@
             "otherDetailsPage": "#other-project-details?id=solariq",
             "tryItOutLink": "https://github.com/Byvalvin/Sol-Eye/blob/main/doc/how-to-use.md",
             "icon": "fa-solid fa-solar-panel"  
+        },
+
+        {
+            "name": "ARAnimal",
+            "description": "AR Animal Identification",
+            "images": ["aranimal1.jpg", "aranimal3.jpg", "aranimal4.jpg", "aranimal5.jpg", "aranimal6.jpg"],
+            "videos": ["ARANIMAL.webm"],
+            "technologies": {
+                "Android Studio": {
+                "image": "projects/icons/androidstudio.svg",
+                "description": "IDE for development."
+                },
+                "Figma": {
+                "image": "projects/icons/figma.svg",
+                "description": "Used for wireframing and storyboarding."
+                },
+                "Flutter": {
+                "image": "projects/icons/flutter.svg",
+                "description": "For frontend development and connecting to the backend."
+                },
+                "FastAPI": {
+                "image": "projects/icons/fastapi.svg",
+                "description": "Creates API endpoints for image recognition and database interactions."
+                },
+                "PostgreSQL": {
+                "image": "projects/icons/postgresql.svg",
+                "description": "Data storage and management."
+                },
+                "OpenCV": {
+                "image": "projects/icons/opencv.svg",
+                "description": "For image processing and identification."
+                },
+                "Poetry": {
+                "image": "projects/icons/poetry.svg",
+                "description": "Manages project dependencies."
+                },
+                "Cybera": {
+                "image": "projects/icons/cloud.svg",
+                "description": "Provides cloud infrastructure and services."
+                },
+                "Uvicorn": {
+                "image": "projects/icons/uvicorn.svg",
+                "description": "Serves and deploys APIs for image recognition and user interactions."
+                },
+                "GitHub": {
+                "image": "projects/icons/github.svg",
+                "description": "Handles version control, documentation, and task management."
+                },
+                "VuePress": {
+                "image": "projects/icons/vuepress.svg",
+                "description": "Used for creating a website with full project documentation."
+                }
+            },
+            "githubLink": "https://github.com/Byvalvin/AR-Animal-Identification",
+            "otherDetailsPage": "#other-project-details?id=aranimal",
+            "tryItOutLink": "https://github.com/Byvalvin/AR-Animal-Identification/releases",
+            "icon": "fa-solid fa-paw"
         }
+
     ]
 }

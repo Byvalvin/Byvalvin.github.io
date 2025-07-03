@@ -94,6 +94,8 @@
             "Expo": "Framework used for app development and deployment.",
             "Express": "Manages server-side logic and API endpoints.",
             "MongoDB": "Stores user profiles, fitness plans, and progress data.",
+            "Node": "Runtime environment for executing JavaScript outside the browser.",
+            "npm": "Package manager for Node.js.",
             "Visual Studio Code": "Primary development environment for coding and version control.",
             "Vercel": "Used for hosting front-end services and deployments.",
             "OpenAI": "Powers intelligent features like chat support or personalized suggestions.",
