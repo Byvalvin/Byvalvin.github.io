@@ -149,7 +149,7 @@
         "category": "Frontend",
         "proficiency": 80,
         "duration": 60,
-        "projectUrl": "https://byvalvin.github.io/#projectDetails?id=proquest"
+        "projectUrl": "https://byvalvin.github.io/#projectDetails?id=chop"
     },
     {
         "name": "Express",
@@ -333,7 +333,7 @@
   "category": "Fullstack",
   "proficiency": 70,
   "duration": 68,
-  "projectUrl": ""
+  "projectUrl": "https://byvalvin.github.io/#projectDetails?id=chop"
 },
 {
   "name": "Jest",
@@ -389,7 +389,7 @@
   "category": "Deployment",
   "proficiency": 75,
   "duration": 70,
-  "projectUrl": ""
+  "projectUrl": "https://byvalvin.github.io/#projectDetails?id=chop"
 },
 {
   "name": "Google Cloud Console",

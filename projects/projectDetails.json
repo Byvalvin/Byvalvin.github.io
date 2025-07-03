@@ -111,7 +111,30 @@
         "codeUrl": "https://github.com/Byvalvin/Chess-Unity",
         "tryItOutUrl": "projects/pawnspath/ChessUnity.html"
     },
-    
+
+    "chop": {
+        "title": "Chop",
+        "description": "Chop is a personal, cultural project and food archive that showcases African and Afro-Caribbean cuisine through a clean and engaging frontend. Users can browse, search, filter, and explore a variety of recipes by category, nation, or ingredients — all with the goal of celebrating the food that often goes unseen in mainstream recipe apps.",
+        "images": ["chop1.png"], 
+        "videos": [],
+        "technologies": {
+            "Visual Studio Code": "IDE for development.",
+            "TailwindCSS": "Utility-first CSS framework used for styling the frontend.",
+            "Vercel": "Hosting and deployment platform used to launch the frontend.",
+            "NextJS": "React framework for building optimized frontend pages with routing.",
+            "Javascript": "Used to implement functionality and dynamic behavior.",
+            "Node": "Used in the tooling and build process (via Next.js and npm).",
+            "npm": "Package manager used to manage frontend dependencies."
+        },
+        "contributions": [
+            "Solo"
+        ],
+        "bestFeatures": "Some highlights include the cultural storytelling on the About page, a clean layout for browsing and searching recipes, and the ability to filter recipes by nation or category. The design leans into warmth and personal heritage while remaining user-friendly. Planned features like PDF downloads and a sitemap make the platform more useful and navigable.",
+        "rating": 4.6,
+        "codeUrl": "https://github.com/Byvalvin/chop",
+        "tryItOutUrl": "https://chop-xi.vercel.app/"
+    },
+
    "slate": {
         "title": "Slate: Your Personal Fitness Guide",
         "description": "A mobile app that acts as a Personal Guide, Progress Tracker, and Accountability Partner that empowers users to create personalized fitness programs tailored to their goals.",

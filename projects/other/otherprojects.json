@@ -360,9 +360,9 @@
         },
 
         {
-            "name": "ARAnimal",
-            "description": "AR Animal Identification",
-            "images": ["aranimal1.jpg", "aranimal3.jpg", "aranimal4.jpg", "aranimal5.jpg", "aranimal6.jpg"],
+            "name": "AR Animal Identification",
+            "description": "This app is part of a project by Aquatic Biosphere, aimed at raising awareness and funds for the Albertan Biosphere. It pairs with a vinyl sticker showcasing local organisms. Users can identify and learn about these creatures through interactive games and activities. ",
+            "images": ["aranimal1.jpg", "aranimal3.jpg", "aranimal5.jpg", "aranimal6.jpg"],
             "videos": ["ARANIMAL.webm"],
             "technologies": {
                 "Android Studio": {
