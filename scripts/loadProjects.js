@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 'chop',
             title: 'Chop',
             description: 'A website for recipes of the greatest African and Afro-Carribean Cuisine.',
-            images: ['chop1.jpg'],
+            images: ['chop1.png'],
             detailsPage: '#project-details?id=chop'
         },
 
