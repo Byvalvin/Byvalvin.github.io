@@ -1,6 +1,6 @@
 const categories = {
     language: ['General-Purpose', 'Specialised', 'Math & Data Analysis'],
-    framework: ['Frontend', 'Backend', 'Other'],
+    framework: ['Frontend', 'Backend', 'Fullstack', 'Other'],
     technology: ['DevTools', 'Database', 'DevOps', 'Other']
 };
 
