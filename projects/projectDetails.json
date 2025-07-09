@@ -154,6 +154,7 @@
             "OpenAI": "Powers intelligent features like chat support or personalized suggestions.",
             "Stripe": "Handles secure payment processing for premium features.",
             "GoogleAPIs": "Google OAuth2 Integration.",
+            "Cloudinary": "Media Management and storage",
             "GitHub": "Used for version control and project collaboration."
         },
         "contributions": [
