@@ -84,10 +84,23 @@ function createSkillBar(skill) {
     const skillHeader = document.createElement('div');
     skillHeader.classList.add('skill-header');
 
-    const skillName = document.createElement('div');
+    const skillInfo = document.createElement('div');
+    skillInfo.classList.add('skill-info');
+
+    const skillName = document.createElement('span');
     skillName.classList.add('skill-name');
     skillName.textContent = skill.name;
-    skillHeader.appendChild(skillName);
+
+    const icon = document.createElement('img');
+    icon.classList.add('skill-icon');
+    icon.src = `../projects/icons/${skill.name.toLowerCase().replace(/\s+/g, '-')}.svg`;
+    icon.alt = `${skill.name} icon`;
+
+    skillInfo.appendChild(skillName);
+    skillInfo.appendChild(icon);
+
+    skillHeader.appendChild(skillInfo);
+
 
     if (skill.projectUrl) {
         let button = null;
