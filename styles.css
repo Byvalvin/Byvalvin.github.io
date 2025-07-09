@@ -2213,12 +2213,24 @@ border-color: #7f1e23; /* Darker burgundy border */
     justify-content: space-between; /* Align name and button to opposite ends */
     margin-bottom: 10px; /* Space below header */
 }
-
+.skill-info {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between name and icon */
+    flex-grow: 1; /* Make the name + icon take up all available space */
+}
 .skill-name {
+    font-size: 16px; /* Set font size for consistency */
     font-weight: bold;
     margin: 0;
     color: var(--body-dark-text-color);
 }
+.skill-icon {
+    width: 20px;  /* Fixed width */
+    height: 20px; /* Fixed height */
+    object-fit: contain; /* Ensures the icon maintains aspect ratio */
+}
+
 
 .bar-container {
     display: flex;
