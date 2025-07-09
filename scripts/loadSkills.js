@@ -92,11 +92,13 @@ function createSkillBar(skill) {
     skillName.textContent = skill.name;
 
     function formatSkillName(skillName) {
-        return skillName
-            .toLowerCase()                  // Convert to lowercase
-            .replace(/\s+/g, '')             // Remove spaces
-            .replace(/\+/g, '-plus')         // Replace plus signs with -plus
-            .split(',')[0];                  // Take the part before any comma (if exists)
+        return encodeURIComponent(
+            skillName
+                .toLowerCase()                  // Convert to lowercase
+                .replace(/\s+/g, '')             // Remove spaces
+                .replace(/\+/g, '-plus')         // Replace plus signs with -plus
+                .split(',')[0]                   // Take the part before any comma
+        );
     }
     const icon = document.createElement('img');
     icon.classList.add('skill-icon');
