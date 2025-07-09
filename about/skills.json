@@ -337,7 +337,7 @@
 },
 {
   "name": "Jest",
-  "type": "library",
+  "type": "framework",
   "category": "Testing",
   "proficiency": 65,
   "duration": 60,
@@ -345,8 +345,8 @@
 },
 {
   "name": "Sequelize",
-  "type": "library",
-  "category": "Database",
+  "type": "framework",
+  "category": "Backend",
   "proficiency": 70,
   "duration": 66,
   "projectUrl": "https://byvalvin.github.io/#otherProjectDetails?id=chopAPI"
@@ -362,7 +362,7 @@
 {
   "name": "Stripe",
   "type": "technology",
-  "category": "Payments",
+  "category": "Other",
   "proficiency": 75,
   "duration": 72,
   "projectUrl": "https://byvalvin.github.io/#projectDetails?id=slate"
@@ -370,7 +370,7 @@
 {
   "name": "Upstash",
   "type": "technology",
-  "category": "Cloud Services",
+  "category": "Other",
   "proficiency": 60,
   "duration": 60,
   "projectUrl": "https://byvalvin.github.io/#otherProjectDetails?id=chopAPI"
@@ -378,7 +378,7 @@
 {
   "name": "Supabase",
   "type": "technology",
-  "category": "Database & Auth",
+  "category": "Database",
   "proficiency": 70,
   "duration": 68,
   "projectUrl": "https://byvalvin.github.io/#otherProjectDetails?id=chopAPI"
@@ -393,8 +393,8 @@
 },
 {
   "name": "GoogleAPIs",
-  "type": "platform",
-  "category": "Cloud Services",
+  "type": "technology",
+  "category": "Other",
   "proficiency": 65,
   "duration": 62,
   "projectUrl": "https://byvalvin.github.io/#projectDetails?id=slate"
@@ -402,7 +402,7 @@
 {
   "name": "Cloudinary",
   "type": "technology",
-  "category": "Media Management",
+  "category": "Other",
   "proficiency": 70,
   "duration": 64,
   "projectUrl": "https://byvalvin.github.io/#projectDetails?id=slate"
