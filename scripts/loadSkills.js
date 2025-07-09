@@ -91,9 +91,16 @@ function createSkillBar(skill) {
     skillName.classList.add('skill-name');
     skillName.textContent = skill.name;
 
+    function formatSkillName(skillName) {
+        return skillName
+            .toLowerCase()                  // Convert to lowercase
+            .replace(/\s+/g, '')             // Remove spaces
+            .replace(/\+/g, '-plus')         // Replace plus signs with -plus
+            .split(',')[0];                  // Take the part before any comma (if exists)
+    }
     const icon = document.createElement('img');
     icon.classList.add('skill-icon');
-    icon.src = `../projects/icons/${skill.name.toLowerCase().replace(/\s+/g, '-')}.svg`;
+    icon.src = `../projects/icons/${formatSkillName(skill.name)}.svg`;
     icon.alt = `${skill.name} icon`;
 
     skillInfo.appendChild(skillName);
