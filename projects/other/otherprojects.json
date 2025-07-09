@@ -312,6 +312,10 @@
                     "image": "projects/icons/render.svg",  
                     "description": "A NoSQL database program."
                 },
+                "SQLite": {
+                    "image": "projects/icons/sqlite.svg",
+                    "description": "A JavaScript library for building user interfaces."
+                },
                 "Django": {
                     "image": "projects/icons/django.svg",
                     "description": "A JavaScript library for building user interfaces."
@@ -375,6 +379,10 @@
                 },
                 "Flutter": {
                 "image": "projects/icons/flutter.svg",
+                "description": "For frontend development and connecting to the backend."
+                },
+                "Dart": {
+                "image": "projects/icons/dart.svg",
                 "description": "For frontend development and connecting to the backend."
                 },
                 "FastAPI": {
