@@ -1881,22 +1881,6 @@ border-color: #7f1e23; /* Darker burgundy border */
     bottom: 20px;
     right: 20px;
     z-index: 1000;
-    transition: opacity 0.3s ease;
-}
-
-.scroll-to-top.show {
-    opacity: 1;
-}
-
-.scroll-to-top.hide {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
     background-color: #444;
     color: white;
     border: none;
@@ -1904,12 +1888,17 @@ border-color: #7f1e23; /* Darker burgundy border */
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
-    display: none; /* Hidden by default */
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    z-index: 999;
-    transition: background-color 0.3s ease;
+    opacity: 0; /* Hidden by default */
+    pointer-events: none; /* Disable clicks when hidden */
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    pointer-events: auto; /* Enable clicks when visible */
 }
 
 .scroll-to-top:hover {
@@ -1919,6 +1908,7 @@ border-color: #7f1e23; /* Darker burgundy border */
 .scroll-to-top:focus {
     outline: none;
 }
+
 
 
 
