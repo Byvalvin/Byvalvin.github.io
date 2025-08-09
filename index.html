@@ -86,25 +86,28 @@
             showSection(pageEvent, baseSection, sourcePage, data); // Pass the projectId if it exists
         });
 
-        // Scroll to top button functionality
-        const scrollToTopButton = document.getElementById('scroll-to-top');
-        // Toggle visibility based on scroll position
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
-                scrollToTopButton.classList.add('show');
-                scrollToTopButton.classList.remove('hide');
-            } else {
-                scrollToTopButton.classList.add('hide');
-                scrollToTopButton.classList.remove('show');
-            }
-        });
-        // Smooth scroll back to top on button click
-        scrollToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollToTopButton = document.getElementById('scroll-to-top');
+        
+            // Scroll to top button functionality
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 100) {
+                    scrollToTopButton.classList.add('show');
+                    scrollToTopButton.classList.remove('hide');
+                } else {
+                    scrollToTopButton.classList.add('hide');
+                    scrollToTopButton.classList.remove('show');
+                }
+            });
+        
+            scrollToTopButton.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
             });
         });
+
 
 
 
