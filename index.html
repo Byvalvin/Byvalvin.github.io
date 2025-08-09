@@ -86,25 +86,35 @@
             showSection(pageEvent, baseSection, sourcePage, data); // Pass the projectId if it exists
         });
 
-        document.addEventListener('DOMContentLoaded', function() {
+        window.addEventListener('DOMContentLoaded', function() {
             const scrollToTopButton = document.getElementById('scroll-to-top');
-        
+    
+            // Check if button exists
+            if (!scrollToTopButton) {
+                console.error('Scroll-to-top button not found!');
+                return;
+            }
+    
             // Scroll to top button functionality
             window.addEventListener('scroll', () => {
                 if (window.scrollY > 100) {
                     scrollToTopButton.classList.add('show');
                     scrollToTopButton.classList.remove('hide');
+                    console.log("Button shown");
                 } else {
                     scrollToTopButton.classList.add('hide');
                     scrollToTopButton.classList.remove('show');
+                    console.log("Button hidden");
                 }
             });
-        
+    
+            // Smooth scroll to top on button click
             scrollToTopButton.addEventListener('click', () => {
                 window.scrollTo({
                     top: 0,
                     behavior: 'smooth'
                 });
+                console.log("Scroll to top triggered");
             });
         });
 
