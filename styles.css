@@ -1875,6 +1875,52 @@ border-color: #7f1e23; /* Darker burgundy border */
     transform: translateY(0); /* Reset transform on click */
 }
 
+/*scroll to top*/
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+}
+
+.scroll-to-top.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #666;
+}
+
+.scroll-to-top:focus {
+    outline: none;
+}
+
+
 
 /*ABOUT PAGE*/
 /* Tabs Container */
