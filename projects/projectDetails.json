@@ -86,7 +86,7 @@
         "bestFeatures": "I'm proud of several features: the multi-filtration system on the Players Page, dynamic CSS for different screen sizes, and the planner page where users can create and share their team setups. The planner page, in particular, offers a lot of fun and customization options.",
         "rating": 4.7,
         "codeUrl": "https://github.com/Byvalvin/proquest",
-        "tryItOutUrl":"https://github.com/Byvalvin/proquest/blob/main/README.md"
+        "tryItOutUrl":"https://proquest-nine.vercel.app/proquest"
     },
 
     "pawnspath": {
