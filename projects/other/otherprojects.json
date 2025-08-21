@@ -485,7 +485,7 @@
             },
             "githubLink": "https://github.com/Byvalvin/proquest",
             "otherDetailsPage": "#other-project-details?id=proquest",
-            "tryItOutLink": "https://github.com/Byvalvin/proquest/blob/main/README.md",
+            "tryItOutLink": "https://proquest-nine.vercel.app",
             "icon": "fa-solid fa-futbol"
         }
 
