@@ -487,7 +487,31 @@
             "otherDetailsPage": "#other-project-details?id=proquest",
             "tryItOutLink": "https://proquest-nine.vercel.app",
             "icon": "fa-solid fa-futbol"
+        },
+
+        {
+          "name": "EarthMed",
+          "description": "An interactive plant exploration web app for learning about and managing favorite plants, featuring filtering, trending species, and authentication.",
+          "images": ["earthmed-home.jpg", "earthmed-trending.jpg", "earthmed-favorites.jpg"],
+          "videos": [],
+          "technologies": {
+            "GitHub": { "image": "projects/icons/github.svg" },
+            "React": { "image": "projects/icons/react.svg" },
+            "Vite": { "image": "projects/icons/vite.svg" },
+            "TailwindCSS": { "image": "projects/icons/tailwindcss.svg" },
+            "Framer Motion": { "image": "projects/icons/framer-motion.svg" },
+            "MySQL": { "image": "projects/icons/mysql.svg" },
+            "Express": { "image": "projects/icons/express.svg" },
+            "Node": { "image": "projects/icons/node.svg" },
+            "Vercel": { "image": "projects/icons/vercel.svg" }
+          },
+          "githubLink": "https://github.com/cruzmart/earthmed",
+          "tryItOutLink": "https://earthmed.vercel.app/",
+          "otherDetailsPage": "#other-project-details?id=earthmed",
+          "icon": "fa-solid fa-leaf",
+          "role": "Contributor (Reviewer & Deployment Advisor)"
         }
+
 
     ]
 }
