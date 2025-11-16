@@ -2056,7 +2056,7 @@ border-color: #7f1e23; /* Darker burgundy border */
 .timeline-header {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 10px;
     margin-bottom: 2px;
 }
