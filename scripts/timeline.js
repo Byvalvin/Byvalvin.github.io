@@ -39,23 +39,25 @@ document.addEventListener('DOMContentLoaded', () => {
         const dotSize = 12; // Size of each dot
         const dotSpacing = 15; // Space between dots
         const itemWidth = dotSize + dotSpacing; // Total width for each dot + space
-
+    
         const totalDotsWidth = items.length * itemWidth;
         const offset = Math.min(
             (currentIndex * itemWidth) - (timelineWrapper.clientWidth / 2 - itemWidth / 2),
             totalDotsWidth - timelineWrapper.clientWidth
         );
-
+    
         timelineWrapper.scrollLeft = Math.max(0, offset);
-
+    
         document.querySelectorAll('.dot').forEach((dot, index) => {
             dot.classList.toggle('active', index === currentIndex);
         });
-
+    
         const currentItem = items[currentIndex];
+        
+        // Create the timeline content
         timelineContent.innerHTML = `
             <div class="timeline-header">
-                <img src="${currentItem.logo}" alt="${currentItem.title} Logo" class="timeline-logo">
+                <div class="image-placeholder" id="image-placeholder"></div> <!-- Placeholder before image -->
                 <h3>${currentItem.title}</h3>
             </div>
             <p>${currentItem.date}</p>
@@ -66,7 +68,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>${currentItem.details}</p>
             </div>
         `;
-
+    
+        const imageElement = new Image(); // Create an image element dynamically
+        imageElement.src = currentItem.logo;
+        imageElement.alt = `${currentItem.title} Logo`;
+        imageElement.classList.add('timeline-logo');
+    
+        // Once the image is loaded, replace the placeholder with the actual image
+        imageElement.onload = () => {
+            const placeholder = document.getElementById('image-placeholder');
+            placeholder.replaceWith(imageElement); // Replace the placeholder with the actual image
+        };
+    
+        // Add the image element to the DOM initially with no src set (or with the placeholder image set)
+        const timelineHeader = document.querySelector('.timeline-header');
+        timelineHeader.appendChild(imageElement);
+    
+        // Accordion logic
         const accordionBtn = document.querySelector('.accordion-btn');
         const accordionContent = document.querySelector('.accordion-content');
         if (accordionBtn && accordionContent) {
@@ -80,6 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }
+    
         updateNavButtonVisibility();
     }
 
