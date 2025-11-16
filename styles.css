@@ -2059,6 +2059,7 @@ border-color: #7f1e23; /* Darker burgundy border */
     justify-content: center;
     gap: 10px;
     margin-bottom: 2px;
+    flex-wrap: wrap;
 }
 
 .timeline-logo {
@@ -2084,6 +2085,7 @@ border-color: #7f1e23; /* Darker burgundy border */
     margin-right: 80px; /* Add margin to the right to prevent content from being covered by the right button */
     margin-left: 80px;  /* Add margin to the left to prevent content from being covered by the left button */
     box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+    max-width: 300px;
 }
 
 
