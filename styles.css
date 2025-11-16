@@ -2061,23 +2061,12 @@ border-color: #7f1e23; /* Darker burgundy border */
     margin-bottom: 2px;
     flex-wrap: wrap;
 }
-.timeline-header h3 {
-    font-size: 18px;
-    margin: 0;
-    text-align: left; /* Align title to the left for better readability */
-    width: 100%; /* Ensure it can wrap within the available space */
-    word-wrap: break-word;  /* Allow long titles to break into two lines */
-    overflow-wrap: break-word; /* This is a newer, more supported version */
-    white-space: normal; /* Allow text to wrap to the next line */
-    line-height: 1.4;  /* Control the spacing between lines */
-}
 
 .timeline-logo {
     width: 50px; /* Set fixed size for the image */
     height: 50px;
     border-radius: 50%;
     object-fit: cover; /* Make sure the image doesn’t get stretched */
-    opacity: 0; /* Initially hidden */
     transition: opacity 0.3s ease-in-out; /* Smooth fade-in */
 }
 
