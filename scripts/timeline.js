@@ -79,15 +79,18 @@ document.addEventListener('DOMContentLoaded', () => {
         // Once the image is loaded, replace the placeholder with the actual image
         imageElement.onload = () => {
             const placeholder = document.getElementById('image-placeholder');
-            placeholder.style.display = 'none'; // Hide the placeholder once the image is loaded
+            if (placeholder) {
+                placeholder.remove(); // Remove the placeholder completely from the DOM
+            }
+    
             imageElement.style.opacity = 1; // Fade the image in smoothly
             const timelineHeader = document.querySelector('.timeline-header');
-            timelineHeader.appendChild(imageElement); // Append the image to the header
+            timelineHeader.prepend(imageElement); // Prepend the image to the header (this places it before the title)
         };
     
         // Initially, add the image to the DOM (but it won't be visible until loaded)
         const timelineHeader = document.querySelector('.timeline-header');
-        timelineHeader.appendChild(imageElement);  // Append the image after the placeholder in the header
+        timelineHeader.prepend(imageElement);  // Prepend the image before the title in the header
         
         // Accordion toggle logic
         const accordionBtn = document.querySelector('.accordion-btn');
@@ -103,7 +106,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }
-    
         updateNavButtonVisibility();
     }
 
