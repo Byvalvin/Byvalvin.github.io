@@ -2062,11 +2062,12 @@ border-color: #7f1e23; /* Darker burgundy border */
 }
 
 .timeline-logo {
-    width: 50px; /* Ensure this matches the size of the placeholder */
-    height: 50px; /* Same height */
-    border-radius: 50%; /* Keep it round */
-    transition: opacity 0.3s ease-in-out; /* Smooth fade-in */
+    width: 50px; /* Set fixed size for the image */
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover; /* Make sure the image doesn’t get stretched */
     opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Smooth fade-in */
 }
 
 
