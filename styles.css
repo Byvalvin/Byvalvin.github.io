@@ -2086,6 +2086,10 @@ border-color: #7f1e23; /* Darker burgundy border */
     margin-left: 80px;  /* Add margin to the left to prevent content from being covered by the left button */
     box-sizing: border-box; /* Ensure padding and border are included in the width and height */
     max-width: 300px;
+    display: flex;
+    flex-direction: column; /* Allows content to stack vertically */
+    justify-content: flex-start; /* Align items to the top */
+    min-height: 100px; /* Ensures each timeline item has a baseline height */
 }
 
 
