@@ -2071,25 +2071,40 @@ border-color: #7f1e23; /* Darker burgundy border */
     transition: opacity 0.3s ease-in-out; /* Smooth fade-in */
 }
 
-
-
 .timeline-content {
     flex: 2;
     padding: 20px;
     border: 1px solid var(--contr-bg);
-    border-radius: 12px; /* Increased border-radius for a softer look */
+    border-radius: 12px;
     background-color: var(--body-bg-color);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    margin-left: 80px;
+    margin-right: 80px;
+    box-sizing: border-box;
     text-align: center;
-    margin: 0 auto; /* Center content */
-    margin-right: 80px; /* Add margin to the right to prevent content from being covered by the right button */
-    margin-left: 80px;  /* Add margin to the left to prevent content from being covered by the left button */
-    box-sizing: border-box; /* Ensure padding and border are included in the width and height */
-    max-width: 300px;
+    height: 300px; /* Set a fixed height for the timeline item */
+    max-width: 900px; /* Optional: control the max width */
+    overflow: hidden; /* Prevent content from overflowing */
     display: flex;
-    flex-direction: column; /* Allows content to stack vertically */
-    justify-content: flex-start; /* Align items to the top */
-    min-height: 100px; /* Ensures each timeline item has a baseline height */
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.timeline-content p,
+.timeline-content h3 {
+    margin: 10px 0;
+}
+.timeline-content .content-scrollable {
+    flex-grow: 1;
+    overflow-y: auto; /* Allow vertical scrolling */
+    padding-right: 10px; /* Some padding to avoid content touching the scrollbar */
+    margin-bottom: 10px; /* Space below */
+}
+.timeline-content .description {
+    max-height: 120px; /* Limit description height */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis (...) for overflowed text */
+    margin-bottom: 20px; /* Some spacing from other elements */
 }
 
 
