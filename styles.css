@@ -2083,12 +2083,6 @@ border-color: #7f1e23; /* Darker burgundy border */
     margin-right: 80px;
     box-sizing: border-box;
     text-align: center;
-    height: 300px; /* Set a fixed height for the timeline item */
-    max-width: 500px; /* Optional: control the max width */
-    overflow: hidden; /* Prevent content from overflowing */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     overflow: hidden; /* Prevent overflow from affecting size */
 }
     
