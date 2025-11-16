@@ -2085,32 +2085,6 @@ border-color: #7f1e23; /* Darker burgundy border */
     text-align: center;
     overflow: hidden; /* Prevent overflow from affecting size */
 }
-    
-.timeline-content p,
-.timeline-content h3 {
-    margin: 10px 0;
-}
-.timeline-content .content-scrollable {
-    flex-grow: 1;
-    overflow-y: auto; /* Allow vertical scrolling */
-    padding-right: 10px; /* Some padding to avoid content touching the scrollbar */
-    margin-bottom: 10px; /* Space below */
-}
-.timeline-content .description {
-    max-height: 120px; /* Limit description height */
-    overflow: hidden;
-    text-overflow: ellipsis; /* Add ellipsis (...) for overflowed text */
-    margin-bottom: 20px; /* Some spacing from other elements */
-}
-.description {
-    font-size: 14px;
-    line-height: 1.5;
-    max-height: 80px; /* Limit height for description */
-    overflow: hidden; /* Hide any overflow */
-    text-overflow: ellipsis; /* Add ellipsis for truncated text */
-    margin-bottom: 15px; /* Space before button */
-}
-
 
 /* Timeline Dots Styling */
 .timeline-dots {
