@@ -33,5 +33,20 @@
         "description": "Product Owner",
         "logo": "about/images/abp.webp",
         "details": "Defined product requirements, prioritized features, designed educational games, and developed an organism identification system using OpenCV."
+    },
+    {
+        "date": "2025 - ",
+        "title": "Tutor Pals",
+        "description": "Tutor — Math, Sciences, and Writing",
+        "logo": "about/images/tutorpals.jpeg",
+        "details": "Tutor for junior high and high school students across Mathematics, Biology, Chemistry, Physics, and both non-fiction and creative writing."
+    },
+    {
+        "date": "2025 - ",
+        "title": "Samdesk",
+        "description": "Backend Feature Developer",
+        "logo": "about/images/samdesk.webp",
+        "details": "Developing backend features for global crisis-monitoring and real-time intelligence systems."
     }
+    
 ]
