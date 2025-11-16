@@ -35,72 +35,78 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    function updateTimeline() {
-        const dotSize = 12; // Size of each dot
-        const dotSpacing = 15; // Space between dots
-        const itemWidth = dotSize + dotSpacing; // Total width for each dot + space
+function updateTimeline() {
+    const dotSize = 12; // Size of each dot
+    const dotSpacing = 15; // Space between dots
+    const itemWidth = dotSize + dotSpacing; // Total width for each dot + space
+
+    const totalDotsWidth = items.length * itemWidth;
+    const offset = Math.min(
+        (currentIndex * itemWidth) - (timelineWrapper.clientWidth / 2 - itemWidth / 2),
+        totalDotsWidth - timelineWrapper.clientWidth
+    );
+
+    timelineWrapper.scrollLeft = Math.max(0, offset);
+
+    document.querySelectorAll('.dot').forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentIndex);
+    });
+
+    const currentItem = items[currentIndex];
     
-        const totalDotsWidth = items.length * itemWidth;
-        const offset = Math.min(
-            (currentIndex * itemWidth) - (timelineWrapper.clientWidth / 2 - itemWidth / 2),
-            totalDotsWidth - timelineWrapper.clientWidth
-        );
-    
-        timelineWrapper.scrollLeft = Math.max(0, offset);
-    
-        document.querySelectorAll('.dot').forEach((dot, index) => {
-            dot.classList.toggle('active', index === currentIndex);
-        });
-    
-        const currentItem = items[currentIndex];
-        
-        // Create the timeline content
-        timelineContent.innerHTML = `
-            <div class="timeline-header">
-                <div class="image-placeholder" id="image-placeholder"></div> <!-- Placeholder before image -->
-                <h3>${currentItem.title}</h3>
-            </div>
-            <p>${currentItem.date}</p>
-            <p>${currentItem.description}</p>
-            <button class="accordion-btn">Show Details</button>
-            <div class="accordion-content">
-                <h4>Details</h4>
-                <p>${currentItem.details}</p>
-            </div>
-        `;
-    
-        const imageElement = new Image(); // Create an image element dynamically
-        imageElement.src = currentItem.logo;
-        imageElement.alt = `${currentItem.title} Logo`;
-        imageElement.classList.add('timeline-logo');
-    
-        // Once the image is loaded, replace the placeholder with the actual image
-        imageElement.onload = () => {
-            const placeholder = document.getElementById('image-placeholder');
-            placeholder.replaceWith(imageElement); // Replace the placeholder with the actual image
-        };
-    
-        // Add the image element to the DOM initially with no src set (or with the placeholder image set)
+    // Create the timeline content
+    timelineContent.innerHTML = `
+        <div class="timeline-header">
+            <div class="image-placeholder" id="image-placeholder"></div> <!-- Placeholder before image -->
+            <h3>${currentItem.title}</h3>
+        </div>
+        <p>${currentItem.date}</p>
+        <p>${currentItem.description}</p>
+        <button class="accordion-btn">Show Details</button>
+        <div class="accordion-content">
+            <h4>Details</h4>
+            <p>${currentItem.details}</p>
+        </div>
+    `;
+
+    // Create the image element
+    const imageElement = new Image(); // Dynamically create image element
+    imageElement.src = currentItem.logo;
+    imageElement.alt = `${currentItem.title} Logo`;
+    imageElement.classList.add('timeline-logo');
+    imageElement.style.opacity = 0;  // Initially hide the image until it's loaded
+
+    // Once the image is loaded, replace the placeholder with the actual image
+    imageElement.onload = () => {
+        const placeholder = document.getElementById('image-placeholder');
+        placeholder.style.display = 'none'; // Hide the placeholder
+        imageElement.style.opacity = 1; // Fade the image in
         const timelineHeader = document.querySelector('.timeline-header');
         timelineHeader.appendChild(imageElement);
+    };
+
+    // Add the image element to the DOM initially with no src set (or with the placeholder image set)
+    const timelineHeader = document.querySelector('.timeline-header');
+    timelineHeader.appendChild(imageElement); // Add the image after placeholder
     
-        // Accordion logic
-        const accordionBtn = document.querySelector('.accordion-btn');
-        const accordionContent = document.querySelector('.accordion-content');
-        if (accordionBtn && accordionContent) {
-            accordionBtn.addEventListener('click', () => {
-                if (accordionContent.style.display === 'none' || accordionContent.style.display === '') {
-                    accordionContent.style.display = 'block';
-                    accordionBtn.textContent = 'Hide Details';
-                } else {
-                    accordionContent.style.display = 'none';
-                    accordionBtn.textContent = 'Show Details';
-                }
-            });
-        }
-    
-        updateNavButtonVisibility();
+    // Accordion logic
+    const accordionBtn = document.querySelector('.accordion-btn');
+    const accordionContent = document.querySelector('.accordion-content');
+    if (accordionBtn && accordionContent) {
+        accordionBtn.addEventListener('click', () => {
+            if (accordionContent.style.display === 'none' || accordionContent.style.display === '') {
+                accordionContent.style.display = 'block';
+                accordionBtn.textContent = 'Hide Details';
+            } else {
+                accordionContent.style.display = 'none';
+                accordionBtn.textContent = 'Show Details';
+            }
+        });
     }
+
+    updateNavButtonVisibility();
+}
+
 
     function updateNavButtonVisibility() {
         navButtons.left.style.display = currentIndex > 0 ? 'block' : 'none';
