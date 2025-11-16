@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
             timelineDots.appendChild(dot);
         });
     }
-
 function updateTimeline() {
     const dotSize = 12; // Size of each dot
     const dotSpacing = 15; // Space between dots
@@ -54,10 +53,10 @@ function updateTimeline() {
 
     const currentItem = items[currentIndex];
     
-    // Create the timeline content
+    // Create the timeline content (using template literals to populate the timeline)
     timelineContent.innerHTML = `
         <div class="timeline-header">
-            <div class="image-placeholder" id="image-placeholder"></div> <!-- Placeholder before image -->
+            <div class="image-placeholder" id="image-placeholder"></div> <!-- Placeholder for image -->
             <h3>${currentItem.title}</h3>
         </div>
         <p>${currentItem.date}</p>
@@ -69,27 +68,27 @@ function updateTimeline() {
         </div>
     `;
 
-    // Create the image element
-    const imageElement = new Image(); // Dynamically create image element
+    // Create the image element dynamically
+    const imageElement = new Image();
     imageElement.src = currentItem.logo;
     imageElement.alt = `${currentItem.title} Logo`;
     imageElement.classList.add('timeline-logo');
-    imageElement.style.opacity = 0;  // Initially hide the image until it's loaded
+    imageElement.style.opacity = 0; // Initially hidden (so we can fade it in smoothly)
 
     // Once the image is loaded, replace the placeholder with the actual image
     imageElement.onload = () => {
         const placeholder = document.getElementById('image-placeholder');
-        placeholder.style.display = 'none'; // Hide the placeholder
-        imageElement.style.opacity = 1; // Fade the image in
+        placeholder.style.display = 'none'; // Hide the placeholder once image is loaded
+        imageElement.style.opacity = 1; // Fade the image in smoothly
         const timelineHeader = document.querySelector('.timeline-header');
-        timelineHeader.appendChild(imageElement);
+        timelineHeader.appendChild(imageElement); // Append the image to the header
     };
 
-    // Add the image element to the DOM initially with no src set (or with the placeholder image set)
+    // Add the image element to the DOM
     const timelineHeader = document.querySelector('.timeline-header');
-    timelineHeader.appendChild(imageElement); // Add the image after placeholder
+    timelineHeader.appendChild(imageElement); // Add the image after the placeholder in the header
     
-    // Accordion logic
+    // Accordion toggle logic
     const accordionBtn = document.querySelector('.accordion-btn');
     const accordionContent = document.querySelector('.accordion-content');
     if (accordionBtn && accordionContent) {
@@ -106,6 +105,7 @@ function updateTimeline() {
 
     updateNavButtonVisibility();
 }
+
 
 
     function updateNavButtonVisibility() {
