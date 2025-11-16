@@ -2089,7 +2089,9 @@ border-color: #7f1e23; /* Darker burgundy border */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    overflow: hidden; /* Prevent overflow from affecting size */
 }
+    
 .timeline-content p,
 .timeline-content h3 {
     margin: 10px 0;
@@ -2105,6 +2107,14 @@ border-color: #7f1e23; /* Darker burgundy border */
     overflow: hidden;
     text-overflow: ellipsis; /* Add ellipsis (...) for overflowed text */
     margin-bottom: 20px; /* Some spacing from other elements */
+}
+.description {
+    font-size: 14px;
+    line-height: 1.5;
+    max-height: 80px; /* Limit height for description */
+    overflow: hidden; /* Hide any overflow */
+    text-overflow: ellipsis; /* Add ellipsis for truncated text */
+    margin-bottom: 15px; /* Space before button */
 }
 
 
