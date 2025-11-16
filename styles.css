@@ -2056,7 +2056,7 @@ border-color: #7f1e23; /* Darker burgundy border */
 .timeline-header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10px;
     margin-bottom: 2px;
 }
@@ -2069,6 +2069,7 @@ border-color: #7f1e23; /* Darker burgundy border */
     opacity: 0; /* Initially hidden */
     transition: opacity 0.3s ease-in-out; /* Smooth fade-in */
 }
+
 
 
 .timeline-content {
