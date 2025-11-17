@@ -2077,7 +2077,6 @@ border-color: #7f1e23; /* Darker burgundy border */
     height: 50px;
     border-radius: 50%;
     object-fit: cover; /* Make sure the image doesn’t get stretched */
-    opacity: 0;  /* Initially hidden */
     transition: opacity 0.3s ease-in-out; /* Smooth fade-in */
 }
 
