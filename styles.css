@@ -2093,7 +2093,7 @@ border-color: #7f1e23; /* Darker burgundy border */
     box-sizing: border-box;
     text-align: center;
     overflow: hidden; /* Prevent overflow from affecting size */
-    max-width: 370px; /* This will make all boxes have the same max width */
+    max-width: 385px; /* This will make all boxes have the same max width */
 }
 
 /* Timeline Dots Styling */
