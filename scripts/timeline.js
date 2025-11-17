@@ -62,7 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
             <p>${currentItem.description}</p>
             <button class="accordion-btn">Show Details</button>
             <div class="accordion-content">
-                <h4>Details</h4>
                 <p>${currentItem.details}</p>
             </div>
         `;
