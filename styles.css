@@ -2068,8 +2068,7 @@ border-color: #7f1e23; /* Darker burgundy border */
     word-wrap: break-word; /* Allow long titles to break into two lines */
     text-align: center; /* Ensure the text is aligned to the left */
     margin: 0; /* Remove any unnecessary margins */
-    flex-grow: 1; /* Make the title take up any remaining space */
-    padding: 0 15px;  /* Adds some space to avoid title sticking to edges */
+    flex-grow: 0.7; /* Make the title take up any remaining space */
 }
 
 .timeline-logo {
@@ -2082,7 +2081,7 @@ border-color: #7f1e23; /* Darker burgundy border */
 
 .timeline-content {
     flex: 2;
-    padding: 20px;
+    padding: 15px;
     border: 1px solid var(--contr-bg);
     border-radius: 12px;
     background-color: var(--body-bg-color);
