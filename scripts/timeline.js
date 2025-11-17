@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Create the timeline content (using template literals to populate the timeline)
         timelineContent.innerHTML = `
             <div class="timeline-header">
-                <img id="timeline-logo" class="timeline-logo" src="path/to/placeholder.avif" alt="Placeholder" />
+                <img id="timeline-logo" class="timeline-logo" src="about/images/placeholder.avif" alt="Placeholder" />
                 <h3>${currentItem.title}</h3>
             </div>
             <p>${currentItem.date}</p>
