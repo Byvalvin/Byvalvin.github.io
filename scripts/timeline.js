@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-   function updateTimeline() {
+      function updateTimeline() {
         const dotSize = 12; // Size of each dot
         const dotSpacing = 15; // Space between dots
         const itemWidth = dotSize + dotSpacing; // Total width for each dot + space
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Create the timeline content (using template literals to populate the timeline)
         timelineContent.innerHTML = `
             <div class="timeline-header">
-                <div class="image-placeholder" id="image-placeholder"></div> <!-- Placeholder for image -->
+                <img id="timeline-logo" class="timeline-logo" src="path/to/placeholder.avif" alt="Placeholder" />
                 <h3>${currentItem.title}</h3>
             </div>
             <p>${currentItem.date}</p>
@@ -69,24 +69,15 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
     
-        // Create the image element dynamically
-        const imageElement = new Image();
+        const imageElement = document.getElementById('timeline-logo');
+        // Set initial image source (the placeholder or a low-res version)
         imageElement.src = currentItem.logo;
-        imageElement.alt = `${currentItem.title} Logo`;
-        imageElement.classList.add('timeline-logo');
     
-        // Once the image is loaded, replace the static placeholder with the actual image
+        // Once the image is fully loaded, you can confirm it was loaded (optional)
         imageElement.onload = () => {
-            // Find the placeholder and replace it with the image
-            const placeholder = document.getElementById('image-placeholder');
-            if (placeholder) {
-                placeholder.replaceWith(imageElement);  // Replace placeholder with the actual image
-            }
+            console.log(`Image loaded: ${currentItem.logo}`);
+            // If needed, you can add any logic after the image loads, like changing opacity, etc.
         };
-    
-        // Initially, add the placeholder to the DOM (this will stay there until the image loads)
-        const timelineHeader = document.querySelector('.timeline-header');
-        timelineHeader.prepend(imageElement); // Prepend the image before the title in the header
     
         // Accordion toggle logic
         const accordionBtn = document.querySelector('.accordion-btn');
@@ -104,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         updateNavButtonVisibility();
     }
+
 
     function updateNavButtonVisibility() {
         navButtons.left.style.display = currentIndex > 0 ? 'block' : 'none';
