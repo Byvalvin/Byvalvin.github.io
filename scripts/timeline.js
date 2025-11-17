@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    function updateTimeline() {
+   function updateTimeline() {
         const dotSize = 12; // Size of each dot
         const dotSpacing = 15; // Space between dots
         const itemWidth = dotSize + dotSpacing; // Total width for each dot + space
@@ -74,28 +74,19 @@ document.addEventListener('DOMContentLoaded', () => {
         imageElement.src = currentItem.logo;
         imageElement.alt = `${currentItem.title} Logo`;
         imageElement.classList.add('timeline-logo');
-        
-        // Initially, hide the image (opacity 0)
-        imageElement.style.opacity = 0;  
     
-        // Once the image is loaded, fade it in
+        // Once the image is loaded, replace the static placeholder with the actual image
         imageElement.onload = () => {
-            // Remove the placeholder (keeping space consistent)
+            // Find the placeholder and replace it with the image
             const placeholder = document.getElementById('image-placeholder');
             if (placeholder) {
-                placeholder.style.visibility = 'hidden'; // Hide placeholder smoothly
+                placeholder.replaceWith(imageElement);  // Replace placeholder with the actual image
             }
-            
-            // Fade the image in
-            imageElement.style.opacity = 1;
-            
-            const timelineHeader = document.querySelector('.timeline-header');
-            timelineHeader.prepend(imageElement); // Prepend the image before the title in the header
         };
     
-        // Initially, add the image to the DOM (it will be invisible until loaded)
+        // Initially, add the placeholder to the DOM (this will stay there until the image loads)
         const timelineHeader = document.querySelector('.timeline-header');
-        timelineHeader.prepend(imageElement);
+        timelineHeader.prepend(imageElement); // Prepend the image before the title in the header
     
         // Accordion toggle logic
         const accordionBtn = document.querySelector('.accordion-btn');
@@ -113,7 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         updateNavButtonVisibility();
     }
-
 
     function updateNavButtonVisibility() {
         navButtons.left.style.display = currentIndex > 0 ? 'block' : 'none';
