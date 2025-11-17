@@ -2067,8 +2067,6 @@ border-color: #7f1e23; /* Darker burgundy border */
     text-align: left; /* Ensure the text is aligned to the left */
     margin: 0; /* Remove any unnecessary margins */
     flex-grow: 1; /* Make the title take up any remaining space */
-    min-width: 70%;  /* Limit title width */
-    max-width: 70%;  /* Limit title width */
 }
 
 
