@@ -80,11 +80,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Update the pre-items (left and right items next to the center item)
     function updatePreItems() {
+        // Create left pre-item if it doesn't exist
+        let leftPreItem = document.querySelector('.left-pre-item');
+        if (!leftPreItem) {
+            leftPreItem = document.createElement('div');
+            leftPreItem.classList.add('left-pre-item');
+            const img = document.createElement('img');
+            leftPreItem.appendChild(img);
+            timelineWrapper.appendChild(leftPreItem); // Append to timelineWrapper
+        }
+    
+        // Create right pre-item if it doesn't exist
+        let rightPreItem = document.querySelector('.right-pre-item');
+        if (!rightPreItem) {
+            rightPreItem = document.createElement('div');
+            rightPreItem.classList.add('right-pre-item');
+            const img = document.createElement('img');
+            rightPreItem.appendChild(img);
+            timelineWrapper.appendChild(rightPreItem); // Append to timelineWrapper
+        }
+    
+        // Get the left and right items for pre-items
         const leftItem = currentIndex > 0 ? items[currentIndex - 1] : null;
         const rightItem = currentIndex < items.length - 1 ? items[currentIndex + 1] : null;
-
+    
         // Left Pre-item (logo only)
-        const leftPreItem = document.querySelector('.left-pre-item');
         if (leftItem) {
             leftPreItem.style.display = 'block';
             leftPreItem.querySelector('img').src = leftItem.logo;
@@ -96,9 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             leftPreItem.style.display = 'none'; // Hide if no item to the left
         }
-
+    
         // Right Pre-item (logo only)
-        const rightPreItem = document.querySelector('.right-pre-item');
         if (rightItem) {
             rightPreItem.style.display = 'block';
             rightPreItem.querySelector('img').src = rightItem.logo;
@@ -111,6 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
             rightPreItem.style.display = 'none'; // Hide if no item to the right
         }
     }
+
 
     // Update navigation button visibility (left/right arrows)
     function updateNavButtonVisibility() {
