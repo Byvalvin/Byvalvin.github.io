@@ -74,24 +74,29 @@ document.addEventListener('DOMContentLoaded', () => {
         imageElement.src = currentItem.logo;
         imageElement.alt = `${currentItem.title} Logo`;
         imageElement.classList.add('timeline-logo');
-        imageElement.style.opacity = 0;  // Initially hidden to fade in
+        
+        // Initially, hide the image (opacity 0)
+        imageElement.style.opacity = 0;  
     
-        // Once the image is loaded, replace the placeholder with the actual image
+        // Once the image is loaded, fade it in
         imageElement.onload = () => {
+            // Remove the placeholder (keeping space consistent)
             const placeholder = document.getElementById('image-placeholder');
             if (placeholder) {
-                placeholder.remove(); // Remove the placeholder completely from the DOM
+                placeholder.style.visibility = 'hidden'; // Hide placeholder smoothly
             }
-    
-            imageElement.style.opacity = 1; // Fade the image in smoothly
+            
+            // Fade the image in
+            imageElement.style.opacity = 1;
+            
             const timelineHeader = document.querySelector('.timeline-header');
-            timelineHeader.prepend(imageElement); // Prepend the image to the header (this places it before the title)
+            timelineHeader.prepend(imageElement); // Prepend the image before the title in the header
         };
     
-        // Initially, add the image to the DOM (but it won't be visible until loaded)
+        // Initially, add the image to the DOM (it will be invisible until loaded)
         const timelineHeader = document.querySelector('.timeline-header');
-        timelineHeader.prepend(imageElement);  // Prepend the image before the title in the header
-        
+        timelineHeader.prepend(imageElement);
+    
         // Accordion toggle logic
         const accordionBtn = document.querySelector('.accordion-btn');
         const accordionContent = document.querySelector('.accordion-content');
@@ -108,6 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         updateNavButtonVisibility();
     }
+
 
     function updateNavButtonVisibility() {
         navButtons.left.style.display = currentIndex > 0 ? 'block' : 'none';
