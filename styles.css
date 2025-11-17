@@ -2063,7 +2063,7 @@ border-color: #7f1e23; /* Darker burgundy border */
     margin-bottom: 2px;
 }
 .timeline-header h3 {
-    font-size: 15px; /* Slightly reduce font size for better fit */
+    font-size: 17px; /* Slightly reduce font size for better fit */
     line-height: 1.4; /* Improve line spacing if title wraps */
     word-wrap: break-word; /* Allow long titles to break into two lines */
     text-align: left; /* Ensure the text is aligned to the left */
