@@ -2056,10 +2056,9 @@ border-color: #7f1e23; /* Darker burgundy border */
 .timeline-header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10px;
     margin-bottom: 2px;
-    flex-wrap: wrap;
 }
 .timeline-header h3 {
     font-size: 18px; /* Slightly reduce font size for better fit */
