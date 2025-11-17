@@ -51,13 +51,11 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.dot').forEach((dot, index) => {
             dot.classList.toggle('active', index === currentIndex);
         });
-    
-        const currentItem = items[currentIndex];
         
-        // Create the timeline content (using template literals to populate the timeline)
+        const currentItem = items[currentIndex];
         timelineContent.innerHTML = `
             <div class="timeline-header">
-                <img id="timeline-logo" class="timeline-logo" src="about/images/placeholder.avif" alt="Placeholder" />
+                <img src="${currentItem.logo}" alt="${currentItem.title} Logo" class="timeline-logo">
                 <h3>${currentItem.title}</h3>
             </div>
             <p>${currentItem.date}</p>
@@ -68,6 +66,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>${currentItem.details}</p>
             </div>
         `;
+
+        // const currentItem = items[currentIndex];
+        
+        // // Create the timeline content (using template literals to populate the timeline)
+        // timelineContent.innerHTML = `
+        //     <div class="timeline-header">
+        //         <img id="timeline-logo" class="timeline-logo" src="about/images/placeholder.avif" alt="Placeholder" />
+        //         <h3>${currentItem.title}</h3>
+        //     </div>
+        //     <p>${currentItem.date}</p>
+        //     <p>${currentItem.description}</p>
+        //     <button class="accordion-btn">Show Details</button>
+        //     <div class="accordion-content">
+        //         <h4>Details</h4>
+        //         <p>${currentItem.details}</p>
+        //     </div>
+        // `;
     
         const imageElement = document.getElementById('timeline-logo');
         // Set initial image source (the placeholder or a low-res version)
