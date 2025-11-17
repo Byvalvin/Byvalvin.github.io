@@ -2040,6 +2040,8 @@ border-color: #7f1e23; /* Darker burgundy border */
     background-color: #ccc; 
     border-radius: 50%;
     animation: pulse 1.5s infinite ease-in-out;
+    visibility: visible; /* Ensure placeholder is always visible */
+    transition: visibility 0s 0.3s, opacity 0.3s ease-in-out; /* Smooth transition */
 }
 @keyframes pulse {
     0% {
@@ -2075,6 +2077,7 @@ border-color: #7f1e23; /* Darker burgundy border */
     height: 50px;
     border-radius: 50%;
     object-fit: cover; /* Make sure the image doesn’t get stretched */
+    opacity: 0;  /* Initially hidden */
     transition: opacity 0.3s ease-in-out; /* Smooth fade-in */
 }
 
