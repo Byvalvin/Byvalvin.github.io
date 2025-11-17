@@ -2079,6 +2079,22 @@ border-color: #7f1e23; /* Darker burgundy border */
     transition: opacity 0.3s ease-in-out; /* Smooth fade-in */
 }
 
+/* Pre-items (left and right logos) */
+.left-pre-item, .right-pre-item {
+    display: none; /* Hide by default */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 10px;
+    cursor: pointer;
+}
+/* Add styles for spacing and hover effects */
+.left-pre-item:hover, .right-pre-item:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
 .timeline-content {
     flex: 2;
     padding: 15px;
