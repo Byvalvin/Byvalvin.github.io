@@ -2110,13 +2110,13 @@ border-color: #7f1e23; /* Darker burgundy border */
     background-size: cover;
     background-position: center;
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.7;
     transition: opacity 0.2s, transform 0.2s;
-    border: 3px solid var(--contr-bg); /* NEW */
+    border: 1.5px solid var(--main-bg-color);
 }
 .preview:hover {
     opacity: 0.9;
-    border-width: 4px;
+    border-width: 3px;
     transform: scale(1.05);
 }
 .preview.empty {
