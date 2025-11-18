@@ -35,24 +35,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-      function updateTimeline() {
-        const dotSize = 12; // Size of each dot
-        const dotSpacing = 15; // Space between dots
-        const itemWidth = dotSize + dotSpacing; // Total width for each dot + space
-    
+    function updateTimeline() {
+        const dotSize = 12;
+        const dotSpacing = 15;
+        const itemWidth = dotSize + dotSpacing;
+
         const totalDotsWidth = items.length * itemWidth;
         const offset = Math.min(
             (currentIndex * itemWidth) - (timelineWrapper.clientWidth / 2 - itemWidth / 2),
             totalDotsWidth - timelineWrapper.clientWidth
         );
-    
+
         timelineWrapper.scrollLeft = Math.max(0, offset);
-    
+
         document.querySelectorAll('.dot').forEach((dot, index) => {
             dot.classList.toggle('active', index === currentIndex);
         });
-        
+
         const currentItem = items[currentIndex];
+
         timelineContent.innerHTML = `
             <div class="timeline-header">
                 <img src="${currentItem.logo}" alt="${currentItem.title} Logo" class="timeline-logo">
@@ -65,7 +66,42 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>${currentItem.details}</p>
             </div>
         `;
-    
+
+        // -------------------------------
+        // NEW PREVIEW LOGIC
+        // -------------------------------
+        const leftPreview = document.querySelector('.left-preview');
+        const rightPreview = document.querySelector('.right-preview');
+
+        // Left preview
+        if (currentIndex > 0) {
+            leftPreview.style.backgroundImage = `url(${items[currentIndex - 1].logo})`;
+            leftPreview.classList.remove('empty');
+            leftPreview.onclick = () => {
+                currentIndex--;
+                updateTimeline();
+            };
+        } else {
+            leftPreview.style.backgroundImage = '';
+            leftPreview.classList.add('empty');
+            leftPreview.onclick = null;
+        }
+
+        // Right preview
+        if (currentIndex < items.length - 1) {
+            rightPreview.style.backgroundImage = `url(${items[currentIndex + 1].logo})`;
+            rightPreview.classList.remove('empty');
+            rightPreview.onclick = () => {
+                currentIndex++;
+                updateTimeline();
+            };
+        } else {
+            rightPreview.style.backgroundImage = '';
+            rightPreview.classList.add('empty');
+            rightPreview.onclick = null;
+        }
+        // -------------------------------
+
         // Accordion toggle logic
         const accordionBtn = document.querySelector('.accordion-btn');
         const accordionContent = document.querySelector('.accordion-content');
@@ -80,9 +116,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }
+
         updateNavButtonVisibility();
     }
-
 
     function updateNavButtonVisibility() {
         navButtons.left.style.display = currentIndex > 0 ? 'block' : 'none';
@@ -94,22 +130,20 @@ document.addEventListener('DOMContentLoaded', () => {
             currentIndex--;
             updateTimeline();
         }
-    }
+    };
+
     const moveRight = () => {
         if (currentIndex < items.length - 1) {
             currentIndex++;
             updateTimeline();
         }
-    }
+    };
+
     navButtons.left.addEventListener('click', moveLeft);
     navButtons.right.addEventListener('click', moveRight);
-    
+
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') {
-            moveLeft();
-        } else if (e.key === 'ArrowRight') {
-            moveRight();
-        }
+        if (e.key === 'ArrowLeft') moveLeft();
+        else if (e.key === 'ArrowRight') moveRight();
     });
-    
 });
