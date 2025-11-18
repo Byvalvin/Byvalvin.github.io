@@ -2872,6 +2872,16 @@ border-color: #7f1e23; /* Darker burgundy border */
     .timeline-content {
         width: 200px; /* Limit width for smaller screens */
     }
+    
+    .preview {
+        width: 45px; /* Shrink previews */
+        height: 45px;
+        border-width: 2px;
+    }
+    .preview:hover {
+        transform: scale(1.08); /* Slightly larger on hover */
+    }
+    
     .nav-button {
         width: 50px; /* Reduce size for smaller screens */
         height: 50px; /* Reduce size for smaller screens */
@@ -2924,8 +2934,13 @@ border-color: #7f1e23; /* Darker burgundy border */
         height: 50px;
         font-size: 12px;
     }
-    
 
+    .preview {
+        width: 40px;
+        height: 40px;
+        border-width: 1.5px;
+    }
+ 
     .dot {
         width: 6px;
         height: 6px;
