@@ -2852,8 +2852,8 @@ border-color: #7f1e23; /* Darker burgundy border */
     .timeline-content {
         width: 100%; /* Allow content to use full width */
         padding: 10px; /* Adjust padding for better readability */
-        margin-right: 80px; /* Add margin to the right to prevent content from being covered by the right button */
-        margin-left: 80px;  /* Add margin to the left to prevent content from being covered by the left button */
+        margin-right: 2px; /* Add margin to the right to prevent content from being covered by the right button */
+        margin-left: 2px;  /* Add margin to the left to prevent content from being covered by the left button */
         
     }    
     .timeline-item {
@@ -2921,8 +2921,8 @@ border-color: #7f1e23; /* Darker burgundy border */
 @media (max-width: 480px) {
     .timeline-content {
         padding: 5px; /* Reduce padding on very small screens */
-        margin-right: 80px; /* Add margin to the right to prevent content from being covered by the right button */
-        margin-left: 80px;  /* Add margin to the left to prevent content from being covered by the left button */
+        margin-right: 0px; /* Add margin to the right to prevent content from being covered by the right button */
+        margin-left: 0px;  /* Add margin to the left to prevent content from being covered by the left button */
         
     }
     .timeline-item {
