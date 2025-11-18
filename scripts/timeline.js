@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const timelineWrapper = document.querySelector('.timeline-wrapper');
     const timelineContent = document.querySelector('.timeline-content');
     const timelineDots = document.querySelector('.timeline-dots');
-    const navButtons = {
-        left: document.querySelector('.nav-button.left'),
-        right: document.querySelector('.nav-button.right')
-    };
+    // const navButtons = {
+    //     left: document.querySelector('.nav-button.left'),
+    //     right: document.querySelector('.nav-button.right')
+    // };
     let items = [];
     let currentIndex = 0;
 
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        updateNavButtonVisibility();
+        //updateNavButtonVisibility();
     }
 
     function updateNavButtonVisibility() {
@@ -139,8 +139,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    navButtons.left.addEventListener('click', moveLeft);
-    navButtons.right.addEventListener('click', moveRight);
+    // navButtons.left.addEventListener('click', moveLeft);
+    // navButtons.right.addEventListener('click', moveRight);
 
     document.addEventListener('keydown', (e) => {
         if (e.key === 'ArrowLeft') moveLeft();
